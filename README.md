@@ -6,3 +6,5 @@ A collection of notes and annotations for various research papers.
 2.Language Models Represent Space and Time
 
 3.PanGu-π: Enhancing Language Model Architectures via Nonlinearity Compensation
+
+4.CIF: Continuous Integrate-and-Fire for End-to-End Speech Recognition
