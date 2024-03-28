@@ -1,0 +1,157 @@
+{
+  "main": {
+    "id": "34ee2fe791cf70b1",
+    "type": "split",
+    "children": [
+      {
+        "id": "3ec81cd2332a068f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "972bfb6efeeae924",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CIF.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "329e3364a68a0c0b",
+    "type": "split",
+    "children": [
+      {
+        "id": "dd4404de7e5ae6c6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "22775e7edf536780",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1048b38cfb811ec8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ee1ce3e128db4b54",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "62ca17a5f3cfb922",
+    "type": "split",
+    "children": [
+      {
+        "id": "8729af310d0c4e9f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "83bfefcf0940af58",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "CIF.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0f7f42ce7c6bdef7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "CIF.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d0111677e83d9228",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ae2aa813f52e3d2c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "CIF.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "972bfb6efeeae924",
+  "lastOpenFiles": [
+    "CIF.md",
+    "LLM体现出时空概念.md",
+    "PanGu-π.md",
+    "README.md",
+    "GPT-ST Generative Pre-Training of Spatio-Temporal Graph Neural Networks.md"
+  ]
+}
