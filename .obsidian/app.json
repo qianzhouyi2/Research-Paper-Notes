@@ -1,4 +1,5 @@
 {
   "attachmentFolderPath": "CIF.aseets",
-  "showUnsupportedFiles": false
+  "showUnsupportedFiles": false,
+  "newLinkFormat": "absolute"
 }
