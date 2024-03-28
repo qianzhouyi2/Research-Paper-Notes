@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3ec81cd2332a068f",
+        "id": "c7aa8e884d881dca",
         "type": "tabs",
         "children": [
           {
-            "id": "972bfb6efeeae924",
+            "id": "910a5763717c18c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -75,8 +75,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -157,9 +156,15 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "972bfb6efeeae924",
+  "active": "910a5763717c18c9",
   "lastOpenFiles": [
+    "未命名.canvas",
     "CIF.md",
+    "CIF.aseets/Pasted image 20240328121501.png",
+    "CIF.aseets",
+    "Pasted image 20240328121357.png",
+    "Pasted image 20240328120915.png",
+    "Pasted image 20240328120859.png",
     "LLM体现出时空概念.md",
     "PanGu-π.md",
     "README.md",
