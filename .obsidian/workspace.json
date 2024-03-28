@@ -4,18 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "c7aa8e884d881dca",
+        "id": "4b32b4b5a440bbb3",
         "type": "tabs",
         "children": [
           {
-            "id": "910a5763717c18c9",
+            "id": "d9063c070dee8621",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CIF.md",
-                "mode": "source",
-                "source": false
+                "file": "GPT-ST预训练时空框架.md",
+                "mode": "preview",
+                "source": true
               }
             }
           }
@@ -71,7 +71,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CIF.md"
+                "file": "GPT-ST预训练时空框架.md"
               }
             }
           }
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CIF.md",
+                "file": "GPT-ST预训练时空框架.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CIF.md",
+                "file": "GPT-ST预训练时空框架.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CIF.md"
+                "file": "GPT-ST预训练时空框架.md"
               }
             }
           }
@@ -156,11 +156,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "910a5763717c18c9",
+  "active": "d9063c070dee8621",
   "lastOpenFiles": [
-    "GPT-ST Generative Pre-Training of Spatio-Temporal Graph Neural Networks.md",
-    "CIF.aseets/1.png",
+    "GPT-ST/image-20240111152209773.png",
+    "GPT-ST预训练时空框架.md",
+    "GPT-ST/image-20240104062311488.png",
     "CIF.md",
+    "CIF.aseets/2.png",
+    "CIF.aseets/1.png",
     "未命名.canvas",
     "CIF.aseets",
     "Pasted image 20240328121357.png",

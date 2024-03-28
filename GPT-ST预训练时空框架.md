@@ -2,7 +2,7 @@
 
 # GPT-ST：时空图神经网络的生成预训练
 
-![image-20240104062311488](GPT-ST Generative Pre-Training of Spatio-Temporal Graph Neural Networks.assets/image-20240104062311488.png)
+![image-20240104062311488](GPT-ST/image-20240104062311488.png)
 
 ## 摘要
 
@@ -40,7 +40,7 @@
 最近，GNN在空间和时间预测任务中引起了关注，并取得了显著的成果。
 
 > 图结构(graph)可用于表示特定领域中数据的底层关系，这些领域包括计算机视觉、数据挖掘、模式识别、分子化学、分子生物学，甚至是自然语言处理领域**。**GNN（Graph Neural Network，图神经网络）旨在利用神经网络来提取图结构中的数据（如属性、特征和模式），以满足诸多任务如分类、预测、生成、聚类、分割的需要。
-> ![image-20240104142949292](GPT-ST Generative Pre-Training of Spatio-Temporal Graph Neural Networks.assets/image-20240104142949292.png)
+> ![image-20240104142949292](GPT-ST/image-20240104142949292.png)
 
 GNN在时空预测技术的发展
 - 根据区域属性（如距离）构建邻接矩阵
@@ -57,19 +57,19 @@ GNN在时空预测技术的发展
 
 时间动态模式在不同时间段之间表现出变化，例如在同一地区内工作日与周末之间呈现出截然不同的模式。
 
-<img src="GPT-ST Generative Pre-Training of Spatio-Temporal Graph Neural Networks.assets/image-20240104144320020.png" alt="image-20240104144320020" style="zoom:67%;" />
+<img src="GPT-ST/image-20240104144320020.png" alt="image-20240104144320020" style="zoom:67%;" />
 
 区域之间的相关性会随时间动态演变， 超出静态图表示的能力。
 
-![image-20240104144513833](GPT-ST Generative Pre-Training of Spatio-Temporal Graph Neural Networks.assets/image-20240104144513833.png)
+![image-20240104144513833](GPT-ST/image-20240104144513833.png)
 
-![image-20240104145554000](GPT-ST Generative Pre-Training of Spatio-Temporal Graph Neural Networks.assets/image-20240104145554000.png)
+![image-20240104145554000](GPT-ST/image-20240104145554000.png)
 
 - 节点特定模式
 
 节点特定模式强调不同区域中观察到的独特时间序列，而非共享模式。
 
-![image-20240104145243029](GPT-ST Generative Pre-Training of Spatio-Temporal Graph Neural Networks.assets/image-20240104145243029.png)
+![image-20240104145243029](GPT-ST/image-20240104145243029.png)
 
 保证不同区域在消息聚合之后仍保留其个体节点特征对于防止空间域中突出节点的干扰至关重要。
 
@@ -81,7 +81,7 @@ GNN在时空预测技术的发展
 
 例如，在工作时间，人们从居住区到工作区域的人流明显增加。
 
-<img src="GPT-ST Generative Pre-Training of Spatio-Temporal Graph Neural Networks.assets/image-20240104150540548.png" alt="image-20240104150540548" style="zoom:40%;" />
+<img src="GPT-ST/image-20240104150540548.png" alt="image-20240104150540548" style="zoom:40%;" />
 
 在这种情况下，居住区内的人流变化可以为预测工作区域的人流提供有价值的辅助信号。这凸显了结合不同级别区域之间的细粒度（Fine-grained）和粗粒度（Coarse-grained）相关性以增强时空预测模型的预测能力的重要性。
 
@@ -107,7 +107,7 @@ GNN在时空预测技术的发展
 >
 > 超图学习与图学习紧密相关，因为超图是一种泛化的图结构。类似于图学习，超图上的学习也可以看作在超图结构上的信息传播。从这个角度来说，图学习是超图学习的一个特例。不同于图学习，超图学习模型探索数据中的高阶关系，因此有更好的效果。
 >
-> ![image-20240104165426896](GPT-ST Generative Pre-Training of Spatio-Temporal Graph Neural Networks.assets/image-20240104165426896.png)
+> ![image-20240104165426896](GPT-ST/image-20240104165426896.png)
 
 - 对现实世界的数据集进行了广泛的实验，各种下游基线性能的改善展示了 GPT-ST 的卓越性能。
 
@@ -194,7 +194,7 @@ GNN在时空预测技术的发展
 
 该模型旨在开发一种预训练的时空表示方法，以提高下游时空预测任务的准确性，例如交通流量预测。
 
-![image-20240111112023869](GPT-ST Generative Pre-Training of Spatio-Temporal Graph Neural Networks.assets/image-20240111112023869.png)
+![image-20240111112023869](GPT-ST/image-20240111112023869.png)
 
 模型框架的流程可以分为预训练阶段和下游任务阶段。
 
@@ -221,13 +221,13 @@ $$
 - 定制时间编码器和分层空间编码器，以获取预训练模型的大型建模能力。
 - 提出了一种自适应掩码策略，以促进有效的MAE训练。
 
-![image-20240111131206249](GPT-ST Generative Pre-Training of Spatio-Temporal Graph Neural Networks.assets/image-20240111131206249.png)
+![image-20240111131206249](GPT-ST/image-20240111131206249.png)
 
 ### 4.1定制时间模式编码器（Customized Temporal Pattern Encoding）
 
 **初始嵌入层（Initial Embedding Layer）**：首先构建一个嵌入层来初始化时空数据$\textbf{X}$的表示。原始数据经过Z-Score函数归一化
 
-> <img src="GPT-ST Generative Pre-Training of Spatio-Temporal Graph Neural Networks.assets/image-20240111132328217.png" alt="image-20240111132328217" style="zoom:50%;" />
+>![image-20240111132328217](GPT-ST/image-20240111132328217.png)
 
 然后使用掩码操作进行屏蔽。随后，应用线性变换来增强表示
 $$
@@ -245,11 +245,11 @@ $$
 $$
 其中$\mathbf{\Gamma}_{t}, \bar{\textbf{E}}_t, \textbf{E}_t\in\mathbb{R}^{R\times d}$分别表示第$t$个时间段的结果、中间和初始区域嵌入。$\textbf{W}_t\in\mathbb{R}^{d\times d}, \textbf{b}_t\in\mathbb{R}^d$代表第$t$个时间段特定的参数。$\sigma(\cdot)$表示**LeakyReLU**激活函数。中间嵌入$\bar{\textbf{E}}\in\mathbb{R}^{R\times T\times d}$通过超图信息传播计算得出。它利用区域特定的超图$\textbf{H}_r\in\mathbb{R}^{H_T\times T}$沿时间段和$H_T$超边之间的连接，传播第$r$个区域的时间嵌入$\textbf{E}_r\in\mathbb{R}^{T\times d}$，以捕捉时间段之间的多部分关系。
 
-> <img src="GPT-ST Generative Pre-Training of Spatio-Temporal Graph Neural Networks.assets/image-20240111134234531.png" alt="image-20240111134234531" style="zoom:50%;" />
+> ![image-20240111134234531](GPT-ST/image-20240111134234531.png)
 >
 > LeakyReLU与ReLU很相似，仅在输入小于0的部分有差别，ReLU输入小于0的部分值都为0，而LeakyReLU输入小于0的部分，值为负，且有微小的梯度。函数图像如下图：
 >
-> <img src="GPT-ST Generative Pre-Training of Spatio-Temporal Graph Neural Networks.assets/v2-9b1fc63cf1058e5543285494fa26a4c1_1440w.webp" alt="img" style="zoom: 25%;" />
+> ![WEBP](GPT-ST/v2-9b1fc63cf1058e5543285494fa26a4c1_1440w.webp)
 >
 > 实际中，LeakyReLU的α取值一般为0.01。使用LeakyReLU的好处就是：在反向传播过程中，对于LeakyReLU激活函数输入小于零的部分，也可以计算得到梯度(而不是像ReLU一样值为0)，这样就避免了上述梯度方向锯齿问题。
 
@@ -319,11 +319,11 @@ $$
 
 受语义引导的MAE [21]的启发，设计了一种聚类感知的屏蔽机制，以增强聚类内和聚类间的关系学习。自适应掩码策略结合了前面学到的聚类信息$\bar{c}_{i,r,t}$。在训练开始时，我们随机掩码每个聚类的部分区域，这种情况下，被屏蔽的数值可以通过参考具有相似时空模式的聚类内区域来轻松预测。随后，逐渐增加特定类别的掩码比例，通过减少相关信息来增加这些聚类的预测难度。最后，完全掩码某些聚类的信号，促进预训练模型的聚类间知识传播能力。
 
-<img src="GPT-ST Generative Pre-Training of Spatio-Temporal Graph Neural Networks.assets/image-20240111150152115.png" alt="image-20240111150152115" style="zoom:50%;" />
+![image-20240111150152115](GPT-ST/image-20240111150152115.png)
 
 然而，直接利用学习到的聚类信息$\bar{c}_{i,r,t}$生成考虑聚类的掩码$\textbf{M}$是不可行的。因为聚类信息是由模型的深层网络计算得出的，而生成的掩码需要作为输入提供给网络($\textbf{M}\odot{\textbf{X}}$)。为了解决这个问题，采用了双层MLP网络，其中的转换与偏置向量被时间动态和节点特定参数所取代，这些参数由定制参数学习器生成。随后，使用一个线性层和$\text{softmax}(\cdot)$函数来获得预测值$q_{i,r,t}\in\mathbb{R}$，其中$i\in H_S, r\in R, t\in T$。为了优化$q_{i,r,t}$的分布，利用KL散度损失函数$\mathcal{L}_{kl}$与真实值$\bar{c}_{i,r,t}$。需要特别注意的是，在这一步中阻止$\bar{c}_{i,r,t}$的反向传播。根据$q_{i,r,t}$的最大概率，将其所属类别作为分类结果。
 
-<img src="GPT-ST Generative Pre-Training of Spatio-Temporal Graph Neural Networks.assets/image-20240111152209773.png" alt="image-20240111152209773" style="zoom:50%;" />
+![image-20240111152209773](GPT-ST/image-20240111152209773.png)
 
 ## 5 评估
 
@@ -349,7 +349,7 @@ $$
 
 评估了四个数据集上不同基线的原始性能和增强性能，需要注意的是，由于DMVSTGCN、STMGCN和CCRNN专门设计用于需求预测，我们在交通预测任务中将它们排除在外。
 
-<img src="GPT-ST Generative Pre-Training of Spatio-Temporal Graph Neural Networks.assets/image-20240111155608412.png" alt="image-20240111155608412" style="zoom: 50%;" />
+![image-20240111155608412](GPT-ST/image-20240111155608412.png)
 
 结果表明，所提出的模型显著改善了不同基线在所有数据集上的预测性能，证明了框架的有效性。从三个维度分析促进效果：
 
@@ -361,7 +361,7 @@ $$
 
 研究了GPT-ST中主要组成部件的影响。为了评估不同组件的影响，重新训练多个删减模型，并使用新预训练的删减模型评估下游方法的性能。将GWN用作下游方法，并使用METR-LA和NYC Taxi两个数据集进行评估。
 
-<img src="GPT-ST Generative Pre-Training of Spatio-Temporal Graph Neural Networks.assets/image-20240111160610237.png" alt="image-20240111160610237" style="zoom: 80%;" />
+![image-20240111160610237](GPT-ST/image-20240111160610237.png)
 
 - **基本组件的影响**：i) -P. 移除模型中的定制参数学习器。 ii) -C. 禁用超图胶囊聚类网络以取消聚类操作。在这种情况下，空间超图 NN 直接在细粒度区域上工作。 iii) -T. 通过移除高层空间超图来使交叉聚类关系学习未被探索。明显的性能衰减表明了所有三个组件带来的正面效益，表明生成定制的 ST 参数和建模聚类内和聚类间 ST 依赖关系能够有效地捕捉复杂的 ST 关联以提升预测效果。在这三个组件中，移除超图胶囊聚类网络导致了最显著的性能下降。这是因为聚类结果在许多其他组件中也起着重要作用，包括交叉聚类依赖关系和聚类感知自适应掩码。
 - **掩码机制的影响**：i) Ran0.25和Ran0.75. 分别用掩码比例为0.25（与GPT-ST相同的掩码比例）和0.75（MAE [15]和STEP [31]中使用的掩码比例）替换了自适应掩码策略。结果一致表明，GPT-ST的掩码策略优于随机掩码策略。这可以归因于GPT-ST掩码策略有效地促进了GPT - ST对聚类内和聚类间关系的学习，从而产生了高质量的表示。 ii) GMAE和AdaMAE. 将GPT-ST与GraphMAE [16]和AdaMAE [2]的掩码策略提出的两个变体进行了比较。两个变体的性能均不如我们的方法，突显了在掩码策略中考虑空间和时间模式的重要性。这进一步证实了GPT-ST的自适应掩码策略利用聚类信息影响力更大。
@@ -397,13 +397,13 @@ $$
 
 通过分析由超图胶囊聚类网络（HCCN） 生成的嵌入来评估其可解释性。
 
-<img src="GPT-ST Generative Pre-Training of Spatio-Temporal Graph Neural Networks.assets/image-20240111164403923.png" alt="image-20240111164403923" style="zoom: 67%;" />
+![image-20240111164403923](GPT-ST/image-20240111164403923.png)
 
 使用 T-SNE 算法将 HCCN 生成的高维嵌入可视化为二维向量。每个类别由不同的颜色表示，对于超参数 $H_S$，定义了 10 个类别。区域聚类是基于属于不同类别的概率来确定的。在检查可视化的嵌入时，同一类别的区域在一个有限的空间内呈紧密聚类，这提供了超图胶囊聚类网络强大聚类能力的经验证据。
 
 在另一份基于METR-LA数据集的案例研究中，体现了由超图胶囊聚类网络派生的聚类内区域关系以及由跨聚类超图网络获得的跨聚类依赖关系。
 
-![image-20240111164912254](GPT-ST Generative Pre-Training of Spatio-Temporal Graph Neural Networks.assets/image-20240111164912254.png)
+![image-20240111164912254](GPT-ST/image-20240111164912254.png)
 
 图7 ( a )和图7 ( b )所示，同一类别中的前3个区域表现出相似的交通模式，表明具有共同的功能。例如，靠近商业区( 7 ( a ) )的区域出现晚高峰，而靠近居民区( 7 ( b ) )的区域则保持相对稳定。这些观察与真实世界的情景相吻合。图7 ( c )分析了在特定时间段内经历了交通模式转变的两类中的前2个区域，同时在跨类转换中共享类似的超边权重。结果表明，发生模式转变的区域表现出不同的交通模式，同时在较短的驾驶距离内保持紧密的相互联系。这些发现进一步证明了跨聚类迁移学习能够捕获区域之间的语义级关系，反映了真实世界的交通场景。这些优势有助于GPT - ST框架中生成高质量的表示，从而提高下游任务的性能。
 
@@ -413,7 +413,7 @@ $$
 
 所有实验在配备GTX 3090 GPU和Intel Core i9-12900K CPU的系统上进行。除标记为' b8 '的方法外，所有方法的batch size均设置为64 (其中' b8 '表示batch size为8)。
 
-<img src="GPT-ST Generative Pre-Training of Spatio-Temporal Graph Neural Networks.assets/image-20240111165901325.png" alt="image-20240111165901325" style="zoom:33%;" />
+![image-20240111165901325](GPT-ST/image-20240111165901325.png)
 
 - 大多数基准方法在得到GPT-ST增强后训练效率略有降低，但它们的性能得到了显著改进。 
 - STEP在预训练阶段和下游任务阶段都会产生大量的时间开销，而GPT - ST以轻量级的方式增强了现有的基线。这些案例表明，GPT-St框架在性能和训练效率方面实现了双赢，使其非常适合实际应用。
@@ -422,7 +422,7 @@ $$
 
 为了考察不同超参数对GPT-ST的影响，以GWN为下游模型，在NYC Taxi数据集上进行参数实验。评估指标以相对值的形式绘制。
 
-<img src="GPT-ST Generative Pre-Training of Spatio-Temporal Graph Neural Networks.assets/image-20240111170308110.png" alt="image-20240111170308110" style="zoom:50%;" />
+![image-20240111170308110](GPT-ST/image-20240111170308110.png)
 
 - 总掩码比例$r_t$设置为0.25时达到了最优效果。超过该值后增加掩码比例并不能提高模型学习更好表示的能力；反而导致了预测性能的下降。
 - 进一步，探究了自适应掩码比例$r_r$的影响，它决定了完全被掩码的聚类的数量，从而影响整个训练过程。当自适应掩模比例设置为1时，获得了最好的性能。这表明这种特定的配置增强了模型对区域关系的学习能力。
