@@ -83,6 +83,7 @@ CIF在编码器-解码器框架中采用软单调对齐。
 
 #### 3.2.1 缩放策略
 
-训练中生成的集成嵌入 $c$ 的长度 $S$ 可能与目标 $\tilde{y}$ 的长度 $\tilde{S}$ 不同，交叉熵损失最好一对一的。
+训练中生成的集成嵌入 $c$ 的长度 $S$ 可能与目标 $\tilde{y}$ 的长度 $\tilde{S}$ 不同，交叉熵损失最好一对一。
 
-将计算得到的权重 $\alpha=(\alpha_1,\alpha_2,\dots,\alpha_U)$ 乘以标量
+将计算得到的权重 $\alpha=(\alpha_1,\alpha_2,\dots,\alpha_U)$ 乘以标量 $\frac{\tilde{S}}{\sum_{u=1}^U{\alpha_u}}$ ，得到缩放后的权重 $\alpha'=(\alpha_1', \alpha_2',\dots, \alpha_U')$ ，总和为 $\tilde{S}$ 。
+#### 3.2.2 数量损失
