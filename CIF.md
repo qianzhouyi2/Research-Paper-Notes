@@ -87,3 +87,9 @@ CIF在编码器-解码器框架中采用软单调对齐。
 
 将计算得到的权重 $\alpha=(\alpha_1,\alpha_2,\dots,\alpha_U)$ 乘以标量 $\frac{\tilde{S}}{\sum_{u=1}^U{\alpha_u}}$ ，得到缩放后的权重 $\alpha'=(\alpha_1', \alpha_2',\dots, \alpha_U')$ ，总和为 $\tilde{S}$ 。
 #### 3.2.2 数量损失
+
+可选的损失函数，用于监督基于CIF的模型预测集成嵌入的数量接近目标标签的数量，定义为数量损失：
+$$
+\mathcal{L}_{QUA}=\left| \sum_{u=1}^U\alpha_{u} - \tilde{S} \right|
+$$
+这个损失促进了声学边界定位的学习，还在推断中去除缩放策略后减轻了性能下降。
