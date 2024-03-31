@@ -89,8 +89,9 @@ CIF在编码器-解码器框架中采用软单调对齐。
 #### 3.2.2 数量损失
 
 可选的损失函数，用于监督基于CIF的模型预测集成嵌入的数量接近目标标签的数量，定义为数量损失：
-
-$$\mathcal{L}_{QUA} = \left| \sum_{u=1}^U \alpha_{u} - \tilde{S} \right|$$
+```math
+\mathcal{L}_{QUA} = \left| \sum_{u=1}^U \alpha_{u} - \tilde{S} \right|
+```
 
 这个损失促进了声学边界定位的学习，还在推断中去除缩放策略后减轻了性能下降。
 
