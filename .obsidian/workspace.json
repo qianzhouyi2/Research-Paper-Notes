@@ -15,7 +15,7 @@
               "state": {
                 "file": "CIF.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -75,7 +75,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
