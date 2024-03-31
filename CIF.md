@@ -103,4 +103,4 @@ $$\mathcal{L}_{QUA} = \left| \sum_{u=1}^U \alpha_{u} - \tilde{S} \right|$$
 
 ### 3.3 模型结构
 
-编码器：
+编码器：采用与SELF-ATTENTION ALIGNER相同的编码器

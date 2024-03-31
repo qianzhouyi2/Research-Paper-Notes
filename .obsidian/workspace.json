@@ -75,12 +75,11 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "62ca17a5f3cfb922",
@@ -159,9 +158,9 @@
   },
   "active": "05364b87bba0b4b8",
   "lastOpenFiles": [
+    "GPT-ST预训练时空框架.md",
     "CIF.md",
     "CIF.aseets/3.png",
-    "GPT-ST预训练时空框架.md",
     "LLM体现出时空概念.md",
     "PanGu-π.md",
     "GPT-ST/image-20240111152209773.png",
