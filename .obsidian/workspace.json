@@ -14,8 +14,8 @@
               "type": "markdown",
               "state": {
                 "file": "CIF.md",
-                "mode": "source",
-                "source": false
+                "mode": "preview",
+                "source": true
               }
             }
           }
