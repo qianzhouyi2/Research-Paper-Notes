@@ -75,7 +75,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -158,6 +159,7 @@
   },
   "active": "05364b87bba0b4b8",
   "lastOpenFiles": [
+    "CIF.pdf",
     "GPT-ST预训练时空框架.md",
     "CIF.md",
     "CIF.aseets/3.png",
