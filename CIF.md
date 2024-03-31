@@ -97,4 +97,4 @@ CIF在编码器-解码器框架中采用软单调对齐。
 这个损失促进了声学边界定位的学习，还在推断中去除缩放策略后减轻了性能下降。
 
 **The Cauchy-Schwarz Inequality**
-$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+$$\mathcal{L}_{QUA}=\left| \sum_{u=1}^U\alpha_{u} - \tilde{S} \right|$$
