@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "59cc005619768682",
+        "id": "f003c2284e32d897",
         "type": "tabs",
         "children": [
           {
-            "id": "0c387c0d191893d6",
+            "id": "fd628b397166a4b7",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -131,10 +131,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "0c387c0d191893d6",
+  "active": "fd628b397166a4b7",
   "lastOpenFiles": [
+    "CIF.pdf",
+    "/CIF.md",
+    "/CIF.pdf",
     "CIF.md",
-    "PanGu-π.md",
-    "/CIF.md"
+    "PanGu-π.md"
   ]
 }
