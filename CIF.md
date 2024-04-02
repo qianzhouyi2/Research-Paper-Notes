@@ -143,4 +143,4 @@ CTC损失应用于编码器，并解决了从左到右的声学编码。
 \mathbf{y^*} = \mathop{\arg\max}_{\mathbf{y} \in \text{NBest}(\mathbf{x},N)} (\text{ log } P(\mathbf{y}|\mathbf{x}) + \gamma \text{ log }P_{LM}(\mathbf{y}))
 ```
 
-其中，$\gamma$ 是一个可调的超参数，$\text{NBest}(\mathbf{x},N)$ 是通过大小为 $N$ 的束搜索由基于 CIF 的模型产生的假设。
+其中， $\gamma$ 是一个可调的超参数， $\text{NBest}(\mathbf{x},N)$ 是通过大小为 $N$ 的束搜索由基于 CIF 的模型产生的假设。
