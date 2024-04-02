@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "98fb5324a9447f94",
+        "id": "47b1b5f3fdc6bc4d",
         "type": "tabs",
         "children": [
           {
-            "id": "05364b87bba0b4b8",
+            "id": "9e56345523d60401",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "CIF.pdf"
+                "file": "CIF.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -69,7 +71,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CIF.pdf"
+                "file": "CIF.md"
               }
             }
           }
@@ -93,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CIF.pdf",
+                "file": "CIF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CIF.pdf",
+                "file": "CIF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CIF.pdf"
+                "file": "CIF.md"
               }
             }
           }
@@ -154,11 +156,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "05364b87bba0b4b8",
+  "active": "9e56345523d60401",
   "lastOpenFiles": [
+    "GPT-ST预训练时空框架.md",
     "CIF.md",
     "CIF.pdf",
-    "GPT-ST预训练时空框架.md",
     "CIF.aseets/3.png",
     "LLM体现出时空概念.md",
     "PanGu-π.md",
