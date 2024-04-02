@@ -11,11 +11,9 @@
             "id": "05364b87bba0b4b8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "CIF.md",
-                "mode": "source",
-                "source": false
+                "file": "CIF.pdf"
               }
             }
           }
@@ -71,12 +69,11 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CIF.md"
+                "file": "CIF.pdf"
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -96,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CIF.md",
+                "file": "CIF.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CIF.md",
+                "file": "CIF.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CIF.md"
+                "file": "CIF.pdf"
               }
             }
           }
@@ -159,9 +156,9 @@
   },
   "active": "05364b87bba0b4b8",
   "lastOpenFiles": [
+    "CIF.md",
     "CIF.pdf",
     "GPT-ST预训练时空框架.md",
-    "CIF.md",
     "CIF.aseets/3.png",
     "LLM体现出时空概念.md",
     "PanGu-π.md",
