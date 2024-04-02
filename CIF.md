@@ -123,3 +123,14 @@ CIF在编码器-解码器框架中采用软单调对齐。
 
 非自回归解码器：直接将当前集成的嵌入( $c_i$ )传递给SANs以获得输出( $o_i$ )，然后将输出映射以获得logit。具有更高的计算并行性，并且可以为离线ASR提供推理加速，其中集成嵌入可以一次由CIF计算得出。
 
+#### 3.3.3 损失函数
+
+除了交叉熵损失 $\mathcal{L}_{CE}$ ，两个可选的辅助损失函数：数量损失 $\mathcal{L}_{QUA}$ 和CTC损失 $\mathcal{L}_{CTC}$ 。
+
+CTC损失应用于编码器，并解决了从左到右的声学编码。
+
+```math
+\mathcal{L} = \mathcal{L}_{CE} + \lambda_1 \mathcal{L}_{CTC} + \lambda_2 \mathcal{L}_{QUA}
+```
+
+其中 $\lambda_1$ 和 $\lambda_2$ 是可调的超参数。
