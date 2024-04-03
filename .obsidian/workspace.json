@@ -30,9 +30,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "290d265cb67ed2f1",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.12"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -169,7 +179,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "64bf17b7870fefde",
+  "active": "290d265cb67ed2f1",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
     "CIF.md",
