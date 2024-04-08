@@ -11,9 +11,11 @@
             "id": "64bf17b7870fefde",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "GPT-ST预训练时空框架.pdf"
+                "file": "CIF.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -69,7 +71,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GPT-ST预训练时空框架.pdf"
+                "file": "CIF.md"
               }
             }
           }
@@ -93,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GPT-ST预训练时空框架.pdf",
+                "file": "CIF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GPT-ST预训练时空框架.pdf",
+                "file": "CIF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GPT-ST预训练时空框架.pdf"
+                "file": "CIF.md"
               }
             }
           }
@@ -156,11 +158,21 @@
   },
   "active": "64bf17b7870fefde",
   "lastOpenFiles": [
+    "GPT-ST/image-20240104150540548.png",
+    "GPT-ST/image-20240104145554000.png",
+    "GPT-ST/image-20240104145531041.png",
+    "GPT-ST/image-20240104145243029.png",
+    "GPT-ST/image-20240104145234216.png",
+    "GPT-ST/image-20240104145214820.png",
+    "GPT-ST/image-20240104144320020.png",
+    "GPT-ST/image-20240104062311488.png",
+    "GPT-ST/image-20240104142949292.png",
+    "GPT-ST/image-20240104142918768.png",
     "GPT-ST预训练时空框架.md",
+    "GPT-ST预训练时空框架.pdf",
     "GPT-ST/image-20240104144513833.png",
     "CIF.md",
     "CIF.pdf",
-    "GPT-ST预训练时空框架.pdf",
     "LLM体现出时空概念.md",
     "PanGu-π.md",
     "Paper/Wang 等 - 2023 - PanGu-$pi$ Enhancing Language Model Architecture.pdf",
@@ -168,16 +180,8 @@
     "Paper/Li 等 - 2023 - GPT-ST Generative Pre-Training of Spatio-Temporal.pdf",
     "Paper",
     "conflict-files-obsidian-git.md",
-    "CIF.aseets/3.png",
-    "GPT-ST/image-20240111152209773.png",
-    "GPT-ST/image-20240104062311488.png",
-    "CIF.aseets/2.png",
-    "CIF.aseets/1.png",
     "未命名.canvas",
     "CIF.aseets",
-    "Pasted image 20240328121357.png",
-    "Pasted image 20240328120915.png",
-    "Pasted image 20240328120859.png",
     "README.md"
   ]
 }
