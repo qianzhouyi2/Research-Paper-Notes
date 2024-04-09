@@ -11,9 +11,11 @@
             "id": "64bf17b7870fefde",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "GPT-ST预训练时空框架.pdf"
+                "file": "GPT-ST预训练时空框架.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -69,7 +71,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GPT-ST预训练时空框架.pdf"
+                "file": "GPT-ST预训练时空框架.md"
               }
             }
           }
@@ -93,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GPT-ST预训练时空框架.pdf",
+                "file": "GPT-ST预训练时空框架.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GPT-ST预训练时空框架.pdf",
+                "file": "GPT-ST预训练时空框架.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GPT-ST预训练时空框架.pdf"
+                "file": "GPT-ST预训练时空框架.md"
               }
             }
           }
@@ -156,6 +158,12 @@
   },
   "active": "64bf17b7870fefde",
   "lastOpenFiles": [
+    "GPT-ST/Pasted image 20240409174009.png",
+    "GPT-ST/Pasted image 20240409173504.png",
+    "GPT-ST/Pasted image 20240409173057.png",
+    "CIF.aseets/Pasted image 20240409172941.png",
+    "GPT-ST预训练时空框架.md",
+    "GPT-ST预训练时空框架.pdf",
     "PanGu-π.md",
     "CIF.md",
     "GPT-ST/image-20240104150540548.png",
@@ -165,11 +173,6 @@
     "GPT-ST/image-20240104145234216.png",
     "GPT-ST/image-20240104145214820.png",
     "GPT-ST/image-20240104144320020.png",
-    "GPT-ST/image-20240104062311488.png",
-    "GPT-ST/image-20240104142949292.png",
-    "GPT-ST/image-20240104142918768.png",
-    "GPT-ST预训练时空框架.md",
-    "GPT-ST预训练时空框架.pdf",
     "CIF.pdf",
     "LLM体现出时空概念.md",
     "Paper/Wang 等 - 2023 - PanGu-$pi$ Enhancing Language Model Architecture.pdf",
