@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GPT-ST预训练时空框架.md",
+                "file": "CIF.md",
                 "mode": "source",
                 "source": false
               }
@@ -71,7 +71,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GPT-ST预训练时空框架.md"
+                "file": "CIF.md"
               }
             }
           }
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GPT-ST预训练时空框架.md",
+                "file": "CIF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GPT-ST预训练时空框架.md",
+                "file": "CIF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GPT-ST预训练时空框架.md"
+                "file": "CIF.md"
               }
             }
           }
@@ -156,10 +156,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "64bf17b7870fefde",
+  "active": "22775e7edf536780",
   "lastOpenFiles": [
-    "GPT-ST预训练时空框架.pdf",
     "GPT-ST预训练时空框架.md",
+    "GPT-ST预训练时空框架.pdf",
     "GPT-ST/Pasted image 20240410124703.png",
     "GPT-ST/Pasted image 20240410124619.png",
     "GPT-ST/Pasted image 20240410123511.png",
