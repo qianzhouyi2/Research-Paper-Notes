@@ -155,4 +155,28 @@ CTC损失应用于编码器，并解决了从左到右的声学编码。
 
 对所有训练数据集应用固定的 $\pm$ 10%的速度扰动。应用频率掩蔽和时间掩蔽，其中 $F=8$ ， $m_F=2$ ， $T=70$ ， $m_T=2$ ， $p=0.2$ ，适用于所有模型，除了Librispeech的基础模型。
 
-使用BPE工具包在Librispeech上生成3722个词片段，并且在其训练文本上合并7500次，加上特殊标签空白\<BLK>，句子结束\<EOS>，填充\<PAD>,Librispeech的输出标签数为3725。
+使用BPE工具包在Librispeech上生成3722个词片段，并且在其训练文本上合并7500次，加上特殊标签空白\<BLK>，句子结束\<EOS>，填充\<PAD>,Librispeech的输出标签数为3725。为AISHELL-2生成5230个输出标签，为HKUST生成3674个输出标签。
+
+使用Tensorflow实现模型。自注意力网络（SANS）使用[15]的结构。为两个中文数据集设置 $h=4$ , $d_{model} = 640$ , $d_{ff}=2560$ ,对于Librispeech上的基础模型和大模型，$(d_{model}，d_{ff})$更改为$(512，2048)$，$(1024，4096)$。
+
+编码器采用与[15]相同的配置，金字塔结构中的n全部设置为5。前向编码的块跳跃[15]使用256（帧）的块大小和128（帧）的跳跃大小。
+
+用于预测权重的一维卷积层中，滤波器数量设置为 $d_{model}$ ，窗口宽度除了Librispeech上的基础模型设置为5外，全部设置为3。此卷积后应用层归一化[24]和ReLU激活。CIF的阈值 $\beta$ 设置为0.9 （建议1.0，效果更好）。
+
+解码器，SANs的数量全部设置为2，除了Librispeech上的基础模型设置为3。
+
+损失超参数 $λ_1$ 对于两个中文数据集设置为0.5，对于Librispeech设置为0.25，  $λ_2$ 全部设置为1.0。LM使用SANs， 其中 $h = 4$ ，$d_{model} = 512$ ，$d_{ff} = 2048$，SAN层数分别设置为3、6、20，用于HKUST、 AISHELL-2和Librispeech。
+
+在训练阶段， 仅对SANs应用dropout， 其中注意力dropout和残差dropout均设置为0.2， 除了在Librispeech上的基础模型设置为0.1。 使用[25]中的均匀标签平滑，并将其分别设置为0.2用于基
+于CIF的模型和语言模型（uniform label smoothing）。在两个中文数据集上应用常数采样率为0.5的Scheduled Sampling[26]。
+
+在推断阶段， 使用大小为10的beam search。 LM重新评分的超参数γ分别设置为0.1、 0.2、 0.9，用于HKUST、AISHELL-2和Librispeech。所有实验结果均取3次运行的平均值。
+
+CIF的对齐结果（定位边界）展示：https://linhodong.github.io/cif_alignment/
+
+
+
+![[CIF.aseets/Pasted image 20240410195051.png]]
+
+![[CIF.aseets/Pasted image 20240410195102.png]]
+## 5 结果
