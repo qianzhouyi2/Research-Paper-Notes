@@ -15,7 +15,7 @@
               "state": {
                 "file": "CIF.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           },
@@ -83,12 +83,11 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 400.51103591918945
   },
   "right": {
     "id": "62ca17a5f3cfb922",
@@ -167,13 +166,13 @@
   },
   "active": "64bf17b7870fefde",
   "lastOpenFiles": [
-    "CIF.aseets/Pasted image 20240410201145.png",
-    "CIF.aseets/Pasted image 20240410201124.png",
-    "CIF.aseets/Pasted image 20240410200850.png",
-    "CIF.aseets/Pasted image 20240410200055.png",
+    "CIF.aseets/9.png",
+    "CIF.aseets/8.png",
+    "CIF.aseets/7.png",
+    "CIF.aseets/6.png",
     "CIF.aseets/Pasted image 20240410195110.png",
-    "CIF.aseets/Pasted image 20240410195102.png",
-    "CIF.aseets/Pasted image 20240410195051.png",
+    "CIF.aseets/5.png",
+    "CIF.aseets/4.png",
     "GPT-ST预训练时空框架.md",
     "GPT-ST预训练时空框架.pdf",
     "GPT-ST/Pasted image 20240410124703.png",

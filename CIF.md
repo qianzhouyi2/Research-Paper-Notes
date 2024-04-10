@@ -174,32 +174,31 @@ CTC损失应用于编码器，并解决了从左到右的声学编码。
 
 CIF的对齐结果（定位边界）展示：https://linhodong.github.io/cif_alignment/
 
+![图4](CIF.aseets/4.png)
 
+![图5](CIF.aseets/5.png)
 
-![[CIF.aseets/Pasted image 20240410195051.png]]
-
-![[CIF.aseets/Pasted image 20240410195102.png]]
 ## 5 结果
 
 ### 5.1 Results on Librispeech
 
-![[CIF.aseets/Pasted image 20240410200055.png]]
+![图6](CIF.aseets/6.png)
 
 上述基于CIF的模型都采用了非常低的编码帧率（12.5 Hz）以减轻计算负担。转换到更高的帧率可能会进一步提高它们的性能。
 
 ### 5.2 Ablation Study on Librispeech
 
-![[CIF.aseets/Pasted image 20240410200850.png]]
+![图7](CIF.aseets/7.png)
 
 去除解码器中的自回归机制会导致最大的性能下降。在AISHELL-2的普通话数据集上比较了带/不带自回归的模型，结果发现它们的性能相当。由于普通话字符之间的声学边界更加清晰，可能自回归的重要性与输出标签之间声学边界的清晰程度有关。
 
 ### 5.3. Results on AISHELL-2
 
-![[CIF.aseets/Pasted image 20240410201124.png]]
+![图8](CIF.aseets/8.png)
 
 ### 5.4. Results on HKUST
 
-![[CIF.aseets/Pasted image 20240410201145.png]]
+![图9](CIF.aseets/9.png)
 
 ## 6. 讨论与总结
 
