@@ -294,6 +294,8 @@ $$
 
 ##### 迭代超图结构学习（Iterative Hypergraph Structure Learning）
 
+![[GPT-ST/Pasted image 20240410124703.png]]
+
 在初始化区域嵌入$\textbf{v}_{r,t}$和超图连接嵌入$\bar{\textbf{v}}_{i|r,t}$之后，我们按照胶囊网络的动态路由机制来增强超边的聚类效果。第$j$次迭代如下所示：
 $$
 
