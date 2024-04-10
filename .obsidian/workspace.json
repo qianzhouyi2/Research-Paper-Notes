@@ -4,27 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "952f936b63e91870",
+        "id": "0c198c0f0d3077fd",
         "type": "tabs",
         "children": [
           {
-            "id": "64bf17b7870fefde",
+            "id": "52c6444ea3c2f017",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "CIF.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
-            }
-          },
-          {
-            "id": "c825303af70c2111",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
             }
           }
         ]
@@ -164,13 +156,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "64bf17b7870fefde",
+  "active": "52c6444ea3c2f017",
   "lastOpenFiles": [
+    "CIF.aseets/Pasted image 20240410195110.png",
+    "CIF.md",
     "CIF.aseets/9.png",
     "CIF.aseets/8.png",
     "CIF.aseets/7.png",
     "CIF.aseets/6.png",
-    "CIF.aseets/Pasted image 20240410195110.png",
     "CIF.aseets/5.png",
     "CIF.aseets/4.png",
     "GPT-ST预训练时空框架.md",
@@ -178,9 +171,7 @@
     "GPT-ST/Pasted image 20240410124703.png",
     "GPT-ST/Pasted image 20240410124619.png",
     "GPT-ST/Pasted image 20240410123511.png",
-    "GPT-ST/Pasted image 20240410123401.png",
     "PanGu-π.md",
-    "CIF.md",
     "CIF.pdf",
     "LLM体现出时空概念.md",
     "Paper/Wang 等 - 2023 - PanGu-$pi$ Enhancing Language Model Architecture.pdf",
