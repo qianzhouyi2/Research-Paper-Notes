@@ -237,11 +237,8 @@ $$
 
 **时序超图神经网络（Temporal Hypergraph Neural Network）**：为了便于全局关系学习，采用超图神经网络进行时序模式编码
 $$
-\begin{align}
-    \label{eq:hgnnTem}
     \mathbf{\Gamma}_t = \sigma(\bar{\textbf{E}}_t \cdot \textbf{W}_t + \textbf{b}_t + \textbf{E}_t);~~
     \bar{\textbf{E}}_r = \text{HyperPropagate}(\textbf{E}_r) = \sigma(\textbf{H}_r^\top \cdot \sigma(\textbf{H}_r \cdot \textbf{E}_r))
-\end{align}
 $$
 其中$\mathbf{\Gamma}_{t}, \bar{\textbf{E}}_t, \textbf{E}_t\in\mathbb{R}^{R\times d}$分别表示第$t$个时间段的结果、中间和初始区域嵌入。$\textbf{W}_t\in\mathbb{R}^{d\times d}, \textbf{b}_t\in\mathbb{R}^d$代表第$t$个时间段特定的参数。$\sigma(\cdot)$表示**LeakyReLU**激活函数。中间嵌入$\bar{\textbf{E}}\in\mathbb{R}^{R\times T\times d}$通过超图信息传播计算得出。它利用区域特定的超图$\textbf{H}_r\in\mathbb{R}^{H_T\times T}$沿时间段和$H_T$超边之间的连接，传播第$r$个区域的时间嵌入$\textbf{E}_r\in\mathbb{R}^{T\times d}$，以捕捉时间段之间的多部分关系。
 
@@ -255,10 +252,7 @@ $$
 
 **定制参数学习器（Customized Parameter Learner）**：为了描述时间模式的多样性，时间编码器针对不同的区域和不同的时间段进行模型参数定制化。时间特定参数$\textbf{W}_t, \textbf{b}_t$和区域特定超图参数$\textbf{H}_r$是通过可学习的过程生成的，而不是直接使用独立的参数。定制参数的学习过程如下：
 $$
-\begin{align}
-    \label{eq:personalized}
     \textbf{H}_r = \textbf{c}_r^\top \bar{\textbf{H}};~~~\textbf{W}_{t} = \textbf{d}_t ^ \top \bar{\textbf{W}};~~~\textbf{b}_t = \textbf{d}_t^\top \bar{\textbf{b}};~~~\textbf{d}_t=\text{MLP}(\bar{\textbf{z}}^{(d)}_t \textbf{e}_1 + \bar{\textbf{z}}^{(w)}_t \textbf{e}_2)
-\end{align}
 $$
 其中，$\bar{\textbf{H}}\in\mathbb{R}^{d'\times H_T\times T}, \bar{\textbf{W}}\in\mathbb{R}^{d'\times d\times d}, \bar{\textbf{b}}\in\mathbb{R}^{d'\times d}$ 分别是生成的三个参数的独立参数。 $\textbf{c}_r, \textbf{d}_t\in\mathbb{R}^{d'}$ 分别表示第$r$个区域和第$t$个时间段的表示。 对于$r\in R$，$\textbf{c}_r$是自由形式的参数，而对于$t\in T$，$\textbf{d}_t$是根据归一化的时间特征$\bar{\textbf{z}}_t^{(d)}$和星期几（具体星期几，day-of-week）特征$\bar{\textbf{z}}_t^{(w)}$计算得到的。 $\textbf{e}_1, \textbf{e}_2\in\mathbb{R}^{d'}$ 是它们对应的可学习嵌入。参数学习器通过根据特定时间段和区域的特征生成参数来实现空间和时间的定制化。
 
@@ -273,11 +267,10 @@ $$
 
 具体来说，我们首先使用之前的嵌入 $\mathbf{\Gamma}_{r,t}$ 和 squash 函数，对每个时间段 $t$ 中的每个区域 $r$ 获得一个归一化的区域嵌入 $\textbf{v}_{r,t}\in\mathbb{R}^d$。然后，在第 $t$ 个时间段内使用这个嵌入计算每个区域 $r$ 到每个聚类中心（超边） $i$ 的转移信息 $\bar{\textbf{v}}_{i|r,t}\in\mathbb{R}^d$。具体地，这两个变量的计算如下：
 $$
-\begin{align}
-    \label{eq:squash}
+
     \textbf{v}_{r,t} = \text{squash}(\textbf{V} \mathbf{\Gamma}_{r,t} + \textbf{c});~~ \bar{\textbf{v}}_{i|r,t} = \text{squash}(\textbf{H}'_{i,r,t} \textbf{v}_{r,t})\odot \textbf{v}_{r,t};~~
     \text{squash}(\textbf{x}) = \frac{\|\textbf{x}\|^2}{1+\|\textbf{x}\|^2} \frac{\textbf{x}}{\|\textbf{x}\|}
-\end{align}
+
 $$
 其中$\textbf{V}\in\mathbb{R}^{d\times d}$和$\textbf{c}\in\mathbb{R}^d$是自由形式的可学习参数。超图连接矩阵$\textbf{H}'_t\in\mathbb{R}^{H_S\times R}$记录了$R$个区域和$H_S$个超边之间的关系，即聚类质心。它根据前述的定制参数学习器来适应第$t$个时间段，具体地说，是通过$\textbf{H}'_t=\text{softmax}(\textbf{d}_t^{'\top} \bar{\textbf{H}}')$来实现的。其中，$\textbf{d}_t'$和$\bar{\textbf{H}}'$是时间特征和超图嵌入。
 
@@ -285,11 +278,9 @@ $$
 
 在初始化区域嵌入$\textbf{v}_{r,t}$和超图连接嵌入$\bar{\textbf{v}}_{i|r,t}$之后，我们按照胶囊网络的动态路由机制来增强超边的聚类效果。第$j$次迭代如下所示：
 $$
-\begin{align}
+
     \textbf{s}_{i,t}^j = \textstyle \sum_{r=1}^R c_{i,r,t}^j \bar{\textbf{v}}_{i|r,t};~~~c_{i,r,t}^j = \frac{\exp(b_{i,r,t}^j)}{\sum_{r}\exp(b_{i,r,t}^j)};~~
     b_{i,r,t}^j = b_{i,r,t}^j + \textbf{v}_{r,t}^\top ~ \text{squash}(\textbf{s}_{i,t}^{j-1})
-    \label{eq:agg}
-\end{align}
 $$
 其中$\textbf{s}_{i,t}\in\mathbb{R}^d$表示迭代的超边嵌入。它是利用迭代超边-区域权重$c_{i,r,t}\in\mathbb{R}$计算得到的。权重$c_{i,r,t}$从上一次迭代的超边嵌入$\textbf{s}_{i,t}$计算而来。通过这个迭代过程，关系分数和超边表示相互调整，以更好地反映区域和由超边表示的空间聚类中心之间的语义相似性。
 
@@ -299,19 +290,15 @@ $$
 
 在具有聚类嵌入$\bar{\textbf{s}}_{i,t}$的基础上，使用高级超图神经网络对聚类间关系进行建模。具体而言，通过在$H_S$个聚类中心和$H_M$个高级超边之间进行信息传递，计算出细化的聚类嵌入$\hat{\textbf{S}}\in\mathbb{R}^{H_S\times T\times d}$：
 $$
-\begin{align}
-    \label{eq:high-level_hypergraph}
+
     \hat{\textbf{S}} = \text{HyperPropagate}(\tilde{\textbf{S}}) = \text{squash}(\sigma(\textbf{H}^{''\top} \cdot \sigma(\textbf{H}'' \cdot \tilde{\textbf{S}})) + \tilde{\textbf{S}})
-\end{align}
 $$
 其中，$\tilde{\textbf{S}}\in\mathbb{R}^{H_ST\times d}$表示从$\bar{\textbf{s}}_{i,t}$得到的重塑嵌入矩阵，其中$i\in H_S$，$t\in T$。$\textbf{H}''\in\mathbb{R}^{H_M\times H_ST}$表示高层超图结构，是通过上述定制参数学习器获得的。参数定制学习器将所有$t\in T$的时间特征$\bar{\textbf{z}}^{(d)}_t, \bar{\textbf{z}}^{(w)}_t$作为输入并生成参数。
 
 在对于$i\in H_S, t \in T$的聚类嵌入$\hat{\textbf{s}}_{i,t}\in\mathbb{R}^{d}$进行改进后，我们通过低层超图结构将聚类嵌入传播回区域嵌入，具体如下：
 $$
-\begin{align}
     \mathbf{\Psi}_{r,t} = \sigma(\textstyle \sum_{i=1}^{H_S} c_{i,r,t} \cdot \hat{\textbf{s}}_{i,t} \textbf{W}''_r + \textbf{b}_r'' + \mathbf{\Gamma}_{r,t})
-    \label{eq:c2r}
-\end{align}
+
 $$
 其中，$\mathbf{\Psi}_{r,t}\in\mathbb{R}^d$ 表示第 $t$ 个时间节中第 $r$ 个区域的新区域嵌入。$c_{i,r,t}\in\mathbb{R}$ 表示低层超图胶囊网络的权重。$\textbf{W}_r''\in\mathbb{R}^{d\times d}$ 和 $\textbf{b}_r''\in\mathbb{R}^d$ 表示由定制参数学习器生成的区域特定的转换和偏置参数。
 
