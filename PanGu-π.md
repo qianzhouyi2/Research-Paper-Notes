@@ -38,18 +38,14 @@ Transformer架构用于构建用于自然语言处理（NLP）任务的编码器
  在标准Transformer架构之外，一系列研究探索了架构修改（尤其是MSA [14], [15]或FFN[4], [7]），以寻求更好的性能。
 
 - PaLM [4]和LLaMA [7]使用基于SwiGLU的FFN [16]，它由两个线性层的分量积组成，展现了显著提高的生成质量。
-
+![[PanGu-π.assets/Pasted image 20240513155559.png]]
 - RWKV（Receptance Weighted Key Value） [14]提出了一种RNN风格的注意力机制，以减轻标准MSA中的二次复杂性。
 
 - Switch Transformer [17]为每个输入示例分配不同的参数，得到一个稀疏激活的模型。 
 
-LLM的开发是一项复杂的系统工程，其中包括数据准备、数据清理、模型架构、集群通信和优化器。
+LLM的开发是一项复杂的系统工程，其中模型架构设计是最重要的组成部分，它决定了部署的LLM的最大性能潜力。在2022-2023年的最新项目中，常用于二次开发的热门版本是GPT-3 [3]和LLaMA [7]。特征崩溃问题影响Transformer架构的表达能力。
 
-> data preparation, data cleaning, model architecture, cluster commutation, and optimizer
-
-模型架构设计是最重要的组成部分之一，它决定了部署的LLM的最大性能潜力。在2022-2023年的最新项目中，常用于二次开发的热门版本是GPT-3 [3]和LLaMA [7]。作者发现特征崩溃问题也影响Transformer架构的表达能力。
-
-以LLaMA为例， 使用排名度量 （rank metric）[19]对其特征崩溃现象进行了经验分析。
+以LLaMA为例， 使用排名度量 （rank metric）[19]对其特征崩溃现象进行了分析。
 
 > 排名指标通过两个矩阵的差值来衡量它们之间的距离。
 
