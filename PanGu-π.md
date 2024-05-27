@@ -174,7 +174,7 @@ $$
 \end{equation}
 $$
 其中$\boldsymbol{Z}_l\in \R^{N\times d}$是第$l$个$MSA$层的特征，$\boldsymbol{A}_{lh}\in \R^{N\times N}$和$\boldsymbol{W}^v_{lh} \in \R^{d\times (d/H)}$是第$h$个头的相应的注意力变换和值投影矩阵。$Concat(\cdot)$表示$H$个头的特征拼接运算，$\boldsymbol{W}^o_l\in \R^{d\times d}$是输出投影矩阵。
-
+	
 注意力矩阵$\boldsymbol{A}_{lh}$通过自注意力机制计算，即
 $$
 \begin{equation}
