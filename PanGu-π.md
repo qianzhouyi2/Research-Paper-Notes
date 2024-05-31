@@ -8,7 +8,9 @@
 
 大型语言模型的最近趋势是增加模型规模（即参数数量）和数据集以实现更好的生成能力，这一点已经在许多工作中得到证明，例如著名的GPT和Llama。然而，大型模型往往涉及巨大的计算成本，实际应用无法负担如此高昂的价格。然而，关于构建LLMs强大模型架构的方法很少被讨论。作者首先分析了最先进的语言模型架构，并观察到特征坍塌（feature collapse）问题。
 
-> 这里的特征崩塌主要指秩崩塌![[PanGu-π.assets/Pasted image 20240527090007.png]]
+> 这里的特征崩塌主要指秩崩塌
+>
+> <img src="PanGu-π.assets/Pasted image 20240527090007.png" alt="Pasted image 20240527090007" style="zoom:67%;" />
 
 基于理论分析，本文提出非线性在语言模型中也非常重要，这通常是在用于视觉任务的卷积神经网络中的研究内容。然后，通过可忽略的微小计算引入系列信息激活函数（informed activation function），并进一步使用增强捷径（augmented shortcut）来增强模型的非线性。然后通过精心设计的消融试验证明了所提出的方法对于增强模型的非线性具有显著效果，从而本文提出了一个用于构建现代模型的高效模型架构，即PanGu-*π*。随后，本文使用相同的数据集和训练策略进行实验，将PanGu-*π*与最先进的LLMs进行比较。结果表明，PanGu-*π*-7B在推理速度提高约10%的情况下实现与基准模型相当的性能，而PanGu-*π*-1B在精度和效率方面可以实现最先进的性能。此外，将PanGu-*π*-7B部署在金融和法律等高价值领域，开发了名为YunShan的LLM进行实际应用。结果显示，YunShan可以超越其他类似规模的模型在基准测试上的表现。
 
@@ -160,9 +162,7 @@ HanFei、LaWGPT、 Lawyer-llama、 WisdomInterrogatory和Fuzi.Mingcha [92], [10]
 
 ## 3 准备工作和动机
 
-深入分析Transformer架构的组成部分，以及它们的非线性表达能力。
-
-Transformer 架构由两部分组成：多头自注意力(multi-head selfattention,MSA)和多层感知器模块(multi-layer perceptrons modules,MLP)。
+Transformer 架构有两部分组成，多头自注意力(multi-head selfattention,MSA)和多层感知器模块(multi-layer perceptrons modules,MLP)。
 
 具有 H个头的 MSA 模块定义为:
 $$
@@ -175,7 +175,7 @@ $$
 $$
 其中$\boldsymbol{Z}_l\in \R^{N\times d}$是第$l$个$MSA$层的特征，$\boldsymbol{A}_{lh}\in \R^{N\times N}$和$\boldsymbol{W}^v_{lh} \in \R^{d\times (d/H)}$是第$h$个头的相应的注意力变换和值投影矩阵。$Concat(\cdot)$表示$H$个头的特征拼接运算，$\boldsymbol{W}^o_l\in \R^{d\times d}$是输出投影矩阵。
 	
-注意力矩阵$\boldsymbol{A}_{lh}$通过自注意力机制计算，即
+注意力矩阵$\boldsymbol{A}_{lh}$通过自注意力机制计算，
 $$
 \begin{equation}
 	\boldsymbol{A}_{lh}={\rm softmax}\left(\frac{(\boldsymbol{Z}_{l}\boldsymbol{W}^q_{lh})(\boldsymbol{Z}_{l}\boldsymbol{W}^k_{lh})^\top}{\sqrt d}\right),
@@ -183,7 +183,7 @@ $$
 $$
 其中，$\boldsymbol{W}^q_{lh}\in \R^{d\times (d/H)}$和$\boldsymbol{W}^k_{lh}\in \R^{d\times (d/H)}$分别是查询和值投影矩阵。注意力$\boldsymbol{A}_{lh}$反映了不同token之间的关系，较大的值$\boldsymbol{A}_{lh}^{ij}$表示token$i$和token$j$之间的关系更强。
 
-定义一个MLP模块为
+MLP模块定义为
 $$
 \begin{equation}
 	MLP (\boldsymbol{Z}'_{l}) = \sigma(\boldsymbol{Z}'_{l}\boldsymbol{W}'_{l_1})\boldsymbol{W}'_{l_2},~l \in [1,2,\cdots, L],
@@ -193,7 +193,11 @@ $$
 
 在Transformer架构中，非线性表达能力来自两个方面：MSA和MLP中的激活函数。
 
-定义 $\mathcal{M}_m:=\{\boldsymbol{Y}\in\mathbb{R}^{N\times m}|\boldsymbol{Y}=\boldsymbol{1x}^\top, \boldsymbol{x}^\top\in\mathbb{R}^{1\times m}\}$ 为 $\mathbb{R}^{N\times m}$ 中的子空间，其中 $\boldsymbol{1}=[1, 1, \dots, 1]^\top\in\mathbb{R}^{N\times1}$，$n$ 是token数量，$d$ 是token表示的维数。定义矩阵 $\boldsymbol{H}\in\mathbb{R}^{N\times m}$ 与$\mathcal{M}_m$之间的距离为$d_{\mathcal{M}_m(\boldsymbol{H})}:=\min_{\boldsymbol{Y}\in\mathcal{M}_m} \Vert\boldsymbol{H}-\boldsymbol{Y}\Vert_F$,其中 $\Vert\cdot\Vert_F$ 是Frobenius范数。$d_{\mathcal{M}_m}(\boldsymbol{Z_l})$是衡量Transformer架构能力和非线性性的常用度量。研究层 $l$ 的输出 $\boldsymbol{Z_l}$ 与子空间 $\mathcal{M}_d$ 之间的距离。
+定义 $\mathcal{M}_m:=\{\boldsymbol{Y}\in\mathbb{R}^{N\times m}|\boldsymbol{Y}=\boldsymbol{1x}^\top, \boldsymbol{x}^\top\in\mathbb{R}^{1\times m}\}$ 为 $\mathbb{R}^{N\times m}$ 中的子空间，其中 $\boldsymbol{1}=[1, 1, \dots, 1]^\top\in\mathbb{R}^{N\times1}$，$n$ 是token数量，$d$ 是token的维数。
+
+定义矩阵 $\boldsymbol{H}\in\mathbb{R}^{N\times m}$ 与$\mathcal{M}_m$之间的距离为$d_{\mathcal{M}_m(\boldsymbol{H})}:=\min_{\boldsymbol{Y}\in\mathcal{M}_m} \Vert\boldsymbol{H}-\boldsymbol{Y}\Vert_F$,其中 $\Vert\cdot\Vert_F$ 是Frobenius范数。
+
+$d_{\mathcal{M}_m}(\boldsymbol{Z_l})$是衡量Transformer架构能力和非线性性的常用度量。研究层 $l$ 的输出 $\boldsymbol{Z_l}$ 与子空间 $\mathcal{M}_d$ 之间的距离。
 
 > ![image-20240115145155773](PanGu-π.assets/image-20240115145155773.png)
 
@@ -228,7 +232,6 @@ $$
 		&=tr\{(\boldsymbol{I}-\boldsymbol{ee}^\top)\boldsymbol{H}\boldsymbol{WW}^\top\boldsymbol{H}^\top(\boldsymbol{I}-\boldsymbol{ee}^\top)\} \\
 		&=tr\{\boldsymbol{WW}^\top\boldsymbol{H}^\top(\boldsymbol{I}-\boldsymbol{ee}^\top)\boldsymbol{H}\}\\
 		&=tr\{\boldsymbol{PD{P}^\top}\boldsymbol{H}^\top(\boldsymbol{I}-\boldsymbol{ee}^\top)\boldsymbol{H}\}\\
-		&=tr\{\boldsymbol{D{P}^\top}\boldsymbol{H}^\top(\boldsymbol{I}-\boldsymbol{ee}^\top)\boldsymbol{HP}\}\\
 		&=tr\{\boldsymbol{D{P}^\top}\boldsymbol{H}^\top(\boldsymbol{I}-\boldsymbol{ee}^\top)\boldsymbol{HP}\}\\
 		&=\sum_{i=1}^N d_i\boldsymbol{p}_i^\top\boldsymbol{H}^\top(\boldsymbol{I}-\boldsymbol{ee}^\top)\boldsymbol{H}\boldsymbol{p}_i\\
 		&\leq \sum_{i=1}^N s^2\boldsymbol{p}_i^\top\boldsymbol{H}^\top(\boldsymbol{I}-\boldsymbol{ee}^\top)\boldsymbol{H}\boldsymbol{p}_i\\
@@ -269,6 +272,8 @@ $$
 $$
   (4) 对于最后一个不等式，参考了[100].
 
+<img src="PanGu-π.assets/image-20240527105322039.png" alt="image-20240527105322039" style="zoom:67%;" />
+
 
 **Theorem 1.**给定一个由 MSA 模块堆叠的模型，第$l$层中特征的多样性$d_\mathcal{M}(\boldsymbol{Z_l})$ 可以受输入数据$\boldsymbol{Z_0}$ 的多样性限制，即
 $$
@@ -296,6 +301,18 @@ $$
 
   \end{align*}
 $$
+**Proof**:
+$$
+\begin{align*}
+		&d_{\mathcal{M}_{Hm}}(Concat ([\boldsymbol{H}_h]_{h=1}^H))^2 \\
+		=&\Vert(\boldsymbol{I}-\boldsymbol{ee}^\top)Concat ([\boldsymbol{H}_h]_{h=1}^H) \Vert^2_F \\
+		=&{tr\{(\boldsymbol{I}-\boldsymbol{ee}^\top)Concat ([\boldsymbol{H}_h]_{h=1}^H)Concat ([\boldsymbol{H}_h]_{h=1}^H)^\top\}} \\
+		=&tr\{Concat ([\boldsymbol{H}_h]_{h=1}^H)Concat ([\boldsymbol{H}_h]_{h=1}^H)^\top\}\\
+		&-tr\{Concat ([\boldsymbol{e}^\top\boldsymbol{H}_h]_{h=1}^H)Concat ([\boldsymbol{ee}^\top\boldsymbol{H}_h]_{h=1}^H)^\top\} \\
+		=&\sum_{h=1}^{H}{tr\{(\boldsymbol{I}-\boldsymbol{ee}^\top)\boldsymbol{H}_h\boldsymbol{H}_h^\top\}} \\
+		=& \sum_{h=1}^{H}d_{\mathcal{M}_m}(\boldsymbol{H}_h)^2,
+	\end{align*}
+$$
 **Theorem 2.**给定由 MSA 模块堆叠的模型，第$l$层中特征的多样性 $d_\mathcal{M}(\boldsymbol{Z}_l)$可以受输入数据 $\boldsymbol{Z}_0$的多样性限制，即
 $$
 \begin{align*}
@@ -304,6 +321,24 @@ $$
 	\end{align*}
 $$
 其中  $H$  是头个数，$s>0$  是所有$\boldsymbol{W}^v_{lh}$的所有奇异值的最大元素， $\upsilon_{1}$是所有  $\boldsymbol{W}^o_{l}$ 的所有奇异值的最大元素。
+
+**Proof**：
+$$
+\begin{align*}
+		{MSA} (\boldsymbol{Z}_l)=  Concat ([\boldsymbol{A}_{lh}\boldsymbol{Z}_{l}\boldsymbol{W}^v_{lh}]_{h=1}^H)\boldsymbol{W}^o_{l},
+	\end{align*}
+$$
+
+$$
+\begin{align*}
+		d_{\mathcal{M}_d}(\boldsymbol{Z}_{l+1})&= d_{\mathcal{M}_d}(Concat ([\boldsymbol{A}_{lh}\boldsymbol{Z}_{l}\boldsymbol{W}^v_{lh}]_{h=1}^H)\boldsymbol{W}^o_{l}) \\
+		&\leq \upsilon_1 d_{\mathcal{M}_d}(Concat ([\boldsymbol{A}_{lh}\boldsymbol{Z}_{l}\boldsymbol{W}^v_{lh}]_{h=1}^H)) \\
+		&\leq \upsilon_1\sqrt{\sum_{h=1}^H d_{\mathcal{M}_d}(\boldsymbol{A}_{lh}\boldsymbol{Z}_{l}\boldsymbol{W}^v_{lh})^2}\\ 
+		&\leq \sqrt{\lambda}s\upsilon_1\sqrt{\sum_{h=1}^H d_{\mathcal{M}_d}(\boldsymbol{Z}_{l})^2} \\
+		&= \sqrt{\lambda H}s\upsilon_1d_{\mathcal{M}_d}(\boldsymbol{Z}_{l}) \\
+		&\leq (\sqrt{\lambda H} s\upsilon_1)^{l+1}d_{\mathcal{M}_d}(\boldsymbol{Z}_0). \\
+	\end{align*}
+$$
 
 进一步假设${\boldsymbol{A}}$是双随机矩阵（即${\boldsymbol{A}}^\top{\boldsymbol{e}}={\boldsymbol{e}}$）且具有正的元素。根据Perron-Frobenius定理，${\boldsymbol{A}}^\top{\boldsymbol{A}}$的最大特征值是1，对应的特征向量是${\boldsymbol{e}}$。在这种情况下，矩阵${\boldsymbol{A}}^\top({\boldsymbol{I}}-{\boldsymbol{ee}}^\top){\boldsymbol{A}}={\boldsymbol{A}}^\top{\boldsymbol{A}}-{\boldsymbol{ee}}^\top$有一个最大特征值$\lambda_{max}<1$。
 
@@ -320,7 +355,30 @@ $$
 $$
 其中 $s>0$是所有$\boldsymbol{W}'_{l_1}$的所有奇异值的最大元素，$\upsilon_{2}$ 是所有 $\boldsymbol{W}'_{l_2}$的所有奇异值的最大元素，$L$是激活函数$\sigma(\cdot)$的 Lipschitz 常数。
 
-MLP的多样性由两个因素构成：参数的特征值和激活函数的Lipschitz常数。在神经网络中，参数通常被标准化，这意味着这些参数的最大特征值是有界的。此外，神经网络中的参数是通过反向传播学习的。考虑到这些因素，对参数特征值施加限制变得具有挑战性。因此，MLP中的激活函数成为其非线性表达能力最重要的方面。
+**Proof**:
+$$
+\begin{align*}
+		MLP (\boldsymbol{Z}'_{l}) = \sigma(\boldsymbol{Z}'_{l}\boldsymbol{W}'_{l_1})\boldsymbol{W}'_{l_2},~l \in [1,2,\cdots, L],
+	\end{align*}
+$$
+
+$$
+\begin{align*}
+		d_{\mathcal{M}_d}(MLP (\boldsymbol{Z}'_{l})))&= d_{\mathcal{M}_d}(\sigma(\boldsymbol{Z}'_{l}\boldsymbol{W}'_{l_1})\boldsymbol{W}'_{l_2}) \\
+		&\leq \upsilon_2d_{\mathcal{M}_d}(\sigma(\boldsymbol{Z}'_{l}\boldsymbol{W}'_{l_1})) \\
+		&\leq L\upsilon_2d_{\mathcal{M}_d}(\boldsymbol{Z}'_{l}\boldsymbol{W}'_{l_1}) \\ 
+		&\leq  Ls\upsilon_2d_{\mathcal{M}_d}(\boldsymbol{Z}'_{l}) \\
+	\end{align*}
+$$
+
+$$
+\begin{align*}
+		d_{\mathcal{M}_d}(\boldsymbol{Z}'_l)&\leq (Ls\upsilon_2)d_{\mathcal{M}_d}(\boldsymbol{Z}'_{l-1}) \\
+		&\leq (Ls\upsilon_2)^{l}d_{\mathcal{M}_d}(\boldsymbol{Z}'_0).
+	\end{align*}
+$$
+
+MLP的多样性由两个因素构成：参数的特征值和激活函数的Lipschitz常数。在神经网络中，参数通常被标准化，这意味着这些参数的最大特征值是有界的。此外，神经网络中的参数是通过反向传播学习的。考虑到这些因素，对参数特征值施加限制具有挑战性。因此，MLP中的激活函数成为其非线性表达能力最重要的方面。
 
 ## 4 PANGU-π模型和架构
 
@@ -358,6 +416,12 @@ $$
 $$
 其中$\Theta_{li}\in \R^{d\times d}$是权重矩阵，$\sigma$是非线性激活函数（例如，GELU）。
 
+> <img src="PanGu-π.assets/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5aSc5pmT5bKa5ri65ri6,size_20,color_FFFFFF,t_70,g_se,x_16.png" alt="img" style="zoom: 50%;" />
+>
+> <img src="PanGu-π.assets/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5aSc5pmT5bKa5ri65ri6,size_20,color_FFFFFF,t_70,g_se,x_16-1716779591388-13.png" alt="img" style="zoom:50%;" />
+>
+> <img src="PanGu-π.assets/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5aSc5pmT5bKa5ri65ri6,size_20,color_FFFFFF,t_70,g_se,x_16-1716779561435-6.png" alt="img" style="zoom:50%;" />
+
 $\mathcal{T}_{li}(\cdot)$独立处理每个token并保留其特异性，这与聚合不同标记的MSA模块相辅相成。恒等映射是特例，即$\sigma(x)=x$且$\boldsymbol{\Theta}_{li}$是单位矩阵。
 
 这表明在没有捷径的情况下，特征多样性的上限$d_{\mathcal{M}_d}(\boldsymbol{Z}_l)$随着网络深度的增加而显著降低。通过分析AugMSA模块堆叠的模型中，多样性$d_{\mathcal{M}_d}(\boldsymbol{Z}_l)$如何随层$l$变化。有以下定理：
@@ -376,6 +440,33 @@ $$
 $$
 其中$H$是头的数量，s$>0$是所有 $\boldsymbol{W}_l$的所有奇异值的最大元素，$\Vert\cdot\Vert_2$是矩阵的$\ell_2$范数。
 
+**Proof:**
+$$
+\begin{align*}
+		{\rm AugMSA} (\boldsymbol{Z}_{l})=MSA(\boldsymbol{Z}_l) + \boldsymbol{Z}_l  +  \sum_{i=1
+		}^T T_{{li}}(\boldsymbol{Z}_{l};\boldsymbol{\Theta}_{li}),\\ 
+	\end{align*}
+$$
+
+$$
+\begin{align*}
+		&d_{\mathcal{M}_d}({\rm AugMSA} (\boldsymbol{Z_{l}}))\\
+		&= d_{\mathcal{M}_d}(MSA(\boldsymbol{Z}_l) + \boldsymbol{Z}_l  +  \sum_{i=1
+		}^T T_{{li}}(\boldsymbol{Z}_{l};\boldsymbol{\Theta}_{li})) \\
+		&\leq d_{\mathcal{M}_d}(MSA(\boldsymbol{Z}_l)) + d_{\mathcal{M}_d}(\boldsymbol{Z}_l) + d_{\mathcal{M}_d}(\sum_{i=1}^T T_{{li}}(\boldsymbol{Z}_{l};\boldsymbol{\Theta}_{li}))\\
+		&\leq d_{\mathcal{M}_d}(MSA(\boldsymbol{Z}_l)) + d_{\mathcal{M}_d}(\boldsymbol{Z}_l) + \sum_{i=1}^T d_{\mathcal{M}_d}(\sigma(\boldsymbol{Z}_{l}\boldsymbol{\Theta}_{li})) \\   
+		&\leq  (\sqrt{\lambda H} s\upsilon_1 + 1)d_{\mathcal{M}_d}(\boldsymbol{Z}'_{l}) + L\sum_{i=1}^T d_{\mathcal{M}_d}(\boldsymbol{Z}_{l}\boldsymbol{\Theta}_{li})\\
+		&\leq (\sqrt{\lambda H} s\upsilon_1 + 1+ \sum_{i=1}^T L\Vert \boldsymbol{\Theta}_{li}\Vert_2)d_{\mathcal{M}_d}(\boldsymbol{Z}_l).
+	\end{align*}
+$$
+
+假定多头自注意力机制有$H$个头，
+$$
+\begin{align*}
+		&d_{\mathcal{M}_d}(\boldsymbol{Z}_{l})
+		\leq (\sqrt{\lambda H} s\upsilon_1 + 1+ \sum_{i=1}^T L\Vert \boldsymbol{\Theta}_{li}\Vert_2)^ld_{\mathcal{M}_d}(\boldsymbol{Z}_0).
+	\end{align*}
+$$
 由于$\alpha_i = (\sqrt{\lambda H} s\upsilon_1 + 1+ \sum_{i=1}^T L\Vert  \boldsymbol{\Theta}_{li}\Vert_2) > 1$，这使得能够防止特征坍缩。
 
 与定理2相比，增强捷径引入了额外的项$(\sqrt{\lambda H} s\upsilon_1 + 1+ \sum_{i=1}^T L\Vert \boldsymbol{\Theta}_{li}\Vert_2)^l$，这种增长是指数级的。这有助于抑制注意机制引起的多样性衰减。项$\alpha_i$ ($0\le i\le l$)由增强捷径在第$l$层的权重矩阵$\boldsymbol{\Theta}_{li}$的范数和多样性上限$d_{\mathcal{M}_d}(\boldsymbol{Z}_{l})$决定，前面各层的增强捷径都会影响到第$l$层的多样性上限。对于只有一个恒等捷径的ShortcutMSA模块，有$\alpha_i=\sqrt{\lambda} Hs\upsilon_1 + 1$。增加更多的增强捷径可以增加$\alpha_i$的大小，从而进一步改善上限。
@@ -418,12 +509,51 @@ $$
 		&\leq \sqrt{\lambda_{\boldsymbol{A+\delta}}H} s\upsilon_1 \Vert  \boldsymbol{\epsilon} \Vert_F + \sqrt{\lambda_{\boldsymbol{\delta}}H}s\upsilon_1 d_{\mathcal{M}_d}(\boldsymbol{Z}_{l}),\\
 	\end{align*}
 $$
+**Proof**:
+$$
+{MSA} (\boldsymbol{Z}_l)=  \boldsymbol{A}\boldsymbol{Z}_{l}\boldsymbol{W}\boldsymbol{W}^o_{l}
+$$
+
+$$
+\begin{align*}
+		&d_{\mathcal{M}_d}({\rm MSA}(\boldsymbol{Z_{l}+\epsilon}) -{\rm MSA}(\boldsymbol{Z_{l}}))\\
+		&= \Vert (\boldsymbol{I}-\boldsymbol{ee}^\top )((\boldsymbol{A+\delta})(\boldsymbol{Z}_{l}+\boldsymbol{\epsilon})-\boldsymbol{AZ}_{l} ) (\boldsymbol{W}\boldsymbol{W}^o_{l})\Vert_F\\
+		&= \Vert (\boldsymbol{I}-\boldsymbol{ee}^\top )((\boldsymbol{A+\delta})\boldsymbol{\epsilon} + \boldsymbol{\delta Z}_{l}) (\boldsymbol{W}\boldsymbol{W}^o_{l})\Vert_F\\
+		&\leq d_{\mathcal{M}_d}(\boldsymbol{A_{\epsilon} }\boldsymbol{\epsilon}\boldsymbol{W}\boldsymbol{W}^o_{l}) + d_{\mathcal{M}_d}(\boldsymbol{ \delta Z_{l} }  \boldsymbol{W}\boldsymbol{W}^o_{l})\\
+		&\leq \sqrt{\lambda_{\boldsymbol{A+\delta}}} s\upsilon_1 \Vert  \boldsymbol{\epsilon} \Vert_F + \sqrt{\lambda_{\boldsymbol{\delta}}}s\upsilon_1 d_{\mathcal{M}_d}(\boldsymbol{Z}_{l}),\\
+	\end{align*}
+$$
+
+$$
+{MSA} (\boldsymbol{Z}_l)=  Concat ([\boldsymbol{A}_{lh}\boldsymbol{Z}_{l}\boldsymbol{W}^v_{lh}]_{h=1}^H)\boldsymbol{W}^o_{l},
+$$
+
+$$
+\begin{align*}
+		&d_{\mathcal{M}_d}({\rm MSA}(\boldsymbol{Z_{l}+\epsilon}) -{\rm MSA}(\boldsymbol{Z_{l}}))\\
+		&= \upsilon_1d_{\mathcal{M}_d}( Concat ([({\boldsymbol{A_\epsilon}}_{lh}(\boldsymbol{Z}_{l}+\boldsymbol{\epsilon}) - \boldsymbol{A}_{lh}\boldsymbol{Z}_{l})\boldsymbol{W}^v_{lh}]_{h=1}^H))\\
+		&\leq \sqrt{\lambda_{\boldsymbol{A+\delta}}H} s\upsilon_1 \Vert  \boldsymbol{\epsilon} \Vert_F + \sqrt{\lambda_{\boldsymbol{\delta}}H}s\upsilon_1 d_{\mathcal{M}_d}(\boldsymbol{Z}_{l}),\\
+	\end{align*}
+$$
+
 **Lemma 4.**考虑线性并行分支的噪声多样性： 
 $$
 \begin{align*}
 			&d_{\mathcal{M}_d}(L (\boldsymbol{Z}_l+\boldsymbol{\epsilon})\boldsymbol{\Theta}_{li}- L\boldsymbol{Z}_l\boldsymbol{\Theta}_{li}) \leq L  \Vert \boldsymbol{\Theta}_{li} \Vert_2\Vert\boldsymbol{\epsilon} \Vert_F,
 		\end{align*}
 $$
+$$
+\begin{align*}
+			&d_{\mathcal{M}_d}(L (\boldsymbol{Z}_l+\boldsymbol{\epsilon})\boldsymbol{\Theta}_{li}-L \boldsymbol{Z}_l\boldsymbol{\Theta}_{li}) \\
+			&=d_{\mathcal{M}_d}(L \boldsymbol{\epsilon}\boldsymbol{\Theta}_{li}) \\
+			&=L \Vert (\boldsymbol{I}-\boldsymbol{ee}^\top)\boldsymbol{\epsilon}\boldsymbol{\Theta}_{li}\Vert_F \\
+			&= L \Vert \boldsymbol{\epsilon}\boldsymbol{\Theta}_{li} - \boldsymbol{1{x^{\boldsymbol{\epsilon}\boldsymbol{\Theta}_{li}}}_{\min}}^\top\Vert_F \\
+			&\leq L   \Vert \boldsymbol{\epsilon\Theta}_{li} \Vert_F \\
+			&\leq L \Vert \boldsymbol{\Theta}_{li} \Vert_2 \Vert \boldsymbol{\epsilon} \Vert_F.
+		\end{align*}
+	
+$$
+
 **Theorem 5.**当且仅当 $\boldsymbol{ee}^\top (\sigma(\boldsymbol{Z}_{l}+\boldsymbol{\epsilon}) -\sigma(\boldsymbol{Z}_{l})) = \boldsymbol{0}$,以下不等式相等：
 $$
 \begin{align*}
@@ -437,15 +567,41 @@ $$
 		d_{\mathcal{M}_d}(\mathcal{T}_{{li}}(\boldsymbol{Z}_{l}+\boldsymbol{\epsilon};\boldsymbol{\Theta}_{li})-\mathcal{T}_{{li}}(\boldsymbol{Z}_{l};\boldsymbol{\Theta}_{li})) < L\Vert \boldsymbol{\Theta}_{li} \Vert_2\Vert \boldsymbol{\epsilon} \Vert_F.
 	\end{align*}
 $$
+**Proof**:
+$$
+\begin{align*}
+			&d_{\mathcal{M}_d}(T_{{li}}(\boldsymbol{Z}_{l}+\boldsymbol{\epsilon};\boldsymbol{\Theta}_{li})-T_{{li}}(\boldsymbol{Z}_{l};\boldsymbol{\Theta}_{li})) \\
+			&=d_{\mathcal{M}_d}(\sigma((\boldsymbol{Z}_{l}+\boldsymbol{\epsilon})\boldsymbol{\Theta}_{li})-\sigma(\boldsymbol{Z}_{l}\boldsymbol{\Theta}_{li})) \\
+			&= \Vert (\boldsymbol{I}-\boldsymbol{ee}^\top)(\sigma((\boldsymbol{Z}_{l}+\boldsymbol{\epsilon})\boldsymbol{\Theta}_{li})-\sigma(\boldsymbol{Z}_{l}\boldsymbol{\Theta}_{li}))\Vert_F \\
+			&\leq \Vert \boldsymbol{I}-\boldsymbol{ee}^\top \Vert_2 \Vert (\sigma((\boldsymbol{Z}_{l}+\boldsymbol{\epsilon})\boldsymbol{\Theta}_{li})-\sigma(\boldsymbol{Z}_{l}\boldsymbol{\Theta}_{li})\Vert_F \\
+			&=  \Vert (\sigma((\boldsymbol{Z}_{l}+\boldsymbol{\epsilon})\boldsymbol{\Theta}_{li})-\sigma(\boldsymbol{Z}_{l}\boldsymbol{\Theta}_{li})\Vert_F \\
+			&\leq L   \Vert \boldsymbol{\epsilon\Theta}_{li} \Vert_F.\\
+			&\leq L \Vert \boldsymbol{\Theta}_{li} \Vert_2 \Vert \boldsymbol{\epsilon} \Vert_F.
+		\end{align*}
+$$
+因为$\boldsymbol{ee}^\top (\sigma(\boldsymbol{Z}_{l}+\boldsymbol{\epsilon}) -\sigma(\boldsymbol{Z}_{l})) \neq \boldsymbol{0}$
+$$
+\begin{align*}
+		&\Vert (\boldsymbol{I}-\boldsymbol{ee}^\top)(\sigma((\boldsymbol{Z}_{l}+\boldsymbol{\epsilon})\boldsymbol{\Theta}_{li})-\sigma(\boldsymbol{Z}_{l}\boldsymbol{\Theta}_{li}))\Vert_F \\
+		&<  \Vert \sigma((\boldsymbol{Z}_{l}+\boldsymbol{\epsilon})\boldsymbol{\Theta}_{li})-\sigma(\boldsymbol{Z}_{l}\boldsymbol{\Theta}_{li})\Vert_F. \\
+	\end{align*}
+$$
 **Theorem 6.**给定由 AugMSA 模块堆叠的模型，第$ l $层中特征的噪声多样性可以由以下公式界定，即：
 $$
-\begin{equation*}
-		\scriptsize
-		\begin{aligned}
+\begin{aligned}
 			&d_{\mathcal{M}_d}({\rm AugMSA}(\boldsymbol{Z}_{l}+\boldsymbol{\epsilon}) - {\rm AugMSA}(\boldsymbol{Z}_{l}))\\
 			&< (1+\sqrt{\lambda_{\boldsymbol{A+\delta}}H} s\upsilon_1  + L \sum_{i=1}^T \Vert \boldsymbol{\Theta}_{li} \Vert_2)\Vert  \boldsymbol{\epsilon} \Vert_F + \sqrt{\lambda_{\boldsymbol{\delta}}H}s\upsilon_1 d_{\mathcal{M}_d}(\boldsymbol{Z}_{l})\\
 		\end{aligned}
-	\end{equation*}
+$$
+**Proof:**
+$$
+\begin{aligned}
+			&d_{\mathcal{M}_d}({\rm AugMSA}(\boldsymbol{Z}_{l}+\boldsymbol{\epsilon}) - {\rm AugMSA}(\boldsymbol{Z}_{l}))\\
+			&=d_{\mathcal{M}_d}({\rm MSA}(\boldsymbol{Z}_{l}+\boldsymbol{\epsilon}) -{\rm MSA}(\boldsymbol{Z}_{l})) + d_{\mathcal{M}_d}( (\boldsymbol{Z}_l+\boldsymbol{\epsilon})- \boldsymbol{Z}_l)\\
+			& + \sum_{i=1}^T d_{\mathcal{M}_d}(\sigma((\boldsymbol{Z}_{l}+\boldsymbol{\epsilon})\boldsymbol{\Theta}_{li})-\sigma(\boldsymbol{Z}_{l}\boldsymbol{\Theta}_{li})) \\
+			&< (1+\sqrt{\lambda_{\boldsymbol{A+\delta}}H} s\upsilon_1 )\Vert  \boldsymbol{\epsilon} \Vert_F +  \sum_{i=1}^T L\Vert \boldsymbol{\epsilon}\boldsymbol{\Theta}_{li} \Vert_F + \sqrt{\lambda_{\boldsymbol{\delta}}H}s\upsilon_1 d_{\mathcal{M}_d}(\boldsymbol{Z}_{l}) \\
+			&\leq (1+\sqrt{\lambda_{\boldsymbol{A+\delta}}H} s\upsilon_1  + L\sum_{i=1}^T\Vert \boldsymbol{\Theta}_{li} \Vert_2)\Vert  \boldsymbol{\epsilon} \Vert_F + \sqrt{\lambda_{\boldsymbol{\delta}}H}s\upsilon_1 d_{\mathcal{M}_d}(\boldsymbol{Z}_{l})
+		\end{aligned}
 $$
 这表明，使用大量的非线性捷径，而不是$ L\boldsymbol{Z}_l(\sum_{i=1}^T \boldsymbol{\Theta}_{li}) $，可以防止特征的塌陷，减少输入噪声对特征多样性的影响，并增强网络的鲁棒性。此外，它还增强了非线性表达能力。
 
@@ -453,9 +609,11 @@ $$
 
 一个由d个隐藏层组成的神经网络$N_d$可以被看作是d个函数$f_i$的组合：$N_d = f_1 \circ f_2 \circ \cdots \circ f_d$。
 
-特别地，每个隐藏层函数$f_i$可以被写成函数$g_i$和激活函数$\sigma_i$的组合：$f_i = \sigma_i \circ g_i$。实际上，$f_i$的学习过程可以看作是在层假设空间$H_i$上的一个优化问题。
+特别地，每个隐藏层函数$f_i$可以被写成函数$g_i$和激活函数$\sigma_i$的组合：$f_i = \sigma_i \circ g_i$。$f_i$的学习过程可以看作是在层假设空间$H_i$上的一个优化问题。
 
-通常情况下，$\phi_i$被视为不可学习的函数；因此，在最常见的场景下，$H_i={\sigma_i}\times H_{g_i}$。$g_i$是可参数化和可学习的，并且属于假设空间$H_{g_i}$。这显然限制了可学习的空间。
+> 监督学习的目的在于学习一个由输入到输出的映射，这一映射由模型来表示。换句话说，学习的目的就在于找到最好的这样的模型。模型属于由输入空间到输出空间的映射的集合，这个集合就是假设空间（hypothesis space）。假设空间的确定意味着学习的范围的确定。
+
+通常情况下，$\phi_i$被视为不可学习的函数；因此，在最常见的场景下，$H_i={\sigma_i}\times H_{g_i}$。$g_i$是可参数化和可学习的，并且属于假设空间$H_{g_i}$。这限制了可学习的空间。
 
 定义可学习的激活函数，这些函数可以被插入到MLP的所有隐藏层中。基于以下思想定义了假设空间$H_{\phi_i}$：（i）选择一个有限的激活函数集合$\Sigma := \{\sigma_1, \cdots , \sigma_N \}$，其元素将被用作基元；（ii）将可学习的激活函数$\phi_i$定义为$\Sigma$的元素的线性组合；（iii）确定一个合适的假设空间$H_{\phi_i}$；（iv）优化整个网络，其中每个隐藏层的假设空间为$H_i = H_{\phi_i} \times H_{g_i}$。通过这种方式，扩展了每个隐藏层的可学习空间，增强了模型的非线性表达能力。
 
@@ -496,6 +654,28 @@ $$
 $$
 其中$L_i$ 是激活函数 $\sigma_i$的 Lipschitz 常数。
 
+**Proof:**
+$$
+{\rm SIAF}-MLP (\boldsymbol{Z}'_{l}) = (\sum_{i=1}^n \sigma_i(\boldsymbol{Z}'_{l}\boldsymbol{W}'_{{l_1}_i}))\boldsymbol{W}'_{{l_2}_i},~l \in [1,2,\cdots, L].
+$$
+
+$$
+\begin{align*}
+		&d_{\mathcal{M}_d}({\rm SIAF}-MLP (\boldsymbol{Z}'_{l}))\\
+		&= \Vert (\boldsymbol{I}-\boldsymbol{ee}^\top ) (\sum_{i=1}^n \sigma_i(\boldsymbol{Z}'_{l}\boldsymbol{W}'_{{l_1}_i}))\boldsymbol{W}'_{{l_2}_i} \Vert_F\\
+		&\leq \upsilon_2 (\sum_{i=1}^n\Vert \sigma_i(\boldsymbol{Z}'_{l}\boldsymbol{W}'_{l_{1_i}}) -  \sigma_i(\boldsymbol{1}{\boldsymbol{x}^{\boldsymbol{Z}'_{l}}_{\min}}^\top\boldsymbol{W}'_{l_{2_i}}) \Vert_F \\
+		&\leq (\sum_{i=1}^n L_i)s\upsilon_2 d_{\mathcal{M}_d}(\boldsymbol{Z}'_{l}),\\
+	\end{align*}
+$$
+
+$$
+\begin{align}
+		d_{\mathcal{M}_d}(\boldsymbol{Z}'_{l})
+		&\leq (s\upsilon_2\sum_{i=1}^n L_i)d_{\mathcal{M}_d}(\boldsymbol{Z}'_{l-1}) \\
+		&\leq (s\upsilon_2\sum_{i=1}^n L_i)^ld_{\mathcal{M}_d}(\boldsymbol{Z}'_{0})
+	\end{align}
+$$
+
 Series Informed Activation Function (SIAF)显著提高了MLP模块的非线性表达能力， 相比原始架构。这种非线性增强随参数*n*的增加而逐渐加强。
 
 ### 4.3 组合
@@ -510,6 +690,15 @@ $$
 		&d_{\mathcal{M}_d}(\boldsymbol{Z}_{p+q})\leq (\sqrt{\lambda H} s\upsilon_1)^{p}(Ls\upsilon_2)^{q}d_{\mathcal{M}_d}(\boldsymbol{Z}_0). 
 	\end{align}
 $$
+**Proof:**
+$$
+\begin{align*}
+			&d_{\mathcal{M}_d}(\boldsymbol{Z}_{p+q})\\
+			&=  d_{\mathcal{M}_d}({MLP}^{q}(\boldsymbol{Z}_{p}))\\
+			&\leq (Ls\upsilon_2)^{q}d_{\mathcal{M}_d}(({MSA}^{q}(\boldsymbol{Z}_p))\\
+			&\leq (\sqrt{\lambda H} s\upsilon_1)^{p}(Ls\upsilon_2)^{q}d_{\mathcal{M}_d}(\boldsymbol{Z}_0).
+		\end{align*}
+$$
 原始的Transformer架构在非线性表达能力方面存在相对有限的上限。基于这一观察，分析当Transformer与提出的架构修改相结合时，其增强的表达能力。
 
 **Theorem 9.**提供一个由 p 层 AugMSA 模块和 q 层 SIAF-MLP 模块组成的网络，第 $l $层特征的多样性$d_{\mathcal{M}_d}(\boldsymbol{Z}_{p+q})$ 可以由输入数据$\boldsymbol{Z}_0$的多样性$d_{\mathcal{M}_d}(\boldsymbol{Z}_{p+q})$ 限制，即
@@ -517,6 +706,15 @@ $$
 \begin{align*}
 			&d_{\mathcal{M}_d}(\boldsymbol{Z}_l) \\
 			&\leq (\sqrt{\lambda H} s\upsilon_1 + 1+ \sum_{i=1}^T L\Vert \boldsymbol{\Theta}_{li}\Vert_2)^p(s\upsilon_2\sum_{i=1}^n L_i)^{q}d_{\mathcal{M}_d}(\boldsymbol{Z}'_0). 
+		\end{align*}
+$$
+**Ptoof**:
+$$
+\begin{align*}
+			&d_{\mathcal{M}_d}(\boldsymbol{Z}_{p+q}) \\
+			&d_{\mathcal{M}_d}({{\rm SIAF}-MLP}^{q}(\boldsymbol{Z}_{p+q})) \\
+			&\leq (s\upsilon_2\sum_{i=1}^n L_i)^{q}d_{\mathcal{M}_d}({\rm AugMSA}^{p}(\boldsymbol{Z}_p)) \\
+			&\leq (\sqrt{\lambda H} s\upsilon_1 + 1+ \sum_{i=1}^T L\Vert \boldsymbol{\Theta}_{li}\Vert_2)^p(s\upsilon_2\sum_{i=1}^n L_i)^{q}d_{\mathcal{M}_d}(\boldsymbol{Z}_0). 
 		\end{align*}
 $$
 定理证实了增强捷径模块与级联激活函数模块的结合，可以大大增强模型的非线性表达能力和多样性，远远超出了单独使用这两个模块所能达到的水平。因此，Transformer架构将这两个模块融合成为PanGu-*π*架构，从而在非线性和多样性方面产生了协同改进的效应。
@@ -585,7 +783,7 @@ $$
 
 为验证PanGu-$\pi$架构增强的语言表示的有效性，进行了案例分析，通过计算每个令牌特征维度相对于预测目标的梯度绝对值来计算其特征维度的突出性。
 
-如图所示}，语言模型需要回应前面提到的名字“chester”作为下一个单词。PanGu-$\pi$模型通过较高梯度值在大多数通道中反映的上下文正确识别了关键信息“chester”（图(a)）。相比之下，没有增强捷径和级联激活函数，模型倾向于从关键线索之后的无意义符号中获取更多信息，导致错误的预测直接结束句子（图(b)）。
+如图所示，语言模型需要回应前面提到的名字“chester”作为下一个单词。PanGu-$\pi$模型通过较高梯度值在大多数通道中反映的上下文正确识别了关键信息“chester”（图(a)）。相比之下，没有增强捷径和级联激活函数，模型倾向于从关键线索之后的无意义符号中获取更多信息，导致错误的预测直接结束句子（图(b)）。
 
 ![image-20240115175315785](PanGu-π.assets/image-20240115175315785.png)
 
