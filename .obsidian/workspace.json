@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "未命名.md",
+                "file": "Hyena.md",
                 "mode": "source",
                 "source": false
               }
@@ -84,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "未命名.md"
+                "file": "Hyena.md"
               }
             }
           }
@@ -92,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 400.51103591918945
+    "width": 228.50469589233398
   },
   "right": {
     "id": "62ca17a5f3cfb922",
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "未命名.md",
+                "file": "Hyena.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "未命名.md",
+                "file": "Hyena.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "未命名.md"
+                "file": "Hyena.md"
               }
             }
           }
@@ -171,8 +171,10 @@
   },
   "active": "68ada97930c5f3f4",
   "lastOpenFiles": [
+    "hyena.assets/Pasted image 20240610195712.png",
+    "hyena.assets",
     "PanGu-π.md",
-    "未命名.md",
+    "Hyena.md",
     "PanGu-π.assets/Pasted image 20240527090007.png",
     "PanGu-π.assets/Pasted image 20240513155559.png",
     "CIF.md",
