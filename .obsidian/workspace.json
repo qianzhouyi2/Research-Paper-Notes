@@ -30,9 +30,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "efda6ff8df3ccd72",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.3"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -169,7 +179,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "68ada97930c5f3f4",
+  "active": "efda6ff8df3ccd72",
   "lastOpenFiles": [
     "hyena.assets/Pasted image 20240610195712.png",
     "hyena.assets",
