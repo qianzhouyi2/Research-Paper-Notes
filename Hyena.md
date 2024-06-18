@@ -24,3 +24,8 @@ Transformer的注意力模块对于序列长度有二次成本，限制了上下
 减少模型中注意力计算成本的努力主要涉及线性化、低秩和稀疏逼近的使用。这些方法在表达能力和速度之间引入了一种折衷，需要与标准的注意力层相结合才能达到Transformer的质量.
 
 越来越多的证据表明，注意力机制在语言处理中只利用了其二次能力的一小部分。
+
+>1. **Hungry Hungry Hippos: Towards Language Modeling with State Space Models**
+>
+>2. 
+> 
