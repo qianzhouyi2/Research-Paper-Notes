@@ -26,6 +26,6 @@ Transformer的注意力模块对于序列长度有二次成本，限制了上下
 越来越多的证据表明，注意力机制在语言处理中只利用了其二次能力的一小部分。
 
 >1. **Hungry Hungry Hippos: Towards Language Modeling with State Space Models**
->
+>H3模型通过将两层SSM堆叠，结合输入和输出的乘法项，在很多情况下表现得非常接近甚至优于Transformer。同时，H3模型由于其线性复杂度，相比于Transformer在长序列处理上具有显著的计算优势。通过引入FlashConv算法以及针对长序列的优化，SSM能够实现与注意力机制相媲美的性能，而且计算效率更高。
 >2. 
 > 
