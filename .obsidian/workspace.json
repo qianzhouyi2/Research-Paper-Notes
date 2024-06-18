@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9464dba7e26f3c58",
+        "id": "29f2eba03763f87b",
         "type": "tabs",
         "children": [
           {
-            "id": "cb8f702df237cfba",
+            "id": "76730ac6ac84b9bc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PanGu-π.md",
+                "file": "Hyena.md",
                 "mode": "source",
                 "source": false
               }
@@ -71,7 +71,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PanGu-π.md"
+                "file": "Hyena.md"
               }
             }
           }
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PanGu-π.md",
+                "file": "Hyena.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PanGu-π.md",
+                "file": "Hyena.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PanGu-π.md"
+                "file": "Hyena.md"
               }
             }
           }
@@ -156,11 +156,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "22775e7edf536780",
+  "active": "76730ac6ac84b9bc",
   "lastOpenFiles": [
-    "PanGu-π.pdf",
+    "hyena.assets/Pasted image 20240618180100.png",
     "Hyena.md",
     "PanGu-π.md",
+    "PanGu-π.pdf",
     "hyena.assets/Pasted image 20240610195712.png",
     "hyena.assets",
     "PanGu-π.assets/Pasted image 20240527090007.png",
@@ -172,7 +173,6 @@
     "CIF.aseets/7.png",
     "CIF.aseets/6.png",
     "CIF.aseets/5.png",
-    "CIF.aseets/4.png",
     "GPT-ST预训练时空框架.md",
     "GPT-ST预训练时空框架.pdf",
     "CIF.pdf",
