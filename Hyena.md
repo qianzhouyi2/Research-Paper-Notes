@@ -27,5 +27,10 @@ Transformer的注意力模块对于序列长度有二次成本，限制了上下
 
 >1. **Hungry Hungry Hippos: Towards Language Modeling with State Space Models**
 >H3模型通过将两层SSM堆叠，结合输入和输出的乘法项，在很多情况下表现得非常接近甚至优于Transformer。同时，H3模型由于其线性复杂度，相比于Transformer在长序列处理上具有显著的计算优势。通过引入FlashConv算法以及针对长序列的优化，SSM能够实现与注意力机制相媲美的性能，而且计算效率更高。
->2. 
-> 
+>2. **In-context learning and induction heads**
+>论据 1（宏观共同认知）： transformer语言模型在训练初期会经历一个 "阶段性变化"，在此期间会形成induction heads，同时上下文学习能力也会显著提高。
+>论据 2（宏观共扰）： 当我们改变 transformer的结构，从而改变induction heads能否形成（以及何时形成）时，语境中学习的显著提高也会发生精确匹配的变化。
+>论据 3（直接消融）：  当我们在测试时直接 "消除 "小模型中的induction heads时，上下文中学习的数量会大大减少。
+>论据 4（induction heads通用性的具体例子）： 尽管我们从复制文字序列的角度对induction heads进行了非常狭义的定义，但我们根据经验观察到，这些induction heads似乎还能实现更复杂类型的情境内学习，包括高度抽象的行为，因此它们可以解释大部分的情境内学习。
+>论据5（induction head通用性的机制合理性）： 对于小型模型，我们可以从机制上解释induction heads是如何工作的，并能证明它们有助于情境中学习。此外，实际的运作机制表明，我们可以通过自然的方式重新利用它来进行更普遍的情境学习。
+>论证 6（从小模型到大模型的连续性）： 在前5个论点中，induction heads解释情境学习的理由在小模型中比在大模型中更充分。然而，许多与induction heads和情境学习相关的行为和数据从小型模型到大型模型都是平滑连续的，这表明最简单的解释是机制是相同的。
