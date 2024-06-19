@@ -69,50 +69,63 @@ Transformer的注意力模块对于序列长度有二次成本，限制了上下
 离散卷积是一个具有两个参数的函数：长度为L的输入信号u和可学习的滤波器h。
 用一个（可能是无限长的）可测滤波器h与长度为L的输入信号u进行线性（非周期性）卷积，定义为
 $$
-\begin{equation}
-    \begin{aligned}
         y_t = (h * u)_t = \sum_{n=0}^{L-1} h_{t -n} u_n.
-    \end{aligned}
-\end{equation}
 $$
 一般而言，$u_t\in\mathbb{R}^D$，其中$D$是信号的宽度，即$\textit{通道}$的数量。这里分析专门针对$\textit{单输入单输出}$（SISO）层，即$D=1$的情况。$\textit{多输入多输出}$（MIMO）情况可以直接推导得到。
 所以输入信号可以表示为一个向量$u\in\mathbb{R}^L$，卷积操作可以看作输入向量和由滤波器$h$引起的Toeplitz卷积核矩阵$\newcommand{\sS}{\mathsf{S}}\sS_h \in \mathbb{R}^{L \times L}$之间的矩阵向量乘积。
 $$
-\begin{equation}
-
     \begin{aligned}
-
         (h * u) =
-
         \begin{bmatrix}
-
             h_0 & h_{-1} & \cdots & h_{-L+1} \\
-
             h_1 & h_0 & \cdots & h_{-L+2} \\
-
             \vdots & \vdots & \ddots & \vdots \\
-
             h_{L-1} & h_{L-2} & \cdots & h_{0}
-
         \end{bmatrix}
-
         \begin{bmatrix}
-
             u_0\\
-
             u_1\\
-
             \vdots\\
-
             u_{L-1}
-
         \end{bmatrix}
-
     \end{aligned}
-
-\end{equation}
 $$
 ### 2.1 显式卷积和隐式卷积
 参数化和优化卷积滤波器$h_t$是深度学习和更广泛的信号处理中的标准过程。
-CNNs的经典方法是直接优化滤波器响应函数$h_t$在$M$个预定步骤中的值，我们称之为$\textit{显式参数化}$。$M$被称为$\textit{滤波器大小}$，通常远小于输入序列的长度$M \ll L$。这样的滤波器在信号处理中被称为$\textit{有限脉冲响应}$（FIR）滤波器。
+
+CNNs的经典方法是直接优化滤波器响应函数$h_t$在$M$个预定步骤中的值，我们称之为$\textit{显式参数化}$。
+$M$被称为$\textit{滤波器大小}$，通常远小于输入序列的长度$M \ll L$。这样的滤波器在信号处理中被称为$\textit{有限脉冲响应}$（FIR）滤波器。
+
 FIR滤波器是局部的，并且可以捕捉最多相隔$M$步的输入之间的依赖关系。它们的主要优势是速度快，复杂度为$\mathcal{O}(ML)$。FIR滤波器的参数数量与滤波器大小呈线性关系，这可能会带来计算上的限制。
+
+为了将参数数量与滤波器大小分离开，将滤波器$h_t$表示为时间步$t$的参数函数，即$h_t = \gamma_\theta(t)$，其中$\theta$是函数$\gamma_\theta$的参数。这种参数化被称为$\textit{隐式参数化}$。
+
+隐式参数化的一种选择是将$h$选择为线性状态空间模型（SSM）的响应函数，由一阶差分方程描述：
+$$
+\newcommand{\sA}{\mathsf{A}}
+\newcommand{\sB}{\mathsf{B}}
+\newcommand{\sC}{\mathsf{C}}
+\newcommand{\sD}{\mathsf{D}}
+\begin{equation*}
+    \begin{aligned}
+        x_{t+1} &= \sA x_t + \sB u_t &&~~ \text{state equation} & \\
+        y_t &= \sC x_t + \sD u_t &&~~ \text{output equation} &
+    \end{aligned}
+\end{equation*}
+$$
+这里，对于$x_0 = 0$的方便选择使得输入输出映射成为一个简单的卷积。
+$$
+\begin{aligned}
+        y_t & =\sum_{n=0}^{t}\left(\sC\sA^{t - n}\sB + \sD \delta_{t-n}\right)u_n
+\end{aligned}
+$$
+其中，$\delta_t$表示Kronecker delta。
+![[hyena.assets/Pasted image 20240619160831.png]]
+于是滤波器$h$识别为
+$$
+ t\mapsto h_t =
+    \begin{cases}
+        0 & t<0\\
+        \sC \sA^t \sB + \sD\delta_t & t\geq 0
+    \end{cases}
+$$
