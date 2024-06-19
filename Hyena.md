@@ -69,16 +69,16 @@ Transformer的注意力模块对于序列长度有二次成本，限制了上下
 离散卷积是一个具有两个参数的函数：长度为L的输入信号u和可学习的滤波器h。
 用一个（可能是无限长的）可测滤波器h与长度为L的输入信号u进行线性（非周期性）卷积，定义为
 $$
-\begin{equation}\label{eq:cnn }
+\begin{equation}
     \begin{aligned}
         y_t = (h * u)_t = \sum_{n=0}^{L-1} h_{t -n} u_n.
     \end{aligned}
 \end{equation}
 $$
 一般而言，$u_t\in\mathbb{R}^D$，其中$D$是信号的宽度，即$\textit{通道}$的数量。这里分析专门针对$\textit{单输入单输出}$（SISO）层，即$D=1$的情况。$\textit{多输入多输出}$（MIMO）情况可以直接推导得到。
-所以输入信号可以表示为一个向量$u\in\mathbb{R}^L$，卷积操作看作输入向量和由滤波器$h$引起的Toeplitz卷积核矩阵$\newcommand{\sS}{\mathsf{S}}\sS_h \in \R^{L \times L}$之间的矩阵向量乘积。
+所以输入信号可以表示为一个向量$u\in\mathbb{R}^L$，卷积操作可以看作输入向量和由滤波器$h$引起的Toeplitz卷积核矩阵$\newcommand{\sS}{\mathsf{S}}\sS_h \in \mathbb{R}^{L \times L}$之间的矩阵向量乘积。
 $$
-\begin{equation}\label{eq:cnn_matvec}
+\begin{equation}
 
     \begin{aligned}
 
@@ -112,3 +112,7 @@ $$
 
 \end{equation}
 $$
+### 2.1 显式卷积和隐式卷积
+参数化和优化卷积滤波器$h_t$是深度学习和更广泛的信号处理中的标准过程。
+CNNs的经典方法是直接优化滤波器响应函数$h_t$在$M$个预定步骤中的值，我们称之为$\textit{显式参数化}$。$M$被称为$\textit{滤波器大小}$，通常远小于输入序列的长度$M \ll L$。这样的滤波器在信号处理中被称为$\textit{有限脉冲响应}$（FIR）滤波器。
+FIR滤波器是局部的，并且可以捕捉最多相隔$M$步的输入之间的依赖关系。它们的主要优势是速度快，复杂度为$\mathcal{O}(ML)$。FIR滤波器的参数数量与滤波器大小呈线性关系，这可能会带来计算上的限制。
