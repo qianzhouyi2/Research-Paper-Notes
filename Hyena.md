@@ -17,7 +17,7 @@ Transformer的注意力模块对于序列长度有二次成本，限制了上下
 > 上下文学习：大型语言模型表现出一定的执行上下文学习的能力，但目前尚不清楚成功的任务与训练数据中存在的内容之间的关系是什么。标准Transformer可以能够从上下文示例中学习看不见的线性函数，其性能可与最优最小二乘估计器相媲美。即使在两种形式的分布偏移下，上下文学习也是可能的：（i）在模型的训练数据和推理时提示之间，以及（ii）在推理过程中的上下文示例和查询输入之间。训练 Transformer 可以在上下文中学习更复杂的函数类——即稀疏线性函数、两层神经网络和决策树——其性能与特定于任务的学习算法相匹配或超过。**What can transformers learn in-context? a case study of simple function classes**
 
 但它也有局限性，最值得注意的问题之一是计算成本，随着输入序列长度的增加而迅速增长。该成本与序列长度L的平方成比例增加，这对于模型可以考虑的上下文量设定了严格限制。
-![[hyena.assets/Pasted image 20240618180100.png|450]]
+![[hyena.assets/Pasted image 20240618180100.png|500]]
 
 突破二次限制是迈向深度学习的新可能性的关键步骤。
 
@@ -64,12 +64,51 @@ Transformer的注意力模块对于序列长度有二次成本，限制了上下
 
 **更长的上下文** 长度为8192的情况下，与密集自注意力相比，速度提升了5倍，比高度优化的FlashAttention提高了2倍，并在序列长度为64K的情况下，比FlashAttention快了100倍，避免标准注意力内存问题。
 
-## 2.预备知识和相关知识
+## 2.预备和相关知识
 
 离散卷积是一个具有两个参数的函数：长度为L的输入信号u和可学习的滤波器h。
 用一个（可能是无限长的）可测滤波器h与长度为L的输入信号u进行线性（非周期性）卷积，定义为
 $$
+\begin{equation}\label{eq:cnn }
     \begin{aligned}
         y_t = (h * u)_t = \sum_{n=0}^{L-1} h_{t -n} u_n.
     \end{aligned}
+\end{equation}
+$$
+一般而言，$u_t\in\mathbb{R}^D$，其中$D$是信号的宽度，即$\textit{通道}$的数量。这里分析专门针对$\textit{单输入单输出}$（SISO）层，即$D=1$的情况。$\textit{多输入多输出}$（MIMO）情况可以直接推导得到。
+所以输入信号可以表示为一个向量$u\in\mathbb{R}^L$，卷积操作看作输入向量和由滤波器$h$引起的Toeplitz卷积核矩阵$\newcommand{\sS}{\mathsf{S}}\sS_h \in \R^{L \times L}$之间的矩阵向量乘积。
+$$
+\begin{equation}\label{eq:cnn_matvec}
+
+    \begin{aligned}
+
+        (h * u) =
+
+        \begin{bmatrix}
+
+            h_0 & h_{-1} & \cdots & h_{-L+1} \\
+
+            h_1 & h_0 & \cdots & h_{-L+2} \\
+
+            \vdots & \vdots & \ddots & \vdots \\
+
+            h_{L-1} & h_{L-2} & \cdots & h_{0}
+
+        \end{bmatrix}
+
+        \begin{bmatrix}
+
+            u_0\\
+
+            u_1\\
+
+            \vdots\\
+
+            u_{L-1}
+
+        \end{bmatrix}
+
+    \end{aligned}
+
+\end{equation}
 $$
