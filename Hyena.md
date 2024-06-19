@@ -120,7 +120,7 @@ $$
 \end{aligned}
 $$
 其中，$\delta_t$表示Kronecker delta。
-![[hyena.assets/Pasted image 20240619160831.png]]
+![[hyena.assets/Pasted image 20240619160831.png|700]]
 于是滤波器$h$识别为
 $$
  t\mapsto h_t =
@@ -129,3 +129,8 @@ $$
         \sC \sA^t \sB + \sD\delta_t & t\geq 0
     \end{cases}
 $$
+其中$\sA，\sB，\sC$和$\sD$的条目是滤波器的学习参数。在网络设计方面，SSM的自由度是状态的维度和矩阵的结构。
+
+SSM是一种典型的例子，说明了具有次线性参数数量的长卷积如何改善长序列的深度学习模型。
+
+其他隐式方法包括将滤波器的参数化表示为从$t$（位置编码）到滤波器响应的映射，即$\gamma_\theta：t \mapsto h_t=\gamma_\theta(t)$，例如使用前馈神经网络。
