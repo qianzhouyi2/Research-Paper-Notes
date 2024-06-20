@@ -106,6 +106,7 @@ $$
 \newcommand{\sB}{\mathsf{B}}
 \newcommand{\sC}{\mathsf{C}}
 \newcommand{\sD}{\mathsf{D}}
+\newcommand{\sW}{\mathsf{W}}
 \begin{equation*}
     \begin{aligned}
         x_{t+1} &= \sA x_t + \sB u_t &&~~ \text{state equation} & \\
