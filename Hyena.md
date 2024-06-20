@@ -150,7 +150,7 @@ $$
 $$
 \hat \sS_h = \sW^{-1} \sD_{H} \sW
 $$
-其中，$\sW$是DFT矩阵，$\sW_{tt'} = z^{-t}$，$z = e^{i2\pi t' / L}$，$H$是填充滤波器$h$的DFT，$H = \sW \text{pad}(h)$。
+其中，$\sW$是DFT矩阵，$\sW_{tt'} = z^{-t}$，$z = e^{i2\pi t' / L}$，$H$是零填充滤波器$h$的DFT，$H = \sW \text{pad}(h)$。
 卷积计算被执行为
 $$
 \begin{equation*}
