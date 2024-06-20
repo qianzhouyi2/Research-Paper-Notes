@@ -162,3 +162,4 @@ $$
 \end{equation*}
 $$
 其中，$\sD_H$ 是以 $\sW h$ 为对角线的矩阵。上述被称为离散傅里叶变换（DFT）的卷积定理。在 ${\sf FFTConv}$形式中，卷积可以在不实例化算子 $\sS_h$ 的情况下进行，其渐进复杂度与快速傅里叶变换（FFT）相同， $O(L\log_2 L)$。  
+![[hyena.assets/Pasted image 20240620194702.png|450]]
