@@ -106,7 +106,8 @@ $$
 \newcommand{\sB}{\mathsf{B}}
 \newcommand{\sC}{\mathsf{C}}
 \newcommand{\sD}{\mathsf{D}}
-\newcommand{\sW}{\mathsf{W}}
+\newcommand{\R}{\mathbb{R}}
+
 \begin{equation*}
     \begin{aligned}
         x_{t+1} &= \sA x_t + \sB u_t &&~~ \text{state equation} & \\
@@ -161,5 +162,7 @@ $$
     \end{aligned}
 \end{equation*}
 $$
-其中，$\sD_H$ 是以 $\sW h$ 为对角线的矩阵。上述被称为离散傅里叶变换（DFT）的卷积定理。在 ${\sf FFTConv}$形式中，卷积可以在不实例化算子 $\sS_h$ 的情况下进行，其渐进复杂度与快速傅里叶变换（FFT）相同， $O(L\log_2 L)$。  
+其中，$\sD_H$ 是以 $\sW h$ 为对角线的矩阵。上述被称为离散傅里叶变换（DFT）的卷积定理。在 ${\sf FFTConv}$形式中，卷积可以在不实例化算子 $\hat \sS_h$ 的情况下进行，其渐进复杂度与快速傅里叶变换（FFT）相同， $O(L\log_2 L)$。  
 ![[hyena.assets/Pasted image 20240620194702.png|450]]
+### 2.2 自注意力算子
+在Transformer模型的核心是\textit{多头注意力}（multi-head attention，MHA）机制。对于长度为$L$的序列$u\in\R^{L\times D}$，\textit{缩放自注意力}（scaled self-attention）的每个\textit{头部}是一个从$\R^{L\times D}$到$\R^{L\times D}$的映射，执行以下操作：
