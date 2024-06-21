@@ -106,6 +106,8 @@ $$
 \newcommand{\sB}{\mathsf{B}}
 \newcommand{\sC}{\mathsf{C}}
 \newcommand{\sD}{\mathsf{D}}
+\newcommand{\sM}{\mathsf{M}}
+\newcommand{\sW}{\mathsf{W}}
 \newcommand{\R}{\mathbb{R}}
 
 \begin{equation*}
@@ -165,4 +167,20 @@ $$
 其中，$\sD_H$ 是以 $\sW h$ 为对角线的矩阵。上述被称为离散傅里叶变换（DFT）的卷积定理。在 ${\sf FFTConv}$形式中，卷积可以在不实例化算子 $\hat \sS_h$ 的情况下进行，其渐进复杂度与快速傅里叶变换（FFT）相同， $O(L\log_2 L)$。  
 ![[hyena.assets/Pasted image 20240620194702.png|450]]
 ### 2.2 自注意力算子
-在Transformer模型的核心是\textit{多头注意力}（multi-head attention，MHA）机制。对于长度为$L$的序列$u\in\R^{L\times D}$，\textit{缩放自注意力}（scaled self-attention）的每个\textit{头部}是一个从$\R^{L\times D}$到$\R^{L\times D}$的映射，执行以下操作：
+在Transformer模型的核心是$\textit{多头注意力}$（multi-head attention，MHA）机制。
+对于长度为$L$的序列$u\in\R^{L\times D}$，$\textit{缩放自注意力}$（scaled self-attention）的每个$\textit{头}$是一个从$\R^{L\times D}$到$\R^{L\times D}$的映射，执行以下操作：
+$$
+\begin{equation}
+    \begin{aligned}
+      \sA(u) &= {\sf SoftMax}\left(\tfrac{1}{\sqrt{D}}u \sM_q \sM^\top_k u^\top \right)\\
+      y &= {\sf SelfAttention}(u) \\
+        &= \sA(u)u \sM_v,
+    \end{aligned}
+\end{equation}
+$$
+其中，$\newcommand{\x}{\times}\sM_q, \sM_k, \sM_v\in\R^{D\x D}$ 是可学习的线性投影矩阵，${\sf SoftMax}$ 按行应用。
+注意力机制参数化了一个$\textbf{密集线性算子的系列}$ 
+对于输入 $u$，通过 $u$ 的投影 $\sA(u)$ 进行索引。我们将这种类型的算子称为\textit{数据控制}型，因为它们通过 $u$ 非线性地定义了一个线性变换 $u \mapsto y$。这种方法在 $u$ 中产生了具有表达力的非线性算子，并且我们假设，与其他机制 \citep{olsson2022context} 一起，这有助于某些算子能够通过利用上下文从而学习到\textit{上下文中的知识}，从而适应未见任务。
+
+在深度学习中，这些投影有特定的名称：$\textit{查询}$  $q=u\sM_q$，$\textit{关键字}$  $k=u\sM_k$，$\textit{数值}$  $v = u\sM_v$。
+常常将注意力算子重写为 $y = \sA(q,k)v$。
