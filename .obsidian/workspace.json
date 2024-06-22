@@ -75,7 +75,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -156,7 +157,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "eff1fae3a50ae483",
+  "active": "b5c92d764357d8c3",
   "lastOpenFiles": [
     "GPT-ST预训练时空框架.md",
     "GPT-ST预训练时空框架.pdf",
