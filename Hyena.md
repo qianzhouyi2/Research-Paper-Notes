@@ -193,4 +193,4 @@ $$
 注意力机制替代方案
 现有的方法通过改变数据控制的实现方式总结，即通过$u$非线性定义运算子，然后应用于$v$。
 · Attention-Free Transformers (AFTs)
-将门控和$\sf SoftMax$ (AFT full) 或门控和单个显式卷积 (AFT卷积) 结合起来。而$\textit{门控状态空间}$(GSS) 则通过门控和参数化的长卷积来组合运算子，其中参数采用SSMs。
+
