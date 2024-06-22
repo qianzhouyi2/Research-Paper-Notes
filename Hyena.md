@@ -195,4 +195,4 @@ $$
 · Attention-Free Transformers (AFTs)
 AFT消除了点积自注意力在AFT层中，键（key）和值（value）首先与一组学习到的位置偏差相结合，然后通过逐元素乘法与查询（query）相乘。这种新的操作在内存复杂度上与上下文大小和特征维度呈线性关系，因此适用于大型输入和模型规模。
 ![[hyena.assets/Pasted image 20240622133312.png|500]]
-![[hyena.assets/Pasted image 20240622133236.png|450]]
+![[hyena.assets/Pasted image 20240622133236.png|325]]
