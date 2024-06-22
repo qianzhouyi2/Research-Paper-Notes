@@ -192,7 +192,12 @@ $$
 
 注意力机制替代方案
 现有的方法通过改变数据控制的实现方式总结，即通过$u$非线性定义运算子，然后应用于$v$。
-· Attention-Free Transformers (AFTs) --APPLE Inc.
+**1.Attention-Free Transformers (AFTs) --Apple Inc.**
 AFT消除了点积自注意力在AFT层中，键（key）和值（value）首先与一组学习到的位置偏差相结合，然后通过逐元素乘法与查询（query）相乘。这种新的操作在内存复杂度上与上下文大小和特征维度呈线性关系，因此适用于大型输入和模型规模。
 ![[hyena.assets/Pasted image 20240622133312.png|500]]
 ![[hyena.assets/Pasted image 20240622133236.png|325]]
+并且与门控机制结合。
+**来自预训练的12层6头ViT [5] 的平均相对2D注意力图。**
+![[hyena.assets/Pasted image 20240622152839.png|159]]
+![[hyena.assets/Pasted image 20240622152707.png|525]]
+**2.Hungry Hungry Hippos: Towards Language Modeling with State Space Models**
