@@ -201,3 +201,4 @@ AFT消除了点积自注意力在AFT层中，键（key）和值（value）首先
 ![[hyena.assets/Pasted image 20240622152839.png|159]]
 ![[hyena.assets/Pasted image 20240622152707.png|525]]
 **2.Hungry Hungry Hippos: Towards Language Modeling with State Space Models**
+门控状态空间(GSS)通过门控和参数化的长卷积来组合运算子，其中参数采用SSMS。
