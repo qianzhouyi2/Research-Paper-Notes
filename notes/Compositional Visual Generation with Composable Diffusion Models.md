@@ -225,6 +225,6 @@
 ## Wiki 关联
 
 - 参考摘要：[[references/Compositional Visual Generation with Composable Diffusion Models|Compositional Visual Generation with Composable Diffusion Models]]
-- 概念锚点：[[concepts/Composable Diffusion Generation]]
-- 实体锚点：[[entities/Nan Liu]]
-- 综合页面：[[synthesis/LLM Inference Efficiency and Scaling]]
+- 概念锚点：[[concepts/Composable Diffusion Generation]]、[[concepts/Logical Operator Composition in Diffusion Models]]、[[concepts/Multimodal Chain-of-Thought Reasoning]]、[[concepts/Multimodal Adversarial Image Prompting]]
+- 实体锚点：[[entities/Nan Liu]]、[[entities/Antonio Torralba]]、[[entities/LLaVA]]
+- 综合页面：[[synthesis/Robust Representation and Adversarial Dynamics]]、[[synthesis/Multimodal Composition and Reasoning]]、[[synthesis/LLM Inference Efficiency and Scaling]]

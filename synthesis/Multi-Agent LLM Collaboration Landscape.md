@@ -40,4 +40,4 @@ provenance:
 - [[references/Chain of Agents Large Language Models Collaborating on Long-Context Tasks]]
 - [[references/Mixture-of-Agents Enhances Large Language Model Capabilities]]
 - [[concepts/Multi-Agent LLM Orchestration]]
-
+- [[synthesis/Inference-Time Orchestration and Routing for LLMs]]

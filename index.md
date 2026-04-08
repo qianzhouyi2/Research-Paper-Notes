@@ -29,10 +29,10 @@ summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 
 
 - 已导入论文笔记：26 篇（见 [[notes/index]]）
 - References：26 篇（含 1 个 MeanSparse 命名桥接页）
-- Concepts：35 篇（方法级与协议级概念）
-- Entities：45 篇（作者/模型/数据集）
-- Synthesis：10 篇（跨论文主题综合）
-- 已纳管来源：19 个（见 [[log]] 与 `.manifest.json`）
+- Concepts：50 篇（方法级与协议级概念）
+- Entities：64 篇（作者/模型/数据集）
+- Synthesis：21 篇（跨论文主题综合）
+- 已纳管来源：23 个（见 [[log]] 与 `.manifest.json`）
 - 原始资料：[[papers_sources]]
 - 模板：[[Templates/论文阅读模板|论文阅读模板]]
 
@@ -63,6 +63,34 @@ summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 
 - 更新页：9 个 references、8 个已有 concepts、4 个已有 synthesis、9 篇相关 notes 的 `Wiki 关联`
 - 盘点入口：[[journal/Papers Sources Deep Gap Audit 2026-04-08]]
 
+## 最新 Notes 细扫补链（2026-04-08）
+
+- 类型：`wiki-update`（notes 精细化补链）
+- 新增页：5 个 concepts、3 个 entities、3 个 synthesis
+- note 级更新：20 篇笔记增强 `Wiki 关联`（重点补齐 reasoning / multi-agent / multimodal / efficiency 四类主题）
+- 说明：从“覆盖到位”提升到“语义更细”，新增 `MCTS Self-Refine`、`Process-Supervised Step Verification`、`Mixture-of-Agents Aggregation` 等锚点页
+
+## 最新 Notes 细扫补链（第二轮，2026-04-08）
+
+- 类型：`wiki-update`（notes 深层语义补链）
+- 新增页：6 个 concepts、4 个 entities、1 个 synthesis
+- note 级更新：9 篇笔记增强 `Wiki 关联`（重点补齐概率推理、软对齐、多模态两阶段推理与 PEFT 主题）
+- 说明：新增 `Amortized Bayesian Inference for LLMs`、`GFlowNet Posterior Sampling for Text Generation`、`Soft Monotonic Alignment`、`Two-Stage Multimodal CoT` 等概念锚点，并新增综合页 [[synthesis/Probabilistic Inference-Time Control for LLMs]]
+
+## 最新 Notes 细扫补链（第三轮，2026-04-08）
+
+- 类型：`wiki-update`（notes 深层语义补链）
+- 新增页：4 个 concepts、12 个 entities、5 个 synthesis
+- note 级更新：14 篇笔记增强 `Wiki 关联`（重点补齐 complexity labeling、CoT removal smoothing、时序结构学习与作者/数据集实体）
+- 说明：新增 [[synthesis/Temporal Structure Learning in Sequence Models]]、[[synthesis/Process Supervision and CoT Internalization]]、[[synthesis/Search-Based Deliberate Reasoning Landscape]]、[[synthesis/Inference-Time Orchestration and Routing for LLMs]]、[[synthesis/Robust Representation and Adversarial Dynamics]]，并将 23 篇笔记提升为 `synthesis>=3`
+
+## 最新 Notes 细扫补链（第四轮，2026-04-08）
+
+- 类型：`wiki-update`（notes 主题综合收口）
+- 新增页：2 个 synthesis
+- note 级更新：5 篇笔记增强 `Wiki 关联`（重点收口 LoRA / Maintaining / PanGu-π / MeanSparse / Language 表示容量主题）
+- 说明：新增 [[synthesis/Efficient Adaptation and Plasticity Retention]] 与 [[synthesis/Representation Capacity and Effective Rank]]，当前 25 篇笔记已全部达到 `concepts>=3`、`entities>=3`、`synthesis>=3`
+
 ## 推荐工作流
 
 1. 把原始 PDF/源码/草稿放入 [[papers_sources]]
@@ -73,6 +101,6 @@ summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 
 
 ## 本周可做
 
-- [ ] 为每篇已读笔记至少提炼 3 个概念页
+- [x] 为重点薄弱笔记补齐第二轮概念/实体/综合锚点
 - [ ] 在 `references/` 补齐单篇摘要卡
 - [ ] 新建一个 `projects/` 专题页（例如“长上下文建模”）

@@ -272,6 +272,6 @@
 ## Wiki 关联
 
 - 参考摘要：[[references/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report|Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report]]
-- 概念锚点：[[concepts/Monte Carlo Tree Search for LLM Reasoning]]
-- 实体锚点：[[entities/GPT-4]]
-- 综合页面：[[synthesis/Structured Reasoning Methods for LLMs]]
+- 概念锚点：[[concepts/Monte Carlo Tree Self-Refine]]、[[concepts/Monte Carlo Tree Search for LLM Reasoning]]、[[concepts/Tree of Thoughts Reasoning]]
+- 实体锚点：[[entities/Di Zhang]]、[[entities/GPT-4]]、[[entities/LLaMA-3 8B]]
+- 综合页面：[[synthesis/Search-Based Deliberate Reasoning Landscape]]、[[synthesis/LLM Reasoning Search and Verification]]、[[synthesis/Structured Reasoning Methods for LLMs]]

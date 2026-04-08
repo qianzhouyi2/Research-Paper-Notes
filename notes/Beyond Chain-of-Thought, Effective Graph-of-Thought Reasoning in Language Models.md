@@ -282,6 +282,6 @@
 ## Wiki 关联
 
 - 参考摘要：[[references/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models|Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models]]
-- 概念锚点：[[concepts/Graph of Thoughts Reasoning]]
-- 实体锚点：[[entities/Hai Zhao]]
-- 综合页面：[[synthesis/Structured Reasoning Methods for LLMs]]
+- 概念锚点：[[concepts/Graph of Thoughts Reasoning]]、[[concepts/Thought Structure Taxonomy]]、[[concepts/Tree of Thoughts Reasoning]]
+- 实体锚点：[[entities/Yao Yao]]、[[entities/Hai Zhao]]、[[entities/GPT-4]]
+- 综合页面：[[synthesis/Search-Based Deliberate Reasoning Landscape]]、[[synthesis/Structured Reasoning Methods for LLMs]]、[[synthesis/LLM Reasoning Search and Verification]]

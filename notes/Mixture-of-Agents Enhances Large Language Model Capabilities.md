@@ -269,6 +269,6 @@
 ## Wiki 关联
 
 - 参考摘要：[[references/Mixture-of-Agents Enhances Large Language Model Capabilities|Mixture-of-Agents Enhances Large Language Model Capabilities]]
-- 概念锚点：[[concepts/Multi-Agent LLM Orchestration]]
-- 实体锚点：[[entities/Junfan Jiang]]
-- 综合页面：[[synthesis/Multi-Agent LLM Collaboration Landscape]]
+- 概念锚点：[[concepts/Multi-Agent LLM Orchestration]]、[[concepts/Mixture-of-Agents Aggregation]]、[[concepts/Adaptive Compute Routing]]
+- 实体锚点：[[entities/Junfan Jiang]]、[[entities/Tat-Seng Chua]]、[[entities/Yusen Zhang]]、[[entities/GPT-4]]
+- 综合页面：[[synthesis/Inference-Time Orchestration and Routing for LLMs]]、[[synthesis/Multi-Agent LLM Collaboration Landscape]]、[[synthesis/LLM Inference Efficiency and Scaling]]

@@ -264,6 +264,6 @@
 ## Wiki 关联
 
 - 参考摘要：[[references/Chain of Agents Large Language Models Collaborating on Long-Context Tasks|Chain of Agents Large Language Models Collaborating on Long-Context Tasks]]
-- 概念锚点：[[concepts/Multi-Agent LLM Orchestration]]
-- 实体锚点：[[entities/Yusen Zhang]]
-- 综合页面：[[synthesis/Multi-Agent LLM Collaboration Landscape]]
+- 概念锚点：[[concepts/Multi-Agent LLM Orchestration]]、[[concepts/Mixture-of-Agents Aggregation]]、[[concepts/Adaptive Compute Routing]]
+- 实体锚点：[[entities/Yusen Zhang]]、[[entities/GPT-4]]、[[entities/OpenAssistant]]
+- 综合页面：[[synthesis/Inference-Time Orchestration and Routing for LLMs]]、[[synthesis/Multi-Agent LLM Collaboration Landscape]]、[[synthesis/LLM Inference Efficiency and Scaling]]

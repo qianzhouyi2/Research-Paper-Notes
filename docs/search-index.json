@@ -49,6 +49,13 @@
     "summary": "综合三篇论文可得到鲁棒评估的三条主线：先校准攻击器能力、再做任务特定黑盒评测、最后用后处理策略做低成本鲁棒增益验证。"
   },
   {
+    "title": "Aghyad Deeb",
+    "url": "entities/Aghyad Deeb.html",
+    "path": "entities/Aghyad Deeb.md",
+    "section": "entities",
+    "summary": "Aghyad Deeb 在该 wiki 主要关联复杂度预测驱动的模型路由研究。"
+  },
+  {
     "title": "Alignment Robustness Evaluation Ladder",
     "url": "synthesis/Alignment Robustness Evaluation Ladder.html",
     "path": "synthesis/Alignment Robustness Evaluation Ladder.md",
@@ -322,6 +329,13 @@
     "summary": "Edward Hu 在该 wiki 中主要关联参数高效微调与推理效率优化，两篇相关工作分别来自 LoRA 与摊销推理方向。"
   },
   {
+    "title": "Efficient Adaptation and Plasticity Retention",
+    "url": "synthesis/Efficient Adaptation and Plasticity Retention.html",
+    "path": "synthesis/Efficient Adaptation and Plasticity Retention.md",
+    "section": "synthesis",
+    "summary": "该主题整合低秩微调、持续可塑性维护与结构补偿三类路线，关注在受限计算与参数预算下如何保持模型继续学习和继续适配的能力。"
+  },
+  {
     "title": "Entities 索引",
     "url": "entities/index.html",
     "path": "entities/index.md",
@@ -476,6 +490,13 @@
     "summary": "隐式长卷积参数化通过神经函数生成超长滤波器，解耦滤波器长度与参数规模，支撑高效长上下文建模。"
   },
   {
+    "title": "Inference-Time Orchestration and Routing for LLMs",
+    "url": "synthesis/Inference-Time Orchestration and Routing for LLMs.html",
+    "path": "synthesis/Inference-Time Orchestration and Routing for LLMs.md",
+    "section": "synthesis",
+    "summary": "该主题整合实例级难度路由、多智能体协作与策略切换，关注推理时计算分配的系统化编排。"
+  },
+  {
     "title": "Journal 索引",
     "url": "journal/index.html",
     "path": "journal/index.md",
@@ -488,6 +509,13 @@
     "path": "entities/Junfan Jiang.md",
     "section": "entities",
     "summary": "Junfan Jiang 在该 wiki 中与 Mixture-of-Agents 协作框架相关。"
+  },
+  {
+    "title": "Kai Han",
+    "url": "entities/Kai Han.html",
+    "path": "entities/Kai Han.md",
+    "section": "entities",
+    "summary": "Kai Han 在该 wiki 主要关联非线性补偿与架构增强研究。"
   },
   {
     "title": "Known-Solvable Attack Calibration",
@@ -511,6 +539,13 @@
     "summary": "该工作通过系统探针证据支持 LLM 内部存在跨实体统一且可线性解码的时空表示。"
   },
   {
+    "title": "Lei Li",
+    "url": "entities/Lei Li.html",
+    "path": "entities/Lei Li.md",
+    "section": "entities",
+    "summary": "Lei Li 在该 wiki 主要关联过程监督与数学推理验证研究。"
+  },
+  {
     "title": "Leslie Lee",
     "url": "entities/Leslie Lee.html",
     "path": "entities/Leslie Lee.md",
@@ -525,11 +560,25 @@
     "summary": "Li Dong 在该 wiki 中与 CIF 连续对齐方法相关，主要对应语音序列建模方向。"
   },
   {
+    "title": "LibriSpeech Dataset",
+    "url": "entities/LibriSpeech Dataset.html",
+    "path": "entities/LibriSpeech Dataset.md",
+    "section": "entities",
+    "summary": "LibriSpeech 是英语语音识别常用基准，在 CIF 相关实验中用于评估 WER 与流式对齐效果。"
+  },
+  {
     "title": "Linear Probe World-Model Evaluation",
     "url": "concepts/Linear Probe World-Model Evaluation.html",
     "path": "concepts/Linear Probe World-Model Evaluation.md",
     "section": "concepts",
     "summary": "线性探针世界模型评估通过层级激活回归时空变量，检验模型是否形成可解码且可泛化的内部结构表示。"
+  },
+  {
+    "title": "Llama-2",
+    "url": "entities/Llama-2.html",
+    "path": "entities/Llama-2.md",
+    "section": "entities",
+    "summary": "Llama-2 在该 wiki 主要关联时空表示探针与世界模型实证分析。"
   },
   {
     "title": "LLaMA-3 8B",
@@ -749,6 +798,13 @@
     "summary": "Mohammadreza Teymoorianfard 参与 MeanSparse 研究，相关工作强调后处理式鲁棒增强的低成本部署价值。"
   },
   {
+    "title": "Moksh Jain",
+    "url": "entities/Moksh Jain.html",
+    "path": "entities/Moksh Jain.md",
+    "section": "entities",
+    "summary": "Moksh Jain 在该 wiki 主要关联摊销推理与后验采样路线。"
+  },
+  {
     "title": "Monte Carlo Tree Search A Review of Recent Modifications and Applications",
     "url": "notes/Monte Carlo Tree Search A Review of Recent Modifications and Applications.html",
     "path": "notes/Monte Carlo Tree Search A Review of Recent Modifications and Applications.md",
@@ -840,11 +896,25 @@
     "summary": "Nicholas Carlini 是对抗鲁棒与模型安全方向研究者，在对齐模型对抗评估中提出了关键实验协议。"
   },
   {
+    "title": "Nils Blach",
+    "url": "entities/Nils Blach.html",
+    "path": "entities/Nils Blach.md",
+    "section": "entities",
+    "summary": "Nils Blach 在该 wiki 主要关联 Graph-of-Thoughts 路线。"
+  },
+  {
     "title": "Notes 索引",
     "url": "notes/index.html",
     "path": "notes/index.md",
     "section": "notes",
     "summary": "汇总当前论文阅读笔记与导入索引页面，append ingest 已覆盖 notes 全目录。"
+  },
+  {
+    "title": "Onur Mutlu",
+    "url": "entities/Onur Mutlu.html",
+    "path": "entities/Onur Mutlu.md",
+    "section": "entities",
+    "summary": "Onur Mutlu 在该 wiki 主要关联结构化思维范式的系统化分析工作。"
   },
   {
     "title": "OpenAssistant",
@@ -910,6 +980,13 @@
     "summary": "Peiyi Wang 在该 wiki 中与自动过程监督和数学推理强化学习研究相关。"
   },
   {
+    "title": "PEMS08 Dataset",
+    "url": "entities/PEMS08 Dataset.html",
+    "path": "entities/PEMS08 Dataset.md",
+    "section": "entities",
+    "summary": "PEMS08 是交通流时空预测常用基准数据集，用于评估 GPT-ST 预训练迁移效果。"
+  },
+  {
     "title": "Perturbation Interaction",
     "url": "concepts/Perturbation Interaction.html",
     "path": "concepts/Perturbation Interaction.md",
@@ -922,6 +999,13 @@
     "path": "synthesis/Probabilistic Inference-Time Control for LLMs.md",
     "section": "synthesis",
     "summary": "该主题整合“后验采样、复杂度路由、双过程策略”三类方法，强调在推理阶段动态控制计算与不确定性。"
+  },
+  {
+    "title": "Process Supervision and CoT Internalization",
+    "url": "synthesis/Process Supervision and CoT Internalization.html",
+    "path": "synthesis/Process Supervision and CoT Internalization.md",
+    "section": "synthesis",
+    "summary": "该主题关注“显式过程监督如何迁移为隐式推理能力”，强调稳定训练策略与过程反馈信号的协同作用。"
   },
   {
     "title": "Process-Supervised Step Verification",
@@ -938,11 +1022,32 @@
     "summary": "Projects 索引 面向可执行目标的专题项目页。 项目页建议字段 目标与范围 关键问题 相关论文与概念链接 实验计划与里程碑 当前结论与下一步 建议新建 [ ] 长上下文模型路线图 [ ] 语音对齐机制调研"
   },
   {
+    "title": "Prompt-Robust Representation Probing",
+    "url": "concepts/Prompt-Robust Representation Probing.html",
+    "path": "concepts/Prompt-Robust Representation Probing.md",
+    "section": "concepts",
+    "summary": "通过多提示模板一致性检验，验证探针解码结果不依赖单一 prompt 偶然性。"
+  },
+  {
+    "title": "Proximal L0 Feature Sparsification",
+    "url": "concepts/Proximal L0 Feature Sparsification.html",
+    "path": "concepts/Proximal L0 Feature Sparsification.md",
+    "section": "concepts",
+    "summary": "以近端算子视角实现 L0 特征稀疏化，为后处理鲁棒增强提供可解释优化基础。"
+  },
+  {
     "title": "Proxy Index mIoU Optimization",
     "url": "concepts/Proxy Index mIoU Optimization.html",
     "path": "concepts/Proxy Index mIoU Optimization.md",
     "section": "concepts",
     "summary": "在 decision-based 分割攻击中，以 mIoU 作为代理指标可提供稳定反馈，优于仅用像素准确率的局部目标。"
+  },
+  {
+    "title": "Qingfeng Lan",
+    "url": "entities/Qingfeng Lan.html",
+    "path": "entities/Qingfeng Lan.md",
+    "section": "entities",
+    "summary": "Qingfeng Lan 在该 wiki 主要关联持续学习中的可塑性保持研究。"
   },
   {
     "title": "Quantity-Aware Emission Control in CIF",
@@ -964,6 +1069,20 @@
     "path": "references/index.md",
     "section": "references",
     "summary": "单篇论文摘要与结论页面的入口索引。"
+  },
+  {
+    "title": "Removal Smoothing for CoT Internalization",
+    "url": "concepts/Removal Smoothing for CoT Internalization.html",
+    "path": "concepts/Removal Smoothing for CoT Internalization.md",
+    "section": "concepts",
+    "summary": "在逐步移除 CoT token 的训练中引入随机平滑偏移，缓解目标分布突变导致的优化不稳定。"
+  },
+  {
+    "title": "Representation Capacity and Effective Rank",
+    "url": "synthesis/Representation Capacity and Effective Rank.html",
+    "path": "synthesis/Representation Capacity and Effective Rank.md",
+    "section": "synthesis",
+    "summary": "该主题从有效秩、特征多样性、线性可解码结构等视角审视模型表示容量，强调表示退化往往先于性能退化显现。"
   },
   {
     "title": "Research-Paper-Notes",
@@ -994,6 +1113,13 @@
     "summary": "Richard S. Sutton 参与持续学习可塑性研究，相关工作强调持续注入可学习能力的重要性。"
   },
   {
+    "title": "Robust Representation and Adversarial Dynamics",
+    "url": "synthesis/Robust Representation and Adversarial Dynamics.html",
+    "path": "synthesis/Robust Representation and Adversarial Dynamics.md",
+    "section": "synthesis",
+    "summary": "该主题从攻击、评测与后处理防御三侧讨论“表示是否稳健”，强调任务语义与特征几何共同决定鲁棒性。"
+  },
+  {
     "title": "RobustBench",
     "url": "entities/RobustBench.html",
     "path": "entities/RobustBench.md",
@@ -1006,6 +1132,13 @@
     "path": "entities/Sajjad Amini.md",
     "section": "entities",
     "summary": "Sajjad Amini 在该 wiki 中与 MeanSparse 后处理鲁棒增强方法相关。"
+  },
+  {
+    "title": "Search-Based Deliberate Reasoning Landscape",
+    "url": "synthesis/Search-Based Deliberate Reasoning Landscape.html",
+    "path": "synthesis/Search-Based Deliberate Reasoning Landscape.md",
+    "section": "synthesis",
+    "summary": "该主题聚焦“显式搜索结构 + 过程评估反馈”的深度推理路径，比较树/图/MCTS 三类展开机制的计算与效果权衡。"
   },
   {
     "title": "SegFormer",
@@ -1085,6 +1218,13 @@
     "summary": "时空表示学习可分为“结构化学习机制”和“可解码性验证机制”两条线，前者提升迁移，后者验证内部表征真实性。"
   },
   {
+    "title": "Success-Rate Based Complexity Labeling",
+    "url": "concepts/Success-Rate Based Complexity Labeling.html",
+    "path": "concepts/Success-Rate Based Complexity Labeling.md",
+    "section": "concepts",
+    "summary": "通过多模型多次采样成功率定义任务复杂度标签，降低单次评测噪声对路由学习的影响。"
+  },
+  {
     "title": "Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models",
     "url": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.html",
     "path": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
@@ -1125,6 +1265,13 @@
     "path": "Templates",
     "section": "Templates",
     "summary": "Directory index for Templates."
+  },
+  {
+    "title": "Temporal Structure Learning in Sequence Models",
+    "url": "synthesis/Temporal Structure Learning in Sequence Models.html",
+    "path": "synthesis/Temporal Structure Learning in Sequence Models.md",
+    "section": "synthesis",
+    "summary": "该主题整合“软对齐、结构感知预训练、时空探针”三条路线，关注时间结构在不同模型范式中的可学习与可解释性。"
   },
   {
     "title": "Thought Structure Taxonomy",
@@ -1225,11 +1372,25 @@
     "summary": "Yao Yao 在该 wiki 主要关联图结构推理与结构化思维搜索方法。"
   },
   {
+    "title": "Yejin Choi",
+    "url": "entities/Yejin Choi.html",
+    "path": "entities/Yejin Choi.md",
+    "section": "entities",
+    "summary": "Yejin Choi 在该 wiki 主要关联 CoT 内化与推理训练方法研究。"
+  },
+  {
     "title": "Yelong Shen",
     "url": "entities/Yelong Shen.html",
     "path": "entities/Yelong Shen.md",
     "section": "entities",
     "summary": "Yelong Shen 在该 wiki 主要关联 LoRA 与参数高效适配路径。"
+  },
+  {
+    "title": "Yeyuan Zeng",
+    "url": "entities/Yeyuan Zeng.html",
+    "path": "entities/Yeyuan Zeng.md",
+    "section": "entities",
+    "summary": "Yeyuan Zeng 在该 wiki 主要关联双过程混合推理与成本-准确率权衡研究。"
   },
   {
     "title": "Yinghuan Wang",

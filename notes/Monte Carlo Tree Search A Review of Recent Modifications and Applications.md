@@ -267,6 +267,6 @@
 ## Wiki 关联
 
 - 参考摘要：[[references/Monte Carlo Tree Search A Review of Recent Modifications and Applications|Monte Carlo Tree Search A Review of Recent Modifications and Applications]]
-- 概念锚点：[[concepts/Monte Carlo Tree Search for LLM Reasoning]]
-- 实体锚点：[[entities/Maciej Swiechowski]]
-- 综合页面：[[synthesis/Structured Reasoning Methods for LLMs]]
+- 概念锚点：[[concepts/Monte Carlo Tree Search for LLM Reasoning]]、[[concepts/Tree of Thoughts Reasoning]]、[[concepts/Monte Carlo Tree Self-Refine]]
+- 实体锚点：[[entities/Maciej Swiechowski]]、[[entities/Shunyu Yao]]、[[entities/Di Zhang]]
+- 综合页面：[[synthesis/Search-Based Deliberate Reasoning Landscape]]、[[synthesis/Structured Reasoning Methods for LLMs]]、[[synthesis/LLM Reasoning Search and Verification]]

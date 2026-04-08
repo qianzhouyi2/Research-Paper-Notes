@@ -245,6 +245,6 @@
 ## Wiki 关联
 
 - 参考摘要：[[references/Demystifying Chains, Trees, and Graphs of Thoughts|Demystifying Chains, Trees, and Graphs of Thoughts]]
-- 概念锚点：[[concepts/Tree of Thoughts Reasoning]]
-- 实体锚点：[[entities/Maciej Besta]]
-- 综合页面：[[synthesis/Structured Reasoning Methods for LLMs]]
+- 概念锚点：[[concepts/Thought Structure Taxonomy]]、[[concepts/Tree of Thoughts Reasoning]]、[[concepts/Graph of Thoughts Reasoning]]
+- 实体锚点：[[entities/Maciej Besta]]、[[entities/Onur Mutlu]]、[[entities/Maciej Swiechowski]]
+- 综合页面：[[synthesis/Search-Based Deliberate Reasoning Landscape]]、[[synthesis/Structured Reasoning Methods for LLMs]]、[[synthesis/LLM Reasoning Search and Verification]]

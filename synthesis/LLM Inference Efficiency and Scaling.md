@@ -9,6 +9,7 @@ tags:
 sources:
   - notes/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity.md
   - notes/Amortizing intractable inference in large language models.md
+  - notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md
   - notes/LoRA Low-Rank Adaptation of Large Language Models.md
   - notes/PanGu-pi Nonlinearity Compensation.md
 created: 2026-04-08
@@ -38,8 +39,14 @@ provenance:
 ## 关联概念
 
 - [[concepts/Adaptive Compute Routing]]
+- [[concepts/Amortized Bayesian Inference for LLMs]]
+- [[concepts/GFlowNet Posterior Sampling for Text Generation]]
+- [[concepts/Task Complexity-Aware Inference Budgeting]]
+- [[concepts/Success-Rate Based Complexity Labeling]]
 - [[concepts/Low-Rank Adaptation for LLMs]]
+- [[concepts/Parameter-Efficient Fine-Tuning for LLMs]]
 - [[concepts/Hyena Operator]]
 - [[concepts/Augmented Shortcut for Attention Blocks]]
 - [[concepts/Cascaded Activation Nonlinearity Compensation]]
+- [[synthesis/Probabilistic Inference-Time Control for LLMs]]
 - [[synthesis/Long-Context Architecture Without Full Attention]]

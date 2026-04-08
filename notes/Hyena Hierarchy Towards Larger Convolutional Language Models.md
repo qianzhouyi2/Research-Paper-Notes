@@ -368,4 +368,4 @@ $$
 - 参考摘要：[[references/Hyena Hierarchy Towards Larger Convolutional Language Models|Hyena Hierarchy Towards Larger Convolutional Language Models]]
 - 概念锚点：[[concepts/Hyena Operator]]、[[concepts/Data-Controlled Gating in Sequence Models]]、[[concepts/Implicit Long Convolution Parameterization]]
 - 实体锚点：[[entities/Michael Poli]]、[[entities/Tri Dao]]、[[entities/Yoshua Bengio]]
-- 综合页面：[[synthesis/Long-Context Architecture Without Full Attention]]
+- 综合页面：[[synthesis/Temporal Structure Learning in Sequence Models]]、[[synthesis/Long-Context Architecture Without Full Attention]]、[[synthesis/LLM Inference Efficiency and Scaling]]

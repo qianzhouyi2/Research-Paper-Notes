@@ -275,6 +275,6 @@
 ## Wiki 关联
 
 - 参考摘要：[[references/Amortizing intractable inference in large language models|Amortizing intractable inference in large language models]]
-- 概念锚点：[[concepts/Adaptive Compute Routing]]
-- 实体锚点：[[entities/Yoshua Bengio]]
-- 综合页面：[[synthesis/LLM Inference Efficiency and Scaling]]
+- 概念锚点：[[concepts/Amortized Bayesian Inference for LLMs]]、[[concepts/GFlowNet Posterior Sampling for Text Generation]]、[[concepts/Adaptive Compute Routing]]、[[concepts/Task Complexity-Aware Inference Budgeting]]
+- 实体锚点：[[entities/Edward Hu]]、[[entities/Moksh Jain]]、[[entities/Yoshua Bengio]]
+- 综合页面：[[synthesis/Probabilistic Inference-Time Control for LLMs]]、[[synthesis/LLM Inference Efficiency and Scaling]]、[[synthesis/Parameter-Efficient LLM Adaptation and Inference]]

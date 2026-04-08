@@ -331,4 +331,4 @@
 - 参考摘要：[[references/Are aligned neural networks adversarially aligned|Are aligned neural networks adversarially aligned]]
 - 概念锚点：[[concepts/Adversarial Alignment Evaluation]]、[[concepts/Known-Solvable Attack Calibration]]、[[concepts/Multimodal Adversarial Image Prompting]]
 - 实体锚点：[[entities/Nicholas Carlini]]、[[entities/Vicuna]]、[[entities/LLaVA]]
-- 综合页面：[[synthesis/Adversarial Robustness Evaluation Patterns]]、[[synthesis/Alignment Robustness Evaluation Ladder]]
+- 综合页面：[[synthesis/Robust Representation and Adversarial Dynamics]]、[[synthesis/Adversarial Robustness Evaluation Patterns]]、[[synthesis/Alignment Robustness Evaluation Ladder]]

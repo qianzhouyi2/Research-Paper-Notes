@@ -286,6 +286,6 @@
 ## Wiki 关联
 
 - 参考摘要：[[references/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models|Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models]]
-- 概念锚点：[[concepts/Adaptive Compute Routing]]
-- 实体锚点：[[entities/Yinghuan Wang]]
-- 综合页面：[[synthesis/Structured Reasoning Methods for LLMs]]
+- 概念锚点：[[concepts/Adaptive Compute Routing]]、[[concepts/Task Complexity-Aware Inference Budgeting]]、[[concepts/Tree of Thoughts Reasoning]]
+- 实体锚点：[[entities/Yeyuan Zeng]]、[[entities/Yinghuan Wang]]、[[entities/GPT-4]]
+- 综合页面：[[synthesis/Probabilistic Inference-Time Control for LLMs]]、[[synthesis/Structured Reasoning Methods for LLMs]]、[[synthesis/LLM Inference Efficiency and Scaling]]

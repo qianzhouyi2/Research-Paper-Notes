@@ -47,6 +47,24 @@ summary: 汇总当前论文阅读笔记与导入索引页面，append ingest 已
 - 模式：`append`
 - 说明：按你的要求忽略 `papers_sources/`，仅纳管并补全 `notes/` 全目录导航
 
+## 本次细扫（第二轮，2026-04-08）
+
+- 目标：继续从 `notes` 细扫并增强 `concepts/entities/synthesis` 语义覆盖
+- 结果：新增 6 个 concepts、4 个 entities、1 个 synthesis
+- 重点主题：概率推理控制、软单调对齐、多模态两阶段推理、PEFT
+
+## 本次细扫（第三轮，2026-04-08）
+
+- 目标：继续从 `notes` 细扫并抬高弱链接页的语义密度
+- 结果：新增 4 个 concepts、12 个 entities、2 个 synthesis
+- 重点主题：复杂度标注、CoT 内化稳定训练、时序结构学习、作者/数据集实体补链
+
+## 本次细扫（第四轮，2026-04-08）
+
+- 目标：继续从 `notes` 收口跨主题综合链接
+- 结果：新增 2 个 synthesis
+- 重点主题：高效适配与可塑性保持、表示容量与有效秩
+
 ## 关联沉淀入口
 
 - [[references/index|References 摘要卡]]
@@ -58,4 +76,4 @@ summary: 汇总当前论文阅读笔记与导入索引页面，append ingest 已
 ## 待办
 
 - [ ] 给每篇笔记补齐作者/机构/会议信息
-- [ ] 每篇笔记补 3 个以上双向链接（concept、entity、synthesis）
+- [x] 每篇笔记补 3 个以上双向链接（concept、entity、synthesis）

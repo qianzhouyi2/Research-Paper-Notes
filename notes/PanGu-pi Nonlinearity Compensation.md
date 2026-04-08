@@ -281,5 +281,5 @@
 
 - 参考摘要：[[references/PanGu-pi Nonlinearity Compensation|PanGu-pi Nonlinearity Compensation]]
 - 概念锚点：[[concepts/LLM Nonlinearity Compensation]]、[[concepts/Augmented Shortcut for Attention Blocks]]、[[concepts/Cascaded Activation Nonlinearity Compensation]]
-- 实体锚点：[[entities/Yunhe Wang]]、[[entities/Hanting Chen]]
-- 综合页面：[[synthesis/LLM Inference Efficiency and Scaling]]、[[synthesis/Long-Context Architecture Without Full Attention]]
+- 实体锚点：[[entities/Yunhe Wang]]、[[entities/Kai Han]]、[[entities/Hanting Chen]]
+- 综合页面：[[synthesis/Efficient Adaptation and Plasticity Retention]]、[[synthesis/Representation Capacity and Effective Rank]]、[[synthesis/LLM Inference Efficiency and Scaling]]

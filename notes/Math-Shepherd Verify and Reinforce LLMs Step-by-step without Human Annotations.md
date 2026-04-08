@@ -281,6 +281,6 @@
 ## Wiki 关联
 
 - 参考摘要：[[references/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations|Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations]]
-- 概念锚点：[[concepts/Implicit Chain-of-Thought Internalization]]
-- 实体锚点：[[entities/Peiyi Wang]]
-- 综合页面：[[synthesis/Structured Reasoning Methods for LLMs]]
+- 概念锚点：[[concepts/Process-Supervised Step Verification]]、[[concepts/Implicit Chain-of-Thought Internalization]]、[[concepts/Tree of Thoughts Reasoning]]
+- 实体锚点：[[entities/Peiyi Wang]]、[[entities/Lei Li]]、[[entities/GPT-4]]
+- 综合页面：[[synthesis/Process Supervision and CoT Internalization]]、[[synthesis/Structured Reasoning Methods for LLMs]]、[[synthesis/LLM Reasoning Search and Verification]]

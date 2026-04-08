@@ -293,6 +293,6 @@
 ## Wiki 关联
 
 - 参考摘要：[[references/Tree of Thoughts Deliberate Problem Solving with Large Language Models|Tree of Thoughts Deliberate Problem Solving with Large Language Models]]
-- 概念锚点：[[concepts/Tree of Thoughts Reasoning]]
-- 实体锚点：[[entities/Shunyu Yao]]
-- 综合页面：[[synthesis/Structured Reasoning Methods for LLMs]]
+- 概念锚点：[[concepts/Tree of Thoughts Reasoning]]、[[concepts/Monte Carlo Tree Search for LLM Reasoning]]、[[concepts/Thought Structure Taxonomy]]
+- 实体锚点：[[entities/Shunyu Yao]]、[[entities/Dian Yu]]、[[entities/GPT-4]]、[[entities/Di Zhang]]
+- 综合页面：[[synthesis/Search-Based Deliberate Reasoning Landscape]]、[[synthesis/Structured Reasoning Methods for LLMs]]、[[synthesis/LLM Reasoning Search and Verification]]

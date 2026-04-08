@@ -43,4 +43,5 @@ provenance:
 - [[concepts/Graph of Thoughts Reasoning]]
 - [[concepts/Monte Carlo Tree Search for LLM Reasoning]]
 - [[concepts/Implicit Chain-of-Thought Internalization]]
-
+- [[synthesis/Search-Based Deliberate Reasoning Landscape]]
+- [[synthesis/Process Supervision and CoT Internalization]]

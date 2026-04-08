@@ -561,4 +561,4 @@ function PERTURB(model, inputs, targets):
 - 参考摘要：[[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation|Delving into Decision-based Black-box Attacks on Semantic Segmentation]]
 - 概念锚点：[[concepts/Decision-based Black-box Attack for Segmentation]]、[[concepts/Proxy Index mIoU Optimization]]、[[concepts/Query-Efficient Attack Evaluation]]
 - 实体锚点：[[entities/Zhaoyu Chen]]、[[entities/Zhengyang Shan]]、[[entities/Cityscapes Dataset]]
-- 综合页面：[[synthesis/Decision-based Segmentation Attack Landscape]]、[[synthesis/Alignment Robustness Evaluation Ladder]]
+- 综合页面：[[synthesis/Robust Representation and Adversarial Dynamics]]、[[synthesis/Decision-based Segmentation Attack Landscape]]、[[synthesis/Alignment Robustness Evaluation Ladder]]

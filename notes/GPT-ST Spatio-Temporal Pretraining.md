@@ -324,5 +324,5 @@
 
 - 参考摘要：[[references/GPT-ST Spatio-Temporal Pretraining|GPT-ST Spatio-Temporal Pretraining]]
 - 概念锚点：[[concepts/Spatio-Temporal Pretraining for Language Models]]、[[concepts/Cluster-Aware Masked Pretraining]]、[[concepts/Hierarchical Spatio-Temporal Hypergraph Encoding]]
-- 实体锚点：[[entities/GPT-ST]]、[[entities/Peiyi Wang]]
-- 综合页面：[[synthesis/Spatio-Temporal Representation in Language Models]]、[[synthesis/Structured Spatio-Temporal Representation Learning]]
+- 实体锚点：[[entities/GPT-ST]]、[[entities/PEMS08 Dataset]]、[[entities/Peiyi Wang]]
+- 综合页面：[[synthesis/Temporal Structure Learning in Sequence Models]]、[[synthesis/Spatio-Temporal Representation in Language Models]]、[[synthesis/Structured Spatio-Temporal Representation Learning]]

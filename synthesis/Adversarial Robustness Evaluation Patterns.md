@@ -46,3 +46,4 @@ provenance:
 - [[concepts/Mean-Centered Feature Sparsification]]
 - [[concepts/Query-Efficient Attack Evaluation]]
 - [[synthesis/Alignment Robustness Evaluation Ladder]]
+- [[synthesis/Robust Representation and Adversarial Dynamics]]

@@ -244,6 +244,6 @@
 ## Wiki 关联
 
 - 参考摘要：[[references/LoRA Low-Rank Adaptation of Large Language Models|LoRA Low-Rank Adaptation of Large Language Models]]
-- 概念锚点：[[concepts/Low-Rank Adaptation for LLMs]]
-- 实体锚点：[[entities/Edward Hu]]
-- 综合页面：[[synthesis/LLM Inference Efficiency and Scaling]]
+- 概念锚点：[[concepts/Parameter-Efficient Fine-Tuning for LLMs]]、[[concepts/Low-Rank Adaptation for LLMs]]、[[concepts/Adaptive Compute Routing]]
+- 实体锚点：[[entities/Edward Hu]]、[[entities/Yelong Shen]]、[[entities/OpenAssistant]]
+- 综合页面：[[synthesis/Efficient Adaptation and Plasticity Retention]]、[[synthesis/LLM Inference Efficiency and Scaling]]、[[synthesis/Parameter-Efficient LLM Adaptation and Inference]]

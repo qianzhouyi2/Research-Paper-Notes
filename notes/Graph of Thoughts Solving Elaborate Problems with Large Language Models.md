@@ -275,6 +275,6 @@
 ## Wiki 关联
 
 - 参考摘要：[[references/Graph of Thoughts Solving Elaborate Problems with Large Language Models|Graph of Thoughts Solving Elaborate Problems with Large Language Models]]
-- 概念锚点：[[concepts/Graph of Thoughts Reasoning]]
-- 实体锚点：[[entities/Maciej Besta]]
-- 综合页面：[[synthesis/Structured Reasoning Methods for LLMs]]
+- 概念锚点：[[concepts/Graph of Thoughts Reasoning]]、[[concepts/Thought Structure Taxonomy]]、[[concepts/Tree of Thoughts Reasoning]]
+- 实体锚点：[[entities/Maciej Besta]]、[[entities/Nils Blach]]、[[entities/Yao Yao]]
+- 综合页面：[[synthesis/Search-Based Deliberate Reasoning Landscape]]、[[synthesis/Structured Reasoning Methods for LLMs]]、[[synthesis/LLM Reasoning Search and Verification]]

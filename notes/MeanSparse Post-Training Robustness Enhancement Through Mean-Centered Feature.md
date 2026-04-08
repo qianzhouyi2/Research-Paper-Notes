@@ -403,6 +403,6 @@ $$
 ## Wiki 关联
 
 - 参考摘要：[[references/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature Sparsification|MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature Sparsification]]
-- 概念锚点：[[concepts/Mean-Centered Feature Sparsification]]
-- 实体锚点：[[entities/Sajjad Amini]]、[[entities/Amir Houmansadr]]
-- 综合页面：[[synthesis/Adversarial Robustness Evaluation Patterns]]、[[synthesis/Alignment Robustness Evaluation Ladder]]
+- 概念锚点：[[concepts/Proximal L0 Feature Sparsification]]、[[concepts/Mean-Centered Feature Sparsification]]、[[concepts/Feature Effective Rank Diagnostics]]
+- 实体锚点：[[entities/Sajjad Amini]]、[[entities/Shiqing Ma]]、[[entities/Amir Houmansadr]]
+- 综合页面：[[synthesis/Representation Capacity and Effective Rank]]、[[synthesis/Robust Representation and Adversarial Dynamics]]、[[synthesis/Adversarial Robustness Evaluation Patterns]]

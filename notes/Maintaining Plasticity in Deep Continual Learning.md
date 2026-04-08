@@ -421,5 +421,5 @@ u_{l, i, t} &= \eta* u_{l, i, t-1} + (1 - \eta)* y_{l, i, t}, \\
 
 - 参考摘要：[[references/Maintaining Plasticity in Deep Continual Learning|Maintaining Plasticity in Deep Continual Learning]]
 - 概念锚点：[[concepts/Loss of Plasticity in Continual Learning]]、[[concepts/Continual Backpropagation]]、[[concepts/Selective Neuron Reinitialization]]
-- 实体锚点：[[entities/Shibhansh Dohare]]、[[entities/Richard S. Sutton]]
-- 综合页面：[[synthesis/Continual Learning Plasticity Maintenance Playbook]]
+- 实体锚点：[[entities/Shibhansh Dohare]]、[[entities/Qingfeng Lan]]、[[entities/Richard S. Sutton]]
+- 综合页面：[[synthesis/Efficient Adaptation and Plasticity Retention]]、[[synthesis/Representation Capacity and Effective Rank]]、[[synthesis/Continual Learning Plasticity Maintenance Playbook]]

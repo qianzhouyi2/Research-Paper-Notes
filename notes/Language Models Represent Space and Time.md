@@ -274,6 +274,6 @@
 ## Wiki 关联
 
 - 参考摘要：[[references/Language Models Represent Space and Time|Language Models Represent Space and Time]]
-- 概念锚点：[[concepts/Spatio-Temporal Pretraining for Language Models]]、[[concepts/Linear Probe World-Model Evaluation]]
-- 实体锚点：[[entities/Wes Gurnee]]、[[entities/Max Tegmark]]
-- 综合页面：[[synthesis/Spatio-Temporal Representation in Language Models]]、[[synthesis/Structured Spatio-Temporal Representation Learning]]
+- 概念锚点：[[concepts/Prompt-Robust Representation Probing]]、[[concepts/Spatio-Temporal Pretraining for Language Models]]、[[concepts/Linear Probe World-Model Evaluation]]
+- 实体锚点：[[entities/Wes Gurnee]]、[[entities/Max Tegmark]]、[[entities/Llama-2]]
+- 综合页面：[[synthesis/Representation Capacity and Effective Rank]]、[[synthesis/Temporal Structure Learning in Sequence Models]]、[[synthesis/Spatio-Temporal Representation in Language Models]]

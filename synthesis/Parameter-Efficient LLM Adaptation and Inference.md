@@ -1,0 +1,40 @@
+---
+title: Parameter-Efficient LLM Adaptation and Inference
+category: synthesis
+tags:
+  - synthesis
+  - llm
+  - efficiency
+  - adaptation
+sources:
+  - notes/LoRA Low-Rank Adaptation of Large Language Models.md
+  - notes/Amortizing intractable inference in large language models.md
+  - notes/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity.md
+created: 2026-04-08
+updated: 2026-04-08
+summary: 该主题整合参数高效适配与推理时动态计算分配两条路线，目标是在性能与成本之间建立可控折中。
+provenance:
+  extracted: 0.75
+  inferred: 0.22
+  ambiguous: 0.03
+---
+
+# Parameter-Efficient LLM Adaptation and Inference
+
+## 综合结论
+
+- 训练侧通过低秩适配降低可训练参数，推理侧通过难度感知策略动态分配计算预算。
+- 两条路线可组合：前者减少微调成本，后者减少在线推理成本。^[inferred]
+
+## 代表页面
+
+- [[references/LoRA Low-Rank Adaptation of Large Language Models]]
+- [[references/Amortizing intractable inference in large language models]]
+- [[references/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity]]
+
+## 关联概念
+
+- [[concepts/Parameter-Efficient Fine-Tuning for LLMs]]
+- [[concepts/Low-Rank Adaptation for LLMs]]
+- [[concepts/Adaptive Compute Routing]]
+- [[concepts/Task Complexity-Aware Inference Budgeting]]

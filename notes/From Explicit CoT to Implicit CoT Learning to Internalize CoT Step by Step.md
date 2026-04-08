@@ -251,6 +251,6 @@
 ## Wiki 关联
 
 - 参考摘要：[[references/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step|From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step]]
-- 概念锚点：[[concepts/Implicit Chain-of-Thought Internalization]]
-- 实体锚点：[[entities/Leslie Lee]]
-- 综合页面：[[synthesis/Structured Reasoning Methods for LLMs]]
+- 概念锚点：[[concepts/Implicit Chain-of-Thought Internalization]]、[[concepts/Removal Smoothing for CoT Internalization]]、[[concepts/Process-Supervised Step Verification]]
+- 实体锚点：[[entities/Leslie Lee]]、[[entities/Yejin Choi]]、[[entities/Peiyi Wang]]
+- 综合页面：[[synthesis/Process Supervision and CoT Internalization]]、[[synthesis/Structured Reasoning Methods for LLMs]]、[[synthesis/LLM Reasoning Search and Verification]]

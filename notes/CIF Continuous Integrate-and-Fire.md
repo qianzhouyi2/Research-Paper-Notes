@@ -302,6 +302,6 @@
 ## Wiki 关联
 
 - 参考摘要：[[references/CIF Continuous Integrate-and-Fire|CIF Continuous Integrate-and-Fire]]
-- 概念锚点：[[concepts/Continuous Integrate-and-Fire Alignment]]、[[concepts/Quantity-Aware Emission Control in CIF]]
-- 实体锚点：[[entities/Li Dong]]、[[entities/Shuang Xu]]
-- 综合页面：[[synthesis/Structured Spatio-Temporal Representation Learning]]
+- 概念锚点：[[concepts/Continuous Integrate-and-Fire Alignment]]、[[concepts/Soft Monotonic Alignment for Sequence Transduction]]、[[concepts/Quantity-Aware Emission Control in CIF]]
+- 实体锚点：[[entities/Li Dong]]、[[entities/Shuang Xu]]、[[entities/LibriSpeech Dataset]]
+- 综合页面：[[synthesis/Temporal Structure Learning in Sequence Models]]、[[synthesis/Structured Spatio-Temporal Representation Learning]]、[[synthesis/Spatio-Temporal Representation in Language Models]]

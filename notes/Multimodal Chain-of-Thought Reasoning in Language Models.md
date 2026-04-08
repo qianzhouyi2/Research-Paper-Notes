@@ -286,6 +286,6 @@
 ## Wiki 关联
 
 - 参考摘要：[[references/Multimodal Chain-of-Thought Reasoning in Language Models|Multimodal Chain-of-Thought Reasoning in Language Models]]
-- 概念锚点：[[concepts/Multimodal Chain-of-Thought Reasoning]]
-- 实体锚点：[[entities/GPT-4]]
-- 综合页面：[[synthesis/Structured Reasoning Methods for LLMs]]
+- 概念锚点：[[concepts/Two-Stage Multimodal CoT Pipeline]]、[[concepts/Multimodal Chain-of-Thought Reasoning]]、[[concepts/Process-Supervised Step Verification]]
+- 实体锚点：[[entities/Zhuosheng Zhang]]、[[entities/GPT-4]]、[[entities/MiniGPT-4]]
+- 综合页面：[[synthesis/Process Supervision and CoT Internalization]]、[[synthesis/Structured Reasoning Methods for LLMs]]、[[synthesis/Multimodal Composition and Reasoning]]

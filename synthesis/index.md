@@ -18,12 +18,23 @@ summary: 跨论文对比、综合与主题结论页面索引。
 - [[synthesis/Adversarial Robustness Evaluation Patterns]]
 - [[synthesis/Alignment Robustness Evaluation Ladder]]
 - [[synthesis/Continual Learning Plasticity Maintenance Playbook]]
+- [[synthesis/Efficient Adaptation and Plasticity Retention]]
+- [[synthesis/LLM Reasoning Search and Verification]]
 - [[synthesis/Structured Reasoning Methods for LLMs]]
 - [[synthesis/Multi-Agent LLM Collaboration Landscape]]
 - [[synthesis/LLM Inference Efficiency and Scaling]]
+- [[synthesis/Parameter-Efficient LLM Adaptation and Inference]]
+- [[synthesis/Probabilistic Inference-Time Control for LLMs]]
+- [[synthesis/Process Supervision and CoT Internalization]]
+- [[synthesis/Inference-Time Orchestration and Routing for LLMs]]
 - [[synthesis/Long-Context Architecture Without Full Attention]]
+- [[synthesis/Multimodal Composition and Reasoning]]
+- [[synthesis/Robust Representation and Adversarial Dynamics]]
+- [[synthesis/Representation Capacity and Effective Rank]]
+- [[synthesis/Search-Based Deliberate Reasoning Landscape]]
 - [[synthesis/Spatio-Temporal Representation in Language Models]]
 - [[synthesis/Structured Spatio-Temporal Representation Learning]]
+- [[synthesis/Temporal Structure Learning in Sequence Models]]
 
 ## 推荐结构
 

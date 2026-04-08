@@ -1,0 +1,31 @@
+---
+title: Mixture-of-Agents Aggregation
+category: concept
+tags:
+  - concept
+  - llm
+  - multi-agent
+  - orchestration
+sources:
+  - notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md
+  - notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md
+created: 2026-04-08
+updated: 2026-04-08
+summary: 通过分层代理协作与聚合策略整合多模型候选解，提升长上下文与复杂任务的整体输出质量。
+provenance:
+  extracted: 0.81
+  inferred: 0.17
+  ambiguous: 0.02
+---
+
+# Mixture-of-Agents Aggregation
+
+核心在于“分工求解 + 聚合裁决”，让不同代理在同一问题上形成互补。
+
+## 关联页面
+
+- [[references/Mixture-of-Agents Enhances Large Language Model Capabilities]]
+- [[references/Chain of Agents Large Language Models Collaborating on Long-Context Tasks]]
+- [[concepts/Multi-Agent LLM Orchestration]]
+- [[synthesis/Multi-Agent LLM Collaboration Landscape]]
+
