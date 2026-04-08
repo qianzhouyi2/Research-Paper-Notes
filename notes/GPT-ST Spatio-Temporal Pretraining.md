@@ -12,9 +12,9 @@
 
 - 题目：GPT-ST: Generative Pre-Training of Spatio-Temporal Graph Neural Networks
 - 链接：[[papers_sources/Research-Paper-Notes/GPT-ST预训练时空框架.pdf|GPT-ST预训练时空框架.pdf]]
-- 作者：待从论文首页补全（当前依据导入笔记）
-- 单位：待确认（源笔记未完整记录全部作者单位）
-- 发表：2023（见引文文件）
+- 作者：Zhonghang Li, Lianghao Xia, Yong Xu, Chao Huang
+- 单位：待逐一补全（已核对作者与 NeurIPS/OpenReview 版本）
+- 发表：NeurIPS 2023（Poster）
 - 关键词：spatio-temporal prediction, masked autoencoder, hypergraph, cluster-aware masking, transferable pretraining
 - 源笔记：[[papers_sources/Research-Paper-Notes/GPT-ST预训练时空框架.md|GPT-ST预训练时空框架.md]]
 
@@ -306,7 +306,8 @@
 - 源笔记：[[papers_sources/Research-Paper-Notes/GPT-ST预训练时空框架.md|GPT-ST预训练时空框架.md]]
 - 论文文件：[[papers_sources/Research-Paper-Notes/GPT-ST预训练时空框架.pdf|GPT-ST预训练时空框架.pdf]]
 - 联网补充来源：
-  - arXiv: https://arxiv.org/abs/2311.04250
+  - arXiv: https://arxiv.org/abs/2311.04245
+  - OpenReview（NeurIPS 2023 poster）: https://openreview.net/forum?id=nMH5cUaSj8
 
 ### 15.3 已完成自检记录
 
@@ -324,5 +325,5 @@
 
 - 参考摘要：[[references/GPT-ST Spatio-Temporal Pretraining|GPT-ST Spatio-Temporal Pretraining]]
 - 概念锚点：[[concepts/Spatio-Temporal Pretraining for Language Models]]、[[concepts/Cluster-Aware Masked Pretraining]]、[[concepts/Hierarchical Spatio-Temporal Hypergraph Encoding]]
-- 实体锚点：[[entities/GPT-ST]]、[[entities/PEMS08 Dataset]]、[[entities/Peiyi Wang]]
+- 实体锚点：[[entities/GPT-ST]]、[[entities/PEMS08 Dataset]]、[[entities/Zhonghang Li]]、[[entities/Chao Huang]]
 - 综合页面：[[synthesis/Temporal Structure Learning in Sequence Models]]、[[synthesis/Spatio-Temporal Representation in Language Models]]、[[synthesis/Structured Spatio-Temporal Representation Learning]]

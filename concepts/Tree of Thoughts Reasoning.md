@@ -1,4 +1,4 @@
----
+﻿---
 title: Tree of Thoughts Reasoning
 category: concept
 tags:
@@ -21,9 +21,15 @@ provenance:
 
 以“多分支思维状态 + 评估 + 搜索”替代单链条推理。
 
+## 联网补充
+
+- ToT 把中间 thought 提升为搜索状态，并显式分开候选生成、状态评估和 BFS / DFS 搜索，是从 CoT 迈向 deliberate search 的代表形式。
+- 它尤其适合规划和组合搜索任务；对短链、低歧义任务来说，多分支探索常常主要带来额外 token 成本。
+
 ## 关联页面
 
 - [[references/Tree of Thoughts Deliberate Problem Solving with Large Language Models]]
 - [[references/Monte Carlo Tree Search A Review of Recent Modifications and Applications]]
 - [[synthesis/Structured Reasoning Methods for LLMs]]
+
 

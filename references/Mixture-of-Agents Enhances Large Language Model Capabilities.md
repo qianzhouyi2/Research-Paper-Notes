@@ -23,9 +23,11 @@ provenance:
 
 - 原始笔记：[[notes/Mixture-of-Agents Enhances Large Language Model Capabilities]]
 - 核心结论：MoA 证明了“多模型协作 + 分层聚合”在不重训的前提下可稳定提升 LLM 质量，但成本与延迟是核心约束。
+- 联网核验：arXiv 列作者为 Junlin Wang、Jue Wang、Ben Athiwaratkun、Ce Zhang、James Zou。
 
 ## 关联页面
 
 - [[concepts/Multi-Agent LLM Orchestration]]
-- [[entities/Junfan Jiang]]
+- [[entities/Junlin Wang]]
+- [[entities/Jue Wang]]
 - [[synthesis/Multi-Agent LLM Collaboration Landscape]]

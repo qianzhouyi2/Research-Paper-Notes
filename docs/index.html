@@ -68,9 +68,9 @@
 <li>已导入论文笔记：26 篇（见 <a href="notes/index.html">index</a>）</li>
 <li>References：26 篇（含 1 个 MeanSparse 命名桥接页）</li>
 <li>Concepts：50 篇（方法级与协议级概念）</li>
-<li>Entities：64 篇（作者/模型/数据集）</li>
+<li>Entities：67 篇（作者/模型/数据集）</li>
 <li>Synthesis：21 篇（跨论文主题综合）</li>
-<li>已纳管来源：23 个（见 <a href="log.html">log</a> 与 <code>.manifest.json</code>）</li>
+<li>已纳管来源：26 个（见 <a href="log.html">log</a> 与 <code>.manifest.json</code>）</li>
 <li>原始资料：<a href="papers_sources">papers_sources</a></li>
 <li>模板：<a href="Templates/论文阅读模板.html">论文阅读模板</a></li>
 </ul>
@@ -129,6 +129,23 @@
 <li>note 级更新：5 篇笔记增强 <code>Wiki 关联</code>（重点收口 LoRA / Maintaining / PanGu-π / MeanSparse / Language 表示容量主题）</li>
 <li>说明：新增 <a href="synthesis/Efficient Adaptation and Plasticity Retention.html">Efficient Adaptation and Plasticity Retention</a> 与 <a href="synthesis/Representation Capacity and Effective Rank.html">Representation Capacity and Effective Rank</a>，当前 25 篇笔记已全部达到 <code>concepts&gt;=3</code>、<code>entities&gt;=3</code>、<code>synthesis&gt;=3</code></li>
 </ul>
+<h2 id="2026-04-08">最新 联网核验更新（2026-04-08）</h2>
+<ul>
+<li>类型：<code>wiki-update</code>（online metadata refresh）</li>
+<li>新增页：10 个 entities</li>
+<li>清理页：移除 7 个误归因 author entities</li>
+<li>页面修正：6 篇 notes、26 个 references 完成作者 / venue / source 核验</li>
+<li>覆盖结果：26/26 <code>reference</code> 卡现已全部带有 <code>联网核验</code> 条目</li>
+<li>说明：前半轮重点修正 CIF、From Explicit CoT、GPT-ST、Math-Shepherd、Mixture-of-Agents、Synergy-of-Thoughts 的作者归因；后半轮补齐其余 20 个 reference 卡的官方来源核验。<code>concepts</code> 与 <code>synthesis</code> 层复检后未发现需要基于联网事实改写的漂移项</li>
+</ul>
+<h2 id="concepts-2026-04-08">最新 Concepts 联网补充（2026-04-08）</h2>
+<ul>
+<li>类型：<code>wiki-update</code>（online concept refresh）</li>
+<li>覆盖：50/50 <code>concepts</code> 完成联网复核</li>
+<li>页面更新：27 个轻量 concept 卡新增 <code>联网补充</code> 段；无新增结构页</li>
+<li>主题重点：budget routing、search-based reasoning、multimodal CoT、PEFT、CIF、multi-agent orchestration</li>
+<li>说明：本轮依据官方论文页与已整理 notes 补足机制定义、适用边界与跨论文区分；其余 23 个 concept 页结构已足够，仅完成复核不做机械改写</li>
+</ul>
 <h2 id="_3">推荐工作流</h2>
 <ol>
 <li>把原始 PDF/源码/草稿放入 <a href="papers_sources">papers_sources</a></li>
@@ -140,7 +157,7 @@
 <h2 id="_4">本周可做</h2>
 <ul>
 <li>[x] 为重点薄弱笔记补齐第二轮概念/实体/综合锚点</li>
-<li>[ ] 在 <code>references/</code> 补齐单篇摘要卡</li>
+<li>[x] 在 <code>references/</code> 补齐单篇摘要卡并完成联网核验</li>
 <li>[ ] 新建一个 <code>projects/</code> 专题页（例如“长上下文建模”）</li>
 </ul></div>
       </article>

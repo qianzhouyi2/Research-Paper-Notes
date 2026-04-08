@@ -23,10 +23,12 @@ provenance:
 
 - 原始笔记：[[notes/Multimodal Chain-of-Thought Reasoning in Language Models]]
 - 核心结论：Multimodal-CoT 的关键价值是把“推理链质量”与“答案正确率”通过视觉证据重新耦合，从而减少幻觉误导。
+- 联网核验：OpenReview 显示该文发表于 TMLR，作者为 Zhuosheng Zhang、Aston Zhang、Mu Li、Hai Zhao、Alex Smola、George Karypis。
 
 ## 关联页面
 
 - [[concepts/Multimodal Chain-of-Thought Reasoning]]
 - [[entities/GPT-4]]
 - [[entities/Hai Zhao]]
+- [[entities/Zhuosheng Zhang]]
 - [[synthesis/Structured Reasoning Methods for LLMs]]

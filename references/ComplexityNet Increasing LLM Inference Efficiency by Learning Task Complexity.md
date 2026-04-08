@@ -23,6 +23,7 @@ provenance:
 
 - 原始笔记：[[notes/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity]]
 - 核心结论：ComplexityNet 用“复杂度预测 + 模型分配”将 LLM 推理从固定高配改为动态调度，在 MBPP 上实现了显著降本且保持高准确率。
+- 联网核验：arXiv 2312.11511 列作者为 Henry Bae、Aghyad Deeb、Alex Fleury、Kehang Zhu，当前公开版本为 arXiv 预印本。
 
 ## 关联页面
 

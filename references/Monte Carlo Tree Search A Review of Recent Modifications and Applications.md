@@ -23,6 +23,7 @@ provenance:
 
 - 原始笔记：[[notes/Monte Carlo Tree Search A Review of Recent Modifications and Applications]]
 - 核心结论：这是一篇面向“复杂场景如何改 MCTS”的系统路线图，核心价值在于把改造策略与应用约束做了可执行的对应。
+- 联网核验：Springer 页面显示该综述发表于 Artificial Intelligence Review 2023，online first 为 2022-07-19；作者为 Maciej Świechowski、Konrad Godlewski、Bartosz Sawicki、Jacek Mańdziuk。
 
 ## 关联页面
 

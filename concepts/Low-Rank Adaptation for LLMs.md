@@ -1,4 +1,4 @@
----
+﻿---
 title: Low-Rank Adaptation for LLMs
 category: concept
 tags:
@@ -21,8 +21,14 @@ provenance:
 
 LoRA 的核心价值是把“全量微调”改写为“低秩增量学习”，减少显存与训练成本。
 
+## 联网补充
+
+- LoRA 冻结底座权重，只学习低秩增量矩阵，并可在推理前合并回原权重，所以它解决的是“训练与部署成本”而不是“推理链长度”。
+- 低秩是假设不是公理：秩设得过小、或注入层选得不对时，适配能力会先于参数节省触顶。
+
 ## 关联页面
 
 - [[references/LoRA Low-Rank Adaptation of Large Language Models]]
 - [[synthesis/LLM Inference Efficiency and Scaling]]
+
 

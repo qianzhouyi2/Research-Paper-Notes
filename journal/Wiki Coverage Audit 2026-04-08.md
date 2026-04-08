@@ -103,6 +103,41 @@ provenance:
   - `synthesis >= 3`：25 篇
 - 新增结构页（本轮）：2 个 `synthesis`
 
+## 七轮联网核验后复测（facts / metadata refresh）
+
+- `notes` 总数（排除索引页）：25
+- `references` 总数：26
+- 结构覆盖保持不变：
+  - `concepts >= 3`：25 篇
+  - `entities >= 3`：25 篇
+  - `synthesis >= 3`：25 篇
+- 联网纠错与收口结果：
+  - 修正 6 篇 notes 的作者 / venue / source metadata
+  - 修正 26 个 `references` 的联网核验说明，其中后半轮补齐剩余 20 个 reference 卡
+  - 新增 10 个校验后作者实体页，移除 7 个误归因实体页
+  - 4 个 `references` 补充现有作者实体锚点
+- 结构层复检：
+  - `concepts` 未发现需基于联网事实修正的漂移项
+  - `synthesis` 未发现需基于联网事实修正的漂移项
+
+## 八轮联网核验后复测（concept refresh）
+
+- `concepts` 总数：50
+- `concepts` 联网复核覆盖：50/50
+- 本轮实质更新：
+  - 27 个轻量 concept 页新增 `联网补充`
+  - 重点补足机制定义、适用边界与相邻概念区分
+  - 未新增或删除 structure pages
+- 结构总量保持不变：
+  - `notes`：26
+  - `references`：26
+  - `concepts`：50
+  - `entities`：67
+  - `synthesis`：21
+- 复核结论：
+  - `concepts` 层已从“定义卡”提升到“定义 + 联网补充”的双层结构
+  - richer concept 页未发现需要按一手来源重写的事实漂移
+
 ## 优先修复顺序
 
 1. 先补 `reference -> entities` 缺口（当前最明显）。

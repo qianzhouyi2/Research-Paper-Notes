@@ -3,7 +3,7 @@ title: GPT-ST Spatio-Temporal Pretraining
 category: reference
 tags:
   - paper
-  - llm
+  - gnn
   - spatio-temporal
   - pretraining
 sources:
@@ -23,6 +23,7 @@ provenance:
 
 - 原始笔记：[[notes/GPT-ST Spatio-Temporal Pretraining]]
 - 核心结论：GPT-ST 用结构感知预训练机制把时空关系学得更可迁移，并在多任务上稳定提升下游预测性能。
+- 联网核验：OpenReview 显示该文为 NeurIPS 2023 poster；作者为 Zhonghang Li、Lianghao Xia、Yong Xu、Chao Huang。
 
 ## 细化方法锚点
 
@@ -36,8 +37,8 @@ provenance:
 - [[concepts/Cluster-Aware Masked Pretraining]]
 - [[concepts/Hierarchical Spatio-Temporal Hypergraph Encoding]]
 - [[entities/GPT-ST]]
-- [[entities/Peiyi Wang]]
-- [[entities/Li Dong]]
+- [[entities/Zhonghang Li]]
+- [[entities/Chao Huang]]
 - [[references/Language Models Represent Space and Time]]
 - [[synthesis/Spatio-Temporal Representation in Language Models]]
 - [[synthesis/Structured Spatio-Temporal Representation Learning]]

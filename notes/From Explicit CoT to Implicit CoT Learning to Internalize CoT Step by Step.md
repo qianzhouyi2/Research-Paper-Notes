@@ -12,9 +12,9 @@
 
 - 题目：From Explicit CoT to Implicit CoT: Learning to Internalize CoT Step by Step
 - 链接：https://arxiv.org/abs/2405.14838
-- 作者：Leslie Lee, Aayush Kumar, Yung‑Sung Chuang, Yanqi Zhou, Yejin Choi, Danqi Chen, Stuart Shieber
-- 单位：University of Washington / Harvard University（按论文作者机构信息汇总）
-- 发表：arXiv 2024
+- 作者：Yuntian Deng, Yejin Choi, Stuart Shieber
+- 单位：待逐一补全（已核对作者与 arXiv 版本）
+- 发表：arXiv 2024（ICLR 2025 提交稿）
 - 关键词：Implicit CoT, Stepwise Internalization, curriculum learning, removal smoothing, reasoning efficiency
 
 ---
@@ -252,5 +252,5 @@
 
 - 参考摘要：[[references/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step|From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step]]
 - 概念锚点：[[concepts/Implicit Chain-of-Thought Internalization]]、[[concepts/Removal Smoothing for CoT Internalization]]、[[concepts/Process-Supervised Step Verification]]
-- 实体锚点：[[entities/Leslie Lee]]、[[entities/Yejin Choi]]、[[entities/Peiyi Wang]]
+- 实体锚点：[[entities/Yuntian Deng]]、[[entities/Yejin Choi]]、[[entities/Stuart Shieber]]
 - 综合页面：[[synthesis/Process Supervision and CoT Internalization]]、[[synthesis/Structured Reasoning Methods for LLMs]]、[[synthesis/LLM Reasoning Search and Verification]]

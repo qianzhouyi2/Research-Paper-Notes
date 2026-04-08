@@ -1,4 +1,4 @@
----
+﻿---
 title: Multi-Agent LLM Orchestration
 category: concept
 tags:
@@ -26,9 +26,15 @@ provenance:
 - 中间结果协议
 - 最终聚合策略
 
+## 联网补充
+
+- CoA 和 MoA 对应了两种不同编排逻辑：前者强调链式通信压缩长上下文，后者强调 proposer-aggregator 分层综合候选答案。
+- 因此多智能体收益主要来自协议设计而不是 agent 数量本身；消息接口和角色分工设计差，额外 agent 只会堆成本。
+
 ## 关联页面
 
 - [[references/Chain of Agents Large Language Models Collaborating on Long-Context Tasks]]
 - [[references/Mixture-of-Agents Enhances Large Language Model Capabilities]]
 - [[synthesis/Multi-Agent LLM Collaboration Landscape]]
+
 

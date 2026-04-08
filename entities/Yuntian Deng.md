@@ -1,5 +1,5 @@
 ---
-title: Leslie Lee
+title: Yuntian Deng
 category: entity
 tags:
   - entity
@@ -10,14 +10,14 @@ sources:
   - notes/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step.md
 created: 2026-04-08
 updated: 2026-04-08
-summary: Leslie Lee 在该 wiki 中与显式到隐式 CoT 内化方法相关，聚焦推理效率与质量平衡。
+summary: Yuntian Deng 在该 wiki 中主要关联显式 CoT 向隐式 CoT 的课程式内化研究。
 provenance:
-  extracted: 0.86
-  inferred: 0.12
+  extracted: 0.9
+  inferred: 0.08
   ambiguous: 0.02
 ---
 
-# Leslie Lee
+# Yuntian Deng
 
 ## 关联页面
 

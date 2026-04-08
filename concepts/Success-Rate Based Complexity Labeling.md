@@ -1,4 +1,4 @@
----
+﻿---
 title: Success-Rate Based Complexity Labeling
 category: concept
 tags:
@@ -21,9 +21,15 @@ provenance:
 
 核心思想是先估计任务在模型族上的可解性分布，再据此定义复杂度等级。
 
+## 联网补充
+
+- ComplexityNet 的复杂度标签来自多模型多次试跑后的成功率映射，所以它本质上是“相对求解器池”的行为标签。
+- 这种标签比单次试跑稳定得多，但会随着模型池、采样温度或验证规则变化而漂移，不能被当成任务固有真值。
+
 ## 关联页面
 
 - [[references/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity]]
 - [[concepts/Task Complexity-Aware Inference Budgeting]]
 - [[synthesis/Probabilistic Inference-Time Control for LLMs]]
+
 

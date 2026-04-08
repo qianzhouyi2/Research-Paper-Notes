@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Low-Rank Adaptation for LLMs | Research Paper Notes</title>
-  <meta name="description" content="低秩适配通过在冻结主干权重上注入小规模低秩增量，实现参数高效微调并降低部署成本。">
+  <meta name="description" content="﻿ title: Low Rank Adaptation for LLMs category: concept tags: concept llm finetuning parameter efficient sources: notes/LoRA Low Rank Adaptation of Large Language Models.md create…">
   <link rel="stylesheet" href="../styles.css">
   <script defer src="../site.js"></script>
 </head>
@@ -36,7 +36,7 @@
         <div>
           <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
           <h2>Low-Rank Adaptation for LLMs</h2>
-          <p>低秩适配通过在冻结主干权重上注入小规模低秩增量，实现参数高效微调并降低部署成本。</p>
+          <p>﻿ title: Low Rank Adaptation for LLMs category: concept tags: concept llm finetuning parameter efficient sources: notes/LoRA Low Rank Adaptation of Large Language Models.md create…</p>
         </div>
         <div class="topbar-actions">
           <div class="search-box">
@@ -50,9 +50,32 @@
 
       <article class="article-wrap panel">
         <div class="article-path">concepts/Low-Rank Adaptation for LLMs.md</div>
-        <div class="markdown-body"><h1 id="low-rank-adaptation-for-llms">Low-Rank Adaptation for LLMs</h1>
+        <div class="markdown-body"><p>﻿&mdash;
+title: Low-Rank Adaptation for LLMs
+category: concept
+tags:
+  - concept
+  - llm
+  - finetuning
+  - parameter-efficient
+sources:
+  - notes/LoRA Low-Rank Adaptation of Large Language Models.md
+created: 2026-04-08
+updated: 2026-04-08
+summary: 低秩适配通过在冻结主干权重上注入小规模低秩增量，实现参数高效微调并降低部署成本。
+provenance:
+  extracted: 0.9
+  inferred: 0.08
+  ambiguous: 0.02</p>
+<hr />
+<h1 id="low-rank-adaptation-for-llms">Low-Rank Adaptation for LLMs</h1>
 <p>LoRA 的核心价值是把“全量微调”改写为“低秩增量学习”，减少显存与训练成本。</p>
-<h2 id="_1">关联页面</h2>
+<h2 id="_1">联网补充</h2>
+<ul>
+<li>LoRA 冻结底座权重，只学习低秩增量矩阵，并可在推理前合并回原权重，所以它解决的是“训练与部署成本”而不是“推理链长度”。</li>
+<li>低秩是假设不是公理：秩设得过小、或注入层选得不对时，适配能力会先于参数节省触顶。</li>
+</ul>
+<h2 id="_2">关联页面</h2>
 <ul>
 <li><a href="../references/LoRA Low-Rank Adaptation of Large Language Models.html">LoRA Low-Rank Adaptation of Large Language Models</a></li>
 <li><a href="../synthesis/LLM Inference Efficiency and Scaling.html">LLM Inference Efficiency and Scaling</a></li>
@@ -68,11 +91,11 @@
       </div>
       <div class="meta-block">
         <p class="meta-label">Tags</p>
-        <div class="chip-list"><span class="chip">concept</span><span class="chip">llm</span><span class="chip">finetuning</span><span class="chip">parameter-efficient</span></div>
+        <div class="chip-list"><span class="chip">untagged</span></div>
       </div>
       <div class="meta-block">
         <p class="meta-label">Summary</p>
-        <p>低秩适配通过在冻结主干权重上注入小规模低秩增量，实现参数高效微调并降低部署成本。</p>
+        <p>﻿ title: Low Rank Adaptation for LLMs category: concept tags: concept llm finetuning parameter efficient sources: notes/LoRA Low Rank Adaptation of Large Language Models.md create…</p>
       </div>
       <div class="meta-block">
         <p class="meta-label">Source</p>

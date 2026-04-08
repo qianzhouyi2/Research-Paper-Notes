@@ -23,6 +23,7 @@ provenance:
 
 - 原始笔记：[[notes/Compositional Visual Generation with Composable Diffusion Models]]
 - 核心结论：这篇工作用“扩散模型可组合化”系统提升了复杂语义约束下的图像生成能力，是结构化可控生成的重要路径。
+- 联网核验：arXiv 2206.01714 的版本说明标注该文发表于 ECCV 2022，作者为 Nan Liu、Shuang Li、Yilun Du、Antonio Torralba、Joshua B. Tenenbaum。
 
 ## 关联页面
 

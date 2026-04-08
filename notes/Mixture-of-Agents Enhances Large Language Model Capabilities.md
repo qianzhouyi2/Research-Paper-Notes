@@ -12,9 +12,9 @@
 
 - 题目：Mixture-of-Agents Enhances Large Language Model Capabilities
 - 链接：https://arxiv.org/abs/2406.04692
-- 作者：Junfan Jiang, Xuan He, Yiqian Min, Kai Wang, Tat-Seng Chua
-- 单位：National University of Singapore；Together AI
-- 会议 / 期刊 / 年份：arXiv 2024（后续 ICLR 2025 Workshop 版本）
+- 作者：Junlin Wang, Jue Wang, Ben Athiwaratkun, Ce Zhang, James Zou
+- 单位：待逐一补全（已核对作者与 arXiv 版本）
+- 会议 / 期刊 / 年份：arXiv 2024
 - 关键词（3~8个）：Multi-Agent, Ensemble, Aggregation, LLM Collaboration, AlpacaEval
 - 论文一句话主题：通过多层 proposer-aggregator 协作，把多个开源 LLM 的互补能力融合成更强回答。
 
@@ -257,7 +257,6 @@
 
 - 论文来源（联网校验日期：2026-04-08）：
   - arXiv：https://arxiv.org/abs/2406.04692
-  - OpenReview（ICLR 2025 Workshop）：https://openreview.net/forum?id=h0ZfDIrj7T
 - 本地资源：
   - 原始 JSON：`notes/_notion_raw/Mixture-of-Agents Enhances Large Language Model Capabilities.json`
   - 图片目录：`notes/assets/Mixture-of-Agents Enhances Large Language Model Capabilities/`
@@ -270,5 +269,5 @@
 
 - 参考摘要：[[references/Mixture-of-Agents Enhances Large Language Model Capabilities|Mixture-of-Agents Enhances Large Language Model Capabilities]]
 - 概念锚点：[[concepts/Multi-Agent LLM Orchestration]]、[[concepts/Mixture-of-Agents Aggregation]]、[[concepts/Adaptive Compute Routing]]
-- 实体锚点：[[entities/Junfan Jiang]]、[[entities/Tat-Seng Chua]]、[[entities/Yusen Zhang]]、[[entities/GPT-4]]
+- 实体锚点：[[entities/Junlin Wang]]、[[entities/Jue Wang]]、[[entities/GPT-4]]
 - 综合页面：[[synthesis/Inference-Time Orchestration and Routing for LLMs]]、[[synthesis/Multi-Agent LLM Collaboration Landscape]]、[[synthesis/LLM Inference Efficiency and Scaling]]

@@ -23,6 +23,7 @@ provenance:
 
 - 原始笔记：[[notes/Demystifying Chains, Trees, and Graphs of Thoughts]]
 - 核心结论：本文给结构化提示工程建立了统一术语与分类框架，为后续方法设计与公平比较提供了基础坐标系。
+- 联网核验：arXiv 2401.14295 列作者为 Maciej Besta、Florim Memedi、Zhenyu Zhang 等 16 位作者，当前公开版本为 arXiv 预印本。
 
 ## 关联页面
 

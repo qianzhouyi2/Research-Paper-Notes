@@ -1,5 +1,5 @@
 ---
-title: Tat-Seng Chua
+title: Junlin Wang
 category: entity
 tags:
   - entity
@@ -10,18 +10,16 @@ sources:
   - notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md
 created: 2026-04-08
 updated: 2026-04-08
-summary: Tat-Seng Chua 在该 wiki 主要关联多智能体协作与聚合增强路线。
+summary: Junlin Wang 在该 wiki 中主要关联 Mixture-of-Agents 的多模型协作与聚合式推理编排。
 provenance:
-  extracted: 0.8
-  inferred: 0.18
+  extracted: 0.9
+  inferred: 0.08
   ambiguous: 0.02
 ---
 
-# Tat-Seng Chua
+# Junlin Wang
 
 ## 关联页面
 
 - [[references/Mixture-of-Agents Enhances Large Language Model Capabilities]]
-- [[concepts/Mixture-of-Agents Aggregation]]
-- [[synthesis/Multi-Agent LLM Collaboration Landscape]]
 

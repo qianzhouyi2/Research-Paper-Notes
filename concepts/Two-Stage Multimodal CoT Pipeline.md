@@ -1,4 +1,4 @@
----
+﻿---
 title: Two-Stage Multimodal CoT Pipeline
 category: concept
 tags:
@@ -21,9 +21,15 @@ provenance:
 
 先生成可审阅的跨模态推理线索，再据此生成最终答案，能降低端到端黑盒推理的不稳定性。
 
+## 联网补充
+
+- 两阶段 Multimodal-CoT 把“生成 rationale”和“根据 rationale 给答案”拆开，方便定位到底是证据抽取错了，还是答案决策错了。
+- 它能缓解 explanation quality 和 answer quality 脱钩的问题，但前一阶段一旦产出高置信幻觉，后一阶段仍会被连带污染。
+
 ## 关联页面
 
 - [[references/Multimodal Chain-of-Thought Reasoning in Language Models]]
 - [[concepts/Multimodal Chain-of-Thought Reasoning]]
 - [[synthesis/Multimodal Composition and Reasoning]]
+
 

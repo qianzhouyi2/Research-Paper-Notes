@@ -25,6 +25,7 @@ provenance:
 - 年份：2023（ICML）
 - 任务：长序列语言建模中的注意力替代
 - 论文笔记：[[notes/Hyena Hierarchy Towards Larger Convolutional Language Models]]
+- 联网核验：PMLR v202 显示该文发表于 ICML 2023，作者为 Michael Poli、Stefano Massaroli、Eric Nguyen、Daniel Y. Fu、Tri Dao、Stephen Baccus、Yoshua Bengio、Stefano Ermon、Christopher Ré。
 
 ## 核心主张
 

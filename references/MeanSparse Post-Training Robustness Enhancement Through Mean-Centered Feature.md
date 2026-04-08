@@ -21,6 +21,7 @@ provenance:
 
 该条目用于对齐 `notes/` 与 `references/` 的命名差异，完整内容见：
 
+- 联网核验：对应主页面为 arXiv 2406.05927，作者为 Sajjad Amini、Mohammadreza Teymoorianfard、Shiqing Ma、Amir Houmansadr。
 - [[references/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature Sparsification]]
 - [[concepts/Mean-Centered Feature Sparsification]]
 - [[entities/Sajjad Amini]]

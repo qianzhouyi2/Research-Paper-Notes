@@ -23,11 +23,13 @@ provenance:
 
 - 原始笔记：[[notes/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report]]
 - 核心结论：MCTSr 通过把“搜索 + 自我改进 + 自我评估”做成闭环，在不扩模型参数的前提下显著提升小模型高难数学推理能力。
+- 联网核验：arXiv 2406.07394 将其标注为 2024 technical report，作者为 Di Zhang、Xiaoshui Huang、Dongzhan Zhou、Yuqiang Li、Wanli Ouyang。
 
 ## 关联页面
 
 - [[concepts/Monte Carlo Tree Search for LLM Reasoning]]
 - [[entities/GPT-4]]
 - [[entities/LLaMA-3 8B]]
+- [[entities/Di Zhang]]
 - [[synthesis/Structured Reasoning Methods for LLMs]]
 

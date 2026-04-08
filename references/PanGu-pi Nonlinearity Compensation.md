@@ -23,6 +23,7 @@ provenance:
 
 - 原始笔记：[[notes/PanGu-pi Nonlinearity Compensation]]
 - 核心结论：PanGu-π 通过“增强捷径 + 级联激活”在低增量成本下提升了 LLM 的非线性表达能力、效率与领域实用性。
+- 联网核验：arXiv 2312.17276 列作者为 Yunhe Wang、Hanting Chen、Yehui Tang 等 20 位作者，当前公开版本为 arXiv 预印本。
 
 ## 细化方法锚点
 

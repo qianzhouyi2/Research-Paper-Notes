@@ -1,4 +1,4 @@
----
+﻿---
 title: Implicit Chain-of-Thought Internalization
 category: concept
 tags:
@@ -21,9 +21,15 @@ provenance:
 
 目标是在训练阶段利用显式推理监督，在推理阶段减少对显式长链文本的依赖。
 
+## 联网补充
+
+- 显式 CoT 在这里更像训练时脚手架：模型先依赖步骤监督学会推理，再逐步把这些步骤压缩进隐藏状态。
+- 内化可以显著降推理时 token 成本，但并不保证完整保留显式推理能力；一步把 rationale 全去掉通常会明显掉点。
+
 ## 关联页面
 
 - [[references/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step]]
 - [[references/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations]]
 - [[synthesis/Structured Reasoning Methods for LLMs]]
+
 

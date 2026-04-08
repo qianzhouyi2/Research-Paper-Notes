@@ -25,7 +25,7 @@
     "url": "concepts/Adaptive Compute Routing.html",
     "path": "concepts/Adaptive Compute Routing.md",
     "section": "concepts",
-    "summary": "自适应算力路由根据任务复杂度或中间信号动态分配推理资源，以在质量和成本间取得更优折中。"
+    "summary": "﻿ title: Adaptive Compute Routing category: concept tags: concept llm efficiency routing sources: notes/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexi…"
   },
   {
     "title": "ADE20K Dataset",
@@ -74,7 +74,7 @@
     "url": "concepts/Amortized Bayesian Inference for LLMs.html",
     "path": "concepts/Amortized Bayesian Inference for LLMs.md",
     "section": "concepts",
-    "summary": "将难解后验推理转化为可复用的近似策略学习，降低 LLM 推理时的采样与约束搜索成本。"
+    "summary": "﻿ title: Amortized Bayesian Inference for LLMs category: concept tags: concept llm inference bayesian sources: notes/Amortizing intractable inference in large language models.md c…"
   },
   {
     "title": "Amortizing intractable inference in large language models",
@@ -133,6 +133,13 @@
     "summary": "GoT 通过把思维链升级为思维图，在文本与多模态推理任务中带来稳定性能提升。"
   },
   {
+    "title": "Bo Xu",
+    "url": "entities/Bo Xu.html",
+    "path": "entities/Bo Xu.md",
+    "section": "entities",
+    "summary": "Bo Xu 在该 wiki 中主要关联 CIF 对齐机制与端到端语音识别研究。"
+  },
+  {
     "title": "Cascaded Activation Nonlinearity Compensation",
     "url": "concepts/Cascaded Activation Nonlinearity Compensation.html",
     "path": "concepts/Cascaded Activation Nonlinearity Compensation.md",
@@ -152,6 +159,13 @@
     "path": "references/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
     "section": "references",
     "summary": "CoA 通过链式 worker 通信与 manager 汇总提升长上下文任务表现，并缓解检索失败与中间遗忘。"
+  },
+  {
+    "title": "Chao Huang",
+    "url": "entities/Chao Huang.html",
+    "path": "entities/Chao Huang.md",
+    "section": "entities",
+    "summary": "Chao Huang 在该 wiki 中主要关联 GPT-ST 的时空预训练与结构化表示学习工作。"
   },
   {
     "title": "CIF Continuous Integrate-and-Fire",
@@ -207,7 +221,7 @@
     "url": "concepts/Composable Diffusion Generation.html",
     "path": "concepts/Composable Diffusion Generation.md",
     "section": "concepts",
-    "summary": "可组合扩散生成通过在扩散过程中组合多个条件或子目标，提升复杂语义约束下的可控图像生成能力。"
+    "summary": "﻿ title: Composable Diffusion Generation category: concept tags: concept diffusion generation compositionality sources: notes/Compositional Visual Generation with Composable Diffu…"
   },
   {
     "title": "Compositional Visual Generation with Composable Diffusion Models",
@@ -249,7 +263,7 @@
     "url": "concepts/Continuous Integrate-and-Fire Alignment.html",
     "path": "concepts/Continuous Integrate-and-Fire Alignment.md",
     "section": "concepts",
-    "summary": "Continuous Integrate-and-Fire 以连续积分放电机制实现单调软对齐与边界触发，是端到端语音序列对齐的重要方法。"
+    "summary": "﻿ title: Continuous Integrate and Fire Alignment category: concept tags: concept asr alignment sequence modeling sources: notes/CIF Continuous Integrate and Fire.md created: 2026 …"
   },
   {
     "title": "Data-Controlled Gating in Sequence Models",
@@ -375,7 +389,7 @@
     "url": "concepts/GFlowNet Posterior Sampling for Text Generation.html",
     "path": "concepts/GFlowNet Posterior Sampling for Text Generation.md",
     "section": "concepts",
-    "summary": "利用 GFlowNet 学习可归一化的生成流，实现对受约束文本后验分布的近似采样。"
+    "summary": "﻿ title: GFlowNet Posterior Sampling for Text Generation category: concept tags: concept llm sampling inference sources: notes/Amortizing intractable inference in large language m…"
   },
   {
     "title": "GPT-4",
@@ -410,7 +424,7 @@
     "url": "concepts/Graph of Thoughts Reasoning.html",
     "path": "concepts/Graph of Thoughts Reasoning.md",
     "section": "concepts",
-    "summary": "Graph of Thoughts 把推理过程表示为可组合图结构，通过节点变换与聚合提升复杂任务的推理质量与可控性。"
+    "summary": "﻿ title: Graph of Thoughts Reasoning category: concept tags: concept llm reasoning graph sources: notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md …"
   },
   {
     "title": "Graph of Thoughts Solving Elaborate Problems with Large Language Models",
@@ -480,7 +494,7 @@
     "url": "concepts/Implicit Chain-of-Thought Internalization.html",
     "path": "concepts/Implicit Chain-of-Thought Internalization.md",
     "section": "concepts",
-    "summary": "隐式 CoT 内化通过逐步移除显式推理 token，使模型在不依赖长推理文本的情况下保持推理能力。"
+    "summary": "﻿ title: Implicit Chain of Thought Internalization category: concept tags: concept llm reasoning cot sources: notes/From Explicit CoT to Implicit CoT Learning to Internalize CoT S…"
   },
   {
     "title": "Implicit Long Convolution Parameterization",
@@ -504,11 +518,18 @@
     "summary": "Journal 索引 阅读过程记录与反思入口。 建议记录模板 日期 今日阅读论文 关键收获 待验证问题 明日计划 相关页面 系统操作日志：log 覆盖度盘点：Wiki Coverage Audit 2026 04 08 深度缺口盘点：Papers Sources Deep Gap Audit 2026 04 08"
   },
   {
-    "title": "Junfan Jiang",
-    "url": "entities/Junfan Jiang.html",
-    "path": "entities/Junfan Jiang.md",
+    "title": "Jue Wang",
+    "url": "entities/Jue Wang.html",
+    "path": "entities/Jue Wang.md",
     "section": "entities",
-    "summary": "Junfan Jiang 在该 wiki 中与 Mixture-of-Agents 协作框架相关。"
+    "summary": "Jue Wang 在该 wiki 中主要关联 Mixture-of-Agents 的多模型协作与分层聚合框架。"
+  },
+  {
+    "title": "Junlin Wang",
+    "url": "entities/Junlin Wang.html",
+    "path": "entities/Junlin Wang.md",
+    "section": "entities",
+    "summary": "Junlin Wang 在该 wiki 中主要关联 Mixture-of-Agents 的多模型协作与聚合式推理编排。"
   },
   {
     "title": "Kai Han",
@@ -546,20 +567,6 @@
     "summary": "Lei Li 在该 wiki 主要关联过程监督与数学推理验证研究。"
   },
   {
-    "title": "Leslie Lee",
-    "url": "entities/Leslie Lee.html",
-    "path": "entities/Leslie Lee.md",
-    "section": "entities",
-    "summary": "Leslie Lee 在该 wiki 中与显式到隐式 CoT 内化方法相关，聚焦推理效率与质量平衡。"
-  },
-  {
-    "title": "Li Dong",
-    "url": "entities/Li Dong.html",
-    "path": "entities/Li Dong.md",
-    "section": "entities",
-    "summary": "Li Dong 在该 wiki 中与 CIF 连续对齐方法相关，主要对应语音序列建模方向。"
-  },
-  {
     "title": "LibriSpeech Dataset",
     "url": "entities/LibriSpeech Dataset.html",
     "path": "entities/LibriSpeech Dataset.md",
@@ -572,6 +579,13 @@
     "path": "concepts/Linear Probe World-Model Evaluation.md",
     "section": "concepts",
     "summary": "线性探针世界模型评估通过层级激活回归时空变量，检验模型是否形成可解码且可泛化的内部结构表示。"
+  },
+  {
+    "title": "Linhao Dong",
+    "url": "entities/Linhao Dong.html",
+    "path": "entities/Linhao Dong.md",
+    "section": "entities",
+    "summary": "Linhao Dong 在该 wiki 中主要关联 CIF 对齐机制与端到端语音识别研究。"
   },
   {
     "title": "Llama-2",
@@ -613,7 +627,7 @@
     "url": "concepts/LLM Nonlinearity Compensation.html",
     "path": "concepts/LLM Nonlinearity Compensation.md",
     "section": "concepts",
-    "summary": "非线性补偿通过结构增量与激活设计增强 LLM 表达能力，在较低额外成本下提升推理与任务表现。"
+    "summary": "﻿ title: LLM Nonlinearity Compensation category: concept tags: concept llm architecture efficiency sources: notes/PanGu pi Nonlinearity Compensation.md created: 2026 04 08 updated…"
   },
   {
     "title": "LLM Reasoning Search and Verification",
@@ -634,7 +648,7 @@
     "url": "concepts/Logical Operator Composition in Diffusion Models.html",
     "path": "concepts/Logical Operator Composition in Diffusion Models.md",
     "section": "concepts",
-    "summary": "使用 AND/NOT 等逻辑算子组合条件分布，实现可控的组合式视觉生成。"
+    "summary": "﻿ title: Logical Operator Composition in Diffusion Models category: concept tags: concept diffusion multimodal generation sources: notes/Compositional Visual Generation with Compo…"
   },
   {
     "title": "Long-Context Architecture Without Full Attention",
@@ -669,7 +683,7 @@
     "url": "concepts/Low-Rank Adaptation for LLMs.html",
     "path": "concepts/Low-Rank Adaptation for LLMs.md",
     "section": "concepts",
-    "summary": "低秩适配通过在冻结主干权重上注入小规模低秩增量，实现参数高效微调并降低部署成本。"
+    "summary": "﻿ title: Low Rank Adaptation for LLMs category: concept tags: concept llm finetuning parameter efficient sources: notes/LoRA Low Rank Adaptation of Large Language Models.md create…"
   },
   {
     "title": "Ludwig Schmidt",
@@ -774,7 +788,7 @@
     "url": "concepts/Mixture-of-Agents Aggregation.html",
     "path": "concepts/Mixture-of-Agents Aggregation.md",
     "section": "concepts",
-    "summary": "通过分层代理协作与聚合策略整合多模型候选解，提升长上下文与复杂任务的整体输出质量。"
+    "summary": "﻿ title: Mixture of Agents Aggregation category: concept tags: concept llm multi agent orchestration sources: notes/Mixture of Agents Enhances Large Language Model Capabilities.md…"
   },
   {
     "title": "Mixture-of-Agents Enhances Large Language Model Capabilities",
@@ -823,14 +837,14 @@
     "url": "concepts/Monte Carlo Tree Search for LLM Reasoning.html",
     "path": "concepts/Monte Carlo Tree Search for LLM Reasoning.md",
     "section": "concepts",
-    "summary": "MCTS 在 LLM 推理中提供了可扩展搜索框架，可与自评估和自修正机制结合提升复杂任务求解率。"
+    "summary": "﻿ title: Monte Carlo Tree Search for LLM Reasoning category: concept tags: concept llm reasoning mcts sources: notes/Monte Carlo Tree Search A Review of Recent Modifications and A…"
   },
   {
     "title": "Monte Carlo Tree Self-Refine",
     "url": "concepts/Monte Carlo Tree Self-Refine.html",
     "path": "concepts/Monte Carlo Tree Self-Refine.md",
     "section": "concepts",
-    "summary": "将 MCTS 与自评估-自修正循环结合，让 LLM 在高难推理中以搜索替代单次采样。"
+    "summary": "﻿ title: Monte Carlo Tree Self Refine category: concept tags: concept llm reasoning mcts sources: notes/Accessing GPT 4 level Mathematical Olympiad Solutions via Monte Carlo Tree …"
   },
   {
     "title": "Multi-Agent LLM Collaboration Landscape",
@@ -844,7 +858,7 @@
     "url": "concepts/Multi-Agent LLM Orchestration.html",
     "path": "concepts/Multi-Agent LLM Orchestration.md",
     "section": "concepts",
-    "summary": "多智能体编排通过角色分工、消息传递与聚合策略提升复杂任务表现，但同时引入额外成本与系统复杂度。"
+    "summary": "﻿ title: Multi Agent LLM Orchestration category: concept tags: concept llm multi agent orchestration sources: notes/Chain of Agents Large Language Models Collaborating on Long Con…"
   },
   {
     "title": "Multimodal Adversarial Image Prompting",
@@ -858,7 +872,7 @@
     "url": "concepts/Multimodal Chain-of-Thought Reasoning.html",
     "path": "concepts/Multimodal Chain-of-Thought Reasoning.md",
     "section": "concepts",
-    "summary": "多模态 CoT 通过引入视觉证据链改善推理可解释性与答案稳定性，是跨模态复杂推理的重要技术路线。"
+    "summary": "﻿ title: Multimodal Chain of Thought Reasoning category: concept tags: concept multimodal reasoning cot sources: notes/Multimodal Chain of Thought Reasoning in Language Models.md …"
   },
   {
     "title": "Multimodal Chain-of-Thought Reasoning in Language Models",
@@ -963,7 +977,7 @@
     "url": "concepts/Parameter-Efficient Fine-Tuning for LLMs.html",
     "path": "concepts/Parameter-Efficient Fine-Tuning for LLMs.md",
     "section": "concepts",
-    "summary": "通过限制可训练参数子空间或结构增量，实现低成本微调并保留大模型基础能力。"
+    "summary": "﻿ title: Parameter Efficient Fine Tuning for LLMs category: concept tags: concept llm adaptation efficiency sources: notes/LoRA Low Rank Adaptation of Large Language Models.md not…"
   },
   {
     "title": "Parameter-Efficient LLM Adaptation and Inference",
@@ -1012,7 +1026,7 @@
     "url": "concepts/Process-Supervised Step Verification.html",
     "path": "concepts/Process-Supervised Step Verification.md",
     "section": "concepts",
-    "summary": "对推理过程的中间步骤进行细粒度监督与反馈，提升复杂题目的可控性和正确率。"
+    "summary": "﻿ title: Process Supervised Step Verification category: concept tags: concept llm reasoning verification sources: notes/Math Shepherd Verify and Reinforce LLMs Step by step withou…"
   },
   {
     "title": "Projects 索引",
@@ -1026,14 +1040,14 @@
     "url": "concepts/Prompt-Robust Representation Probing.html",
     "path": "concepts/Prompt-Robust Representation Probing.md",
     "section": "concepts",
-    "summary": "通过多提示模板一致性检验，验证探针解码结果不依赖单一 prompt 偶然性。"
+    "summary": "﻿ title: Prompt Robust Representation Probing category: concept tags: concept llm probing robustness sources: notes/Language Models Represent Space and Time.md created: 2026 04 08…"
   },
   {
     "title": "Proximal L0 Feature Sparsification",
     "url": "concepts/Proximal L0 Feature Sparsification.html",
     "path": "concepts/Proximal L0 Feature Sparsification.md",
     "section": "concepts",
-    "summary": "以近端算子视角实现 L0 特征稀疏化，为后处理鲁棒增强提供可解释优化基础。"
+    "summary": "﻿ title: Proximal L0 Feature Sparsification category: concept tags: concept robustness optimization sparsification sources: notes/MeanSparse Post Training Robustness Enhancement T…"
   },
   {
     "title": "Proxy Index mIoU Optimization",
@@ -1075,7 +1089,7 @@
     "url": "concepts/Removal Smoothing for CoT Internalization.html",
     "path": "concepts/Removal Smoothing for CoT Internalization.md",
     "section": "concepts",
-    "summary": "在逐步移除 CoT token 的训练中引入随机平滑偏移，缓解目标分布突变导致的优化不稳定。"
+    "summary": "﻿ title: Removal Smoothing for CoT Internalization category: concept tags: concept llm cot optimization sources: notes/From Explicit CoT to Implicit CoT Learning to Internalize Co…"
   },
   {
     "title": "Representation Capacity and Effective Rank",
@@ -1169,13 +1183,6 @@
     "summary": "Shiqing Ma 参与 MeanSparse 工作，相关研究聚焦模型安全与对抗鲁棒优化。"
   },
   {
-    "title": "Shuang Xu",
-    "url": "entities/Shuang Xu.html",
-    "path": "entities/Shuang Xu.md",
-    "section": "entities",
-    "summary": "Shuang Xu 是 CIF 工作作者之一，研究关注端到端语音识别中的可解释单调对齐机制。"
-  },
-  {
     "title": "Shunyu Yao",
     "url": "entities/Shunyu Yao.html",
     "path": "entities/Shunyu Yao.md",
@@ -1187,14 +1194,14 @@
     "url": "concepts/Soft Monotonic Alignment for Sequence Transduction.html",
     "path": "concepts/Soft Monotonic Alignment for Sequence Transduction.md",
     "section": "concepts",
-    "summary": "在保留单调对齐假设的前提下引入可微分软边界，提升序列转导中的对齐稳定性与可训练性。"
+    "summary": "﻿ title: Soft Monotonic Alignment for Sequence Transduction category: concept tags: concept alignment sequence asr sources: notes/CIF Continuous Integrate and Fire.md created: 202…"
   },
   {
     "title": "Spatio-Temporal Pretraining for Language Models",
     "url": "concepts/Spatio-Temporal Pretraining for Language Models.html",
     "path": "concepts/Spatio-Temporal Pretraining for Language Models.md",
     "section": "concepts",
-    "summary": "时空预训练通过结构化目标让语言模型更稳定地学习空间与时间关系，并提升相关下游任务迁移能力。"
+    "summary": "﻿ title: Spatio Temporal Pretraining for Language Models category: concept tags: concept llm spatio temporal pretraining sources: notes/GPT ST Spatio Temporal Pretraining.md notes…"
   },
   {
     "title": "Spatio-Temporal Representation in Language Models",
@@ -1218,11 +1225,18 @@
     "summary": "时空表示学习可分为“结构化学习机制”和“可解码性验证机制”两条线，前者提升迁移，后者验证内部表征真实性。"
   },
   {
+    "title": "Stuart Shieber",
+    "url": "entities/Stuart Shieber.html",
+    "path": "entities/Stuart Shieber.md",
+    "section": "entities",
+    "summary": "Stuart Shieber 在该 wiki 中主要关联隐式 CoT 内化与推理训练方法研究。"
+  },
+  {
     "title": "Success-Rate Based Complexity Labeling",
     "url": "concepts/Success-Rate Based Complexity Labeling.html",
     "path": "concepts/Success-Rate Based Complexity Labeling.md",
     "section": "concepts",
-    "summary": "通过多模型多次采样成功率定义任务复杂度标签，降低单次评测噪声对路由学习的影响。"
+    "summary": "﻿ title: Success Rate Based Complexity Labeling category: concept tags: concept llm routing evaluation sources: notes/ComplexityNet Increasing LLM Inference Efficiency by Learning…"
   },
   {
     "title": "Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models",
@@ -1250,14 +1264,7 @@
     "url": "concepts/Task Complexity-Aware Inference Budgeting.html",
     "path": "concepts/Task Complexity-Aware Inference Budgeting.md",
     "section": "concepts",
-    "summary": "根据样本难度动态分配推理计算预算，以降低平均计算成本并保持关键样本性能。"
-  },
-  {
-    "title": "Tat-Seng Chua",
-    "url": "entities/Tat-Seng Chua.html",
-    "path": "entities/Tat-Seng Chua.md",
-    "section": "entities",
-    "summary": "Tat-Seng Chua 在该 wiki 主要关联多智能体协作与聚合增强路线。"
+    "summary": "﻿ title: Task Complexity Aware Inference Budgeting category: concept tags: concept llm inference efficiency sources: notes/ComplexityNet Increasing LLM Inference Efficiency by Lea…"
   },
   {
     "title": "Templates Index",
@@ -1278,7 +1285,7 @@
     "url": "concepts/Thought Structure Taxonomy.html",
     "path": "concepts/Thought Structure Taxonomy.md",
     "section": "concepts",
-    "summary": "对 Chain/Tree/Graph 三类思维结构进行统一定义与比较，降低不同推理方法的术语歧义。"
+    "summary": "﻿ title: Thought Structure Taxonomy category: concept tags: concept llm reasoning taxonomy sources: notes/Demystifying Chains, Trees, and Graphs of Thoughts.md created: 2026 04 08…"
   },
   {
     "title": "Tree of Thoughts Deliberate Problem Solving with Large Language Models",
@@ -1299,7 +1306,7 @@
     "url": "concepts/Tree of Thoughts Reasoning.html",
     "path": "concepts/Tree of Thoughts Reasoning.md",
     "section": "concepts",
-    "summary": "Tree of Thoughts 通过思维分支、状态评估与搜索回溯提升复杂推理任务的解空间探索能力。"
+    "summary": "﻿ title: Tree of Thoughts Reasoning category: concept tags: concept llm reasoning search sources: notes/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md c…"
   },
   {
     "title": "Tri Dao",
@@ -1313,7 +1320,7 @@
     "url": "concepts/Two-Stage Multimodal CoT Pipeline.html",
     "path": "concepts/Two-Stage Multimodal CoT Pipeline.md",
     "section": "concepts",
-    "summary": "将多模态推理拆分为“生成中间推理线索 + 条件化答案生成”两阶段，以缓解幻觉并提升可解释性。"
+    "summary": "﻿ title: Two Stage Multimodal CoT Pipeline category: concept tags: concept multimodal cot reasoning sources: notes/Multimodal Chain of Thought Reasoning in Language Models.md crea…"
   },
   {
     "title": "Vicuna",
@@ -1386,20 +1393,6 @@
     "summary": "Yelong Shen 在该 wiki 主要关联 LoRA 与参数高效适配路径。"
   },
   {
-    "title": "Yeyuan Zeng",
-    "url": "entities/Yeyuan Zeng.html",
-    "path": "entities/Yeyuan Zeng.md",
-    "section": "entities",
-    "summary": "Yeyuan Zeng 在该 wiki 主要关联双过程混合推理与成本-准确率权衡研究。"
-  },
-  {
-    "title": "Yinghuan Wang",
-    "url": "entities/Yinghuan Wang.html",
-    "path": "entities/Yinghuan Wang.md",
-    "section": "entities",
-    "summary": "Yinghuan Wang 在该 wiki 中与 Synergy-of-Thoughts 混合推理协同框架相关。"
-  },
-  {
     "title": "Yoshua Bengio",
     "url": "entities/Yoshua Bengio.html",
     "path": "entities/Yoshua Bengio.md",
@@ -1407,11 +1400,32 @@
     "summary": "Yoshua Bengio 在该 wiki 中关联长序列建模与推理效率方向，覆盖 Hyena 与摊销推理相关工作。"
   },
   {
+    "title": "Yu Li",
+    "url": "entities/Yu Li.html",
+    "path": "entities/Yu Li.md",
+    "section": "entities",
+    "summary": "Yu Li 在该 wiki 中主要关联 Synergy-of-Thoughts 的混合推理与成本控制研究。"
+  },
+  {
+    "title": "Yu Shang",
+    "url": "entities/Yu Shang.html",
+    "path": "entities/Yu Shang.md",
+    "section": "entities",
+    "summary": "Yu Shang 在该 wiki 中主要关联 Synergy-of-Thoughts 的混合推理与预算感知编排研究。"
+  },
+  {
     "title": "Yunhe Wang",
     "url": "entities/Yunhe Wang.html",
     "path": "entities/Yunhe Wang.md",
     "section": "entities",
     "summary": "Yunhe Wang 在该 wiki 中与 PanGu-pi 非线性补偿路线相关。"
+  },
+  {
+    "title": "Yuntian Deng",
+    "url": "entities/Yuntian Deng.html",
+    "path": "entities/Yuntian Deng.md",
+    "section": "entities",
+    "summary": "Yuntian Deng 在该 wiki 中主要关联显式 CoT 向隐式 CoT 的课程式内化研究。"
   },
   {
     "title": "Yusen Zhang",
@@ -1433,6 +1447,13 @@
     "path": "entities/Zhengyang Shan.md",
     "section": "entities",
     "summary": "Zhengyang Shan 是 DLA 论文作者之一，研究聚焦语义分割黑盒攻击与查询效率评估。"
+  },
+  {
+    "title": "Zhonghang Li",
+    "url": "entities/Zhonghang Li.html",
+    "path": "entities/Zhonghang Li.md",
+    "section": "entities",
+    "summary": "Zhonghang Li 在该 wiki 中主要关联 GPT-ST 的时空图预训练与迁移增强研究。"
   },
   {
     "title": "Zhuosheng Zhang",

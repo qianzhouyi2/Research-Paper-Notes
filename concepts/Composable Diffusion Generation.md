@@ -1,4 +1,4 @@
----
+﻿---
 title: Composable Diffusion Generation
 category: concept
 tags:
@@ -21,8 +21,14 @@ provenance:
 
 该范式强调“条件可组合”而非单条件生成，适合复合语义场景。
 
+## 联网补充
+
+- Composable Diffusion 的关键是把多个条件模型的 score / guidance 在采样时组合，因此无需为每种属性组合单独重训模型。
+- 它最适合条件近似可因子化的场景；当属性彼此冲突时，组合 guidance 可能牺牲保真度或生成稳定性。
+
 ## 关联页面
 
 - [[references/Compositional Visual Generation with Composable Diffusion Models]]
 - [[references/Multimodal Chain-of-Thought Reasoning in Language Models]]
+
 

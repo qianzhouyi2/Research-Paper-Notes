@@ -1,8 +1,8 @@
 {
   "version": 1,
   "stats": {
-    "total_sources_ingested": 23,
-    "total_pages": 171
+    "total_sources_ingested": 26,
+    "total_pages": 174
   },
   "sources": {
     "papers_sources/Research-Paper-Notes": {
@@ -648,6 +648,118 @@
         "synthesis/Structured Reasoning Methods for LLMs.md",
         "synthesis/Multi-Agent LLM Collaboration Landscape.md",
         "synthesis/Adversarial Robustness Evaluation Patterns.md"
+      ]
+    },
+    "workspace/wiki-update-2026-04-08-online-refresh": {
+      "ingested_at": "2026-04-08T22:48:28+08:00",
+      "size_bytes": 0,
+      "modified_at": "2026-04-08T22:48:28+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "entities/Bo Xu.md",
+        "entities/Chao Huang.md",
+        "entities/Jue Wang.md",
+        "entities/Junlin Wang.md",
+        "entities/Linhao Dong.md",
+        "entities/Stuart Shieber.md",
+        "entities/Yu Li.md",
+        "entities/Yu Shang.md",
+        "entities/Yuntian Deng.md",
+        "entities/Zhonghang Li.md"
+      ],
+      "pages_updated": [
+        "entities/index.md",
+        "notes/CIF Continuous Integrate-and-Fire.md",
+        "notes/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step.md",
+        "notes/GPT-ST Spatio-Temporal Pretraining.md",
+        "notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md",
+        "notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
+        "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+        "references/CIF Continuous Integrate-and-Fire.md",
+        "references/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step.md",
+        "references/GPT-ST Spatio-Temporal Pretraining.md",
+        "references/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md",
+        "references/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
+        "references/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+        "index.md",
+        "journal/Wiki Coverage Audit 2026-04-08.md",
+        "log.md"
+      ]
+    },
+    "workspace/wiki-update-2026-04-08-online-refresh-2": {
+      "ingested_at": "2026-04-08T23:10:38+08:00",
+      "size_bytes": 0,
+      "modified_at": "2026-04-08T23:10:38+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [],
+      "pages_updated": [
+        "references/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report.md",
+        "references/Amortizing intractable inference in large language models.md",
+        "references/Are aligned neural networks adversarially aligned.md",
+        "references/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+        "references/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
+        "references/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity.md",
+        "references/Compositional Visual Generation with Composable Diffusion Models.md",
+        "references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+        "references/Demystifying Chains, Trees, and Graphs of Thoughts.md",
+        "references/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+        "references/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+        "references/Language Models Represent Space and Time.md",
+        "references/LoRA Low-Rank Adaptation of Large Language Models.md",
+        "references/Maintaining Plasticity in Deep Continual Learning.md",
+        "references/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature Sparsification.md",
+        "references/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature.md",
+        "references/Monte Carlo Tree Search A Review of Recent Modifications and Applications.md",
+        "references/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+        "references/PanGu-pi Nonlinearity Compensation.md",
+        "references/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md",
+        "references/index.md",
+        "index.md",
+        "journal/Wiki Coverage Audit 2026-04-08.md",
+        "log.md"
+      ]
+    },
+    "workspace/wiki-update-2026-04-08-concepts-online-refresh": {
+      "ingested_at": "2026-04-08T23:43:13+08:00",
+      "size_bytes": 0,
+      "modified_at": "2026-04-08T23:43:13+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [],
+      "pages_updated": [
+        "concepts/Adaptive Compute Routing.md",
+        "concepts/Amortized Bayesian Inference for LLMs.md",
+        "concepts/Composable Diffusion Generation.md",
+        "concepts/Continuous Integrate-and-Fire Alignment.md",
+        "concepts/GFlowNet Posterior Sampling for Text Generation.md",
+        "concepts/Graph of Thoughts Reasoning.md",
+        "concepts/Implicit Chain-of-Thought Internalization.md",
+        "concepts/LLM Nonlinearity Compensation.md",
+        "concepts/Logical Operator Composition in Diffusion Models.md",
+        "concepts/Low-Rank Adaptation for LLMs.md",
+        "concepts/Mixture-of-Agents Aggregation.md",
+        "concepts/Monte Carlo Tree Search for LLM Reasoning.md",
+        "concepts/Monte Carlo Tree Self-Refine.md",
+        "concepts/Multi-Agent LLM Orchestration.md",
+        "concepts/Multimodal Chain-of-Thought Reasoning.md",
+        "concepts/Parameter-Efficient Fine-Tuning for LLMs.md",
+        "concepts/Process-Supervised Step Verification.md",
+        "concepts/Prompt-Robust Representation Probing.md",
+        "concepts/Proximal L0 Feature Sparsification.md",
+        "concepts/Removal Smoothing for CoT Internalization.md",
+        "concepts/Soft Monotonic Alignment for Sequence Transduction.md",
+        "concepts/Spatio-Temporal Pretraining for Language Models.md",
+        "concepts/Success-Rate Based Complexity Labeling.md",
+        "concepts/Task Complexity-Aware Inference Budgeting.md",
+        "concepts/Thought Structure Taxonomy.md",
+        "concepts/Tree of Thoughts Reasoning.md",
+        "concepts/Two-Stage Multimodal CoT Pipeline.md",
+        "concepts/index.md",
+        "index.md",
+        "journal/Wiki Coverage Audit 2026-04-08.md",
+        "log.md"
       ]
     }
   }

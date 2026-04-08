@@ -12,8 +12,8 @@
 
 - 题目：Synergy-of-Thoughts: Eliciting Efficient Reasoning in Hybrid Language Models
 - 链接：https://arxiv.org/abs/2402.02563
-- 作者：Yinghuan Wang, Yeyuan Zeng, Jiayi Yuan, Yue Hu, Yu Wang, Ziniu Hu, Bolin Ding, Yong Li
-- 单位：Tsinghua University 及企业研究团队（按论文作者信息）
+- 作者：Yu Shang, Yu Li, Fengli Xu, Yong Li
+- 单位：待逐一补全（已核对作者与 arXiv 版本）
 - 会议 / 期刊 / 年份：arXiv 2024
 - 关键词（3~8个）：Dual-Process Theory, Hybrid LLMs, CoT, ToT, Cost-Accuracy Tradeoff
 - 论文一句话主题：用“小模型并行直觉 + 大模型按需反思干预”的协同框架，以更低成本获得强推理效果。
@@ -287,5 +287,5 @@
 
 - 参考摘要：[[references/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models|Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models]]
 - 概念锚点：[[concepts/Adaptive Compute Routing]]、[[concepts/Task Complexity-Aware Inference Budgeting]]、[[concepts/Tree of Thoughts Reasoning]]
-- 实体锚点：[[entities/Yeyuan Zeng]]、[[entities/Yinghuan Wang]]、[[entities/GPT-4]]
+- 实体锚点：[[entities/Yu Shang]]、[[entities/Yu Li]]、[[entities/GPT-4]]
 - 综合页面：[[synthesis/Probabilistic Inference-Time Control for LLMs]]、[[synthesis/Structured Reasoning Methods for LLMs]]、[[synthesis/LLM Inference Efficiency and Scaling]]

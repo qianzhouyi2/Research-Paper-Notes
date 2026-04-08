@@ -23,9 +23,12 @@ provenance:
 
 - 原始笔记：[[notes/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step]]
 - 核心结论：SI 通过“课程式移除 CoT token + 稳定训练策略”把显式推理逐步内化为隐式能力，在速度与准确率之间提供了实用折中。
+- 联网核验：arXiv 列作者为 Yuntian Deng、Yejin Choi、Stuart Shieber；OpenReview 版本为 ICLR 2025 投稿稿。
 
 ## 关联页面
 
 - [[concepts/Implicit Chain-of-Thought Internalization]]
-- [[entities/Leslie Lee]]
+- [[entities/Yuntian Deng]]
+- [[entities/Yejin Choi]]
+- [[entities/Stuart Shieber]]
 - [[synthesis/Structured Reasoning Methods for LLMs]]

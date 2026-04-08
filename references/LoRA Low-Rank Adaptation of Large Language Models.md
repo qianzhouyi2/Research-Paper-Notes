@@ -23,6 +23,7 @@ provenance:
 
 - 原始笔记：[[notes/LoRA Low-Rank Adaptation of Large Language Models]]
 - 核心结论：LoRA 通过低秩增量微调在几乎不增加推理时延的前提下显著降低训练与部署成本，是大模型适配的高性价比基础方法。
+- 联网核验：arXiv 2106.09685 v2 列作者为 Edward Hu、Yelong Shen、Phillip Wallis、Zeyuan Allen-Zhu、Yuanzhi Li、Shean Wang、Lu Wang、Weizhu Chen。
 
 ## 关联页面
 

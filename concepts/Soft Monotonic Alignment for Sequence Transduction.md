@@ -1,4 +1,4 @@
----
+﻿---
 title: Soft Monotonic Alignment for Sequence Transduction
 category: concept
 tags:
@@ -21,9 +21,15 @@ provenance:
 
 该机制适用于语音到文本等顺序转导任务，在流式场景下兼顾对齐精度与推理延迟。
 
+## 联网补充
+
+- CIF 里的软单调对齐通过连续积分与阈值放电实现，边界触发时生成一个聚合后的 latent token 表示。
+- 这让模型天然更适合流式或近单调转写任务；若源序列和目标序列需要大范围重排，这种归纳偏置就会变成限制。
+
 ## 关联页面
 
 - [[references/CIF Continuous Integrate-and-Fire]]
 - [[concepts/Continuous Integrate-and-Fire Alignment]]
 - [[synthesis/Structured Spatio-Temporal Representation Learning]]
+
 

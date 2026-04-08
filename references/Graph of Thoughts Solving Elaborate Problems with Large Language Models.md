@@ -23,6 +23,7 @@ provenance:
 
 - 原始笔记：[[notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models]]
 - 核心结论：GoT 把 LLM 推理升级为可操作的图过程，通过 thought 变换与聚合在复杂任务中实现了比 CoT/ToT 更优的质量-成本平衡。
+- 联网核验：arXiv 2308.09687 的公开版本列作者为 Maciej Besta、Nils Blach 等人；当前 wiki 以 arXiv 版本为主进行归档。
 
 ## 关联页面
 

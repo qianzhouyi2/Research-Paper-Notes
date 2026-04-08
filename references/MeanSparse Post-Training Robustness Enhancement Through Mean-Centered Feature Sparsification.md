@@ -25,6 +25,7 @@ provenance:
 - 年份：2024（arXiv）
 - 任务：对抗训练后模型的后处理鲁棒增强
 - 论文笔记：[[notes/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature]]
+- 联网核验：arXiv 2406.05927 列作者为 Sajjad Amini、Mohammadreza Teymoorianfard、Shiqing Ma、Amir Houmansadr，当前未见正式会议版本。
 
 ## 核心主张
 

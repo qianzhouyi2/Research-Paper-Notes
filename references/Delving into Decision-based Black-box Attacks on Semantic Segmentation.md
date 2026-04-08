@@ -28,6 +28,7 @@ provenance:
 - 任务：语义分割的 decision-based black-box attack
 - 核心方法：DLA（Discrete Linear Attack）
 - 原始笔记：[[notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]
+- 联网核验：arXiv 2402.01220 列作者为 Zhaoyu Chen、Zhengyang Shan、Jingwen Chang、Kaixun Jiang、Dingkang Yang、Yiting Cheng、Wenqiang Zhang。
 
 ## 论文主张
 

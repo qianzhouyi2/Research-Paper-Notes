@@ -1,5 +1,5 @@
 ---
-title: Li Dong
+title: Linhao Dong
 category: entity
 tags:
   - entity
@@ -9,14 +9,14 @@ sources:
   - notes/CIF Continuous Integrate-and-Fire.md
 created: 2026-04-08
 updated: 2026-04-08
-summary: Li Dong 在该 wiki 中与 CIF 连续对齐方法相关，主要对应语音序列建模方向。
+summary: Linhao Dong 在该 wiki 中主要关联 CIF 对齐机制与端到端语音识别研究。
 provenance:
-  extracted: 0.87
-  inferred: 0.11
+  extracted: 0.9
+  inferred: 0.08
   ambiguous: 0.02
 ---
 
-# Li Dong
+# Linhao Dong
 
 ## 关联页面
 

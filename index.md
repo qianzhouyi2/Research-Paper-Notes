@@ -30,9 +30,9 @@ summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 
 - 已导入论文笔记：26 篇（见 [[notes/index]]）
 - References：26 篇（含 1 个 MeanSparse 命名桥接页）
 - Concepts：50 篇（方法级与协议级概念）
-- Entities：64 篇（作者/模型/数据集）
+- Entities：67 篇（作者/模型/数据集）
 - Synthesis：21 篇（跨论文主题综合）
-- 已纳管来源：23 个（见 [[log]] 与 `.manifest.json`）
+- 已纳管来源：26 个（见 [[log]] 与 `.manifest.json`）
 - 原始资料：[[papers_sources]]
 - 模板：[[Templates/论文阅读模板|论文阅读模板]]
 
@@ -91,6 +91,23 @@ summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 
 - note 级更新：5 篇笔记增强 `Wiki 关联`（重点收口 LoRA / Maintaining / PanGu-π / MeanSparse / Language 表示容量主题）
 - 说明：新增 [[synthesis/Efficient Adaptation and Plasticity Retention]] 与 [[synthesis/Representation Capacity and Effective Rank]]，当前 25 篇笔记已全部达到 `concepts>=3`、`entities>=3`、`synthesis>=3`
 
+## 最新 联网核验更新（2026-04-08）
+
+- 类型：`wiki-update`（online metadata refresh）
+- 新增页：10 个 entities
+- 清理页：移除 7 个误归因 author entities
+- 页面修正：6 篇 notes、26 个 references 完成作者 / venue / source 核验
+- 覆盖结果：26/26 `reference` 卡现已全部带有 `联网核验` 条目
+- 说明：前半轮重点修正 CIF、From Explicit CoT、GPT-ST、Math-Shepherd、Mixture-of-Agents、Synergy-of-Thoughts 的作者归因；后半轮补齐其余 20 个 reference 卡的官方来源核验。`concepts` 与 `synthesis` 层复检后未发现需要基于联网事实改写的漂移项
+
+## 最新 Concepts 联网补充（2026-04-08）
+
+- 类型：`wiki-update`（online concept refresh）
+- 覆盖：50/50 `concepts` 完成联网复核
+- 页面更新：27 个轻量 concept 卡新增 `联网补充` 段；无新增结构页
+- 主题重点：budget routing、search-based reasoning、multimodal CoT、PEFT、CIF、multi-agent orchestration
+- 说明：本轮依据官方论文页与已整理 notes 补足机制定义、适用边界与跨论文区分；其余 23 个 concept 页结构已足够，仅完成复核不做机械改写
+
 ## 推荐工作流
 
 1. 把原始 PDF/源码/草稿放入 [[papers_sources]]
@@ -102,5 +119,5 @@ summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 
 ## 本周可做
 
 - [x] 为重点薄弱笔记补齐第二轮概念/实体/综合锚点
-- [ ] 在 `references/` 补齐单篇摘要卡
+- [x] 在 `references/` 补齐单篇摘要卡并完成联网核验
 - [ ] 新建一个 `projects/` 专题页（例如“长上下文建模”）

@@ -22,6 +22,7 @@ provenance:
 
 - 原始笔记：[[notes/CIF Continuous Integrate-and-Fire]]
 - 核心结论：CIF 用连续积分放电机制，把“单调软对齐、边界定位、端到端训练”三者有效统一到 ASR 中。
+- 联网核验：arXiv 列作者为 Linhao Dong、Bo Xu，且 v4 comments 标注 “To appear at ICASSP 2020”。
 
 ## 细化方法锚点
 
@@ -33,7 +34,7 @@ provenance:
 
 - [[concepts/Continuous Integrate-and-Fire Alignment]]
 - [[concepts/Quantity-Aware Emission Control in CIF]]
-- [[entities/Li Dong]]
-- [[entities/Shuang Xu]]
+- [[entities/Linhao Dong]]
+- [[entities/Bo Xu]]
 - [[references/Hyena Hierarchy Towards Larger Convolutional Language Models]]
 - [[synthesis/Structured Spatio-Temporal Representation Learning]]

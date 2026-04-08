@@ -12,6 +12,10 @@ summary: 单篇论文摘要与结论页面的入口索引。
 
 单篇论文摘要与结论沉淀区。
 
+## 当前状态
+
+- 2026-04-08：26/26 `references` 页面已补齐 `联网核验` 条目
+
 ## 已收录
 
 - [[references/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report]]

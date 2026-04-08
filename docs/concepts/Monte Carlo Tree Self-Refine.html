@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Monte Carlo Tree Self-Refine | Research Paper Notes</title>
-  <meta name="description" content="将 MCTS 与自评估-自修正循环结合，让 LLM 在高难推理中以搜索替代单次采样。">
+  <meta name="description" content="﻿ title: Monte Carlo Tree Self Refine category: concept tags: concept llm reasoning mcts sources: notes/Accessing GPT 4 level Mathematical Olympiad Solutions via Monte Carlo Tree …">
   <link rel="stylesheet" href="../styles.css">
   <script defer src="../site.js"></script>
 </head>
@@ -36,7 +36,7 @@
         <div>
           <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
           <h2>Monte Carlo Tree Self-Refine</h2>
-          <p>将 MCTS 与自评估-自修正循环结合，让 LLM 在高难推理中以搜索替代单次采样。</p>
+          <p>﻿ title: Monte Carlo Tree Self Refine category: concept tags: concept llm reasoning mcts sources: notes/Accessing GPT 4 level Mathematical Olympiad Solutions via Monte Carlo Tree …</p>
         </div>
         <div class="topbar-actions">
           <div class="search-box">
@@ -50,9 +50,32 @@
 
       <article class="article-wrap panel">
         <div class="article-path">concepts/Monte Carlo Tree Self-Refine.md</div>
-        <div class="markdown-body"><h1 id="monte-carlo-tree-self-refine">Monte Carlo Tree Self-Refine</h1>
+        <div class="markdown-body"><p>﻿&mdash;
+title: Monte Carlo Tree Self-Refine
+category: concept
+tags:
+  - concept
+  - llm
+  - reasoning
+  - mcts
+sources:
+  - notes/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report.md
+created: 2026-04-08
+updated: 2026-04-08
+summary: 将 MCTS 与自评估-自修正循环结合，让 LLM 在高难推理中以搜索替代单次采样。
+provenance:
+  extracted: 0.82
+  inferred: 0.16
+  ambiguous: 0.02</p>
+<hr />
+<h1 id="monte-carlo-tree-self-refine">Monte Carlo Tree Self-Refine</h1>
 <p>核心思想是把“生成候选、打分、回传、再生成”组织成树搜索闭环，减少一次性 CoT 的路径依赖。</p>
-<h2 id="_1">关联页面</h2>
+<h2 id="_1">联网补充</h2>
+<ul>
+<li>MCTSr 把 MCTS 和 self-refine 结合起来，不只扩展候选解，还会把已有中间解作为可重写节点反复修补。</li>
+<li>这种方法依赖可用的评分或验证信号；没有可靠 value guidance 时，树会变宽，但不一定更接近正确解。</li>
+</ul>
+<h2 id="_2">关联页面</h2>
 <ul>
 <li><a href="../references/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report.html">Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report</a></li>
 <li><a href="Monte Carlo Tree Search for LLM Reasoning.html">Monte Carlo Tree Search for LLM Reasoning</a></li>
@@ -70,11 +93,11 @@
       </div>
       <div class="meta-block">
         <p class="meta-label">Tags</p>
-        <div class="chip-list"><span class="chip">concept</span><span class="chip">llm</span><span class="chip">reasoning</span><span class="chip">mcts</span></div>
+        <div class="chip-list"><span class="chip">untagged</span></div>
       </div>
       <div class="meta-block">
         <p class="meta-label">Summary</p>
-        <p>将 MCTS 与自评估-自修正循环结合，让 LLM 在高难推理中以搜索替代单次采样。</p>
+        <p>﻿ title: Monte Carlo Tree Self Refine category: concept tags: concept llm reasoning mcts sources: notes/Accessing GPT 4 level Mathematical Olympiad Solutions via Monte Carlo Tree …</p>
       </div>
       <div class="meta-block">
         <p class="meta-label">Source</p>

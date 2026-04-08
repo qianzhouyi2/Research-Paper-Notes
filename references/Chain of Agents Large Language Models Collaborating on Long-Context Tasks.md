@@ -23,6 +23,7 @@ provenance:
 
 - 原始笔记：[[notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks]]
 - 核心结论：CoA 通过“链式 worker 通信 + manager 汇总”在无需训练条件下有效提升长上下文任务性能，并显著缓解检索失败与中间遗忘问题。
+- 联网核验：arXiv 2406.02818 与 NeurIPS 2024 会议论文对应，作者为 Yusen Zhang、Ruoxi Sun、Yanfei Chen、Tomas Pfister、Rui Zhang、Sercan Ö. Arik。
 
 ## 关联页面
 

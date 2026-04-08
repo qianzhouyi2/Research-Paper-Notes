@@ -1,5 +1,5 @@
 ---
-title: Yinghuan Wang
+title: Yu Shang
 category: entity
 tags:
   - entity
@@ -10,14 +10,14 @@ sources:
   - notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md
 created: 2026-04-08
 updated: 2026-04-08
-summary: Yinghuan Wang 在该 wiki 中与 Synergy-of-Thoughts 混合推理协同框架相关。
+summary: Yu Shang 在该 wiki 中主要关联 Synergy-of-Thoughts 的混合推理与预算感知编排研究。
 provenance:
-  extracted: 0.87
-  inferred: 0.11
+  extracted: 0.9
+  inferred: 0.08
   ambiguous: 0.02
 ---
 
-# Yinghuan Wang
+# Yu Shang
 
 ## 关联页面
 

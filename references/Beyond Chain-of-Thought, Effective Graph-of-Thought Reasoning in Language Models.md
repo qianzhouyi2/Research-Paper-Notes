@@ -23,9 +23,11 @@ provenance:
 
 - 原始笔记：[[notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models]]
 - 核心结论：GoT 通过把“思维链”升级为“思维图”，在文本和多模态推理任务上都带来了稳定且有证据支撑的性能提升。
+- 联网核验：arXiv 2305.16582 列作者为 Yao Yao、Zuchao Li、Hai Zhao，当前公开版本仍以 arXiv 预印本为主。
 
 ## 关联页面
 
 - [[concepts/Graph of Thoughts Reasoning]]
 - [[entities/Hai Zhao]]
+- [[entities/Yao Yao]]
 - [[synthesis/Structured Reasoning Methods for LLMs]]

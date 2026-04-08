@@ -12,7 +12,7 @@
 
 - 题目：Math-Shepherd: Verify and Reinforce LLMs Step-by-step without Human Annotations
 - 链接：https://arxiv.org/abs/2312.08935
-- 作者：Peiyi Wang, Lei Li, Zheng Yuan, Kai Zhang, Yuchao Ni, Jianye Hao, Nanhai Lin, Boxing Chen
+- 作者：Peiyi Wang, Lei Li, Zhihong Shao, Runxin Xu, Damai Dai, Yifei Li, Deli Chen, Yu Wu, Zhifang Sui
 - 单位：Peking University；DeepSeek-AI（论文首页作者单位标注）
 - 会议 / 期刊 / 年份：ACL 2024 (Long Paper)
 - 关键词（3~8个）：PRM, ORM, Process Supervision, Math Reasoning, Verification, PPO

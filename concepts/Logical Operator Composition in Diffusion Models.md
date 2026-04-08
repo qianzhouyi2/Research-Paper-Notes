@@ -1,4 +1,4 @@
----
+﻿---
 title: Logical Operator Composition in Diffusion Models
 category: concept
 tags:
@@ -21,9 +21,15 @@ provenance:
 
 该方法把多条件生成映射为可解释的逻辑运算，提升组合泛化与反事实控制能力。
 
+## 联网补充
+
+- 逻辑组合的实质是把条件引导项按 AND / NOT 形式相加或相减，让采样轨迹同时满足多个概念约束。
+- 这要求组成概念在基础模型中已经较好解耦；若概念本身高度耦合或互斥，逻辑组合会更像强行拉扯采样方向。
+
 ## 关联页面
 
 - [[references/Compositional Visual Generation with Composable Diffusion Models]]
 - [[concepts/Composable Diffusion Generation]]
 - [[synthesis/Multimodal Composition and Reasoning]]
+
 

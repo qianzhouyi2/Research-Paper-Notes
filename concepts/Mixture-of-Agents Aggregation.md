@@ -1,4 +1,4 @@
----
+﻿---
 title: Mixture-of-Agents Aggregation
 category: concept
 tags:
@@ -22,10 +22,16 @@ provenance:
 
 核心在于“分工求解 + 聚合裁决”，让不同代理在同一问题上形成互补。
 
+## 联网补充
+
+- MoA 中 aggregator 的角色不是简单投票，而是读取多份候选后做综合改写，因此 proposer 多样性本身就是性能来源的一部分。
+- 论文也表明质量提升和成本几乎同步上升；层数、agent 数量、模型异构度都是需要显式调的预算变量。
+
 ## 关联页面
 
 - [[references/Mixture-of-Agents Enhances Large Language Model Capabilities]]
 - [[references/Chain of Agents Large Language Models Collaborating on Long-Context Tasks]]
 - [[concepts/Multi-Agent LLM Orchestration]]
 - [[synthesis/Multi-Agent LLM Collaboration Landscape]]
+
 

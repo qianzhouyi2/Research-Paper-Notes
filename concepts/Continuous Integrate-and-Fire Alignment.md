@@ -1,4 +1,4 @@
----
+﻿---
 title: Continuous Integrate-and-Fire Alignment
 category: concept
 tags:
@@ -27,8 +27,14 @@ provenance:
 - 数量约束策略（缩放与数量损失）。
 - 尾部补偿与结束标记处理。
 
+## 联网补充
+
+- CIF 把软单调对齐和显式边界发射耦合进同一可微循环里，因此不仅能对齐，还能给出接近 token 边界的时间定位。
+- 它的前提仍是序列近单调对应，这也是它更适合 ASR 这类任务、而不适合任意重排型映射的原因。
+
 ## 关联页面
 
 - [[references/CIF Continuous Integrate-and-Fire]]
 - [[concepts/Quantity-Aware Emission Control in CIF]]
 - [[synthesis/Structured Spatio-Temporal Representation Learning]]
+

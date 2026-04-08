@@ -25,6 +25,7 @@ provenance:
 - 年份：2023（NeurIPS）
 - 任务：评估“对齐模型在最坏输入下是否仍对齐”
 - 论文笔记：[[notes/Are aligned neural networks adversarially aligned]]
+- 联网核验：arXiv 2306.15447 与 NeurIPS 2023 官方页面对应同题版本；arXiv v2 作者列表包含 Nicholas Carlini、Florian Tramer、Ludwig Schmidt 等 11 位作者。
 
 ## 核心主张
 

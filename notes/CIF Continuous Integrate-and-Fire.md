@@ -12,9 +12,9 @@
 
 - 题目：CIF: Continuous Integrate-and-Fire for End-to-End Speech Recognition
 - 链接：[[papers_sources/Research-Paper-Notes/CIF.pdf|CIF.pdf]]
-- 作者：Li Dong, Shuang Xu（按引文文件名记录）
+- 作者：Linhao Dong, Bo Xu
 - 单位：待确认（源笔记仅记录作者，未完整给出全部单位）
-- 发表：2020
+- 发表：ICASSP 2020
 - 关键词：soft monotonic alignment, integrate-and-fire, end-to-end ASR, streaming recognition, acoustic boundary
 - 源笔记：[[papers_sources/Research-Paper-Notes/CIF.md|CIF.md]]
 
@@ -288,8 +288,7 @@
 - 源页面：[[papers_sources/Research-Paper-Notes/CIF.md|CIF.md]]
 - 图片资源目录：`papers_sources/Research-Paper-Notes/CIF.aseets/`
 - 联网补充来源：
-  - arXiv: https://arxiv.org/abs/1905.11235
-  - Interspeech 页面: https://www.isca-archive.org/interspeech_2020/dong20_interspeech.html
+  - arXiv（v4 comments 标注 To appear at ICASSP 2020）: https://arxiv.org/abs/1905.11235
 
 ### 15.3 已完成自检记录
 
@@ -303,5 +302,5 @@
 
 - 参考摘要：[[references/CIF Continuous Integrate-and-Fire|CIF Continuous Integrate-and-Fire]]
 - 概念锚点：[[concepts/Continuous Integrate-and-Fire Alignment]]、[[concepts/Soft Monotonic Alignment for Sequence Transduction]]、[[concepts/Quantity-Aware Emission Control in CIF]]
-- 实体锚点：[[entities/Li Dong]]、[[entities/Shuang Xu]]、[[entities/LibriSpeech Dataset]]
+- 实体锚点：[[entities/Linhao Dong]]、[[entities/Bo Xu]]、[[entities/LibriSpeech Dataset]]
 - 综合页面：[[synthesis/Temporal Structure Learning in Sequence Models]]、[[synthesis/Structured Spatio-Temporal Representation Learning]]、[[synthesis/Spatio-Temporal Representation in Language Models]]

@@ -1,5 +1,5 @@
 ---
-title: Junfan Jiang
+title: Jue Wang
 category: entity
 tags:
   - entity
@@ -10,14 +10,14 @@ sources:
   - notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md
 created: 2026-04-08
 updated: 2026-04-08
-summary: Junfan Jiang 在该 wiki 中与 Mixture-of-Agents 协作框架相关。
+summary: Jue Wang 在该 wiki 中主要关联 Mixture-of-Agents 的多模型协作与分层聚合框架。
 provenance:
-  extracted: 0.87
-  inferred: 0.11
+  extracted: 0.9
+  inferred: 0.08
   ambiguous: 0.02
 ---
 
-# Junfan Jiang
+# Jue Wang
 
 ## 关联页面
 

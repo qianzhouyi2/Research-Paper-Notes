@@ -1,4 +1,4 @@
----
+﻿---
 title: Monte Carlo Tree Search for LLM Reasoning
 category: concept
 tags:
@@ -22,9 +22,15 @@ provenance:
 
 将采样式生成改造为“搜索-评估-回传”闭环，适合高难度推理任务。
 
+## 联网补充
+
+- MCTS 在 LLM 里真正增加的是“可回传的搜索控制”：选择、扩展、评估、回传把自由生成改造成可反复修正的决策过程。
+- 它最适合部分解可以被打分的难题；若价值函数噪声太大，树策略会把错误启发式系统性放大。
+
 ## 关联页面
 
 - [[references/Monte Carlo Tree Search A Review of Recent Modifications and Applications]]
 - [[references/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report]]
 - [[synthesis/Structured Reasoning Methods for LLMs]]
+
 

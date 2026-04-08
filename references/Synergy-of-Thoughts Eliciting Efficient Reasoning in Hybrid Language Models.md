@@ -23,10 +23,12 @@ provenance:
 
 - 原始笔记：[[notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models]]
 - 核心结论：SoT 通过“默认直觉 + 按需反思”的混合协同，把推理从高成本常开模式变成可控调度模式，实现了更优的性能-成本平衡。
+- 联网核验：arXiv 列作者为 Yu Shang、Yu Li、Fengli Xu、Yong Li。
 
 ## 关联页面
 
 - [[concepts/Adaptive Compute Routing]]
-- [[entities/Yinghuan Wang]]
+- [[entities/Yu Shang]]
+- [[entities/Yu Li]]
 - [[synthesis/Structured Reasoning Methods for LLMs]]
 - [[synthesis/LLM Inference Efficiency and Scaling]]

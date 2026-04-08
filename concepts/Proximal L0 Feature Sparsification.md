@@ -1,4 +1,4 @@
----
+﻿---
 title: Proximal L0 Feature Sparsification
 category: concept
 tags:
@@ -21,9 +21,15 @@ provenance:
 
 将均值中心化截断操作映射为近端优化近似，使后处理防御具备明确数学动机。
 
+## 联网补充
+
+- MeanSparse 把后处理稀疏化和 ℓ0 近端算子联系起来，使“截断小波动”从经验技巧变成有优化解释的操作。
+- 它实际截断的是均值附近的通道内微小波动，而不是追求全局极致稀疏；这也是它能在不重训时维持 clean accuracy 的原因。
+
 ## 关联页面
 
 - [[references/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature Sparsification]]
 - [[concepts/Mean-Centered Feature Sparsification]]
 - [[synthesis/Adversarial Robustness Evaluation Patterns]]
+
 

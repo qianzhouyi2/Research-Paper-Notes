@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Amortized Bayesian Inference for LLMs | Research Paper Notes</title>
-  <meta name="description" content="将难解后验推理转化为可复用的近似策略学习，降低 LLM 推理时的采样与约束搜索成本。">
+  <meta name="description" content="﻿ title: Amortized Bayesian Inference for LLMs category: concept tags: concept llm inference bayesian sources: notes/Amortizing intractable inference in large language models.md c…">
   <link rel="stylesheet" href="../styles.css">
   <script defer src="../site.js"></script>
 </head>
@@ -36,7 +36,7 @@
         <div>
           <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
           <h2>Amortized Bayesian Inference for LLMs</h2>
-          <p>将难解后验推理转化为可复用的近似策略学习，降低 LLM 推理时的采样与约束搜索成本。</p>
+          <p>﻿ title: Amortized Bayesian Inference for LLMs category: concept tags: concept llm inference bayesian sources: notes/Amortizing intractable inference in large language models.md c…</p>
         </div>
         <div class="topbar-actions">
           <div class="search-box">
@@ -50,9 +50,32 @@
 
       <article class="article-wrap panel">
         <div class="article-path">concepts/Amortized Bayesian Inference for LLMs.md</div>
-        <div class="markdown-body"><h1 id="amortized-bayesian-inference-for-llms">Amortized Bayesian Inference for LLMs</h1>
+        <div class="markdown-body"><p>﻿&mdash;
+title: Amortized Bayesian Inference for LLMs
+category: concept
+tags:
+  - concept
+  - llm
+  - inference
+  - bayesian
+sources:
+  - notes/Amortizing intractable inference in large language models.md
+created: 2026-04-08
+updated: 2026-04-08
+summary: 将难解后验推理转化为可复用的近似策略学习，降低 LLM 推理时的采样与约束搜索成本。
+provenance:
+  extracted: 0.82
+  inferred: 0.16
+  ambiguous: 0.02</p>
+<hr />
+<h1 id="amortized-bayesian-inference-for-llms">Amortized Bayesian Inference for LLMs</h1>
 <p>该范式通过离线学习“近似后验策略”，在在线推理阶段复用，避免每次都做昂贵的显式后验推断。</p>
-<h2 id="_1">关联页面</h2>
+<h2 id="_1">联网补充</h2>
+<ul>
+<li>ICLR 2024 论文把 infilling、约束生成和 CoT 推理统一成后验采样问题，核心不是“找一个最好答案”，而是学习直接从目标后验分布采样。</li>
+<li>这类摊销推断最适合目标密度或奖励可定义的任务；如果后验定义本身不稳，离线学到的采样器也会继承偏差。</li>
+</ul>
+<h2 id="_2">关联页面</h2>
 <ul>
 <li><a href="../references/Amortizing intractable inference in large language models.html">Amortizing intractable inference in large language models</a></li>
 <li><a href="Task Complexity-Aware Inference Budgeting.html">Task Complexity-Aware Inference Budgeting</a></li>
@@ -69,11 +92,11 @@
       </div>
       <div class="meta-block">
         <p class="meta-label">Tags</p>
-        <div class="chip-list"><span class="chip">concept</span><span class="chip">llm</span><span class="chip">inference</span><span class="chip">bayesian</span></div>
+        <div class="chip-list"><span class="chip">untagged</span></div>
       </div>
       <div class="meta-block">
         <p class="meta-label">Summary</p>
-        <p>将难解后验推理转化为可复用的近似策略学习，降低 LLM 推理时的采样与约束搜索成本。</p>
+        <p>﻿ title: Amortized Bayesian Inference for LLMs category: concept tags: concept llm inference bayesian sources: notes/Amortizing intractable inference in large language models.md c…</p>
       </div>
       <div class="meta-block">
         <p class="meta-label">Source</p>

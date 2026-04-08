@@ -23,6 +23,7 @@ provenance:
 
 - 原始笔记：[[notes/Language Models Represent Space and Time]]
 - 核心结论：这项工作用系统探针证据支持了“LLM 内部存在跨实体统一、可线性解码的时空表示”。
+- 联网核验：OpenReview 显示该文为 ICLR 2024 poster，作者为 Wes Gurnee、Max Tegmark。
 
 ## 细化方法锚点
 

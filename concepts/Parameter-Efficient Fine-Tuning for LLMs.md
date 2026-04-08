@@ -1,4 +1,4 @@
----
+﻿---
 title: Parameter-Efficient Fine-Tuning for LLMs
 category: concept
 tags:
@@ -22,8 +22,14 @@ provenance:
 
 该范式强调在“训练成本、部署开销、效果保持”三者之间做工程可落地的折中。
 
+## 联网补充
+
+- PEFT 的核心是把任务更新限制在一小块可训练子空间里，LoRA 只是其中最成功的一种低秩实现。
+- 它主要优化适配成本、checkpoint 体积和多任务切换，不会自动降低推理期搜索、验证或长链生成的算力开销。
+
 ## 关联页面
 
 - [[references/LoRA Low-Rank Adaptation of Large Language Models]]
 - [[concepts/Low-Rank Adaptation for LLMs]]
 - [[synthesis/Parameter-Efficient LLM Adaptation and Inference]]
+

@@ -1,4 +1,4 @@
----
+﻿---
 title: Multimodal Chain-of-Thought Reasoning
 category: concept
 tags:
@@ -21,8 +21,14 @@ provenance:
 
 核心是让视觉证据与文本推理链同步约束答案生成。
 
+## 联网补充
+
+- TMLR 版本的 Multimodal-CoT 证明，多模态 CoT 的关键不是“把图片也丢进提示词”，而是让视觉证据真实参与 rationale 生成。
+- 因此它关注的是证据绑定的推理链；如果 rationale 仍主要靠语言惯性生成，长解释反而可能放大幻觉。
+
 ## 关联页面
 
 - [[references/Multimodal Chain-of-Thought Reasoning in Language Models]]
 - [[synthesis/Structured Reasoning Methods for LLMs]]
+
 

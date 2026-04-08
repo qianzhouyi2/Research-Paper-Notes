@@ -1,4 +1,4 @@
----
+﻿---
 title: Removal Smoothing for CoT Internalization
 category: concept
 tags:
@@ -21,9 +21,15 @@ provenance:
 
 该机制通过概率化移除策略让训练目标连续过渡，减少突然失配引发的性能崩塌。
 
+## 联网补充
+
+- Removal smoothing 会在每个阶段随机多移除一些 rationale token，把原本离散跳变的目标函数改造成更平滑的课程。
+- 这不是锦上添花，而是稳定训练的关键件之一；没有它时，内化过程很容易在移除点附近突然崩掉。
+
 ## 关联页面
 
 - [[references/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step]]
 - [[concepts/Implicit Chain-of-Thought Internalization]]
 - [[synthesis/Process Supervision and CoT Internalization]]
+
 

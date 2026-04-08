@@ -25,6 +25,7 @@ provenance:
 - 年份：2023（arXiv，后续有 Nature 版本）
 - 任务：持续学习中的 loss of plasticity
 - 论文笔记：[[notes/Maintaining Plasticity in Deep Continual Learning]]
+- 联网核验：Nature 正式版以 “Loss of plasticity in deep continual learning” 发表，作者在预印本基础上补入 Qingfeng Lan。
 
 ## 核心主张
 

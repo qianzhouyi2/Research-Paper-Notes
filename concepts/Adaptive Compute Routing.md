@@ -1,4 +1,4 @@
----
+﻿---
 title: Adaptive Compute Routing
 category: concept
 tags:
@@ -22,9 +22,15 @@ provenance:
 
 固定推理预算会在“简单题浪费、难题不足”之间失衡；路由策略用于按需分配算力。
 
+## 联网补充
+
+- ComplexityNet 把“复杂度”定义为相对模型池的最小可解级别，而不是任务的绝对难度；因此路由器本质是在学样本级预算分配。
+- Synergy-of-Thoughts 说明路由信号也可以来自中间置信度与模型分歧：高分歧样本再触发强模型干预，比固定深思预算更省。
+
 ## 关联页面
 
 - [[references/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity]]
 - [[references/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models]]
 - [[synthesis/LLM Inference Efficiency and Scaling]]
+
 

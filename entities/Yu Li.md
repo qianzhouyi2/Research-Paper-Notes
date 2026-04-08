@@ -1,5 +1,5 @@
 ---
-title: Yeyuan Zeng
+title: Yu Li
 category: entity
 tags:
   - entity
@@ -10,18 +10,16 @@ sources:
   - notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md
 created: 2026-04-08
 updated: 2026-04-08
-summary: Yeyuan Zeng 在该 wiki 主要关联双过程混合推理与成本-准确率权衡研究。
+summary: Yu Li 在该 wiki 中主要关联 Synergy-of-Thoughts 的混合推理与成本控制研究。
 provenance:
-  extracted: 0.8
-  inferred: 0.18
+  extracted: 0.9
+  inferred: 0.08
   ambiguous: 0.02
 ---
 
-# Yeyuan Zeng
+# Yu Li
 
 ## 关联页面
 
 - [[references/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models]]
-- [[concepts/Task Complexity-Aware Inference Budgeting]]
-- [[synthesis/Probabilistic Inference-Time Control for LLMs]]
 

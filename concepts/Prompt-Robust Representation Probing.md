@@ -1,4 +1,4 @@
----
+﻿---
 title: Prompt-Robust Representation Probing
 category: concept
 tags:
@@ -21,9 +21,15 @@ provenance:
 
 重点不在单次探针得分，而在不同提示扰动下是否仍保持稳定可解码结构。
 
+## 联网补充
+
+- 时空表示论文真正有价值的地方在于做了 prompt 变体、大小写扰动和跨实体泛化，避免把单一模板 probe 当成表示证据。
+- 但 probe 成功依然不等于模型在生成时因果使用了这些表示，所以它更适合作为“表征存在性”证据，而不是能力归因终点。
+
 ## 关联页面
 
 - [[references/Language Models Represent Space and Time]]
 - [[concepts/Linear Probe World-Model Evaluation]]
 - [[synthesis/Temporal Structure Learning in Sequence Models]]
+
 

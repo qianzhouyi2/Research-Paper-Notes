@@ -1,4 +1,4 @@
----
+﻿---
 title: Amortized Bayesian Inference for LLMs
 category: concept
 tags:
@@ -21,9 +21,15 @@ provenance:
 
 该范式通过离线学习“近似后验策略”，在在线推理阶段复用，避免每次都做昂贵的显式后验推断。
 
+## 联网补充
+
+- ICLR 2024 论文把 infilling、约束生成和 CoT 推理统一成后验采样问题，核心不是“找一个最好答案”，而是学习直接从目标后验分布采样。
+- 这类摊销推断最适合目标密度或奖励可定义的任务；如果后验定义本身不稳，离线学到的采样器也会继承偏差。
+
 ## 关联页面
 
 - [[references/Amortizing intractable inference in large language models]]
 - [[concepts/Task Complexity-Aware Inference Budgeting]]
 - [[synthesis/Probabilistic Inference-Time Control for LLMs]]
+
 
