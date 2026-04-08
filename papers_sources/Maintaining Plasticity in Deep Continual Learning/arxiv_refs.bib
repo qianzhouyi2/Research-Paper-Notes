@@ -1,0 +1,1925 @@
+
+% published version of original dorpout paper
+@article{srivastava14a,
+  author  = {Nitish Srivastava and Geoffrey Hinton and Alex Krizhevsky and Ilya Sutskever and Ruslan Salakhutdinov},
+  title   = {Dropout: A Simple Way to Prevent Neural Networks from Overfitting},
+  journal = {\textit{Journal of Machine Learning Research}},
+  year    = {2014},
+  volume  = {15},
+  number  = {56},
+  pages   = {1929-1958},
+  url     = {http://jmlr.org/papers/v15/srivastava14a.html}
+}
+
+% glorot initialization
+@InProceedings{glorot2010understanding,
+  title = 	 {Understanding the difficulty of training deep feedforward neural networks},
+  author = 	 {Glorot, Xavier and Bengio, Yoshua},
+  booktitle = 	 {13th International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {249--256},
+  year = 	 {2010},
+}
+
+
+% orthogonal matrix initialization
+@INPROCEEDINGS{Saxe14exactsolutions,
+    author = {Andrew M. Saxe and James L. Mcclelland and Surya Ganguli},
+    title = {Exact solutions to the nonlinear dynamics of learning in deep linear neural network},
+    booktitle = {\textit{In International Conference on Learning Representations}},
+    year = {2014}
+}
+
+% he initialization
+@inproceedings{he2015delving,
+  title={Delving deep into rectifiers: Surpassing human-level performance on imagenet classification},
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle={IEEE International Conference on Computer Vision},
+  pages={1026--1034},
+  year={2015}
+}
+
+% og batch norm paper
+@inproceedings{ioffe2015batch,
+  title={Batch normalization: Accelerating deep network training by reducing internal covariate shift},
+  author={Ioffe, Sergey and Szegedy, Christian},
+  booktitle={\textit{32nd International Conference on Machine Learning}},
+  pages={448--456},
+  year={2015},
+}
+
+% batch norm makes the loss surface smooth
+@article{santurkar2018does,
+  title={How does batch normalization help optimization?},
+  author={Santurkar, Shibani and Tsipras, Dimitris and Ilyas, Andrew and Madry, Aleksander},
+  journal={\textit{Advances in Neural Information Processing Systems 31}},
+  year={2018}
+}
+
+% online batch norm
+@article{chiley2019online,
+  title={Online normalization for training neural networks},
+  author={Chiley, Vitaliy and Sharapov, Ilya and Kosson, Atli and Koster, Urs and Reece, Ryan and Samaniego de la Fuente, Sofia and Subbiah, Vishal and James, Michael},
+  journal={\textit{Advances in Neural Information Processing Systems 32}},
+  year={2019}
+}
+
+% measure of saturation for sigmoidal units
+% "An obvious way to check for the presence of saturation is to examine the activation function outputs in the non-linear layers of a NN. If the activation outputs on the given data set are concentrated around the asymptotic ends, then saturation is present" Section III
+@INPROCEEDINGS{2015saturation,
+  author={Rakitianskaia, Anna and Engelbrecht, Andries},
+  booktitle={\textit{IEEE Symposium Series on Computational Intelligence}}, 
+  title={Measuring Saturation in Neural Networks}, 
+  year={2015},
+  volume={},
+  number={},
+  pages={1423-1430},
+  }
+  % doi={10.1109/SSCI.2015.202}
+
+% effective rank paper
+@INPROCEEDINGS{2007OlivierEffectiveRank,  
+    author={Roy, Olivier and Vetterli, Martin},  
+    booktitle={\textit{15th European Signal Processing Conference}},   
+    title={The effective rank: A measure of effective dimensionality},   
+    year={2007},  
+    volume={},  
+    number={},  
+    pages={606-610},  
+    doi={}
+}
+
+% implicit regularization of the loss function
+@inproceedings{smith2021on,
+    title={On the Origin of Implicit Regularization in Stochastic Gradient Descent},
+    author={Samuel L Smith and Benoit Dherin and David Barrett and Soham De},
+    booktitle={\textit{9th International Conference on Learning Representations}},
+    year={2021},
+}
+    % url={https://openreview.net/forum?id=rq\_Qr0c1Hyo}
+
+% implicit regularization of the rank
+@inproceedings{2020Razim,
+    author = {Razin, Noam and Cohen, Nadav},
+    booktitle = {\textit{Advances in Neural Information Processing Systems 33}},
+    title = {Implicit Regularization in Deep Learning May Not Be Explainable by Norms},
+    year = {2020}
+}
+    % url = {https://proceedings.neurips.cc/paper/2020/file/f21e255f89e0f258accbe4e984eef486-Paper.pdf},
+
+% dead neuron problem
+@article{shin2020trainability,
+  title={Trainability of relu networks and data-dependent initialization},
+  author={Shin, Yeonjong and Karniadakis, George Em},
+  journal={\textit{Journal of Machine Learning for Modeling and Computing}},
+  volume={1},
+  number={1},
+  pages={39--74},
+  year={2020},
+  publisher={Begel House Inc.}
+}
+
+% more recent evidence that batch norm helps with exploding gradients
+@article{shao2020normalization,
+  title={Is normalization indispensable for training deep neural network?},
+  author={Shao, Jie and Hu, Kai and Wang, Changhu and Xue, Xiangyang and Raj, Bhiksha},
+  journal={\textit{Advances in Neural Information Processing Systems 33}},
+  year={2020}
+}
+
+% og backprop paper
+@article{rumelhart1986learning,
+  title={Learning representations by back-propagating errors},
+  author={Rumelhart, David E and Hinton, Geoffrey E and Williams, Ronald J},
+  journal={\textit{Nature}},
+  volume={323},
+  number={6088},
+  pages={533--536},
+  year={1986},
+  publisher={Nature Publishing Group}
+}
+
+% shrink and perturb paper
+@inproceedings{WarmStart2020,
+ author = {Ash, Jordan and Adams, Ryan P},
+ booktitle = {Advances in Neural Information Processing Systems 33},
+ title = {On Warm-Starting Neural Network Training},
+ year = {2020}
+}
+
+% volume = {33},
+ % url = {https://proceedings.neurips.cc/paper/2020/file/288cd2567953f06e460a33951f55daaf-Paper.pdf},
+
+@incollection{thrun1998,
+  title={Lifelong learning algorithms},
+  author={Thrun, Sebastian},
+  booktitle={\textit{Learning to learn}},
+  pages={181--209},
+  year={1998},
+  publisher={Springer}
+}
+
+% imagenet paper
+@inproceedings{krishevsky2012,
+ author = {Krizhevsky, Alex and Sutskever, Ilya and Hinton, Geoffrey E},
+ booktitle = {Advances in Neural Information Processing Systems 25},
+ title = {{I}mage{N}et Classification with Deep Convolutional Neural Networks},
+ year = {2012}
+}
+ % url = {https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf},
+
+% alpha go paper
+@article{alphago,
+  added-at = {2016-03-11T14:36:05.000+0100},
+  author = {Silver, David and Huang, Aja and Maddison, Chris J. and Guez, Arthur and Sifre, Laurent and van den Driessche, George and Schrittwieser, Julian and Antonoglou, Ioannis and Panneershelvam, Veda and Lanctot, Marc and Dieleman, Sander and Grewe, Dominik and Nham, John and Kalchbrenner, Nal and Sutskever, Ilya and Lillicrap, Timothy and Leach, Madeleine and Kavukcuoglu, Koray and Graepel, Thore and Hassabis, Demis},
+  biburl = {https://www.bibsonomy.org/bibtex/29e987f58d895c490144693139cbc90c7/ytyoun},
+  doi = {10.1038/nature16961},
+  interhash = {48430c7891aaf9fe2582faa8f5d076c1},
+  intrahash = {9e987f58d895c490144693139cbc90c7},
+  journal = {\textit{Nature}},
+  keywords = {baduk go google},
+  month = jan,
+  number = 7587,
+  pages = {484--489},
+  publisher = {Nature Publishing Group},
+  timestamp = {2016-03-11T14:37:40.000+0100},
+  title = {Mastering the Game of {Go} with Deep Neural Networks and Tree Search},
+  volume = 529,
+  year = 2016
+}
+
+% GPT 3 paper (?)
+@inproceedings{brown2020,
+ author = {Brown, Tom and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared D and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and Agarwal, Sandhini and Herbert-Voss, Ariel and Krueger, Gretchen and Henighan, Tom and Child, Rewon and Ramesh, Aditya and Ziegler, Daniel and Wu, Jeffrey and Winter, Clemens and Hesse, Chris and Chen, Mark and Sigler, Eric and Litwin, Mateusz and Gray, Scott and Chess, Benjamin and Clark, Jack and Berner, Christopher and McCandlish, Sam and Radford, Alec and Sutskever, Ilya and Amodei, Dario},
+ booktitle = {\textit{Advances in Neural Information Processing Systems 33}},
+ title = {Language Models are Few-Shot Learners},
+ year = {2020}
+}
+ % url = {https://proceedings.neurips.cc/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf},
+
+% rich's tracking paper
+@inproceedings{sutton2007,
+author = {Sutton, Richard S. and Koop, Anna and Silver, David},
+title = {On the Role of Tracking in Stationary Environments},
+year = {2007},
+isbn = {9781595937933},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1273496.1273606},
+doi = {10.1145/1273496.1273606},
+booktitle = {\textit{24th International Conference on Machine Learning}},
+pages = {871–878},
+numpages = {8},
+location = {Corvalis, Oregon, USA},
+series = {ICML '07}
+}
+
+% continual rl 
+@article{khetarpal2020towards,
+  title={Towards continual reinforcement learning: A review and perspectives},
+  author={Khetarpal, Khimya and Riemer, Matthew and Rish, Irina and Precup, Doina},
+  journal={\textit{arXiv preprint arXiv:2012.13490}},
+  year={2020}
+}
+
+% multi-agent non-stationairty
+@inproceedings{foerster2018,
+author = {Foerster, Jakob and Chen, Richard Y. and Al-Shedivat, Maruan and Whiteson, Shimon and Abbeel, Pieter and Mordatch, Igor},
+title = {Learning with Opponent-Learning Awareness},
+year = {2018},
+publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
+address = {Richland, SC},
+booktitle = {\textit{Proceedings of the 17th International Conference on Autonomous Agents and MultiAgent Systems}},
+pages = {122–130},
+numpages = {9},
+keywords = {deep reinforcement learning, multi-agent learning, general-sum, iterated prisoners dilemma},
+location = {Stockholm, Sweden},
+series = {AAMAS '18}
+}
+
+% second most popular catastrophic forgetting paper
+@article{french1999,
+title = {Catastrophic forgetting in connectionist networks},
+journal = {\textit{Trends in Cognitive Sciences}},
+volume = {3},
+number = {4},
+pages = {128-135},
+year = {1999},
+issn = {1364-6613},
+author = {Robert M. French},
+keywords = {Catastrophic forgetting, Connectionist networks, Connectionism, Memory, Learning, Interference},
+}
+% doi = {https://doi.org/10.1016/S1364-6613(99)01294-2},
+% url = {https://www.sciencedirect.com/science/article/pii/S1364661399012942},
+
+@inproceedings{selfridge1985,
+  title={Training and Tracking in Robotics},
+  author={Oliver G. Selfridge and Richard S. Sutton and Andrew G. Barto},
+  pages = {670--672},
+  booktitle={\textit{Proceedings of the 9th International Joint Conference on Artificial Intelligence}},
+  volume={1},
+  year={1985},
+}
+  % url={https://www.ijcai.org/Proceedings/85-1/Papers/129a.pdf}
+
+@InProceedings{finn2019,
+  title = 	 {Online Meta-Learning},
+  author =       {Finn, Chelsea and Rajeswaran, Aravind and Kakade, Sham and Levine, Sergey},
+  booktitle = 	 {\textit{36th International Conference on Machine Learning}},
+  pages = 	 {1920--1930},
+  year = 	 {2019},
+  volume = 	 {97},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {09--15 Jun},
+}
+  % pdf = 	 {http://proceedings.mlr.press/v97/finn19a/finn19a.pdf},
+  % url = 	 {https://proceedings.mlr.press/v97/finn19a.html},
+
+@inproceedings{wang2017,
+  title={Growing a brain: Fine-tuning by increasing model capacity},
+  author={Wang, Yu-Xiong and Ramanan, Deva and Hebert, Martial},
+  booktitle={\textit{IEEE Conference on Computer Vision and Pattern Recognition}},
+  pages={2471--2480},
+  year={2017}
+}
+
+@book{fahlman1988,
+  title={\textit{An empirical study of learning speed in back-propagation networks}},
+  author={Fahlman, Scott E and others},
+  year={1988},
+  publisher={Carnegie Mellon University, Computer Science Department Pittsburgh, PA, USA}
+}
+
+
+%Sutton, R. S. (2014). \textit{Myths of Representation Learning}. Conference presentation. ICLR 2014, Banff, Canada. iclr.cc/archive/2014/}
+@Misc{sutton2014,
+author = {Richard S. Sutton},
+title = {Myths of Representation Learning},
+note={International Conference for Learning Representations},
+howpublished = {https://www.youtube.com/watch?v=qcdNaVAyeQ4},
+year = {2014}
+}
+
+@inproceedings{sutton1993,
+author = {Sutton, Richard S. and Whitehead, Steven D.},
+title = {Online Learning with Random Representations},
+year = {1993},
+isbn = {1558603077},
+booktitle = {\textit{10th International Conference on Machine Learning}},
+pages = {314–321},
+}
+%publisher = {Morgan Kaufmann Publishers Inc.},
+%address = {San Francisco, CA, USA},
+%numpages = {8},
+%location = {Amherst, MA, USA},
+%series = {ICML'93}
+
+@inproceedings{zenke2017,
+  title={Continual learning through synaptic intelligence},
+  author={Zenke, Friedemann and Poole, Ben and Ganguli, Surya},
+  booktitle={\textit{34th International Conference on Machine Learning}},
+  pages={3987--3995},
+  year={2017},
+}
+
+% imagenet paper
+@INPROCEEDINGS{deng2009,  
+    author={Deng, Jia and Dong, Wei and Socher, Richard and Li, Li-Jia and Kai Li and Li Fei-Fei},  
+    booktitle={\textit{IEEE Conference on Computer Vision and Pattern Recognition}},
+    title={{I}mage{N}et: A large-scale hierarchical image database},   
+    year={2009},  
+    volume={},  
+    number={},  
+    pages={248-255},  
+}
+
+% relu paper
+@inproceedings{nair2010,
+author = {Nair, Vinod and Hinton, Geoffrey E.},
+title = {Rectified Linear Units Improve {R}estricted {B}oltzmann {M}achines},
+year = {2010},
+isbn = {9781605589077},
+booktitle = {27th International Conference on Machine Learning},
+pages = {807–814},
+numpages = {8},
+}
+
+@INPROCEEDINGS{mass2013,
+    author = {Andrew L. Maas and Awni Y. Hannun and Andrew Y. Ng},
+    title = {Rectifier nonlinearities improve neural network acoustic models},
+    booktitle = {\textit{ICML Workshop on Deep Learning for Audio, Speech and Language Processing}},
+    year = {2013}
+}
+
+@inproceedings{clevert2016,
+  author    = {Djork{-}Arn{\'{e}} Clevert and
+               Thomas Unterthiner and
+               Sepp Hochreiter},
+  title     = {Fast and accurate deep network learning by exponential linear units ({E}{L}{U}s)},
+  booktitle = {\textit{4th International Conference on Learning Representations}
+  },
+  year      = {2016},
+  timestamp = {Sat, 23 Jan 2021 01:12:05 +0100},
+}
+  % url       = {http://arxiv.org/abs/1511.07289},
+
+@inproceedings{ramachandran2018,
+  author    = {Prajit Ramachandran and
+               Barret Zoph and
+               Quoc V. Le},
+  title     = {Searching for Activation Functions},
+  booktitle = {\textit{6th International Conference on Learning Representations}, Workshop Track Proceedings
+  },
+  year      = {2018},
+  timestamp = {Thu, 04 Apr 2019 13:20:09 +0200},
+}
+% publisher = {OpenReview.net},
+% {ICLR} 2018, Vancouver, BC, Canada, April 30 - May 3, 2018, Workshop Track Proceedings
+% url       = {https://openreview.net/forum?id=Hkuq2EkPf},
+
+% adam paper
+@inproceedings{kingma2015,
+  author    = {Diederik P. Kingma and
+               Jimmy Ba},
+  title     = {Adam: {A} Method for Stochastic Optimization},
+  booktitle = {3rd International Conference on Learning Representations
+  },
+  year      = {2015},
+  timestamp = {Thu, 25 Jul 2019 14:25:37 +0200},
+}
+% {ICLR} 2015, San Diego, CA, USA, May 7-9, 2015, Conference Track Proceedings
+% url       = {http://arxiv.org/abs/1412.6980},
+
+
+% ppo paper
+@misc{schulman2017,
+  title={Proximal policy optimization algorithms},
+  author={Schulman, John and Wolski, Filip and Dhariwal, Prafulla and Radford, Alec and Klimov, Oleg},
+  note={Preprint at \url{https://arxiv.org/abs/1707.06347} (2017)}
+}
+
+@inproceedings{gravesetal2013,
+  author={Graves, Alex and Mohamed, Abdel-rahman and Hinton, Geoffrey},
+  booktitle={\textit{2013 IEEE International Conference on Acoustics, Speech and Signal Processing}}, 
+  title={Speech recognition with deep recurrent neural networks}, 
+  year={2013},
+  volume={},
+  number={},
+  pages={6645-6649},
+}
+  % doi={10.1109/ICASSP.2013.6638947}
+
+@article{mcculloch1943,
+  title={A logical calculus of the ideas immanent in nervous activity},
+  author={McCulloch, Warren S and Pitts, Walter},
+  journal={\textit{The Bulletin of Mathematical Biophysics}},
+  volume={5},
+  number={4},
+  pages={115--133},
+  year={1943},
+  publisher={Springer}
+}
+
+% previous survey of catastrophic forgetting
+@inproceedings{Kemker2018MeasuringCF,
+  title={Measuring catastrophic forgetting in neural networks},
+  author={Kemker, Ronald and McClure, Marc and Abitino, Angelina and Hayes, Tyler and Kanan, Christopher},
+  booktitle={\textit{Proceedings of the AAAI Conference on Artificial Intelligence}},
+  volume={32},
+  number={1},
+  year={2018}
+}
+
+%%%%% a bunch of papers about computational neuroscience and the loss of plasticity %%%%%%%
+% psychology paper about plasticity in connectionist network
+@article{ellis2000age,
+  title={Age of acquisition effects in adult lexical processing reflect loss of plasticity in maturing systems: insights from connectionist networks.},
+  author={Ellis, Andrew W and Lambon Ralph, Matthew A},
+  journal={\textit{Journal of Experimental Psychology: Learning, memory, and cognition}},
+  volume={26},
+  number={5},
+  pages={1103},
+  year={2000},
+  publisher={American Psychological Association}
+}
+
+% paper with definition of stability-plasticity dilemma
+@misc{mermillod2013stability,
+  title={The stability-plasticity dilemma: Investigating the continuum from catastrophic forgetting to age-limited learning effects},
+  author={Mermillod, Martial and Bugaiska, Aur{\'e}lia and Bonin, Patrick},
+  journal={\textit{Frontiers in psychology}},
+  volume={4},
+  pages={504},
+  year={2013},
+  publisher={Frontiers Media SA}
+}
+
+% Age of acquisition effect in image recognition
+@article{lambon2006,
+    author = { Matthew A.   Lambon Ralph  and  Sheeba   Ehsan },
+    title = {Age of acquisition effects depend on the mapping between representations and the frequency of occurrence: Empirical and computational evidence},
+    journal = {\textit{Visual Cognition}},
+    volume = {13},
+    number = {7-8},
+    pages = {928-948},
+    year  = {2006},
+    publisher = {Routledge},
+}
+    % doi = {10.1080/13506280544000110},
+    % URL = { https://doi.org/10.1080/13506280544000110},
+    % eprint = {https://doi.org/10.1080/13506280544000110}
+    
+% age of acquisition effect in language task
+@article{zevin2002,
+    title = {Age of Acquisition Effects in Word Reading and Other Tasks},
+    journal = {\textit{Journal of Memory and Language}},
+    volume = {47},
+    number = {1},
+    pages = {1-29},
+    year = {2002},
+    issn = {0749-596X},
+    author = {Jason D Zevin and Mark S Seidenberg},
+    keywords = {age of acquisition, reading, connectionist modeling, linguistic development.}
+}
+    % doi = {https://doi.org/10.1006/jmla.2001.2834},
+    % url = {https://www.sciencedirect.com/science/article/pii/S0749596X01928347},
+
+% age of acquisition effect in language task
+@article{bonin2004,
+    title = {The influence of age of acquisition in word reading and other tasks: A never ending story?},
+    journal = {\textit{Journal of Memory and Language}},
+    volume = {50},
+    number = {4},
+    pages = {456-476},
+    year = {2004},
+    issn = {0749-596X},
+    author = {Patrick Bonin and Christopher Barry and Alain Méot and Marylène Chalard},
+    keywords = {Age of acquisition, Cumulative frequency, Frequency trajectory, Reading, Naming, Spelling, Lexical decision},
+}
+    % doi = {https://doi.org/10.1016/j.jml.2004.02.001},
+    % url = {https://www.sciencedirect.com/science/article/pii/S0749596X04000129},
+
+% age of acquisition in simulated domains
+@inproceedings{mermillod2009frequency,
+  title={Frequency trajectory gives rise to an age-limited learning effect as a function of input-output mapping in connectionist networks},
+  author={Mermillod, Martial and Bonin, P and Morisseau, T and M{\'e}ot, A and Ferrand, L},
+  booktitle={\textit{Proceedings of the 31th Annual Conference of the Cognitive Science Society}},
+  pages={2322--2327},
+  year={2009},
+  organization={Citeseer}
+}
+
+% entrehcnment effect is due to activation functions
+@article{seidenberg1989distributed,
+  title={A distributed, developmental model of word recognition and naming.},
+  author={Seidenberg, Mark S and McClelland, James L},
+  journal={\textit{Psychological review}},
+  volume={96},
+  number={4},
+  pages={523},
+  year={1989},
+  publisher={American Psychological Association}
+}
+
+% entrenchment effect due to prunning 
+@article{thomas2006,
+    author = {Thomas, Michael S. C. and Johnson, Mark H.},
+    title = {The computational modeling of sensitive periods},
+    journal = {\textit{Developmental Psychobiology}},
+    volume = {48},
+    number = {4},
+    pages = {337-344},
+    year = {2006}
+}
+    % doi = {https://doi.org/10.1002/dev.20134},
+    % url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/dev.20134},
+    % eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/dev.20134},
+    
+% An extension to the warm start work
+@misc{plasticitystudy2021,
+  title={A study on the plasticity of neural networks},
+  author={Berariu, Tudor and Czarnecki, Wojciech and De, Soham and Bornschein, Jorg and Smith, Samuel and Pascanu, Razvan and Clopath, Claudia},
+  note={Preprint at \url{https://arxiv.org/abs/2106.00042} (2021)}
+}
+
+% intransigence work
+@inproceedings{intransigence2018,
+  title={Riemannian walk for incremental learning: Understanding forgetting and intransigence},
+  author={Chaudhry, Arslan and Dokania, Puneet K and Ajanthan, Thalaiyasingam and Torr, Philip HS},
+  booktitle={15th European Conference on Computer Vision},
+  pages={532--547},
+  year={2018}
+}
+
+
+@inproceedings{
+capacityloss2022,
+title={Understanding and Preventing Capacity Loss in Reinforcement Learning},
+author={Clare Lyle and Mark Rowland and Will Dabney},
+booktitle={10th International Conference on Learning Representations},
+year={2022},
+}
+
+@inproceedings{primacy2022,
+  title={The Primacy Bias in Deep Reinforcement Learning},
+  author={Nikishin, Evgenii and Schwarzer, Max and D’Oro, Pierluca and Bacon, Pierre-Luc and Courville, Aaron},
+  booktitle={39th International Conference on Machine Learning},
+  pages={16828--16847},
+  year={2022}
+}
+
+@article{whiteson2006,
+  author  = {Shimon Whiteson and Peter Stone},
+  title   = {Evolutionary Function Approximation for Reinforcement Learning},
+  journal = {Journal of Machine Learning Research},
+  year    = {2006},
+  volume  = {7},
+  number  = {31},
+  pages   = {877--917},
+}
+% DQN paper
+@article{mnih2015human,
+  title={Human-level control through deep reinforcement learning},
+  author={Mnih, Volodymyr and Kavukcuoglu, Koray and Silver, David and Rusu, Andrei A and Veness, Joel and Bellemare, Marc G and Graves, Alex and Riedmiller, Martin and Fidjeland, Andreas K and Ostrovski, Georg and others},
+  journal={\textit{Nature}},
+  volume={518},
+  number={7540},
+  pages={529--533},
+  year={2015},
+  publisher={Nature Publishing Group}
+}
+
+@inproceedings{understanding2023,
+  title={Understanding Plasticity in Neural Networks},
+  author={Lyle, Clare and Zheng, Zeyu and Nikishin, Evgenii and Avila Pires, Bernardo and Pascanu, Razvan and Dabney, Will},
+  booktitle={40th International Conference on Machine Learning},
+  pages={23190--23211},
+  year={2023},
+}
+
+@InProceedings{abbas2023loss,
+      title={Loss of Plasticity in Continual Deep Reinforcement Learning}, 
+      author={Zaheer Abbas and Rosie Zhao and Joseph Modayil and Adam White and Marlos C. Machado},
+      booktitle={2nd  Conference on Lifelong Learning Agents},
+      year={2023}
+}
+
+ .
+
+@InProceedings{sokar2023,
+  title = 	 {The Dormant Neuron Phenomenon in Deep Reinforcement Learning},
+  author =       {Sokar, Ghada and Agarwal, Rishabh and Castro, Pablo Samuel and Evci, Utku},
+  booktitle = 	 {40th International Conference on Machine Learning},
+  pages = 	 {32145--32168},
+  year = 	 {2023}
+}
+
+@book{kaelbling1993,
+  title={Learning in Embedded Systems},
+  author={Kaelbling, Leslie Pack},
+  year={1993},
+  publisher={MIT Press}
+}
+
+@article{pytorch,
+  title={Pytorch: An imperative style, high-performance deep learning library},
+  author={Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and others},
+  journal={\textit{Advances in Neural Information Processing Systems 32}},
+  year={2019}
+}
+
+@misc{gpt4,
+      title={{GPT}-4 Technical Report}, 
+      author={OpenAI},
+      note={Preprint at \url{https://arxiv.org/abs/2303.08774} (2023)},
+      archivePrefix={arXiv},    
+      primaryClass={cs.CL}
+}
+
+@article{alphafold,
+  title={Highly accurate protein structure prediction with {A}lpha{F}old},
+  author={Jumper, John and Evans, Richard and Pritzel, Alexander and Green, Tim and Figurnov, Michael and Ronneberger, Olaf and Tunyasuvunakool, Kathryn and Bates, Russ and {\v{Z}}{\'\i}dek, Augustin and Potapenko, Anna and others},
+  journal={Nature},
+  volume={596},
+  number={7873},
+  pages={583--589},
+  year={2021},
+  publisher={Nature Publishing Group}
+}
+
+@article{alphazero,
+  title={A general reinforcement learning algorithm that masters {C}hess, {S}hogi, and {G}o through self-play},
+  author={Silver, David and Hubert, Thomas and Schrittwieser, Julian and Antonoglou, Ioannis and Lai, Matthew and Guez, Arthur and Lanctot, Marc and Sifre, Laurent and Kumaran, Dharshan and Graepel, Thore and others},
+  journal={Science},
+  volume={362},
+  number={6419},
+  pages={1140--1144},
+  year={2018},
+  publisher={American Association for the Advancement of Science}
+}
+
+@article{deepstack,
+  title={Deep{S}tack: Expert-level artificial intelligence in heads-up no-limit poker},
+  author={Morav{\v{c}}{\'\i}k, Matej and Schmid, Martin and Burch, Neil and Lis{\`y}, Viliam and Morrill, Dustin and Bard, Nolan and Davis, Trevor and Waugh, Kevin and Johanson, Michael and Bowling, Michael},
+  journal={Science},
+  volume={356},
+  number={6337},
+  pages={508--513},
+  year={2017},
+  publisher={American Association for the Advancement of Science}
+}
+
+
+
+@inproceedings{translation,
+  author       = {Dzmitry Bahdanau and
+                  Kyunghyun Cho and
+                  Yoshua Bengio},
+  title        = {Neural Machine Translation by Jointly Learning to Align and Translate},
+  booktitle    = {3rd International Conference on Learning Representations},
+  year         = {2015}
+}
+
+
+@article{droneflying,
+  title={Champion-level drone racing using deep reinforcement learning},
+  author={Kaufmann, Elia and Bauersfeld, Leonard and Loquercio, Antonio and M{\"u}ller, Matthias and Koltun, Vladlen and Scaramuzza, Davide},
+  journal={Nature},
+  volume={620},
+  number={7976},
+  pages={982--987},
+  year={2023},
+  publisher={Nature Publishing Group UK London}
+}
+
+@article{GTsophy,
+  title={Outracing champion {G}ran {T}urismo drivers with deep reinforcement learning},
+  author={Wurman, Peter R and Barrett, Samuel and Kawamoto, Kenta and MacGlashan, James and Subramanian, Kaushik and Walsh, Thomas J and Capobianco, Roberto and Devlic, Alisa and Eckert, Franziska and Fuchs, Florian and others},
+  journal={Nature},
+  volume={602},
+  number={7896},
+  pages={223--228},
+  year={2022},
+  publisher={Nature Publishing Group UK London}
+}
+
+@article{autonomousdriving,
+  title={A survey of deep learning techniques for autonomous driving},
+  author={Grigorescu, Sorin and Trasnea, Bogdan and Cocias, Tiberiu and Macesanu, Gigel},
+  journal={Journal of Field Robotics},
+  volume={37},
+  number={3},
+  pages={362--386},
+  year={2020},
+  publisher={Wiley Online Library}
+}
+
+@mastersthesis{dohare2020interplay,
+  title={The Interplay of Search and Gradient Descent in Semi-stationary Learning Problems},
+  author={Dohare, Shibhansh},
+  school={University of Alberta},
+  year={2020}
+}
+
+@mastersthesis{rahman2021toward,
+  title={Toward Generate-and-Test Algorithms for Continual Feature Discovery},
+  author={Rahman, Parash},
+  school={University of Alberta},
+  year={2021}
+}
+
+@misc{kumar2023maintaining,
+  title={Maintaining plasticity via regenerative regularization},
+  author={Kumar, Saurabh and Marklund, Henrik and Van Roy, Benjamin},
+  note={Preprint at \url{https://arxiv.org/abs/2308.11958} (2023)}
+}
+
+@misc{dohare2021continual,
+  title={Continual {B}ackprop: Stochastic gradient descent with persistent randomness},
+  author={Dohare, Shibhansh and Sutton, Richard S and Mahmood, A Rupam},
+  note={Preprint at \url{https://arxiv.org/abs/2108.06325} (2021)}
+}
+
+@inproceedings{resnet,
+  title={Deep residual learning for image recognition},
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle={IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={770--778},
+  year={2016}
+}
+
+@inproceedings{kaimingInit,
+  title={Delving deep into rectifiers: Surpassing human-level performance on imagenet classification},
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle={Proceedings of the IEEE international conference on computer vision},
+  pages={1026--1034},
+  year={2015}
+}
+
+Citation taken from: https://www.literatureandscience.org/wp-content/uploads/2018/12/BJORK-FINAL.pdf
+@inproceedings{selfridge1959pandemonium,
+  title={Pandemonium: A Paradigm for Learning},
+  author={Selfridge, O. G.},
+  booktitle={Mechanization of Thought Processes, Proceedings of a Symposium Held at the National Physical Laboratory},
+  pages={511-531},
+  year={1958},
+  address={Her Majesty’s Stationary Office, London}
+}
+%  booktitle={Mechanization of Thought Processes, Proceedings of a Symposium Held at the National Physical Laboratory on 24-27 November, 1958},
+
+Selfridge, O. G. “Pandemonium: A Paradigm for Learning.” Mechanization of
+Thought Processes, Proceedings of a Symposium Held at the National
+Physical Laboratory on 24-27 November, 1958, vol. 1, Her Majesty’s
+Stationary Office, London, 1959, pp. 511–531.
+
+@article{klopfandgose1969,
+  author={Klopf, A. H. and Gose, Earl},
+  journal={IEEE Transactions on Systems Science and Cybernetics}, 
+  title={An Evolutionary Pattern Recognition Network}, 
+  year={1969},
+  volume={5},
+  number={3},
+  pages={247-250},
+  doi={10.1109/TSSC.1969.300268}
+}
+
+@article{holland1977cognitive,
+  title={Cognitive systems based on adaptive algorithms},
+  author={Holland, John H and Reitman, Judith S},
+  journal = {SIGART Bull.},
+  volume={63},
+  pages={49--49},
+  year={1977},
+  publisher={Association for Computing Machinery},
+}
+%issue_date = {June 1977},
+%address = {New York, NY, USA},
+%issn = {0163-5719}
+%url = {https://doi.org/10.1145/1045343.1045373},
+%doi = {10.1145/1045343.1045373},
+
+@inproceedings{rlhf2022,
+  title={Training language models to follow instructions with human feedback},
+  author={Ouyang, Long and Wu, Jeffrey and Jiang, Xu and Almeida, Diogo and Wainwright, Carroll and Mishkin, Pamela and Zhang, Chong and Agarwal, Sandhini and Slama, Katarina and Ray, Alex and others},
+  booktitle={Advances in Neural Information Processing Systems 36},
+  year={2022}
+}
+
+@article{dexterous2020,
+  title={Learning dexterous in-hand manipulation},
+  author={Andrychowicz, OpenAI: Marcin and Baker, Bowen and Chociej, Maciek and Jozefowicz, Rafal and McGrew, Bob and Pachocki, Jakub and Petron, Arthur and Plappert, Matthias and Powell, Glenn and Ray, Alex and others},
+  journal={The International Journal of Robotics Research},
+  volume={39},
+  number={1},
+  pages={3--20},
+  year={2020},
+  publisher={SAGE Publications Sage UK: London, England}
+}
+
+@misc{dota2,
+  title={Dota 2 with Large Scale Deep Reinforcement Learning},
+  author={OpenAI and Christopher Berner and Greg Brockman and Brooke Chan and Vicki Cheung and Przemysław Dębiak and Christy Dennison and David Farhi and Quirin Fischer and Shariq Hashme and Chris Hesse and Rafal Józefowicz and Scott Gray and Catherine Olsson and Jakub Pachocki and Michael Petrov and Henrique Pondé de Oliveira Pinto and Jonathan Raiman and Tim Salimans and Jeremy Schlatter and Jonas Schneider and Szymon Sidor and Ilya Sutskever and Jie Tang and Filip Wolski and Susan Zhang},
+  note={Preprint at \url{https://arxiv.org/abs/1912.06680} (2019)}
+}
+
+@inproceedings{icarl,
+  title={i{C}a{RL}: Incremental classifier and representation learning},
+  author={Rebuffi, Sylvestre-Alvise and Kolesnikov, Alexander and Sperl, Georg and Lampert, Christoph H},
+  booktitle={IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={2001--2010},
+  year={2017}
+}
+
+@inproceedings{achille2018critical,
+  title={Critical learning periods in deep networks},
+  author={Achille, Alessandro and Rovere, Matteo and Soatto, Stefano},
+  booktitle={6th International Conference on Learning Representations},
+  year={2018}
+}
+
+todo: fix this citation
+@article{cifar100,
+  title={Learning multiple layers of features from tiny images},
+  author={Krizhevsky, Alex and Hinton, Geoffrey and others},
+  year={2009},
+  publisher={Toronto, ON, Canada}
+}
+
+@incollection{Kashyapetal,
+title = {{S}tochastic {A}pproximation},
+editor = {J.M. Mendel and K.S. Fu},
+series = {Mathematics in Science and Engineering},
+publisher = {Academic Press},
+volume = {66},
+pages = {329-355},
+year = {1970},
+booktitle = {Adaptive, Learning and Pattern Recognition Systems: Theory and Applications},
+author = {R.L. Kashyap and C.C. Blaydon and K.S. Fu},
+}
+%issn = {0076-5392},
+%doi = {https://doi.org/10.1016/S0076-5392(08)60499-3},
+%url ={https://www.sciencedirect.com/science/article/pii/S0076539208604993},
+
+@article{gradwithrestarts,
+  title={Restart procedures for the conjugate gradient method},
+  author={Powell, Michael James David},
+  journal={Mathematical Programming},
+  volume={12},
+  pages={241--254},
+  year={1977},
+  publisher={Springer}
+}
+
+@article{neat,
+  title={Evolving neural networks through augmenting topologies},
+  author={Stanley, Kenneth O and Miikkulainen, Risto},
+  journal={Evolutionary Computation},
+  volume={10},
+  number={2},
+  pages={99--127},
+  year={2002},
+  publisher={MIT Press}
+}
+
+@book{hollandbook,
+  title={Adaptation in Natural and Artificial Systems},
+  author={Holland, John H},
+  year={1975},
+  publisher={University of Miching Press}
+}
+
+@book{cziko,
+  title={Without Miracles: Universal Selection Theory and the Second Darwinian Revolution},
+  author={Cziko, Gary},
+  year={1995},
+  publisher={MIT press}
+}
+
+@article{dennett,
+  title={Why the {L}aw of {E}ffect will not go away},
+  author={Dennett, Daniel C},
+  journal={Brainsrtorms},
+  pages={71--89},
+  year={1978},
+  publisher={Bradford/MIT Press}
+}
+
+@book{thorndike,
+    author = {Thorndike, E L},
+    title = {Animal Intelligence},
+    publisher = {Macmillan Press},
+    year = {1911}
+}
+
+@article{campbell,
+  title={Blind variation and selective survival as a general strategy in knowledge-processes},
+  author={Campbell, Donald T},
+  journal={Self-Organizing Systems},
+  volume={2},
+  pages={205--231},
+  year={1960},
+  publisher={Pergamon Press}
+}
+
+
+% original dropout paper
+@misc{Hinton2012Dropout1,
+  title={Improving neural networks by preventing co-adaptation of feature detectors},
+  author={Hinton, Geoffrey E and Srivastava, Nitish and Krizhevsky, Alex and Sutskever, Ilya and Salakhutdinov, Ruslan R},
+  note={Preprint at \url{https://arxiv.org/abs/1207.0580} (2012)}
+}
+
+
+% published version of original dorpout paper
+@article{srivastava14a,
+  author  = {Nitish Srivastava and Geoffrey Hinton and Alex Krizhevsky and Ilya Sutskever and Ruslan Salakhutdinov},
+  title   = {Dropout: A Simple Way to Prevent Neural Networks from Overfitting},
+  journal = {\textit{Journal of Machine Learning Research}},
+  year    = {2014},
+  volume  = {15},
+  number  = {56},
+  pages   = {1929-1958},
+  url     = {http://jmlr.org/papers/v15/srivastava14a.html}
+}
+
+% deep learning book
+@book{Goodfellow-et-al-2016,
+    title={\textit{Deep Learning}},
+    author={Ian Goodfellow and Yoshua Bengio and Aaron Courville},
+    publisher={MIT Press},
+    year={2016}
+}
+    % note={http://www.deeplearningbook.org},
+
+% orthogonal matrix initialization
+@INPROCEEDINGS{Saxe14exactsolutions,
+    author = {Andrew M. Saxe and James L. Mcclelland and Surya Ganguli},
+    title = {Exact solutions to the nonlinear dynamics of learning in deep linear neural network},
+    booktitle = {\textit{2nd International Conference on Learning Representations}},
+    year = {2014}
+}
+
+
+% theory on dead relu neurons
+% Fernando: as far as I can tell, this is still a preprint. However, it has some really good theory about dead neurons and the authors seem competent, so I think we should include this.
+@misc{lu2019dying,
+  title={Dying {R}e{LU} and initialization: Theory and numerical examples},
+  author={Lu, Lu and Shin, Yeonjong and Su, Yanhui and Karniadakis, George Em},
+  note={Preprint at \url{https://arxiv.org/abs/1903.06733} (2019)}
+}
+
+% some discussion about saturated neurons
+% book
+@book{montavon2012neural,
+  title={\textit{Neural Networks: {T}ricks of the Trade}},
+  author={Montavon, Gr{\'e}goire and Orr, Genevi{\`e}ve and M{\"u}ller, Klaus-Robert},
+  year={2012},
+  publisher={Springer}
+}
+
+% workshop paper on why gradients explode and how weight magnitude is related to that
+@inproceedings{philipp2018gradients,
+    title={Gradients explode - Deep Networks are shallow - {R}es{N}et explained},
+    author={George Philipp, Dawn Song, Jaime G. Carbonell},
+    booktitle = {6th International Conference on Learning Representations, Workshop Track Proceedings},
+    year={2018}
+}
+
+% extended version of the article above, but it's just a preprint 
+@misc{philipp2017exploding,
+  title={The exploding gradient problem demystified - definition, prevalence, impact, origin, tradeoffs, and solutions},
+  author={Philipp, George and Song, Dawn and Carbonell, Jaime G},
+  note={Preprint at \url{https://arxiv.org/abs/1712.05577} (2017)},
+}
+
+% exploding gradients and RNNs
+@inproceedings{pascanu2013difficulty,
+  title={On the difficulty of training recurrent neural networks},
+  author={Pascanu, Razvan and Mikolov, Tomas and Bengio, Yoshua},
+  booktitle={30th International Conference on Machine Learning},
+  pages={1310--1318},
+  year={2013}
+}
+
+% proofs of sgd
+@book{bertsekas2016,
+    title={\textit{Nonlinear Programming}},
+    publisher={Athena Scientific},
+    author={Bertsekas, Dimitri},
+    year={2016},
+    pages={861}
+}
+
+% Ehsan's paper
+@article{ehsan2021,
+    title={Representation Alignment in Neural Networks},
+    author={Ehsan Imani and Wei Hu and Martha White},
+    journal={Transactions of Machine Learning Research},
+    year={2022},
+}
+  % url       = {https://arxiv.org/abs/2112.07806},
+
+% batch norm improves the condition number of the neural network
+@inproceedings{bjork2018,
+     author = {Bjorck, Nils and Gomes, Carla P and Selman, Bart and Weinberger, Kilian Q},
+     booktitle = {Advances in Neural Information Processing Systems 32},
+     title = {Understanding Batch Normalization},
+     year = {2018}
+}
+% more recent evidence that batch norm helps with exploding gradients
+@article{shao2020normalization,
+  title={Is normalization indispensable for training deep neural network?},
+  author={Shao, Jie and Hu, Kai and Wang, Changhu and Xue, Xiangyang and Raj, Bhiksha},
+  journal={\textit{Advances in Neural Information Processing Systems 33}},
+  year={2020}
+}
+
+% shrink and perturb paper
+
+ % url = {https://proceedings.neurips.cc/paper/2020/file/288cd2567953f06e460a33951f55daaf-Paper.pdf},
+
+@incollection{thrun1998,
+  title={Lifelong learning algorithms},
+  author={Thrun, Sebastian},
+  booktitle={\textit{Learning to {L}earn}},
+  pages={181--209},
+  year={1998},
+  publisher={Springer}
+}
+
+% alpha go paper
+@article{alphago,
+  added-at = {2016-03-11T14:36:05.000+0100},
+  author = {Silver, David and Huang, Aja and Maddison, Chris J. and Guez, Arthur and Sifre, Laurent and van den Driessche, George and Schrittwieser, Julian and Antonoglou, Ioannis and Panneershelvam, Veda and Lanctot, Marc and Dieleman, Sander and Grewe, Dominik and Nham, John and Kalchbrenner, Nal and Sutskever, Ilya and Lillicrap, Timothy and Leach, Madeleine and Kavukcuoglu, Koray and Graepel, Thore and Hassabis, Demis},
+  biburl = {https://www.bibsonomy.org/bibtex/29e987f58d895c490144693139cbc90c7/ytyoun},
+  doi = {10.1038/nature16961},
+  interhash = {48430c7891aaf9fe2582faa8f5d076c1},
+  intrahash = {9e987f58d895c490144693139cbc90c7},
+  journal = {\textit{Nature}},
+  keywords = {baduk go google},
+  month = jan,
+  number = 7587,
+  pages = {484--489},
+  publisher = {Nature Publishing Group},
+  timestamp = {2016-03-11T14:37:40.000+0100},
+  title = {Mastering the Game of {Go} with Deep Neural Networks and Tree Search},
+  volume = 529,
+  year = 2016
+}
+
+% rich's tracking paper
+@inproceedings{sutton2007,
+author = {Sutton, Richard S. and Koop, Anna and Silver, David},
+title = {On the Role of Tracking in Stationary Environments},
+year = {2007},
+isbn = {9781595937933},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1273496.1273606},
+doi = {10.1145/1273496.1273606},
+booktitle = {\textit{24th International Conference on Machine Learning}},
+pages = {871–878},
+numpages = {8},
+location = {Corvalis, Oregon, USA},
+series = {ICML '07}
+}
+
+% continual rl 
+@article{khetarpal2020towards,
+  title={Towards continual reinforcement learning: A review and perspectives},
+  author={Khetarpal, Khimya and Riemer, Matthew and Rish, Irina and Precup, Doina},
+  journal={\textit{arXiv preprint arXiv:2012.13490}},
+  year={2020}
+}
+
+% multi-agent non-stationairty
+@inproceedings{foerster2018,
+author = {Foerster, Jakob and Chen, Richard Y. and Al-Shedivat, Maruan and Whiteson, Shimon and Abbeel, Pieter and Mordatch, Igor},
+title = {Learning with Opponent-Learning Awareness},
+year = {2018},
+publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
+address = {Richland, SC},
+booktitle = {\textit{Proceedings of the 17th International Conference on Autonomous Agents and MultiAgent Systems}},
+pages = {122–130},
+numpages = {9},
+keywords = {deep reinforcement learning, multi-agent learning, general-sum, iterated prisoners dilemma},
+location = {Stockholm, Sweden},
+series = {AAMAS '18}
+}
+
+% catastrophic interference 
+@incollection{mccloskey1989,
+  title={Catastrophic interference in connectionist networks: The sequential learning problem},
+  author={McCloskey, Michael and Cohen, Neal J},
+  booktitle={\textit{Psychology of Learning and Motivation}},
+  volume={24},
+  pages={109--165},
+  year={1989},
+}
+
+% more catastrophic forgetting
+@article{
+kirkpatrick2017,
+author = {James Kirkpatrick  and Razvan Pascanu  and Neil Rabinowitz  and Joel Veness  and Guillaume Desjardins  and Andrei A. Rusu  and Kieran Milan  and John Quan  and Tiago Ramalho  and Agnieszka Grabska-Barwinska  and Demis Hassabis  and Claudia Clopath  and Dharshan Kumaran  and Raia Hadsell },
+title = {Overcoming catastrophic forgetting in neural networks},
+journal = {\textit{Proceedings of the National Academy of Sciences}},
+volume = {114},
+number = {13},
+pages = {3521-3526},
+year = {2017},
+}
+% doi = {10.1073/pnas.1611835114},
+% URL = {https://www.pnas.org/doi/abs/10.1073/pnas.1611835114},
+% eprint = {https://www.pnas.org/doi/pdf/10.1073/pnas.1611835114},
+
+@article{van2022three,
+  title={Three types of incremental learning},
+  author={van de Ven, Gido M and Tuytelaars, Tinne and Tolias, Andreas S},
+  journal={Nature Machine Intelligence},
+  volume={4},
+  number={12},
+  pages={1185--1197},
+  year={2022},
+  publisher={Nature Publishing Group UK London}
+}
+
+
+@inproceedings{aljundi2019,
+ author = {Aljundi, Rahaf and Belilovsky, Eugene and Tuytelaars, Tinne and Charlin, Laurent and Caccia, Massimo and Lin, Min and Page-Caccia, Lucas},
+ booktitle = {Advances in Neural Information Processing Systems 33},
+ title = {Online Continual Learning with Maximal Interfered Retrieval},
+ year = {2019}
+}
+ % url = {https://proceedings.neurips.cc/paper/2019/file/15825aee15eb335cc13f9b559f166ee8-Paper.pdf},
+
+
+% WORKSHOP PAPER
+@inproceedings{
+golkar2019,
+title={Continual Learning via Neural Pruning},
+author={Siavash Golkar and Micheal Kagan and Kyunghyun Cho},
+booktitle={Real Neurons {\&} Hidden Units: Future directions at the intersection of neuroscience and artificial intelligence, workshop at NeurIPS 33},
+year={2019},
+}
+
+@inproceedings{rajasegaran2019,
+ author = {Rajasegaran, Jathushan and Hayat, Munawar and Khan, Salman H and Khan, Fahad Shahbaz and Shao, Ling},
+ booktitle = {Advances in Neural Information Processing Systems 33},
+ title = {Random Path Selection for Continual Learning},
+ year = {2019}
+}
+ % url = {https://proceedings.neurips.cc/paper/2019/file/83da7c539e1ab4e759623c38d8737e9e-Paper.pdf},
+
+% khurram's paper 
+@inproceedings{javed2019,
+ author = {Javed, Khurram and White, Martha},
+ booktitle = {Advances in Neural Information Processing Systems 33},
+ title = {Meta-Learning Representations for Continual Learning},
+ year = {2019}
+}
+
+@inproceedings{selfridge1985,
+  title={Training and Tracking in Robotics},
+  author={Oliver G. Selfridge and Richard S. Sutton and Andrew G. Barto},
+  pages = {670--672},
+  booktitle={\textit{Proceedings of the 9th International Joint Conference on Artificial Intelligence}},
+  volume={1},
+  year={1985},
+}
+  % url={https://www.ijcai.org/Proceedings/85-1/Papers/129a.pdf}
+
+@incollection{ring1998,
+  title={CHILD: A first step towards continual learning},
+  author={Ring, Mark B},
+  booktitle={\textit{Learning to Learn}},
+  pages={261--292},
+  year={1998},
+  publisher={Springer}
+}
+
+% couldn't find any other version other than the arxiv preprint
+@misc{rusu2016,
+  title={Progressive neural networks},
+  author={Rusu, Andrei A and Rabinowitz, Neil C and Desjardins, Guillaume and Soyer, Hubert and Kirkpatrick, James and Kavukcuoglu, Koray and Pascanu, Razvan and Hadsell, Raia},
+  note={Preprint at \url{https://arxiv.org/abs/1606.04671} (2016)}
+}
+
+
+@InProceedings{finn2017,
+  title = 	 {Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks},
+  author =       {Chelsea Finn and Pieter Abbeel and Sergey Levine},
+  booktitle={34th International Conference on Machine Learning},
+  pages = 	 {1126--1135},
+  year = 	 {2017},
+}
+%  volume = 	 {70},
+%  series = 	 {Proceedings of Machine Learning Research},
+%  month = 	 {06--11 Aug},
+
+
+@InProceedings{finn2019,
+  title = 	 {Online Meta-Learning},
+  author =       {Finn, Chelsea and Rajeswaran, Aravind and Kakade, Sham and Levine, Sergey},
+  booktitle = 	 {\textit{36th International Conference on Machine Learning}},
+  pages = 	 {1920--1930},
+  year = 	 {2019},
+  volume = 	 {97},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {09--15 Jun},
+}
+  % pdf = 	 {http://proceedings.mlr.press/v97/finn19a/finn19a.pdf},
+  % url = 	 {https://proceedings.mlr.press/v97/finn19a.html},
+
+@inproceedings{nagabandi2019,
+    title={Learning to Adapt in Dynamic, Real-World Environments through Meta-Reinforcement Learning},
+    author={Anusha Nagabandi and Ignasi Clavera and Simin Liu and Ronald S. Fearing and Pieter Abbeel and Sergey Levine and Chelsea Finn},
+    booktitle={7th International Conference on Learning Representations},
+    year={2019},
+}
+    % url={https://openreview.net/forum?id=HyztsoC5Y7},
+
+@book{fahlman1988,
+  title={\textit{An empirical study of learning speed in back-propagation networks}},
+  author={Fahlman, Scott E and others},
+  year={1988},
+  publisher={Carnegie Mellon University, Computer Science Department Pittsburgh, PA, USA}
+}
+
+
+%Sutton, R. S. (2014). \textit{Myths of Representation Learning}. Conference presentation. ICLR 2014, Banff, Canada. iclr.cc/archive/2014/}
+@Misc{sutton2014,
+author = {Richard S. Sutton},
+title = {Myths of Representation Learning},
+note={International Conference for Learning Representations},
+howpublished = {https://www.youtube.com/watch?v=qcdNaVAyeQ4},
+year = {2014}
+}
+
+% generate and test paper
+@inproceedings{mahmood2013,
+  title={Representation Search through Generate and Test.},
+  author={Mahmood, Ashique Rupam and Sutton, Richard S},
+  booktitle={\textit{AAAI Workshop: Learning Rich Representations from Low-Level Sensors}},
+  volume={10},
+  year={2013}
+}
+
+% as far as know, this is still a preprint and hasn't been published
+@misc{hu2016,
+  title={Network trimming: A data-driven neuron pruning approach towards efficient deep architectures},
+  author={Hu, Hengyuan and Peng, Rui and Tai, Yu-Wing and Tang, Chi-Keung},
+  note={Preprint at \url{https://arxiv.org/abs/1607.03250} (2016)}
+}
+
+
+@MISC{coumans2021,
+author =   {Erwin Coumans and Yunfei Bai},
+title =    {PyBullet, a Python module for physics simulation for games, robotics and machine learning},
+howpublished = {http://pybullet.org},
+year = {2016}
+}
+
+
+@article{greffetal2017,
+  author={Greff, Klaus and Srivastava, Rupesh K. and Koutník, Jan and Steunebrink, Bas R. and Schmidhuber, Jürgen},
+  journal={\textit{IEEE Transactions on Neural Networks and Learning Systems}}, 
+  title={{L}{S}{T}{M}: A Search Space Odyssey}, 
+  year={2017},
+  volume={28},
+  number={10},
+  pages={2222-2232},
+}
+% previous survey of catastrophic forgetting
+@inproceedings{Kemker2018MeasuringCF,
+  title={Measuring catastrophic forgetting in neural networks},
+  author={Kemker, Ronald and McClure, Marc and Abitino, Angelina and Hayes, Tyler and Kanan, Christopher},
+  booktitle={\textit{Proceedings of the AAAI Conference on Artificial Intelligence}},
+  volume={32},
+  number={1},
+  year={2018}
+}
+
+% paper with definition of stability-plasticity dilemma
+@misc{mermillod2013stability,
+  title={The stability-plasticity dilemma: Investigating the continuum from catastrophic forgetting to age-limited learning effects},
+  author={Mermillod, Martial and Bugaiska, Aur{\'e}lia and Bonin, Patrick},
+  journal={\textit{Frontiers in Psychology}},
+  volume={4},
+  pages={504},
+  year={2013},
+  publisher={Frontiers Media SA}
+}
+
+% Age of acquisition effect in image recognition
+@article{lambon2006,
+    author = { Matthew A.   Lambon Ralph  and  Sheeba   Ehsan },
+    title = {Age of acquisition effects depend on the mapping between representations and the frequency of occurrence: Empirical and computational evidence},
+    journal = {\textit{Visual Cognition}},
+    volume = {13},
+    number = {7-8},
+    pages = {928-948},
+    year  = {2006},
+    publisher = {Routledge},
+}
+    % doi = {10.1080/13506280544000110},
+    % URL = { https://doi.org/10.1080/13506280544000110},
+    % eprint = {https://doi.org/10.1080/13506280544000110}
+    
+% entrenchment effect due to prunning 
+@article{thomas2006,
+    author = {Thomas, Michael S. C. and Johnson, Mark H.},
+    title = {The computational modeling of sensitive periods},
+    journal = {\textit{Developmental Psychobiology}},
+    volume = {48},
+    number = {4},
+    pages = {337-344},
+    year = {2006}
+}
+    % doi = {https://doi.org/10.1002/dev.20134},
+    % url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/dev.20134},
+    % eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/dev.20134},
+
+
+@article{obd1989,
+  title={Optimal brain damage},
+  author={LeCun, Yann and Denker, John and Solla, Sara},
+  journal={Advances in Neural Information Processing Systems 2},
+  year={1989}
+}
+
+@inproceedings{compression2016,
+    title={Deep compression: Compressing deep neural networks with pruning, trained quantization and huffman coding},
+    author={Song Han and Mao Huizi and William J Dally},
+    booktitle={4th International Conference on Learning Representations},
+    year={2016},
+}
+
+@inproceedings{dst2020,
+    title={Dynamic Sparse Training: Find Efficient Sparse Network From Scratch With Trainable Masked Layers},
+    author={Junjie Liu and Zhe Xu and Runbin Shi and Ray C. C. Cheung and Hayden K.H. So},
+    booktitle={8th International Conference on Learning Representations},
+    year={2020},
+}
+
+@inproceedings{transient2021,
+    title={Transient Non-stationarity and Generalisation in Deep Reinforcement Learning},
+    author={Maximilian Igl and Gregory Farquhar and Jelena Luketina and Wendelin Boehmer and Shimon Whiteson},
+    booktitle={9th International Conference on Learning Representations},
+    year={2021},
+}
+    % url={https://openreview.net/forum?id=Qun8fv4qSby}
+
+@article{caruana1997,
+  title={Multitask learning},
+  author={Caruana, Rich},
+  journal={\textit{Machine Learning}},
+  volume={28},
+  number={1},
+  pages={41--75},
+  year={1997},
+  publisher={Springer}
+}
+
+@inproceedings{andrychowicz2021,
+title={What Matters for On-Policy Deep Actor-Critic Methods? A Large-Scale Study},
+author={Marcin Andrychowicz and Anton Raichuk and Piotr Sta{\'n}czyk and Manu Orsini and Sertan Girgin and Rapha{\"e}l Marinier and Leonard Hussenot and Matthieu Geist and Olivier Pietquin and Marcin Michalski and Sylvain Gelly and Olivier Bachem},
+booktitle={9th International Conference on Learning Representations},
+year={2021},
+}
+
+
+% url={https://openreview.net/forum?id=nIAxjsniDzg}
+
+@InProceedings{sutskever2013,
+  title = 	 {On the importance of initialization and momentum in deep learning},
+  author = 	 {Sutskever, Ilya and Martens, James and Dahl, George and Hinton, Geoffrey},
+  booktitle={30th International Conference on Machine Learning},
+  pages ={1139--1147},
+  year = 	 {2013},
+}
+% volume = 	 {28},
+%series = 	 {Proceedings of Machine Learning Research},
+%  month = 	 {17--19 Jun},
+  % url = 	 {https://proceedings.mlr.press/v28/sutskever13.html}
+
+
+@article{holmstrom1992,
+  title={Using additive noise in back-propagation training},
+  author={Holmstrom, Lasse and Koistinen, Petri and others},
+  journal={\textit{IEEE Transactions on Neural Networks}},
+  volume={3},
+  number={1},
+  pages={24--38},
+  year={1992}
+}
+
+% this paper was not published in any peer-reviewed venue
+@misc{neelakantan2015,
+  title={Adding gradient noise improves learning for very deep networks},
+  author={Neelakantan, Arvind and Vilnis, Luke and Le, Quoc V and Sutskever, Ilya and Kaiser, Lukasz and Kurach, Karol and Martens, James},
+  note={Preprint at \url{https://arxiv.org/abs/1511.06807} (2015)},
+}
+
+@article{whiteson2006,
+  author  = {Shimon Whiteson and Peter Stone},
+  title   = {Evolutionary Function Approximation for Reinforcement Learning},
+  journal = {Journal of Machine Learning Research},
+  year    = {2006},
+  volume  = {7},
+  number  = {31},
+  pages   = {877--917},
+}
+
+@inproceedings{riemer2019,
+title={Learning to Learn without Forgetting By Maximizing Transfer and Minimizing Interference},
+author={Matthew Riemer and Ignacio Cases and Robert Ajemian and Miao Liu and Irina Rish and Yuhai Tu and and Gerald Tesauro},
+booktitle={7th International Conference on Learning Representations},
+year={2019},
+}
+% url={https://openreview.net/forum?id=B1gTShAct7},
+
+@inproceedings{zhou2012,
+  title={Online incremental feature learning with denoising autoencoders},
+  author={Zhou, Guanyu and Sohn, Kihyuk and Lee, Honglak},
+  booktitle={\textit{Artificial Intelligence and Statistics}},
+  pages={1453--1461},
+  year={2012},
+}
+
+@inproceedings{goodfellow2014,
+title={An Empirical Investigation of Catastrophic Forgeting in Gradient-Based Neural Networks},
+author={Ian Goodfellow and Mehdi Mirza and Da Xiao and Aaron Courville, Yoshua Bengio},
+booktitle={2nd International Conference on Learning Representations},
+year={2014},
+}
+% url={https://openreview.net/forum?id=oXSw7laxwUpln}
+
+@misc{openai-gym,
+  title={Open{A}{I} {G}ym},
+  author={Brockman, Greg and Cheung, Vicki and Pettersson, Ludwig and Schneider, Jonas and Schulman, John and Tang, Jie and Zaremba, Wojciech},
+  note={Preprint at \url{https://arxiv.org/abs/1606.01540} (2016)}
+}
+
+@misc{ImagenetDownsampled,
+  title={A downsampled variant of {I}mage{N}et as an alternative to the {CIFAR} datasets},
+  author={Chrabaszcz, Patryk and Loshchilov, Ilya and Hutter, Frank},
+  note={Preprint at \url{https://arxiv.org/abs/1707.08819} (2017)}
+}
+
+% a3c paper
+@InProceedings{mnih2016,
+  title = 	 {Asynchronous Methods for Deep Reinforcement Learning},
+  author = 	 {Mnih, Volodymyr and Badia, Adria Puigdomenech and Mirza, Mehdi and Graves, Alex and Lillicrap, Timothy and Harley, Tim and Silver, David and Kavukcuoglu, Koray},
+  booktitle = 	 {33rd International Conference on Machine Learning},
+  pages = 	 {1928--1937},
+  year = 	 {2016}
+}
+%volume = 	 {48},
+%series = 	 {Proceedings of Machine Learning Research},
+%month = 	 {20--22 Jun},
+
+% ddpg paper
+@inproceedings{lillicrap2016,
+  author={Timothy P. Lillicrap and Jonathan J. Hunt and Alexander Pritzel and Nicolas Heess and Tom Erez and Yuval Tassa and David Silver and Daan Wierstra},
+  title={Continuous control with deep reinforcement learning.},
+  year={2016},
+  booktitle={6th International Conference on Learning Representations}
+}
+
+@inproceedings{dallE,
+  title={Zero-Shot Text-to-Image Generation},
+  author = {Ramesh, Aditya and Pavlov, Mikhail and Goh, Gabriel and Gray, Scott and Voss, Chelsea and Radford, Alec and Chen, Mark and Sutskever, Ilya},  
+  booktitle={38th International Conference on Machine Learning},
+  pages = {8821--8831},
+  year = {2021},
+}
+
+@article{russakovsky2015imagenet,
+  title={{I}mage{N}et large scale visual recognition challenge},
+  author={Russakovsky, Olga and Deng, Jia and Su, Hao and Krause, Jonathan and Satheesh, Sanjeev and Ma, Sean and Huang, Zhiheng and Karpathy, Andrej and Khosla, Aditya and Bernstein, Michael and others},
+  journal={\textit{International Journal of Computer Vision}},
+  volume={115},
+  number={3},
+  pages={211--252},
+  year={2015},
+  publisher={Springer}
+}
+
+@inproceedings{hu2018squeeze,
+  title={Squeeze-and-excitation networks},
+  author={Hu, Jie and Shen, Li and Sun, Gang},
+  booktitle={\textit{IEEE Conference on Computer Vision and Pattern Recognition}},
+  pages={7132--7141},
+  year={2018}
+}
+
+% Dynamic sparse training 1
+@inproceedings{bellec2018deep,
+    title={Deep Rewiring: Training very sparse deep networks},
+    author={Guillaume Bellec and David Kappel and Wolfgang Maass and Robert Legenstein},
+    booktitle={6th International Conference on Learning Representations},
+    year={2018},
+}
+    % url={https://openreview.net/forum?id=BJ_wN01C-},
+
+% DST 2
+@article{mocanu2018scalable,
+  title={Scalable training of artificial neural networks with adaptive sparse connectivity inspired by network science},
+  author={Mocanu, Decebal Constantin and Mocanu, Elena and Stone, Peter and Nguyen, Phuong H and Gibescu, Madeleine and Liotta, Antonio},
+  journal={\textit{Nature Communications}},
+  volume={9},
+  number={1},
+  pages={1--12},
+  year={2018},
+  publisher={Nature Publishing Group}
+}
+
+% DST CV
+@article{chen2021chasing,
+  title={Chasing sparsity in vision transformers: An end-to-end exploration},
+  author={Chen, Tianlong and Cheng, Yu and Gan, Zhe and Yuan, Lu and Zhang, Lei and Wang, Zhangyang},
+  journal={Advances in Neural Information Processing Systems 35},
+  year={2021}
+}
+
+% DST RL
+@article{sokar2021dynamic,
+    title={Dynamic sparse training for deep reinforcement learning},
+    author={Sokar, Ghada and Mocanu, Elena and Mocanu, Decebal Constantin and Pechenizkiy, Mykola and Stone, Peter},
+    journal={\textit{The 31st International Joint Conference on Artificial Intelligence}},
+    pages = {3437--3443},
+    year={2022},
+}
+    % url={https://arxiv.org/abs/2106.04217},
+
+% Lottery ticket hypothesis
+@inproceedings{frankle2018the,
+    title={The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks},
+    author={Jonathan Frankle and Michael Carbin},
+    booktitle={7th International Conference on Learning Representations},
+    year={2019},
+}
+    % url={https://openreview.net/forum?id=rJl-b3RcF7},
+
+% mnist reference
+@article{lecun-1998,
+    author={Lecun, Y. and Bottou, L. and Bengio, Y. and Haffner, P.},
+    journal={Proceedings of the IEEE}, 
+    title={Gradient-based learning applied to document recognition}, 
+    year={1998},
+    volume={86},
+    number={11},
+    pages={2278-2324},
+    doi={10.1109/5.726791}
+}
+
+% mnist reference
+@article{lecun-mnist-1998,
+    title={MNIST handwritten digit database},
+    author={LeCun, Yann and Cortes, Corinna and Burges, CJ},
+    journal={ATT Labs [Online]. Available: http://yann.lecun.com/exdb/mnist},
+    volume={2},
+    year={2010}
+}
+
+
+% different aspects of CL
+@inproceedings{
+    aspects-of-cl,
+    title={Efficient Continual Learning with Modular Networks and Task-Driven Priors},
+    author={Tom Veniat and Ludovic Denoyer and MarcAurelio Ranzato},
+    booktitle={9th International Conference on Learning Representations},
+    year={2021},
+}
+
+% Stable rank
+@inproceedings{yang2019harnessing,
+  title={Harnessing structures for value-based planning and reinforcement learning},
+  author={Yang, Yuzhe and Zhang, Guo and Xu, Zhi and Katabi, Dina},
+  booktitle={7th International Conference on Learning Representations},
+  year={2019}
+}
+
+% bias correction
+@inproceedings{bias-correction,
+  title={Evaluating pruning methods},
+  author={Thimm, Georg and Fiesler, Emile},
+  booktitle={\textit{Proceedings of the International Symposium on Artificial neural networks}},
+  pages={20--25},
+  year={1995}
+}
+
+@inproceedings{kumar2021implicit,
+title={Implicit Under-Parameterization Inhibits Data-Efficient Deep Reinforcement Learning},
+author={Aviral Kumar and Rishabh Agarwal and Dibya Ghosh and Sergey Levine},
+booktitle={9th International Conference on Learning Representations},
+year={2021},
+}
+
+@inproceedings{nikishin2023,
+title={Deep Reinforcement Learning with Plasticity Injection},
+author={Evgenii Nikishin and Junhyuk Oh and Georg Ostrovski and Clare Lyle and Razvan Pascanu and Will Dabney and Andre Barreto},
+booktitle={37th Conference on Neural Information Processing Systems},
+year={2023},
+}
+
+@inproceedings{doro2023,
+title={Sample-Efficient Reinforcement Learning by Breaking the Replay Ratio Barrier},
+author={Pierluca D'Oro and Max Schwarzer and Evgenii Nikishin and Pierre-Luc Bacon and Marc G Bellemare and Aaron Courville},
+booktitle={11th International Conference on Learning Representations },
+year={2023},
+}
+
+
+@InProceedings{schwarzer2023,
+  title = 	 {Bigger, Better, Faster: Human-level {A}tari with human-level efficiency},
+  author =       {Schwarzer, Max and Obando Ceron, Johan Samir and Courville, Aaron and Bellemare, Marc G and Agarwal, Rishabh and Castro, Pablo Samuel},
+  booktitle = 	 {40th International Conference on Machine Learning},
+  pages = 	 {30365--30380},
+  year = 	 {2023}
+}
+%editor = 	 {Krause, Andreas and Brunskill, Emma and Cho, %Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and %Scarlett, Jonathan},
+%volume = 	 {202},
+%series = 	 {Proceedings of Machine Learning Research},
+%month = 	 {23--29 Jul},
+
+@misc{kumar2023,
+  title={Continual Learning as Computationally Constrained Reinforcement Learning},
+  author={Kumar, Saurabh and Marklund, Henrik and Rao, Ashish and Zhu, Yifan and Jeon, Hong Jun and Liu, Yueyang and Van Roy, Benjamin},
+  note={Preprint at \url{https://arxiv.org/abs/2307.04345} (2023)}
+}
+
+@article{pytorch,
+  title={Pytorch: An imperative style, high-performance deep learning library},
+  author={Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and others},
+  journal={\textit{Advances in Neural Information Processing Systems 32}},
+  year={2019}
+}
+
+@article{hinton2012speech,
+  title={Deep neural networks for acoustic modeling in speech recognition: The shared views of four research groups},
+  author={Hinton, Geoffrey and Deng, Li and Yu, Dong and Dahl, George E and Mohamed, Abdel-rahman and Jaitly, Navdeep and Senior, Andrew and Vanhoucke, Vincent and Nguyen, Patrick and Sainath, Tara N and others},
+  journal={IEEE Signal Processing Magazine},
+  volume={29},
+  number={6},
+  pages={82--97},
+  year={2012},
+  publisher={IEEE}
+}
+
+@misc{gpt4,
+      title={GPT-4 Technical Report}, 
+      author={OpenAI},
+      year={2023},
+      eprint={2303.08774},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@article{alphafold,
+  title={Highly accurate protein structure prediction with AlphaFold},
+  author={Jumper, John and Evans, Richard and Pritzel, Alexander and Green, Tim and Figurnov, Michael and Ronneberger, Olaf and Tunyasuvunakool, Kathryn and Bates, Russ and {\v{Z}}{\'\i}dek, Augustin and Potapenko, Anna and others},
+  journal={Nature},
+  volume={596},
+  number={7873},
+  pages={583--589},
+  year={2021},
+  publisher={Nature Publishing Group}
+}
+
+@article{alphazero,
+  title={A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play},
+  author={Silver, David and Hubert, Thomas and Schrittwieser, Julian and Antonoglou, Ioannis and Lai, Matthew and Guez, Arthur and Lanctot, Marc and Sifre, Laurent and Kumaran, Dharshan and Graepel, Thore and others},
+  journal={Science},
+  volume={362},
+  number={6419},
+  pages={1140--1144},
+  year={2018},
+  publisher={American Association for the Advancement of Science}
+}
+
+@article{deepstack,
+  title={Deepstack: Expert-level artificial intelligence in heads-up no-limit poker},
+  author={Morav{\v{c}}{\'\i}k, Matej and Schmid, Martin and Burch, Neil and Lis{\`y}, Viliam and Morrill, Dustin and Bard, Nolan and Davis, Trevor and Waugh, Kevin and Johanson, Michael and Bowling, Michael},
+  journal={Science},
+  volume={356},
+  number={6337},
+  pages={508--513},
+  year={2017},
+  publisher={American Association for the Advancement of Science}
+}
+
+
+
+@inproceedings{translation,
+  author       = {Dzmitry Bahdanau and
+                  Kyunghyun Cho and
+                  Yoshua Bengio},
+  editor       = {Yoshua Bengio and
+                  Yann LeCun},
+  title        = {Neural Machine Translation by Jointly Learning to Align and Translate},
+  booktitle    = {3rd International Conference on Learning Representations, {ICLR} 2015,
+                  San Diego, CA, USA, May 7-9, 2015, Conference Track Proceedings},
+  year         = {2015}
+}
+
+
+@article{droneflying,
+  title={Champion-level drone racing using deep reinforcement learning},
+  author={Kaufmann, Elia and Bauersfeld, Leonard and Loquercio, Antonio and M{\"u}ller, Matthias and Koltun, Vladlen and Scaramuzza, Davide},
+  journal={Nature},
+  volume={620},
+  number={7976},
+  pages={982--987},
+  year={2023},
+  publisher={Nature Publishing Group UK London}
+}
+
+@article{GTsophy,
+  title={Outracing champion Gran Turismo drivers with deep reinforcement learning},
+  author={Wurman, Peter R and Barrett, Samuel and Kawamoto, Kenta and MacGlashan, James and Subramanian, Kaushik and Walsh, Thomas J and Capobianco, Roberto and Devlic, Alisa and Eckert, Franziska and Fuchs, Florian and others},
+  journal={Nature},
+  volume={602},
+  number={7896},
+  pages={223--228},
+  year={2022},
+  publisher={Nature Publishing Group UK London}
+}
+
+@article{autonomousdriving,
+  title={A survey of deep learning techniques for autonomous driving},
+  author={Grigorescu, Sorin and Trasnea, Bogdan and Cocias, Tiberiu and Macesanu, Gigel},
+  journal={Journal of Field Robotics},
+  volume={37},
+  number={3},
+  pages={362--386},
+  year={2020},
+  publisher={Wiley Online Library}
+}
+
+@article{dohare2020interplay,
+  title={The Interplay of Search and Gradient Descent in Semi-stationary Learning Problems},
+  author={Dohare, Shibhansh},
+  year={2020}
+}
+
+@article{rahman2021toward,
+  title={Toward Generate-and-Test Algorithms for Continual Feature Discovery},
+  author={Rahman, Parash},
+  year={2021}
+}
+
+@article{kumar2023maintaining,
+  title={Maintaining plasticity via regenerative regularization},
+  author={Kumar, Saurabh and Marklund, Henrik and Van Roy, Benjamin},
+  journal={arXiv preprint arXiv:2308.11958},
+  year={2023}
+}
+
+@article{dohare2021continual,
+  title={Continual backprop: Stochastic gradient descent with persistent randomness},
+  author={Dohare, Shibhansh and Sutton, Richard S and Mahmood, A Rupam},
+  journal={arXiv preprint arXiv:2108.06325},
+  year={2021}
+}
+
+@inproceedings{resnet,
+  title={Deep residual learning for image recognition},
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={770--778},
+  year={2016}
+}
+
+@article{parisi2019,
+title = {Continual lifelong learning with neural networks: A review},
+journal = {\textit{Neural Networks}},
+volume = {113},
+pages = {54-71},
+year = {2019},
+issn = {0893-6080},
+author = {German I. Parisi and Ronald Kemker and Jose L. Part and Christopher Kanan and Stefan Wermter},
+keywords = {Continual learning, Lifelong learning, Catastrophic forgetting, Developmental systems, Memory consolidation},
+}
+
+
+@inproceedings{
+lee2023plastic,
+title={{PLASTIC}: Improving Input and Label Plasticity for Sample Efficient Reinforcement Learning},
+author={Hojoon Lee and Hanseul Cho and Hyunseung Kim and Daehoon Gwak and Joonkee Kim and Jaegul Choo and Se-Young Yun and Chulhee Yun},
+booktitle={37th Conference on Neural Information Processing Systems},
+year={2023},
+}
+
+@inproceedings{selfridge1959pandemonium,
+  title={Pandemonium: A Paradigm for Learning},
+  author={SELFRIDGE, O. G.},
+  booktitle={Mechanization of
+Thought Processes, Proceedings of a Symposium Held at the National
+Physical Laboratory on 24-27 November},
+  year={1959}
+}
+
+
+Selfridge, O. G. “Pandemonium: A Paradigm for Learning.” Mechanization of
+Thought Processes, Proceedings of a Symposium Held at the National
+Physical Laboratory on 24-27 November, 1958, vol. 1, Her Majesty’s
+Stationary Office, London, 1959, pp. 511–531.
+
+SELFRIDGE, O. G. Pandemonium-a paradigm for learning. In Symposium on the Mechanization of thought Processes, London: Her Majesty’s Stationery Office, 1959 (1959).
+
+@misc{resnetparams,
+  author = {Weiaicunzai},
+  title = {pytorch-cifar100},
+  publisher = {GitHub},
+  note = {GitHub repository available at \url{https://github.com/weiaicunzai/pytorch-cifar100} (2022)},
+  commit = {11d8418}
+}
+% year = {2022}
+
+@misc{verwimp2023continual,
+  title={Continual Learning: Applications and the Road Forward},
+  author={Verwimp, Eli and Ben-David, Shai and Bethge, Matthias and Cossu, Andrea and Gepperth, Alexander and Hayes, Tyler L and H{\"u}llermeier, Eyke and Kanan, Christopher and Kudithipudi, Dhireesha and Lampert, Christoph H and others},
+  note={Preprint at \url{https://arxiv.org/abs/2311.11908} (2023)}
+}
+
+@misc{lewandowski2023curvature,
+  title={Curvature Explains Loss of Plasticity},
+  author={Lewandowski, Alex and Tanaka, Haruto and Schuurmans, Dale and Machado, Marlos C},
+  note={Preprint at \url{https://arxiv.org/abs/2312.00246} (2023)}
+}
+
+@inproceedings{evci2020rigging,
+  title={Rigging the lottery: Making all tickets winners},
+  author={Evci, Utku and Gale, Trevor and Menick, Jacob and Castro, Pablo Samuel and Elsen, Erich},
+  booktitle={37th International Conference on Machine Learning},
+  pages={2943--2952},
+  year={2020},
+}
+
+@inproceedings{graesser2022state,
+  title={The state of sparse training in deep reinforcement learning},
+  author={Graesser, Laura and Evci, Utku and Elsen, Erich and Castro, Pablo Samuel},
+  booktitle={39th International Conference on Machine Learning},
+  pages={7766--7792},
+  year={2022},
+}
+
+@inproceedings{ceron2021revisiting,
+  title={Revisiting rainbow: Promoting more insightful and inclusive deep reinforcement learning research},
+  author={Ceron, Johan Samir Obando and Castro, Pablo Samuel},
+  booktitle={38th International Conference on Machine Learning},
+  pages={1373--1383},
+  year={2021},
+}
+
+@misc{gale2019state,
+  title={The state of sparsity in deep neural networks},
+  author={Gale, Trevor and Elsen, Erich and Hooker, Sara},
+  note={Preprint at \url{https://arxiv.org/abs/1902.09574} (2019)}
+}
+
+@misc{patterson2023empirical,
+  title={Empirical Design in Reinforcement Learning},
+  author={Patterson, Andrew and Neumann, Samuel and White, Martha and White, Adam},
+  note={Preprint at \url{https://arxiv.org/abs/2304.01315} (2023)}
+}
+
+@book{boyd2004convex,
+  title={Convex Optimization},
+  author={Boyd, Stephen P and Vandenberghe, Lieven},
+  year={2004},
+  publisher={Cambridge university press}
+}
+
+% dynamically expanding networks for lifelong learning
+@inproceedings{
+yoon2018,
+title={Lifelong Learning with Dynamically Expandable Networks},
+author={Jaehong Yoon and Eunho Yang and Jeongtae Lee and Sung Ju Hwang},
+booktitle={6th International Conference on Learning Representations},
+year={2018},
+}
+% url={https://openreview.net/forum?id=Sk7KsfW0-},
+
+@article{lopez2017gradient,
+  title={Gradient episodic memory for continual learning},
+  author={Lopez-Paz, David and Ranzato, Marc'Aurelio},
+  journal={Advances in Neural Information Processing Systems 30},
+  year={2017}
+}
+
+@inproceedings{rusu2017sim,
+  title={Sim-to-real robot learning from pixels with progressive nets},
+  author={Rusu, Andrei A and Ve{\v{c}}er{\'\i}k, Matej and Roth{\"o}rl, Thomas and Heess, Nicolas and Pascanu, Razvan and Hadsell, Raia},
+  booktitle={Conference on robot learning},
+  pages={262--270},
+  year={2017},
+}
+
+@inproceedings{chen2023is,
+    title={Is Forgetting Less a Good Inductive Bias for Forward Transfer?},
+    author={Jiefeng Chen and Timothy Nguyen and Dilan Gorur and Arslan Chaudhry},
+    booktitle={11th International Conference on Learning Representations },
+    year={2023}
+}
+%neural machine translation by jointly learning to align and translate 

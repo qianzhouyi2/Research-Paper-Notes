@@ -1,0 +1,733 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{hinton2012speech}
+\bibinfo{author}{Hinton, G.} \emph{et~al.}
+\newblock \bibinfo{title}{Deep neural networks for acoustic modeling in speech
+  recognition: The shared views of four research groups}.
+\newblock \emph{\bibinfo{journal}{IEEE Signal Processing Magazine}}
+  \textbf{\bibinfo{volume}{29}}, \bibinfo{pages}{82--97}
+  (\bibinfo{year}{2012}).
+
+\bibitem{krishevsky2012}
+\bibinfo{author}{Krizhevsky, A.}, \bibinfo{author}{Sutskever, I.} \&
+  \bibinfo{author}{Hinton, G.~E.}
+\newblock \bibinfo{title}{{I}mage{N}et classification with deep convolutional
+  neural networks}.
+\newblock In \emph{\bibinfo{booktitle}{Advances in Neural Information
+  Processing Systems 25}} (\bibinfo{year}{2012}).
+
+\bibitem{mnih2015human}
+\bibinfo{author}{Mnih, V.} \emph{et~al.}
+\newblock \bibinfo{title}{Human-level control through deep reinforcement
+  learning}.
+\newblock \emph{\bibinfo{journal}{\textit{Nature}}}
+  \textbf{\bibinfo{volume}{518}}, \bibinfo{pages}{529--533}
+  (\bibinfo{year}{2015}).
+
+\bibitem{brown2020}
+\bibinfo{author}{Brown, T.} \emph{et~al.}
+\newblock \bibinfo{title}{Language models are few-shot learners}.
+\newblock In \emph{\bibinfo{booktitle}{\textit{Advances in Neural Information
+  Processing Systems 33}}} (\bibinfo{year}{2020}).
+
+\bibitem{dallE}
+\bibinfo{author}{Ramesh, A.} \emph{et~al.}
+\newblock \bibinfo{title}{Zero-shot text-to-image generation}.
+\newblock In \emph{\bibinfo{booktitle}{38th International Conference on Machine
+  Learning}}, \bibinfo{pages}{8821--8831} (\bibinfo{year}{2021}).
+
+\bibitem{mccloskey1989}
+\bibinfo{author}{McCloskey, M.} \& \bibinfo{author}{Cohen, N.~J.}
+\newblock \bibinfo{title}{Catastrophic interference in connectionist networks:
+  The sequential learning problem}.
+\newblock In \emph{\bibinfo{booktitle}{\textit{Psychology of Learning and
+  Motivation}}}, vol.~\bibinfo{volume}{24}, \bibinfo{pages}{109--165}
+  (\bibinfo{year}{1989}).
+
+\bibitem{french1999}
+\bibinfo{author}{French, R.~M.}
+\newblock \bibinfo{title}{Catastrophic forgetting in connectionist networks}.
+\newblock \emph{\bibinfo{journal}{\textit{Trends in Cognitive Sciences}}}
+  \textbf{\bibinfo{volume}{3}}, \bibinfo{pages}{128--135}
+  (\bibinfo{year}{1999}).
+
+\bibitem{kirkpatrick2017}
+\bibinfo{author}{Kirkpatrick, J.} \emph{et~al.}
+\newblock \bibinfo{title}{Overcoming catastrophic forgetting in neural
+  networks}.
+\newblock \emph{\bibinfo{journal}{\textit{Proceedings of the National Academy
+  of Sciences}}} \textbf{\bibinfo{volume}{114}}, \bibinfo{pages}{3521--3526}
+  (\bibinfo{year}{2017}).
+
+\bibitem{yoon2018}
+\bibinfo{author}{Yoon, J.}, \bibinfo{author}{Yang, E.}, \bibinfo{author}{Lee,
+  J.} \& \bibinfo{author}{Hwang, S.~J.}
+\newblock \bibinfo{title}{Lifelong learning with dynamically expandable
+  networks}.
+\newblock In \emph{\bibinfo{booktitle}{6th International Conference on Learning
+  Representations}} (\bibinfo{year}{2018}).
+
+\bibitem{aljundi2019}
+\bibinfo{author}{Aljundi, R.} \emph{et~al.}
+\newblock \bibinfo{title}{Online continual learning with maximal interfered
+  retrieval}.
+\newblock In \emph{\bibinfo{booktitle}{Advances in Neural Information
+  Processing Systems 33}} (\bibinfo{year}{2019}).
+
+\bibitem{golkar2019}
+\bibinfo{author}{Golkar, S.}, \bibinfo{author}{Kagan, M.} \&
+  \bibinfo{author}{Cho, K.}
+\newblock \bibinfo{title}{Continual learning via neural pruning}.
+\newblock In \emph{\bibinfo{booktitle}{Real Neurons {\&} Hidden Units: Future
+  directions at the intersection of neuroscience and artificial intelligence,
+  workshop at NeurIPS 33}} (\bibinfo{year}{2019}).
+
+\bibitem{riemer2019}
+\bibinfo{author}{Riemer, M.} \emph{et~al.}
+\newblock \bibinfo{title}{Learning to learn without forgetting by maximizing
+  transfer and minimizing interference}.
+\newblock In \emph{\bibinfo{booktitle}{7th International Conference on Learning
+  Representations}} (\bibinfo{year}{2019}).
+
+\bibitem{rajasegaran2019}
+\bibinfo{author}{Rajasegaran, J.}, \bibinfo{author}{Hayat, M.},
+  \bibinfo{author}{Khan, S.~H.}, \bibinfo{author}{Khan, F.~S.} \&
+  \bibinfo{author}{Shao, L.}
+\newblock \bibinfo{title}{Random path selection for continual learning}.
+\newblock In \emph{\bibinfo{booktitle}{Advances in Neural Information
+  Processing Systems 33}} (\bibinfo{year}{2019}).
+
+\bibitem{javed2019}
+\bibinfo{author}{Javed, K.} \& \bibinfo{author}{White, M.}
+\newblock \bibinfo{title}{Meta-learning representations for continual
+  learning}.
+\newblock In \emph{\bibinfo{booktitle}{Advances in Neural Information
+  Processing Systems 33}} (\bibinfo{year}{2019}).
+
+\bibitem{aspects-of-cl}
+\bibinfo{author}{Veniat, T.}, \bibinfo{author}{Denoyer, L.} \&
+  \bibinfo{author}{Ranzato, M.}
+\newblock \bibinfo{title}{Efficient continual learning with modular networks
+  and task-driven priors}.
+\newblock In \emph{\bibinfo{booktitle}{9th International Conference on Learning
+  Representations}} (\bibinfo{year}{2021}).
+
+\bibitem{ellis2000age}
+\bibinfo{author}{Ellis, A.~W.} \& \bibinfo{author}{Lambon~Ralph, M.~A.}
+\newblock \bibinfo{title}{Age of acquisition effects in adult lexical
+  processing reflect loss of plasticity in maturing systems: insights from
+  connectionist networks.}
+\newblock \emph{\bibinfo{journal}{\textit{Journal of Experimental Psychology:
+  Learning, memory, and cognition}}} \textbf{\bibinfo{volume}{26}},
+  \bibinfo{pages}{1103} (\bibinfo{year}{2000}).
+
+\bibitem{zevin2002}
+\bibinfo{author}{Zevin, J.~D.} \& \bibinfo{author}{Seidenberg, M.~S.}
+\newblock \bibinfo{title}{Age of acquisition effects in word reading and other
+  tasks}.
+\newblock \emph{\bibinfo{journal}{\textit{Journal of Memory and Language}}}
+  \textbf{\bibinfo{volume}{47}}, \bibinfo{pages}{1--29} (\bibinfo{year}{2002}).
+
+\bibitem{bonin2004}
+\bibinfo{author}{Bonin, P.}, \bibinfo{author}{Barry, C.},
+  \bibinfo{author}{Méot, A.} \& \bibinfo{author}{Chalard, M.}
+\newblock \bibinfo{title}{The influence of age of acquisition in word reading
+  and other tasks: A never ending story?}
+\newblock \emph{\bibinfo{journal}{\textit{Journal of Memory and Language}}}
+  \textbf{\bibinfo{volume}{50}}, \bibinfo{pages}{456--476}
+  (\bibinfo{year}{2004}).
+
+\bibitem{rumelhart1986learning}
+\bibinfo{author}{Rumelhart, D.~E.}, \bibinfo{author}{Hinton, G.~E.} \&
+  \bibinfo{author}{Williams, R.~J.}
+\newblock \bibinfo{title}{Learning representations by back-propagating errors}.
+\newblock \emph{\bibinfo{journal}{\textit{Nature}}}
+  \textbf{\bibinfo{volume}{323}}, \bibinfo{pages}{533--536}
+  (\bibinfo{year}{1986}).
+
+\bibitem{intransigence2018}
+\bibinfo{author}{Chaudhry, A.}, \bibinfo{author}{Dokania, P.~K.},
+  \bibinfo{author}{Ajanthan, T.} \& \bibinfo{author}{Torr, P.~H.}
+\newblock \bibinfo{title}{Riemannian walk for incremental learning:
+  Understanding forgetting and intransigence}.
+\newblock In \emph{\bibinfo{booktitle}{15th European Conference on Computer
+  Vision}}, \bibinfo{pages}{532--547} (\bibinfo{year}{2018}).
+
+\bibitem{WarmStart2020}
+\bibinfo{author}{Ash, J.} \& \bibinfo{author}{Adams, R.~P.}
+\newblock \bibinfo{title}{On warm-starting neural network training}.
+\newblock In \emph{\bibinfo{booktitle}{Advances in Neural Information
+  Processing Systems 33}} (\bibinfo{year}{2020}).
+
+\bibitem{plasticitystudy2021}
+\bibinfo{author}{Berariu, T.} \emph{et~al.}
+\newblock \bibinfo{title}{A study on the plasticity of neural networks}.
+\newblock \bibinfo{note}{Preprint at \url{https://arxiv.org/abs/2106.00042}
+  (2021)}.
+
+\bibitem{primacy2022}
+\bibinfo{author}{Nikishin, E.}, \bibinfo{author}{Schwarzer, M.},
+  \bibinfo{author}{D’Oro, P.}, \bibinfo{author}{Bacon, P.-L.} \&
+  \bibinfo{author}{Courville, A.}
+\newblock \bibinfo{title}{The primacy bias in deep reinforcement learning}.
+\newblock In \emph{\bibinfo{booktitle}{39th International Conference on Machine
+  Learning}}, \bibinfo{pages}{16828--16847} (\bibinfo{year}{2022}).
+
+\bibitem{capacityloss2022}
+\bibinfo{author}{Lyle, C.}, \bibinfo{author}{Rowland, M.} \&
+  \bibinfo{author}{Dabney, W.}
+\newblock \bibinfo{title}{Understanding and preventing capacity loss in
+  reinforcement learning}.
+\newblock In \emph{\bibinfo{booktitle}{10th International Conference on
+  Learning Representations}} (\bibinfo{year}{2022}).
+
+\bibitem{kingma2015}
+\bibinfo{author}{Kingma, D.~P.} \& \bibinfo{author}{Ba, J.}
+\newblock \bibinfo{title}{Adam: {A} method for stochastic optimization}.
+\newblock In \emph{\bibinfo{booktitle}{3rd International Conference on Learning
+  Representations}} (\bibinfo{year}{2015}).
+
+\bibitem{Hinton2012Dropout1}
+\bibinfo{author}{Hinton, G.~E.}, \bibinfo{author}{Srivastava, N.},
+  \bibinfo{author}{Krizhevsky, A.}, \bibinfo{author}{Sutskever, I.} \&
+  \bibinfo{author}{Salakhutdinov, R.~R.}
+\newblock \bibinfo{title}{Improving neural networks by preventing co-adaptation
+  of feature detectors}.
+\newblock \bibinfo{note}{Preprint at \url{https://arxiv.org/abs/1207.0580}
+  (2012)}.
+
+\bibitem{Goodfellow-et-al-2016}
+\bibinfo{author}{Goodfellow, I.}, \bibinfo{author}{Bengio, Y.} \&
+  \bibinfo{author}{Courville, A.}
+\newblock \emph{\bibinfo{title}{\textit{Deep Learning}}}
+  (\bibinfo{publisher}{MIT Press}, \bibinfo{year}{2016}).
+
+\bibitem{deng2009}
+\bibinfo{author}{Deng, J.} \emph{et~al.}
+\newblock \bibinfo{title}{{I}mage{N}et: A large-scale hierarchical image
+  database}.
+\newblock In \emph{\bibinfo{booktitle}{\textit{IEEE Conference on Computer
+  Vision and Pattern Recognition}}}, \bibinfo{pages}{248--255}
+  (\bibinfo{year}{2009}).
+
+\bibitem{russakovsky2015imagenet}
+\bibinfo{author}{Russakovsky, O.} \emph{et~al.}
+\newblock \bibinfo{title}{{I}mage{N}et large scale visual recognition
+  challenge}.
+\newblock \emph{\bibinfo{journal}{\textit{International Journal of Computer
+  Vision}}} \textbf{\bibinfo{volume}{115}}, \bibinfo{pages}{211--252}
+  (\bibinfo{year}{2015}).
+
+\bibitem{hu2018squeeze}
+\bibinfo{author}{Hu, J.}, \bibinfo{author}{Shen, L.} \& \bibinfo{author}{Sun,
+  G.}
+\newblock \bibinfo{title}{Squeeze-and-excitation networks}.
+\newblock In \emph{\bibinfo{booktitle}{\textit{IEEE Conference on Computer
+  Vision and Pattern Recognition}}}, \bibinfo{pages}{7132--7141}
+  (\bibinfo{year}{2018}).
+
+\bibitem{ImagenetDownsampled}
+\bibinfo{author}{Chrabaszcz, P.}, \bibinfo{author}{Loshchilov, I.} \&
+  \bibinfo{author}{Hutter, F.}
+\newblock \bibinfo{title}{A downsampled variant of {I}mage{N}et as an
+  alternative to the {CIFAR} datasets}.
+\newblock \bibinfo{note}{Preprint at \url{https://arxiv.org/abs/1707.08819}
+  (2017)}.
+
+\bibitem{lecun-mnist-1998}
+\bibinfo{author}{LeCun, Y.}, \bibinfo{author}{Cortes, C.} \&
+  \bibinfo{author}{Burges, C.}
+\newblock \bibinfo{title}{Mnist handwritten digit database}.
+\newblock \emph{\bibinfo{journal}{ATT Labs [Online]. Available:
+  http://yann.lecun.com/exdb/mnist}} \textbf{\bibinfo{volume}{2}}
+  (\bibinfo{year}{2010}).
+
+\bibitem{goodfellow2014}
+\bibinfo{author}{Goodfellow, I.}, \bibinfo{author}{Mirza, M.},
+  \bibinfo{author}{Xiao, D.} \& \bibinfo{author}{Aaron~Courville, Y.~B.}
+\newblock \bibinfo{title}{An empirical investigation of catastrophic forgeting
+  in gradient-based neural networks}.
+\newblock In \emph{\bibinfo{booktitle}{2nd International Conference on Learning
+  Representations}} (\bibinfo{year}{2014}).
+
+\bibitem{zenke2017}
+\bibinfo{author}{Zenke, F.}, \bibinfo{author}{Poole, B.} \&
+  \bibinfo{author}{Ganguli, S.}
+\newblock \bibinfo{title}{Continual learning through synaptic intelligence}.
+\newblock In \emph{\bibinfo{booktitle}{\textit{34th International Conference on
+  Machine Learning}}}, \bibinfo{pages}{3987--3995} (\bibinfo{year}{2017}).
+
+\bibitem{caruana1997}
+\bibinfo{author}{Caruana, R.}
+\newblock \bibinfo{title}{Multitask learning}.
+\newblock \emph{\bibinfo{journal}{\textit{Machine Learning}}}
+  \textbf{\bibinfo{volume}{28}}, \bibinfo{pages}{41--75}
+  (\bibinfo{year}{1997}).
+
+\bibitem{ring1998}
+\bibinfo{author}{Ring, M.~B.}
+\newblock \bibinfo{title}{Child: A first step towards continual learning}.
+\newblock In \emph{\bibinfo{booktitle}{\textit{Learning to Learn}}},
+  \bibinfo{pages}{261--292} (\bibinfo{publisher}{Springer},
+  \bibinfo{year}{1998}).
+
+\bibitem{parisi2019}
+\bibinfo{author}{Parisi, G.~I.}, \bibinfo{author}{Kemker, R.},
+  \bibinfo{author}{Part, J.~L.}, \bibinfo{author}{Kanan, C.} \&
+  \bibinfo{author}{Wermter, S.}
+\newblock \bibinfo{title}{Continual lifelong learning with neural networks: A
+  review}.
+\newblock \emph{\bibinfo{journal}{\textit{Neural Networks}}}
+  \textbf{\bibinfo{volume}{113}}, \bibinfo{pages}{54--71}
+  (\bibinfo{year}{2019}).
+
+\bibitem{lu2019dying}
+\bibinfo{author}{Lu, L.}, \bibinfo{author}{Shin, Y.}, \bibinfo{author}{Su, Y.}
+  \& \bibinfo{author}{Karniadakis, G.~E.}
+\newblock \bibinfo{title}{Dying {R}e{LU} and initialization: Theory and
+  numerical examples}.
+\newblock \bibinfo{note}{Preprint at \url{https://arxiv.org/abs/1903.06733}
+  (2019)}.
+
+\bibitem{shin2020trainability}
+\bibinfo{author}{Shin, Y.} \& \bibinfo{author}{Karniadakis, G.~E.}
+\newblock \bibinfo{title}{Trainability of relu networks and data-dependent
+  initialization}.
+\newblock \emph{\bibinfo{journal}{\textit{Journal of Machine Learning for
+  Modeling and Computing}}} \textbf{\bibinfo{volume}{1}},
+  \bibinfo{pages}{39--74} (\bibinfo{year}{2020}).
+
+\bibitem{glorot2010understanding}
+\bibinfo{author}{Glorot, X.} \& \bibinfo{author}{Bengio, Y.}
+\newblock \bibinfo{title}{Understanding the difficulty of training deep
+  feedforward neural networks}.
+\newblock In \emph{\bibinfo{booktitle}{13th International Conference on
+  Artificial Intelligence and Statistics}}, \bibinfo{pages}{249--256}
+  (\bibinfo{year}{2010}).
+
+\bibitem{montavon2012neural}
+\bibinfo{author}{Montavon, G.}, \bibinfo{author}{Orr, G.} \&
+  \bibinfo{author}{M{\"u}ller, K.-R.}
+\newblock \emph{\bibinfo{title}{\textit{Neural Networks: {T}ricks of the
+  Trade}}} (\bibinfo{publisher}{Springer}, \bibinfo{year}{2012}).
+
+\bibitem{2015saturation}
+\bibinfo{author}{Rakitianskaia, A.} \& \bibinfo{author}{Engelbrecht, A.}
+\newblock \bibinfo{title}{Measuring saturation in neural networks}.
+\newblock In \emph{\bibinfo{booktitle}{\textit{IEEE Symposium Series on
+  Computational Intelligence}}}, \bibinfo{pages}{1423--1430}
+  (\bibinfo{year}{2015}).
+
+\bibitem{pascanu2013difficulty}
+\bibinfo{author}{Pascanu, R.}, \bibinfo{author}{Mikolov, T.} \&
+  \bibinfo{author}{Bengio, Y.}
+\newblock \bibinfo{title}{On the difficulty of training recurrent neural
+  networks}.
+\newblock In \emph{\bibinfo{booktitle}{30th International Conference on Machine
+  Learning}}, \bibinfo{pages}{1310--1318} (\bibinfo{year}{2013}).
+
+\bibitem{philipp2017exploding}
+\bibinfo{author}{Philipp, G.}, \bibinfo{author}{Song, D.} \&
+  \bibinfo{author}{Carbonell, J.~G.}
+\newblock \bibinfo{title}{The exploding gradient problem demystified -
+  definition, prevalence, impact, origin, tradeoffs, and solutions}.
+\newblock \bibinfo{note}{Preprint at \url{https://arxiv.org/abs/1712.05577}
+  (2017)}.
+
+\bibitem{philipp2018gradients}
+\bibinfo{author}{George~Philipp, J. G.~C., Dawn~Song}.
+\newblock \bibinfo{title}{Gradients explode - deep networks are shallow -
+  {R}es{N}et explained}.
+\newblock In \emph{\bibinfo{booktitle}{6th International Conference on Learning
+  Representations, Workshop Track Proceedings}} (\bibinfo{year}{2018}).
+
+\bibitem{bertsekas2016}
+\bibinfo{author}{Bertsekas, D.}
+\newblock \emph{\bibinfo{title}{\textit{Nonlinear Programming}}}
+  (\bibinfo{publisher}{Athena Scientific}, \bibinfo{year}{2016}).
+
+\bibitem{2007OlivierEffectiveRank}
+\bibinfo{author}{Roy, O.} \& \bibinfo{author}{Vetterli, M.}
+\newblock \bibinfo{title}{The effective rank: A measure of effective
+  dimensionality}.
+\newblock In \emph{\bibinfo{booktitle}{\textit{15th European Signal Processing
+  Conference}}}, \bibinfo{pages}{606--610} (\bibinfo{year}{2007}).
+
+\bibitem{smith2021on}
+\bibinfo{author}{Smith, S.~L.}, \bibinfo{author}{Dherin, B.},
+  \bibinfo{author}{Barrett, D.} \& \bibinfo{author}{De, S.}
+\newblock \bibinfo{title}{On the origin of implicit regularization in
+  stochastic gradient descent}.
+\newblock In \emph{\bibinfo{booktitle}{\textit{9th International Conference on
+  Learning Representations}}} (\bibinfo{year}{2021}).
+
+\bibitem{2020Razim}
+\bibinfo{author}{Razin, N.} \& \bibinfo{author}{Cohen, N.}
+\newblock \bibinfo{title}{Implicit regularization in deep learning may not be
+  explainable by norms}.
+\newblock In \emph{\bibinfo{booktitle}{\textit{Advances in Neural Information
+  Processing Systems 33}}} (\bibinfo{year}{2020}).
+
+\bibitem{bjork2018}
+\bibinfo{author}{Bjorck, N.}, \bibinfo{author}{Gomes, C.~P.},
+  \bibinfo{author}{Selman, B.} \& \bibinfo{author}{Weinberger, K.~Q.}
+\newblock \bibinfo{title}{Understanding batch normalization}.
+\newblock In \emph{\bibinfo{booktitle}{Advances in Neural Information
+  Processing Systems 32}} (\bibinfo{year}{2018}).
+
+\bibitem{ioffe2015batch}
+\bibinfo{author}{Ioffe, S.} \& \bibinfo{author}{Szegedy, C.}
+\newblock \bibinfo{title}{Batch normalization: Accelerating deep network
+  training by reducing internal covariate shift}.
+\newblock In \emph{\bibinfo{booktitle}{\textit{32nd International Conference on
+  Machine Learning}}}, \bibinfo{pages}{448--456} (\bibinfo{year}{2015}).
+
+\bibitem{santurkar2018does}
+\bibinfo{author}{Santurkar, S.}, \bibinfo{author}{Tsipras, D.},
+  \bibinfo{author}{Ilyas, A.} \& \bibinfo{author}{Madry, A.}
+\newblock \bibinfo{title}{How does batch normalization help optimization?}
+\newblock \emph{\bibinfo{journal}{\textit{Advances in Neural Information
+  Processing Systems 31}}}  (\bibinfo{year}{2018}).
+
+\bibitem{lillicrap2016}
+\bibinfo{author}{Lillicrap, T.~P.} \emph{et~al.}
+\newblock \bibinfo{title}{Continuous control with deep reinforcement learning.}
+\newblock In \emph{\bibinfo{booktitle}{6th International Conference on Learning
+  Representations}} (\bibinfo{year}{2016}).
+
+\bibitem{mnih2016}
+\bibinfo{author}{Mnih, V.} \emph{et~al.}
+\newblock \bibinfo{title}{Asynchronous methods for deep reinforcement
+  learning}.
+\newblock In \emph{\bibinfo{booktitle}{33rd International Conference on Machine
+  Learning}}, \bibinfo{pages}{1928--1937} (\bibinfo{year}{2016}).
+
+\bibitem{schulman2017}
+\bibinfo{author}{Schulman, J.}, \bibinfo{author}{Wolski, F.},
+  \bibinfo{author}{Dhariwal, P.}, \bibinfo{author}{Radford, A.} \&
+  \bibinfo{author}{Klimov, O.}
+\newblock \bibinfo{title}{Proximal policy optimization algorithms}.
+\newblock \bibinfo{note}{Preprint at \url{https://arxiv.org/abs/1707.06347}
+  (2017)}.
+
+\bibitem{chiley2019online}
+\bibinfo{author}{Chiley, V.} \emph{et~al.}
+\newblock \bibinfo{title}{Online normalization for training neural networks}.
+\newblock \emph{\bibinfo{journal}{\textit{Advances in Neural Information
+  Processing Systems 32}}}  (\bibinfo{year}{2019}).
+
+\bibitem{mahmood2013}
+\bibinfo{author}{Mahmood, A.~R.} \& \bibinfo{author}{Sutton, R.~S.}
+\newblock \bibinfo{title}{Representation search through generate and test.}
+\newblock In \emph{\bibinfo{booktitle}{\textit{AAAI Workshop: Learning Rich
+  Representations from Low-Level Sensors}}}, vol.~\bibinfo{volume}{10}
+  (\bibinfo{year}{2013}).
+
+\bibitem{hu2016}
+\bibinfo{author}{Hu, H.}, \bibinfo{author}{Peng, R.}, \bibinfo{author}{Tai,
+  Y.-W.} \& \bibinfo{author}{Tang, C.-K.}
+\newblock \bibinfo{title}{Network trimming: A data-driven neuron pruning
+  approach towards efficient deep architectures}.
+\newblock \bibinfo{note}{Preprint at \url{https://arxiv.org/abs/1607.03250}
+  (2016)}.
+
+\bibitem{bias-correction}
+\bibinfo{author}{Thimm, G.} \& \bibinfo{author}{Fiesler, E.}
+\newblock \bibinfo{title}{Evaluating pruning methods}.
+\newblock In \emph{\bibinfo{booktitle}{\textit{Proceedings of the International
+  Symposium on Artificial neural networks}}}, \bibinfo{pages}{20--25}
+  (\bibinfo{year}{1995}).
+
+\bibitem{kaelbling1993}
+\bibinfo{author}{Kaelbling, L.~P.}
+\newblock \emph{\bibinfo{title}{Learning in Embedded Systems}}
+  (\bibinfo{publisher}{MIT Press}, \bibinfo{year}{1993}).
+
+\bibitem{obd1989}
+\bibinfo{author}{LeCun, Y.}, \bibinfo{author}{Denker, J.} \&
+  \bibinfo{author}{Solla, S.}
+\newblock \bibinfo{title}{Optimal brain damage}.
+\newblock \emph{\bibinfo{journal}{Advances in Neural Information Processing
+  Systems 2}}  (\bibinfo{year}{1989}).
+
+\bibitem{compression2016}
+\bibinfo{author}{Han, S.}, \bibinfo{author}{Huizi, M.} \&
+  \bibinfo{author}{Dally, W.~J.}
+\newblock \bibinfo{title}{Deep compression: Compressing deep neural networks
+  with pruning, trained quantization and huffman coding}.
+\newblock In \emph{\bibinfo{booktitle}{4th International Conference on Learning
+  Representations}} (\bibinfo{year}{2016}).
+
+\bibitem{dst2020}
+\bibinfo{author}{Liu, J.}, \bibinfo{author}{Xu, Z.}, \bibinfo{author}{Shi, R.},
+  \bibinfo{author}{Cheung, R. C.~C.} \& \bibinfo{author}{So, H.~K.}
+\newblock \bibinfo{title}{Dynamic sparse training: Find efficient sparse
+  network from scratch with trainable masked layers}.
+\newblock In \emph{\bibinfo{booktitle}{8th International Conference on Learning
+  Representations}} (\bibinfo{year}{2020}).
+
+\bibitem{mocanu2018scalable}
+\bibinfo{author}{Mocanu, D.~C.} \emph{et~al.}
+\newblock \bibinfo{title}{Scalable training of artificial neural networks with
+  adaptive sparse connectivity inspired by network science}.
+\newblock \emph{\bibinfo{journal}{\textit{Nature Communications}}}
+  \textbf{\bibinfo{volume}{9}}, \bibinfo{pages}{1--12} (\bibinfo{year}{2018}).
+
+\bibitem{bellec2018deep}
+\bibinfo{author}{Bellec, G.}, \bibinfo{author}{Kappel, D.},
+  \bibinfo{author}{Maass, W.} \& \bibinfo{author}{Legenstein, R.}
+\newblock \bibinfo{title}{Deep rewiring: Training very sparse deep networks}.
+\newblock In \emph{\bibinfo{booktitle}{6th International Conference on Learning
+  Representations}} (\bibinfo{year}{2018}).
+
+\bibitem{chen2021chasing}
+\bibinfo{author}{Chen, T.} \emph{et~al.}
+\newblock \bibinfo{title}{Chasing sparsity in vision transformers: An
+  end-to-end exploration}.
+\newblock \emph{\bibinfo{journal}{Advances in Neural Information Processing
+  Systems 35}}  (\bibinfo{year}{2021}).
+
+\bibitem{sokar2021dynamic}
+\bibinfo{author}{Sokar, G.}, \bibinfo{author}{Mocanu, E.},
+  \bibinfo{author}{Mocanu, D.~C.}, \bibinfo{author}{Pechenizkiy, M.} \&
+  \bibinfo{author}{Stone, P.}
+\newblock \bibinfo{title}{Dynamic sparse training for deep reinforcement
+  learning}.
+\newblock \emph{\bibinfo{journal}{\textit{The 31st International Joint
+  Conference on Artificial Intelligence}}} \bibinfo{pages}{3437--3443}
+  (\bibinfo{year}{2022}).
+
+\bibitem{zhou2012}
+\bibinfo{author}{Zhou, G.}, \bibinfo{author}{Sohn, K.} \& \bibinfo{author}{Lee,
+  H.}
+\newblock \bibinfo{title}{Online incremental feature learning with denoising
+  autoencoders}.
+\newblock In \emph{\bibinfo{booktitle}{\textit{Artificial Intelligence and
+  Statistics}}}, \bibinfo{pages}{1453--1461} (\bibinfo{year}{2012}).
+
+\bibitem{rusu2016}
+\bibinfo{author}{Rusu, A.~A.} \emph{et~al.}
+\newblock \bibinfo{title}{Progressive neural networks}.
+\newblock \bibinfo{note}{Preprint at \url{https://arxiv.org/abs/1606.04671}
+  (2016)}.
+
+\bibitem{he2015delving}
+\bibinfo{author}{He, K.}, \bibinfo{author}{Zhang, X.}, \bibinfo{author}{Ren,
+  S.} \& \bibinfo{author}{Sun, J.}
+\newblock \bibinfo{title}{Delving deep into rectifiers: Surpassing human-level
+  performance on imagenet classification}.
+\newblock In \emph{\bibinfo{booktitle}{IEEE International Conference on
+  Computer Vision}}, \bibinfo{pages}{1026--1034} (\bibinfo{year}{2015}).
+
+\bibitem{sutskever2013}
+\bibinfo{author}{Sutskever, I.}, \bibinfo{author}{Martens, J.},
+  \bibinfo{author}{Dahl, G.} \& \bibinfo{author}{Hinton, G.}
+\newblock \bibinfo{title}{On the importance of initialization and momentum in
+  deep learning}.
+\newblock In \emph{\bibinfo{booktitle}{30th International Conference on Machine
+  Learning}}, \bibinfo{pages}{1139--1147} (\bibinfo{year}{2013}).
+
+\bibitem{frankle2018the}
+\bibinfo{author}{Frankle, J.} \& \bibinfo{author}{Carbin, M.}
+\newblock \bibinfo{title}{The lottery ticket hypothesis: Finding sparse,
+  trainable neural networks}.
+\newblock In \emph{\bibinfo{booktitle}{7th International Conference on Learning
+  Representations}} (\bibinfo{year}{2019}).
+
+\bibitem{finn2017}
+\bibinfo{author}{Finn, C.}, \bibinfo{author}{Abbeel, P.} \&
+  \bibinfo{author}{Levine, S.}
+\newblock \bibinfo{title}{Model-agnostic meta-learning for fast adaptation of
+  deep networks}.
+\newblock In \emph{\bibinfo{booktitle}{34th International Conference on Machine
+  Learning}}, \bibinfo{pages}{1126--1135} (\bibinfo{year}{2017}).
+
+\bibitem{wang2017}
+\bibinfo{author}{Wang, Y.-X.}, \bibinfo{author}{Ramanan, D.} \&
+  \bibinfo{author}{Hebert, M.}
+\newblock \bibinfo{title}{Growing a brain: Fine-tuning by increasing model
+  capacity}.
+\newblock In \emph{\bibinfo{booktitle}{\textit{IEEE Conference on Computer
+  Vision and Pattern Recognition}}}, \bibinfo{pages}{2471--2480}
+  (\bibinfo{year}{2017}).
+
+\bibitem{nagabandi2019}
+\bibinfo{author}{Nagabandi, A.} \emph{et~al.}
+\newblock \bibinfo{title}{Learning to adapt in dynamic, real-world environments
+  through meta-reinforcement learning}.
+\newblock In \emph{\bibinfo{booktitle}{7th International Conference on Learning
+  Representations}} (\bibinfo{year}{2019}).
+
+\bibitem{holmstrom1992}
+\bibinfo{author}{Holmstrom, L.}, \bibinfo{author}{Koistinen, P.} \emph{et~al.}
+\newblock \bibinfo{title}{Using additive noise in back-propagation training}.
+\newblock \emph{\bibinfo{journal}{\textit{IEEE Transactions on Neural
+  Networks}}} \textbf{\bibinfo{volume}{3}}, \bibinfo{pages}{24--38}
+  (\bibinfo{year}{1992}).
+
+\bibitem{gravesetal2013}
+\bibinfo{author}{Graves, A.}, \bibinfo{author}{Mohamed, A.-r.} \&
+  \bibinfo{author}{Hinton, G.}
+\newblock \bibinfo{title}{Speech recognition with deep recurrent neural
+  networks}.
+\newblock In \emph{\bibinfo{booktitle}{\textit{2013 IEEE International
+  Conference on Acoustics, Speech and Signal Processing}}},
+  \bibinfo{pages}{6645--6649} (\bibinfo{year}{2013}).
+
+\bibitem{neelakantan2015}
+\bibinfo{author}{Neelakantan, A.} \emph{et~al.}
+\newblock \bibinfo{title}{Adding gradient noise improves learning for very deep
+  networks}.
+\newblock \bibinfo{note}{Preprint at \url{https://arxiv.org/abs/1511.06807}
+  (2015)}.
+
+\bibitem{greffetal2017}
+\bibinfo{author}{Greff, K.}, \bibinfo{author}{Srivastava, R.~K.},
+  \bibinfo{author}{Koutník, J.}, \bibinfo{author}{Steunebrink, B.~R.} \&
+  \bibinfo{author}{Schmidhuber, J.}
+\newblock \bibinfo{title}{{L}{S}{T}{M}: A search space odyssey}.
+\newblock \emph{\bibinfo{journal}{\textit{IEEE Transactions on Neural Networks
+  and Learning Systems}}} \textbf{\bibinfo{volume}{28}},
+  \bibinfo{pages}{2222--2232} (\bibinfo{year}{2017}).
+
+\bibitem{transient2021}
+\bibinfo{author}{Igl, M.}, \bibinfo{author}{Farquhar, G.},
+  \bibinfo{author}{Luketina, J.}, \bibinfo{author}{Boehmer, W.} \&
+  \bibinfo{author}{Whiteson, S.}
+\newblock \bibinfo{title}{Transient non-stationarity and generalisation in deep
+  reinforcement learning}.
+\newblock In \emph{\bibinfo{booktitle}{9th International Conference on Learning
+  Representations}} (\bibinfo{year}{2021}).
+
+\bibitem{kumar2021implicit}
+\bibinfo{author}{Kumar, A.}, \bibinfo{author}{Agarwal, R.},
+  \bibinfo{author}{Ghosh, D.} \& \bibinfo{author}{Levine, S.}
+\newblock \bibinfo{title}{Implicit under-parameterization inhibits
+  data-efficient deep reinforcement learning}.
+\newblock In \emph{\bibinfo{booktitle}{9th International Conference on Learning
+  Representations}} (\bibinfo{year}{2021}).
+
+\bibitem{understanding2023}
+\bibinfo{author}{Lyle, C.} \emph{et~al.}
+\newblock \bibinfo{title}{Understanding plasticity in neural networks}.
+\newblock In \emph{\bibinfo{booktitle}{40th International Conference on Machine
+  Learning}}, \bibinfo{pages}{23190--23211} (\bibinfo{year}{2023}).
+
+\bibitem{abbas2023loss}
+\bibinfo{author}{Abbas, Z.}, \bibinfo{author}{Zhao, R.},
+  \bibinfo{author}{Modayil, J.}, \bibinfo{author}{White, A.} \&
+  \bibinfo{author}{Machado, M.~C.}
+\newblock \bibinfo{title}{Loss of plasticity in continual deep reinforcement
+  learning}.
+\newblock In \emph{\bibinfo{booktitle}{2nd Conference on Lifelong Learning
+  Agents}} (\bibinfo{year}{2023}).
+
+\bibitem{kumar2023}
+\bibinfo{author}{Kumar, S.} \emph{et~al.}
+\newblock \bibinfo{title}{Continual learning as computationally constrained
+  reinforcement learning}.
+\newblock \bibinfo{note}{Preprint at \url{https://arxiv.org/abs/2307.04345}
+  (2023)}.
+
+\bibitem{nikishin2023}
+\bibinfo{author}{Nikishin, E.} \emph{et~al.}
+\newblock \bibinfo{title}{Deep reinforcement learning with plasticity
+  injection}.
+\newblock In \emph{\bibinfo{booktitle}{37th Conference on Neural Information
+  Processing Systems}} (\bibinfo{year}{2023}).
+
+\bibitem{doro2023}
+\bibinfo{author}{D'Oro, P.} \emph{et~al.}
+\newblock \bibinfo{title}{Sample-efficient reinforcement learning by breaking
+  the replay ratio barrier}.
+\newblock In \emph{\bibinfo{booktitle}{11th International Conference on
+  Learning Representations}} (\bibinfo{year}{2023}).
+
+\bibitem{sokar2023}
+\bibinfo{author}{Sokar, G.}, \bibinfo{author}{Agarwal, R.},
+  \bibinfo{author}{Castro, P.~S.} \& \bibinfo{author}{Evci, U.}
+\newblock \bibinfo{title}{The dormant neuron phenomenon in deep reinforcement
+  learning}.
+\newblock In \emph{\bibinfo{booktitle}{40th International Conference on Machine
+  Learning}}, \bibinfo{pages}{32145--32168} (\bibinfo{year}{2023}).
+
+\bibitem{schwarzer2023}
+\bibinfo{author}{Schwarzer, M.} \emph{et~al.}
+\newblock \bibinfo{title}{Bigger, better, faster: Human-level {A}tari with
+  human-level efficiency}.
+\newblock In \emph{\bibinfo{booktitle}{40th International Conference on Machine
+  Learning}}, \bibinfo{pages}{30365--30380} (\bibinfo{year}{2023}).
+
+\bibitem{clevert2016}
+\bibinfo{author}{Clevert, D.}, \bibinfo{author}{Unterthiner, T.} \&
+  \bibinfo{author}{Hochreiter, S.}
+\newblock \bibinfo{title}{Fast and accurate deep network learning by
+  exponential linear units ({E}{L}{U}s)}.
+\newblock In \emph{\bibinfo{booktitle}{\textit{4th International Conference on
+  Learning Representations}}} (\bibinfo{year}{2016}).
+
+\bibitem{mass2013}
+\bibinfo{author}{Maas, A.~L.}, \bibinfo{author}{Hannun, A.~Y.} \&
+  \bibinfo{author}{Ng, A.~Y.}
+\newblock \bibinfo{title}{Rectifier nonlinearities improve neural network
+  acoustic models}.
+\newblock In \emph{\bibinfo{booktitle}{\textit{ICML Workshop on Deep Learning
+  for Audio, Speech and Language Processing}}} (\bibinfo{year}{2013}).
+
+\bibitem{nair2010}
+\bibinfo{author}{Nair, V.} \& \bibinfo{author}{Hinton, G.~E.}
+\newblock \bibinfo{title}{Rectified linear units improve {R}estricted
+  {B}oltzmann {M}achines}.
+\newblock In \emph{\bibinfo{booktitle}{27th International Conference on Machine
+  Learning}}, \bibinfo{pages}{807–814} (\bibinfo{year}{2010}).
+
+\bibitem{ramachandran2018}
+\bibinfo{author}{Ramachandran, P.}, \bibinfo{author}{Zoph, B.} \&
+  \bibinfo{author}{Le, Q.~V.}
+\newblock \bibinfo{title}{Searching for activation functions}.
+\newblock In \emph{\bibinfo{booktitle}{\textit{6th International Conference on
+  Learning Representations}, Workshop Track Proceedings}}
+  (\bibinfo{year}{2018}).
+
+\bibitem{mcculloch1943}
+\bibinfo{author}{McCulloch, W.~S.} \& \bibinfo{author}{Pitts, W.}
+\newblock \bibinfo{title}{A logical calculus of the ideas immanent in nervous
+  activity}.
+\newblock \emph{\bibinfo{journal}{\textit{The Bulletin of Mathematical
+  Biophysics}}} \textbf{\bibinfo{volume}{5}}, \bibinfo{pages}{115--133}
+  (\bibinfo{year}{1943}).
+
+\bibitem{sutton1993}
+\bibinfo{author}{Sutton, R.~S.} \& \bibinfo{author}{Whitehead, S.~D.}
+\newblock \bibinfo{title}{Online learning with random representations}.
+\newblock In \emph{\bibinfo{booktitle}{\textit{10th International Conference on
+  Machine Learning}}}, \bibinfo{pages}{314–321} (\bibinfo{year}{1993}).
+
+\bibitem{coumans2021}
+\bibinfo{author}{Coumans, E.} \& \bibinfo{author}{Bai, Y.}
+\newblock \bibinfo{title}{Pybullet, a python module for physics simulation for
+  games, robotics and machine learning}.
+\newblock \bibinfo{howpublished}{http://pybullet.org} (\bibinfo{year}{2016}).
+
+\bibitem{andrychowicz2021}
+\bibinfo{author}{Andrychowicz, M.} \emph{et~al.}
+\newblock \bibinfo{title}{What matters for on-policy deep actor-critic methods?
+  a large-scale study}.
+\newblock In \emph{\bibinfo{booktitle}{9th International Conference on Learning
+  Representations}} (\bibinfo{year}{2021}).
+
+\bibitem{lecun-1998}
+\bibinfo{author}{Lecun, Y.}, \bibinfo{author}{Bottou, L.},
+  \bibinfo{author}{Bengio, Y.} \& \bibinfo{author}{Haffner, P.}
+\newblock \bibinfo{title}{Gradient-based learning applied to document
+  recognition}.
+\newblock \emph{\bibinfo{journal}{Proceedings of the IEEE}}
+  \textbf{\bibinfo{volume}{86}}, \bibinfo{pages}{2278--2324}
+  (\bibinfo{year}{1998}).
+
+\end{thebibliography}

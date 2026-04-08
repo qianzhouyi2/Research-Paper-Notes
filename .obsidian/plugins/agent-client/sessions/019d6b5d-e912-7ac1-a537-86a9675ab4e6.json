@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "sessionId": "019d6b5d-e912-7ac1-a537-86a9675ab4e6",
+  "agentId": "codex-acp",
+  "messages": [
+    {
+      "id": "77467e59-869b-4ae7-897b-7af2c006bdf7",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "/skills"
+        }
+      ],
+      "timestamp": "2026-04-08T04:33:36.841Z"
+    },
+    {
+      "id": "81a94890-b5b4-4ad6-80d9-ba17e9e2b471",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "Available skills in this session:\n\n- `cross-linker` — 扫描 Obsidian wiki，自动发现并补上缺失的交叉引用\n- `data-ingest` — 将原始文本/日志/聊天导出等非结构化内容导入 wiki\n- `tag-taxonomy` — 用受控词表统一并规范标签体系\n- `wiki-ingest` — 将文档知识蒸馏后整合进 Obsidian wiki\n- `wiki-lint` — 审计 wiki 健康度（坏链、孤立页、frontmatter 等）\n- `imagegen` — 生成或编辑位图图片（插画、贴图、mockup 等）\n- `openai-docs` — 查询和使用 OpenAI 官方文档与最新 API/模型信息\n- `plugin-creator` — 创建/脚手架 Codex 插件目录与元数据\n- `skill-creator` — 创建或改进自定义 skill\n- `skill-installer` — 从 curated 列表或 GitHub 安装 skill\n\n如果你要用某个 skill，直接说名字即可，比如：`use wiki-lint` 或 `用 cross-linker 扫描我的 wiki`。"
+        }
+      ],
+      "timestamp": "2026-04-08T04:33:45.979Z"
+    },
+    {
+      "id": "639086fe-3485-449c-81bb-de6d9d87e2a2",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "wiki-setup"
+        }
+      ],
+      "timestamp": "2026-04-08T04:34:00.843Z"
+    },
+    {
+      "id": "72476c10-ddc7-4441-93c9-0616ed2e094b",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "`wiki-setup` 这个 skill 当前不可用（不在本会话的可用列表里）。\n\n最接近的替代是：\n- `wiki-ingest`：把文档内容整理并并入你的 wiki\n- `wiki-lint`：做健康检查并找出需要修复的问题\n- `cross-linker`：自动补页面之间的交叉链接\n\n告诉我你想做哪一种，我就直接开始。"
+        }
+      ],
+      "timestamp": "2026-04-08T04:34:07.364Z"
+    }
+  ],
+  "savedAt": "2026-04-08T04:34:10.068Z"
+}

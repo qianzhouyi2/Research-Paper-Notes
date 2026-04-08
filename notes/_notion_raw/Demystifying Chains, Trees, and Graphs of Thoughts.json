@@ -1,0 +1,711 @@
+{
+  "title": "Demystifying Chains, Trees, and Graphs of Thoughts",
+  "page_id": "b5069036-be07-4b9c-9e8b-e93ec07005f7",
+  "root_page_id": "18e84951-e962-8022-bda7-e29fdeb3e883",
+  "blocks": {
+    "b5069036-be07-4b9c-9e8b-e93ec07005f7": {
+      "spaceId": "e8fd8fcd-d8f0-4081-85db-6b7f1089f095",
+      "value": {
+        "value": {
+          "id": "b5069036-be07-4b9c-9e8b-e93ec07005f7",
+          "version": 38,
+          "type": "page",
+          "properties": {
+            "title": [
+              [
+                "Demystifying Chains, Trees, and Graphs of Thoughts"
+              ]
+            ]
+          },
+          "content": [
+            "f2dab6c6-dec4-4cb8-a287-08937c7d1da3",
+            "efe18550-0612-48f7-a616-7de2acdff63d",
+            "043672da-7c93-4c1d-a0af-a757c3e7fe91",
+            "7e87d61a-7eb6-42f2-8b62-8040788e80d4",
+            "97e77a2e-3c11-4913-8cf1-6e457b422eb8",
+            "6aad33f2-bcd4-4c86-8ef9-cea1cdc61609",
+            "3024c4dc-61d8-4453-9c56-f005550c1303"
+          ],
+          "format": {
+            "page_icon": "🤚",
+            "social_media_image_preview_url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/e8fd8fcd-d8f0-4081-85db-6b7f1089f095/ce5594b0-3964-4471-bd80-151572e27c2b/SocialMediaPreviewImage.png"
+          },
+          "created_time": 1720864168968,
+          "last_edited_time": 1738502238978,
+          "parent_id": "18e84951-e962-8022-bda7-e29fdeb3e883",
+          "parent_table": "block",
+          "alive": true,
+          "file_ids": [
+            "c2c2c05b-712e-45cf-a8ca-8f15d70a622a",
+            "ce5594b0-3964-4471-bd80-151572e27c2b"
+          ],
+          "space_id": "e8fd8fcd-d8f0-4081-85db-6b7f1089f095",
+          "crdt_format_version": 1,
+          "crdt_data": {
+            "title": {
+              "r": "6XjjsZtItnHU4tNK49tgbQ,\"start\",\"end\"",
+              "n": {
+                "6XjjsZtItnHU4tNK49tgbQ,\"start\",\"end\"": {
+                  "s": {
+                    "x": "6XjjsZtItnHU4tNK49tgbQ",
+                    "i": [
+                      {
+                        "t": "s"
+                      },
+                      {
+                        "t": "t",
+                        "i": [
+                          "P3-EgIdj-9Ah",
+                          1
+                        ],
+                        "o": "start",
+                        "l": 50,
+                        "c": "Demystifying Chains, Trees, and Graphs of Thoughts"
+                      },
+                      {
+                        "t": "e"
+                      }
+                    ],
+                    "l": ""
+                  },
+                  "c": []
+                }
+              }
+            }
+          }
+        },
+        "role": "reader"
+      }
+    },
+    "18e84951-e962-8022-bda7-e29fdeb3e883": {
+      "spaceId": "e8fd8fcd-d8f0-4081-85db-6b7f1089f095",
+      "value": {
+        "value": {
+          "id": "18e84951-e962-8022-bda7-e29fdeb3e883",
+          "version": 82,
+          "type": "page",
+          "properties": {
+            "title": [
+              [
+                "推理"
+              ]
+            ]
+          },
+          "content": [
+            "2b3506ca-d722-4f49-9424-2379b46671ac",
+            "ab31a00f-347b-447f-8ef3-f75b7cab13c2",
+            "bbbc33bc-6083-4bff-98e9-225835141809",
+            "d589b5e4-757a-4bec-a6fd-518e6df7b3e6",
+            "b5069036-be07-4b9c-9e8b-e93ec07005f7",
+            "3bae4a38-a3a7-4c11-9f91-119645683579",
+            "54d65677-2099-47e2-bd7a-7642debfd872",
+            "6a951872-0082-4f1b-a335-7d52dc39b7b4",
+            "1186b429-01f3-4b2e-bf56-75aa9ef2fd55",
+            "b24b752c-a3da-4a1f-9653-2dce8f355133",
+            "fa9e44f3-7583-488c-a6ce-6a23c9fe3f5e",
+            "dcbf57f0-4c05-4a08-8f26-e67df60bda7f",
+            "6ac6e156-c691-4a81-9672-f6eb498776be",
+            "21a83182-0ec6-4c80-8ce2-31426a7c8808",
+            "671e07f2-8dac-42a7-bd27-fac8d7a91ef5",
+            "132fd3ff-c12b-405c-9d1b-0c2b310f9c01",
+            "8bfb125a-72f8-4f66-b7bb-94175abeb635",
+            "1bd84951-e962-8077-b022-fa8b9eed70fc"
+          ],
+          "format": {
+            "social_media_image_preview_url": "attachment:f35dcdc0-390c-4854-823a-44955e026acf:SocialMediaPreviewImage.png"
+          },
+          "created_time": 1738502201146,
+          "last_edited_time": 1742559280782,
+          "parent_id": "41b26709-6aa4-4331-95b5-d223058bf7b3",
+          "parent_table": "block",
+          "alive": true,
+          "file_ids": [
+            "f35dcdc0-390c-4854-823a-44955e026acf"
+          ],
+          "space_id": "e8fd8fcd-d8f0-4081-85db-6b7f1089f095",
+          "crdt_format_version": 1,
+          "crdt_data": {
+            "title": {
+              "r": "IogrV5ivAGeN5HdmV6H6zw,\"start\",\"end\"",
+              "n": {
+                "IogrV5ivAGeN5HdmV6H6zw,\"start\",\"end\"": {
+                  "s": {
+                    "x": "IogrV5ivAGeN5HdmV6H6zw",
+                    "i": [
+                      {
+                        "t": "s"
+                      },
+                      {
+                        "t": "t",
+                        "i": [
+                          "c4A1iCjGXUif",
+                          1
+                        ],
+                        "o": "start",
+                        "l": 2,
+                        "c": "推理"
+                      },
+                      {
+                        "t": "e"
+                      }
+                    ],
+                    "l": ""
+                  },
+                  "c": []
+                }
+              }
+            }
+          }
+        },
+        "role": "reader"
+      }
+    },
+    "41b26709-6aa4-4331-95b5-d223058bf7b3": {
+      "spaceId": "e8fd8fcd-d8f0-4081-85db-6b7f1089f095",
+      "value": {
+        "value": {
+          "id": "41b26709-6aa4-4331-95b5-d223058bf7b3",
+          "version": 256,
+          "type": "page",
+          "properties": {
+            "title": [
+              [
+                "论文阅读"
+              ]
+            ]
+          },
+          "content": [
+            "14584951-e962-8057-beff-ec1e751b437f",
+            "18e84951-e962-8022-bda7-e29fdeb3e883",
+            "18e84951-e962-8034-928e-e2d3bdc0081e",
+            "22f84951-e962-8084-b25d-d8d6d47bb936"
+          ],
+          "format": {
+            "site_id": "11a84951-e962-802d-a402-0079bc91e2b2",
+            "page_icon": "📜",
+            "page_cover": "/images/page-cover/rijksmuseum_avercamp_1608.jpg",
+            "block_locked": false,
+            "block_locked_by": "30a9fd4c-6e90-4cae-be52-0452a5ec1c26",
+            "page_full_width": true,
+            "copied_from_pointer": {
+              "id": "a7baf2af-8362-493f-9379-a9c471d15bf6",
+              "table": "block",
+              "spaceId": "3392c2af-e56d-4f88-8c25-242d115981a1"
+            },
+            "page_cover_position": 0.3
+          },
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bd397822-4582-4abf-ae5c-2560a4166eaf"
+            },
+            {
+              "role": "reader",
+              "type": "public_permission",
+              "is_site": true,
+              "added_timestamp": 1728483456243
+            }
+          ],
+          "created_time": 1719132366630,
+          "last_edited_time": 1752370397087,
+          "parent_id": "e8fd8fcd-d8f0-4081-85db-6b7f1089f095",
+          "parent_table": "space",
+          "alive": true,
+          "copied_from": "a7baf2af-8362-493f-9379-a9c471d15bf6",
+          "space_id": "e8fd8fcd-d8f0-4081-85db-6b7f1089f095",
+          "crdt_format_version": 1,
+          "crdt_data": {
+            "title": {
+              "r": "ZQGZSZ-5ngvnZzNV54TuWQ,\"start\",\"end\"",
+              "n": {
+                "ZQGZSZ-5ngvnZzNV54TuWQ,\"start\",\"end\"": {
+                  "s": {
+                    "x": "ZQGZSZ-5ngvnZzNV54TuWQ",
+                    "i": [
+                      {
+                        "t": "s"
+                      },
+                      {
+                        "t": "t",
+                        "i": [
+                          "1MeA_kTKe6gi",
+                          1
+                        ],
+                        "o": "start",
+                        "l": 4,
+                        "c": "论文阅读"
+                      },
+                      {
+                        "t": "e"
+                      }
+                    ],
+                    "l": ""
+                  },
+                  "c": []
+                }
+              }
+            }
+          }
+        },
+        "role": "reader"
+      }
+    },
+    "f2dab6c6-dec4-4cb8-a287-08937c7d1da3": {
+      "value": {
+        "value": {
+          "id": "f2dab6c6-dec4-4cb8-a287-08937c7d1da3",
+          "version": 12,
+          "type": "bookmark",
+          "properties": {
+            "link": [
+              [
+                "https://arxiv.org/abs/2401.14295"
+              ]
+            ],
+            "title": [
+              [
+                "Demystifying Chains, Trees, and Graphs of Thoughts"
+              ]
+            ],
+            "description": [
+              [
+                "The field of natural language processing (NLP) has witnessed significant progress in recent years, with a notable focus on improving large language models' (LLM) performance through innovative..."
+              ]
+            ]
+          },
+          "format": {
+            "bookmark_icon": "https://arxiv.org/static/browse/0.3.4/images/icons/apple-touch-icon.png",
+            "bookmark_cover": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png"
+          },
+          "created_time": 1720864233929,
+          "last_edited_time": 1720864233936,
+          "parent_id": "b5069036-be07-4b9c-9e8b-e93ec07005f7",
+          "parent_table": "block",
+          "alive": true,
+          "space_id": "e8fd8fcd-d8f0-4081-85db-6b7f1089f095",
+          "crdt_format_version": 1,
+          "crdt_data": {
+            "title": {
+              "r": "mLxU6p_EKlc2Bg3B6oxmkQ,\"start\",\"end\"",
+              "n": {
+                "mLxU6p_EKlc2Bg3B6oxmkQ,\"start\",\"end\"": {
+                  "s": {
+                    "x": "mLxU6p_EKlc2Bg3B6oxmkQ",
+                    "i": [
+                      {
+                        "t": "s"
+                      },
+                      {
+                        "t": "t",
+                        "i": [
+                          "1lgcTOxWHvA3",
+                          1
+                        ],
+                        "o": "start",
+                        "l": 50,
+                        "c": "Demystifying Chains, Trees, and Graphs of Thoughts"
+                      },
+                      {
+                        "t": "e"
+                      }
+                    ],
+                    "l": ""
+                  },
+                  "c": []
+                }
+              }
+            }
+          }
+        },
+        "role": "reader"
+      }
+    },
+    "efe18550-0612-48f7-a616-7de2acdff63d": {
+      "value": {
+        "value": {
+          "id": "efe18550-0612-48f7-a616-7de2acdff63d",
+          "version": 23,
+          "type": "header",
+          "properties": {
+            "title": [
+              [
+                "Abstract"
+              ]
+            ]
+          },
+          "created_time": 1720864386993,
+          "last_edited_time": 1720864391818,
+          "parent_id": "b5069036-be07-4b9c-9e8b-e93ec07005f7",
+          "parent_table": "block",
+          "alive": true,
+          "space_id": "e8fd8fcd-d8f0-4081-85db-6b7f1089f095",
+          "crdt_format_version": 1,
+          "crdt_data": {
+            "title": {
+              "r": "cHWLD8y4VmjanmbL-sKS-g,\"start\",\"end\"",
+              "n": {
+                "cHWLD8y4VmjanmbL-sKS-g,\"start\",\"end\"": {
+                  "s": {
+                    "x": "cHWLD8y4VmjanmbL-sKS-g",
+                    "i": [
+                      {
+                        "t": "s"
+                      },
+                      {
+                        "t": "t",
+                        "i": [
+                          "Rc3hzYdKdcZB",
+                          1
+                        ],
+                        "o": "start",
+                        "l": 8,
+                        "c": "Abstract"
+                      },
+                      {
+                        "t": "e"
+                      }
+                    ],
+                    "l": ""
+                  },
+                  "c": []
+                }
+              }
+            }
+          }
+        },
+        "role": "reader"
+      }
+    },
+    "043672da-7c93-4c1d-a0af-a757c3e7fe91": {
+      "value": {
+        "value": {
+          "id": "043672da-7c93-4c1d-a0af-a757c3e7fe91",
+          "version": 52,
+          "type": "text",
+          "properties": {
+            "title": [
+              [
+                "提示工程（prompt engineering）已成为一种有前景的范式，其设计包括思想链、思想树或思想图（Chain-of-Thought, Tree of Thoughts, or Graph of Thoughts）"
+              ]
+            ]
+          },
+          "created_time": 1720864330613,
+          "last_edited_time": 1720864411031,
+          "parent_id": "b5069036-be07-4b9c-9e8b-e93ec07005f7",
+          "parent_table": "block",
+          "alive": true,
+          "space_id": "e8fd8fcd-d8f0-4081-85db-6b7f1089f095",
+          "crdt_format_version": 1,
+          "crdt_data": {
+            "title": {
+              "r": "f2zCjk2qVfr2jITflt9IYA,\"start\",\"end\"",
+              "n": {
+                "f2zCjk2qVfr2jITflt9IYA,\"start\",\"end\"": {
+                  "s": {
+                    "x": "f2zCjk2qVfr2jITflt9IYA",
+                    "i": [
+                      {
+                        "t": "s"
+                      },
+                      {
+                        "t": "t",
+                        "i": [
+                          "IIVr-WsDk8yJ",
+                          1
+                        ],
+                        "o": "start",
+                        "l": 110,
+                        "c": "提示工程（prompt engineering）已成为一种有前景的范式，其设计包括思想链、思想树或思想图（Chain-of-Thought, Tree of Thoughts, or Graph of Thoughts）"
+                      },
+                      {
+                        "t": "e"
+                      }
+                    ],
+                    "l": ""
+                  },
+                  "c": []
+                }
+              }
+            }
+          }
+        },
+        "role": "reader"
+      }
+    },
+    "7e87d61a-7eb6-42f2-8b62-8040788e80d4": {
+      "value": {
+        "value": {
+          "id": "7e87d61a-7eb6-42f2-8b62-8040788e80d4",
+          "version": 34,
+          "type": "text",
+          "properties": {
+            "title": [
+              [
+                "本文将这些结构称为"
+              ],
+              [
+                "推理拓扑",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                "，因为它们的表示在一定程度上具有空间性质，以至于它们被包含在LLM上下文中。"
+              ]
+            ]
+          },
+          "created_time": 1720864360757,
+          "last_edited_time": 1720865678194,
+          "parent_id": "b5069036-be07-4b9c-9e8b-e93ec07005f7",
+          "parent_table": "block",
+          "alive": true,
+          "space_id": "e8fd8fcd-d8f0-4081-85db-6b7f1089f095",
+          "crdt_format_version": 1,
+          "crdt_data": {
+            "title": {
+              "r": "hBZTlxmHcZeEvXJiwn3OMA,\"start\",\"end\"",
+              "n": {
+                "hBZTlxmHcZeEvXJiwn3OMA,\"start\",\"end\"": {
+                  "s": {
+                    "x": "hBZTlxmHcZeEvXJiwn3OMA",
+                    "i": [
+                      {
+                        "t": "s"
+                      },
+                      {
+                        "t": "t",
+                        "i": [
+                          "MeLHmxDHzsrO",
+                          1
+                        ],
+                        "o": "start",
+                        "l": 9,
+                        "c": "本文将这些结构称为"
+                      },
+                      {
+                        "t": "t",
+                        "i": [
+                          "MeLHmxDHzsrO",
+                          10
+                        ],
+                        "o": [
+                          "MeLHmxDHzsrO",
+                          9
+                        ],
+                        "l": 4,
+                        "c": "推理拓扑",
+                        "b": [
+                          {
+                            "t": "a",
+                            "x": "hBZTlxmHcZeEvXJiwn3OMA",
+                            "l": "",
+                            "i": [
+                              "MeLHmxDHzsrO",
+                              52
+                            ],
+                            "s": {
+                              "i": [
+                                "MeLHmxDHzsrO",
+                                10
+                              ],
+                              "a": "b"
+                            },
+                            "e": {
+                              "i": [
+                                "MeLHmxDHzsrO",
+                                14
+                              ],
+                              "a": "b"
+                            },
+                            "a": [
+                              "b"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "t": "t",
+                        "i": [
+                          "MeLHmxDHzsrO",
+                          14
+                        ],
+                        "o": [
+                          "MeLHmxDHzsrO",
+                          13
+                        ],
+                        "l": 38,
+                        "c": "，因为它们的表示在一定程度上具有空间性质，以至于它们被包含在LLM上下文中。",
+                        "b": []
+                      },
+                      {
+                        "t": "e"
+                      }
+                    ],
+                    "l": ""
+                  },
+                  "c": []
+                }
+              }
+            }
+          }
+        },
+        "role": "reader"
+      }
+    },
+    "97e77a2e-3c11-4913-8cf1-6e457b422eb8": {
+      "value": {
+        "value": {
+          "id": "97e77a2e-3c11-4913-8cf1-6e457b422eb8",
+          "version": 22,
+          "type": "header",
+          "properties": {
+            "title": [
+              [
+                "1 INTRODUCTION"
+              ]
+            ]
+          },
+          "created_time": 1720865697849,
+          "last_edited_time": 1720865732111,
+          "parent_id": "b5069036-be07-4b9c-9e8b-e93ec07005f7",
+          "parent_table": "block",
+          "alive": true,
+          "space_id": "e8fd8fcd-d8f0-4081-85db-6b7f1089f095",
+          "crdt_format_version": 1,
+          "crdt_data": {
+            "title": {
+              "r": "rtnw168DvCMxjXM5DiQ3ZA,\"start\",\"end\"",
+              "n": {
+                "rtnw168DvCMxjXM5DiQ3ZA,\"start\",\"end\"": {
+                  "s": {
+                    "x": "rtnw168DvCMxjXM5DiQ3ZA",
+                    "i": [
+                      {
+                        "t": "s"
+                      },
+                      {
+                        "t": "t",
+                        "i": [
+                          "F1OlKjzbVkyW",
+                          1
+                        ],
+                        "o": "start",
+                        "l": 14,
+                        "c": "1 INTRODUCTION"
+                      },
+                      {
+                        "t": "e"
+                      }
+                    ],
+                    "l": ""
+                  },
+                  "c": []
+                }
+              }
+            }
+          }
+        },
+        "role": "reader"
+      }
+    },
+    "6aad33f2-bcd4-4c86-8ef9-cea1cdc61609": {
+      "value": {
+        "value": {
+          "id": "6aad33f2-bcd4-4c86-8ef9-cea1cdc61609",
+          "version": 17,
+          "type": "text",
+          "properties": {
+            "title": [
+              [
+                "最近的工作重点是通过中间步骤引导LLMs走向最终解决方案。此类方案的示例包括Chain-of-Thought (CoT) [195]、Tree of Thoughts (ToT) [213]、Graph of Thoughts (GoT) [10]、AutoGPT [160]、ReAct [214] 或 LLMCompiler [ 110]。这一系列工作提高了 LLM 推理的性能。"
+              ]
+            ]
+          },
+          "created_time": 1720865733098,
+          "last_edited_time": 1720865828406,
+          "parent_id": "b5069036-be07-4b9c-9e8b-e93ec07005f7",
+          "parent_table": "block",
+          "alive": true,
+          "space_id": "e8fd8fcd-d8f0-4081-85db-6b7f1089f095",
+          "crdt_format_version": 1,
+          "crdt_data": {
+            "title": {
+              "r": "_QTSxxc3aHrYl7aucyXF_A,\"start\",\"end\"",
+              "n": {
+                "_QTSxxc3aHrYl7aucyXF_A,\"start\",\"end\"": {
+                  "s": {
+                    "x": "_QTSxxc3aHrYl7aucyXF_A",
+                    "i": [
+                      {
+                        "t": "s"
+                      },
+                      {
+                        "t": "t",
+                        "i": [
+                          "MMDA89M3qefI",
+                          1
+                        ],
+                        "o": "start",
+                        "l": 192,
+                        "c": "最近的工作重点是通过中间步骤引导LLMs走向最终解决方案。此类方案的示例包括Chain-of-Thought (CoT) [195]、Tree of Thoughts (ToT) [213]、Graph of Thoughts (GoT) [10]、AutoGPT [160]、ReAct [214] 或 LLMCompiler [ 110]。这一系列工作提高了 LLM 推理的性能。"
+                      },
+                      {
+                        "t": "e"
+                      }
+                    ],
+                    "l": ""
+                  },
+                  "c": []
+                }
+              }
+            }
+          }
+        },
+        "role": "reader"
+      }
+    },
+    "3024c4dc-61d8-4453-9c56-f005550c1303": {
+      "value": {
+        "value": {
+          "id": "3024c4dc-61d8-4453-9c56-f005550c1303",
+          "version": 4,
+          "type": "text",
+          "created_time": 1720865646227,
+          "last_edited_time": 1720865646227,
+          "parent_id": "b5069036-be07-4b9c-9e8b-e93ec07005f7",
+          "parent_table": "block",
+          "alive": true,
+          "space_id": "e8fd8fcd-d8f0-4081-85db-6b7f1089f095",
+          "crdt_format_version": 1,
+          "crdt_data": {
+            "title": {
+              "r": "zQp0qvC44lMNPoWnd916CQ,\"start\",\"end\"",
+              "n": {
+                "zQp0qvC44lMNPoWnd916CQ,\"start\",\"end\"": {
+                  "s": {
+                    "x": "zQp0qvC44lMNPoWnd916CQ",
+                    "i": [
+                      {
+                        "t": "s"
+                      },
+                      {
+                        "t": "e"
+                      }
+                    ],
+                    "l": ""
+                  },
+                  "c": []
+                }
+              }
+            }
+          }
+        },
+        "role": "reader"
+      }
+    }
+  },
+  "unresolved_block_ids": []
+}

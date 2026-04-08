@@ -1,0 +1,255 @@
+{
+  "claude": {
+    "id": "claude-code-acp",
+    "displayName": "Claude Code",
+    "apiKey": "",
+    "command": "claude-agent-acp",
+    "args": [],
+    "env": []
+  },
+  "codex": {
+    "id": "codex-acp",
+    "displayName": "Codex",
+    "apiKey": "",
+    "command": "codex-acp",
+    "args": [],
+    "env": []
+  },
+  "gemini": {
+    "id": "gemini-cli",
+    "displayName": "Gemini CLI",
+    "apiKey": "",
+    "command": "gemini",
+    "args": [
+      "--experimental-acp"
+    ],
+    "env": []
+  },
+  "customAgents": [],
+  "defaultAgentId": "codex-acp",
+  "autoAllowPermissions": false,
+  "autoMentionActiveNote": true,
+  "enableSystemNotifications": true,
+  "debugMode": false,
+  "nodePath": "C:\\Program Files\\nodejs\\node.exe",
+  "exportSettings": {
+    "defaultFolder": "Agent Client",
+    "filenameTemplate": "agent_client_{date}_{time}",
+    "autoExportOnNewChat": false,
+    "autoExportOnCloseChat": false,
+    "openFileAfterExport": true,
+    "includeImages": true,
+    "imageLocation": "obsidian",
+    "imageCustomFolder": "Agent Client",
+    "frontmatterTag": "agent-client"
+  },
+  "windowsWslMode": false,
+  "sendMessageShortcut": "enter",
+  "chatViewLocation": "right-tab",
+  "displaySettings": {
+    "autoCollapseDiffs": false,
+    "diffCollapseThreshold": 10,
+    "maxNoteLength": 10000,
+    "maxSelectionLength": 10000,
+    "showEmojis": true,
+    "fontSize": null
+  },
+  "savedSessions": [
+    {
+      "sessionId": "019d6cc3-3fda-7741-9f97-12768af78a0c",
+      "agentId": "codex-acp",
+      "cwd": "D:\\paper_reading\\paper_reading",
+      "title": "如果我想把当前目录下的wiki转为github wiki 你有什么好的策略吗",
+      "createdAt": "2026-04-08T11:05:50.430Z",
+      "updatedAt": "2026-04-08T11:05:50.430Z"
+    },
+    {
+      "sessionId": "019d6c4a-6500-7740-981b-f526e8351241",
+      "agentId": "codex-acp",
+      "cwd": "D:\\paper_reading\\paper_reading",
+      "title": "用中文wiki-ingest",
+      "createdAt": "2026-04-08T08:54:07.364Z",
+      "updatedAt": "2026-04-08T08:54:07.364Z"
+    },
+    {
+      "sessionId": "019d6c41-b810-7fc3-b196-253ec0b3fa1e",
+      "agentId": "codex-acp",
+      "cwd": "D:\\paper_reading\\paper_reading",
+      "title": "skills",
+      "createdAt": "2026-04-08T08:42:44.566Z",
+      "updatedAt": "2026-04-08T08:42:44.566Z"
+    },
+    {
+      "sessionId": "019d6c41-5f3b-7cc2-a841-f342ab7a0398",
+      "agentId": "codex-acp",
+      "cwd": "D:\\paper_reading\\paper_reading",
+      "title": "skills",
+      "createdAt": "2026-04-08T08:42:18.404Z",
+      "updatedAt": "2026-04-08T08:42:18.405Z"
+    },
+    {
+      "sessionId": "019d6c2a-ac4b-7cf3-97cc-c14a10c74f77",
+      "agentId": "codex-acp",
+      "cwd": "D:\\paper_reading\\paper_reading",
+      "title": "你是我的 Obsidian 论文笔记整理助手。请严格执行以下规则，不得省略：\n\n目标\n1. 按 `T...",
+      "createdAt": "2026-04-08T08:39:44.609Z",
+      "updatedAt": "2026-04-08T08:39:44.609Z"
+    },
+    {
+      "sessionId": "019d6c27-87cb-75b1-aea2-f57de158eefd",
+      "agentId": "codex-acp",
+      "cwd": "D:\\paper_reading\\paper_reading",
+      "title": "你是我的 Obsidian 论文笔记整理助手。请严格执行以下规则，不得省略：\n\n目标\n1. 按 `T...",
+      "createdAt": "2026-04-08T08:38:08.702Z",
+      "updatedAt": "2026-04-08T08:38:08.702Z"
+    },
+    {
+      "sessionId": "019d6b59-6dbd-7b00-bd3b-4dc48b6a3620",
+      "agentId": "codex-acp",
+      "cwd": "D:\\paper_reading\\paper_reading",
+      "title": "@PanGu-pi Nonlinearity Compensation\nhttps://www.no...",
+      "createdAt": "2026-04-08T04:50:22.419Z",
+      "updatedAt": "2026-04-08T04:50:22.419Z"
+    },
+    {
+      "sessionId": "019d6b5e-c0f9-72d3-a1e5-775cbcad6b19",
+      "agentId": "codex-acp",
+      "cwd": "D:\\paper_reading\\paper_reading",
+      "title": "wiki setup",
+      "createdAt": "2026-04-08T04:37:44.637Z",
+      "updatedAt": "2026-04-08T04:37:44.637Z"
+    },
+    {
+      "sessionId": "019d6b5e-984d-7c00-a94e-ff24640171da",
+      "agentId": "codex-acp",
+      "cwd": "D:\\paper_reading\\paper_reading",
+      "title": "wIkisetup",
+      "createdAt": "2026-04-08T04:34:25.142Z",
+      "updatedAt": "2026-04-08T04:34:25.142Z"
+    },
+    {
+      "sessionId": "019d6b5d-e912-7ac1-a537-86a9675ab4e6",
+      "agentId": "codex-acp",
+      "cwd": "D:\\paper_reading\\paper_reading",
+      "title": "/skills",
+      "createdAt": "2026-04-08T04:33:50.815Z",
+      "updatedAt": "2026-04-08T04:33:50.815Z"
+    },
+    {
+      "sessionId": "019d6b57-ce30-7490-bf0c-44508a255566",
+      "agentId": "codex-acp",
+      "cwd": "D:\\paper_reading\\paper_reading",
+      "title": "/wiki-ingest",
+      "createdAt": "2026-04-08T04:29:00.871Z",
+      "updatedAt": "2026-04-08T04:29:00.871Z"
+    },
+    {
+      "sessionId": "019d6b58-0664-7542-b4e0-4986a07a1e4b",
+      "agentId": "codex-acp",
+      "cwd": "D:\\paper_reading\\paper_reading",
+      "title": "https://www.notion.so/saputello/18e84951e9628022bd...",
+      "createdAt": "2026-04-08T04:27:42.975Z",
+      "updatedAt": "2026-04-08T04:27:42.975Z"
+    },
+    {
+      "sessionId": "019d6b33-9993-7e80-807f-3f8b96bec6cb",
+      "agentId": "codex-acp",
+      "cwd": "D:\\paper_reading\\paper_reading",
+      "title": "<table><tr><td rowspan=\"2\">数据集</td><td rowspan=\"2\"...",
+      "createdAt": "2026-04-08T03:56:57.750Z",
+      "updatedAt": "2026-04-08T03:56:57.750Z"
+    },
+    {
+      "sessionId": "019d6b1f-817b-7791-af99-51b364f9515f",
+      "agentId": "codex-acp",
+      "cwd": "D:\\paper_reading\\paper_reading",
+      "title": "https://github.com/qianzhouyi2/Research-Paper-Note...",
+      "createdAt": "2026-04-08T03:40:33.446Z",
+      "updatedAt": "2026-04-08T03:40:33.446Z"
+    },
+    {
+      "sessionId": "019d6b09-b364-7792-b135-d83981055329",
+      "agentId": "codex-acp",
+      "cwd": "D:\\paper_reading\\paper_reading",
+      "title": "初始化 wiki",
+      "createdAt": "2026-04-08T03:17:29.139Z",
+      "updatedAt": "2026-04-08T03:17:29.153Z"
+    },
+    {
+      "sessionId": "019d6a99-817e-7ed0-8aa5-bc2e2c927c1a",
+      "agentId": "codex-acp",
+      "cwd": "D:\\paper_reading\\paper_reading",
+      "title": "你快速但简单直白的给我讲讲DLA的算法和原理",
+      "createdAt": "2026-04-08T01:01:34.626Z",
+      "updatedAt": "2026-04-08T01:01:34.626Z"
+    },
+    {
+      "sessionId": "019d6a98-05f4-78f2-ba97-04cb3dc24f41",
+      "agentId": "codex-acp",
+      "cwd": "D:\\paper_reading\\paper_reading",
+      "title": "你快速但简单直白的给我讲讲DLA的算法和原理",
+      "createdAt": "2026-04-08T00:58:49.534Z",
+      "updatedAt": "2026-04-08T00:58:49.535Z"
+    },
+    {
+      "sessionId": "019d626f-a6b0-7a33-aefe-08728bf94e7a",
+      "agentId": "codex-acp",
+      "cwd": "D:\\paper_reading\\paper_reading",
+      "title": "把papers_sources/Delving into Decision-based Black-...",
+      "createdAt": "2026-04-06T11:46:52.409Z",
+      "updatedAt": "2026-04-06T11:46:52.409Z"
+    },
+    {
+      "sessionId": "019d622b-b009-7193-9aaf-ecf420709587",
+      "agentId": "codex-acp",
+      "cwd": "D:\\paper_reading\\paper_reading",
+      "title": "把papers_sources/Delving into Decision-based Black-...",
+      "createdAt": "2026-04-06T10:51:20.259Z",
+      "updatedAt": "2026-04-06T10:51:20.259Z"
+    },
+    {
+      "sessionId": "019d6224-1b5f-7af0-803d-20e85031e7ff",
+      "agentId": "codex-acp",
+      "cwd": "D:\\paper_reading\\paper_reading",
+      "title": "把papers_sources/Delving into Decision-based Black-...",
+      "createdAt": "2026-04-06T09:42:15.322Z",
+      "updatedAt": "2026-04-06T09:42:15.322Z"
+    },
+    {
+      "sessionId": "019d61f4-a562-7d63-9987-31eb518afe8f",
+      "agentId": "codex-acp",
+      "cwd": "D:\\paper_reading\\paper_reading",
+      "title": "结合papers_sources/Delving into Decision-based Black...",
+      "createdAt": "2026-04-06T08:48:17.085Z",
+      "updatedAt": "2026-04-06T08:48:17.085Z"
+    },
+    {
+      "sessionId": "019d61ea-b6c3-75e2-b017-e5b3b1521bf2",
+      "agentId": "codex-acp",
+      "cwd": "D:\\paper_reading\\paper_reading",
+      "title": "帮我新建一个笔记，记录阅读“Delving into Decision-based Black-bo...",
+      "createdAt": "2026-04-06T08:34:13.206Z",
+      "updatedAt": "2026-04-06T08:34:13.206Z"
+    },
+    {
+      "sessionId": "019d61e8-da8e-7c50-a3d6-261faf747f0a",
+      "agentId": "codex-acp",
+      "cwd": "D:\\paper_reading\\paper_reading",
+      "title": "hi",
+      "createdAt": "2026-04-06T08:29:29.125Z",
+      "updatedAt": "2026-04-06T08:29:29.140Z"
+    }
+  ],
+  "lastUsedModels": {},
+  "lastUsedModes": {
+    "codex-acp": "full-access"
+  },
+  "enableFloatingChat": false,
+  "floatingButtonImage": "",
+  "floatingWindowSize": {
+    "width": 400,
+    "height": 500
+  },
+  "floatingWindowPosition": null,
+  "floatingButtonPosition": null
+}

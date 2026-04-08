@@ -1,0 +1,73 @@
+{
+   "sources" : [
+      {
+         "usage" : "toplevel",
+         "filename" : "main.tex"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "figures/attack_power.pdf"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "figures/barplot_CIFAR10.pdf"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "figures/barplot_IMAGENET.pdf"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "figures/fig1.pdf"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "figures/fig2.pdf"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "figures/fig3.pdf"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "figures/fig4.pdf"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "figures/fig5.pdf"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "figures/fig6.pdf"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "figures/figure1.pdf"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "figures/figure_CIFAR10.pdf"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "figures/figure_imagenet.pdf"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "figures/operator.pdf"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "figures/pipeline.png"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "satml.bib"
+      }
+   ],
+   "spec_version" : 1,
+   "texlive_version" : "2025",
+   "process" : {
+      "compiler" : "pdflatex"
+   }
+}

@@ -1,0 +1,43 @@
+---
+title: Loss of Plasticity in Continual Learning
+category: concept
+tags:
+  - concept
+  - continual-learning
+  - optimization
+  - representation
+sources:
+  - papers_sources/Maintaining Plasticity in Deep Continual Learning/arxiv.tex
+created: 2026-04-08
+updated: 2026-04-08
+summary: 可塑性丧失指模型在持续学习中逐步失去学习新任务的能力，区别于灾难性遗忘，需单独监测与干预。
+provenance:
+  extracted: 0.9
+  inferred: 0.08
+  ambiguous: 0.02
+---
+
+# Loss of Plasticity in Continual Learning
+
+## 定义
+
+模型在持续任务流中逐步降低“继续学习新任务”的能力，即使不是主要由遗忘旧任务引起。
+
+## 与灾难性遗忘区别
+
+- 灾难性遗忘：旧知识保持失败。
+- 可塑性丧失：新知识吸收能力衰退。
+- 两者可同时存在，但成因与修复路径不完全相同。
+
+## 观测信号
+
+- 长任务序列表现持续下滑。
+- 死单元比例上升、权重幅度扩大、有效秩下降。
+
+## 关联页面
+
+- [[references/Maintaining Plasticity in Deep Continual Learning]]
+- [[concepts/Continual Backpropagation]]
+- [[concepts/Feature Effective Rank Diagnostics]]
+- [[concepts/Selective Neuron Reinitialization]]
+- [[synthesis/Continual Learning Plasticity Maintenance Playbook]]

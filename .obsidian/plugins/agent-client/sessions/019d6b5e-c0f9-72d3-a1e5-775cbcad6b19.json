@@ -1,0 +1,3459 @@
+{
+  "version": 1,
+  "sessionId": "019d6b5e-c0f9-72d3-a1e5-775cbcad6b19",
+  "agentId": "codex-acp",
+  "messages": [
+    {
+      "id": "9f37555f-26c0-45ce-be7d-f440d8a6690c",
+      "role": "user",
+      "content": [
+        {
+          "type": "text_with_context",
+          "text": "wiki setup",
+          "autoMentionContext": {
+            "noteName": "index",
+            "notePath": "index.md"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:34:29.850Z"
+    },
+    {
+      "id": "318d0a64-dfce-45e5-a328-685f4d3cd2b5",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "I’ll treat this as a request to initialize a practical Obsidian wiki structure in this vault, starting by checking the current `index.md` and existing folders so I can set up without breaking your current layout. I’m inspecting the workspace now."
+        }
+      ],
+      "timestamp": "2026-04-08T04:34:50.198Z"
+    },
+    {
+      "id": "8cb374a6-c4f7-4210-bb33-533580010162",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_iWjRolGxKsoG91cR11ah6ft4",
+          "title": "Run Get-Content -Raw index.md",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_iWjRolGxKsoG91cR11ah6ft4",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw index.md"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw index.md"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:34:53.116Z"
+    },
+    {
+      "id": "3776f33f-5ebc-47aa-ba2e-ff7dae2888f2",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_ZJhITnkeyIKNFX3pgc9JIg41",
+          "title": "Run Get-ChildItem -Force",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_ZJhITnkeyIKNFX3pgc9JIg41",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-ChildItem -Force"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-ChildItem -Force"
+              }
+            ],
+            "source": "agent"
+          }
+        },
+        {
+          "type": "text",
+          "text": "I found the vault skeleton already exists. Next I’m checking what content is actually present (and whether setup gaps are missing links/pages) before I apply any edits."
+        }
+      ],
+      "timestamp": "2026-04-08T04:34:53.116Z"
+    },
+    {
+      "id": "feb4c296-e438-4218-af89-d0b31a8bc092",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_JXASBD4FehYEFXcBmQBQpYTt",
+          "title": "Run rg --files",
+          "status": "failed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_JXASBD4FehYEFXcBmQBQpYTt",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "rg --files"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "rg --files"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:35:02.349Z"
+    },
+    {
+      "id": "202d9205-9389-40ce-9742-9635c6948e4d",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_x0hpm9sBUEUj1ZaPF8OekVAd",
+          "title": "Run Get-Content -Raw -Encoding utf8 index.md",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_x0hpm9sBUEUj1ZaPF8OekVAd",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 index.md"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 index.md"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:35:02.399Z"
+    },
+    {
+      "id": "d26ea94a-ced4-4204-9565-058fe544c6fb",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_yqrNUnwhjQ2hjjiG4WjJNds7",
+          "title": "Run Get-ChildItem -Recurse -File | Select-Object FullName,Length,LastWriteTime",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_yqrNUnwhjQ2hjjiG4WjJNds7",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-ChildItem -Recurse -File | Select-Object FullName,Length,LastWriteTime"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-ChildItem -Recurse -File | Select-Object FullName,Length,LastWriteTime"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:35:06.983Z"
+    },
+    {
+      "id": "e3016c52-c074-4541-a731-86e10d1c0b26",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_x3xQ35D7ByTtV0QanItFhhtt",
+          "title": "Run Get-ChildItem -Recurse -Filter *.md | Where-Object { $_.FullName -notmatch '\\\\.obsidian\\\\' -and $_.FullName -notmatch '\\\\_imports\\\\' } | Select-Object -ExpandProperty FullName",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_x3xQ35D7ByTtV0QanItFhhtt",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-ChildItem -Recurse -Filter *.md | Where-Object { $_.FullName -notmatch '\\\\.obsidian\\\\' -and $_.FullName -notmatch '\\\\_imports\\\\' } | Select-Object -ExpandProperty FullName"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-ChildItem -Recurse -Filter *.md | Where-Object { $_.FullName -notmatch '\\\\.obsidian\\\\' -and $_.FullName -notmatch '\\\\_imports\\\\' } | Select-Object -ExpandProperty FullName"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:35:15.333Z"
+    },
+    {
+      "id": "b324cfdb-a5de-48d9-8531-68c1ff7886d9",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_UeIxtJNLUGrn4YNFPtvkHB76",
+          "title": "Run Get-ChildItem -Directory | ForEach-Object { $count=(Get-ChildItem $_.FullName -Recurse -Filter *.md -ErrorAction SilentlyContinue).Count; \"{0}`t{1}\" -f $_.Name,$count }",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_UeIxtJNLUGrn4YNFPtvkHB76",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-ChildItem -Directory | ForEach-Object { $count=(Get-ChildItem $_.FullName -Recurse -Filter *.md -ErrorAction SilentlyContinue).Count; \"{0}`t{1}\" -f $_.Name,$count }"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-ChildItem -Directory | ForEach-Object { $count=(Get-ChildItem $_.FullName -Recurse -Filter *.md -ErrorAction SilentlyContinue).Count; \"{0}`t{1}\" -f $_.Name,$count }"
+              }
+            ],
+            "source": "agent"
+          }
+        },
+        {
+          "type": "text",
+          "text": "The vault has source notes but your core knowledge layers (`references/`, `concepts/`, `synthesis/`, `projects/`) are still empty. I’m reading your template and a couple of notes next so the setup matches your current format."
+        }
+      ],
+      "timestamp": "2026-04-08T04:35:15.368Z"
+    },
+    {
+      "id": "7611f783-a2c7-4acf-a4ab-d93d0899c075",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_b8Ylx1E1SESBr90ByjpKtPO0",
+          "title": "Run Get-Content -Raw -Encoding utf8 Templates\\论文阅读模板.md",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_b8Ylx1E1SESBr90ByjpKtPO0",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 Templates\\论文阅读模板.md"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 Templates\\论文阅读模板.md"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:35:26.456Z"
+    },
+    {
+      "id": "377ed82c-a485-45ae-9ffc-fa4f628405f9",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_TYwR9CoAGZR14C3pn2Wet3Ts",
+          "title": "Run Get-Content -Raw -Encoding utf8 notes\\Hyena Hierarchy.md",
+          "status": "failed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_TYwR9CoAGZR14C3pn2Wet3Ts",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 notes\\Hyena Hierarchy.md"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 notes\\Hyena Hierarchy.md"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:35:26.537Z"
+    },
+    {
+      "id": "05c3465d-4f79-49fb-82c8-81e161a4f193",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_U90C8zYaOZHODiO0oaTZmtoY",
+          "title": "Run Get-Content -Raw -Encoding utf8 notes\\CIF Continuous Integrate-and-Fire.md",
+          "status": "failed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_U90C8zYaOZHODiO0oaTZmtoY",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 notes\\CIF Continuous Integrate-and-Fire.md"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 notes\\CIF Continuous Integrate-and-Fire.md"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:35:26.541Z"
+    },
+    {
+      "id": "54d37f4a-416a-41ed-9e78-181723aff02b",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_sL352qqB9HDJj9IaYr85VcDf",
+          "title": "Run Get-Content -Raw -Encoding utf8 'notes\\CIF Continuous Integrate-and-Fire.md'",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_sL352qqB9HDJj9IaYr85VcDf",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 'notes\\CIF Continuous Integrate-and-Fire.md'"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 'notes\\CIF Continuous Integrate-and-Fire.md'"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:35:31.651Z"
+    },
+    {
+      "id": "b6334a16-abe7-4da5-846f-dcb7b1590122",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_bPKoTLQE96M6Jb2P5QjtPNQz",
+          "title": "Run Get-Content -Raw -Encoding utf8 'notes\\Hyena Hierarchy.md'",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_bPKoTLQE96M6Jb2P5QjtPNQz",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 'notes\\Hyena Hierarchy.md'"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 'notes\\Hyena Hierarchy.md'"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:35:36.471Z"
+    },
+    {
+      "id": "f94d2c7a-4af1-4908-b95e-adf6f65522a2",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_hGvIYnOSdymdKf05kYK8JFHA",
+          "title": "Run Get-Content -Raw -Encoding utf8 .manifest.json",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_hGvIYnOSdymdKf05kYK8JFHA",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 .manifest.json"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 .manifest.json"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:35:43.435Z"
+    },
+    {
+      "id": "65ef845f-cb69-4c3d-a09e-07932df9e079",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_OGRSF6ww6bMgYW6nyL4zQlN2",
+          "title": "Run Get-Content -Raw -Encoding utf8 log.md",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_OGRSF6ww6bMgYW6nyL4zQlN2",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 log.md"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 log.md"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:35:43.476Z"
+    },
+    {
+      "id": "39ad40b2-9eb4-4cff-82e7-7620a9445674",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_e458qv8qCHEVKJUzUqC3AUnt",
+          "title": "Run Get-Content -Raw -Encoding utf8 'notes\\Research-Paper-Notes 导入索引.md'",
+          "status": "failed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_e458qv8qCHEVKJUzUqC3AUnt",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 'notes\\Research-Paper-Notes 导入索引.md'"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 'notes\\Research-Paper-Notes 导入索引.md'"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:35:49.536Z"
+    },
+    {
+      "id": "caaf8613-ef52-4cd0-800e-0df7764686ce",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_fKnFJ7lafgWsbHT0SWRWwGiz",
+          "title": "Run Get-ChildItem notes | Select-Object -ExpandProperty Name",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_fKnFJ7lafgWsbHT0SWRWwGiz",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-ChildItem notes | Select-Object -ExpandProperty Name"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-ChildItem notes | Select-Object -ExpandProperty Name"
+              }
+            ],
+            "source": "agent"
+          }
+        },
+        {
+          "type": "text",
+          "text": "I have enough context to apply a real setup pass. I’m going to make the vault operational as a wiki hub rather than just a folder list.\n\nPlan:\n1. Upgrade `index.md` into a true start page with clickable wikilinks, workflow, and “what to do next”.\n2. Create MOC/index pages in the currently empty knowledge layers (`references/`, `concepts/`, `synthesis/`, `projects/`, `entities/`, `journal/`) so they are usable immediately.\n3. Add a `notes` index page that links your existing imported paper notes for fast navigation.\n4. Verify links resolve and summarize what’s ready for you in Obsidian.I’m now editing the vault: upgrading the home page and creating the missing MOC/index pages in each core folder so your wiki graph and navigation are immediately usable."
+        }
+      ],
+      "timestamp": "2026-04-08T04:35:54.602Z"
+    },
+    {
+      "id": "e355b2fd-540c-49eb-adc5-f87db6cfef8c",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_2zQrY7sVpsHJYohTjp1poDJu",
+          "title": "Edit D:/paper_reading/paper_reading/index.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/index.md",
+              "newText": "title: Wiki 首页\naliases:\n  - Home\n---\n\n# 论文阅读 Wiki\n\n这是你的论文阅读知识库入口。\n\n## 快速入口\n\n- [[notes/index|Notes 总览]]\n- [[references/index|References（单篇摘要）]]\n- [[concepts/index|Concepts（可复用概念）]]\n- [[synthesis/index|Synthesis（跨论文总结）]]\n- [[projects/index|Projects（专题项目）]]\n- [[entities/index|Entities（作者/机构/模型）]]\n- [[journal/index|Journal（阅读日志）]]\n- [[log|系统日志]]\n\n## 当前资产\n\n- 已导入论文笔记：6 篇（见 [[notes/index]]）\n- 原始资料：[[papers_sources]]\n- 模板：[[Templates/论文阅读模板|论文阅读模板]]\n\n## 推荐工作流\n\n1. 把原始 PDF/源码/草稿放入 [[papers_sources]]\n2. 在 [[notes]] 产出单篇阅读笔记（建议用模板）\n3. 将单篇结论沉淀到 [[references/index]]\n4. 抽取可复用方法、术语、公式到 [[concepts/index]]\n5. 在 [[synthesis/index]] 做跨论文对比和总结\n\n## 本周可做\n\n- [ ] 为每篇已读笔记至少提炼 3 个概念页\n- [ ] 在 `references/` 补齐单篇摘要卡\n- [ ] 新建一个 `projects/` 专题页（例如“长上下文建模”）\n",
+              "oldText": "title: Wiki 首页\n---\n\n# Wiki 首页\n\n这是你的论文阅读 wiki 入口页。\n\n## 目录说明\n\n- `notes/`：论文阅读笔记\n- `papers_sources/`：论文原文、翻译、源码包等原始材料\n- `references/`：单篇论文摘要\n- `concepts/`：可复用概念\n- `synthesis/`：跨论文总结\n- `projects/`：专题项目\n- `_archives/`：归档\n\n## 使用建议\n\n- 原始资料放在 `papers_sources/`\n- 阅读结论优先沉淀到 `references/`、`concepts/`、`synthesis/`\n- 想看连接关系时，打开 Graph View\n"
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/index.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_2zQrY7sVpsHJYohTjp1poDJu",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/index.md": {
+                "type": "update",
+                "unified_diff": "@@ -2,22 +2,39 @@\n title: Wiki 首页\n+aliases:\n+  - Home\n ---\n \n-# Wiki 首页\n+# 论文阅读 Wiki\n \n-这是你的论文阅读 wiki 入口页。\n+这是你的论文阅读知识库入口。\n \n-## 目录说明\n+## 快速入口\n \n-- `notes/`：论文阅读笔记\n-- `papers_sources/`：论文原文、翻译、源码包等原始材料\n-- `references/`：单篇论文摘要\n-- `concepts/`：可复用概念\n-- `synthesis/`：跨论文总结\n-- `projects/`：专题项目\n-- `_archives/`：归档\n+- [[notes/index|Notes 总览]]\n+- [[references/index|References（单篇摘要）]]\n+- [[concepts/index|Concepts（可复用概念）]]\n+- [[synthesis/index|Synthesis（跨论文总结）]]\n+- [[projects/index|Projects（专题项目）]]\n+- [[entities/index|Entities（作者/机构/模型）]]\n+- [[journal/index|Journal（阅读日志）]]\n+- [[log|系统日志]]\n \n-## 使用建议\n+## 当前资产\n+\n+- 已导入论文笔记：6 篇（见 [[notes/index]]）\n+- 原始资料：[[papers_sources]]\n+- 模板：[[Templates/论文阅读模板|论文阅读模板]]\n+\n+## 推荐工作流\n+\n+1. 把原始 PDF/源码/草稿放入 [[papers_sources]]\n+2. 在 [[notes]] 产出单篇阅读笔记（建议用模板）\n+3. 将单篇结论沉淀到 [[references/index]]\n+4. 抽取可复用方法、术语、公式到 [[concepts/index]]\n+5. 在 [[synthesis/index]] 做跨论文对比和总结\n \n-- 原始资料放在 `papers_sources/`\n-- 阅读结论优先沉淀到 `references/`、`concepts/`、`synthesis/`\n-- 想看连接关系时，打开 Graph View\n+## 本周可做\n+\n+- [ ] 为每篇已读笔记至少提炼 3 个概念页\n+- [ ] 在 `references/` 补齐单篇摘要卡\n+- [ ] 新建一个 `projects/` 专题页（例如“长上下文建模”）\n",
+                "move_path": null
+              }
+            }
+          }
+        },
+        {
+          "type": "text",
+          "text": "The homepage is updated. Next I’m adding index pages under `notes/references/concepts/synthesis/projects/entities/journal` with starter structure and links to your existing paper notes."
+        }
+      ],
+      "timestamp": "2026-04-08T04:36:26.321Z"
+    },
+    {
+      "id": "2e81c892-30fb-4757-af8e-9fed48d1e27d",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_ZWCR2qwCbS1n8S8jVOIdUUFN",
+          "title": "Edit D:/paper_reading/paper_reading/notes/index.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/notes/index.md",
+              "newText": "---\ntitle: Notes 索引\n---\n\n# Notes 索引\n\n单篇论文阅读笔记入口。\n\n## 已有笔记\n\n- [[notes/CIF Continuous Integrate-and-Fire|CIF Continuous Integrate-and-Fire]]\n- [[notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation|Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n- [[notes/GPT-ST Spatio-Temporal Pretraining|GPT-ST Spatio-Temporal Pretraining]]\n- [[notes/Hyena Hierarchy|Hyena Hierarchy]]\n- [[notes/Language Models Represent Space and Time|Language Models Represent Space and Time]]\n- [[notes/PanGu-pi Nonlinearity Compensation|PanGu-pi Nonlinearity Compensation]]\n\n## 待办\n\n- [ ] 给每篇笔记补齐作者/机构/会议信息\n- [ ] 每篇笔记补 3 个以上双向链接（concept、entity、synthesis）\n\n",
+              "oldText": null
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/notes/index.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_ZWCR2qwCbS1n8S8jVOIdUUFN",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/notes/index.md": {
+                "type": "add",
+                "content": "---\ntitle: Notes 索引\n---\n\n# Notes 索引\n\n单篇论文阅读笔记入口。\n\n## 已有笔记\n\n- [[notes/CIF Continuous Integrate-and-Fire|CIF Continuous Integrate-and-Fire]]\n- [[notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation|Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n- [[notes/GPT-ST Spatio-Temporal Pretraining|GPT-ST Spatio-Temporal Pretraining]]\n- [[notes/Hyena Hierarchy|Hyena Hierarchy]]\n- [[notes/Language Models Represent Space and Time|Language Models Represent Space and Time]]\n- [[notes/PanGu-pi Nonlinearity Compensation|PanGu-pi Nonlinearity Compensation]]\n\n## 待办\n\n- [ ] 给每篇笔记补齐作者/机构/会议信息\n- [ ] 每篇笔记补 3 个以上双向链接（concept、entity、synthesis）\n\n"
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:36:34.089Z"
+    },
+    {
+      "id": "2560f423-9847-4303-b374-cce5a7f25110",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_6PpF8zT86ZAbBEWDsp5CPZfI",
+          "title": "Edit D:/paper_reading/paper_reading/references/index.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/references/index.md",
+              "newText": "---\ntitle: References 索引\n---\n\n# References 索引\n\n单篇论文摘要与结论沉淀区。\n\n## 用法\n\n- 每篇论文保留一页“可复用摘要卡”\n- 重点记录：问题、方法、结论、边界、可迁移点\n- 与对应 `notes/` 页面建立双向链接\n\n## 页面清单\n\n- 暂无（从 [[notes/index]] 开始沉淀）\n\n",
+              "oldText": null
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/references/index.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_6PpF8zT86ZAbBEWDsp5CPZfI",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/references/index.md": {
+                "type": "add",
+                "content": "---\ntitle: References 索引\n---\n\n# References 索引\n\n单篇论文摘要与结论沉淀区。\n\n## 用法\n\n- 每篇论文保留一页“可复用摘要卡”\n- 重点记录：问题、方法、结论、边界、可迁移点\n- 与对应 `notes/` 页面建立双向链接\n\n## 页面清单\n\n- 暂无（从 [[notes/index]] 开始沉淀）\n\n"
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:36:39.922Z"
+    },
+    {
+      "id": "a689030f-1243-467c-8d0a-b9522a0788a7",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_ZF2RsTLXEYMI8Qs3xsnMEkK2",
+          "title": "Edit D:/paper_reading/paper_reading/concepts/index.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/concepts/index.md",
+              "newText": "---\ntitle: Concepts 索引\n---\n\n# Concepts 索引\n\n跨论文复用的术语、方法、模块、评测范式。\n\n## 用法\n\n- 一个概念一页，标题尽量标准化\n- 必须写“定义 + 适用场景 + 局限 + 关联论文”\n- 用 `[[concepts/...]]` 做横向连接\n\n## 建议优先创建\n\n- 单调对齐（Monotonic Alignment）\n- 长上下文建模（Long-context Modeling）\n- 非自回归解码（Non-autoregressive Decoding）\n- 数据控制门控（Data-controlled Gating）\n\n",
+              "oldText": null
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/concepts/index.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_ZF2RsTLXEYMI8Qs3xsnMEkK2",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/concepts/index.md": {
+                "type": "add",
+                "content": "---\ntitle: Concepts 索引\n---\n\n# Concepts 索引\n\n跨论文复用的术语、方法、模块、评测范式。\n\n## 用法\n\n- 一个概念一页，标题尽量标准化\n- 必须写“定义 + 适用场景 + 局限 + 关联论文”\n- 用 `[[concepts/...]]` 做横向连接\n\n## 建议优先创建\n\n- 单调对齐（Monotonic Alignment）\n- 长上下文建模（Long-context Modeling）\n- 非自回归解码（Non-autoregressive Decoding）\n- 数据控制门控（Data-controlled Gating）\n\n"
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:36:45.139Z"
+    },
+    {
+      "id": "e9b4bf6c-6a55-41f1-abfa-ea6a65b0f3ef",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_8G2VafBxIWb1BNge3xgx2aOI",
+          "title": "Edit D:/paper_reading/paper_reading/synthesis/index.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/synthesis/index.md",
+              "newText": "---\ntitle: Synthesis 索引\n---\n\n# Synthesis 索引\n\n面向主题的跨论文比较和整合结论。\n\n## 推荐结构\n\n- 研究主题\n- 代表方法与差异\n- 数据与指标对齐\n- 可复用启发\n- 下一步实验计划\n\n## 主题候选\n\n- 长上下文替代注意力路线\n- 时空建模预训练范式\n- 对齐机制在序列建模中的作用\n\n",
+              "oldText": null
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/synthesis/index.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_8G2VafBxIWb1BNge3xgx2aOI",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/synthesis/index.md": {
+                "type": "add",
+                "content": "---\ntitle: Synthesis 索引\n---\n\n# Synthesis 索引\n\n面向主题的跨论文比较和整合结论。\n\n## 推荐结构\n\n- 研究主题\n- 代表方法与差异\n- 数据与指标对齐\n- 可复用启发\n- 下一步实验计划\n\n## 主题候选\n\n- 长上下文替代注意力路线\n- 时空建模预训练范式\n- 对齐机制在序列建模中的作用\n\n"
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:36:52.822Z"
+    },
+    {
+      "id": "412f3ba1-cbf2-4909-af3d-531bf4ec072b",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_8MFwKBiCxTFcHqK9MkLdn4ei",
+          "title": "Edit D:/paper_reading/paper_reading/projects/index.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/projects/index.md",
+              "newText": "---\ntitle: Projects 索引\n---\n\n# Projects 索引\n\n面向可执行目标的专题项目页。\n\n## 项目页建议字段\n\n- 目标与范围\n- 关键问题\n- 相关论文与概念链接\n- 实验计划与里程碑\n- 当前结论与下一步\n\n## 建议新建\n\n- [ ] 长上下文模型路线图\n- [ ] 语音对齐机制调研\n\n",
+              "oldText": null
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/projects/index.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_8MFwKBiCxTFcHqK9MkLdn4ei",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/projects/index.md": {
+                "type": "add",
+                "content": "---\ntitle: Projects 索引\n---\n\n# Projects 索引\n\n面向可执行目标的专题项目页。\n\n## 项目页建议字段\n\n- 目标与范围\n- 关键问题\n- 相关论文与概念链接\n- 实验计划与里程碑\n- 当前结论与下一步\n\n## 建议新建\n\n- [ ] 长上下文模型路线图\n- [ ] 语音对齐机制调研\n\n"
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:36:57.839Z"
+    },
+    {
+      "id": "a4833ceb-a1c8-485f-831b-f81c04eae9fa",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_guWarguNJGoIjbeVwo0Pofoq",
+          "title": "Edit D:/paper_reading/paper_reading/entities/index.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/entities/index.md",
+              "newText": "---\ntitle: Entities 索引\n---\n\n# Entities 索引\n\n作者、机构、模型、数据集等实体页索引。\n\n## 用法\n\n- 作者页：代表论文、研究方向、关联机构\n- 机构页：代表工作、方法风格\n- 模型页：核心机制、优缺点、适用任务\n- 数据集页：任务定义、指标、常见陷阱\n\n## 待补\n\n- 暂无（从现有 `notes/` 的作者与模型开始提取）\n\n",
+              "oldText": null
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/entities/index.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_guWarguNJGoIjbeVwo0Pofoq",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/entities/index.md": {
+                "type": "add",
+                "content": "---\ntitle: Entities 索引\n---\n\n# Entities 索引\n\n作者、机构、模型、数据集等实体页索引。\n\n## 用法\n\n- 作者页：代表论文、研究方向、关联机构\n- 机构页：代表工作、方法风格\n- 模型页：核心机制、优缺点、适用任务\n- 数据集页：任务定义、指标、常见陷阱\n\n## 待补\n\n- 暂无（从现有 `notes/` 的作者与模型开始提取）\n\n"
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:37:03.056Z"
+    },
+    {
+      "id": "179f027e-13dd-48fe-91b6-ced470b7c736",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_E98nn9nbuBUF3hzUiCXjxSB0",
+          "title": "Edit D:/paper_reading/paper_reading/journal/index.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/journal/index.md",
+              "newText": "---\ntitle: Journal 索引\n---\n\n# Journal 索引\n\n阅读过程记录与反思入口。\n\n## 建议记录模板\n\n- 日期\n- 今日阅读论文\n- 关键收获\n- 待验证问题\n- 明日计划\n\n## 相关页面\n\n- 系统操作日志：[[log]]\n\n",
+              "oldText": null
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/journal/index.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_E98nn9nbuBUF3hzUiCXjxSB0",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/journal/index.md": {
+                "type": "add",
+                "content": "---\ntitle: Journal 索引\n---\n\n# Journal 索引\n\n阅读过程记录与反思入口。\n\n## 建议记录模板\n\n- 日期\n- 今日阅读论文\n- 关键收获\n- 待验证问题\n- 明日计划\n\n## 相关页面\n\n- 系统操作日志：[[log]]\n\n"
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:37:06.830Z"
+    },
+    {
+      "id": "9e09ee18-85e9-4577-b501-4fb809ff6622",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_5gaglda7IJU2xFhERKuMOsks",
+          "title": "Run git status --short",
+          "status": "failed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_5gaglda7IJU2xFhERKuMOsks",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "git status --short"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "git status --short"
+              }
+            ],
+            "source": "agent"
+          }
+        },
+        {
+          "type": "text",
+          "text": "I’ve finished the file creation and I’m doing a quick verification pass on the new pages and links before handing back."
+        }
+      ],
+      "timestamp": "2026-04-08T04:37:10.973Z"
+    },
+    {
+      "id": "5cd56f1e-c908-40d2-9c30-610ee678fc22",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_MupQywi2NljXup16aKBqOUNc",
+          "title": "Run Get-Content -Raw -Encoding utf8 notes\\index.md",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_MupQywi2NljXup16aKBqOUNc",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 notes\\index.md"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 notes\\index.md"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:37:18.941Z"
+    },
+    {
+      "id": "c2776003-3fad-41bb-87e3-620050853e09",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_ATIjCdjLu0I36PiFogzeCbb8",
+          "title": "Run Get-Content -Raw -Encoding utf8 index.md",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_ATIjCdjLu0I36PiFogzeCbb8",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 index.md"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 index.md"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:37:19.124Z"
+    },
+    {
+      "id": "f10e5d25-8187-4e0c-adce-c94661ba50d6",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_J6oGCBSSJXenSDea1oVpME9P",
+          "title": "Run Get-Content -Raw -Encoding utf8 references\\index.md",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_J6oGCBSSJXenSDea1oVpME9P",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 references\\index.md"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 references\\index.md"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:37:19.159Z"
+    },
+    {
+      "id": "4533a633-da4f-4f4c-90c8-fab578e05d8d",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_3uVjcuD6QqRJCeWVCKF2cP9K",
+          "title": "Run Get-Content -Raw -Encoding utf8 concepts\\index.md",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_3uVjcuD6QqRJCeWVCKF2cP9K",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 concepts\\index.md"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 concepts\\index.md"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:37:19.240Z"
+    },
+    {
+      "id": "54276db0-d23a-4a58-a4a1-7ca3ffa1fdde",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_Kp0qx7jHTC877dop1j63d7cn",
+          "title": "Run Get-Content -Raw -Encoding utf8 synthesis\\index.md",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_Kp0qx7jHTC877dop1j63d7cn",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 synthesis\\index.md"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 synthesis\\index.md"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:37:29.124Z"
+    },
+    {
+      "id": "6fbb8213-727a-4721-b03d-56471e45face",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_lTFHVmubTmnOD8XVmVhw5Pvj",
+          "title": "Run Get-Content -Raw -Encoding utf8 projects\\index.md",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_lTFHVmubTmnOD8XVmVhw5Pvj",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 projects\\index.md"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 projects\\index.md"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:37:29.243Z"
+    },
+    {
+      "id": "2d75f6cb-0fc0-4af7-af72-ba928d74cb0c",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_lZFAIJbD7pEbLSf6GE1MNQ9C",
+          "title": "Run Get-Content -Raw -Encoding utf8 entities\\index.md",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_lZFAIJbD7pEbLSf6GE1MNQ9C",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 entities\\index.md"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 entities\\index.md"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:37:29.311Z"
+    },
+    {
+      "id": "7e7084c8-fc79-4b08-a446-c5fdd4c0fe70",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_L73KXtMsBl6rqQlqSY1qAIr9",
+          "title": "Run Get-Content -Raw -Encoding utf8 journal\\index.md",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_L73KXtMsBl6rqQlqSY1qAIr9",
+            "turn_id": "019d6b5e-d35c-7a40-b2af-d9970259fe9d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 journal\\index.md"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 journal\\index.md"
+              }
+            ],
+            "source": "agent"
+          }
+        },
+        {
+          "type": "text",
+          "text": "已完成你的 wiki setup。现在这个 vault 从“目录集合”变成了可导航的知识库入口：主页 `index.md` 已改成可点击的 MOC 首页，并新增了 `notes / references / concepts / synthesis / projects / entities / journal` 的索引页，Graph View 会比之前更容易连起来。\n\n改动文件：\n- [index.md](/D:/paper_reading/paper_reading/index.md)\n- [notes/index.md](/D:/paper_reading/paper_reading/notes/index.md)\n- [references/index.md](/D:/paper_reading/paper_reading/references/index.md)\n- [concepts/index.md](/D:/paper_reading/paper_reading/concepts/index.md)\n- [synthesis/index.md](/D:/paper_reading/paper_reading/synthesis/index.md)\n- [projects/index.md](/D:/paper_reading/paper_reading/projects/index.md)\n- [entities/index.md](/D:/paper_reading/paper_reading/entities/index.md)\n- [journal/index.md](/D:/paper_reading/paper_reading/journal/index.md)\n\n如果你要，我下一步可以直接把你现有 6 篇 `notes` 自动拆成首批 `references` 和 `concepts` 页面（不是只建空壳，会填入内容和双向链接）。"
+        }
+      ],
+      "timestamp": "2026-04-08T04:37:29.359Z"
+    },
+    {
+      "id": "4d7960c6-e2af-43bf-949e-ffffc805fb14",
+      "role": "user",
+      "content": [
+        {
+          "type": "text_with_context",
+          "text": "wiki-ingest",
+          "autoMentionContext": {
+            "noteName": "index",
+            "notePath": "index.md"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:38:07.605Z"
+    },
+    {
+      "id": "b59298c5-f60a-488c-8faf-fa90a01f7313",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "I’ll run the `wiki-ingest` skill now and follow its workflow to ingest documents into your vault in a structured way. I’m first loading the skill instructions, then I’ll detect the best source folder and execute the ingestion pipeline."
+        }
+      ],
+      "timestamp": "2026-04-08T04:38:12.660Z"
+    },
+    {
+      "id": "993e1951-53a7-4b1f-9abd-91a4d3d0004e",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_njAkPjaKAG1V6JOJlb3tl8xU",
+          "title": "Run Get-Content -Raw -Encoding utf8 'C:/Users/Saputello/.codex/skills/.system/wiki-ingest/SKILL.md'",
+          "status": "failed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_njAkPjaKAG1V6JOJlb3tl8xU",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 'C:/Users/Saputello/.codex/skills/.system/wiki-ingest/SKILL.md'"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 'C:/Users/Saputello/.codex/skills/.system/wiki-ingest/SKILL.md'"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:38:14.017Z"
+    },
+    {
+      "id": "30e619cc-528b-4d58-aa88-618bbb91106f",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_A0Oo3GwJ1bWsZPdvvjQRTlfz",
+          "title": "Run Get-Content -Raw -Encoding utf8 'D:/Programs/obsidian-wiki/.skills/wiki-ingest/SKILL.md'",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_A0Oo3GwJ1bWsZPdvvjQRTlfz",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 'D:/Programs/obsidian-wiki/.skills/wiki-ingest/SKILL.md'"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 'D:/Programs/obsidian-wiki/.skills/wiki-ingest/SKILL.md'"
+              }
+            ],
+            "source": "agent"
+          }
+        },
+        {
+          "type": "text",
+          "text": "I loaded the `wiki-ingest` instructions from the available skill path and will execute its checklist now (env → manifest → index/log → append ingest). I’m checking the required config files next."
+        }
+      ],
+      "timestamp": "2026-04-08T04:38:19.313Z"
+    },
+    {
+      "id": "cdfea574-cb39-4cf7-addc-fe201234fad0",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_n908Wylaphovf177iuj5JfrE",
+          "title": "Run Get-Content -Raw -Encoding utf8 '.env'",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_n908Wylaphovf177iuj5JfrE",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 '.env'"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 '.env'"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:38:29.666Z"
+    },
+    {
+      "id": "9b29b27d-bd10-4e9d-8dbf-e221da9f621f",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_M8cGMkgrRslOb3w9xU2ng3s9",
+          "title": "Run Get-Content -Raw -Encoding utf8 '.manifest.json'",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_M8cGMkgrRslOb3w9xU2ng3s9",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 '.manifest.json'"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 '.manifest.json'"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:38:29.713Z"
+    },
+    {
+      "id": "76f77d6a-7b84-413c-be12-df1f1e80504d",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_CO55UOR4qrZ8U1rD7XrEtaWT",
+          "title": "Run Get-Content -Raw -Encoding utf8 'index.md'",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_CO55UOR4qrZ8U1rD7XrEtaWT",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 'index.md'"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 'index.md'"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:38:29.730Z"
+    },
+    {
+      "id": "fe70d065-1273-451e-9b51-20d4d4c6e05b",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_NKuup4rwZ1JtjgDxrUGWhDEt",
+          "title": "Run Get-Content -Raw -Encoding utf8 'log.md'",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_NKuup4rwZ1JtjgDxrUGWhDEt",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 'log.md'"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 'log.md'"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:38:29.839Z"
+    },
+    {
+      "id": "fed4ad43-14aa-4f8a-8da7-4ec94188f777",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_ydITDc3S0LEeKSpYpUxunZTF",
+          "title": "Run if (Test-Path 'D:/Programs/obsidian-wiki/.skills/wiki-ingest/references/ingest-prompts.md') { Get-Content -Raw -Encoding utf8 'D:/Programs/obsidian-wiki/.skills/wiki-ingest/references/ingest-prompts.md' } else { 'NO_INGEST_PROMPTS' }",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_ydITDc3S0LEeKSpYpUxunZTF",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "if (Test-Path 'D:/Programs/obsidian-wiki/.skills/wiki-ingest/references/ingest-prompts.md') { Get-Content -Raw -Encoding utf8 'D:/Programs/obsidian-wiki/.skills/wiki-ingest/references/ingest-prompts.md' } else { 'NO_INGEST_PROMPTS' }"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "if (Test-Path 'D:/Programs/obsidian-wiki/.skills/wiki-ingest/references/ingest-prompts.md') { Get-Content -Raw -Encoding utf8 'D:/Programs/obsidian-wiki/.skills/wiki-ingest/references/ingest-prompts.md' } else { 'NO_INGEST_PROMPTS' }"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:38:39.828Z"
+    },
+    {
+      "id": "f67940b5-227c-4ecf-a3c2-dae7364dfa3e",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_pl15R9zns0xZZMIQeipMAn5m",
+          "title": "Run Get-ChildItem -Force 'D:/Programs/obsidian-wiki/.skills/wiki-ingest'",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_pl15R9zns0xZZMIQeipMAn5m",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-ChildItem -Force 'D:/Programs/obsidian-wiki/.skills/wiki-ingest'"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-ChildItem -Force 'D:/Programs/obsidian-wiki/.skills/wiki-ingest'"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:38:39.895Z"
+    },
+    {
+      "id": "05a9c2e8-33f7-41fa-a083-7f4fa4345967",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_3iXpbqDwqWsSX9IH9Sdd0ysf",
+          "title": "Run Get-ChildItem -Force 'papers_sources' | Select-Object Name,FullName,Mode,LastWriteTime,Length",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_3iXpbqDwqWsSX9IH9Sdd0ysf",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-ChildItem -Force 'papers_sources' | Select-Object Name,FullName,Mode,LastWriteTime,Length"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-ChildItem -Force 'papers_sources' | Select-Object Name,FullName,Mode,LastWriteTime,Length"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:38:39.995Z"
+    },
+    {
+      "id": "c868527c-5587-4300-9811-7be2b06b2011",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_Q9R2ytt51zmQrrVgqNoMLPdF",
+          "title": "Run Get-ChildItem -Recurse -File 'papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation' | Select-Object FullName,Extension,Length,LastWriteTime",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_Q9R2ytt51zmQrrVgqNoMLPdF",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-ChildItem -Recurse -File 'papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation' | Select-Object FullName,Extension,Length,LastWriteTime"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-ChildItem -Recurse -File 'papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation' | Select-Object FullName,Extension,Length,LastWriteTime"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:38:49.145Z"
+    },
+    {
+      "id": "85a98d08-c9d8-4764-a92a-96ab553e7959",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_5TRTURq2eIieEFGSsKnJ28Lw",
+          "title": "Run Get-ChildItem -Recurse -File 'papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation' | Select-Object Name,DirectoryName,Extension,Length | Format-Table -AutoSize",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_5TRTURq2eIieEFGSsKnJ28Lw",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-ChildItem -Recurse -File 'papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation' | Select-Object Name,DirectoryName,Extension,Length | Format-Table -AutoSize"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-ChildItem -Recurse -File 'papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation' | Select-Object Name,DirectoryName,Extension,Length | Format-Table -AutoSize"
+              }
+            ],
+            "source": "agent"
+          }
+        },
+        {
+          "type": "text",
+          "text": "I found one untracked source folder with markdown + PDF/images, so I’ll ingest that in append mode and skip unchanged sources. I’m now reading the paper source markdown plus your current note to distill into `references/concepts/entities/synthesis`."
+        }
+      ],
+      "timestamp": "2026-04-08T04:38:56.812Z"
+    },
+    {
+      "id": "fca389c0-8d7a-4c81-9968-cafd95430a4a",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_NndRV41GouBULNThyBY52oLt",
+          "title": "Run Get-Content -Raw -Encoding utf8 'papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md'",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_NndRV41GouBULNThyBY52oLt",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 'papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md'"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 'papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md'"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:39:07.964Z"
+    },
+    {
+      "id": "afda7549-cd2a-43ad-88fc-6ddaa7140f54",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_nMVAUay3aeXvSzFN1ocHBIhW",
+          "title": "Run Get-Content -Raw -Encoding utf8 'papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation_zh.md'",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_nMVAUay3aeXvSzFN1ocHBIhW",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 'papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation_zh.md'"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 'papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation_zh.md'"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:39:07.981Z"
+    },
+    {
+      "id": "eae2be23-8106-4209-8f3b-a5c8aef4abda",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_dixRUFQ52yMv6lrf91JgQWdS",
+          "title": "Run Get-Content -Raw -Encoding utf8 'notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md'",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_dixRUFQ52yMv6lrf91JgQWdS",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 'notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md'"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 'notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md'"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:39:08.031Z"
+    },
+    {
+      "id": "4b8bf23a-ddba-4c5b-87aa-ab01009607ab",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_ksbSvTHir2q21jALkknEfjMM",
+          "title": "Run Get-ChildItem -Recurse -File 'D:/Programs/obsidian-wiki' | Where-Object { $_.Name -match 'llm-wiki|template|frontmatter' } | Select-Object -ExpandProperty FullName",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_ksbSvTHir2q21jALkknEfjMM",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-ChildItem -Recurse -File 'D:/Programs/obsidian-wiki' | Where-Object { $_.Name -match 'llm-wiki|template|frontmatter' } | Select-Object -ExpandProperty FullName"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-ChildItem -Recurse -File 'D:/Programs/obsidian-wiki' | Where-Object { $_.Name -match 'llm-wiki|template|frontmatter' } | Select-Object -ExpandProperty FullName"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:39:18.764Z"
+    },
+    {
+      "id": "2710a7ec-dbab-431f-994e-5814ab566dea",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_5LdPvC0Dqydo0omaTZDQgPJH",
+          "title": "Run Get-ChildItem -Force 'D:/Programs/obsidian-wiki/.skills'",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_5LdPvC0Dqydo0omaTZDQgPJH",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-ChildItem -Force 'D:/Programs/obsidian-wiki/.skills'"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-ChildItem -Force 'D:/Programs/obsidian-wiki/.skills'"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:39:24.030Z"
+    },
+    {
+      "id": "62ae8d47-4fee-445a-a277-b08d0b1471b3",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_SJoHiwxmmVUMgvDjc42sPhmF",
+          "title": "Run Get-Content -Raw -Encoding utf8 'D:/Programs/obsidian-wiki/.skills/llm-wiki/SKILL.md'",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_SJoHiwxmmVUMgvDjc42sPhmF",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 'D:/Programs/obsidian-wiki/.skills/llm-wiki/SKILL.md'"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 'D:/Programs/obsidian-wiki/.skills/llm-wiki/SKILL.md'"
+              }
+            ],
+            "source": "agent"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Before writing new pages, I’m checking the wiki’s tag taxonomy so the new `tags` fields follow your controlled vocabulary instead of ad hoc tags."
+        }
+      ],
+      "timestamp": "2026-04-08T04:39:33.814Z"
+    },
+    {
+      "id": "69a4be40-3951-499b-ab83-e6c55fb7bd29",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_7AWXh1Uq0U3SmH6Z3lrwtInF",
+          "title": "Run Get-Content -Raw -Encoding utf8 'D:/Programs/obsidian-wiki/.skills/tag-taxonomy/SKILL.md'",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_7AWXh1Uq0U3SmH6Z3lrwtInF",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 'D:/Programs/obsidian-wiki/.skills/tag-taxonomy/SKILL.md'"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 'D:/Programs/obsidian-wiki/.skills/tag-taxonomy/SKILL.md'"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:39:41.348Z"
+    },
+    {
+      "id": "977ad3a5-f994-4a2d-b428-f611e1aaf81e",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_HTTIysK5LBJ8yjFrUpKEFcKj",
+          "title": "Run if (Test-Path '_meta/taxonomy.md') { Get-Content -Raw -Encoding utf8 '_meta/taxonomy.md' } else { 'NO_TAXONOMY' }",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_HTTIysK5LBJ8yjFrUpKEFcKj",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "if (Test-Path '_meta/taxonomy.md') { Get-Content -Raw -Encoding utf8 '_meta/taxonomy.md' } else { 'NO_TAXONOMY' }"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "if (Test-Path '_meta/taxonomy.md') { Get-Content -Raw -Encoding utf8 '_meta/taxonomy.md' } else { 'NO_TAXONOMY' }"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:39:48.432Z"
+    },
+    {
+      "id": "042a0a85-6276-4fc0-9c69-f6602031d173",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_d4xxN2ognHEUJPJwVis4xGYK",
+          "title": "Run if (Test-Path '_meta') { Get-ChildItem -Force '_meta' } else { 'NO_META_DIR' }",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_d4xxN2ognHEUJPJwVis4xGYK",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "if (Test-Path '_meta') { Get-ChildItem -Force '_meta' } else { 'NO_META_DIR' }"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "if (Test-Path '_meta') { Get-ChildItem -Force '_meta' } else { 'NO_META_DIR' }"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:39:48.469Z"
+    },
+    {
+      "id": "36cffeb1-5eee-4a6e-b79e-443d70dac9fd",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_cduuzuGtXzwYMNvny22mX7Tv",
+          "title": "Run $src='papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation';$sum=(Get-ChildItem -Recurse -File $src | Measure-Object -Property Length -Sum).Sum; $sum",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_cduuzuGtXzwYMNvny22mX7Tv",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "$src='papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation';$sum=(Get-ChildItem -Recurse -File $src | Measure-Object -Property Length -Sum).Sum; $sum"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "$src='papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation';$sum=(Get-ChildItem -Recurse -File $src | Measure-Object -Property Length -Sum).Sum; $sum"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:40:31.319Z"
+    },
+    {
+      "id": "4088bb73-72f5-46a6-bd70-9364a7d03476",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_y33GRaiGNJhApKjdVzCO1qnM",
+          "title": "Run $src='papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation';(Get-Item $src).LastWriteTime.ToString('o')",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_y33GRaiGNJhApKjdVzCO1qnM",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "$src='papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation';(Get-Item $src).LastWriteTime.ToString('o')"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "$src='papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation';(Get-Item $src).LastWriteTime.ToString('o')"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:40:31.435Z"
+    },
+    {
+      "id": "26e0f0f4-5ff6-4c5c-b452-e181b78cf88b",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_zH2po34TPlJoXt25yP7oTKbe",
+          "title": "Run (Get-Date).ToString('yyyy-MM-dd HH:mm:ss zzz')",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_zH2po34TPlJoXt25yP7oTKbe",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "(Get-Date).ToString('yyyy-MM-dd HH:mm:ss zzz')"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "(Get-Date).ToString('yyyy-MM-dd HH:mm:ss zzz')"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:40:31.492Z"
+    },
+    {
+      "id": "9ac16391-665c-4c16-958f-703e81087da7",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_RXOX8ifaxbaP8OtgFPl3WvI3",
+          "title": "Run (Get-Date).ToString('o')",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_RXOX8ifaxbaP8OtgFPl3WvI3",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "(Get-Date).ToString('o')"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "(Get-Date).ToString('o')"
+              }
+            ],
+            "source": "agent"
+          }
+        },
+        {
+          "type": "text",
+          "text": "I’m now writing the ingest output pages (10 new distilled pages) and updating the hub/index/manifest/log so this source is fully tracked in append mode."
+        }
+      ],
+      "timestamp": "2026-04-08T04:40:31.603Z"
+    },
+    {
+      "id": "400ec932-d3c7-42e5-9097-bc45ef1f6579",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_uS4AOYFzvnjErHkEEMmSa5Vc",
+          "title": "Edit D:/paper_reading/paper_reading/references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+              "newText": "---\ntitle: Delving into Decision-based Black-box Attacks on Semantic Segmentation\ncategory: reference\ntags:\n  - paper\n  - adversarial-attack\n  - black-box-attack\n  - semantic-segmentation\n  - robustness\nsources:\n  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\n  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation_zh.md\ncreated: 2026-04-08\nupdated: 2026-04-08\nsummary: 首篇系统研究语义分割 decision-based 黑盒攻击的论文，提出 DLA 并在有限查询下显著降低多个模型 mIoU。\nprovenance:\n  extracted: 0.88\n  inferred: 0.10\n  ambiguous: 0.02\n---\n\n# Delving into Decision-based Black-box Attacks on Semantic Segmentation\n\n## 基本信息\n\n- 年份：2024（arXiv 2402.01220）\n- 任务：语义分割的 decision-based black-box attack\n- 核心方法：DLA（Discrete Linear Attack）\n- 原始笔记：[[notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n\n## 论文主张\n\n- 语义分割中的 decision-based 攻击比图像分类更难，因为目标是像素级、多约束优化。\n- 主要困难包含：\n  - 优化目标不一致（缩小扰动可能导致 mIoU 回升）\n  - 扰动交互（新扰动会破坏前一步攻击成果）\n  - 参数空间复杂（查询预算下难以搜索）\n- DLA 通过“代理指标 + 离散线性噪声 + 层次化校准”提高查询效率。\n\n## 方法摘要\n\n- 代理指标：以 mIoU 作为优化反馈。\n- 扰动探索：使用离散线性噪声（horizontal / vertical / iterative）生成候选扰动。\n- 扰动校准：根据指标变化，对局部区域执行符号翻转（flip）并保留改进。\n\n## 关键结果\n\n- Cityscapes：PSPNet mIoU 可在 50 queries 内从 77.83 降到 2.14。\n- ADE20K：整体也显著下降，但比 Cityscapes 更难攻击。\n- 在 10 queries 极限预算下，DLA 仍优于对比方法。\n\n## 局限与注意\n\n- 论文主要是经验验证，理论解释相对有限。\n- 对图中“视觉不可感知性”的结论依赖定性图示，缺少统一人类感知评测细则。^[ambiguous]\n\n## 关联页面\n\n- [[concepts/Decision-based Black-box Attack for Segmentation]]\n- [[concepts/Proxy Index mIoU Optimization]]\n- [[concepts/Discrete Linear Noise]]\n- [[concepts/Perturbation Interaction]]\n- [[concepts/Query-Efficient Attack Evaluation]]\n- [[synthesis/Decision-based Segmentation Attack Landscape]]\n- [[entities/Zhaoyu Chen]]\n- [[entities/Wenqiang Zhang]]\n- [[entities/SegFormer]]\n\n",
+              "oldText": null
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_uS4AOYFzvnjErHkEEMmSa5Vc",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md": {
+                "type": "add",
+                "content": "---\ntitle: Delving into Decision-based Black-box Attacks on Semantic Segmentation\ncategory: reference\ntags:\n  - paper\n  - adversarial-attack\n  - black-box-attack\n  - semantic-segmentation\n  - robustness\nsources:\n  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\n  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation_zh.md\ncreated: 2026-04-08\nupdated: 2026-04-08\nsummary: 首篇系统研究语义分割 decision-based 黑盒攻击的论文，提出 DLA 并在有限查询下显著降低多个模型 mIoU。\nprovenance:\n  extracted: 0.88\n  inferred: 0.10\n  ambiguous: 0.02\n---\n\n# Delving into Decision-based Black-box Attacks on Semantic Segmentation\n\n## 基本信息\n\n- 年份：2024（arXiv 2402.01220）\n- 任务：语义分割的 decision-based black-box attack\n- 核心方法：DLA（Discrete Linear Attack）\n- 原始笔记：[[notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n\n## 论文主张\n\n- 语义分割中的 decision-based 攻击比图像分类更难，因为目标是像素级、多约束优化。\n- 主要困难包含：\n  - 优化目标不一致（缩小扰动可能导致 mIoU 回升）\n  - 扰动交互（新扰动会破坏前一步攻击成果）\n  - 参数空间复杂（查询预算下难以搜索）\n- DLA 通过“代理指标 + 离散线性噪声 + 层次化校准”提高查询效率。\n\n## 方法摘要\n\n- 代理指标：以 mIoU 作为优化反馈。\n- 扰动探索：使用离散线性噪声（horizontal / vertical / iterative）生成候选扰动。\n- 扰动校准：根据指标变化，对局部区域执行符号翻转（flip）并保留改进。\n\n## 关键结果\n\n- Cityscapes：PSPNet mIoU 可在 50 queries 内从 77.83 降到 2.14。\n- ADE20K：整体也显著下降，但比 Cityscapes 更难攻击。\n- 在 10 queries 极限预算下，DLA 仍优于对比方法。\n\n## 局限与注意\n\n- 论文主要是经验验证，理论解释相对有限。\n- 对图中“视觉不可感知性”的结论依赖定性图示，缺少统一人类感知评测细则。^[ambiguous]\n\n## 关联页面\n\n- [[concepts/Decision-based Black-box Attack for Segmentation]]\n- [[concepts/Proxy Index mIoU Optimization]]\n- [[concepts/Discrete Linear Noise]]\n- [[concepts/Perturbation Interaction]]\n- [[concepts/Query-Efficient Attack Evaluation]]\n- [[synthesis/Decision-based Segmentation Attack Landscape]]\n- [[entities/Zhaoyu Chen]]\n- [[entities/Wenqiang Zhang]]\n- [[entities/SegFormer]]\n\n"
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:40:51.301Z"
+    },
+    {
+      "id": "9f496e7a-1787-45e7-8e55-1a5e9d425843",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_Yi1temtXAdfVsU4ShQ1RKCuZ",
+          "title": "Edit D:/paper_reading/paper_reading/concepts/Decision-based Black-box Attack for Segmentation.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/concepts/Decision-based Black-box Attack for Segmentation.md",
+              "newText": "---\ntitle: Decision-based Black-box Attack for Segmentation\ncategory: concept\ntags:\n  - concept\n  - adversarial-attack\n  - black-box-attack\n  - semantic-segmentation\n  - robustness\nsources:\n  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\ncreated: 2026-04-08\nupdated: 2026-04-08\nsummary: 语义分割中的 decision-based 攻击仅依赖标签输出，核心挑战来自像素级多约束优化和有限查询预算。\nprovenance:\n  extracted: 0.84\n  inferred: 0.14\n  ambiguous: 0.02\n---\n\n# Decision-based Black-box Attack for Segmentation\n\n## 定义\n\n攻击者只能访问分割模型输出标签（无概率、无梯度），目标是在查询预算内最大化像素误分并降低整体指标（常用 mIoU）。\n\n## 与图像分类差异\n\n- 图像分类通常是单标签决策。\n- 语义分割是像素级决策，等价于大规模多约束问题。\n- “先跨边界再缩扰动”在分割任务中不稳定，可能反向提升 mIoU。\n\n## 典型困难\n\n- 优化目标不一致。\n- 扰动交互导致局部反复。\n- 参数空间巨大且查询昂贵。\n\n## 设计启发\n\n- 先定义稳定代理指标，再做可控搜索空间压缩。\n- 局部结构化扰动比全图随机噪声更有效。^[inferred]\n\n## 关联\n\n- [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n- [[concepts/Proxy Index mIoU Optimization]]\n- [[concepts/Perturbation Interaction]]\n- [[concepts/Discrete Linear Noise]]\n- [[synthesis/Decision-based Segmentation Attack Landscape]]\n\n",
+              "oldText": null
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/concepts/Decision-based Black-box Attack for Segmentation.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_Yi1temtXAdfVsU4ShQ1RKCuZ",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/concepts/Decision-based Black-box Attack for Segmentation.md": {
+                "type": "add",
+                "content": "---\ntitle: Decision-based Black-box Attack for Segmentation\ncategory: concept\ntags:\n  - concept\n  - adversarial-attack\n  - black-box-attack\n  - semantic-segmentation\n  - robustness\nsources:\n  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\ncreated: 2026-04-08\nupdated: 2026-04-08\nsummary: 语义分割中的 decision-based 攻击仅依赖标签输出，核心挑战来自像素级多约束优化和有限查询预算。\nprovenance:\n  extracted: 0.84\n  inferred: 0.14\n  ambiguous: 0.02\n---\n\n# Decision-based Black-box Attack for Segmentation\n\n## 定义\n\n攻击者只能访问分割模型输出标签（无概率、无梯度），目标是在查询预算内最大化像素误分并降低整体指标（常用 mIoU）。\n\n## 与图像分类差异\n\n- 图像分类通常是单标签决策。\n- 语义分割是像素级决策，等价于大规模多约束问题。\n- “先跨边界再缩扰动”在分割任务中不稳定，可能反向提升 mIoU。\n\n## 典型困难\n\n- 优化目标不一致。\n- 扰动交互导致局部反复。\n- 参数空间巨大且查询昂贵。\n\n## 设计启发\n\n- 先定义稳定代理指标，再做可控搜索空间压缩。\n- 局部结构化扰动比全图随机噪声更有效。^[inferred]\n\n## 关联\n\n- [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n- [[concepts/Proxy Index mIoU Optimization]]\n- [[concepts/Perturbation Interaction]]\n- [[concepts/Discrete Linear Noise]]\n- [[synthesis/Decision-based Segmentation Attack Landscape]]\n\n"
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:41:03.018Z"
+    },
+    {
+      "id": "d5df6133-26de-4e8c-bc03-39b8a410f246",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_DOam9C6j3Au30MwHmUpBWWAh",
+          "title": "Edit D:/paper_reading/paper_reading/concepts/Proxy Index mIoU Optimization.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/concepts/Proxy Index mIoU Optimization.md",
+              "newText": "---\ntitle: Proxy Index mIoU Optimization\ncategory: concept\ntags:\n  - concept\n  - optimization\n  - semantic-segmentation\n  - evaluation\n  - adversarial-attack\nsources:\n  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\ncreated: 2026-04-08\nupdated: 2026-04-08\nsummary: 在 decision-based 分割攻击中，以 mIoU 作为代理指标可提供稳定反馈，优于仅用像素准确率的局部目标。\nprovenance:\n  extracted: 0.86\n  inferred: 0.12\n  ambiguous: 0.02\n---\n\n# Proxy Index mIoU Optimization\n\n## 概念\n\n在无法访问梯度和置信度时，用可观测指标驱动搜索。DLA 选择 mIoU 作为代理指标，每次只接受能进一步降低 mIoU 的扰动更新。\n\n## 为什么是 mIoU\n\n- 比 PAcc 更能反映分割的整体结构质量。\n- 与数据集评估口径一致，便于跨样本比较。\n\n## 影响\n\n- 将“更新是否有效”变成可比较的单调准则。\n- 降低随机搜索中的无效查询比例。^[inferred]\n\n## 风险\n\n- 如果目标是特定类别破坏，单一 mIoU 可能过粗。\n- 代理指标与真实任务目标不一致时，会产生优化偏差。^[inferred]\n\n## 关联\n\n- [[concepts/Decision-based Black-box Attack for Segmentation]]\n- [[concepts/Query-Efficient Attack Evaluation]]\n- [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n- [[entities/SegFormer]]\n\n",
+              "oldText": null
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/concepts/Proxy Index mIoU Optimization.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_DOam9C6j3Au30MwHmUpBWWAh",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/concepts/Proxy Index mIoU Optimization.md": {
+                "type": "add",
+                "content": "---\ntitle: Proxy Index mIoU Optimization\ncategory: concept\ntags:\n  - concept\n  - optimization\n  - semantic-segmentation\n  - evaluation\n  - adversarial-attack\nsources:\n  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\ncreated: 2026-04-08\nupdated: 2026-04-08\nsummary: 在 decision-based 分割攻击中，以 mIoU 作为代理指标可提供稳定反馈，优于仅用像素准确率的局部目标。\nprovenance:\n  extracted: 0.86\n  inferred: 0.12\n  ambiguous: 0.02\n---\n\n# Proxy Index mIoU Optimization\n\n## 概念\n\n在无法访问梯度和置信度时，用可观测指标驱动搜索。DLA 选择 mIoU 作为代理指标，每次只接受能进一步降低 mIoU 的扰动更新。\n\n## 为什么是 mIoU\n\n- 比 PAcc 更能反映分割的整体结构质量。\n- 与数据集评估口径一致，便于跨样本比较。\n\n## 影响\n\n- 将“更新是否有效”变成可比较的单调准则。\n- 降低随机搜索中的无效查询比例。^[inferred]\n\n## 风险\n\n- 如果目标是特定类别破坏，单一 mIoU 可能过粗。\n- 代理指标与真实任务目标不一致时，会产生优化偏差。^[inferred]\n\n## 关联\n\n- [[concepts/Decision-based Black-box Attack for Segmentation]]\n- [[concepts/Query-Efficient Attack Evaluation]]\n- [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n- [[entities/SegFormer]]\n\n"
+              }
+            }
+          }
+        },
+        {
+          "type": "text",
+          "text": "I’ve created the reference page plus first concept pages with provenance/frontmatter. I’m continuing with the remaining concept, synthesis, and entity pages, then I’ll wire all indexes and manifest/log."
+        }
+      ],
+      "timestamp": "2026-04-08T04:41:18.136Z"
+    },
+    {
+      "id": "200777ca-df28-4b93-8b0b-254b827b8c95",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_u7R7x9bmuaG4TBWmRSz2xq4Z",
+          "title": "Edit D:/paper_reading/paper_reading/concepts/Discrete Linear Noise.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/concepts/Discrete Linear Noise.md",
+              "newText": "---\ntitle: Discrete Linear Noise\ncategory: concept\ntags:\n  - concept\n  - adversarial-attack\n  - query-efficient\n  - semantic-segmentation\n  - perturbation\nsources:\n  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\ncreated: 2026-04-08\nupdated: 2026-04-08\nsummary: 通过离散化并结构化为线性噪声（横向/纵向），DLA 压缩搜索空间并提升有限查询下的攻击效率。\nprovenance:\n  extracted: 0.85\n  inferred: 0.13\n  ambiguous: 0.02\n---\n\n# Discrete Linear Noise\n\n## 定义\n\n将连续扰动空间压缩到离散符号空间，并采用线状结构（horizontal / vertical）生成候选扰动。\n\n## 作用\n\n- 降低参数空间复杂度。\n- 比全图随机噪声更容易形成可复用更新方向。^[inferred]\n- 相比块状 patch，视觉结构更细且更稳定。^[inferred]\n\n## 在 DLA 中的位置\n\n- 先在探索阶段提供强初始化。\n- 再在校准阶段配合符号翻转做分层细化。\n\n## 注意\n\n“更不易感知”主要基于论文可视化比较，跨数据集和跨观察者的主观一致性仍待系统验证。^[ambiguous]\n\n## 关联\n\n- [[concepts/Perturbation Interaction]]\n- [[concepts/Decision-based Black-box Attack for Segmentation]]\n- [[concepts/Query-Efficient Attack Evaluation]]\n- [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n\n",
+              "oldText": null
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/concepts/Discrete Linear Noise.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_u7R7x9bmuaG4TBWmRSz2xq4Z",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/concepts/Discrete Linear Noise.md": {
+                "type": "add",
+                "content": "---\ntitle: Discrete Linear Noise\ncategory: concept\ntags:\n  - concept\n  - adversarial-attack\n  - query-efficient\n  - semantic-segmentation\n  - perturbation\nsources:\n  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\ncreated: 2026-04-08\nupdated: 2026-04-08\nsummary: 通过离散化并结构化为线性噪声（横向/纵向），DLA 压缩搜索空间并提升有限查询下的攻击效率。\nprovenance:\n  extracted: 0.85\n  inferred: 0.13\n  ambiguous: 0.02\n---\n\n# Discrete Linear Noise\n\n## 定义\n\n将连续扰动空间压缩到离散符号空间，并采用线状结构（horizontal / vertical）生成候选扰动。\n\n## 作用\n\n- 降低参数空间复杂度。\n- 比全图随机噪声更容易形成可复用更新方向。^[inferred]\n- 相比块状 patch，视觉结构更细且更稳定。^[inferred]\n\n## 在 DLA 中的位置\n\n- 先在探索阶段提供强初始化。\n- 再在校准阶段配合符号翻转做分层细化。\n\n## 注意\n\n“更不易感知”主要基于论文可视化比较，跨数据集和跨观察者的主观一致性仍待系统验证。^[ambiguous]\n\n## 关联\n\n- [[concepts/Perturbation Interaction]]\n- [[concepts/Decision-based Black-box Attack for Segmentation]]\n- [[concepts/Query-Efficient Attack Evaluation]]\n- [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n\n"
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:41:34.087Z"
+    },
+    {
+      "id": "d96f91d1-4028-42ad-be4a-bd4cb3e47d5e",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_tYyeZbDWto2NknUvlGmSetTh",
+          "title": "Edit D:/paper_reading/paper_reading/concepts/Perturbation Interaction.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/concepts/Perturbation Interaction.md",
+              "newText": "---\ntitle: Perturbation Interaction\ncategory: concept\ntags:\n  - concept\n  - adversarial-attack\n  - optimization\n  - semantic-segmentation\n  - perturbation\nsources:\n  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\ncreated: 2026-04-08\nupdated: 2026-04-08\nsummary: 扰动交互指迭代更新之间相互抵消，导致分割攻击出现“本轮成功、下轮回退”的优化不稳定现象。\nprovenance:\n  extracted: 0.87\n  inferred: 0.11\n  ambiguous: 0.02\n---\n\n# Perturbation Interaction\n\n## 定义\n\n在语义分割攻击中，新加入的扰动可能抵消或破坏先前扰动的效果，导致像素类别在相邻迭代之间反复切换。\n\n## 现象\n\n- 同一像素在第 t 步被攻击成功，但在第 t+1 步恢复正确类别。\n- 优化过程更易陷入局部最优。\n\n## 应对策略\n\n- 从全图随机更新转向局部结构化更新。\n- 使用线性噪声并配合局部符号翻转。\n\n## 工程含义\n\n有限查询下，减少“互相打架”的更新比单次大幅扰动更关键。^[inferred]\n\n## 关联\n\n- [[concepts/Discrete Linear Noise]]\n- [[concepts/Proxy Index mIoU Optimization]]\n- [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n- [[synthesis/Decision-based Segmentation Attack Landscape]]\n\n",
+              "oldText": null
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/concepts/Perturbation Interaction.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_tYyeZbDWto2NknUvlGmSetTh",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/concepts/Perturbation Interaction.md": {
+                "type": "add",
+                "content": "---\ntitle: Perturbation Interaction\ncategory: concept\ntags:\n  - concept\n  - adversarial-attack\n  - optimization\n  - semantic-segmentation\n  - perturbation\nsources:\n  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\ncreated: 2026-04-08\nupdated: 2026-04-08\nsummary: 扰动交互指迭代更新之间相互抵消，导致分割攻击出现“本轮成功、下轮回退”的优化不稳定现象。\nprovenance:\n  extracted: 0.87\n  inferred: 0.11\n  ambiguous: 0.02\n---\n\n# Perturbation Interaction\n\n## 定义\n\n在语义分割攻击中，新加入的扰动可能抵消或破坏先前扰动的效果，导致像素类别在相邻迭代之间反复切换。\n\n## 现象\n\n- 同一像素在第 t 步被攻击成功，但在第 t+1 步恢复正确类别。\n- 优化过程更易陷入局部最优。\n\n## 应对策略\n\n- 从全图随机更新转向局部结构化更新。\n- 使用线性噪声并配合局部符号翻转。\n\n## 工程含义\n\n有限查询下，减少“互相打架”的更新比单次大幅扰动更关键。^[inferred]\n\n## 关联\n\n- [[concepts/Discrete Linear Noise]]\n- [[concepts/Proxy Index mIoU Optimization]]\n- [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n- [[synthesis/Decision-based Segmentation Attack Landscape]]\n\n"
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:41:46.455Z"
+    },
+    {
+      "id": "c5e09c8e-6d3a-4be4-8587-9149a81ead12",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_vwJs4qunmhxvdl2AGoa0KVy7",
+          "title": "Edit D:/paper_reading/paper_reading/concepts/Query-Efficient Attack Evaluation.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/concepts/Query-Efficient Attack Evaluation.md",
+              "newText": "---\ntitle: Query-Efficient Attack Evaluation\ncategory: concept\ntags:\n  - concept\n  - evaluation\n  - query-efficient\n  - robustness\n  - semantic-segmentation\nsources:\n  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\ncreated: 2026-04-08\nupdated: 2026-04-08\nsummary: 用固定查询预算比较攻击后 mIoU，可评估分割模型在现实黑盒条件下的鲁棒性与被攻破速度。\nprovenance:\n  extracted: 0.84\n  inferred: 0.14\n  ambiguous: 0.02\n---\n\n# Query-Efficient Attack Evaluation\n\n## 目的\n\n在现实攻击场景中，查询次数通常受限。评估应报告“在 N 次查询内能把性能打到多低”。\n\n## 典型预算\n\n- 小预算：10 queries（高隐蔽、高约束）\n- 中预算：50 queries\n- 较大预算：200 queries\n\n## 指标实践\n\n- 主指标：攻击后 mIoU（越低越易被攻破）\n- 可补充：不同 epsilon 下的退化曲线\n\n## 结论模式\n\n若方法在低查询预算下仍能显著降 mIoU，则更接近工业威胁模型。^[inferred]\n\n## 关联\n\n- [[concepts/Proxy Index mIoU Optimization]]\n- [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n- [[entities/SegFormer]]\n- [[synthesis/Decision-based Segmentation Attack Landscape]]\n\n",
+              "oldText": null
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/concepts/Query-Efficient Attack Evaluation.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_vwJs4qunmhxvdl2AGoa0KVy7",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/concepts/Query-Efficient Attack Evaluation.md": {
+                "type": "add",
+                "content": "---\ntitle: Query-Efficient Attack Evaluation\ncategory: concept\ntags:\n  - concept\n  - evaluation\n  - query-efficient\n  - robustness\n  - semantic-segmentation\nsources:\n  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\ncreated: 2026-04-08\nupdated: 2026-04-08\nsummary: 用固定查询预算比较攻击后 mIoU，可评估分割模型在现实黑盒条件下的鲁棒性与被攻破速度。\nprovenance:\n  extracted: 0.84\n  inferred: 0.14\n  ambiguous: 0.02\n---\n\n# Query-Efficient Attack Evaluation\n\n## 目的\n\n在现实攻击场景中，查询次数通常受限。评估应报告“在 N 次查询内能把性能打到多低”。\n\n## 典型预算\n\n- 小预算：10 queries（高隐蔽、高约束）\n- 中预算：50 queries\n- 较大预算：200 queries\n\n## 指标实践\n\n- 主指标：攻击后 mIoU（越低越易被攻破）\n- 可补充：不同 epsilon 下的退化曲线\n\n## 结论模式\n\n若方法在低查询预算下仍能显著降 mIoU，则更接近工业威胁模型。^[inferred]\n\n## 关联\n\n- [[concepts/Proxy Index mIoU Optimization]]\n- [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n- [[entities/SegFormer]]\n- [[synthesis/Decision-based Segmentation Attack Landscape]]\n\n"
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:42:02.956Z"
+    },
+    {
+      "id": "325a5eeb-044c-4e48-8590-0cacb354053b",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_R77yRPV9xJqR8cYcfCfxCjlx",
+          "title": "Edit D:/paper_reading/paper_reading/synthesis/Decision-based Segmentation Attack Landscape.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/synthesis/Decision-based Segmentation Attack Landscape.md",
+              "newText": "---\ntitle: Decision-based Segmentation Attack Landscape\ncategory: synthesis\ntags:\n  - synthesis\n  - adversarial-attack\n  - semantic-segmentation\n  - black-box-attack\n  - robustness\nsources:\n  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\ncreated: 2026-04-08\nupdated: 2026-04-08\nsummary: DLA 展示了语义分割 decision-based 攻击可在极低查询下强力破坏 mIoU，提示鲁棒性评估应转向查询效率视角。\nprovenance:\n  extracted: 0.79\n  inferred: 0.19\n  ambiguous: 0.02\n---\n\n# Decision-based Segmentation Attack Landscape\n\n## 主题结论\n\n- 语义分割黑盒攻击难点与图像分类不同，不能直接复用边界攻击直觉。\n- 以查询效率为核心的攻击框架更能反映真实部署风险。\n- DLA 路线强调三件事：指标稳定、搜索空间压缩、结构化局部校准。\n\n## 与已有笔记的连接\n\n- 在 [[notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation]] 中给出了完整方法和数据表。\n- 在 [[notes/Hyena Hierarchy]] 里讨论的是长上下文效率，目标不同但都在做“复杂度-效果”折中。^[inferred]\n\n## 可复用模式\n\n- 先定义代理指标（如 mIoU）保证更新方向一致。\n- 将连续优化问题变成离散可控搜索。\n- 在固定预算下报告攻击退化曲线与低查询性能。\n\n## Open Questions\n\n- 如何扩展到 targeted segmentation attack？\n- 如何与 foundation segmentation models 对齐评估口径？\n- 是否可引入视觉可感知性的人类评测协议？\n\n## 关联\n\n- [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n- [[concepts/Decision-based Black-box Attack for Segmentation]]\n- [[concepts/Discrete Linear Noise]]\n- [[concepts/Query-Efficient Attack Evaluation]]\n- [[projects/index]]\n\n",
+              "oldText": null
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/synthesis/Decision-based Segmentation Attack Landscape.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_R77yRPV9xJqR8cYcfCfxCjlx",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/synthesis/Decision-based Segmentation Attack Landscape.md": {
+                "type": "add",
+                "content": "---\ntitle: Decision-based Segmentation Attack Landscape\ncategory: synthesis\ntags:\n  - synthesis\n  - adversarial-attack\n  - semantic-segmentation\n  - black-box-attack\n  - robustness\nsources:\n  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\ncreated: 2026-04-08\nupdated: 2026-04-08\nsummary: DLA 展示了语义分割 decision-based 攻击可在极低查询下强力破坏 mIoU，提示鲁棒性评估应转向查询效率视角。\nprovenance:\n  extracted: 0.79\n  inferred: 0.19\n  ambiguous: 0.02\n---\n\n# Decision-based Segmentation Attack Landscape\n\n## 主题结论\n\n- 语义分割黑盒攻击难点与图像分类不同，不能直接复用边界攻击直觉。\n- 以查询效率为核心的攻击框架更能反映真实部署风险。\n- DLA 路线强调三件事：指标稳定、搜索空间压缩、结构化局部校准。\n\n## 与已有笔记的连接\n\n- 在 [[notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation]] 中给出了完整方法和数据表。\n- 在 [[notes/Hyena Hierarchy]] 里讨论的是长上下文效率，目标不同但都在做“复杂度-效果”折中。^[inferred]\n\n## 可复用模式\n\n- 先定义代理指标（如 mIoU）保证更新方向一致。\n- 将连续优化问题变成离散可控搜索。\n- 在固定预算下报告攻击退化曲线与低查询性能。\n\n## Open Questions\n\n- 如何扩展到 targeted segmentation attack？\n- 如何与 foundation segmentation models 对齐评估口径？\n- 是否可引入视觉可感知性的人类评测协议？\n\n## 关联\n\n- [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n- [[concepts/Decision-based Black-box Attack for Segmentation]]\n- [[concepts/Discrete Linear Noise]]\n- [[concepts/Query-Efficient Attack Evaluation]]\n- [[projects/index]]\n\n"
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:42:15.423Z"
+    },
+    {
+      "id": "a9114425-e56b-4cf5-b577-b3001e2864f2",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_SGoJw3rRomftb9lFj5UaTbkx",
+          "title": "Edit D:/paper_reading/paper_reading/entities/Zhaoyu Chen.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/entities/Zhaoyu Chen.md",
+              "newText": "---\ntitle: Zhaoyu Chen\ncategory: entity\ntags:\n  - entity\n  - author\n  - semantic-segmentation\n  - adversarial-attack\nsources:\n  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\ncreated: 2026-04-08\nupdated: 2026-04-08\nsummary: Zhaoyu Chen 是 DLA 论文作者之一，相关工作聚焦语义分割与对抗鲁棒性评估。\nprovenance:\n  extracted: 0.74\n  inferred: 0.24\n  ambiguous: 0.02\n---\n\n# Zhaoyu Chen\n\n## 角色\n\n- 论文《Delving into Decision-based Black-box Attacks on Semantic Segmentation》作者之一。\n- 研究语境集中在语义分割与对抗攻击方向。^[inferred]\n\n## 关联论文\n\n- [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n\n## 关联概念\n\n- [[concepts/Decision-based Black-box Attack for Segmentation]]\n- [[concepts/Discrete Linear Noise]]\n- [[concepts/Query-Efficient Attack Evaluation]]\n\n",
+              "oldText": null
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/entities/Zhaoyu Chen.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_SGoJw3rRomftb9lFj5UaTbkx",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/entities/Zhaoyu Chen.md": {
+                "type": "add",
+                "content": "---\ntitle: Zhaoyu Chen\ncategory: entity\ntags:\n  - entity\n  - author\n  - semantic-segmentation\n  - adversarial-attack\nsources:\n  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\ncreated: 2026-04-08\nupdated: 2026-04-08\nsummary: Zhaoyu Chen 是 DLA 论文作者之一，相关工作聚焦语义分割与对抗鲁棒性评估。\nprovenance:\n  extracted: 0.74\n  inferred: 0.24\n  ambiguous: 0.02\n---\n\n# Zhaoyu Chen\n\n## 角色\n\n- 论文《Delving into Decision-based Black-box Attacks on Semantic Segmentation》作者之一。\n- 研究语境集中在语义分割与对抗攻击方向。^[inferred]\n\n## 关联论文\n\n- [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n\n## 关联概念\n\n- [[concepts/Decision-based Black-box Attack for Segmentation]]\n- [[concepts/Discrete Linear Noise]]\n- [[concepts/Query-Efficient Attack Evaluation]]\n\n"
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:42:24.007Z"
+    },
+    {
+      "id": "733ab7c3-4a84-4e55-b1e7-439c20b55c86",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_PST8NbxCCc4Uxmwizf65WFFb",
+          "title": "Edit D:/paper_reading/paper_reading/entities/Wenqiang Zhang.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/entities/Wenqiang Zhang.md",
+              "newText": "---\ntitle: Wenqiang Zhang\ncategory: entity\ntags:\n  - entity\n  - author\n  - semantic-segmentation\n  - adversarial-attack\nsources:\n  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\ncreated: 2026-04-08\nupdated: 2026-04-08\nsummary: Wenqiang Zhang 是 DLA 论文作者之一，参与语义分割黑盒攻击与鲁棒性相关研究。\nprovenance:\n  extracted: 0.74\n  inferred: 0.24\n  ambiguous: 0.02\n---\n\n# Wenqiang Zhang\n\n## 角色\n\n- 论文《Delving into Decision-based Black-box Attacks on Semantic Segmentation》作者之一。\n- 与语义分割鲁棒性和对抗攻击相关工作有交集。^[inferred]\n\n## 关联论文\n\n- [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n\n## 关联概念\n\n- [[concepts/Decision-based Black-box Attack for Segmentation]]\n- [[concepts/Proxy Index mIoU Optimization]]\n- [[concepts/Perturbation Interaction]]\n\n",
+              "oldText": null
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/entities/Wenqiang Zhang.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_PST8NbxCCc4Uxmwizf65WFFb",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/entities/Wenqiang Zhang.md": {
+                "type": "add",
+                "content": "---\ntitle: Wenqiang Zhang\ncategory: entity\ntags:\n  - entity\n  - author\n  - semantic-segmentation\n  - adversarial-attack\nsources:\n  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\ncreated: 2026-04-08\nupdated: 2026-04-08\nsummary: Wenqiang Zhang 是 DLA 论文作者之一，参与语义分割黑盒攻击与鲁棒性相关研究。\nprovenance:\n  extracted: 0.74\n  inferred: 0.24\n  ambiguous: 0.02\n---\n\n# Wenqiang Zhang\n\n## 角色\n\n- 论文《Delving into Decision-based Black-box Attacks on Semantic Segmentation》作者之一。\n- 与语义分割鲁棒性和对抗攻击相关工作有交集。^[inferred]\n\n## 关联论文\n\n- [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n\n## 关联概念\n\n- [[concepts/Decision-based Black-box Attack for Segmentation]]\n- [[concepts/Proxy Index mIoU Optimization]]\n- [[concepts/Perturbation Interaction]]\n\n"
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:42:33.057Z"
+    },
+    {
+      "id": "4834d163-0c80-4bae-a306-3277df6f1454",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_TvB551Y5gIt1lnTyhKnQILsW",
+          "title": "Edit D:/paper_reading/paper_reading/entities/SegFormer.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/entities/SegFormer.md",
+              "newText": "---\ntitle: SegFormer\ncategory: entity\ntags:\n  - entity\n  - model\n  - semantic-segmentation\n  - transformer\n  - robustness\nsources:\n  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\ncreated: 2026-04-08\nupdated: 2026-04-08\nsummary: 在 DLA 对比中，SegFormer 是相对更难攻击的分割模型之一，体现了较强的黑盒鲁棒性表现。\nprovenance:\n  extracted: 0.82\n  inferred: 0.16\n  ambiguous: 0.02\n---\n\n# SegFormer\n\n## 在本批来源中的角色\n\n- 作为被攻击的语义分割模型之一参与主实验。\n- 在多个攻击方法下，相比部分 CNN 模型表现出更高鲁棒性。\n\n## 观测\n\n- 在 Cityscapes 与 ADE20K 的对比结果中，DLA 仍能显著降低其 mIoU，但降幅相对部分模型更受限。\n- 论文将其鲁棒性优势部分归因于 Transformer 结构。^[inferred]\n\n## 关联\n\n- [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n- [[concepts/Query-Efficient Attack Evaluation]]\n- [[concepts/Decision-based Black-box Attack for Segmentation]]\n- [[notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n\n",
+              "oldText": null
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/entities/SegFormer.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_TvB551Y5gIt1lnTyhKnQILsW",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/entities/SegFormer.md": {
+                "type": "add",
+                "content": "---\ntitle: SegFormer\ncategory: entity\ntags:\n  - entity\n  - model\n  - semantic-segmentation\n  - transformer\n  - robustness\nsources:\n  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\ncreated: 2026-04-08\nupdated: 2026-04-08\nsummary: 在 DLA 对比中，SegFormer 是相对更难攻击的分割模型之一，体现了较强的黑盒鲁棒性表现。\nprovenance:\n  extracted: 0.82\n  inferred: 0.16\n  ambiguous: 0.02\n---\n\n# SegFormer\n\n## 在本批来源中的角色\n\n- 作为被攻击的语义分割模型之一参与主实验。\n- 在多个攻击方法下，相比部分 CNN 模型表现出更高鲁棒性。\n\n## 观测\n\n- 在 Cityscapes 与 ADE20K 的对比结果中，DLA 仍能显著降低其 mIoU，但降幅相对部分模型更受限。\n- 论文将其鲁棒性优势部分归因于 Transformer 结构。^[inferred]\n\n## 关联\n\n- [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n- [[concepts/Query-Efficient Attack Evaluation]]\n- [[concepts/Decision-based Black-box Attack for Segmentation]]\n- [[notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n\n"
+              }
+            }
+          }
+        },
+        {
+          "type": "text",
+          "text": "I’m now wiring all newly created pages into the folder indexes and your home page, then I’ll finalize `.manifest.json` and `log.md` for this append ingest run."
+        }
+      ],
+      "timestamp": "2026-04-08T04:42:42.375Z"
+    },
+    {
+      "id": "51c6ddf5-a8f1-4db8-80d3-de3164ad4ebc",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_Q1nYV8aMPecgMsb84njOSR4L",
+          "title": "Edit D:/paper_reading/paper_reading/references/index.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/references/index.md",
+              "newText": "\n## 已收录\n\n- [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation|Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n\n## 用法\n",
+              "oldText": "\n## 用法\n"
+            },
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/references/index.md",
+              "newText": "- 与对应 `notes/` 页面建立双向链接\n",
+              "oldText": "- 与对应 `notes/` 页面建立双向链接\n\n## 页面清单\n\n- 暂无（从 [[notes/index]] 开始沉淀）\n\n"
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/references/index.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_Q1nYV8aMPecgMsb84njOSR4L",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/references/index.md": {
+                "type": "update",
+                "unified_diff": "@@ -8,2 +8,6 @@\n \n+## 已收录\n+\n+- [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation|Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n+\n ## 用法\n@@ -13,6 +17 @@\n - 与对应 `notes/` 页面建立双向链接\n-\n-## 页面清单\n-\n-- 暂无（从 [[notes/index]] 开始沉淀）\n-\n",
+                "move_path": null
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:42:52.809Z"
+    },
+    {
+      "id": "b88a6876-52ad-40c3-9d96-a6853007570b",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_zVKoThal5QYtdCnADUcml0Y5",
+          "title": "Edit D:/paper_reading/paper_reading/concepts/index.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/concepts/index.md",
+              "newText": "\n## 已收录\n\n- [[concepts/Decision-based Black-box Attack for Segmentation]]\n- [[concepts/Proxy Index mIoU Optimization]]\n- [[concepts/Discrete Linear Noise]]\n- [[concepts/Perturbation Interaction]]\n- [[concepts/Query-Efficient Attack Evaluation]]\n\n## 用法\n",
+              "oldText": "\n## 用法\n"
+            },
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/concepts/index.md",
+              "newText": "- 一个概念一页，标题尽量标准化\n- 写明定义、适用场景、边界、关联论文\n- 用 `[[concepts/...]]` 做横向连接\n",
+              "oldText": "- 一个概念一页，标题尽量标准化\n- 必须写“定义 + 适用场景 + 局限 + 关联论文”\n- 用 `[[concepts/...]]` 做横向连接\n\n## 建议优先创建\n\n- 单调对齐（Monotonic Alignment）\n- 长上下文建模（Long-context Modeling）\n- 非自回归解码（Non-autoregressive Decoding）\n- 数据控制门控（Data-controlled Gating）\n\n"
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/concepts/index.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_zVKoThal5QYtdCnADUcml0Y5",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/concepts/index.md": {
+                "type": "update",
+                "unified_diff": "@@ -8,2 +8,10 @@\n \n+## 已收录\n+\n+- [[concepts/Decision-based Black-box Attack for Segmentation]]\n+- [[concepts/Proxy Index mIoU Optimization]]\n+- [[concepts/Discrete Linear Noise]]\n+- [[concepts/Perturbation Interaction]]\n+- [[concepts/Query-Efficient Attack Evaluation]]\n+\n ## 用法\n@@ -11,11 +19,3 @@\n - 一个概念一页，标题尽量标准化\n-- 必须写“定义 + 适用场景 + 局限 + 关联论文”\n+- 写明定义、适用场景、边界、关联论文\n - 用 `[[concepts/...]]` 做横向连接\n-\n-## 建议优先创建\n-\n-- 单调对齐（Monotonic Alignment）\n-- 长上下文建模（Long-context Modeling）\n-- 非自回归解码（Non-autoregressive Decoding）\n-- 数据控制门控（Data-controlled Gating）\n-\n",
+                "move_path": null
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:43:02.998Z"
+    },
+    {
+      "id": "2ab17c8a-9397-4b23-a2d1-79618383fe68",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_HxK7U6I0D4RBoqEIh3DSi3Is",
+          "title": "Edit D:/paper_reading/paper_reading/synthesis/index.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/synthesis/index.md",
+              "newText": "\n## 已收录\n\n- [[synthesis/Decision-based Segmentation Attack Landscape]]\n\n## 推荐结构\n",
+              "oldText": "\n## 推荐结构\n"
+            },
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/synthesis/index.md",
+              "newText": "- 下一步实验计划\n",
+              "oldText": "- 下一步实验计划\n\n## 主题候选\n\n- 长上下文替代注意力路线\n- 时空建模预训练范式\n- 对齐机制在序列建模中的作用\n\n"
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/synthesis/index.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_HxK7U6I0D4RBoqEIh3DSi3Is",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/synthesis/index.md": {
+                "type": "update",
+                "unified_diff": "@@ -8,2 +8,6 @@\n \n+## 已收录\n+\n+- [[synthesis/Decision-based Segmentation Attack Landscape]]\n+\n ## 推荐结构\n@@ -15,8 +19 @@\n - 下一步实验计划\n-\n-## 主题候选\n-\n-- 长上下文替代注意力路线\n-- 时空建模预训练范式\n-- 对齐机制在序列建模中的作用\n-\n",
+                "move_path": null
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:43:11.882Z"
+    },
+    {
+      "id": "685866fa-e6c6-4380-a367-cf7578c3e8db",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_4gTVHgHhLPC954U0kDMWne0z",
+          "title": "Edit D:/paper_reading/paper_reading/entities/index.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/entities/index.md",
+              "newText": "\n## 已收录\n\n- [[entities/Zhaoyu Chen]]\n- [[entities/Wenqiang Zhang]]\n- [[entities/SegFormer]]\n\n## 用法\n",
+              "oldText": "\n## 用法\n"
+            },
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/entities/index.md",
+              "newText": "\n- 从其他已读论文继续提取作者/模型实体\n",
+              "oldText": "\n- 暂无（从现有 `notes/` 的作者与模型开始提取）\n\n"
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/entities/index.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_4gTVHgHhLPC954U0kDMWne0z",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/entities/index.md": {
+                "type": "update",
+                "unified_diff": "@@ -8,2 +8,8 @@\n \n+## 已收录\n+\n+- [[entities/Zhaoyu Chen]]\n+- [[entities/Wenqiang Zhang]]\n+- [[entities/SegFormer]]\n+\n ## 用法\n@@ -17,3 +23,2 @@\n \n-- 暂无（从现有 `notes/` 的作者与模型开始提取）\n-\n+- 从其他已读论文继续提取作者/模型实体\n",
+                "move_path": null
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:43:20.799Z"
+    },
+    {
+      "id": "f51d3e32-0e8c-4fa5-8267-ba46d51fe8b3",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_gcWY3jkl9p8xuDMcbVQg2IoU",
+          "title": "Edit D:/paper_reading/paper_reading/index.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/index.md",
+              "newText": "\n## 最新 Ingest（2026-04-08）\n\n- 来源：`papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation`\n- 新增参考页：[[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n- 新增概念页：[[concepts/Decision-based Black-box Attack for Segmentation]]、[[concepts/Proxy Index mIoU Optimization]]、[[concepts/Discrete Linear Noise]]、[[concepts/Perturbation Interaction]]、[[concepts/Query-Efficient Attack Evaluation]]\n- 新增综述页：[[synthesis/Decision-based Segmentation Attack Landscape]]\n- 新增实体页：[[entities/Zhaoyu Chen]]、[[entities/Wenqiang Zhang]]、[[entities/SegFormer]]\n\n## 推荐工作流\n",
+              "oldText": "\n## 推荐工作流\n"
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/index.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_gcWY3jkl9p8xuDMcbVQg2IoU",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/index.md": {
+                "type": "update",
+                "unified_diff": "@@ -27,2 +27,10 @@\n \n+## 最新 Ingest（2026-04-08）\n+\n+- 来源：`papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation`\n+- 新增参考页：[[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n+- 新增概念页：[[concepts/Decision-based Black-box Attack for Segmentation]]、[[concepts/Proxy Index mIoU Optimization]]、[[concepts/Discrete Linear Noise]]、[[concepts/Perturbation Interaction]]、[[concepts/Query-Efficient Attack Evaluation]]\n+- 新增综述页：[[synthesis/Decision-based Segmentation Attack Landscape]]\n+- 新增实体页：[[entities/Zhaoyu Chen]]、[[entities/Wenqiang Zhang]]、[[entities/SegFormer]]\n+\n ## 推荐工作流\n",
+                "move_path": null
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:43:29.660Z"
+    },
+    {
+      "id": "3c84f414-2139-4dbf-b383-8b8d8fe0dff1",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_kqt0BA9psDx5r82Szl5HJmU1",
+          "title": "Edit D:/paper_reading/paper_reading/notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+              "newText": "\n## 关联页面\n\n- Reference：[[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n- Concepts：[[concepts/Decision-based Black-box Attack for Segmentation]]、[[concepts/Proxy Index mIoU Optimization]]、[[concepts/Discrete Linear Noise]]、[[concepts/Perturbation Interaction]]、[[concepts/Query-Efficient Attack Evaluation]]\n- Synthesis：[[synthesis/Decision-based Segmentation Attack Landscape]]\n- Entities：[[entities/Zhaoyu Chen]]、[[entities/Wenqiang Zhang]]、[[entities/SegFormer]]\n\n## 研究问题\n",
+              "oldText": "\n## 研究问题\n"
+            },
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+              "newText": "- 和论文不同的是，这个实现没有显式维护论文伪代码中的 `M / d / i / n` 这套状态变量，而是直接用当前 `axis`、`level`、`segment_idx` 和 `current_noise` 来完成同一类 coarse-to-fine flip 搜索\n",
+              "oldText": "- 和论文不同的是，这个实现没有显式维护论文伪代码中的 `M / d / i / n` 这套状态变量，而是直接用当前 `axis`、`level`、`segment_idx` 和 `current_noise` 来完成同一类 coarse-to-fine flip 搜索\n\n"
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_kqt0BA9psDx5r82Szl5HJmU1",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md": {
+                "type": "update",
+                "unified_diff": "@@ -15,2 +15,9 @@\n \n+## 关联页面\n+\n+- Reference：[[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]\n+- Concepts：[[concepts/Decision-based Black-box Attack for Segmentation]]、[[concepts/Proxy Index mIoU Optimization]]、[[concepts/Discrete Linear Noise]]、[[concepts/Perturbation Interaction]]、[[concepts/Query-Efficient Attack Evaluation]]\n+- Synthesis：[[synthesis/Decision-based Segmentation Attack Landscape]]\n+- Entities：[[entities/Zhaoyu Chen]]、[[entities/Wenqiang Zhang]]、[[entities/SegFormer]]\n+\n ## 研究问题\n@@ -426,2 +433 @@\n - 和论文不同的是，这个实现没有显式维护论文伪代码中的 `M / d / i / n` 这套状态变量，而是直接用当前 `axis`、`level`、`segment_idx` 和 `current_noise` 来完成同一类 coarse-to-fine flip 搜索\n-\n",
+                "move_path": null
+              }
+            }
+          }
+        },
+        {
+          "type": "text",
+          "text": "I hit a patch context mismatch on `.manifest.json`; I’m re-reading it and applying a precise update next."
+        }
+      ],
+      "timestamp": "2026-04-08T04:43:45.661Z"
+    },
+    {
+      "id": "c3d9e52d-c9b1-4847-a732-58dd31b7dbeb",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_wmEYgB0WBE3cAo2spxKbO8Vp",
+          "title": "Run Get-Content -Raw -Encoding utf8 '.manifest.json'",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_wmEYgB0WBE3cAo2spxKbO8Vp",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 '.manifest.json'"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 '.manifest.json'"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:44:15.021Z"
+    },
+    {
+      "id": "387f59f9-1733-46b0-8e5e-119bd04a9861",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_l8wS7oPiVXH54A5Pog6J5Dlo",
+          "title": "Edit D:/paper_reading/paper_reading/.manifest.json",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/.manifest.json",
+              "newText": "",
+              "oldText": "﻿{\n  \"version\": 1,\n  \"stats\": {\n    \"total_sources_ingested\": 1,\n    \"total_pages\": 9\n  },\n  \"sources\": {\n    \"papers_sources/Research-Paper-Notes\": {\n      \"ingested_at\": \"2026-04-08T11:36:20+08:00\",\n      \"size_bytes\": 31463933,\n      \"modified_at\": \"2026-04-08T11:34:59.2239607+08:00\",\n      \"source_type\": \"document\",\n      \"project\": null,\n      \"pages_created\": [\n        \"notes/Research-Paper-Notes 导入索引.md\",\n        \"notes/CIF Continuous Integrate-and-Fire.md\",\n        \"notes/GPT-ST Spatio-Temporal Pretraining.md\",\n        \"notes/Hyena Hierarchy.md\",\n        \"notes/Language Models Represent Space and Time.md\",\n        \"notes/PanGu-pi Nonlinearity Compensation.md\"\n      ],\n      \"pages_updated\": [\n        \"index.md\",\n        \"log.md\"\n      ]\n    }\n  }\n}\r\n"
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/.manifest.json"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_l8wS7oPiVXH54A5Pog6J5Dlo",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/.manifest.json": {
+                "type": "delete",
+                "content": "﻿{\n  \"version\": 1,\n  \"stats\": {\n    \"total_sources_ingested\": 1,\n    \"total_pages\": 9\n  },\n  \"sources\": {\n    \"papers_sources/Research-Paper-Notes\": {\n      \"ingested_at\": \"2026-04-08T11:36:20+08:00\",\n      \"size_bytes\": 31463933,\n      \"modified_at\": \"2026-04-08T11:34:59.2239607+08:00\",\n      \"source_type\": \"document\",\n      \"project\": null,\n      \"pages_created\": [\n        \"notes/Research-Paper-Notes 导入索引.md\",\n        \"notes/CIF Continuous Integrate-and-Fire.md\",\n        \"notes/GPT-ST Spatio-Temporal Pretraining.md\",\n        \"notes/Hyena Hierarchy.md\",\n        \"notes/Language Models Represent Space and Time.md\",\n        \"notes/PanGu-pi Nonlinearity Compensation.md\"\n      ],\n      \"pages_updated\": [\n        \"index.md\",\n        \"log.md\"\n      ]\n    }\n  }\n}\r\n"
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:44:42.914Z"
+    },
+    {
+      "id": "1d29d71f-a10e-4164-883b-1e5c66e22d63",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_npQckmLItcqsK4XgSoArbTfC",
+          "title": "Edit D:/paper_reading/paper_reading/.manifest.json",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/.manifest.json",
+              "newText": "{\n  \"version\": 1,\n  \"stats\": {\n    \"total_sources_ingested\": 2,\n    \"total_pages\": 19\n  },\n  \"sources\": {\n    \"papers_sources/Research-Paper-Notes\": {\n      \"ingested_at\": \"2026-04-08T11:36:20+08:00\",\n      \"size_bytes\": 31463933,\n      \"modified_at\": \"2026-04-08T11:34:59.2239607+08:00\",\n      \"source_type\": \"document\",\n      \"project\": null,\n      \"pages_created\": [\n        \"notes/Research-Paper-Notes 导入索引.md\",\n        \"notes/CIF Continuous Integrate-and-Fire.md\",\n        \"notes/GPT-ST Spatio-Temporal Pretraining.md\",\n        \"notes/Hyena Hierarchy.md\",\n        \"notes/Language Models Represent Space and Time.md\",\n        \"notes/PanGu-pi Nonlinearity Compensation.md\"\n      ],\n      \"pages_updated\": [\n        \"index.md\",\n        \"log.md\"\n      ]\n    },\n    \"papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation\": {\n      \"ingested_at\": \"2026-04-08T12:40:32+08:00\",\n      \"size_bytes\": 14273012,\n      \"modified_at\": \"2026-04-08T10:34:20.9084272+08:00\",\n      \"source_type\": \"document\",\n      \"project\": null,\n      \"pages_created\": [\n        \"references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\",\n        \"concepts/Decision-based Black-box Attack for Segmentation.md\",\n        \"concepts/Proxy Index mIoU Optimization.md\",\n        \"concepts/Discrete Linear Noise.md\",\n        \"concepts/Perturbation Interaction.md\",\n        \"concepts/Query-Efficient Attack Evaluation.md\",\n        \"synthesis/Decision-based Segmentation Attack Landscape.md\",\n        \"entities/Zhaoyu Chen.md\",\n        \"entities/Wenqiang Zhang.md\",\n        \"entities/SegFormer.md\"\n      ],\n      \"pages_updated\": [\n        \"index.md\",\n        \"references/index.md\",\n        \"concepts/index.md\",\n        \"synthesis/index.md\",\n        \"entities/index.md\",\n        \"notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\",\n        \"log.md\"\n      ]\n    }\n  }\n}\n",
+              "oldText": null
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/.manifest.json"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_npQckmLItcqsK4XgSoArbTfC",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/.manifest.json": {
+                "type": "add",
+                "content": "{\n  \"version\": 1,\n  \"stats\": {\n    \"total_sources_ingested\": 2,\n    \"total_pages\": 19\n  },\n  \"sources\": {\n    \"papers_sources/Research-Paper-Notes\": {\n      \"ingested_at\": \"2026-04-08T11:36:20+08:00\",\n      \"size_bytes\": 31463933,\n      \"modified_at\": \"2026-04-08T11:34:59.2239607+08:00\",\n      \"source_type\": \"document\",\n      \"project\": null,\n      \"pages_created\": [\n        \"notes/Research-Paper-Notes 导入索引.md\",\n        \"notes/CIF Continuous Integrate-and-Fire.md\",\n        \"notes/GPT-ST Spatio-Temporal Pretraining.md\",\n        \"notes/Hyena Hierarchy.md\",\n        \"notes/Language Models Represent Space and Time.md\",\n        \"notes/PanGu-pi Nonlinearity Compensation.md\"\n      ],\n      \"pages_updated\": [\n        \"index.md\",\n        \"log.md\"\n      ]\n    },\n    \"papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation\": {\n      \"ingested_at\": \"2026-04-08T12:40:32+08:00\",\n      \"size_bytes\": 14273012,\n      \"modified_at\": \"2026-04-08T10:34:20.9084272+08:00\",\n      \"source_type\": \"document\",\n      \"project\": null,\n      \"pages_created\": [\n        \"references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\",\n        \"concepts/Decision-based Black-box Attack for Segmentation.md\",\n        \"concepts/Proxy Index mIoU Optimization.md\",\n        \"concepts/Discrete Linear Noise.md\",\n        \"concepts/Perturbation Interaction.md\",\n        \"concepts/Query-Efficient Attack Evaluation.md\",\n        \"synthesis/Decision-based Segmentation Attack Landscape.md\",\n        \"entities/Zhaoyu Chen.md\",\n        \"entities/Wenqiang Zhang.md\",\n        \"entities/SegFormer.md\"\n      ],\n      \"pages_updated\": [\n        \"index.md\",\n        \"references/index.md\",\n        \"concepts/index.md\",\n        \"synthesis/index.md\",\n        \"entities/index.md\",\n        \"notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\",\n        \"log.md\"\n      ]\n    }\n  }\n}\n"
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:44:57.099Z"
+    },
+    {
+      "id": "d97d30af-5319-440e-a02b-0734a4129f36",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_bQYktWbRWTJ1HmvpZZJStOgk",
+          "title": "Edit D:/paper_reading/paper_reading/log.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/log.md",
+              "newText": "- [2026-04-08 11:36:20 +08:00] INGEST source=\"papers_sources/Research-Paper-Notes\" pages_updated=2 pages_created=6 mode=append\n- [2026-04-08 12:40:32 +08:00] INGEST source=\"papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation\" pages_updated=7 pages_created=10 mode=append\n",
+              "oldText": "- [2026-04-08 11:36:20 +08:00] INGEST source=\"papers_sources/Research-Paper-Notes\" pages_updated=2 pages_created=6 mode=append\n"
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/log.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_bQYktWbRWTJ1HmvpZZJStOgk",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/log.md": {
+                "type": "update",
+                "unified_diff": "@@ -8 +8,2 @@\n - [2026-04-08 11:36:20 +08:00] INGEST source=\"papers_sources/Research-Paper-Notes\" pages_updated=2 pages_created=6 mode=append\n+- [2026-04-08 12:40:32 +08:00] INGEST source=\"papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation\" pages_updated=7 pages_created=10 mode=append\n",
+                "move_path": null
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:45:04.799Z"
+    },
+    {
+      "id": "c54d7bec-899c-4192-8440-a3b2f6b05e76",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_u03TrC9l6TM8oTr3f3UHo44d",
+          "title": "Run $m=Get-Content -Raw -Encoding utf8 '.manifest.json' | ConvertFrom-Json; $missing=@(); foreach($s in $m.sources.PSObject.Properties){ foreach($p in $s.Value.pages_created + $s.Value.pages_updated){ if(-not (Test-Path $p)){ $missing += \"MISSING_PAGE: $p\" } } if(-not (Test-Path $s.Name)){ $missing += \"MISSING_SOURCE: $($s.Name)\" } }; if($missing.Count -eq 0){'MANIFEST_LINKS_OK'} else {$missing -join \"`n\"}",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_u03TrC9l6TM8oTr3f3UHo44d",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "$m=Get-Content -Raw -Encoding utf8 '.manifest.json' | ConvertFrom-Json; $missing=@(); foreach($s in $m.sources.PSObject.Properties){ foreach($p in $s.Value.pages_created + $s.Value.pages_updated){ if(-not (Test-Path $p)){ $missing += \"MISSING_PAGE: $p\" } } if(-not (Test-Path $s.Name)){ $missing += \"MISSING_SOURCE: $($s.Name)\" } }; if($missing.Count -eq 0){'MANIFEST_LINKS_OK'} else {$missing -join \"`n\"}"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "$m=Get-Content -Raw -Encoding utf8 '.manifest.json' | ConvertFrom-Json; $missing=@(); foreach($s in $m.sources.PSObject.Properties){ foreach($p in $s.Value.pages_created + $s.Value.pages_updated){ if(-not (Test-Path $p)){ $missing += \"MISSING_PAGE: $p\" } } if(-not (Test-Path $s.Name)){ $missing += \"MISSING_SOURCE: $($s.Name)\" } }; if($missing.Count -eq 0){'MANIFEST_LINKS_OK'} else {$missing -join \"`n\"}"
+              }
+            ],
+            "source": "agent"
+          }
+        },
+        {
+          "type": "text",
+          "text": "I found one stale manifest reference from an earlier run (`notes/Research-Paper-Notes 导入索引.md` missing), so I’m adding that index page now to restore manifest consistency."
+        }
+      ],
+      "timestamp": "2026-04-08T04:45:14.233Z"
+    },
+    {
+      "id": "d2f35822-fdee-44f0-993e-071b935d0dad",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_U7OXUudnLd5IJ4ataayFp3Tv",
+          "title": "Edit D:/paper_reading/paper_reading/notes/Research-Paper-Notes 导入索引.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/notes/Research-Paper-Notes 导入索引.md",
+              "newText": "---\ntitle: Research-Paper-Notes 导入索引\ncategory: note-index\ntags:\n  - imported\n  - paper\n  - index\nsources:\n  - papers_sources/Research-Paper-Notes/README.md\ncreated: 2026-04-08\nupdated: 2026-04-08\nsummary: 来自 Research-Paper-Notes 目录的导入索引页，汇总已生成的论文阅读笔记入口。\nprovenance:\n  extracted: 0.70\n  inferred: 0.28\n  ambiguous: 0.02\n---\n\n# Research-Paper-Notes 导入索引\n\n## 来源\n\n- [[papers_sources/Research-Paper-Notes/README.md|Research-Paper-Notes/README.md]]\n\n## 已导入页面\n\n- [[notes/CIF Continuous Integrate-and-Fire]]\n- [[notes/GPT-ST Spatio-Temporal Pretraining]]\n- [[notes/Hyena Hierarchy]]\n- [[notes/Language Models Represent Space and Time]]\n- [[notes/PanGu-pi Nonlinearity Compensation]]\n\n## 关联\n\n- [[notes/index]]\n- [[references/index]]\n- [[concepts/index]]\n\n",
+              "oldText": null
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/notes/Research-Paper-Notes 导入索引.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_U7OXUudnLd5IJ4ataayFp3Tv",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/notes/Research-Paper-Notes 导入索引.md": {
+                "type": "add",
+                "content": "---\ntitle: Research-Paper-Notes 导入索引\ncategory: note-index\ntags:\n  - imported\n  - paper\n  - index\nsources:\n  - papers_sources/Research-Paper-Notes/README.md\ncreated: 2026-04-08\nupdated: 2026-04-08\nsummary: 来自 Research-Paper-Notes 目录的导入索引页，汇总已生成的论文阅读笔记入口。\nprovenance:\n  extracted: 0.70\n  inferred: 0.28\n  ambiguous: 0.02\n---\n\n# Research-Paper-Notes 导入索引\n\n## 来源\n\n- [[papers_sources/Research-Paper-Notes/README.md|Research-Paper-Notes/README.md]]\n\n## 已导入页面\n\n- [[notes/CIF Continuous Integrate-and-Fire]]\n- [[notes/GPT-ST Spatio-Temporal Pretraining]]\n- [[notes/Hyena Hierarchy]]\n- [[notes/Language Models Represent Space and Time]]\n- [[notes/PanGu-pi Nonlinearity Compensation]]\n\n## 关联\n\n- [[notes/index]]\n- [[references/index]]\n- [[concepts/index]]\n\n"
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:45:38.069Z"
+    },
+    {
+      "id": "9468e223-5064-452b-816e-981e3e0a9762",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_ImZOk467duNDDu1KPW816rrN",
+          "title": "Edit D:/paper_reading/paper_reading/notes/index.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/notes/index.md",
+              "newText": "\n- [[notes/Research-Paper-Notes 导入索引|Research-Paper-Notes 导入索引]]\n- [[notes/CIF Continuous Integrate-and-Fire|CIF Continuous Integrate-and-Fire]]\n",
+              "oldText": "\n- [[notes/CIF Continuous Integrate-and-Fire|CIF Continuous Integrate-and-Fire]]\n"
+            },
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/notes/index.md",
+              "newText": "- [ ] 每篇笔记补 3 个以上双向链接（concept、entity、synthesis）\n",
+              "oldText": "- [ ] 每篇笔记补 3 个以上双向链接（concept、entity、synthesis）\n\n"
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/notes/index.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_ImZOk467duNDDu1KPW816rrN",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/notes/index.md": {
+                "type": "update",
+                "unified_diff": "@@ -10,2 +10,3 @@\n \n+- [[notes/Research-Paper-Notes 导入索引|Research-Paper-Notes 导入索引]]\n - [[notes/CIF Continuous Integrate-and-Fire|CIF Continuous Integrate-and-Fire]]\n@@ -21,2 +22 @@\n - [ ] 每篇笔记补 3 个以上双向链接（concept、entity、synthesis）\n-\n",
+                "move_path": null
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:45:45.951Z"
+    },
+    {
+      "id": "3b5238ec-facc-43da-b693-802aa65dabae",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_2d8S9p7poZcRAHk32xvYSwLy",
+          "title": "Edit D:/paper_reading/paper_reading/.manifest.json",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/.manifest.json",
+              "newText": "    \"total_sources_ingested\": 2,\n    \"total_pages\": 20\n  },\n",
+              "oldText": "    \"total_sources_ingested\": 2,\n    \"total_pages\": 19\n  },\n"
+            },
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/.manifest.json",
+              "newText": "        \"entities/index.md\",\n        \"notes/index.md\",\n        \"notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\",\n",
+              "oldText": "        \"entities/index.md\",\n        \"notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\",\n"
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/.manifest.json"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_2d8S9p7poZcRAHk32xvYSwLy",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/.manifest.json": {
+                "type": "update",
+                "unified_diff": "@@ -4,3 +4,3 @@\n     \"total_sources_ingested\": 2,\n-    \"total_pages\": 19\n+    \"total_pages\": 20\n   },\n@@ -50,2 +50,3 @@\n         \"entities/index.md\",\n+        \"notes/index.md\",\n         \"notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\",\n",
+                "move_path": null
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:46:15.886Z"
+    },
+    {
+      "id": "c5c984e1-3b0e-4ee5-b026-5fb01f33b2ea",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_qDVlDnlNhs5Je0jBynHV5pwv",
+          "title": "Edit D:/paper_reading/paper_reading/log.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/log.md",
+              "newText": "- [2026-04-08 11:36:20 +08:00] INGEST source=\"papers_sources/Research-Paper-Notes\" pages_updated=2 pages_created=6 mode=append\n- [2026-04-08 12:40:32 +08:00] INGEST source=\"papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation\" pages_updated=8 pages_created=10 mode=append\n",
+              "oldText": "- [2026-04-08 11:36:20 +08:00] INGEST source=\"papers_sources/Research-Paper-Notes\" pages_updated=2 pages_created=6 mode=append\n- [2026-04-08 12:40:32 +08:00] INGEST source=\"papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation\" pages_updated=7 pages_created=10 mode=append\n"
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/log.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_qDVlDnlNhs5Je0jBynHV5pwv",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/log.md": {
+                "type": "update",
+                "unified_diff": "@@ -8,2 +8,2 @@\n - [2026-04-08 11:36:20 +08:00] INGEST source=\"papers_sources/Research-Paper-Notes\" pages_updated=2 pages_created=6 mode=append\n-- [2026-04-08 12:40:32 +08:00] INGEST source=\"papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation\" pages_updated=7 pages_created=10 mode=append\n+- [2026-04-08 12:40:32 +08:00] INGEST source=\"papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation\" pages_updated=8 pages_created=10 mode=append\n",
+                "move_path": null
+              }
+            }
+          }
+        },
+        {
+          "type": "text",
+          "text": "I’m doing a final schema pass to align updated pages with the ingest template requirements (adding `summary` and minimal metadata where needed), then I’ll run one verification check."
+        }
+      ],
+      "timestamp": "2026-04-08T04:46:28.705Z"
+    },
+    {
+      "id": "2afcb2aa-7f85-4704-8b11-164a5565cf76",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_CG5tsaDqQJQctyR3H4fognYM",
+          "title": "Edit D:/paper_reading/paper_reading/index.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/index.md",
+              "newText": "  - Home\ncategory: index\ntags:\n  - index\n  - wiki\nupdated: 2026-04-08\nsummary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 结果。\n---\n",
+              "oldText": "  - Home\n---\n"
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/index.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_CG5tsaDqQJQctyR3H4fognYM",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/index.md": {
+                "type": "update",
+                "unified_diff": "@@ -4,2 +4,8 @@\n   - Home\n+category: index\n+tags:\n+  - index\n+  - wiki\n+updated: 2026-04-08\n+summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 结果。\n ---\n",
+                "move_path": null
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:46:51.006Z"
+    },
+    {
+      "id": "87547056-92ed-4fd9-b572-b52dfdd8219d",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_BvkcM2Oz2BnQcdCPFMklMJLI",
+          "title": "Edit D:/paper_reading/paper_reading/notes/index.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/notes/index.md",
+              "newText": "title: Notes 索引\ncategory: index\ntags:\n  - index\n  - note\nupdated: 2026-04-08\nsummary: 汇总当前论文阅读笔记与导入索引页面。\n---\n",
+              "oldText": "title: Notes 索引\n---\n"
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/notes/index.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_BvkcM2Oz2BnQcdCPFMklMJLI",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/notes/index.md": {
+                "type": "update",
+                "unified_diff": "@@ -2,2 +2,8 @@\n title: Notes 索引\n+category: index\n+tags:\n+  - index\n+  - note\n+updated: 2026-04-08\n+summary: 汇总当前论文阅读笔记与导入索引页面。\n ---\n",
+                "move_path": null
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:46:57.939Z"
+    },
+    {
+      "id": "f14df563-f43b-4680-9d28-6f04d6c0bc2f",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_ibpCKO4KMhKI2qbzkkpLqB42",
+          "title": "Edit D:/paper_reading/paper_reading/references/index.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/references/index.md",
+              "newText": "title: References 索引\ncategory: index\ntags:\n  - index\n  - reference\nupdated: 2026-04-08\nsummary: 单篇论文摘要与结论页面的入口索引。\n---\n",
+              "oldText": "title: References 索引\n---\n"
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/references/index.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_ibpCKO4KMhKI2qbzkkpLqB42",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/references/index.md": {
+                "type": "update",
+                "unified_diff": "@@ -2,2 +2,8 @@\n title: References 索引\n+category: index\n+tags:\n+  - index\n+  - reference\n+updated: 2026-04-08\n+summary: 单篇论文摘要与结论页面的入口索引。\n ---\n",
+                "move_path": null
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:47:02.705Z"
+    },
+    {
+      "id": "503d29ef-d9d5-47fc-9561-48159dd628f0",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_ejfWMuZXlLOZxbNKyBkYJYoe",
+          "title": "Edit D:/paper_reading/paper_reading/concepts/index.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/concepts/index.md",
+              "newText": "title: Concepts 索引\ncategory: index\ntags:\n  - index\n  - concept\nupdated: 2026-04-08\nsummary: 可复用概念页面索引，聚焦方法、术语与评测框架。\n---\n",
+              "oldText": "title: Concepts 索引\n---\n"
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/concepts/index.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_ejfWMuZXlLOZxbNKyBkYJYoe",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/concepts/index.md": {
+                "type": "update",
+                "unified_diff": "@@ -2,2 +2,8 @@\n title: Concepts 索引\n+category: index\n+tags:\n+  - index\n+  - concept\n+updated: 2026-04-08\n+summary: 可复用概念页面索引，聚焦方法、术语与评测框架。\n ---\n",
+                "move_path": null
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:47:10.960Z"
+    },
+    {
+      "id": "2030b418-4eec-48b5-bcfa-6989b2d8d8e8",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_lIMCS2jYSi5nC7QHs1gIwSGQ",
+          "title": "Edit D:/paper_reading/paper_reading/synthesis/index.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/synthesis/index.md",
+              "newText": "title: Synthesis 索引\ncategory: index\ntags:\n  - index\n  - synthesis\nupdated: 2026-04-08\nsummary: 跨论文对比、综合与主题结论页面索引。\n---\n",
+              "oldText": "title: Synthesis 索引\n---\n"
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/synthesis/index.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_lIMCS2jYSi5nC7QHs1gIwSGQ",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/synthesis/index.md": {
+                "type": "update",
+                "unified_diff": "@@ -2,2 +2,8 @@\n title: Synthesis 索引\n+category: index\n+tags:\n+  - index\n+  - synthesis\n+updated: 2026-04-08\n+summary: 跨论文对比、综合与主题结论页面索引。\n ---\n",
+                "move_path": null
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:47:19.489Z"
+    },
+    {
+      "id": "2378dd34-e751-495b-b3dd-6d20defc152b",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_GIBjEAvRU6AWt4arBnwflwEX",
+          "title": "Edit D:/paper_reading/paper_reading/entities/index.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/entities/index.md",
+              "newText": "title: Entities 索引\ncategory: index\ntags:\n  - index\n  - entity\nupdated: 2026-04-08\nsummary: 作者、模型、机构等实体页面入口索引。\n---\n",
+              "oldText": "title: Entities 索引\n---\n"
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/entities/index.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_GIBjEAvRU6AWt4arBnwflwEX",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/entities/index.md": {
+                "type": "update",
+                "unified_diff": "@@ -2,2 +2,8 @@\n title: Entities 索引\n+category: index\n+tags:\n+  - index\n+  - entity\n+updated: 2026-04-08\n+summary: 作者、模型、机构等实体页面入口索引。\n ---\n",
+                "move_path": null
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:47:23.457Z"
+    },
+    {
+      "id": "0227e89c-5a59-42fa-9bb6-3094ef8355de",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_vOYuUfBh6vFc4vs7uuHjQnhu",
+          "title": "Edit D:/paper_reading/paper_reading/notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+              "newText": "---\ntitle: Delving into Decision-based Black-box Attacks on Semantic Segmentation\ncategory: note\ntags:\n  - paper\n  - semantic-segmentation\n  - black-box-attack\n  - adversarial-attack\nsources:\n  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\n  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation_zh.md\ncreated: 2026-04-06\nupdated: 2026-04-08\nsummary: DLA 论文阅读笔记，覆盖问题定义、方法细节、实验结果与可复用实现思路。\nprovenance:\n  extracted: 0.82\n  inferred: 0.16\n  ambiguous: 0.02\n---\n\n# Delving into Decision-based Black-box Attacks on Semantic Segmentation\n",
+              "oldText": "# Delving into Decision-based Black-box Attacks on Semantic Segmentation\n"
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_vOYuUfBh6vFc4vs7uuHjQnhu",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md": {
+                "type": "update",
+                "unified_diff": "@@ -1 +1,21 @@\n+---\n+title: Delving into Decision-based Black-box Attacks on Semantic Segmentation\n+category: note\n+tags:\n+  - paper\n+  - semantic-segmentation\n+  - black-box-attack\n+  - adversarial-attack\n+sources:\n+  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md\n+  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation_zh.md\n+created: 2026-04-06\n+updated: 2026-04-08\n+summary: DLA 论文阅读笔记，覆盖问题定义、方法细节、实验结果与可复用实现思路。\n+provenance:\n+  extracted: 0.82\n+  inferred: 0.16\n+  ambiguous: 0.02\n+---\n+\n # Delving into Decision-based Black-box Attacks on Semantic Segmentation\n",
+                "move_path": null
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:47:31.524Z"
+    },
+    {
+      "id": "213c07d7-0043-4326-b034-d6f61c61491b",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_WWKIbV6HPS81f5DwcXWi5Jj2",
+          "title": "Edit D:/paper_reading/paper_reading/log.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "D:/paper_reading/paper_reading/log.md",
+              "newText": "title: Wiki 日志\ncategory: log\ntags:\n  - log\n  - wiki\nupdated: 2026-04-08\nsummary: 记录 wiki 初始化、ingest 与维护操作的时间线。\n---\n",
+              "oldText": "title: Wiki 日志\n---\n"
+            }
+          ],
+          "locations": [
+            {
+              "path": "D:/paper_reading/paper_reading/log.md"
+            }
+          ],
+          "rawInput": {
+            "call_id": "call_WWKIbV6HPS81f5DwcXWi5Jj2",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "auto_approved": true,
+            "changes": {
+              "D:/paper_reading/paper_reading/log.md": {
+                "type": "update",
+                "unified_diff": "@@ -2,2 +2,8 @@\n title: Wiki 日志\n+category: log\n+tags:\n+  - log\n+  - wiki\n+updated: 2026-04-08\n+summary: 记录 wiki 初始化、ingest 与维护操作的时间线。\n ---\n",
+                "move_path": null
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:47:41.915Z"
+    },
+    {
+      "id": "a15847ee-7a5f-4513-bf84-c9d019e7b8a1",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_dcFN3O0B9klGTMK0af3NLywK",
+          "title": "Run $m=Get-Content -Raw -Encoding utf8 '.manifest.json' | ConvertFrom-Json; $missing=@(); foreach($s in $m.sources.PSObject.Properties){ foreach($p in $s.Value.pages_created + $s.Value.pages_updated){ if(-not (Test-Path $p)){ $missing += \"MISSING_PAGE: $p\" } } if(-not (Test-Path $s.Name)){ $missing += \"MISSING_SOURCE: $($s.Name)\" } }; if($missing.Count -eq 0){'MANIFEST_LINKS_OK'} else {$missing -join \"`n\"}",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_dcFN3O0B9klGTMK0af3NLywK",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "$m=Get-Content -Raw -Encoding utf8 '.manifest.json' | ConvertFrom-Json; $missing=@(); foreach($s in $m.sources.PSObject.Properties){ foreach($p in $s.Value.pages_created + $s.Value.pages_updated){ if(-not (Test-Path $p)){ $missing += \"MISSING_PAGE: $p\" } } if(-not (Test-Path $s.Name)){ $missing += \"MISSING_SOURCE: $($s.Name)\" } }; if($missing.Count -eq 0){'MANIFEST_LINKS_OK'} else {$missing -join \"`n\"}"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "$m=Get-Content -Raw -Encoding utf8 '.manifest.json' | ConvertFrom-Json; $missing=@(); foreach($s in $m.sources.PSObject.Properties){ foreach($p in $s.Value.pages_created + $s.Value.pages_updated){ if(-not (Test-Path $p)){ $missing += \"MISSING_PAGE: $p\" } } if(-not (Test-Path $s.Name)){ $missing += \"MISSING_SOURCE: $($s.Name)\" } }; if($missing.Count -eq 0){'MANIFEST_LINKS_OK'} else {$missing -join \"`n\"}"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:47:47.125Z"
+    },
+    {
+      "id": "a38e4aab-c15b-4766-a194-1e151471035d",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_dnJ9m4mGryVP7emsqGLfChAa",
+          "title": "Run Get-ChildItem -Recurse -File concepts,entities,references,synthesis | Select-Object -ExpandProperty FullName",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_dnJ9m4mGryVP7emsqGLfChAa",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-ChildItem -Recurse -File concepts,entities,references,synthesis | Select-Object -ExpandProperty FullName"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-ChildItem -Recurse -File concepts,entities,references,synthesis | Select-Object -ExpandProperty FullName"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:47:47.318Z"
+    },
+    {
+      "id": "5d44fbec-9f7b-4e93-9f44-98c541a9e7df",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_ibau40UiKWOM6qWqPTmoxedf",
+          "title": "Run Get-Content -Raw -Encoding utf8 '.manifest.json'",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_ibau40UiKWOM6qWqPTmoxedf",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 '.manifest.json'"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 '.manifest.json'"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:47:47.443Z"
+    },
+    {
+      "id": "ac23bb55-efa1-4c35-bfe2-84dcc580fce4",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_ki8VHRwt2zrZwymbD8tZLvxs",
+          "title": "Run Get-Content -Raw -Encoding utf8 'log.md'",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_ki8VHRwt2zrZwymbD8tZLvxs",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "Get-Content -Raw -Encoding utf8 'log.md'"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "Get-Content -Raw -Encoding utf8 'log.md'"
+              }
+            ],
+            "source": "agent"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T04:47:47.509Z"
+    },
+    {
+      "id": "9fb34477-dc7a-4cef-8c99-3e0c318ba63b",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_08G0aSfCSxLv9CiRgKzzlSNb",
+          "title": "Run $paths=@('index.md','log.md','notes/index.md','references/index.md','concepts/index.md','synthesis/index.md','entities/index.md','notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md','notes/Research-Paper-Notes 导入索引.md','references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md','concepts/Decision-based Black-box Attack for Segmentation.md','concepts/Proxy Index mIoU Optimization.md','concepts/Discrete Linear Noise.md','concepts/Perturbation Interaction.md','concepts/Query-Efficient Attack Evaluation.md','synthesis/Decision-based Segmentation Attack Landscape.md','entities/Zhaoyu Chen.md','entities/Wenqiang Zhang.md','entities/SegFormer.md'); $bad=@(); foreach($p in $paths){$c=Get-Content -Raw -Encoding utf8 $p; if($c -notmatch '(?m)^summary:'){ $bad += $p}}; if($bad.Count -eq 0){'SUMMARY_FIELDS_OK'} else {$bad -join \"`n\"}",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "call_id": "call_08G0aSfCSxLv9CiRgKzzlSNb",
+            "turn_id": "019d6b62-25f9-72f1-8e55-a8c0b3590a6d",
+            "command": [
+              "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+              "-Command",
+              "$paths=@('index.md','log.md','notes/index.md','references/index.md','concepts/index.md','synthesis/index.md','entities/index.md','notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md','notes/Research-Paper-Notes 导入索引.md','references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md','concepts/Decision-based Black-box Attack for Segmentation.md','concepts/Proxy Index mIoU Optimization.md','concepts/Discrete Linear Noise.md','concepts/Perturbation Interaction.md','concepts/Query-Efficient Attack Evaluation.md','synthesis/Decision-based Segmentation Attack Landscape.md','entities/Zhaoyu Chen.md','entities/Wenqiang Zhang.md','entities/SegFormer.md'); $bad=@(); foreach($p in $paths){$c=Get-Content -Raw -Encoding utf8 $p; if($c -notmatch '(?m)^summary:'){ $bad += $p}}; if($bad.Count -eq 0){'SUMMARY_FIELDS_OK'} else {$bad -join \"`n\"}"
+            ],
+            "cwd": "D:\\paper_reading\\paper_reading",
+            "parsed_cmd": [
+              {
+                "type": "unknown",
+                "cmd": "$paths=@('index.md','log.md','notes/index.md','references/index.md','concepts/index.md','synthesis/index.md','entities/index.md','notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md','notes/Research-Paper-Notes 导入索引.md','references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md','concepts/Decision-based Black-box Attack for Segmentation.md','concepts/Proxy Index mIoU Optimization.md','concepts/Discrete Linear Noise.md','concepts/Perturbation Interaction.md','concepts/Query-Efficient Attack Evaluation.md','synthesis/Decision-based Segmentation Attack Landscape.md','entities/Zhaoyu Chen.md','entities/Wenqiang Zhang.md','entities/SegFormer.md'); $bad=@(); foreach($p in $paths){$c=Get-Content -Raw -Encoding utf8 $p; if($c -notmatch '(?m)^summary:'){ $bad += $p}}; if($bad.Count -eq 0){'SUMMARY_FIELDS_OK'} else {$bad -join \"`n\"}"
+              }
+            ],
+            "source": "agent"
+          }
+        },
+        {
+          "type": "text",
+          "text": "`wiki-ingest` 已按 append 模式执行完成，已处理新来源 `papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation`，并把内容蒸馏进 `references / concepts / synthesis / entities`，同时补全了交叉链接与 provenance 标注。\n\n新增页面（10）：\n- [Delving reference](/D:/paper_reading/paper_reading/references/Delving%20into%20Decision-based%20Black-box%20Attacks%20on%20Semantic%20Segmentation.md)\n- [Decision-based Black-box Attack for Segmentation](/D:/paper_reading/paper_reading/concepts/Decision-based%20Black-box%20Attack%20for%20Segmentation.md)\n- [Proxy Index mIoU Optimization](/D:/paper_reading/paper_reading/concepts/Proxy%20Index%20mIoU%20Optimization.md)\n- [Discrete Linear Noise](/D:/paper_reading/paper_reading/concepts/Discrete%20Linear%20Noise.md)\n- [Perturbation Interaction](/D:/paper_reading/paper_reading/concepts/Perturbation%20Interaction.md)\n- [Query-Efficient Attack Evaluation](/D:/paper_reading/paper_reading/concepts/Query-Efficient%20Attack%20Evaluation.md)\n- [Decision-based Segmentation Attack Landscape](/D:/paper_reading/paper_reading/synthesis/Decision-based%20Segmentation%20Attack%20Landscape.md)\n- [Zhaoyu Chen](/D:/paper_reading/paper_reading/entities/Zhaoyu%20Chen.md)\n- [Wenqiang Zhang](/D:/paper_reading/paper_reading/entities/Wenqiang%20Zhang.md)\n- [SegFormer](/D:/paper_reading/paper_reading/entities/SegFormer.md)\n\n已更新：\n- [index.md](/D:/paper_reading/paper_reading/index.md)\n- [notes/index.md](/D:/paper_reading/paper_reading/notes/index.md)\n- [notes/Delving…](/D:/paper_reading/paper_reading/notes/Delving%20into%20Decision-based%20Black-box%20Attacks%20on%20Semantic%20Segmentation.md)\n- [references/index.md](/D:/paper_reading/paper_reading/references/index.md)\n- [concepts/index.md](/D:/paper_reading/paper_reading/concepts/index.md)\n- [synthesis/index.md](/D:/paper_reading/paper_reading/synthesis/index.md)\n- [entities/index.md](/D:/paper_reading/paper_reading/entities/index.md)\n- [.manifest.json](/D:/paper_reading/paper_reading/.manifest.json)\n- [log.md](/D:/paper_reading/paper_reading/log.md)\n\n额外修复：\n- 补建了历史缺失页 [notes/Research-Paper-Notes 导入索引.md](/D:/paper_reading/paper_reading/notes/Research-Paper-Notes%20导入索引.md)，现在 manifest 引用校验通过。  \n- `papers_sources/2402.01220-source.tar` 这类压缩包未直接 ingest（当前流程主要 ingest 文档内容）。如果你要，我下一步可以先解包并继续 append ingest。"
+        }
+      ],
+      "timestamp": "2026-04-08T04:48:00.775Z"
+    }
+  ],
+  "savedAt": "2026-04-08T04:48:27.938Z"
+}

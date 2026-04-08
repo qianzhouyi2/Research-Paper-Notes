@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "sessionId": "019d6cc3-3fda-7741-9f97-12768af78a0c",
+  "agentId": "codex-acp",
+  "messages": [
+    {
+      "id": "a906bc1b-4776-4888-8442-5a9955123c94",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "如果我想把当前目录下的wiki转为github wiki 你有什么好的策略吗"
+        }
+      ],
+      "timestamp": "2026-04-08T11:05:23.993Z"
+    },
+    {
+      "id": "ff9645b7-f4b2-437f-b9ef-120d7379bdea",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "有，建议用“**先兼容、再美化**”的两阶段策略，风险最低。\n\n1. 先做一次“格式盘点”：统计你当前 wiki 里哪些是 GitHub Wiki 不原生支持的语法（如 `[[双链]]`、callout、Dataview、部分 frontmatter 用法）。  \n2. 建立“语法映射表”：把 `[[Page]]` 转成 `[Page](Page)`，把资源路径统一到 `images/`，把首页固定为 `Home.md`，导航放 `_Sidebar.md`。  \n3. 写一个小转换脚本批量处理（建议 Python/PowerShell），先输出到一个新目录做 dry-run，不直接覆盖原文件。  \n4. 本地先做链接校验（坏链、图片丢失、重名页面），修完再推。  \n5. GitHub Wiki 用独立仓库发布：`<repo>.wiki.git`，迁移时直接把转换后的内容提交到这个仓库。  \n6. 迁移后再做第二阶段美化：目录重组、索引页、标签页、阅读路径，而不是一开始就重构结构。\n\n如果你愿意，我可以直接基于你当前目录做一版“可执行迁移方案”（含具体转换规则和脚本骨架）。"
+        }
+      ],
+      "timestamp": "2026-04-08T11:05:44.371Z"
+    }
+  ],
+  "savedAt": "2026-04-08T11:05:50.434Z"
+}

@@ -1,0 +1,36 @@
+---
+title: Continual Learning Plasticity Maintenance Playbook
+category: synthesis
+tags:
+  - synthesis
+  - continual-learning
+  - optimization
+  - representation
+sources:
+  - papers_sources/Maintaining Plasticity in Deep Continual Learning/arxiv.tex
+  - notes/Maintaining Plasticity in Deep Continual Learning.md
+created: 2026-04-08
+updated: 2026-04-08
+summary: 持续学习应并行监测“可塑性指标+任务表现”，并用效用驱动重初始化等机制持续注入学习能力。
+provenance:
+  extracted: 0.76
+  inferred: 0.22
+  ambiguous: 0.02
+---
+
+# Continual Learning Plasticity Maintenance Playbook
+
+## 核心流程
+
+1. 先诊断：用准确率趋势、死单元比例、有效秩监测可塑性衰退。
+2. 再干预：执行低比例、效用驱动的选择性重初始化。
+3. 持续复盘：比较不同替换率与成熟阈值对长期性能的影响。
+
+## 代表页面
+
+- [[references/Maintaining Plasticity in Deep Continual Learning]]
+- [[concepts/Loss of Plasticity in Continual Learning]]
+- [[concepts/Feature Effective Rank Diagnostics]]
+- [[concepts/Selective Neuron Reinitialization]]
+- [[concepts/Continual Backpropagation]]
+

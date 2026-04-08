@@ -1,0 +1,188 @@
+\begin{thebibliography}{36}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Al-Dujaili and O'Reilly(2019)]{signhunter}
+Abdullah Al-Dujaili and Una-May O'Reilly.
+\newblock Sign bits are all you need for black-box attacks.
+\newblock In \emph{International Conference on Learning Representations}, 2019.
+
+\bibitem[Andriushchenko et~al.(2020)Andriushchenko, Croce, Flammarion, and Hein]{square}
+Maksym Andriushchenko, Francesco Croce, Nicolas Flammarion, and Matthias Hein.
+\newblock Square attack: a query-efficient black-box adversarial attack via random search.
+\newblock In \emph{European conference on computer vision}, pages 484--501. Springer, 2020.
+
+\bibitem[Bernstein et~al.(2018)Bernstein, Wang, Azizzadenesheli, and Anandkumar]{signpgd}
+Jeremy Bernstein, Yu-Xiang Wang, Kamyar Azizzadenesheli, and Animashree Anandkumar.
+\newblock signsgd: Compressed optimisation for non-convex problems.
+\newblock In \emph{International Conference on Machine Learning}, pages 560--569. PMLR, 2018.
+
+\bibitem[Chen et~al.(2020)Chen, Zhou, Yi, and Gu]{frankwhofe}
+Jinghui Chen, Dongruo Zhou, Jinfeng Yi, and Quanquan Gu.
+\newblock A frank-wolfe framework for efficient and effective adversarial attacks.
+\newblock In \emph{The Thirty-Fourth {AAAI} Conference on Artificial Intelligence, {AAAI} 2020, The Thirty-Second Innovative Applications of Artificial Intelligence Conference, {IAAI} 2020, The Tenth {AAAI} Symposium on Educational Advances in Artificial Intelligence, {EAAI} 2020, New York, NY, USA, February 7-12, 2020}, pages 3486--3494, 2020.
+
+\bibitem[Chen et~al.(2017)Chen, Papandreou, Schroff, and Adam]{deeplabv3}
+Liang-Chieh Chen, George Papandreou, Florian Schroff, and Hartwig Adam.
+\newblock Rethinking atrous convolution for semantic image segmentation.
+\newblock \emph{arXiv preprint arXiv:1706.05587}, 2017.
+
+\bibitem[Chen et~al.(2022{\natexlab{a}})Chen, Li, Wu, Xu, Ding, and Zhang]{chen2022shape}
+Zhaoyu Chen, Bo Li, Shuang Wu, Jianghe Xu, Shouhong Ding, and Wenqiang Zhang.
+\newblock Shape matters: deformable patch attack.
+\newblock In \emph{Computer Vision--ECCV 2022: 17th European Conference, Tel Aviv, Israel, October 23--27, 2022, Proceedings, Part IV}, pages 529--548. Springer, 2022{\natexlab{a}}.
+
+\bibitem[Chen et~al.(2022{\natexlab{b}})Chen, Li, Xu, Wu, Ding, and Zhang]{chen2022towards}
+Zhaoyu Chen, Bo Li, Jianghe Xu, Shuang Wu, Shouhong Ding, and Wenqiang Zhang.
+\newblock Towards practical certifiable patch defense with vision transformer.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pages 15148--15158, 2022{\natexlab{b}}.
+
+\bibitem[Chen et~al.(2023{\natexlab{a}})Chen, Li, Wu, Ding, and Zhang]{devopatch}
+Zhaoyu Chen, Bo Li, Shuang Wu, Shouhong Ding, and Wenqiang Zhang.
+\newblock Query-efficient decision-based black-box patch attack.
+\newblock \emph{IEEE Transactions on Information Forensics and Security}, 18:\penalty0 5522--5536, 2023{\natexlab{a}}.
+
+\bibitem[Chen et~al.(2023{\natexlab{b}})Chen, Li, Wu, Jiang, Ding, and Zhang]{chen2023contentbased}
+Zhaoyu Chen, Bo Li, Shuang Wu, Kaixun Jiang, Shouhong Ding, and Wenqiang Zhang.
+\newblock Content-based unrestricted adversarial attack.
+\newblock In \emph{Thirty-seventh Conference on Neural Information Processing Systems}, 2023{\natexlab{b}}.
+
+\bibitem[Cheng et~al.(2021)Cheng, Schwing, and Kirillov]{maskformer}
+Bowen Cheng, Alexander~G. Schwing, and Alexander Kirillov.
+\newblock Per-pixel classification is not all you need for semantic segmentation.
+\newblock In \emph{Advances in Neural Information Processing Systems 34: Annual Conference on Neural Information Processing Systems 2021, NeurIPS 2021, December 6-14, 2021, virtual}, pages 17864--17875, 2021.
+
+\bibitem[Cordts et~al.(2016)Cordts, Omran, Ramos, Rehfeld, Enzweiler, Benenson, Franke, Roth, and Schiele]{cityscapes}
+Marius Cordts, Mohamed Omran, Sebastian Ramos, Timo Rehfeld, Markus Enzweiler, Rodrigo Benenson, Uwe Franke, Stefan Roth, and Bernt Schiele.
+\newblock The cityscapes dataset for semantic urban scene understanding.
+\newblock In \emph{2016 {IEEE} Conference on Computer Vision and Pattern Recognition, {CVPR} 2016, Las Vegas, NV, USA, June 27-30, 2016}, pages 3213--3223, 2016.
+
+\bibitem[Dosovitskiy et~al.(2021)Dosovitskiy, Beyer, Kolesnikov, Weissenborn, Zhai, Unterthiner, Dehghani, Minderer, Heigold, Gelly, Uszkoreit, and Houlsby]{vit}
+Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvain Gelly, Jakob Uszkoreit, and Neil Houlsby.
+\newblock An image is worth 16x16 words: Transformers for image recognition at scale.
+\newblock In \emph{9th International Conference on Learning Representations, {ICLR} 2021, Virtual Event, Austria, May 3-7, 2021}. OpenReview.net, 2021.
+
+\bibitem[Everingham et~al.(2015)Everingham, Eslami, Van~Gool, Williams, Winn, and Zisserman]{pascal}
+Mark Everingham, SM~Ali Eslami, Luc Van~Gool, Christopher~KI Williams, John Winn, and Andrew Zisserman.
+\newblock The pascal visual object classes challenge: A retrospective.
+\newblock \emph{International journal of computer vision}, 111:\penalty0 98--136, 2015.
+
+\bibitem[Fischer et~al.(2017)Fischer, Kumar, Metzen, and Brox]{segrobustness}
+Volker Fischer, Mummadi~Chaithanya Kumar, Jan~Hendrik Metzen, and Thomas Brox.
+\newblock Adversarial examples for semantic image segmentation.
+\newblock In \emph{5th International Conference on Learning Representations, {ICLR} 2017, Toulon, France, April 24-26, 2017, Workshop Track Proceedings}. OpenReview.net, 2017.
+
+\bibitem[Gu et~al.(2022)Gu, Zhao, Tresp, and Torr]{segpgd}
+Jindong Gu, Hengshuang Zhao, Volker Tresp, and Philip~HS Torr.
+\newblock Segpgd: An effective and efficient adversarial attack for evaluating and boosting segmentation robustness.
+\newblock In \emph{European Conference on Computer Vision}, pages 308--325. Springer, 2022.
+
+\bibitem[Guo et~al.(2019)Guo, Gardner, You, Wilson, and Weinberger]{simba}
+Chuan Guo, Jacob Gardner, Yurong You, Andrew~Gordon Wilson, and Kilian Weinberger.
+\newblock Simple black-box adversarial attacks.
+\newblock In \emph{International Conference on Machine Learning}, pages 2484--2493. PMLR, 2019.
+
+\bibitem[Guo et~al.(2022)Guo, Zhang, Li, and Zhang]{guo2022adaptive}
+Pinxue Guo, Wei Zhang, Xiaoqiang Li, and Wenqiang Zhang.
+\newblock Adaptive online mutual learning bi-decoders for video object segmentation.
+\newblock \emph{IEEE Transactions on Image Processing}, 31:\penalty0 7063--7077, 2022.
+
+\bibitem[Hong et~al.(2021)Hong, Zhang, Chen, Zhang, and Fan]{hong2021adaptive}
+Lingyi Hong, Wei Zhang, Liangyu Chen, Wenqiang Zhang, and Jianping Fan.
+\newblock Adaptive selection of reference frames for video object segmentation.
+\newblock \emph{IEEE Transactions on Image Processing}, 31:\penalty0 1057--1071, 2021.
+
+\bibitem[Hong et~al.(2022)Hong, Chen, Liu, Zhang, Guo, Chen, and Zhang]{hong2022lvos}
+Lingyi Hong, Wenchao Chen, Zhongying Liu, Wei Zhang, Pinxue Guo, Zhaoyu Chen, and Wenqiang Zhang.
+\newblock Lvos: A benchmark for long-term video object segmentation.
+\newblock \emph{arXiv preprint arXiv:2211.10181}, 2022.
+
+\bibitem[Ilyas et~al.(2018)Ilyas, Engstrom, Athalye, and Lin]{nes}
+Andrew Ilyas, Logan Engstrom, Anish Athalye, and Jessy Lin.
+\newblock Black-box adversarial attacks with limited queries and information.
+\newblock In \emph{Proceedings of the 35th International Conference on Machine Learning, {ICML} 2018, Stockholmsm{\"{a}}ssan, Stockholm, Sweden, July 10-15, 2018}, pages 2142--2151. {PMLR}, 2018.
+
+\bibitem[Ilyas et~al.(2019)Ilyas, Engstrom, and Madry]{bandits}
+Andrew Ilyas, Logan Engstrom, and Aleksander Madry.
+\newblock Prior convictions: Black-box adversarial attacks with bandits and priors.
+\newblock In \emph{7th International Conference on Learning Representations, {ICLR} 2019, New Orleans, LA, USA, May 6-9, 2019}. OpenReview.net, 2019.
+
+\bibitem[Kirillov et~al.(2023)Kirillov, Mintun, Ravi, Mao, Rolland, Gustafson, Xiao, Whitehead, Berg, Lo, Doll{\'{a}}r, and Girshick]{sam}
+Alexander Kirillov, Eric Mintun, Nikhila Ravi, Hanzi Mao, Chlo{\'{e}} Rolland, Laura Gustafson, Tete Xiao, Spencer Whitehead, Alexander~C. Berg, Wan{-}Yen Lo, Piotr Doll{\'{a}}r, and Ross~B. Girshick.
+\newblock Segment anything.
+\newblock \emph{CoRR}, abs/2304.02643, 2023.
+
+\bibitem[Li et~al.(2020)Li, Xu, Zhang, Yang, and Li]{qeba}
+Huichen Li, Xiaojun Xu, Xiaolu Zhang, Shuang Yang, and Bo Li.
+\newblock {QEBA:} query-efficient boundary-based blackbox attack.
+\newblock In \emph{2020 {IEEE/CVF} Conference on Computer Vision and Pattern Recognition, {CVPR} 2020, Seattle, WA, USA, June 13-19, 2020}, pages 1218--1227, 2020.
+
+\bibitem[Liu et~al.(2019)Liu, Chen, Chen, and Hong]{zosignpgd}
+Sijia Liu, Pin{-}Yu Chen, Xiangyi Chen, and Mingyi Hong.
+\newblock signsgd via zeroth-order oracle.
+\newblock In \emph{7th International Conference on Learning Representations, {ICLR} 2019, New Orleans, LA, USA, May 6-9, 2019}. OpenReview.net, 2019.
+
+\bibitem[Long et~al.(2015)Long, Shelhamer, and Darrell]{fcn}
+Jonathan Long, Evan Shelhamer, and Trevor Darrell.
+\newblock Fully convolutional networks for semantic segmentation.
+\newblock In \emph{{IEEE} Conference on Computer Vision and Pattern Recognition, {CVPR} 2015, Boston, MA, USA, June 7-12, 2015}, pages 3431--3440. {IEEE} Computer Society, 2015.
+
+\bibitem[Madry et~al.(2018)Madry, Makelov, Schmidt, Tsipras, and Vladu]{pgd}
+Aleksander Madry, Aleksandar Makelov, Ludwig Schmidt, Dimitris Tsipras, and Adrian Vladu.
+\newblock Towards deep learning models resistant to adversarial attacks.
+\newblock In \emph{ICLR}, 2018.
+
+\bibitem[Moon et~al.(2019)Moon, An, and Song]{Parsimonious}
+Seungyong Moon, Gaon An, and Hyun~Oh Song.
+\newblock Parsimonious black-box adversarial attacks via efficient combinatorial optimization.
+\newblock In \emph{Proceedings of the 36th International Conference on Machine Learning, {ICML} 2019, 9-15 June 2019, Long Beach, California, {USA}}, pages 4636--4645, 2019.
+
+\bibitem[Nakka and Salzmann(2020)]{indirect}
+Krishna~Kanth Nakka and Mathieu Salzmann.
+\newblock Indirect local attacks for context-aware semantic segmentation networks.
+\newblock In \emph{Computer Vision--ECCV 2020: 16th European Conference, Glasgow, UK, August 23--28, 2020, Proceedings, Part V 16}, pages 611--628. Springer, 2020.
+
+\bibitem[Rony et~al.(2023)Rony, Pesquet, and Ben~Ayed]{proximal}
+J{\'e}r{\^o}me Rony, Jean-Christophe Pesquet, and Ismail Ben~Ayed.
+\newblock Proximal splitting adversarial attack for semantic segmentation.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pages 20524--20533, 2023.
+
+\bibitem[Shao et~al.(2022)Shao, Shi, Yi, Chen, and Hsieh]{shao2022adversarial}
+Rulin Shao, Zhouxing Shi, Jinfeng Yi, Pin-Yu Chen, and Cho-Jui Hsieh.
+\newblock On the adversarial robustness of vision transformers.
+\newblock \emph{Transactions on Machine Learning Research}, 2022.
+
+\bibitem[Szegedy et~al.(2013)Szegedy, Zaremba, Sutskever, Bruna, Erhan, Goodfellow, and Fergus]{fgsm}
+Christian Szegedy, Wojciech Zaremba, Ilya Sutskever, Joan Bruna, Dumitru Erhan, Ian Goodfellow, and Rob Fergus.
+\newblock Intriguing properties of neural networks.
+\newblock \emph{arXiv preprint arXiv:1312.6199}, 2013.
+
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, and Polosukhin]{transformer}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan~N. Gomez, Lukasz Kaiser, and Illia Polosukhin.
+\newblock Attention is all you need.
+\newblock In \emph{Advances in Neural Information Processing Systems 30: Annual Conference on Neural Information Processing Systems 2017, December 4-9, 2017, Long Beach, CA, {USA}}, pages 5998--6008, 2017.
+
+\bibitem[Xie et~al.(2017)Xie, Wang, Zhang, Zhou, Xie, and Yuille]{dag}
+Cihang Xie, Jianyu Wang, Zhishuai Zhang, Yuyin Zhou, Lingxi Xie, and Alan~L. Yuille.
+\newblock Adversarial examples for semantic segmentation and object detection.
+\newblock In \emph{{IEEE} International Conference on Computer Vision, {ICCV} 2017, Venice, Italy, October 22-29, 2017}, pages 1378--1387. {IEEE} Computer Society, 2017.
+
+\bibitem[Xie et~al.(2021)Xie, Wang, Yu, Anandkumar, Alvarez, and Luo]{segformer}
+Enze Xie, Wenhai Wang, Zhiding Yu, Anima Anandkumar, Jose~M Alvarez, and Ping Luo.
+\newblock Segformer: Simple and efficient design for semantic segmentation with transformers.
+\newblock \emph{Advances in Neural Information Processing Systems}, 34:\penalty0 12077--12090, 2021.
+
+\bibitem[Zhao et~al.(2017)Zhao, Shi, Qi, Wang, and Jia]{pspnet}
+Hengshuang Zhao, Jianping Shi, Xiaojuan Qi, Xiaogang Wang, and Jiaya Jia.
+\newblock Pyramid scene parsing network.
+\newblock In \emph{2017 {IEEE} Conference on Computer Vision and Pattern Recognition, {CVPR} 2017, Honolulu, HI, USA, July 21-26, 2017}, pages 6230--6239. {IEEE} Computer Society, 2017.
+
+\bibitem[Zhou et~al.(2017)Zhou, Zhao, Puig, Fidler, Barriuso, and Torralba]{ade20k}
+Bolei Zhou, Hang Zhao, Xavier Puig, Sanja Fidler, Adela Barriuso, and Antonio Torralba.
+\newblock Scene parsing through {ADE20K} dataset.
+\newblock In \emph{2017 {IEEE} Conference on Computer Vision and Pattern Recognition, {CVPR} 2017, Honolulu, HI, USA, July 21-26, 2017}, pages 5122--5130. {IEEE} Computer Society, 2017.
+
+\end{thebibliography}

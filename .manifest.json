@@ -1,0 +1,486 @@
+{
+  "version": 1,
+  "stats": {
+    "total_sources_ingested": 19,
+    "total_pages": 129
+  },
+  "sources": {
+    "papers_sources/Research-Paper-Notes": {
+      "ingested_at": "2026-04-08T11:36:20+08:00",
+      "size_bytes": 31463933,
+      "modified_at": "2026-04-08T11:34:59.2239607+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "notes/Research-Paper-Notes 导入索引.md",
+        "notes/CIF Continuous Integrate-and-Fire.md",
+        "notes/GPT-ST Spatio-Temporal Pretraining.md",
+        "notes/Hyena Hierarchy.md",
+        "notes/Language Models Represent Space and Time.md",
+        "notes/PanGu-pi Nonlinearity Compensation.md"
+      ],
+      "pages_updated": [
+        "index.md",
+        "log.md"
+      ]
+    },
+    "papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation": {
+      "ingested_at": "2026-04-08T12:40:32+08:00",
+      "size_bytes": 14273012,
+      "modified_at": "2026-04-08T10:34:20.9084272+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+        "concepts/Decision-based Black-box Attack for Segmentation.md",
+        "concepts/Proxy Index mIoU Optimization.md",
+        "concepts/Discrete Linear Noise.md",
+        "concepts/Perturbation Interaction.md",
+        "concepts/Query-Efficient Attack Evaluation.md",
+        "synthesis/Decision-based Segmentation Attack Landscape.md",
+        "entities/Zhaoyu Chen.md",
+        "entities/Wenqiang Zhang.md",
+        "entities/SegFormer.md"
+      ],
+      "pages_updated": [
+        "index.md",
+        "references/index.md",
+        "concepts/index.md",
+        "synthesis/index.md",
+        "entities/index.md",
+        "notes/index.md",
+        "notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+        "log.md"
+      ]
+    },
+    "notes/_notion_raw/Are aligned neural networks adversarially aligned.json": {
+      "ingested_at": "2026-04-08T16:35:11+08:00",
+      "size_bytes": 256136,
+      "modified_at": "2026-04-08T16:23:38+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "notes/Are aligned neural networks adversarially aligned.md"
+      ],
+      "pages_updated": [
+        "notes/index.md",
+        "log.md"
+      ]
+    },
+    "notes": {
+      "ingested_at": "2026-04-08T16:48:27+08:00",
+      "size_bytes": 52211532,
+      "modified_at": "2026-04-08T16:35:45+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [],
+      "pages_updated": [
+        "notes/index.md",
+        "index.md",
+        "log.md"
+      ]
+    },
+    "papers_sources/Are aligned neural networks adversarially aligned 2306.15447": {
+      "ingested_at": "2026-04-08T17:06:10+08:00",
+      "size_bytes": 1215567,
+      "modified_at": "2026-04-08T16:32:40.9564298+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "references/Are aligned neural networks adversarially aligned.md",
+        "concepts/Adversarial Alignment Evaluation.md",
+        "synthesis/Adversarial Robustness Evaluation Patterns.md"
+      ],
+      "pages_updated": [
+        "references/index.md",
+        "concepts/index.md",
+        "synthesis/index.md",
+        "index.md",
+        "log.md"
+      ]
+    },
+    "papers_sources/Hyena Hierarchy 2302.10866": {
+      "ingested_at": "2026-04-08T17:06:35+08:00",
+      "size_bytes": 3615090,
+      "modified_at": "2026-04-08T15:55:15.9653734+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "references/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+        "concepts/Hyena Operator.md"
+      ],
+      "pages_updated": [
+        "references/index.md",
+        "concepts/index.md",
+        "index.md",
+        "log.md"
+      ]
+    },
+    "papers_sources/Maintaining Plasticity in Deep Continual Learning": {
+      "ingested_at": "2026-04-08T17:06:58+08:00",
+      "size_bytes": 7005893,
+      "modified_at": "2026-04-08T16:26:43.6615465+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "references/Maintaining Plasticity in Deep Continual Learning.md",
+        "concepts/Loss of Plasticity in Continual Learning.md",
+        "concepts/Continual Backpropagation.md"
+      ],
+      "pages_updated": [
+        "references/index.md",
+        "concepts/index.md",
+        "index.md",
+        "log.md"
+      ]
+    },
+    "papers_sources/MeanSparse 2406.05927": {
+      "ingested_at": "2026-04-08T17:07:24+08:00",
+      "size_bytes": 8455956,
+      "modified_at": "2026-04-08T16:31:20.6344374+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "references/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature Sparsification.md",
+        "concepts/Mean-Centered Feature Sparsification.md"
+      ],
+      "pages_updated": [
+        "references/index.md",
+        "concepts/index.md",
+        "synthesis/Adversarial Robustness Evaluation Patterns.md",
+        "index.md",
+        "log.md"
+      ]
+    },
+    "papers_sources/2306.15447.tar": {
+      "ingested_at": "2026-04-08T17:07:41+08:00",
+      "size_bytes": 1088083,
+      "modified_at": "2026-04-08T16:31:03.1948817+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [],
+      "pages_updated": [
+        "references/Are aligned neural networks adversarially aligned.md",
+        "concepts/Adversarial Alignment Evaluation.md",
+        "log.md"
+      ]
+    },
+    "papers_sources/2302.10866.tar": {
+      "ingested_at": "2026-04-08T17:07:57+08:00",
+      "size_bytes": 2981023,
+      "modified_at": "2026-04-08T15:55:15.8080036+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [],
+      "pages_updated": [
+        "references/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+        "concepts/Hyena Operator.md",
+        "log.md"
+      ]
+    },
+    "papers_sources/2402.01220-source.tar": {
+      "ingested_at": "2026-04-08T17:08:15+08:00",
+      "size_bytes": 12803632,
+      "modified_at": "2026-04-06T16:36:44.3802553+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [],
+      "pages_updated": [
+        "references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+        "log.md"
+      ]
+    },
+    "workspace/wiki-update-2026-04-08": {
+      "ingested_at": "2026-04-08T17:18:30+08:00",
+      "size_bytes": 2080,
+      "modified_at": "2026-04-08T17:05:52.2769606+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "concepts/Wiki Append Update Playbook.md"
+      ],
+      "pages_updated": [
+        "concepts/index.md",
+        "index.md",
+        "log.md"
+      ]
+    },
+    "workspace/wiki-update-2026-04-08-deep": {
+      "ingested_at": "2026-04-08T17:29:05+08:00",
+      "size_bytes": 34485,
+      "modified_at": "2026-04-08T17:29:05.0257750+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "references/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report.md",
+        "references/Amortizing intractable inference in large language models.md",
+        "references/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+        "references/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
+        "references/CIF Continuous Integrate-and-Fire.md",
+        "references/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity.md",
+        "references/Compositional Visual Generation with Composable Diffusion Models.md",
+        "references/Demystifying Chains, Trees, and Graphs of Thoughts.md",
+        "references/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step.md",
+        "references/GPT-ST Spatio-Temporal Pretraining.md",
+        "references/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+        "references/Language Models Represent Space and Time.md",
+        "references/LoRA Low-Rank Adaptation of Large Language Models.md",
+        "references/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md",
+        "references/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
+        "references/Monte Carlo Tree Search A Review of Recent Modifications and Applications.md",
+        "references/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+        "references/PanGu-pi Nonlinearity Compensation.md",
+        "references/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+        "references/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md",
+        "references/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature.md",
+        "concepts/Tree of Thoughts Reasoning.md",
+        "concepts/Graph of Thoughts Reasoning.md",
+        "concepts/Multi-Agent LLM Orchestration.md",
+        "concepts/Adaptive Compute Routing.md",
+        "concepts/Implicit Chain-of-Thought Internalization.md",
+        "concepts/Spatio-Temporal Pretraining for Language Models.md",
+        "concepts/Low-Rank Adaptation for LLMs.md",
+        "concepts/Monte Carlo Tree Search for LLM Reasoning.md",
+        "entities/GPT-4.md",
+        "entities/LLaMA-3 8B.md",
+        "entities/Vicuna.md",
+        "entities/RobustBench.md",
+        "entities/OpenAssistant.md",
+        "synthesis/Structured Reasoning Methods for LLMs.md",
+        "synthesis/Multi-Agent LLM Collaboration Landscape.md",
+        "synthesis/LLM Inference Efficiency and Scaling.md"
+      ],
+      "pages_updated": [
+        "references/index.md",
+        "concepts/index.md",
+        "entities/index.md",
+        "synthesis/index.md",
+        "notes/index.md",
+        "index.md",
+        "log.md"
+      ]
+    },
+    "workspace/cross-link-2026-04-08": {
+      "ingested_at": "2026-04-08T17:29:20+08:00",
+      "size_bytes": 0,
+      "modified_at": "2026-04-08T17:29:20+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [],
+      "pages_updated": [
+        "notes/index.md",
+        "log.md"
+      ]
+    },
+    "workspace/wiki-update-2026-04-08-authors": {
+      "ingested_at": "2026-04-08T17:34:54+08:00",
+      "size_bytes": 2920,
+      "modified_at": "2026-04-08T17:34:54.9596821+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "entities/Maciej Besta.md",
+        "entities/Hai Zhao.md",
+        "entities/Yoshua Bengio.md",
+        "entities/Edward Hu.md"
+      ],
+      "pages_updated": [
+        "entities/index.md",
+        "references/Amortizing intractable inference in large language models.md",
+        "references/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+        "references/Demystifying Chains, Trees, and Graphs of Thoughts.md",
+        "references/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+        "references/LoRA Low-Rank Adaptation of Large Language Models.md",
+        "references/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+        "references/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+        "log.md"
+      ]
+    },
+    "workspace/wiki-coverage-audit-2026-04-08": {
+      "ingested_at": "2026-04-08T17:40:21+08:00",
+      "size_bytes": 1461,
+      "modified_at": "2026-04-08T17:40:21.6553897+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "journal/Wiki Coverage Audit 2026-04-08.md"
+      ],
+      "pages_updated": [
+        "journal/index.md",
+        "log.md"
+      ]
+    },
+    "workspace/wiki-update-2026-04-08-gap-fill": {
+      "ingested_at": "2026-04-08T17:55:47+08:00",
+      "size_bytes": 11623,
+      "modified_at": "2026-04-08T17:50:52.4371678+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "concepts/Continuous Integrate-and-Fire Alignment.md",
+        "concepts/Composable Diffusion Generation.md",
+        "concepts/Multimodal Chain-of-Thought Reasoning.md",
+        "concepts/LLM Nonlinearity Compensation.md",
+        "synthesis/Spatio-Temporal Representation in Language Models.md",
+        "entities/Yusen Zhang.md",
+        "entities/Li Dong.md",
+        "entities/Henry Bae.md",
+        "entities/Nan Liu.md",
+        "entities/Leslie Lee.md",
+        "entities/GPT-ST.md",
+        "entities/Wes Gurnee.md",
+        "entities/Shibhansh Dohare.md",
+        "entities/Peiyi Wang.md",
+        "entities/Sajjad Amini.md",
+        "entities/Junfan Jiang.md",
+        "entities/Maciej Swiechowski.md",
+        "entities/Yunhe Wang.md",
+        "entities/Yinghuan Wang.md",
+        "entities/Shunyu Yao.md"
+      ],
+      "pages_updated": [
+        "concepts/index.md",
+        "synthesis/index.md",
+        "entities/index.md",
+        "references/Are aligned neural networks adversarially aligned.md",
+        "references/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
+        "references/CIF Continuous Integrate-and-Fire.md",
+        "references/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity.md",
+        "references/Compositional Visual Generation with Composable Diffusion Models.md",
+        "references/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step.md",
+        "references/GPT-ST Spatio-Temporal Pretraining.md",
+        "references/Language Models Represent Space and Time.md",
+        "references/Maintaining Plasticity in Deep Continual Learning.md",
+        "references/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md",
+        "references/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature.md",
+        "references/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
+        "references/Monte Carlo Tree Search A Review of Recent Modifications and Applications.md",
+        "references/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+        "references/PanGu-pi Nonlinearity Compensation.md",
+        "references/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+        "references/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md",
+        "log.md"
+      ]
+    },
+    "workspace/wiki-update-2026-04-08-note-link-pass": {
+      "ingested_at": "2026-04-08T17:56:10+08:00",
+      "size_bytes": 369296,
+      "modified_at": "2026-04-08T17:54:27.4180333+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [],
+      "pages_updated": [
+        "notes/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report.md",
+        "notes/Amortizing intractable inference in large language models.md",
+        "notes/Are aligned neural networks adversarially aligned.md",
+        "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+        "notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
+        "notes/CIF Continuous Integrate-and-Fire.md",
+        "notes/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity.md",
+        "notes/Compositional Visual Generation with Composable Diffusion Models.md",
+        "notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+        "notes/Demystifying Chains, Trees, and Graphs of Thoughts.md",
+        "notes/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step.md",
+        "notes/GPT-ST Spatio-Temporal Pretraining.md",
+        "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+        "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+        "notes/Language Models Represent Space and Time.md",
+        "notes/LoRA Low-Rank Adaptation of Large Language Models.md",
+        "notes/Maintaining Plasticity in Deep Continual Learning.md",
+        "notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md",
+        "notes/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature.md",
+        "notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
+        "notes/Monte Carlo Tree Search A Review of Recent Modifications and Applications.md",
+        "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+        "notes/PanGu-pi Nonlinearity Compensation.md",
+        "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+        "notes/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md",
+        "log.md"
+      ]
+    },
+    "workspace/wiki-update-2026-04-08-papers-sources-deep": {
+      "ingested_at": "2026-04-08T18:43:08+08:00",
+      "size_bytes": 52341,
+      "modified_at": "2026-04-08T18:43:08+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "journal/Papers Sources Deep Gap Audit 2026-04-08.md",
+        "concepts/Known-Solvable Attack Calibration.md",
+        "concepts/Multimodal Adversarial Image Prompting.md",
+        "concepts/Data-Controlled Gating in Sequence Models.md",
+        "concepts/Implicit Long Convolution Parameterization.md",
+        "concepts/Feature Effective Rank Diagnostics.md",
+        "concepts/Selective Neuron Reinitialization.md",
+        "concepts/Cluster-Aware Masked Pretraining.md",
+        "concepts/Hierarchical Spatio-Temporal Hypergraph Encoding.md",
+        "concepts/Linear Probe World-Model Evaluation.md",
+        "concepts/Augmented Shortcut for Attention Blocks.md",
+        "concepts/Cascaded Activation Nonlinearity Compensation.md",
+        "concepts/Quantity-Aware Emission Control in CIF.md",
+        "entities/Nicholas Carlini.md",
+        "entities/Florian Tramer.md",
+        "entities/Ludwig Schmidt.md",
+        "entities/Zhengyang Shan.md",
+        "entities/Michael Poli.md",
+        "entities/Tri Dao.md",
+        "entities/Richard S. Sutton.md",
+        "entities/Amir Houmansadr.md",
+        "entities/Shuang Xu.md",
+        "entities/Max Tegmark.md",
+        "entities/Hanting Chen.md",
+        "entities/MiniGPT-4.md",
+        "entities/LLaVA.md",
+        "entities/LLaMA-Adapter.md",
+        "entities/Cityscapes Dataset.md",
+        "entities/ADE20K Dataset.md",
+        "entities/Mohammadreza Teymoorianfard.md",
+        "entities/Shiqing Ma.md",
+        "synthesis/Alignment Robustness Evaluation Ladder.md",
+        "synthesis/Long-Context Architecture Without Full Attention.md",
+        "synthesis/Continual Learning Plasticity Maintenance Playbook.md",
+        "synthesis/Structured Spatio-Temporal Representation Learning.md"
+      ],
+      "pages_updated": [
+        "journal/index.md",
+        "concepts/Adversarial Alignment Evaluation.md",
+        "concepts/Hyena Operator.md",
+        "concepts/Loss of Plasticity in Continual Learning.md",
+        "concepts/Continual Backpropagation.md",
+        "concepts/Mean-Centered Feature Sparsification.md",
+        "concepts/Continuous Integrate-and-Fire Alignment.md",
+        "concepts/Spatio-Temporal Pretraining for Language Models.md",
+        "concepts/LLM Nonlinearity Compensation.md",
+        "concepts/index.md",
+        "entities/index.md",
+        "synthesis/Adversarial Robustness Evaluation Patterns.md",
+        "synthesis/Decision-based Segmentation Attack Landscape.md",
+        "synthesis/Spatio-Temporal Representation in Language Models.md",
+        "synthesis/LLM Inference Efficiency and Scaling.md",
+        "synthesis/index.md",
+        "references/Are aligned neural networks adversarially aligned.md",
+        "references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+        "references/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+        "references/Maintaining Plasticity in Deep Continual Learning.md",
+        "references/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature.md",
+        "references/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature Sparsification.md",
+        "references/CIF Continuous Integrate-and-Fire.md",
+        "references/GPT-ST Spatio-Temporal Pretraining.md",
+        "references/Language Models Represent Space and Time.md",
+        "references/PanGu-pi Nonlinearity Compensation.md",
+        "notes/Are aligned neural networks adversarially aligned.md",
+        "notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+        "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+        "notes/Maintaining Plasticity in Deep Continual Learning.md",
+        "notes/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature.md",
+        "notes/CIF Continuous Integrate-and-Fire.md",
+        "notes/GPT-ST Spatio-Temporal Pretraining.md",
+        "notes/Language Models Represent Space and Time.md",
+        "notes/Research-Paper-Notes 导入索引.md",
+        "notes/PanGu-pi Nonlinearity Compensation.md",
+        "index.md",
+        "log.md"
+      ]
+    }
+  }
+}

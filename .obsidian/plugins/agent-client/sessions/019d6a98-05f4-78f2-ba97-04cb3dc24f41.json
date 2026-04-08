@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "sessionId": "019d6a98-05f4-78f2-ba97-04cb3dc24f41",
+  "agentId": "codex-acp",
+  "messages": [
+    {
+      "id": "831ec909-2ed7-495f-8ab8-39cf7ccd8c4d",
+      "role": "user",
+      "content": [
+        {
+          "type": "text_with_context",
+          "text": "你快速但简单直白的给我讲讲DLA的算法和原理",
+          "autoMentionContext": {
+            "noteName": "MinerU_markdown_2402_2041085416005947392_zh",
+            "notePath": "papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/MinerU_markdown_2402_2041085416005947392_zh.md"
+          }
+        }
+      ],
+      "timestamp": "2026-04-08T00:57:44.220Z"
+    }
+  ],
+  "savedAt": "2026-04-08T00:58:49.581Z"
+}
