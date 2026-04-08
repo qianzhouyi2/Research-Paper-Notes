@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Language Models Represent Space and Time | Research Paper Notes</title>
+  <meta name="description" content="﻿ Language Models Represent Space and Time 阅读日期：2026 04 08 阅读状态：已读 标签： paper llm world model probing imported 相关方向：世界模型、可解释性、表示探针 阅读目的：沉淀“LLM 时空表示”证据链并保留全部图示 1. 论文信息 题目：Language M…">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../site.js"></script>
+</head>
+<body data-root-prefix="../" data-page-path="notes/Language Models Represent Space and Time.html">
+  <div class="site-shell">
+    <aside class="sidebar panel">
+      <a class="brand" href="../index.html">
+        <span class="brand-kicker">Research Wiki</span>
+        <h1>Research Paper Notes</h1>
+        <p>A browsable paper-reading vault published as a GitHub Pages site.</p>
+      </a>
+      <nav><h1 id="navigation">Navigation</h1>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="index.html">Notes</a></li>
+<li><a href="../references/index.html">References</a></li>
+<li><a href="../concepts/index.html">Concepts</a></li>
+<li><a href="../entities/index.html">Entities</a></li>
+<li><a href="../synthesis/index.html">Synthesis</a></li>
+<li><a href="../journal/index.html">Journal</a></li>
+<li><a href="../projects/index.html">Projects</a></li>
+<li><a href="../log.html">Log</a></li>
+</ul></nav>
+      <p class="footer-note">Static export from the local Obsidian-style wiki. Markdown was pre-rendered for GitHub Pages.</p>
+    </aside>
+
+    <main class="main">
+      <header class="topbar panel">
+        <div>
+          <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
+          <h2>Language Models Represent Space and Time</h2>
+          <p>﻿ Language Models Represent Space and Time 阅读日期：2026 04 08 阅读状态：已读 标签： paper llm world model probing imported 相关方向：世界模型、可解释性、表示探针 阅读目的：沉淀“LLM 时空表示”证据链并保留全部图示 1. 论文信息 题目：Language M…</p>
+        </div>
+        <div class="topbar-actions">
+          <div class="search-box">
+            <input data-search-input type="search" placeholder="Search pages, concepts, entities...">
+            <div data-search-results class="search-results"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="breadcrumbs"><a href="../index.html">Home</a><span> / </span><a href="index.html">Notes</a><span> / </span><span>Language Models Represent Space and Time</span></div>
+
+      <article class="article-wrap panel">
+        <div class="article-path">notes/Language Models Represent Space and Time.md</div>
+        <div class="markdown-body"><p>﻿# Language Models Represent Space and Time</p>
+<ul>
+<li>阅读日期：2026-04-08</li>
+<li>阅读状态：已读</li>
+<li>标签：#paper #llm #world-model #probing #imported</li>
+<li>相关方向：世界模型、可解释性、表示探针</li>
+<li>阅读目的：沉淀“LLM 时空表示”证据链并保留全部图示</li>
+</ul>
+<hr />
+<h2 id="1">1. 论文信息</h2>
+<ul>
+<li>题目：Language Models Represent Space and Time</li>
+<li>链接：<a href="../papers_sources/Research-Paper-Notes/LLM体现出时空概念.html">LLM体现出时空概念.md（源笔记）</a></li>
+<li>作者：Wes Gurnee, Max Tegmark</li>
+<li>单位：Massachusetts Institute of Technology（MIT）</li>
+<li>发表：ICLR 2024（arXiv:2310.02207）</li>
+<li>关键词：linear probes, spatial representation, temporal representation, world model, neuron interpretability</li>
+<li>源笔记：<a href="../papers_sources/Research-Paper-Notes/LLM体现出时空概念.html">LLM体现出时空概念.md</a></li>
+</ul>
+<hr />
+<h2 id="2">2. 先看结论（适合快速回顾）</h2>
+<ul>
+<li>这篇论文主要解决什么问题：LLM 是否学到可解码的时空结构表示，而非仅记忆统计相关性。</li>
+<li>提出的核心方法是什么：分层激活提取 + 线性探针 + 鲁棒性/泛化测试。</li>
+<li>最终最重要的结果是什么：时空信息在多层可线性解码，且跨提示、跨实体具有一定稳健性。</li>
+<li>我现在是否值得深入读：值得</li>
+<li>原因：为“LLM 世界模型”讨论提供了可复现实证框架。</li>
+</ul>
+<hr />
+<h2 id="3">3. 问题定义</h2>
+<h3 id="31">3.1 研究问题</h3>
+<ul>
+<li>论文关注的核心问题：LLM 是在记忆表面统计相关性，还是学习了可线性解码的时空结构表示。</li>
+<li>为什么这个问题重要：该问题直接关系到“LLM 是否具备世界模型”的核心争议。</li>
+<li>论文要优化或解决的目标：通过系统探针实验，验证时空表征的存在性、线性性、鲁棒性和泛化性。</li>
+</ul>
+<p>源笔记在这里给出了 Llama-2-70B 的时空投影可视化：</p>
+<p><img alt="image-20231028081613089" src="../papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231028081613089.png" /></p>
+<h3 id="32">3.2 为什么重要</h3>
+<ul>
+<li>这个问题为什么值得做：关乎 LLM 能力边界与可解释性基础。</li>
+<li>现实应用价值：可用于检索增强、时序对齐与事实校准。</li>
+<li>学术上的意义：把抽象争议转化为可量化实验问题。</li>
+</ul>
+<h3 id="33">3.3 难点</h3>
+<ul>
+<li>难点 1：探针可解码并不等于模型在生成时因果使用该表示。</li>
+<li>难点 2：空间误差受地理密度影响，绝对距离指标可能失真。</li>
+<li>难点 3：需要跨数据集、跨实体类型、跨 prompt 才能排除偶然相关。</li>
+</ul>
+<hr />
+<h2 id="4">4. 论文方法</h2>
+<h3 id="41">4.1 方法总览</h3>
+<ul>
+<li>方法名称：基于层级激活的线性探针框架。</li>
+<li>整体思路：提取 Llama-2 各层残差流激活，对空间坐标/时间标签训练线性探针，并做鲁棒性与泛化验证。</li>
+<li>代理目标 / 损失 / 优化目标：岭回归目标 <code>||Y-AW||^2 + λ||W||^2</code>，并用留一交叉验证（LOOCV）选择 <code>λ</code>。</li>
+</ul>
+<h3 id="42">4.2 核心设计</h3>
+<blockquote>
+<p>每个设计都尽量回答：做了什么、为什么这么设计、解决了哪个难点</p>
+</blockquote>
+<h3 id="1_1">1. 模块一：数据构建与激活提取</h3>
+<ul>
+<li>做了什么：</li>
+<li>构建 3 个空间数据集（世界/美国/纽约）和 3 个时间数据集（历史人物/文娱作品/新闻）。</li>
+<li>对每个实体名称抽取模型各层最后 token 激活，形成层级激活数据集。</li>
+<li>为什么这么设计：覆盖不同尺度与实体类型，测试表示是否统一可迁移。</li>
+<li>关键实现：</li>
+<li>模型：Llama-2 7B/13B/70B。</li>
+<li>激活维度：每层形成 <code>n × d_model</code> 表征矩阵。</li>
+</ul>
+<p>对应数据构建示意：</p>
+<p><img alt="image-20231113135715004" src="../papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231113135715004.png" /></p>
+<h3 id="2_1">2. 模块二：线性探针与评价指标</h3>
+<ul>
+<li>做了什么：</li>
+<li>对每层激活拟合线性探针，预测经纬度或时间。</li>
+<li>用 <code>R^2</code>、Spearman、接近误差评估拟合与泛化能力。</li>
+<li>为什么这么设计：</li>
+<li><code>R^2</code>/Spearman 衡量回归关联。</li>
+<li>接近误差更适合空间分布不均匀数据（避免固定距离偏差）。</li>
+<li>关键实现：</li>
+<li>线性探针与非线性 MLP 探针对照。</li>
+<li>LOOCV 调整正则项，减少过拟合。</li>
+</ul>
+<p>指标解释与图示：</p>
+<p><img alt="image-20231113160852447" src="../papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231113160852447.png" />
+<img alt="image-20231113163328644" src="../papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231113163328644.png" />
+<img alt="image-20231113163921496" src="../papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231113163921496.png" />
+<img alt="image-20231113163851877" src="../papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231113163851877.png" /></p>
+<h3 id="3_1">3. 模块三：鲁棒性与泛化验证</h3>
+<ul>
+<li>做了什么：</li>
+<li>prompt 变体测试（空提示、消歧提示、随机 token、全大写等）。</li>
+<li>块留出泛化（国家/年代等分块外推）。</li>
+<li>跨实体泛化（按实体类别留出）。</li>
+<li>PCA 压缩探针（低维主成分可解释性测试）。</li>
+<li>神经元层面定位（时空相关神经元分析）。</li>
+<li>为什么这么设计：</li>
+<li>验证结果并非“提示偶然性”或“探针记忆查表”。</li>
+<li>关键实现：</li>
+<li>比较线性探针与非线性探针增益差。</li>
+<li>比较默认切分与严格留出切分性能差异。</li>
+</ul>
+<p>相关可视化按实验子问题排列：</p>
+<p><img alt="image-20231113214001125" src="../papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231113214001125.png" />
+<img alt="image-20231118051047815" src="../papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231118051047815.png" />
+<img alt="image-20231118052706921" src="../papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231118052706921.png" />
+<img alt="image-20231118054909751" src="../papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231118054909751.png" />
+<img alt="image-20231118070045617" src="../papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231118070045617.png" />
+<img alt="image-20231118071955644" src="../papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231118071955644.png" />
+<img alt="image-20231119211038146" src="../papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231119211038146.png" />
+<img alt="image-20231119202814940" src="../papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231119202814940.png" />
+<img alt="image-20231119212213066" src="../papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231119212213066.png" />
+<img alt="image-20231119212504785" src="../papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231119212504785.png" />
+<img alt="image-20231119213103499" src="../papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231119213103499.png" />
+<img alt="image-20231119223503171" src="../papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231119223503171.png" />
+<img alt="image-20231119224716033" src="../papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231119224716033.png" />
+<img alt="image-20231119225154705" src="../papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231119225154705.png" />
+<img alt="image-20231119225204089" src="../papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231119225204089.png" /></p>
+<h3 id="43">4.3 训练 / 推理细节</h3>
+<ul>
+<li>训练阶段做了什么：训练线性/非线性探针，不改动被测语言模型参数。</li>
+<li>推理阶段做了什么：对层激活进行时空属性解码与泛化评估。</li>
+<li>损失函数组成：岭回归目标 <code>||Y-AW||^2 + λ||W||^2</code>。</li>
+<li>关键超参数：正则项 <code>λ</code>（LOOCV 选择）、PCA 维数等。</li>
+<li>复杂度 / 额外开销：探针训练开销低于全模型微调。</li>
+</ul>
+<hr />
+<h2 id="5">5. 论文贡献（只写作者真正新增的东西）</h2>
+<ul>
+<li>贡献 1：提供证据支持 LLM 内部存在可线性解码的时空表示。</li>
+<li>贡献 2：证明该表示在多提示场景下具有较强鲁棒性。</li>
+<li>贡献 3：展示跨实体统一表示能力与神经元层面的可解释线索。</li>
+</ul>
+<blockquote>
+<p>判断标准：如果删掉这一点，论文是否还成立？如果“是”，那它可能不是核心贡献。</p>
+</blockquote>
+<hr />
+<h2 id="6">6. 实验设置</h2>
+<ul>
+<li>数据集：世界/美国/纽约地点；历史人物死亡年份；文娱发布时间；新闻时间。</li>
+<li>模型：Llama-2 7B/13B/70B。</li>
+<li>对比方法：线性探针 vs 非线性 MLP 探针；多种 prompt 和泛化切分策略。</li>
+<li>评价指标：<code>R^2</code>、Spearman rank correlation、接近误差。</li>
+<li>关键超参数：岭回归正则 <code>λ</code>（LOOCV 选择）、PCA 主成分数 <code>k</code>。</li>
+</ul>
+<hr />
+<h2 id="7">7. 主要结果</h2>
+<h3 id="71">7.1 主结果</h3>
+<ul>
+<li>结果 1：模型在早中层就形成较强时空可解码表示，且模型越大效果越好。</li>
+<li>结果 2：非线性探针相对线性探针增益很小，支持线性表示假设。</li>
+<li>结果 3：块留出与跨实体泛化虽有退化但显著优于随机，显示结构化相对定位信息。</li>
+</ul>
+<h3 id="72">7.2 从结果中能读出的结论</h3>
+<ul>
+<li>结论 1：时空信息并非只在末层出现，早中层已有可解码结构。</li>
+<li>结论 2：线性探针已能解释主要可解码信息，非线性增益有限。</li>
+<li>结论 3：跨块与跨实体泛化支持结构表示假设。</li>
+</ul>
+<h3 id="73">7.3 最关键的证据</h3>
+<ul>
+<li>最关键表格：跨模型/跨层性能对比结果。</li>
+<li>最关键图：时空投影与鲁棒性、泛化可视化图。</li>
+<li>最关键数字：<code>R^2</code>、Spearman、接近误差的跨设定趋势。</li>
+<li>为什么它最关键：直接反驳“仅靠记忆查表”的单一解释。</li>
+</ul>
+<hr />
+<h2 id="8">8. 消融实验</h2>
+<ul>
+<li>消融点 1：随机 token prompt 明显降低性能，消歧提示影响较小。</li>
+<li>消融点 2：PCA 降维后仍保留可观性能，表示信息具有低维可压缩性。</li>
+<li>消融点 3：跨块与跨实体实验共同支持“结构表示”而非“纯记忆映射”。</li>
+</ul>
+<hr />
+<h2 id="9">9. 和已有工作的关系</h2>
+<ul>
+<li>这篇论文最接近哪些方法：神经探针、表示几何分析、世界模型实证研究。</li>
+<li>和已有方法相比，最大的不同：系统整合提示鲁棒性、块留出、跨实体泛化三类证据。</li>
+<li>真正的新意在哪里：将时空表示存在性问题做成可复现流程。</li>
+<li>哪些地方更像“工程改进”而不是“方法创新”：数据清洗与评估细节。</li>
+<li>这篇论文在整个研究脉络里的位置：LLM 世界模型证据链中的关键探针工作。</li>
+</ul>
+<hr />
+<h2 id="10">10. 我的理解（这一节不能照抄论文）</h2>
+<ul>
+<li>直观理解：LLM 至少学到了一种可坐标化的时空语义流形，而不只是词频共现统计。</li>
+<li>最值得关注的设计：跨实体泛化 + 块留出的组合证据链。</li>
+<li>和已有方法相比的新意：把“世界模型争议”转成可量化、可复现实验流程。</li>
+<li>我认为最强的一点：结论不依赖单一 prompt 或单一实体域。</li>
+</ul>
+<hr />
+<h2 id="11">11. 局限性</h2>
+<ul>
+<li>局限 1：探针结论仍是间接证据，无法完全证明模型在推理中必然因果使用该表示。</li>
+<li>局限 2：数据清洗与元数据构建策略可能影响结果稳定性。</li>
+<li>局限 3：主要验证集中于 Llama2 系列，跨架构泛化仍需补证。</li>
+</ul>
+<blockquote>
+<p>可从假设过强、实验覆盖不足、开销过大、泛化不明、复现风险高等角度写。</p>
+</blockquote>
+<hr />
+<h2 id="12">12. 对我的启发</h2>
+<ul>
+<li>能直接借鉴的部分：线性探针 + 鲁棒性/泛化联合验证流程。</li>
+<li>不能直接照搬的部分：数据构建质量对结论影响较大。</li>
+<li>对我当前课题的启发：可做领域化时空探针与神经元定位分析。</li>
+<li>可以尝试的改进方向：跨架构验证、因果干预式探针、在线评测。</li>
+<li>可以作为 baseline / 对比项 / ablation 的部分：线性 vs 非线性探针、提示扰动、块留出。</li>
+</ul>
+<hr />
+<h2 id="13">13. 待验证问题</h2>
+<ul>
+<li>问题 1：更强推理模型中的时空神经元是更集中还是更分散？</li>
+<li>问题 2：时空表示与知识编辑/事实更新之间如何耦合？</li>
+<li>问题 3：能否把该表示用于可控检索、时间对齐与事实校准？</li>
+</ul>
+<hr />
+<h2 id="14">14. 一句话总结</h2>
+<ul>
+<li>这项工作用系统探针证据支持了“LLM 内部存在跨实体统一、可线性解码的时空表示”。</li>
+</ul>
+<hr />
+<h2 id="15">15. 快速索引（便于二次回看）</h2>
+<ul>
+<li>核心公式：岭回归探针目标函数。</li>
+<li>核心图表：时空投影图、鲁棒性图、跨实体泛化图。</li>
+<li>最值得复看的章节：模块二与模块三实验部分。</li>
+<li>复现时最需要注意的点：样本构建、切分策略与评价指标口径。</li>
+</ul>
+<h3 id="151">15.1 整合说明 / 索引</h3>
+<ul>
+<li>本篇全部原始图文内容已完整并入 1~14 节，图片均保留在对应位置。</li>
+</ul>
+<h3 id="152">15.2 导入来源与完整性记录</h3>
+<ul>
+<li>源笔记：<a href="../papers_sources/Research-Paper-Notes/LLM体现出时空概念.html">LLM体现出时空概念.md</a></li>
+<li>资源目录：<code>papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/</code></li>
+<li>联网补充来源：</li>
+<li>arXiv: https://arxiv.org/abs/2310.02207</li>
+</ul>
+<h3 id="153">15.3 已完成自检记录</h3>
+<ul>
+<li>[x] 原始笔记所有内容已整理进模板结构。</li>
+<li>[x] 图片已插入并保留在相应位置。</li>
+<li>[x] 已联网补充论文元信息。</li>
+</ul>
+<h2 id="wiki">Wiki 关联</h2>
+<ul>
+<li>参考摘要：<a href="../references/Language Models Represent Space and Time.html">Language Models Represent Space and Time</a></li>
+<li>概念锚点：<a href="../concepts/Spatio-Temporal Pretraining for Language Models.html">Spatio-Temporal Pretraining for Language Models</a>、<a href="../concepts/Linear Probe World-Model Evaluation.html">Linear Probe World-Model Evaluation</a></li>
+<li>实体锚点：<a href="../entities/Wes Gurnee.html">Wes Gurnee</a>、<a href="../entities/Max Tegmark.html">Max Tegmark</a></li>
+<li>综合页面：<a href="../synthesis/Spatio-Temporal Representation in Language Models.html">Spatio-Temporal Representation in Language Models</a>、<a href="../synthesis/Structured Spatio-Temporal Representation Learning.html">Structured Spatio-Temporal Representation Learning</a></li>
+</ul></div>
+      </article>
+    </main>
+
+    <aside class="rail panel">
+      <h3>Page Meta</h3>
+      <div class="meta-block">
+        <p class="meta-label">Section</p>
+        <p>notes</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Tags</p>
+        <div class="chip-list"><span class="chip">untagged</span></div>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Summary</p>
+        <p>﻿ Language Models Represent Space and Time 阅读日期：2026 04 08 阅读状态：已读 标签： paper llm world model probing imported 相关方向：世界模型、可解释性、表示探针 阅读目的：沉淀“LLM 时空表示”证据链并保留全部图示 1. 论文信息 题目：Language M…</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Source</p>
+        <ul>
+          <li><a href="https://github.com/qianzhouyi2/Research-Paper-Notes/blob/main/notes/Language Models Represent Space and Time.md">Open Markdown On GitHub</a></li>
+          <li><a href="../search-index.json">Open Search Index</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

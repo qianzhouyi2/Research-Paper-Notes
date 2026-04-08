@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multimodal Chain-of-Thought Reasoning in Language Models | Research Paper Notes</title>
+  <meta name="description" content="﻿ Multimodal Chain of Thought Reasoning in Language Models 阅读日期：2026 04 08 阅读状态：已读 标签： paper multimodal cot reasoning vision language 相关方向：多模态推理、视觉 语言融合、可解释推理链 阅读目的：梳理 MM CoT 两阶段框…">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../site.js"></script>
+</head>
+<body data-root-prefix="../" data-page-path="notes/Multimodal Chain-of-Thought Reasoning in Language Models.html">
+  <div class="site-shell">
+    <aside class="sidebar panel">
+      <a class="brand" href="../index.html">
+        <span class="brand-kicker">Research Wiki</span>
+        <h1>Research Paper Notes</h1>
+        <p>A browsable paper-reading vault published as a GitHub Pages site.</p>
+      </a>
+      <nav><h1 id="navigation">Navigation</h1>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="index.html">Notes</a></li>
+<li><a href="../references/index.html">References</a></li>
+<li><a href="../concepts/index.html">Concepts</a></li>
+<li><a href="../entities/index.html">Entities</a></li>
+<li><a href="../synthesis/index.html">Synthesis</a></li>
+<li><a href="../journal/index.html">Journal</a></li>
+<li><a href="../projects/index.html">Projects</a></li>
+<li><a href="../log.html">Log</a></li>
+</ul></nav>
+      <p class="footer-note">Static export from the local Obsidian-style wiki. Markdown was pre-rendered for GitHub Pages.</p>
+    </aside>
+
+    <main class="main">
+      <header class="topbar panel">
+        <div>
+          <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
+          <h2>Multimodal Chain-of-Thought Reasoning in Language Models</h2>
+          <p>﻿ Multimodal Chain of Thought Reasoning in Language Models 阅读日期：2026 04 08 阅读状态：已读 标签： paper multimodal cot reasoning vision language 相关方向：多模态推理、视觉 语言融合、可解释推理链 阅读目的：梳理 MM CoT 两阶段框…</p>
+        </div>
+        <div class="topbar-actions">
+          <div class="search-box">
+            <input data-search-input type="search" placeholder="Search pages, concepts, entities...">
+            <div data-search-results class="search-results"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="breadcrumbs"><a href="../index.html">Home</a><span> / </span><a href="index.html">Notes</a><span> / </span><span>Multimodal Chain of Thought Reasoning in Language Models</span></div>
+
+      <article class="article-wrap panel">
+        <div class="article-path">notes/Multimodal Chain-of-Thought Reasoning in Language Models.md</div>
+        <div class="markdown-body"><p>﻿# Multimodal Chain-of-Thought Reasoning in Language Models</p>
+<ul>
+<li>阅读日期：2026-04-08</li>
+<li>阅读状态：已读</li>
+<li>标签：#paper #multimodal #cot #reasoning #vision-language</li>
+<li>相关方向：多模态推理、视觉-语言融合、可解释推理链</li>
+<li>阅读目的：梳理 MM-CoT 两阶段框架与“减少幻觉、提升答案推理”的机制证据</li>
+</ul>
+<hr />
+<h2 id="1">1. 论文信息</h2>
+<ul>
+<li>题目：Multimodal Chain-of-Thought Reasoning in Language Models</li>
+<li>链接：https://arxiv.org/abs/2302.00923</li>
+<li>作者：Zhuosheng Zhang, Aston Zhang, Mu Li, Hai Zhao, Alex Smola</li>
+<li>单位：Amazon（Alexa AI / AWS）与高校合作团队（见论文作者页）</li>
+<li>会议 / 期刊 / 年份：TMLR 2024</li>
+<li>关键词（3~8个）：Multimodal-CoT, ScienceQA, A-OKVQA, Hallucination, Two-stage Reasoning</li>
+<li>论文一句话主题：将视觉特征显式融入 CoT 的两阶段流程，提升中间推理质量并提高最终问答准确率。</li>
+</ul>
+<hr />
+<h2 id="2">2. 先看结论（适合快速回顾）</h2>
+<ul>
+<li>这篇论文主要解决什么问题：小中型模型在多模态 CoT 中容易生成“看似合理但错误”的中间推理，反而误导最终答案。</li>
+<li>提出的核心方法是什么：两阶段 Multimodal-CoT，先生成多模态 rationale，再基于 rationale 做答案推断；中间引入视觉-语言交互与门控融合。</li>
+<li>最终最重要的结果是什么：在 ScienceQA、A-OKVQA 上显著优于强基线，并显示更快收敛与更低幻觉误导率。</li>
+<li>我现在是否值得深入读：值得</li>
+<li>原因：它解释了“CoT 为何会害模型”，并给出可复现的多模态修复路线。</li>
+</ul>
+<hr />
+<h2 id="3">3. 问题定义</h2>
+<h3 id="31">3.1 研究问题</h3>
+<ul>
+<li>论文研究的核心问题：如何让参数规模较小的模型在多模态场景生成“有用的推理链”，而非幻觉推理。</li>
+<li>输入是什么：问题文本、上下文、选项与图像（Q/C/M + Vision）。</li>
+<li>输出是什么：中间推理链 (R) 与最终答案 (A)。</li>
+<li>优化目标是什么：提高答案准确率，同时保证 rationale 质量与稳定性。</li>
+<li>任务设定 / 威胁模型 / 前提假设：主要针对多模态选择题；评估包括有/无人工 rationale、不同视觉特征与不同骨干模型。</li>
+</ul>
+<h3 id="32">3.2 为什么重要</h3>
+<ul>
+<li>这个问题为什么值得做：纯文本 CoT 在多模态任务会丢失视觉证据，导致推理链“语言上流畅但事实上错误”。</li>
+<li>现实应用价值：教育问答、视觉问答、科学题解等场景需要可解释中间推理。</li>
+<li>学术上的意义：从机理层面说明“CoT 质量不等于答案质量”，并展示视觉证据对推理链质量的关键作用。</li>
+</ul>
+<h3 id="33">3.3 难点</h3>
+<ul>
+<li>难点 1：小模型 CoT 能力弱，易出现幻觉 rationales。</li>
+<li>难点 2：视觉与语言信息如何有效对齐并参与推理链生成。</li>
+<li>难点 3：推理链指标（如 Rouge）高不代表答案推理正确，需要拆阶段诊断。</li>
+</ul>
+<hr />
+<h2 id="4">4. 论文方法</h2>
+<h3 id="41">4.1 方法总览</h3>
+<ul>
+<li>方法名称：Multimodal-CoT</li>
+<li>一句话概括方法：把“推理生成”和“答案推断”解耦，并在两阶段都显式注入视觉信息。</li>
+<li>方法整体流程（按步骤写 1/2/3/4）：
+  1. 编码文本输入与图像特征（冻结视觉编码器 + 语言编码器）。
+  2. 通过注意力与门控融合得到多模态表示。
+  3. 第一阶段生成 rationale (R)。
+  4. 第二阶段将 (R) 拼接回输入，推断最终答案 (A)。</li>
+</ul>
+<p><img alt="image_001" src="assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_001.png" />
+<img alt="image_006" src="assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_006.png" /></p>
+<h3 id="42">4.2 核心设计</h3>
+<blockquote>
+<p>每个设计都尽量回答：做了什么、为什么这么设计、解决了哪个难点</p>
+</blockquote>
+<h4 id="1_1">设计 1</h4>
+<ul>
+<li>做了什么：两阶段训练/推理（QCMV→R，再 QCMR(V)→A）。</li>
+<li>为什么这样设计：把“推理链生成错误”与“答案决策错误”分开诊断。</li>
+<li>解决的难点：单阶段 QCM→RA 时错误来源混合，难以修复。</li>
+<li>关键公式 / 目标函数：阶段 1 学 (p_\theta(R|X_{lang},X_{vision}))，阶段 2 学 (p_\theta(A|X_{lang},R,X_{vision}))。</li>
+<li>证据位置：Sec.4.1。</li>
+</ul>
+<h4 id="2_1">设计 2</h4>
+<ul>
+<li>做了什么：视觉-语言交互采用注意力 + 门控融合。</li>
+<li>为什么这样设计：让视觉证据按 token 级别参与 rationale 生成，而非仅文本化描述。</li>
+<li>解决的难点：减少“凭语言惯性胡编”的幻觉 rationales。</li>
+<li>关键公式 / 目标函数：</li>
+<li>条件生成：(p(Y|X_{language},X_{vision})=\prod_i p_\theta(Y_i|X_{language},X_{vision},Y_{&lt;i}))。</li>
+<li>融合：(\lambda=\sigma(W_lH_{lang}+W_vH^\text{attn}<em fuse="fuse">{vision}))，(H</em>)。}=(1-\lambda)H_{lang}+\lambda H^\text{attn}_{vision</li>
+<li>证据位置：Sec.4.2。</li>
+</ul>
+<h4 id="3_1">设计 3</h4>
+<ul>
+<li>做了什么：系统分析“CoT 误导”并用多模态特征修复。</li>
+<li>为什么这样设计：先证明问题存在，再给出结构化解决方案。</li>
+<li>解决的难点：解释为什么文本 CoT 有时降低准确率。</li>
+<li>关键公式 / 目标函数：对比 No-CoT(QCM→A)、Reasoning(QCM→RA)、Explanation(QCM→AR)。</li>
+<li>证据位置：Sec.3.1~3.3。</li>
+</ul>
+<p><img alt="image_002" src="assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_002.png" />
+<img alt="image_003" src="assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_003.png" />
+<img alt="image_004" src="assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_004.png" />
+<img alt="image_005" src="assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_005.png" /></p>
+<h3 id="43">4.3 训练 / 推理细节</h3>
+<ul>
+<li>训练阶段做了什么：</li>
+<li>主体用 T5 编码器-解码器（Base 200M / Large 700M）；</li>
+<li>初始化采用 FLAN-Alpaca；</li>
+<li>视觉特征来自冻结 ViT-large；</li>
+<li>最多 20 epochs，学习率 (5\times10^{-5})，max length 512，batch size 8。</li>
+<li>推理阶段做了什么：先生成 rationale，再拼接 rationale 推断答案。</li>
+<li>损失函数组成：标准自回归生成损失（分别用于两阶段）。</li>
+<li>关键超参数：视觉特征类型（ViT/CLIP/DETR/ResNet）、骨干模型规模、是否使用伪 rationale。</li>
+<li>复杂度 / 额外开销：两阶段比单阶段多一次生成，但显著提高稳定性与收敛速度。</li>
+</ul>
+<hr />
+<h2 id="5">5. 论文贡献（只写作者真正新增的东西）</h2>
+<ul>
+<li>贡献 1：首次系统提出并验证多模态 CoT 两阶段框架。</li>
+<li>贡献 2：揭示“高质量文本 rationale 仍可能误导答案”的机制，并给出量化分析。</li>
+<li>贡献 3：在 ScienceQA 与 A-OKVQA 上验证方法有效，且可迁移到多骨干、多特征与外部大模型伪标注设置。</li>
+</ul>
+<hr />
+<h2 id="6">6. 实验设置</h2>
+<ul>
+<li>数据集：</li>
+<li>ScienceQA（约 21k，多学科多技能；12k/4k/4k 划分）；</li>
+<li>A-OKVQA（约 25k，17k/1k/6k；采用多选设置）。</li>
+<li>模型 / 骨干网络：T5-Base/T5-Large；视觉编码器 ViT-large（冻结）。</li>
+<li>对比方法：传统 VQA（MCAN/ViLT/VisualBERT 等）、少样本 LLM（GPT-3.5/ChatGPT/GPT-4）、同期 VLM 微调模型（LLaMA-Adapter/LLaVA/InstructBLIP）。</li>
+<li>评价指标：分类准确率、rationale 质量指标（如 RougeL）、收敛曲线。</li>
+<li>实现设置：8×NVIDIA Tesla V100 32G。</li>
+<li>关键超参数：两阶段训练、视觉特征类型、是否使用伪 rationale（InstructBLIP/ChatGPT）。</li>
+<li>是否开源代码 / 模型：有官方仓库。</li>
+<li>实验是否公平（初步判断）：覆盖模型类型广，含消融、误差分析与泛化评估。</li>
+</ul>
+<p><img alt="image_007" src="assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_007.png" />
+<img alt="image_008" src="assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_008.png" />
+<img alt="image_009" src="assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_009.png" /></p>
+<hr />
+<h2 id="7">7. 主要结果</h2>
+<h3 id="71">7.1 主结果</h3>
+<ul>
+<li>结果 1：ScienceQA 上 Multimodal-CoT 相比强基线显著提升（笔记记录从 86.54% 提升到 90.45%）。</li>
+<li>结果 2：A-OKVQA 上也保持一致增益，验证方法跨数据集有效。</li>
+<li>结果 3：两阶段 + 视觉融合同时降低幻觉误导并提高答案准确率。</li>
+</ul>
+<h3 id="72">7.2 从结果中能读出的结论</h3>
+<ul>
+<li>结论 1：仅提升 rationale 文本质量不足够，关键是让 rationale 绑定视觉证据。</li>
+<li>结论 2：多模态输入有助于更快收敛，训练早期收益明显。</li>
+<li>结论 3：方法对骨干模型和视觉特征有一定鲁棒性，具备迁移潜力。</li>
+</ul>
+<h3 id="73">7.3 最关键的证据</h3>
+<ul>
+<li>最关键表格：ScienceQA / A-OKVQA 主结果表与骨干对比表。</li>
+<li>最关键图：误导案例图、收敛曲线图、泛化到 MMMU 图。</li>
+<li>最关键数字：</li>
+<li>QCM→RA 相比 QCM→A 准确率下降约 12.31%（说明“错误 CoT 会伤害答案”）；</li>
+<li>引入视觉融合后 rationale RougeL 与答案准确率同步提升；</li>
+<li>幻觉相关错误率显著下降（笔记记录约 67% 降幅）。</li>
+<li>为什么它最关键：把“现象-原因-修复”闭环全部量化。</li>
+</ul>
+<p><img alt="image_010" src="assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_010.png" />
+<img alt="image_011" src="assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_011.png" />
+<img alt="image_012" src="assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_012.png" />
+<img alt="image_015" src="assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_015.png" /></p>
+<hr />
+<h2 id="8">8. 消融实验</h2>
+<ul>
+<li>消融点 1：</li>
+<li>改了什么：不同视觉特征（ViT/CLIP/DETR/ResNet）。</li>
+<li>结果如何：ViT 特征整体最好，作为默认选择。</li>
+<li>
+<p>说明了什么：视觉编码质量直接影响 rationale 可用性。</p>
+</li>
+<li>
+<p>消融点 2：</p>
+</li>
+<li>改了什么：不同视觉-语言对齐策略（含 BLIP 风格 cross-attn 对齐）。</li>
+<li>结果如何：对齐策略普遍优于直接回答范式。</li>
+<li>
+<p>说明了什么：融合结构设计是性能关键，不是“加图像就行”。</p>
+</li>
+<li>
+<p>消融点 3：</p>
+</li>
+<li>改了什么：不同骨干模型规模、伪 rationale 来源与误差类型分析。</li>
+<li>结果如何：方法跨骨干有效；伪 rationale 方案可行；错误主要来自常识与逻辑问题。</li>
+<li>说明了什么：方法具备扩展性，但常识知识仍是瓶颈。</li>
+</ul>
+<p><img alt="image_013" src="assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_013.png" />
+<img alt="image_014" src="assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_014.png" />
+<img alt="image_016" src="assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_016.png" /></p>
+<hr />
+<h2 id="9">9. 和已有工作的关系</h2>
+<ul>
+<li>这篇论文最接近哪些方法：文本 CoT（Zero/Few-shot, Auto-CoT）、程序化推理（PoT）、自一致投票、多模态 VQA/VLM 微调。</li>
+<li>和已有方法相比，最大的不同：不是把图像转文本再做 CoT，而是显式视觉-语言交互并采用两阶段推理。</li>
+<li>真正的新意在哪里：把“幻觉推理误导答案”的问题拆开验证，并给出可训练的多模态修复机制。</li>
+<li>哪些地方更像“工程改进”而不是“方法创新”：具体骨干选择、训练超参、推理提示模版。</li>
+<li>这篇论文在整个研究脉络里的位置：连接文本 CoT 与多模态推理的早期关键工作。</li>
+</ul>
+<hr />
+<h2 id="10">10. 我的理解（这一节不能照抄论文）</h2>
+<h3 id="101">10.1 直观理解</h3>
+<ul>
+<li>用自己的话解释这篇方法：先让模型“看图讲道理”，再让它“根据道理选答案”。</li>
+<li>它本质上像在做什么：把推理链从“语言装饰文本”变成“带视觉证据的决策中间态”。</li>
+</ul>
+<h3 id="102">10.2 我认为最关键的设计</h3>
+<ul>
+<li>最关键设计：两阶段拆分 + 门控融合。</li>
+<li>为什么我觉得它最关键：它直接切断了“错误 rationale 直接污染答案”这条路径。</li>
+</ul>
+<h3 id="103">10.3 我认为最强的一点</h3>
+<ul>
+<li>给出了完整机理证据链，而不只是报更高分数。</li>
+</ul>
+<h3 id="104">10.4 我认为最可疑的一点</h3>
+<ul>
+<li>仍较依赖标注质量与视觉特征质量；开放式生成任务上的收益边界尚不清晰。</li>
+</ul>
+<hr />
+<h2 id="11">11. 局限性</h2>
+<ul>
+<li>局限 1：两阶段流程增加推理时延与计算开销。</li>
+<li>局限 2：常识性错误仍占主要比例，仅靠视觉融合无法完全解决。</li>
+<li>局限 3：部分结论主要在选择题型基准上验证，开放任务泛化仍需更多证据。</li>
+</ul>
+<p><img alt="image_017" src="assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_017.png" />
+<img alt="image_018" src="assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_018.png" />
+<img alt="image_019" src="assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_019.png" />
+<img alt="image_020" src="assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_020.png" />
+<img alt="image_021" src="assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_021.png" />
+<img alt="image_022" src="assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_022.png" />
+<img alt="image_023" src="assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_023.png" />
+<img alt="image_024" src="assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_024.png" />
+<img alt="image_025" src="assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_025.png" /></p>
+<hr />
+<h2 id="12">12. 对我的启发</h2>
+<ul>
+<li>能直接借鉴的部分：先判定 rationale 质量，再用高质量 rationale 驱动答案解码。</li>
+<li>不能直接照搬的部分：固定两阶段在低延迟线上服务可能成本偏高。</li>
+<li>对我当前课题的启发：可在多模态代理系统中加入“rationale 过滤器”降低误导传播。</li>
+<li>可以尝试的改进方向：引入外部常识库、视觉区域级证据监督、答案阶段不确定性校准。</li>
+<li>可以作为 baseline / 对比项 / ablation 的部分：No-CoT、QCM→RA、两阶段、不同视觉特征、不同对齐策略。</li>
+</ul>
+<hr />
+<h2 id="13">13. 待验证问题</h2>
+<ul>
+<li>[ ] 问题 1：在开放式问答而非多选题中，两阶段收益是否依旧稳定？</li>
+<li>[ ] 问题 2：可否用更轻量视觉编码器在不显著掉点下替代 ViT-large？</li>
+<li>[ ] 问题 3：如何自动识别并过滤“看起来合理但会误导答案”的推理链？</li>
+</ul>
+<hr />
+<h2 id="14">14. 一句话总结</h2>
+<ul>
+<li>Multimodal-CoT 的关键价值是把“推理链质量”与“答案正确率”通过视觉证据重新耦合，从而减少幻觉误导。</li>
+</ul>
+<hr />
+<h2 id="15">15. 快速索引（便于二次回看）</h2>
+<ul>
+<li>核心公式：条件生成公式、视觉注意力融合、门控融合公式。</li>
+<li>核心图表：image_004/005（误导分析）、image_006（框架）、image_007~015（主实验与分析）、image_016~025（误差与附录）。</li>
+<li>最值得复看的章节：3.1~3.3、4.2、7、8、11。</li>
+<li>复现时最需要注意的点：两阶段解耦、视觉特征选择、融合策略、rationale 质量控制。</li>
+</ul>
+<h3 id="151">15.1 整合说明 / 索引</h3>
+<ul>
+<li>原始转录与附录内容已完整拆入 1~14 节正文。</li>
+<li>本节仅保留索引说明，不保留原始堆放区内容。</li>
+</ul>
+<h3 id="152">15.2 导入来源与完整性记录</h3>
+<ul>
+<li>论文来源（联网校验日期：2026-04-08）：</li>
+<li>arXiv：https://arxiv.org/abs/2302.00923</li>
+<li>OpenReview（TMLR）：https://openreview.net/forum?id=y1pPWFVfvR</li>
+<li>代码：https://github.com/amazon-science/mm-cot</li>
+<li>本地资源：</li>
+<li>原始 JSON：<code>notes/_notion_raw/Multimodal Chain-of-Thought Reasoning in Language Models.json</code></li>
+<li>图片目录：<code>notes/assets/Multimodal Chain-of-Thought Reasoning in Language Models/</code></li>
+<li>完整性：</li>
+<li>原笔记方法、实验、分析、附录与误差分析要点均已并入模板正文。</li>
+<li>图片 <code>image_001</code> 至 <code>image_025</code> 已按语义位置插入正文。</li>
+</ul>
+<h2 id="wiki">Wiki 关联</h2>
+<ul>
+<li>参考摘要：<a href="../references/Multimodal Chain-of-Thought Reasoning in Language Models.html">Multimodal Chain-of-Thought Reasoning in Language Models</a></li>
+<li>概念锚点：<a href="../concepts/Two-Stage Multimodal CoT Pipeline.html">Two-Stage Multimodal CoT Pipeline</a>、<a href="../concepts/Multimodal Chain-of-Thought Reasoning.html">Multimodal Chain-of-Thought Reasoning</a>、<a href="../concepts/Process-Supervised Step Verification.html">Process-Supervised Step Verification</a></li>
+<li>实体锚点：<a href="../entities/Zhuosheng Zhang.html">Zhuosheng Zhang</a>、<a href="../entities/GPT-4.html">GPT-4</a>、<a href="../entities/MiniGPT-4.html">MiniGPT-4</a></li>
+<li>综合页面：<a href="../synthesis/Structured Reasoning Methods for LLMs.html">Structured Reasoning Methods for LLMs</a>、<a href="../synthesis/Multimodal Composition and Reasoning.html">Multimodal Composition and Reasoning</a></li>
+</ul></div>
+      </article>
+    </main>
+
+    <aside class="rail panel">
+      <h3>Page Meta</h3>
+      <div class="meta-block">
+        <p class="meta-label">Section</p>
+        <p>notes</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Tags</p>
+        <div class="chip-list"><span class="chip">untagged</span></div>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Summary</p>
+        <p>﻿ Multimodal Chain of Thought Reasoning in Language Models 阅读日期：2026 04 08 阅读状态：已读 标签： paper multimodal cot reasoning vision language 相关方向：多模态推理、视觉 语言融合、可解释推理链 阅读目的：梳理 MM CoT 两阶段框…</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Source</p>
+        <ul>
+          <li><a href="https://github.com/qianzhouyi2/Research-Paper-Notes/blob/main/notes/Multimodal Chain-of-Thought Reasoning in Language Models.md">Open Markdown On GitHub</a></li>
+          <li><a href="../search-index.json">Open Search Index</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

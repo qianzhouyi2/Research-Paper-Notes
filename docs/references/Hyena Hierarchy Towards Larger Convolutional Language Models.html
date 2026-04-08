@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hyena Hierarchy Towards Larger Convolutional Language Models | Research Paper Notes</title>
+  <meta name="description" content="Hyena 通过“隐式长卷积+数据控制门控”提供次二次注意力替代，在长上下文下兼顾建模质量与显著速度优势。">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../site.js"></script>
+</head>
+<body data-root-prefix="../" data-page-path="references/Hyena Hierarchy Towards Larger Convolutional Language Models.html">
+  <div class="site-shell">
+    <aside class="sidebar panel">
+      <a class="brand" href="../index.html">
+        <span class="brand-kicker">Research Wiki</span>
+        <h1>Research Paper Notes</h1>
+        <p>A browsable paper-reading vault published as a GitHub Pages site.</p>
+      </a>
+      <nav><h1 id="navigation">Navigation</h1>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../notes/index.html">Notes</a></li>
+<li><a href="index.html">References</a></li>
+<li><a href="../concepts/index.html">Concepts</a></li>
+<li><a href="../entities/index.html">Entities</a></li>
+<li><a href="../synthesis/index.html">Synthesis</a></li>
+<li><a href="../journal/index.html">Journal</a></li>
+<li><a href="../projects/index.html">Projects</a></li>
+<li><a href="../log.html">Log</a></li>
+</ul></nav>
+      <p class="footer-note">Static export from the local Obsidian-style wiki. Markdown was pre-rendered for GitHub Pages.</p>
+    </aside>
+
+    <main class="main">
+      <header class="topbar panel">
+        <div>
+          <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
+          <h2>Hyena Hierarchy Towards Larger Convolutional Language Models</h2>
+          <p>Hyena 通过“隐式长卷积+数据控制门控”提供次二次注意力替代，在长上下文下兼顾建模质量与显著速度优势。</p>
+        </div>
+        <div class="topbar-actions">
+          <div class="search-box">
+            <input data-search-input type="search" placeholder="Search pages, concepts, entities...">
+            <div data-search-results class="search-results"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="breadcrumbs"><a href="../index.html">Home</a><span> / </span><a href="index.html">References</a><span> / </span><span>Hyena Hierarchy Towards Larger Convolutional Language Models</span></div>
+
+      <article class="article-wrap panel">
+        <div class="article-path">references/Hyena Hierarchy Towards Larger Convolutional Language Models.md</div>
+        <div class="markdown-body"><h1 id="hyena-hierarchy-towards-larger-convolutional-language-models">Hyena Hierarchy Towards Larger Convolutional Language Models</h1>
+<h2 id="_1">基本信息</h2>
+<ul>
+<li>年份：2023（ICML）</li>
+<li>任务：长序列语言建模中的注意力替代</li>
+<li>论文笔记：<a href="../notes/Hyena Hierarchy Towards Larger Convolutional Language Models.html">Hyena Hierarchy Towards Larger Convolutional Language Models</a></li>
+</ul>
+<h2 id="_2">核心主张</h2>
+<ul>
+<li>注意力的二次复杂度限制上下文长度扩展。</li>
+<li>Hyena 使用“长卷积 + 数据控制门控”的交织结构，提供次二次复杂度替代。</li>
+<li>论文报告在 2K 序列训练算力下降约 20%，8K 时约 2x 速度优势，64K 时约 100x。 </li>
+</ul>
+<h2 id="_3">方法摘要</h2>
+<ul>
+<li>通过 Hyena recurrence 递归混合卷积与门控，提升表达能力。</li>
+<li>用隐式参数化长滤波器，解耦“滤波器长度”和“参数规模”。</li>
+<li>以 drop-in 方式替代注意力层，保持因果建模能力。</li>
+</ul>
+<h2 id="_4">细化方法锚点</h2>
+<ul>
+<li>数据控制门控：在全局混合中引入输入相关调制，弥补纯卷积选择性不足。</li>
+<li>隐式长卷积：以函数生成超长滤波器，降低参数规模与内存压力。</li>
+<li>长上下文工程：速度优势依赖内核实现质量和序列长度区间。</li>
+</ul>
+<h2 id="_5">局限与注意</h2>
+<ul>
+<li>高效实现对内核工程质量依赖较高，跨框架复现速度收益可能波动。^[inferred]</li>
+</ul>
+<h2 id="_6">关联页面</h2>
+<ul>
+<li><a href="../concepts/Hyena Operator.html">Hyena Operator</a></li>
+<li><a href="../concepts/Data-Controlled Gating in Sequence Models.html">Data-Controlled Gating in Sequence Models</a></li>
+<li><a href="../concepts/Implicit Long Convolution Parameterization.html">Implicit Long Convolution Parameterization</a></li>
+<li><a href="../entities/Yoshua Bengio.html">Yoshua Bengio</a></li>
+<li><a href="../entities/Michael Poli.html">Michael Poli</a></li>
+<li><a href="../entities/Tri Dao.html">Tri Dao</a></li>
+<li><a href="../synthesis/Long-Context Architecture Without Full Attention.html">Long-Context Architecture Without Full Attention</a></li>
+</ul></div>
+      </article>
+    </main>
+
+    <aside class="rail panel">
+      <h3>Page Meta</h3>
+      <div class="meta-block">
+        <p class="meta-label">Section</p>
+        <p>references</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Tags</p>
+        <div class="chip-list"><span class="chip">paper</span><span class="chip">long-context</span><span class="chip">convolution</span><span class="chip">sequence-modeling</span></div>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Summary</p>
+        <p>Hyena 通过“隐式长卷积+数据控制门控”提供次二次注意力替代，在长上下文下兼顾建模质量与显著速度优势。</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Source</p>
+        <ul>
+          <li><a href="https://github.com/qianzhouyi2/Research-Paper-Notes/blob/main/references/Hyena Hierarchy Towards Larger Convolutional Language Models.md">Open Markdown On GitHub</a></li>
+          <li><a href="../search-index.json">Open Search Index</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

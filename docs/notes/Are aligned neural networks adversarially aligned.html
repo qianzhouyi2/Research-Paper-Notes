@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Are aligned neural networks adversarially aligned | Research Paper Notes</title>
+  <meta name="description" content="﻿ Are aligned neural networks adversarially aligned? 阅读日期：2026 04 08 阅读状态：已读 标签： paper imported notion 相关方向：LLM 对齐、对抗样本、越狱攻击、多模态安全 阅读目的：梳理“对齐模型是否在对抗输入下仍对齐”这个问题，并提取可复用的评估框架与实验结论 1.…">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../site.js"></script>
+</head>
+<body data-root-prefix="../" data-page-path="notes/Are aligned neural networks adversarially aligned.html">
+  <div class="site-shell">
+    <aside class="sidebar panel">
+      <a class="brand" href="../index.html">
+        <span class="brand-kicker">Research Wiki</span>
+        <h1>Research Paper Notes</h1>
+        <p>A browsable paper-reading vault published as a GitHub Pages site.</p>
+      </a>
+      <nav><h1 id="navigation">Navigation</h1>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="index.html">Notes</a></li>
+<li><a href="../references/index.html">References</a></li>
+<li><a href="../concepts/index.html">Concepts</a></li>
+<li><a href="../entities/index.html">Entities</a></li>
+<li><a href="../synthesis/index.html">Synthesis</a></li>
+<li><a href="../journal/index.html">Journal</a></li>
+<li><a href="../projects/index.html">Projects</a></li>
+<li><a href="../log.html">Log</a></li>
+</ul></nav>
+      <p class="footer-note">Static export from the local Obsidian-style wiki. Markdown was pre-rendered for GitHub Pages.</p>
+    </aside>
+
+    <main class="main">
+      <header class="topbar panel">
+        <div>
+          <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
+          <h2>Are aligned neural networks adversarially aligned</h2>
+          <p>﻿ Are aligned neural networks adversarially aligned? 阅读日期：2026 04 08 阅读状态：已读 标签： paper imported notion 相关方向：LLM 对齐、对抗样本、越狱攻击、多模态安全 阅读目的：梳理“对齐模型是否在对抗输入下仍对齐”这个问题，并提取可复用的评估框架与实验结论 1.…</p>
+        </div>
+        <div class="topbar-actions">
+          <div class="search-box">
+            <input data-search-input type="search" placeholder="Search pages, concepts, entities...">
+            <div data-search-results class="search-results"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="breadcrumbs"><a href="../index.html">Home</a><span> / </span><a href="index.html">Notes</a><span> / </span><span>Are aligned neural networks adversarially aligned</span></div>
+
+      <article class="article-wrap panel">
+        <div class="article-path">notes/Are aligned neural networks adversarially aligned.md</div>
+        <div class="markdown-body"><p>﻿# Are aligned neural networks adversarially aligned?</p>
+<ul>
+<li>阅读日期：2026-04-08</li>
+<li>阅读状态：已读</li>
+<li>标签：#paper #imported #notion</li>
+<li>相关方向：LLM 对齐、对抗样本、越狱攻击、多模态安全</li>
+<li>阅读目的：梳理“对齐模型是否在对抗输入下仍对齐”这个问题，并提取可复用的评估框架与实验结论</li>
+</ul>
+<hr />
+<h2 id="1">1. 论文信息</h2>
+<ul>
+<li>题目：Are aligned neural networks adversarially aligned?</li>
+<li>链接：https://arxiv.org/abs/2306.15447</li>
+<li>作者：Nicholas Carlini, Milad Nasr, Christopher A. Choquette-Choo, Matthew Jagielski, Irena Gao, Anas Awadalla, Pang Wei Koh, Daphne Ippolito, Katherine Lee, Florian Tramer, Ludwig Schmidt</li>
+<li>单位：Google DeepMind；Stanford；University of Washington；ETH Zurich</li>
+<li>会议 / 期刊 / 年份：NeurIPS 2023（arXiv v1: 2023-06-26，v2: 2024-05-06）</li>
+<li>关键词（3~8个）：adversarial alignment, LLM safety, jailbreak, NLP attacks, multimodal attacks, toxicity evaluation</li>
+<li>论文一句话主题：本文提出“对抗性对齐”评估视角，发现现有 NLP 攻击不足以证明文本对齐模型鲁棒，但多模态对齐模型可被高成功率对抗图像轻易诱导产生有害输出。</li>
+</ul>
+<hr />
+<h2 id="2">2. 先看结论（适合快速回顾）</h2>
+<ul>
+<li>这篇论文主要解决什么问题：对齐后的神经网络（尤其 LLM）在“最坏情况输入”下是否仍保持对齐。</li>
+<li>提出的核心方法是什么：统一评估两类攻击路径：NLP-only 离散提示攻击与多模态连续图像攻击，并设计“保证存在解”的测试来反证攻击器能力不足。</li>
+<li>最终最重要的结果是什么：</li>
+<li>现有主流 NLP 攻击（如 ARCA、GBDA）在对齐聊天模型上成功率低，不能据此得出“模型足够鲁棒”。</li>
+<li>在保证存在攻击解的构造测试上，现有 NLP 攻击依然显著失败。</li>
+<li>多模态模型（MiniGPT-4、LLaVA、LLaMA-Adapter）在毒性目标上可达 100% 攻击成功率。</li>
+<li>我现在是否值得深入读：值得</li>
+<li>原因：它把“对齐是否有效”从经验问题转成“攻击-防御评估能力”问题，并给出可复用的实验协议。</li>
+</ul>
+<p><img alt="image_001" src="assets/Are aligned neural networks adversarially aligned/image_001.png" /></p>
+<hr />
+<h2 id="3">3. 问题定义</h2>
+<h3 id="31">3.1 研究问题</h3>
+<ul>
+<li>论文研究的核心问题：Are aligned neural network models ``adversarially aligned&rsquo;&lsquo;?</li>
+<li>输入是什么：用户输入（文本提示；或文本+图像输入）。</li>
+<li>输出是什么：模型生成文本是否包含不应出现的有害内容（本文主要用 toxic output 作为目标）。</li>
+<li>优化目标是什么：攻击者要找到输入 <code>X</code>，使得 <code>isToxic(Gen(X))</code> 为真。</li>
+<li>任务设定 / 威胁模型 / 前提假设：</li>
+<li>研究对抗样本有两个原因：1) 提升系统鲁棒性；2) 评估最坏情况行为（如自动驾驶）。</li>
+<li>Existing threat models：<ul>
+<li>恶意用户：通过越狱提示诱导不对齐输出，不要求隐蔽。</li>
+<li>恶意第三方：通过提示注入劫持系统行为（如泄露邮件）。</li>
+</ul>
+</li>
+<li>Our threat model：重点不是刻画单一真实攻击者，而是测量当前对齐技术在最坏输入下的极限。</li>
+<li>生成随机性处理：当生成是随机时，记作 <code>Pr[isToxic(Gen(X))] &gt; ⁍</code>（原笔记符号如此记录）；实验中将温度设为 0 保持确定性。</li>
+</ul>
+<h3 id="32">3.2 为什么重要</h3>
+<ul>
+<li>这个问题为什么值得做：</li>
+<li>仅凭“攻击没打穿”不能证明对齐真的稳健。</li>
+<li>如果对抗评估能力弱，会把“未被攻破”误判为“本质安全”。</li>
+<li>现实应用价值：对话模型、代理系统、提示注入防护、多模态应用的安全红队评估都依赖该问题。</li>
+<li>学术上的意义：把 AI 对齐和对抗样本两条研究线正式合并到同一评估框架中。</li>
+<li>原始背景条目（按 Notion 原文保留）：</li>
+<li><code>LLM：</code></li>
+<li><code>对齐LLM：</code></li>
+<li><code>MLLM</code></li>
+<li><code>对抗攻击</code></li>
+<li>原始语义边界（按 Notion 原文保留）：本文更关注导致模型产生有害行为的对抗样本，而非仅“错误分类”；这与社会工程攻击不同，不刻意追求语义上有害但自然的回复。</li>
+</ul>
+<p><img alt="image_002" src="assets/Are aligned neural networks adversarially aligned/image_002.png" /></p>
+<h3 id="33">3.3 难点</h3>
+<ul>
+<li>难点 1：文本 token 离散，难以直接做连续优化（如梯度下降）。</li>
+<li>难点 2：攻击目标不是单一固定 token，长序列目标回传代价高。</li>
+<li>难点 3：攻击失败时，很难区分“模型鲁棒”还是“攻击器太弱”。</li>
+</ul>
+<hr />
+<h2 id="4">4. 论文方法</h2>
+<h3 id="41">4.1 方法总览</h3>
+<ul>
+<li>方法名称：Adversarial Alignment Evaluation（NLP-only + Multimodal）</li>
+<li>一句话概括方法：先在文本模型上检验现有离散攻击是否真能评估鲁棒性，再在多模态模型上用连续域 PGD 直接测试可攻击性。</li>
+<li>方法整体流程（按步骤写 1/2/3/4）：
+  1. 定义毒性攻击目标与威胁模型。
+  2. 在 GPT-2 / LLaMA / Vicuna 上复现实有 NLP 攻击并统计成功率。
+  3. 构造“保证存在攻击解”的测试集，验证攻击器是否真的能找到解。
+  4. 对 MiniGPT-4 / LLaVA / LLaMA-Adapter 进行图像对抗优化并量化成功率与失真。</li>
+</ul>
+<p><img alt="image_003" src="assets/Are aligned neural networks adversarially aligned/image_003.png" /></p>
+<h3 id="42">4.2 核心设计</h3>
+<blockquote>
+<p>每个设计都尽量回答：做了什么、为什么这么设计、解决了哪个难点</p>
+</blockquote>
+<h4 id="1_1">设计 1</h4>
+<ul>
+<li>做了什么：将原始毒性目标转为“有害前缀（harmful prefix）”代理目标，优先优化生成开头命中目标串。</li>
+<li>为什么这样设计：直接优化完整 <code>isToxic(Gen(X))</code> 需要多次生成与回传，成本高且不稳定。</li>
+<li>解决的难点：难点 2（目标过长、优化难）。</li>
+<li>关键公式 / 目标函数：</li>
+<li><code>isToxic(Gen(X))</code></li>
+<li>“反转语言模型：找到一个对抗性提示⁍，使得模型⁍输出某个目标字符串⁍。”（原笔记原样）</li>
+<li>证据位置：Section 4；Section 4.2；Notion 原文 “Prior Attack Methods”。</li>
+</ul>
+<h4 id="2_1">设计 2</h4>
+<ul>
+<li>做了什么：设计“保证存在可触发输出”的测试集（由 brute force 先验构造），再用攻击器去找同一解。</li>
+<li>为什么这样设计：若攻击器连“已知存在解”的任务都做不好，就不能用它来评估防御是否鲁棒。</li>
+<li>解决的难点：难点 3（鲁棒性与攻击能力混淆）。</li>
+<li>关键公式 / 目标函数：</li>
+<li>“通过穷举法构造导致模型发出稀有后缀 ⁍ 的提示 ⁍。然后，如果攻击能够找到某个输入序列 ⁍ 使得 ⁍，即模型发出相同的 ⁍，则攻击成功。否则，攻击失败。”</li>
+<li>“设 ⁍ 为所有 N-标记序列的空间（对于某个 N）……”（原笔记符号占位按原样保留）</li>
+<li>证据位置：Section 5；Section 5.1；Table 2。</li>
+</ul>
+<h4 id="3_1">设计 3</h4>
+<ul>
+<li>做了什么：在多模态模型上对输入图像做 PGD，对目标输出 token 序列做 teacher-forcing 交叉熵优化。</li>
+<li>为什么这样设计：图像是连续域，优化比离散文本更直接且攻击空间更大。</li>
+<li>解决的难点：难点 1（离散优化困难）。</li>
+<li>关键公式 / 目标函数：</li>
+<li>总交叉熵 over target tokens（teacher forcing）</li>
+<li>PGD，最多 500 steps，默认步长 0.2</li>
+<li>“一个任意大的⁍，并运行最多500个步骤……”（原笔记符号占位按原样保留）</li>
+<li>证据位置：Section 6.1；Table 3。</li>
+</ul>
+<h3 id="43">4.3 训练 / 推理细节</h3>
+<ul>
+<li>训练阶段做了什么：</li>
+<li>NLP 攻击：在白盒访问下优化可控 token（最多 30 token 的设置用于对齐聊天评估）。</li>
+<li>多模态攻击：从随机图像初始化，优化图像像素使模型输出指定有毒前缀。</li>
+<li>推理阶段做了什么：</li>
+<li>文本模型：固定系统/模板 token，攻击者仅控制 <code>[USER]:</code> 部分，<code>[AGENT]:</code> 终止标记不可修改。</li>
+<li>多模态模型：输入对抗图像 + 文本提示，观察是否生成目标有害输出。</li>
+<li>损失函数组成：毒性目标的代理前缀损失；多 token 目标时使用 teacher-forcing 的总交叉熵。</li>
+<li>关键超参数：温度 0；PGD 最多 500 步；默认 step size 0.2；测试含 1/2/5/10 个额外可控 token场景。</li>
+<li>复杂度 / 额外开销：离散文本攻击搜索成本高；多模态连续攻击可优化但需白盒梯度。</li>
+<li>原始实验句（按 Notion 原文保留）：</li>
+<li>从 Open Assistant 数据集中获取良性对话；将其截断为随机选择的 <code>⁍</code> 轮次。</li>
+<li>使用 Jones et al. [2023] 一小部分有害文本作为攻击目标，攻击对象为一到三个有毒文本标记。</li>
+<li>当目标响应超过一个标记时（即 <code>⁍ token</code>），应用标准教师强制优化技术，优化目标输出 token 的总交叉熵。</li>
+<li>使用投影梯度下降；一个任意大的 <code>⁍</code>，最多 500 步，默认步长 0.2。</li>
+</ul>
+<hr />
+<h2 id="5">5. 论文贡献（只写作者真正新增的东西）</h2>
+<ul>
+<li>贡献 1：提出“对抗性对齐（adversarial alignment）”作为评估对齐模型最坏情况行为的统一问题。</li>
+<li>贡献 2：证明“现有 NLP 攻击失败”不足以说明对齐模型鲁棒，并给出保证存在解的评测协议揭示攻击器能力缺陷。</li>
+<li>贡献 3：在多模态对齐模型上展示高效且稳定的对抗图像攻击，显示当前对齐技术对连续域输入脆弱。</li>
+<li>原始构造测试描述（按 Notion 原文保留）：</li>
+<li>通过穷举法构造导致模型发出稀有后缀 <code>⁍</code> 的提示 <code>⁍</code>。</li>
+<li>如果攻击找到某输入序列 <code>⁍</code> 使模型发出相同后缀 <code>⁍</code>，则攻击成功；否则失败。</li>
+<li>暴力搜索先用 GPT-2 尝试；由于其对齐性较差，若在该模型都失败，通常无需优先尝试更难模型。</li>
+</ul>
+<hr />
+<h2 id="6">6. 实验设置</h2>
+<ul>
+<li>数据集：</li>
+<li>OpenAssistant 良性对话（构造聊天上下文）</li>
+<li>Jones et al. [2023] 的有害短语集（1~3 toxic tokens）</li>
+<li>Wikipedia 前缀（构造 Section 5 的稀有输出测试）</li>
+<li>随机初始化图像（多模态攻击起点）</li>
+<li>模型 / 骨干网络：</li>
+<li>文本：GPT-2、LLaMA、Vicuna</li>
+<li>多模态：MiniGPT-4（Instruct / RLHF）、LLaVA、LLaMA-Adapter</li>
+<li>对比方法：ARCA、GBDA、Brute Force（以及文中讨论的 UAT 背景）</li>
+<li>评价指标：攻击成功率 / pass rate；毒性检测（substring lookup）；均值 <code>ℓ2</code> 扰动</li>
+<li>实现设置：</li>
+<li>文本场景控制 <code>[USER]:</code>，不可改 <code>[AGENT]:</code></li>
+<li>远距/近距注入两种位置</li>
+<li>可控 token 数分层统计</li>
+<li>关键超参数：最多 30 个恶意 token；温度 0；PGD 500 steps、step size 0.2</li>
+<li>原始测试集参数（按 Notion 原文保留）：</li>
+<li>流行度：给定 <code>⁍</code> 的标记 <code>⁍</code> 的概率，将其固定为 <code>⁍</code>。</li>
+<li>攻击可控标记：2、5、10、20 个标记。</li>
+<li>目标标记：攻击者必须达到的输出标记数量。</li>
+<li>是否开源代码 / 模型：论文使用开源模型复现实验；完整攻击实现仓库链接待确认</li>
+<li>实验是否公平（初步判断）：是（同一协议下横向比较），但毒性定义较简化，语义层面评估仍有限</li>
+</ul>
+<hr />
+<h2 id="7">7. 主要结果</h2>
+<h3 id="71">7.1 主结果</h3>
+<ul>
+<li>结果 1（NLP 攻击在对齐聊天上的有限效果）：</li>
+<li>Table 1（Notion 图 + 论文表）显示在 Vicuna 上成功率很低（如 6%、0%、8%、1% 量级，视注入位置与攻击器而定）。</li>
+<li>GPT-2 / LLaMA 虽在部分设置下更高，但在对齐场景仍显著受限。</li>
+<li>结果 2（“存在解”测试下攻击器仍失败）：</li>
+<li>Table 2：Brute Force 为 100%，但 ARCA/GBDA 在 1~10 额外 token 场景远低于 100%（如 ARCA 11.1%~30.6%，GBDA 3.1%~9.5%）。</li>
+<li>结果 3（多模态攻击高成功）：</li>
+<li>Table 3：MiniGPT-4 / LLaVA / LLaMA-Adapter 攻击成功率均为 100%，且平均 <code>ℓ2</code> 扰动较小（如 LLaVA 0.86±0.17）。</li>
+</ul>
+<h3 id="72">7.2 从结果中能读出的结论</h3>
+<ul>
+<li>结论 1：现有 NLP 攻击失败，不能直接推出“文本对齐模型已对抗鲁棒”。</li>
+<li>结论 2：评估防御强度前，必须先验证攻击器能否通过“已知可解”任务。</li>
+<li>结论 3：对齐多模态模型在图像连续扰动下仍可被稳定诱导输出有害内容。</li>
+<li>原始结论句（按 Notion 原文保留）：</li>
+<li><code>(1) 语言模型对软嵌入攻击（例如，多模态攻击）较为脆弱；</code></li>
+<li><code>(2) 当前的自然语言处理（NLP）攻击无法找到已知的解决方案。</code></li>
+</ul>
+<h3 id="73">7.3 最关键的证据</h3>
+<ul>
+<li>最关键表格：Table 2（区分“攻击器弱”与“防御强”）、Table 3（多模态 100% 攻击成功）</li>
+<li>最关键图：Notion 导入图中的 prior attack 结果图与 multimodal attack 图</li>
+<li>最关键数字：</li>
+<li>Table 2: Brute Force 100%，ARCA 11.1%~30.6%，GBDA 3.1%~9.5%</li>
+<li>Table 3: 100% success across tested multimodal models</li>
+<li>为什么它最关键：它们分别回答了“文本端为什么不能盲目信任低攻击成功率”和“多模态端为什么风险已是现实问题”。</li>
+<li>原始量化观察（按 Notion 原文保留）：对抗输入相对容易找到，仅需要对初始图像进行最小的 <code>⁍</code> 失真；不同提示之间的失真变化也很小。</li>
+</ul>
+<p><img alt="image_004" src="assets/Are aligned neural networks adversarially aligned/image_004.png" />
+<img alt="image_005" src="assets/Are aligned neural networks adversarially aligned/image_005.png" />
+<img alt="image_006" src="assets/Are aligned neural networks adversarially aligned/image_006.png" /></p>
+<hr />
+<h2 id="8">8. 消融实验</h2>
+<ul>
+<li>消融点 1：</li>
+<li>改了什么：远距注入（Distant）与近距注入（Nearby）攻击位置。</li>
+<li>结果如何：不同模型与攻击器在两种注入位置上的成功率差异显著。</li>
+<li>
+<p>说明了什么：攻击位置会显著影响离散提示攻击有效性。</p>
+</li>
+<li>
+<p>消融点 2：</p>
+</li>
+<li>改了什么：可控 token 数量（1/2/5/10 或更高上限设置）。</li>
+<li>结果如何：即便增加可控 token，ARCA/GBDA 仍远低于 brute force。</li>
+<li>
+<p>说明了什么：当前攻击算法的搜索能力是核心瓶颈。</p>
+</li>
+<li>
+<p>消融点 3：</p>
+</li>
+<li>改了什么：多模态模型实现差异（MiniGPT-4 Instruct / RLHF、LLaVA、LLaMA-Adapter）。</li>
+<li>结果如何：都能被攻破，但平均 <code>ℓ2</code> 扰动差异明显（LLaVA 更易受攻）。</li>
+<li>说明了什么：实现细节对脆弱性影响很大。</li>
+</ul>
+<hr />
+<h2 id="9">9. 和已有工作的关系</h2>
+<ul>
+<li>这篇论文最接近哪些方法：RLHF / instruction tuning 对齐工作；文本对抗攻击（ARCA、GBDA、UAT）；多模态对抗样本研究。</li>
+<li>和已有方法相比，最大的不同：把“对齐安全”与“攻击器能力校准”绑定评估，而不是只报单次攻击成功率。</li>
+<li>真正的新意在哪里：提出并实践“保证存在解”的攻击能力基准，以避免防御评估中的假阴性结论。</li>
+<li>哪些地方更像“工程改进”而不是“方法创新”：毒性判定用 substring 的简化实现；具体 prompt 模板与数据拼接。</li>
+<li>这篇论文在整个研究脉络里的位置：连接 LLM 对齐评估与经典对抗鲁棒评估范式的关键桥接工作。</li>
+</ul>
+<hr />
+<h2 id="10">10. 我的理解（这一节不能照抄论文）</h2>
+<h3 id="101">10.1 直观理解</h3>
+<ul>
+<li>用自己的话解释这篇方法：这篇工作不是先证明模型安全，而是先检查“我们有没有一把足够锋利的锤子去敲它”。</li>
+<li>它本质上像在做什么：把对齐评估从“攻击结果”升级为“攻击器能力 + 防御能力”双重诊断。</li>
+</ul>
+<h3 id="102">10.2 我认为最关键的设计</h3>
+<ul>
+<li>最关键设计：Section 5 的“已知可解测试”。</li>
+<li>为什么我觉得它最关键：它直接避免了“攻击失败=模型安全”的错误逻辑。</li>
+</ul>
+<h3 id="103">10.3 我认为最强的一点</h3>
+<ul>
+<li>把文本与多模态放在同一对抗性对齐框架下比较，结论更完整。</li>
+</ul>
+<h3 id="104">10.4 我认为最可疑的一点</h3>
+<ul>
+<li>毒性判定过于简化（substring），可能低估或高估语义层面的真实危害。</li>
+</ul>
+<hr />
+<h2 id="11">11. 局限性</h2>
+<ul>
+<li>局限 1：毒性定义简化，无法覆盖更细粒度语义伤害和上下文文化差异。</li>
+<li>局限 2：主要在白盒条件下评估，黑盒现实可攻击性还需额外验证。</li>
+<li>局限 3：文本端结论强调“攻击器不足”，但更强 NLP 攻击尚未完全给出。</li>
+</ul>
+<hr />
+<h2 id="12">12. 对我的启发</h2>
+<ul>
+<li>能直接借鉴的部分：评估时先做“攻击器能力 sanity check”（已知可解基准）。</li>
+<li>不能直接照搬的部分：仅用词表子串做安全判定。</li>
+<li>对我当前课题的启发：应把“防御评估协议”作为核心实验对象，而不只关注单一模型分数。</li>
+<li>可以尝试的改进方向：引入语义级有害性判别器与人类评审结合；补充黑盒与迁移攻击设置。</li>
+<li>可以作为 baseline / 对比项 / ablation 的部分：ARCA、GBDA、Brute Force、PGD 图像攻击。</li>
+</ul>
+<hr />
+<h2 id="13">13. 待验证问题</h2>
+<ul>
+<li>[ ] 问题 1：更强的离散优化攻击（如更大搜索预算或新算法）能否在 Vicuna 等模型上稳定复现高成功率？</li>
+<li>[ ] 问题 2：如果把毒性判定从 substring 替换为语义评审，Table 1/2/3 结论是否变化？</li>
+<li>[ ] 问题 3：在黑盒 API 限制和防护机制下，多模态 100% 成功率是否仍可保持？</li>
+</ul>
+<hr />
+<h2 id="14">14. 一句话总结</h2>
+<ul>
+<li>这篇论文的核心结论是：现有文本攻击“打不穿”并不等于模型“真鲁棒”，而多模态对齐模型在对抗图像下已经可被高可靠度攻破。</li>
+</ul>
+<hr />
+<h2 id="15">15. 快速索引（便于二次回看）</h2>
+<ul>
+<li>核心公式：<code>isToxic(Gen(X))</code>、<code>Pr[isToxic(Gen(X))] &gt; ⁍</code>（原笔记符号占位）</li>
+<li>核心图表：<code>image_004</code>（NLP attacks 结果图）、<code>image_005</code>（保证可解测试结果）、<code>image_006</code>（多模态攻击）</li>
+<li>最值得复看的章节：Section 4（NLP-only attacks）、Section 5（为何现有攻击失败）、Section 6（多模态攻击）</li>
+<li>复现时最需要注意的点：攻击目标定义、可控 token 约束、毒性判定方式、白盒访问条件</li>
+</ul>
+<h3 id="151">15.1 整合说明 / 索引</h3>
+<ul>
+<li>Notion 原始内容已拆解到 1~14 节：背景/威胁模型在 3，方法在 4，实验与结果在 6~8，结论在 7 与 14。</li>
+<li>本节仅保留导航说明，不存放原始转录段落。</li>
+</ul>
+<h3 id="152">15.2 导入来源与完整性记录</h3>
+<ul>
+<li>Notion 源页面：</li>
+<li>https://saputello.notion.site/Are-aligned-neural-networks-adversarially-aligned-1a084951e96280f5abe0f41c49402668</li>
+<li>联网校验来源（2026-04-08）：</li>
+<li>arXiv 摘要页：https://arxiv.org/abs/2306.15447</li>
+<li>NeurIPS 2023 摘要页：https://papers.nips.cc/paper_files/paper/2023/hash/c1f0b856a35986348ab3414177266f75-Abstract-Conference.html</li>
+<li>NeurIPS 2023 PDF：https://proceedings.neurips.cc/paper_files/paper/2023/file/c1f0b856a35986348ab3414177266f75-Paper-Conference.pdf</li>
+<li>本地原始导入：</li>
+<li><code>notes/_notion_raw/Are aligned neural networks adversarially aligned.json</code></li>
+<li><code>notes/_notion_raw/Are aligned neural networks adversarially aligned.rendered.md</code></li>
+<li><code>notes/_notion_raw/Are aligned neural networks adversarially aligned.ordered.md</code></li>
+<li><code>notes/_notion_raw/Are aligned neural networks adversarially aligned.images.json</code></li>
+<li>本地图片：</li>
+<li><code>notes/assets/Are aligned neural networks adversarially aligned/</code>（<code>image_001</code>~<code>image_006</code>）</li>
+<li>arXiv LaTeX 源码：</li>
+<li><code>papers_sources/2306.15447.tar</code></li>
+<li><code>papers_sources/Are aligned neural networks adversarially aligned 2306.15447/</code></li>
+</ul>
+<h3 id="153">15.3 完成前自检（逐条）</h3>
+<ul>
+<li>
+<ol>
+<li>原始笔记所有内容都完整详细地进模板正文了吗？：是</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>图片都插入到相应位置了吗？：是</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>是否已联网补充并校正论文关键信息？：是</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>是否还有内容残留在“原始堆放区/模板补充细节”而未拆入正文？：是</li>
+</ol>
+</li>
+<li>
+<ol start="5">
+<li>若以上全是，才允许删除旧堆放内容并进入下一篇：是</li>
+</ol>
+</li>
+<li>
+<ol start="6">
+<li>未出现“详见本页正文迁移小节 / 见 3.1 与 15.1”类索引语：是</li>
+</ol>
+</li>
+</ul>
+<h2 id="wiki">Wiki 关联</h2>
+<ul>
+<li>参考摘要：<a href="../references/Are aligned neural networks adversarially aligned.html">Are aligned neural networks adversarially aligned</a></li>
+<li>概念锚点：<a href="../concepts/Adversarial Alignment Evaluation.html">Adversarial Alignment Evaluation</a>、<a href="../concepts/Known-Solvable Attack Calibration.html">Known-Solvable Attack Calibration</a>、<a href="../concepts/Multimodal Adversarial Image Prompting.html">Multimodal Adversarial Image Prompting</a></li>
+<li>实体锚点：<a href="../entities/Nicholas Carlini.html">Nicholas Carlini</a>、<a href="../entities/Vicuna.html">Vicuna</a>、<a href="../entities/LLaVA.html">LLaVA</a></li>
+<li>综合页面：<a href="../synthesis/Adversarial Robustness Evaluation Patterns.html">Adversarial Robustness Evaluation Patterns</a>、<a href="../synthesis/Alignment Robustness Evaluation Ladder.html">Alignment Robustness Evaluation Ladder</a></li>
+</ul></div>
+      </article>
+    </main>
+
+    <aside class="rail panel">
+      <h3>Page Meta</h3>
+      <div class="meta-block">
+        <p class="meta-label">Section</p>
+        <p>notes</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Tags</p>
+        <div class="chip-list"><span class="chip">untagged</span></div>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Summary</p>
+        <p>﻿ Are aligned neural networks adversarially aligned? 阅读日期：2026 04 08 阅读状态：已读 标签： paper imported notion 相关方向：LLM 对齐、对抗样本、越狱攻击、多模态安全 阅读目的：梳理“对齐模型是否在对抗输入下仍对齐”这个问题，并提取可复用的评估框架与实验结论 1.…</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Source</p>
+        <ul>
+          <li><a href="https://github.com/qianzhouyi2/Research-Paper-Notes/blob/main/notes/Are aligned neural networks adversarially aligned.md">Open Markdown On GitHub</a></li>
+          <li><a href="../search-index.json">Open Search Index</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

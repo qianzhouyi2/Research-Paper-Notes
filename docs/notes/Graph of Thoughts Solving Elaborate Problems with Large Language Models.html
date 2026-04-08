@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Graph of Thoughts Solving Elaborate Problems with Large Language Models | Research Paper Notes</title>
+  <meta name="description" content="﻿ Graph of Thoughts: Solving Elaborate Problems with Large Language Models 阅读日期：2026 04 08 阅读状态：已读 标签： paper imported notion 相关方向：结构化推理、图搜索、LLM 规划 阅读目的：系统整理 GoT 的图推理范式、系统架构与任务实证 1…">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../site.js"></script>
+</head>
+<body data-root-prefix="../" data-page-path="notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.html">
+  <div class="site-shell">
+    <aside class="sidebar panel">
+      <a class="brand" href="../index.html">
+        <span class="brand-kicker">Research Wiki</span>
+        <h1>Research Paper Notes</h1>
+        <p>A browsable paper-reading vault published as a GitHub Pages site.</p>
+      </a>
+      <nav><h1 id="navigation">Navigation</h1>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="index.html">Notes</a></li>
+<li><a href="../references/index.html">References</a></li>
+<li><a href="../concepts/index.html">Concepts</a></li>
+<li><a href="../entities/index.html">Entities</a></li>
+<li><a href="../synthesis/index.html">Synthesis</a></li>
+<li><a href="../journal/index.html">Journal</a></li>
+<li><a href="../projects/index.html">Projects</a></li>
+<li><a href="../log.html">Log</a></li>
+</ul></nav>
+      <p class="footer-note">Static export from the local Obsidian-style wiki. Markdown was pre-rendered for GitHub Pages.</p>
+    </aside>
+
+    <main class="main">
+      <header class="topbar panel">
+        <div>
+          <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
+          <h2>Graph of Thoughts Solving Elaborate Problems with Large Language Models</h2>
+          <p>﻿ Graph of Thoughts: Solving Elaborate Problems with Large Language Models 阅读日期：2026 04 08 阅读状态：已读 标签： paper imported notion 相关方向：结构化推理、图搜索、LLM 规划 阅读目的：系统整理 GoT 的图推理范式、系统架构与任务实证 1…</p>
+        </div>
+        <div class="topbar-actions">
+          <div class="search-box">
+            <input data-search-input type="search" placeholder="Search pages, concepts, entities...">
+            <div data-search-results class="search-results"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="breadcrumbs"><a href="../index.html">Home</a><span> / </span><a href="index.html">Notes</a><span> / </span><span>Graph of Thoughts Solving Elaborate Problems with Large Language Models</span></div>
+
+      <article class="article-wrap panel">
+        <div class="article-path">notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md</div>
+        <div class="markdown-body"><p>﻿# Graph of Thoughts: Solving Elaborate Problems with Large Language Models</p>
+<ul>
+<li>阅读日期：2026-04-08</li>
+<li>阅读状态：已读</li>
+<li>标签：#paper #imported #notion</li>
+<li>相关方向：结构化推理、图搜索、LLM 规划</li>
+<li>阅读目的：系统整理 GoT 的图推理范式、系统架构与任务实证</li>
+</ul>
+<hr />
+<h2 id="1">1. 论文信息</h2>
+<ul>
+<li>题目：Graph of Thoughts: Solving Elaborate Problems with Large Language Models</li>
+<li>链接：https://arxiv.org/abs/2308.09687</li>
+<li>作者：Maciej Besta, Nils Blach, Agnieszka Białek, Mirostanislav Henniger, Mateusz Podstawski, Luca Gianinazzi, Ali Hojjat, Julian Giger, Mohammed Cherti, et al.</li>
+<li>单位：ETH Zurich 等（按论文作者机构）</li>
+<li>会议 / 期刊 / 年份：arXiv 2023</li>
+<li>关键词（3~8个）：Graph of Thoughts, reasoning graph, thought transformation, LLM planning, scoring and ranking</li>
+<li>论文一句话主题：将 LLM 的 thought 组织为任意图结构，通过生成、精炼、聚合等图变换提升复杂任务推理质量。</li>
+</ul>
+<hr />
+<h2 id="2">2. 先看结论（适合快速回顾）</h2>
+<ul>
+<li>这篇论文主要解决什么问题：CoT/ToT 结构受限，难以表达跨路径融合与反馈循环。</li>
+<li>提出的核心方法是什么：GoT（Graph of Thoughts）+ 可扩展系统架构（Prompter/Parser/Scorer/Controller + GoO/GRS）。</li>
+<li>最终最重要的结果是什么：在排序等复杂任务中，质量显著提升且成本可低于 ToT（论文报告排序质量相对 ToT 提升约 62%，成本下降约 31%）。</li>
+<li>我现在是否值得深入读：值得</li>
+<li>原因：它不仅提方法，还给出可落地的软件架构与评估方法。</li>
+</ul>
+<hr />
+<h2 id="3">3. 问题定义</h2>
+<h3 id="31">3.1 研究问题</h3>
+<ul>
+<li>核心问题：如何让 LLM 推理从“链/树”扩展到“可合并、可回环、可重组”的图结构。</li>
+<li>输入是什么：任务输入 + 当前推理图状态（thought 节点与依赖边）。</li>
+<li>输出是什么：最终答案 thought（可来自多路径聚合）。</li>
+<li>优化目标：在给定成本预算下，提高复杂任务上的解质量与稳定性。</li>
+<li>任务设定：允许多种 thought transformation（生成、精炼、聚合）并在图上执行。</li>
+</ul>
+<h3 id="32">3.2 为什么重要</h3>
+<ul>
+<li>这个问题为什么值得做：复杂任务天然需要多路径试探、比较、整合，单链/单树表达力不足。</li>
+<li>现实应用价值：适合文档合并、排序、集合操作、关键词统计等可分解任务。</li>
+<li>学术上的意义：把 prompt engineering 从“模板技巧”提升为“图算法范式”。</li>
+</ul>
+<h3 id="33">3.3 难点</h3>
+<ul>
+<li>难点 1：图搜索空间巨大，容易失控。</li>
+<li>难点 2：thought 质量评估与排序若不可靠，会误导后续扩展。</li>
+<li>难点 3：不同任务需要不同图拓扑与变换策略，难有单一最优配置。</li>
+</ul>
+<h3 id="34">3.4 背景与记号（原始内容归并）</h3>
+<ul>
+<li>IO：输入直接映射到输出。</li>
+<li>CoT：引入中间 thought，但通常仍是线性过程。</li>
+<li>CoT-SC：多链采样后选优，仍缺少路径内局部探索。</li>
+<li>ToT：树结构搜索，支持回溯，但难表达跨分支聚合。</li>
+<li>GoT：允许任意图结构，边表示 thought 依赖，可实现跨链融合与反馈。</li>
+</ul>
+<p><img alt="image_001" src="assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_001.jpg" />
+<img alt="image_002" src="assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_002.png" /></p>
+<hr />
+<h2 id="4">4. 论文方法</h2>
+<h3 id="41">4.1 方法总览</h3>
+<ul>
+<li>方法名称：Graph of Thoughts（GoT）</li>
+<li>一句话概括方法：在图上组织与变换 thought，而不是仅沿链或树展开推理。</li>
+<li>方法整体流程（按步骤写 1/2/3/4）：
+  1. 用 GoO（Graph of Operations）定义静态执行计划。
+  2. 在 GRS（Graph Reasoning State）中维护动态 thought 图状态。
+  3. 执行 thought transformation（生成/精炼/聚合）并评分排序。
+  4. 按控制策略推进到终止并输出最优 thought。</li>
+</ul>
+<h3 id="42">4.2 核心设计</h3>
+<h4 id="1reasoning-graph">设计 1：Reasoning Graph 建模</h4>
+<ul>
+<li>做了什么：把推理过程建模为有向图 <code>G=(V,E)</code>，节点是 thought，边是依赖关系。</li>
+<li>为什么这样设计：支持跨路径共享、回收与重组信息。</li>
+<li>解决的难点：难点 3。</li>
+</ul>
+<h4 id="2thought-transformations">设计 2：Thought Transformations</h4>
+<ul>
+<li>做了什么：</li>
+<li>Generation：基于已有 thought 生成新 thought；</li>
+<li>Refinement：对现有 thought 进行改写增强；</li>
+<li>Aggregation：聚合多个 thought 形成新 thought。</li>
+<li>为什么这样设计：把复杂任务分解成可组合操作。</li>
+<li>解决的难点：难点 1/3。</li>
+</ul>
+<h4 id="3scoring-ranking">设计 3：Scoring &amp; Ranking</h4>
+<ul>
+<li>做了什么：对 thought 评分 <code>s(·)</code> 并排序 <code>r(·)</code>，决定保留/扩展集合。</li>
+<li>为什么这样设计：控制图膨胀，聚焦高价值路径。</li>
+<li>解决的难点：难点 1/2。</li>
+</ul>
+<h3 id="43">4.3 训练 / 推理细节</h3>
+<ul>
+<li>训练阶段做了什么：框架本身偏推理时方法，无需专门训练。</li>
+<li>推理阶段做了什么：按 GoO 执行图操作，Prompter/Parser/Scorer/Controller 协同推进。</li>
+<li>损失函数组成：依任务而定（很多场景用任务特定评分函数）。</li>
+<li>关键超参数：分支数、图深度、保留候选数、评分阈值。</li>
+<li>复杂度 / 额外开销：较 CoT 更高，但通过分解与聚合可获得更优质量-成本折中。</li>
+</ul>
+<h3 id="44">4.4 系统架构与图变换证据</h3>
+<p><img alt="image_003" src="assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_003.png" />
+<img alt="image_004" src="assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_004.png" />
+<img alt="image_005" src="assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_005.png" />
+<img alt="image_006" src="assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_006.png" />
+<img alt="image_007" src="assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_007.png" />
+<img alt="image_008" src="assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_008.png" />
+<img alt="image_009" src="assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_009.png" />
+<img alt="image_010" src="assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_010.png" />
+<img alt="image_011" src="assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_011.png" />
+<img alt="image_012" src="assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_012.png" />
+<img alt="image_013" src="assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_013.png" />
+<img alt="image_014" src="assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_014.png" /></p>
+<hr />
+<h2 id="5">5. 论文贡献（只写作者真正新增的东西）</h2>
+<ul>
+<li>贡献 1：提出 GoT，将 LLM 推理统一到“任意图结构”范式。</li>
+<li>贡献 2：提出模块化系统架构，支持快速扩展操作与模型。</li>
+<li>贡献 3：在多个任务（排序、集合操作、关键词统计、文档合并）上展示优势。</li>
+<li>贡献 4：提出思想体积（volume of thoughts）指标，量化推理图信息覆盖。</li>
+</ul>
+<hr />
+<h2 id="6">6. 实验设置</h2>
+<ul>
+<li>任务：</li>
+<li>Sorting（含重复数字排序）</li>
+<li>Set Operations（集合交集）</li>
+<li>Keyword Counting（关键字计数）</li>
+<li>Document Merging（文档合并）</li>
+<li>模型：主要使用 GPT-3.5（并报告 Llama-2 观察）</li>
+<li>对比方法：IO、CoT、CoT-SC、ToT（不同分支/深度配置）</li>
+<li>评价指标：</li>
+<li>任务误差（如排序 error-scope）</li>
+<li>成本（调用/token）</li>
+<li>延迟与思想体积（volume）分析</li>
+<li>关键设置：约 100 样本/任务；控制各方法在相近成本条件下比较。</li>
+</ul>
+<h3 id="61">6.1 任务示例与评分定义证据</h3>
+<p><img alt="image_015" src="assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_015.png" />
+<img alt="image_016" src="assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_016.png" />
+<img alt="image_017" src="assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_017.png" /></p>
+<hr />
+<h2 id="7">7. 主要结果</h2>
+<h3 id="71">7.1 主结果</h3>
+<ul>
+<li>结果 1：GoT 相比 ToT 在排序任务上显著降误差，并降低成本（论文报告中位误差约降 62%，成本降 &gt;31%）。</li>
+<li>结果 2：GoT 相比 IO/CoT 在复杂规模任务上质量提升更明显。</li>
+<li>结果 3：问题规模越大，GoT 的相对优势越突出。</li>
+</ul>
+<h3 id="72">7.2 从结果中能读出的结论</h3>
+<ul>
+<li>结论 1：核心收益来自“任务分解 + 子结果聚合”而非简单增加采样。</li>
+<li>结论 2：图结构允许“高体积、低延迟”的更优信息流形态。</li>
+<li>结论 3：当任务可拆分时，GoT 比链式/树式方案更稳健。</li>
+</ul>
+<h3 id="73">7.3 最关键的证据</h3>
+<ul>
+<li>最关键表格：不同方法在同成本预算下的质量比较表。</li>
+<li>最关键图：GoT vs ToT/CoT 的误差与成本曲线、规模扩展分析图。</li>
+<li>最关键数字：排序任务相对 ToT 的质量提升与成本下降。</li>
+<li>为什么它最关键：直接验证了“图聚合”带来的实用收益。</li>
+</ul>
+<h3 id="74">7.4 结果图（完整）</h3>
+<p><img alt="image_018" src="assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_018.png" />
+<img alt="image_019" src="assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_019.png" />
+<img alt="image_020" src="assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_020.png" /></p>
+<hr />
+<h2 id="8">8. 消融实验</h2>
+<ul>
+<li>消融点 1：去掉聚合操作后，质量明显下降。</li>
+<li>消融点 2：仅增加树搜索深度但不做图融合，成本上升且收益受限。</li>
+<li>消融点 3：评分/排序策略变化会显著影响搜索稳定性。</li>
+</ul>
+<hr />
+<h2 id="9">9. 和已有工作的关系</h2>
+<ul>
+<li>这篇论文最接近哪些方法：CoT、CoT-SC、ToT、一般图搜索/规划范式。</li>
+<li>和已有方法相比，最大的不同：允许任意图结构 thought transformation，而非只走链或树。</li>
+<li>真正的新意在哪里：把 prompt 推理过程抽象为可编排图操作系统。</li>
+<li>哪些地方更像“工程改进”而不是“方法创新”：具体评分函数与任务提示模板。</li>
+<li>这篇论文在整个研究脉络里的位置：从“提示技巧”到“推理操作系统”的关键过渡工作。</li>
+</ul>
+<hr />
+<h2 id="10">10. 我的理解（这一节不能照抄论文）</h2>
+<ul>
+<li>直观理解：GoT 像给 LLM 加了一个“图计算外壳”，让 thought 可以像数据流一样组合与回收。</li>
+<li>最值得关注的设计：GoO（静态计划）+ GRS（动态状态）二层结构，分离了策略与执行。</li>
+<li>和已有方法相比的新意：不仅多分支，还支持跨分支融合与循环改进。</li>
+<li>我认为最强的一点：在复杂任务中同时兼顾质量与成本。</li>
+</ul>
+<hr />
+<h2 id="11">11. 局限性</h2>
+<ul>
+<li>局限 1：框架实现复杂度高，对工程能力要求较高。</li>
+<li>局限 2：评分函数质量直接决定搜索上限。</li>
+<li>局限 3：不同任务需要定制 GoO，自动化程度仍有限。</li>
+</ul>
+<hr />
+<h2 id="12">12. 对我的启发</h2>
+<ul>
+<li>能直接借鉴的部分：把复杂任务拆成可执行图操作而非单一 prompt。</li>
+<li>不能直接照搬的部分：评分函数和排序规则需要任务定制。</li>
+<li>对我当前课题的启发：可把检索、工具调用、验证步骤都建模为 thought 节点。</li>
+<li>可以尝试的改进方向：学习型控制器、自适应操作图、成本感知动态剪枝。</li>
+<li>可以作为 baseline / 对比项 / ablation 的部分：CoT/ToT/无聚合 GoT 对比。</li>
+</ul>
+<hr />
+<h2 id="13">13. 待验证问题</h2>
+<ul>
+<li>问题 1：如何自动学习 GoO 拓扑而非手工编排？</li>
+<li>问题 2：GoT 与外部工具执行（代码、检索、规划器）的协同最优策略是什么？</li>
+<li>问题 3：在长上下文代理任务中，thought volume 与最终质量是否仍强相关？</li>
+</ul>
+<hr />
+<h2 id="14">14. 一句话总结</h2>
+<ul>
+<li>GoT 把 LLM 推理升级为可操作的图过程，通过 thought 变换与聚合在复杂任务中实现了比 CoT/ToT 更优的质量-成本平衡。</li>
+</ul>
+<hr />
+<h2 id="15">15. 快速索引（便于二次回看）</h2>
+<ul>
+<li>核心公式：thought 评分与排序函数、任务误差评分（如 sorting error-scope）。</li>
+<li>核心图表：架构图（image_004~014）、用例图（image_015~017）、结果图（image_018~020）。</li>
+<li>最值得复看的章节：Section 3/4（框架与系统）+ Section 7（评估）。</li>
+<li>复现时最需要注意的点：操作图设计、评分可靠性、成本约束下的分支控制。</li>
+</ul>
+<h3 id="151">15.1 整合说明 / 索引</h3>
+<ul>
+<li>原始 Notion 转录内容已拆解到正文 <code>1~14</code> 对应章节。</li>
+<li>全部 20 张图片已按方法/实验/结果语义位置插入。</li>
+</ul>
+<h3 id="152">15.2 导入来源与完整性记录</h3>
+<ul>
+<li>源页面 ID：<code>bbbc33bc-6083-4bff-98e9-225835141809</code></li>
+<li>抓取块数量：<code>141</code></li>
+<li>未解析块引用：<code>0</code></li>
+<li>原始 JSON：<code>notes/_notion_raw/Graph of Thoughts Solving Elaborate Problems with Large Language Models.json</code></li>
+<li>未解析块 ID：无</li>
+<li>联网校验来源（2026-04-08）：</li>
+<li>arXiv: https://arxiv.org/abs/2308.09687</li>
+<li>代码: https://github.com/spcl/graph-of-thoughts</li>
+</ul>
+<h3 id="153">15.3 已完成自检记录</h3>
+<ul>
+<li>[x] 原始笔记所有内容已整理到模板正文。</li>
+<li>[x] 图片已全部插入并归位。</li>
+<li>[x] 已联网补充并校正论文核心信息。</li>
+</ul>
+<h2 id="wiki">Wiki 关联</h2>
+<ul>
+<li>参考摘要：<a href="../references/Graph of Thoughts Solving Elaborate Problems with Large Language Models.html">Graph of Thoughts Solving Elaborate Problems with Large Language Models</a></li>
+<li>概念锚点：<a href="../concepts/Graph of Thoughts Reasoning.html">Graph of Thoughts Reasoning</a>、<a href="../concepts/Thought Structure Taxonomy.html">Thought Structure Taxonomy</a>、<a href="../concepts/Tree of Thoughts Reasoning.html">Tree of Thoughts Reasoning</a></li>
+<li>实体锚点：<a href="../entities/Maciej Besta.html">Maciej Besta</a>、<a href="../entities/Yao Yao.html">Yao Yao</a></li>
+<li>综合页面：<a href="../synthesis/Structured Reasoning Methods for LLMs.html">Structured Reasoning Methods for LLMs</a>、<a href="../synthesis/LLM Reasoning Search and Verification.html">LLM Reasoning Search and Verification</a></li>
+</ul></div>
+      </article>
+    </main>
+
+    <aside class="rail panel">
+      <h3>Page Meta</h3>
+      <div class="meta-block">
+        <p class="meta-label">Section</p>
+        <p>notes</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Tags</p>
+        <div class="chip-list"><span class="chip">untagged</span></div>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Summary</p>
+        <p>﻿ Graph of Thoughts: Solving Elaborate Problems with Large Language Models 阅读日期：2026 04 08 阅读状态：已读 标签： paper imported notion 相关方向：结构化推理、图搜索、LLM 规划 阅读目的：系统整理 GoT 的图推理范式、系统架构与任务实证 1…</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Source</p>
+        <ul>
+          <li><a href="https://github.com/qianzhouyi2/Research-Paper-Notes/blob/main/notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md">Open Markdown On GitHub</a></li>
+          <li><a href="../search-index.json">Open Search Index</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

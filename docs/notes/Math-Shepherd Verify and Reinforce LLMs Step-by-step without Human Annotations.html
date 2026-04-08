@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations | Research Paper Notes</title>
+  <meta name="description" content="﻿ Math Shepherd: Verify and Reinforce LLMs Step by step without Human Annotations 阅读日期：2026 04 08 阅读状态：已读 标签： paper reasoning process reward model verification rl 相关方向：数学推理、过程监督、奖…">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../site.js"></script>
+</head>
+<body data-root-prefix="../" data-page-path="notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.html">
+  <div class="site-shell">
+    <aside class="sidebar panel">
+      <a class="brand" href="../index.html">
+        <span class="brand-kicker">Research Wiki</span>
+        <h1>Research Paper Notes</h1>
+        <p>A browsable paper-reading vault published as a GitHub Pages site.</p>
+      </a>
+      <nav><h1 id="navigation">Navigation</h1>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="index.html">Notes</a></li>
+<li><a href="../references/index.html">References</a></li>
+<li><a href="../concepts/index.html">Concepts</a></li>
+<li><a href="../entities/index.html">Entities</a></li>
+<li><a href="../synthesis/index.html">Synthesis</a></li>
+<li><a href="../journal/index.html">Journal</a></li>
+<li><a href="../projects/index.html">Projects</a></li>
+<li><a href="../log.html">Log</a></li>
+</ul></nav>
+      <p class="footer-note">Static export from the local Obsidian-style wiki. Markdown was pre-rendered for GitHub Pages.</p>
+    </aside>
+
+    <main class="main">
+      <header class="topbar panel">
+        <div>
+          <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
+          <h2>Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations</h2>
+          <p>﻿ Math Shepherd: Verify and Reinforce LLMs Step by step without Human Annotations 阅读日期：2026 04 08 阅读状态：已读 标签： paper reasoning process reward model verification rl 相关方向：数学推理、过程监督、奖…</p>
+        </div>
+        <div class="topbar-actions">
+          <div class="search-box">
+            <input data-search-input type="search" placeholder="Search pages, concepts, entities...">
+            <div data-search-results class="search-results"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="breadcrumbs"><a href="../index.html">Home</a><span> / </span><a href="index.html">Notes</a><span> / </span><span>Math Shepherd Verify and Reinforce LLMs Step by step without Human Annotations</span></div>
+
+      <article class="article-wrap panel">
+        <div class="article-path">notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md</div>
+        <div class="markdown-body"><p>﻿# Math-Shepherd: Verify and Reinforce LLMs Step-by-step without Human Annotations</p>
+<ul>
+<li>阅读日期：2026-04-08</li>
+<li>阅读状态：已读</li>
+<li>标签：#paper #reasoning #process-reward-model #verification #rl</li>
+<li>相关方向：数学推理、过程监督、奖励建模、LLM 对齐</li>
+<li>阅读目的：系统梳理“自动过程标注 + PRM 验证/强化学习”这条技术路线</li>
+</ul>
+<hr />
+<h2 id="1">1. 论文信息</h2>
+<ul>
+<li>题目：Math-Shepherd: Verify and Reinforce LLMs Step-by-step without Human Annotations</li>
+<li>链接：https://arxiv.org/abs/2312.08935</li>
+<li>作者：Peiyi Wang, Lei Li, Zheng Yuan, Kai Zhang, Yuchao Ni, Jianye Hao, Nanhai Lin, Boxing Chen</li>
+<li>单位：Peking University；DeepSeek-AI（论文首页作者单位标注）</li>
+<li>会议 / 期刊 / 年份：ACL 2024 (Long Paper)</li>
+<li>关键词（3~8个）：PRM, ORM, Process Supervision, Math Reasoning, Verification, PPO</li>
+<li>论文一句话主题：在无人工逐步标注下，自动构建过程监督数据训练 PRM，并用于验证和逐步强化学习。</li>
+</ul>
+<hr />
+<h2 id="2">2. 先看结论（适合快速回顾）</h2>
+<ul>
+<li>这篇论文主要解决什么问题：PRM 效果好但人工逐步标注昂贵，如何自动构建高质量过程监督并有效训练 PRM。</li>
+<li>提出的核心方法是什么：用“步骤潜力（能否导出正确终答案）”定义步骤质量，借助 completer 采样后续推理，自动打步骤标签（HE/SE）并训练 PRM。</li>
+<li>最终最重要的结果是什么：逐步 PPO 使 Mistral-7B 从 77.9%→84.1%(GSM8K)、28.6%→33.0%(MATH)；再用 Math-Shepherd 验证可到 89.1%(GSM8K)、43.5%(MATH)。</li>
+<li>我现在是否值得深入读：值得</li>
+<li>原因：该工作把“过程奖励模型的监督瓶颈”转成可扩展自动流程，且验证与 RL 两条线都给出正收益。</li>
+</ul>
+<hr />
+<h2 id="3">3. 问题定义</h2>
+<h3 id="31">3.1 研究问题</h3>
+<ul>
+<li>论文研究的核心问题：无人工注释地训练可用 PRM，并检验其在验证和强化学习中的收益。</li>
+<li>输入是什么：数学题 (p)、候选推理步骤序列 (S=(s_1,\dots,s_K))、标准答案 (a^*)。</li>
+<li>输出是什么：步骤级奖励 (r_{s_i})，以及用于候选解重排/策略优化的分数。</li>
+<li>优化目标是什么：提升最终数学题正确率（best-of-N 验证与 greedy 解码 RL 评估）。</li>
+<li>任务设定 / 威胁模型 / 前提假设：默认可获得题目 gold final answer；步骤好坏由“导向正确终答概率”近似。</li>
+</ul>
+<h3 id="32">3.2 为什么重要</h3>
+<ul>
+<li>这个问题为什么值得做：PRM 已被证实优于 ORM，但人工过程标注严重制约规模化。</li>
+<li>现实应用价值：可用于在线解题重排、离线数据构建、以及 step-level RL 训练。</li>
+<li>学术上的意义：把 MCTS 风格“潜力估计”引入 LLM 推理监督，建立可扩展过程监督范式。</li>
+</ul>
+<h3 id="33">3.3 难点</h3>
+<ul>
+<li>难点 1：步骤正确性难直接定义，且单步标签噪声高。</li>
+<li>难点 2：多步推理长链路导致末端奖励稀疏，普通 ORM 信号不够细。</li>
+<li>难点 3：高质量过程监督构造成本高，模型/数据分布错配会影响 PRM 训练。</li>
+</ul>
+<hr />
+<h2 id="4">4. 论文方法</h2>
+<h3 id="41">4.1 方法总览</h3>
+<ul>
+<li>方法名称：Math-Shepherd</li>
+<li>一句话概括方法：用“从中间步骤继续推理后得到正确答案的频率”给步骤打标签，训练 PRM，再用于验证与逐步 PPO。</li>
+<li>方法整体流程（按步骤写 1/2/3/4）：
+  1. 生成器为题目采样多条分步解。
+  2. 对每个中间步骤用 completer 采样 N 条后续推理并核对终答。
+  3. 以 HE/SE 规则生成步骤标签并训练 PRM。
+  4. 用 PRM 做候选重排（verification）或提供 step-level 奖励（RL）。</li>
+</ul>
+<p><img alt="image_001" src="assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_001.png" /></p>
+<h3 id="42">4.2 核心设计</h3>
+<blockquote>
+<p>每个设计都尽量回答：做了什么、为什么这么设计、解决了哪个难点</p>
+</blockquote>
+<h4 id="1_1">设计 1</h4>
+<ul>
+<li>做了什么：定义步骤质量为“潜力（potential）”，即该步骤后续是否/多大概率能到达正确终答。</li>
+<li>为什么这样设计：避免对中间自然语言步骤做昂贵人工判定。</li>
+<li>解决的难点：步骤标签定义困难、人工过程标注成本高。</li>
+<li>关键公式 / 目标函数：</li>
+<li>(y_{s_i}^{HE}=1) 当存在后续采样路径到达 (a^*)，否则 0。</li>
+<li>(y_{s_i}^{SE}= \frac{1}{N}\sum_{j=1}^N \mathbf{I}(a_j=a^*))。</li>
+<li>证据位置：Method 3.3。</li>
+</ul>
+<h4 id="2_1">设计 2</h4>
+<ul>
+<li>做了什么：训练 PRM 以步骤级损失监督每一步分数。</li>
+<li>为什么这样设计：相比 ORM 的序列级单分数，PRM 可提供细粒度反馈。</li>
+<li>解决的难点：长链路推理中的稀疏奖励与信用分配问题。</li>
+<li>关键公式 / 目标函数：</li>
+<li>(\mathcal{L}<em i="1">{PRM}=\sum</em>))。}^{K} y_{s_i}\log r_{s_i} + (1-y_{s_i})\log(1-r_{s_i</li>
+<li>证据位置：Method 3.2。</li>
+</ul>
+<h4 id="3_1">设计 3</h4>
+<ul>
+<li>做了什么：验证阶段使用“步骤最小分 + 按终答分组加权”做重排。</li>
+<li>为什么这样设计：低分步骤通常是解题路径中的致命错误点。</li>
+<li>解决的难点：best-of-N 中候选多但质量参差，需稳定排序准则。</li>
+<li>关键公式 / 目标函数：</li>
+<li>ORM 训练损失：(\mathcal{L}_{ORM}= y_s\log r_s + (1-y_s)\log(1-r_s))。</li>
+<li>重排聚合：(a_{sc+rm}=\arg\max_a\sum_{i=1}^{N}\mathbf{I}(a_i=a)\cdot RM(p,S_i))。</li>
+<li>证据位置：Method 3.2, 3.4。</li>
+</ul>
+<p><img alt="image_002" src="assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_002.png" /></p>
+<h3 id="43">4.3 训练 / 推理细节</h3>
+<ul>
+<li>训练阶段做了什么：</li>
+<li>在 MetaMATH 上训练生成器与 completer（3 epochs）。</li>
+<li>用 GSM8K/MATH 训练集构造自动过程标签数据；每题采样 15 条解，去重后标注步骤。</li>
+<li>奖励模型以 Mistral-7B 为底座，学习率 (1\times10^{-6})，训练 1 epoch。</li>
+<li>推理阶段做了什么：</li>
+<li>Verification：每题采样 (N=256) 候选解，用 PRM/ORM/SC 重排比较。</li>
+<li>RL：step-level PPO 在每步结束给奖励，最终用 greedy decode 准确率评估。</li>
+<li>损失函数组成：ORM 序列级 BCE；PRM 步骤级 BCE（HE/SE 标签）。</li>
+<li>关键超参数：</li>
+<li>completer 解码数示例 (N=8)（数据构建）；</li>
+<li>RL 学习率：LLaMA2-7B 为 (4\times10^{-7})，Mistral-7B 为 (1\times10^{-7})；</li>
+<li>KL 系数 0.04；cosine 调度最小学习率 (1\times10^{-8})；</li>
+<li>最大序列长度 512（hfai 3D 并行训练）。</li>
+<li>复杂度 / 额外开销：步骤级补全显著增算力，但作者强调仍低于人工过程标注成本。</li>
+</ul>
+<hr />
+<h2 id="5">5. 论文贡献（只写作者真正新增的东西）</h2>
+<ul>
+<li>贡献 1：提出自动过程标注框架，把步骤质量定义为“导向正确终答潜力”，无需人工逐步标注。</li>
+<li>贡献 2：在验证与逐步强化学习两种设置下系统验证 PRM，覆盖 7B~70B 多模型。</li>
+<li>贡献 3：给出影响 PRM 的关键因素分析（候选数、completer 强度、预训练底座规模、数据量与 OOD 表现）。</li>
+</ul>
+<hr />
+<h2 id="6">6. 实验设置</h2>
+<ul>
+<li>数据集：GSM8K、MATH（验证含 MATH500 子集）；OOD 评估用匈牙利国家期末考试（33 题，总分 100）。</li>
+<li>模型 / 骨干网络：LLaMA2-7B/13B/70B、LLemma-7B/34B、Mistral-7B、DeepSeek-67B。</li>
+<li>对比方法：Self-Consistency（多数投票）、ORM、RFT、PPO+ORM。</li>
+<li>评价指标：best-of-N 准确率（验证），greedy decode 准确率（RL）。</li>
+<li>实现设置：</li>
+<li>每题生成 256 候选解用于验证；</li>
+<li>训练数据规模约：GSM8K 170k 解、MATH 270k 解（自动构建）。</li>
+<li>关键超参数：</li>
+<li>SFT/生成器学习率（示例）：Mistral-7B 为 (5\times10^{-6})，7B/13B 为 (2\times10^{-5}/1\times10^{-5})，34B/67B/70B 为 (6\times10^{-6})。</li>
+<li>是否开源代码 / 模型：论文与结果公开，官方代码仓库未在论文页明确给出（截至 2026-04-08）。</li>
+<li>实验是否公平（初步判断）：对比项覆盖充分，但自动标注数据分布与 PRM800K 分布差异会影响横向对比解释。</li>
+</ul>
+<hr />
+<h2 id="7">7. 主要结果</h2>
+<h3 id="71">7.1 主结果</h3>
+<ul>
+<li>结果 1：作为 verifier，Math-Shepherd 在 GSM8K/MATH 上整体优于 SC 与 ORM。</li>
+<li>结果 2：逐步 PPO 明显优于 RFT 与 PPO+ORM，显示步骤级奖励更有效。</li>
+<li>结果 3：RL 与验证可叠加，组合后进一步提升终准确率。</li>
+</ul>
+<p><img alt="image_003" src="assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_003.png" />
+<img alt="image_004" src="assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_004.png" />
+<img alt="image_005" src="assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_005.png" /></p>
+<h3 id="72">7.2 从结果中能读出的结论</h3>
+<ul>
+<li>结论 1：PRM 在更难的 MATH 上相对 ORM 的优势更明显，细粒度监督对高难推理更关键。</li>
+<li>结论 2：当奖励模型足够强时，盲目与 SC 叠加不一定继续增益（部分设置会下降）。</li>
+<li>结论 3：跨分布测试中 PRM 仍显著优于 ORM（匈牙利考试分数高约 9 分）。</li>
+</ul>
+<p><img alt="image_011" src="assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_011.png" /></p>
+<h3 id="73">7.3 最关键的证据</h3>
+<ul>
+<li>最关键表格：验证主结果表（PRM/ORM/SC across models）。</li>
+<li>最关键图：逐步 PPO 对比图与 OOD 案例图。</li>
+<li>最关键数字：</li>
+<li>Mistral-7B：77.9%→84.1%(GSM8K), 28.6%→33.0%(MATH)（step-level PPO）；</li>
+<li>验证后：89.1%(GSM8K), 43.5%(MATH)；</li>
+<li>DeepSeek-67B + verifier：93.3%(GSM8K), 48.1%(MATH)。</li>
+<li>为什么它最关键：同时覆盖“验证效果、训练效果、泛化效果”三条证据链。</li>
+</ul>
+<hr />
+<h2 id="8">8. 消融实验</h2>
+<ul>
+<li>消融点 1：</li>
+<li>改了什么：候选解数量 (N)。</li>
+<li>结果如何：PRM 相比 ORM/多数投票的优势随 (N) 增大更明显。</li>
+<li>说明了什么：PRM 对大候选池的排序能力更强。</li>
+</ul>
+<p><img alt="image_006" src="assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_006.png" /></p>
+<ul>
+<li>消融点 2：</li>
+<li>改了什么：自动过程标注策略（HE vs SE）与其它标注器（NLI / 规则）。</li>
+<li>结果如何：N=4 时 HE 标注准确度约 86%；HE/SE 训练验证器性能接近；均优于 NLI/规则标注。</li>
+<li>说明了什么：自动标注质量已足够驱动有效 PRM 训练。</li>
+</ul>
+<p><img alt="image_007" src="assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_007.png" />
+<img alt="image_008" src="assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_008.png" /></p>
+<ul>
+<li>消融点 3：</li>
+<li>改了什么：奖励模型底座规模与训练数据量。</li>
+<li>结果如何：大模型 PRM 更稳健；10k 数据规模下 PRM 约领先 ORM 4%，且上限更高。</li>
+<li>说明了什么：PRM 既受模型容量影响，也受数据规模影响，且扩展趋势优于 ORM。</li>
+</ul>
+<p><img alt="image_009" src="assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_009.png" />
+<img alt="image_010" src="assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_010.png" /></p>
+<hr />
+<h2 id="9">9. 和已有工作的关系</h2>
+<ul>
+<li>这篇论文最接近哪些方法：ORM/PRM 奖励建模、SC 验证、RFT/PPO 的 RL 路线。</li>
+<li>和已有方法相比，最大的不同：不依赖人工逐步标注，改用自动“步骤潜力”标注。</li>
+<li>真正的新意在哪里：把中间步骤价值估计转化为可扩展训练信号，并在 verifier + RL 双场景闭环验证。</li>
+<li>哪些地方更像“工程改进”而不是“方法创新”：特定学习率、采样数、并行训练配方。</li>
+<li>这篇论文在整个研究脉络里的位置：连接“推理验证”与“过程监督 RL”的关键过渡工作。</li>
+</ul>
+<hr />
+<h2 id="10">10. 我的理解（这一节不能照抄论文）</h2>
+<h3 id="101">10.1 直观理解</h3>
+<ul>
+<li>用自己的话解释这篇方法：先判断“这一步走下去有没有希望”，再把这个信号用于挑答案和训模型。</li>
+<li>它本质上像在做什么：把数学推理树的局部节点价值估计，转成可学习的步骤奖励函数。</li>
+</ul>
+<h3 id="102">10.2 我认为最关键的设计</h3>
+<ul>
+<li>最关键设计：用 completer 采样后续轨迹来定义步骤潜力（HE/SE）。</li>
+<li>为什么我觉得它最关键：它同时解决“标签从哪来”和“标签如何与最终正确率对齐”两个核心问题。</li>
+</ul>
+<h3 id="103">10.3 我认为最强的一点</h3>
+<ul>
+<li>在无人工步骤标注条件下，仍能稳定获得比 ORM 更高的验证效果与 RL 提升。</li>
+</ul>
+<h3 id="104">10.4 我认为最可疑的一点</h3>
+<ul>
+<li>对 completer 质量和采样成本较敏感，数据构建成本仍可能成为大规模训练瓶颈。</li>
+</ul>
+<hr />
+<h2 id="11">11. 局限性</h2>
+<ul>
+<li>局限 1：自动标注要对每个步骤做多次后续补全，计算成本高。</li>
+<li>局限 2：自动标签含噪，且与人工 PRM800K 的分布不一致会影响比较解释。</li>
+<li>局限 3：方法依赖可核验 final answer 的任务形态，迁移到开放式任务需要新判分机制。</li>
+</ul>
+<hr />
+<h2 id="12">12. 对我的启发</h2>
+<ul>
+<li>能直接借鉴的部分：把“终答案正确性”回传到中间步骤，用作过程监督。</li>
+<li>不能直接照搬的部分：固定 HE/SE 规则在开放域推理可能不稳，需要任务化改造。</li>
+<li>对我当前课题的启发：可把复杂任务拆为步骤级价值学习，再做重排/策略优化。</li>
+<li>可以尝试的改进方向：更便宜的步骤价值估计（缓存、早停、蒸馏、轻量 verifier）。</li>
+<li>可以作为 baseline / 对比项 / ablation 的部分：SC、ORM、RFT、PPO+ORM、PRM(HE/SE)。</li>
+</ul>
+<hr />
+<h2 id="13">13. 待验证问题</h2>
+<ul>
+<li>[ ] 问题 1：若将 PRM 分数聚合从“最小步分”改为“软最小值/风险敏感聚合”，验证效果是否更稳？</li>
+<li>[ ] 问题 2：在编码、规划等非数学任务中，步骤潜力标签如何定义才可自动化且低噪？</li>
+<li>[ ] 问题 3：能否用小 completer + 主动采样策略逼近大 completer 的标注质量？</li>
+</ul>
+<hr />
+<h2 id="14">14. 一句话总结</h2>
+<ul>
+<li>Math-Shepherd 证明了“自动过程监督”可以实用化 PRM，并在数学验证与逐步 RL 中同时带来稳定增益。</li>
+</ul>
+<hr />
+<h2 id="15">15. 快速索引（便于二次回看）</h2>
+<ul>
+<li>核心公式：(L_{ORM})、(L_{PRM})、(y_{s_i}^{HE})、(y_{s_i}^{SE})、(a_{sc+rm})。</li>
+<li>核心图表：image_002（方法流程）、image_003/004/005（主结果）、image_006~010（分析）、image_011（OOD）。</li>
+<li>最值得复看的章节：3.1~3.3、4.2、7.1、8。</li>
+<li>复现时最需要注意的点：completer 质量、候选采样数 N、PRM 聚合规则、step-level PPO 超参数。</li>
+</ul>
+<h3 id="151">15.1 整合说明 / 索引</h3>
+<ul>
+<li>原始转录内容已完整拆入 1~14 节正文。</li>
+<li>本节仅保留二次回看索引，不保留原始堆放内容。</li>
+</ul>
+<h3 id="152">15.2 导入来源与完整性记录</h3>
+<ul>
+<li>论文来源（联网校验日期：2026-04-08）：</li>
+<li>arXiv：https://arxiv.org/abs/2312.08935</li>
+<li>ACL Anthology：https://aclanthology.org/2024.acl-long.510/</li>
+<li>本地资源：</li>
+<li>原始 JSON：<code>notes/_notion_raw/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.json</code></li>
+<li>图片目录：<code>notes/assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/</code></li>
+<li>完整性：</li>
+<li>原笔记方法/实验/分析/局限/结论信息均已并入模板正文。</li>
+<li>图片 <code>image_001</code> 至 <code>image_011</code> 已按语义位置插入正文。</li>
+</ul>
+<h2 id="wiki">Wiki 关联</h2>
+<ul>
+<li>参考摘要：<a href="../references/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.html">Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations</a></li>
+<li>概念锚点：<a href="../concepts/Process-Supervised Step Verification.html">Process-Supervised Step Verification</a>、<a href="../concepts/Implicit Chain-of-Thought Internalization.html">Implicit Chain-of-Thought Internalization</a>、<a href="../concepts/Tree of Thoughts Reasoning.html">Tree of Thoughts Reasoning</a></li>
+<li>实体锚点：<a href="../entities/Peiyi Wang.html">Peiyi Wang</a>、<a href="../entities/GPT-4.html">GPT-4</a></li>
+<li>综合页面：<a href="../synthesis/Structured Reasoning Methods for LLMs.html">Structured Reasoning Methods for LLMs</a>、<a href="../synthesis/LLM Reasoning Search and Verification.html">LLM Reasoning Search and Verification</a></li>
+</ul></div>
+      </article>
+    </main>
+
+    <aside class="rail panel">
+      <h3>Page Meta</h3>
+      <div class="meta-block">
+        <p class="meta-label">Section</p>
+        <p>notes</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Tags</p>
+        <div class="chip-list"><span class="chip">untagged</span></div>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Summary</p>
+        <p>﻿ Math Shepherd: Verify and Reinforce LLMs Step by step without Human Annotations 阅读日期：2026 04 08 阅读状态：已读 标签： paper reasoning process reward model verification rl 相关方向：数学推理、过程监督、奖…</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Source</p>
+        <ul>
+          <li><a href="https://github.com/qianzhouyi2/Research-Paper-Notes/blob/main/notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md">Open Markdown On GitHub</a></li>
+          <li><a href="../search-index.json">Open Search Index</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

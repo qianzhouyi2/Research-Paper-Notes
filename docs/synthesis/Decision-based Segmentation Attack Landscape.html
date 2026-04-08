@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Decision-based Segmentation Attack Landscape | Research Paper Notes</title>
+  <meta name="description" content="DLA 展示了语义分割 decision-based 攻击可在极低查询下强力破坏 mIoU，提示鲁棒性评估应转向查询效率视角。">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../site.js"></script>
+</head>
+<body data-root-prefix="../" data-page-path="synthesis/Decision-based Segmentation Attack Landscape.html">
+  <div class="site-shell">
+    <aside class="sidebar panel">
+      <a class="brand" href="../index.html">
+        <span class="brand-kicker">Research Wiki</span>
+        <h1>Research Paper Notes</h1>
+        <p>A browsable paper-reading vault published as a GitHub Pages site.</p>
+      </a>
+      <nav><h1 id="navigation">Navigation</h1>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../notes/index.html">Notes</a></li>
+<li><a href="../references/index.html">References</a></li>
+<li><a href="../concepts/index.html">Concepts</a></li>
+<li><a href="../entities/index.html">Entities</a></li>
+<li><a href="index.html">Synthesis</a></li>
+<li><a href="../journal/index.html">Journal</a></li>
+<li><a href="../projects/index.html">Projects</a></li>
+<li><a href="../log.html">Log</a></li>
+</ul></nav>
+      <p class="footer-note">Static export from the local Obsidian-style wiki. Markdown was pre-rendered for GitHub Pages.</p>
+    </aside>
+
+    <main class="main">
+      <header class="topbar panel">
+        <div>
+          <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
+          <h2>Decision-based Segmentation Attack Landscape</h2>
+          <p>DLA 展示了语义分割 decision-based 攻击可在极低查询下强力破坏 mIoU，提示鲁棒性评估应转向查询效率视角。</p>
+        </div>
+        <div class="topbar-actions">
+          <div class="search-box">
+            <input data-search-input type="search" placeholder="Search pages, concepts, entities...">
+            <div data-search-results class="search-results"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="breadcrumbs"><a href="../index.html">Home</a><span> / </span><a href="index.html">Synthesis</a><span> / </span><span>Decision based Segmentation Attack Landscape</span></div>
+
+      <article class="article-wrap panel">
+        <div class="article-path">synthesis/Decision-based Segmentation Attack Landscape.md</div>
+        <div class="markdown-body"><h1 id="decision-based-segmentation-attack-landscape">Decision-based Segmentation Attack Landscape</h1>
+<h2 id="_1">主题结论</h2>
+<ul>
+<li>语义分割黑盒攻击难点与图像分类不同，不能直接复用边界攻击直觉。</li>
+<li>以查询效率为核心的攻击框架更能反映真实部署风险。</li>
+<li>DLA 路线强调三件事：指标稳定、搜索空间压缩、结构化局部校准。</li>
+</ul>
+<h2 id="_2">与已有笔记的连接</h2>
+<ul>
+<li>在 <a href="../notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.html">Delving into Decision-based Black-box Attacks on Semantic Segmentation</a> 中给出了完整方法和数据表。</li>
+<li>与 <a href="Alignment Robustness Evaluation Ladder.html">Alignment Robustness Evaluation Ladder</a> 一起可形成“评测协议到任务攻击”的完整链路。^[inferred]</li>
+</ul>
+<h2 id="_3">可复用模式</h2>
+<ul>
+<li>先定义代理指标（如 mIoU）保证更新方向一致。</li>
+<li>将连续优化问题变成离散可控搜索。</li>
+<li>在固定预算下报告攻击退化曲线与低查询性能。</li>
+</ul>
+<h2 id="open-questions">Open Questions</h2>
+<ul>
+<li>如何扩展到 targeted segmentation attack？</li>
+<li>如何与 foundation segmentation models 对齐评估口径？</li>
+<li>是否可引入视觉可感知性的人类评测协议？</li>
+</ul>
+<h2 id="_4">关联</h2>
+<ul>
+<li><a href="../references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.html">Delving into Decision-based Black-box Attacks on Semantic Segmentation</a></li>
+<li><a href="../concepts/Decision-based Black-box Attack for Segmentation.html">Decision-based Black-box Attack for Segmentation</a></li>
+<li><a href="../concepts/Discrete Linear Noise.html">Discrete Linear Noise</a></li>
+<li><a href="../concepts/Query-Efficient Attack Evaluation.html">Query-Efficient Attack Evaluation</a></li>
+<li><a href="../entities/Cityscapes Dataset.html">Cityscapes Dataset</a></li>
+<li><a href="../entities/ADE20K Dataset.html">ADE20K Dataset</a></li>
+<li><a href="../projects/index.html">index</a></li>
+</ul></div>
+      </article>
+    </main>
+
+    <aside class="rail panel">
+      <h3>Page Meta</h3>
+      <div class="meta-block">
+        <p class="meta-label">Section</p>
+        <p>synthesis</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Tags</p>
+        <div class="chip-list"><span class="chip">synthesis</span><span class="chip">adversarial-attack</span><span class="chip">semantic-segmentation</span><span class="chip">black-box-attack</span><span class="chip">robustness</span></div>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Summary</p>
+        <p>DLA 展示了语义分割 decision-based 攻击可在极低查询下强力破坏 mIoU，提示鲁棒性评估应转向查询效率视角。</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Source</p>
+        <ul>
+          <li><a href="https://github.com/qianzhouyi2/Research-Paper-Notes/blob/main/synthesis/Decision-based Segmentation Attack Landscape.md">Open Markdown On GitHub</a></li>
+          <li><a href="../search-index.json">Open Search Index</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

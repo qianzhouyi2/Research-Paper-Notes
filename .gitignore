@@ -1,0 +1,4 @@
+.vendor/
+github_wiki/
+github_wiki_repo/
+scripts/__pycache__/

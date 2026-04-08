@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maintaining Plasticity in Deep Continual Learning | Research Paper Notes</title>
+  <meta name="description" content="论文系统刻画深度持续学习中的“可塑性丧失”，并提出 Continual Backpropagation 以选择性重置低效单元，显著缓解长期退化。">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../site.js"></script>
+</head>
+<body data-root-prefix="../" data-page-path="references/Maintaining Plasticity in Deep Continual Learning.html">
+  <div class="site-shell">
+    <aside class="sidebar panel">
+      <a class="brand" href="../index.html">
+        <span class="brand-kicker">Research Wiki</span>
+        <h1>Research Paper Notes</h1>
+        <p>A browsable paper-reading vault published as a GitHub Pages site.</p>
+      </a>
+      <nav><h1 id="navigation">Navigation</h1>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../notes/index.html">Notes</a></li>
+<li><a href="index.html">References</a></li>
+<li><a href="../concepts/index.html">Concepts</a></li>
+<li><a href="../entities/index.html">Entities</a></li>
+<li><a href="../synthesis/index.html">Synthesis</a></li>
+<li><a href="../journal/index.html">Journal</a></li>
+<li><a href="../projects/index.html">Projects</a></li>
+<li><a href="../log.html">Log</a></li>
+</ul></nav>
+      <p class="footer-note">Static export from the local Obsidian-style wiki. Markdown was pre-rendered for GitHub Pages.</p>
+    </aside>
+
+    <main class="main">
+      <header class="topbar panel">
+        <div>
+          <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
+          <h2>Maintaining Plasticity in Deep Continual Learning</h2>
+          <p>论文系统刻画深度持续学习中的“可塑性丧失”，并提出 Continual Backpropagation 以选择性重置低效单元，显著缓解长期退化。</p>
+        </div>
+        <div class="topbar-actions">
+          <div class="search-box">
+            <input data-search-input type="search" placeholder="Search pages, concepts, entities...">
+            <div data-search-results class="search-results"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="breadcrumbs"><a href="../index.html">Home</a><span> / </span><a href="index.html">References</a><span> / </span><span>Maintaining Plasticity in Deep Continual Learning</span></div>
+
+      <article class="article-wrap panel">
+        <div class="article-path">references/Maintaining Plasticity in Deep Continual Learning.md</div>
+        <div class="markdown-body"><h1 id="maintaining-plasticity-in-deep-continual-learning">Maintaining Plasticity in Deep Continual Learning</h1>
+<h2 id="_1">基本信息</h2>
+<ul>
+<li>年份：2023（arXiv，后续有 Nature 版本）</li>
+<li>任务：持续学习中的 loss of plasticity</li>
+<li>论文笔记：<a href="../notes/Maintaining Plasticity in Deep Continual Learning.html">Maintaining Plasticity in Deep Continual Learning</a></li>
+</ul>
+<h2 id="_2">核心主张</h2>
+<ul>
+<li>深度网络在长期持续学习中不仅会遗忘，还会逐渐“学不动新任务”。</li>
+<li>在 continual ImageNet 设定中，早期任务准确率约 89%，到第 2000 任务下降到约 77%。</li>
+<li>Continual Backpropagation（CBP）通过持续重置低效单元来维持可塑性。</li>
+</ul>
+<h2 id="_3">方法摘要</h2>
+<ul>
+<li>每步常规反向传播后，维护单元效用统计。</li>
+<li>选择低效用且达到成熟阈值的隐藏单元重初始化。</li>
+<li>新单元输出权重置零，以减少即时功能扰动。</li>
+</ul>
+<h2 id="_4">细化方法锚点</h2>
+<ul>
+<li>诊断层：用有效秩、死单元比例等指标区分“遗忘”与“可塑性衰退”。</li>
+<li>干预层：效用驱动替换优于随机替换，且成熟阈值可减小抖动。</li>
+<li>预算层：以低替换率持续注入可学习能力，降低长期退化。^[inferred]</li>
+</ul>
+<h2 id="_5">局限与注意</h2>
+<ul>
+<li>效用定义和替换策略具有一定启发式性质，在更大模型上的最优性仍需验证。^[ambiguous]</li>
+</ul>
+<h2 id="_6">关联页面</h2>
+<ul>
+<li><a href="../concepts/Loss of Plasticity in Continual Learning.html">Loss of Plasticity in Continual Learning</a></li>
+<li><a href="../concepts/Continual Backpropagation.html">Continual Backpropagation</a></li>
+<li><a href="../concepts/Feature Effective Rank Diagnostics.html">Feature Effective Rank Diagnostics</a></li>
+<li><a href="../concepts/Selective Neuron Reinitialization.html">Selective Neuron Reinitialization</a></li>
+<li><a href="../entities/Shibhansh Dohare.html">Shibhansh Dohare</a></li>
+<li><a href="../entities/Richard S. Sutton.html">Richard S</a></li>
+<li><a href="../synthesis/Continual Learning Plasticity Maintenance Playbook.html">Continual Learning Plasticity Maintenance Playbook</a></li>
+</ul></div>
+      </article>
+    </main>
+
+    <aside class="rail panel">
+      <h3>Page Meta</h3>
+      <div class="meta-block">
+        <p class="meta-label">Section</p>
+        <p>references</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Tags</p>
+        <div class="chip-list"><span class="chip">paper</span><span class="chip">continual-learning</span><span class="chip">optimization</span><span class="chip">representation</span></div>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Summary</p>
+        <p>论文系统刻画深度持续学习中的“可塑性丧失”，并提出 Continual Backpropagation 以选择性重置低效单元，显著缓解长期退化。</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Source</p>
+        <ul>
+          <li><a href="https://github.com/qianzhouyi2/Research-Paper-Notes/blob/main/references/Maintaining Plasticity in Deep Continual Learning.md">Open Markdown On GitHub</a></li>
+          <li><a href="../search-index.json">Open Search Index</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

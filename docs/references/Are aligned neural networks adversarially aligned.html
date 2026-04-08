@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Are aligned neural networks adversarially aligned? | Research Paper Notes</title>
+  <meta name="description" content="该论文提出“对抗性对齐”评估框架，指出文本攻击器能力不足会导致安全误判，并展示多模态模型可被对抗图像稳定诱导输出有害内容。">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../site.js"></script>
+</head>
+<body data-root-prefix="../" data-page-path="references/Are aligned neural networks adversarially aligned.html">
+  <div class="site-shell">
+    <aside class="sidebar panel">
+      <a class="brand" href="../index.html">
+        <span class="brand-kicker">Research Wiki</span>
+        <h1>Research Paper Notes</h1>
+        <p>A browsable paper-reading vault published as a GitHub Pages site.</p>
+      </a>
+      <nav><h1 id="navigation">Navigation</h1>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../notes/index.html">Notes</a></li>
+<li><a href="index.html">References</a></li>
+<li><a href="../concepts/index.html">Concepts</a></li>
+<li><a href="../entities/index.html">Entities</a></li>
+<li><a href="../synthesis/index.html">Synthesis</a></li>
+<li><a href="../journal/index.html">Journal</a></li>
+<li><a href="../projects/index.html">Projects</a></li>
+<li><a href="../log.html">Log</a></li>
+</ul></nav>
+      <p class="footer-note">Static export from the local Obsidian-style wiki. Markdown was pre-rendered for GitHub Pages.</p>
+    </aside>
+
+    <main class="main">
+      <header class="topbar panel">
+        <div>
+          <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
+          <h2>Are aligned neural networks adversarially aligned?</h2>
+          <p>该论文提出“对抗性对齐”评估框架，指出文本攻击器能力不足会导致安全误判，并展示多模态模型可被对抗图像稳定诱导输出有害内容。</p>
+        </div>
+        <div class="topbar-actions">
+          <div class="search-box">
+            <input data-search-input type="search" placeholder="Search pages, concepts, entities...">
+            <div data-search-results class="search-results"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="breadcrumbs"><a href="../index.html">Home</a><span> / </span><a href="index.html">References</a><span> / </span><span>Are aligned neural networks adversarially aligned</span></div>
+
+      <article class="article-wrap panel">
+        <div class="article-path">references/Are aligned neural networks adversarially aligned.md</div>
+        <div class="markdown-body"><h1 id="are-aligned-neural-networks-adversarially-aligned">Are aligned neural networks adversarially aligned?</h1>
+<h2 id="_1">基本信息</h2>
+<ul>
+<li>年份：2023（NeurIPS）</li>
+<li>任务：评估“对齐模型在最坏输入下是否仍对齐”</li>
+<li>论文笔记：<a href="../notes/Are aligned neural networks adversarially aligned.html">Are aligned neural networks adversarially aligned</a></li>
+</ul>
+<h2 id="_2">核心主张</h2>
+<ul>
+<li>现有 NLP 优化攻击经常失败，但这不能直接证明文本模型已具备对抗鲁棒性。</li>
+<li>在“保证存在解”的构造测试中，攻击器仍会失败，说明评估能力本身是瓶颈。</li>
+<li>多模态模型可通过图像连续扰动被稳定诱导到不对齐输出。</li>
+</ul>
+<h2 id="_3">可复用方法</h2>
+<ul>
+<li>把“防御是否强”与“攻击器是否足够强”拆开验证。</li>
+<li>在正式评估前先做可解性校准（known-solvable sanity check）。</li>
+<li>多模态安全评估需要覆盖连续输入空间，而不只看离散文本提示。^[inferred]</li>
+</ul>
+<h2 id="_4">细化方法锚点</h2>
+<ul>
+<li>文本攻击侧：以 harmful prefix 作为优化代理，降低长序列目标优化难度。</li>
+<li>评测协议侧：先做 known-solvable 校准，再进入真实安全目标评估。</li>
+<li>多模态侧：通过对抗图像 + teacher-forcing 目标序列测试跨模态失配风险。</li>
+</ul>
+<h2 id="_5">边界与注意</h2>
+<ul>
+<li>文本端最终结论仍是“开放问题”，因为当前攻击器能力不足。^[ambiguous]</li>
+<li>论文提出“更强 NLP 攻击可能复现多模态同级别脆弱性”，这一点仍待后续实证。^[ambiguous]</li>
+</ul>
+<h2 id="_6">关联页面</h2>
+<ul>
+<li><a href="../concepts/Adversarial Alignment Evaluation.html">Adversarial Alignment Evaluation</a></li>
+<li><a href="../concepts/Known-Solvable Attack Calibration.html">Known-Solvable Attack Calibration</a></li>
+<li><a href="../concepts/Multimodal Adversarial Image Prompting.html">Multimodal Adversarial Image Prompting</a></li>
+<li><a href="../entities/Vicuna.html">Vicuna</a></li>
+<li><a href="../entities/OpenAssistant.html">OpenAssistant</a></li>
+<li><a href="../entities/Nicholas Carlini.html">Nicholas Carlini</a></li>
+<li><a href="../entities/Florian Tramer.html">Florian Tramer</a></li>
+<li><a href="../entities/Ludwig Schmidt.html">Ludwig Schmidt</a></li>
+<li><a href="../entities/MiniGPT-4.html">MiniGPT-4</a></li>
+<li><a href="../entities/LLaVA.html">LLaVA</a></li>
+<li><a href="../entities/LLaMA-Adapter.html">LLaMA-Adapter</a></li>
+<li><a href="../synthesis/Adversarial Robustness Evaluation Patterns.html">Adversarial Robustness Evaluation Patterns</a></li>
+<li><a href="../synthesis/Alignment Robustness Evaluation Ladder.html">Alignment Robustness Evaluation Ladder</a></li>
+<li><a href="Delving into Decision-based Black-box Attacks on Semantic Segmentation.html">Delving into Decision-based Black-box Attacks on Semantic Segmentation</a></li>
+</ul></div>
+      </article>
+    </main>
+
+    <aside class="rail panel">
+      <h3>Page Meta</h3>
+      <div class="meta-block">
+        <p class="meta-label">Section</p>
+        <p>references</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Tags</p>
+        <div class="chip-list"><span class="chip">paper</span><span class="chip">llm-safety</span><span class="chip">adversarial-attack</span><span class="chip">multimodal</span></div>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Summary</p>
+        <p>该论文提出“对抗性对齐”评估框架，指出文本攻击器能力不足会导致安全误判，并展示多模态模型可被对抗图像稳定诱导输出有害内容。</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Source</p>
+        <ul>
+          <li><a href="https://github.com/qianzhouyi2/Research-Paper-Notes/blob/main/references/Are aligned neural networks adversarially aligned.md">Open Markdown On GitHub</a></li>
+          <li><a href="../search-index.json">Open Search Index</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

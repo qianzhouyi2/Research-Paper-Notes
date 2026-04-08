@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity | Research Paper Notes</title>
+  <meta name="description" content="﻿ ComplexityNet: Increasing LLM Inference Efficiency by Learning Task Complexity 阅读日期：2026 04 08 阅读状态：已读 标签： paper imported notion 相关方向：模型路由、推理成本优化、任务复杂度预测 阅读目的：评估“先估复杂度再分配模型”是否能显…">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../site.js"></script>
+</head>
+<body data-root-prefix="../" data-page-path="notes/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity.html">
+  <div class="site-shell">
+    <aside class="sidebar panel">
+      <a class="brand" href="../index.html">
+        <span class="brand-kicker">Research Wiki</span>
+        <h1>Research Paper Notes</h1>
+        <p>A browsable paper-reading vault published as a GitHub Pages site.</p>
+      </a>
+      <nav><h1 id="navigation">Navigation</h1>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="index.html">Notes</a></li>
+<li><a href="../references/index.html">References</a></li>
+<li><a href="../concepts/index.html">Concepts</a></li>
+<li><a href="../entities/index.html">Entities</a></li>
+<li><a href="../synthesis/index.html">Synthesis</a></li>
+<li><a href="../journal/index.html">Journal</a></li>
+<li><a href="../projects/index.html">Projects</a></li>
+<li><a href="../log.html">Log</a></li>
+</ul></nav>
+      <p class="footer-note">Static export from the local Obsidian-style wiki. Markdown was pre-rendered for GitHub Pages.</p>
+    </aside>
+
+    <main class="main">
+      <header class="topbar panel">
+        <div>
+          <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
+          <h2>ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity</h2>
+          <p>﻿ ComplexityNet: Increasing LLM Inference Efficiency by Learning Task Complexity 阅读日期：2026 04 08 阅读状态：已读 标签： paper imported notion 相关方向：模型路由、推理成本优化、任务复杂度预测 阅读目的：评估“先估复杂度再分配模型”是否能显…</p>
+        </div>
+        <div class="topbar-actions">
+          <div class="search-box">
+            <input data-search-input type="search" placeholder="Search pages, concepts, entities...">
+            <div data-search-results class="search-results"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="breadcrumbs"><a href="../index.html">Home</a><span> / </span><a href="index.html">Notes</a><span> / </span><span>ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity</span></div>
+
+      <article class="article-wrap panel">
+        <div class="article-path">notes/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity.md</div>
+        <div class="markdown-body"><p>﻿# ComplexityNet: Increasing LLM Inference Efficiency by Learning Task Complexity</p>
+<ul>
+<li>阅读日期：2026-04-08</li>
+<li>阅读状态：已读</li>
+<li>标签：#paper #imported #notion</li>
+<li>相关方向：模型路由、推理成本优化、任务复杂度预测</li>
+<li>阅读目的：评估“先估复杂度再分配模型”是否能显著降本且保持准确率</li>
+</ul>
+<hr />
+<h2 id="1">1. 论文信息</h2>
+<ul>
+<li>题目：ComplexityNet: Increasing LLM Inference Efficiency by Learning Task Complexity</li>
+<li>链接：https://arxiv.org/abs/2312.11511</li>
+<li>作者：Henry Bae, Aghyad Deeb, Alex Fleury, Kehang Zhu</li>
+<li>单位：Harvard University（Physics / Computer Science）</li>
+<li>会议 / 期刊 / 年份：arXiv / 2023（更新至 2024）</li>
+<li>关键词（3~8个）：complexity prediction, model routing, MBPP, inference efficiency, cost-aware LLM</li>
+<li>论文一句话主题：通过学习任务复杂度把样本路由到不同规模模型，显著降低推理成本。</li>
+</ul>
+<hr />
+<h2 id="2">2. 先看结论（适合快速回顾）</h2>
+<ul>
+<li>这篇论文主要解决什么问题：默认使用最强模型处理所有任务导致成本浪费。</li>
+<li>提出的核心方法是什么：ComplexityNet 先预测任务复杂度，再选择最小可解模型。</li>
+<li>最终最重要的结果是什么：复杂度分类准确率从 34% 提升到 79%；推理成本估算降低约 90%，准确率保持 86.7%。</li>
+<li>我现在是否值得深入读：值得</li>
+<li>原因：工程成本低，能直接用于多模型路由场景。</li>
+</ul>
+<hr />
+<h2 id="3">3. 问题定义</h2>
+<h3 id="31">3.1 研究问题</h3>
+<ul>
+<li>论文研究的核心问题：对每个任务自动选择“能做对的最低成本模型”。</li>
+<li>输入是什么：任务提示（MBPP 编程题）。</li>
+<li>输出是什么：复杂度等级与模型分配决策。</li>
+<li>优化目标是什么：在保持成功率前提下最小化推理成本。</li>
+<li>任务设定 / 威胁模型 / 前提假设：任务有可验证标准答案，且可通过重复采样估计模型成功概率。</li>
+</ul>
+<h3 id="32">3.2 为什么重要</h3>
+<ul>
+<li>这个问题为什么值得做：大模型统一处理简单任务会造成系统性过配。</li>
+<li>现实应用价值：显著降低 API 账单和计算资源消耗。</li>
+<li>学术上的意义：把“能力评测”转化为“实例级路由决策”。</li>
+</ul>
+<h3 id="33">3.3 难点</h3>
+<ul>
+<li>难点 1：复杂度依赖模型集，不是绝对属性。</li>
+<li>难点 2：单次采样噪声大，容易误判任务级别。</li>
+<li>难点 3：错误路由会在成本和准确率之间造成负收益。</li>
+</ul>
+<hr />
+<h2 id="4">4. 论文方法</h2>
+<h3 id="41">4.1 方法总览</h3>
+<ul>
+<li>方法名称：ComplexityNet</li>
+<li>一句话概括方法：多模型多次试评生成复杂度标签，再微调小模型做复杂度预测与路由。</li>
+<li>方法整体流程（按步骤写 1/2/3/4）：
+  1. 对每个任务在多模型上重复采样并验证正确率。
+  2. 用规则把成功率映射为复杂度等级。
+  3. 微调小模型预测复杂度。
+  4. 按复杂度把任务分配给低/中/高成本模型。</li>
+</ul>
+<h3 id="42">4.2 核心设计</h3>
+<blockquote>
+<p>每个设计都尽量回答：做了什么、为什么这么设计、解决了哪个难点</p>
+</blockquote>
+<h4 id="1_1">设计 1</h4>
+<ul>
+<li>做了什么：基于多次试验成功率构造复杂度标签（M=5）。</li>
+<li>为什么这样设计：减少随机性导致的标签噪声。</li>
+<li>解决的难点：难点 2。</li>
+<li>关键公式 / 目标函数：按成功次数映射至 5 级复杂度（论文 Figure 3 规则）。</li>
+<li>证据位置：Section 3.1~3.2。</li>
+</ul>
+<h4 id="2_1">设计 2</h4>
+<ul>
+<li>做了什么：微调小模型（Davinci-002）预测复杂度。</li>
+<li>为什么这样设计：用轻量判别器替代每题都调用最强模型。</li>
+<li>解决的难点：难点 3（路由可行性）。</li>
+<li>关键公式 / 目标函数：分类目标（复杂度等级预测）。</li>
+<li>证据位置：Section 3.3、Section 4.1。</li>
+</ul>
+<h4 id="3_1">设计 3</h4>
+<ul>
+<li>做了什么：按复杂度等级进行模型分配（Code Llama / GPT-3.5 / GPT-4）。</li>
+<li>为什么这样设计：实现成本-准确率折中最优化。</li>
+<li>解决的难点：难点 1/3。</li>
+<li>关键公式 / 目标函数：成本估算公式（Section 4.2）。</li>
+<li>证据位置：Section 4.2。</li>
+</ul>
+<h3 id="43">4.3 训练 / 推理细节</h3>
+<ul>
+<li>训练阶段做了什么：构建 N=180 标签样本（80/20 划分），微调 Davinci-002。</li>
+<li>推理阶段做了什么：先预测复杂度，再执行模型路由。</li>
+<li>损失函数组成：分类损失（论文未强调复杂形式）。</li>
+<li>关键超参数：每任务每模型 5 次采样；温度设为 1（评测标签阶段）。</li>
+<li>复杂度 / 额外开销：增加一次小模型判别开销，但远低于高成本模型全量调用。</li>
+</ul>
+<hr />
+<h2 id="5">5. 论文贡献（只写作者真正新增的东西）</h2>
+<ul>
+<li>贡献 1：提出“最小可解模型”复杂度定义与自动化标注流程。</li>
+<li>贡献 2：给出基于复杂度预测的多模型路由框架。</li>
+<li>贡献 3：实证展示显著降本且保持较高准确率。</li>
+</ul>
+<blockquote>
+<p>判断标准：如果删掉这一点，论文是否还成立？如果“是”，那它可能不是核心贡献。</p>
+</blockquote>
+<hr />
+<h2 id="6">6. 实验设置</h2>
+<ul>
+<li>数据集：MBPP（Mostly Basic Python Problems）。</li>
+<li>模型 / 骨干网络：Code Llama 7B、GPT-3.5、GPT-4；复杂度模型 Davinci-002。</li>
+<li>对比方法：未微调复杂度模型、1-trial 标注策略等。</li>
+<li>评价指标：复杂度分类准确率、代码任务准确率、成本节省比例。</li>
+<li>实现设置：自动断言验证 pipeline；多模型 API + 本地模型混合运行。</li>
+<li>关键超参数：M=5 采样；N=180 数据规模；训练集 144 / 测试集 36。</li>
+<li>是否开源代码 / 模型：待确认。</li>
+<li>实验是否公平（初步判断）：在单任务上较完整，但跨任务泛化验证不足。</li>
+</ul>
+<hr />
+<h2 id="7">7. 主要结果</h2>
+<h3 id="71">7.1 主结果</h3>
+<ul>
+<li>结果 1：复杂度分类准确率 34% -&gt; 79%。</li>
+<li>结果 2：推理成本估算下降约 90%。</li>
+<li>结果 3：代码生成准确率保持约 86.7%。</li>
+</ul>
+<h3 id="72">7.2 从结果中能读出的结论</h3>
+<ul>
+<li>结论 1：复杂度学习可显著提升模型路由有效性。</li>
+<li>结论 2：多次采样标签比单次标签更可靠。</li>
+<li>结论 3：在资源受限环境下具有高实用价值。</li>
+</ul>
+<h3 id="73">7.3 最关键的证据</h3>
+<ul>
+<li>最关键表格：复杂度预测准确率对比图（Section 4.1）。</li>
+<li>最关键图：成本-准确率权衡分析（Section 4.2）。</li>
+<li>最关键数字：79%、34%、90%、86.7%。</li>
+<li>为什么它最关键：直接回答“值不值得用”的核心工程问题。</li>
+</ul>
+<hr />
+<h2 id="8">8. 消融实验</h2>
+<ul>
+<li>消融点 1：</li>
+<li>改了什么：1-trial 标注替代 5-trial 标注。</li>
+<li>结果如何：复杂度预测性能下降（约 62% vs 79%）。</li>
+<li>
+<p>说明了什么：多次采样可显著降低标签噪声。</p>
+</li>
+<li>
+<p>消融点 2：</p>
+</li>
+<li>改了什么：不微调复杂度模型。</li>
+<li>结果如何：准确率约 32%~34%。</li>
+<li>
+<p>说明了什么：复杂度路由需要任务特化学习。</p>
+</li>
+<li>
+<p>消融点 3：</p>
+</li>
+<li>改了什么：不同复杂度映射与分配规则。</li>
+<li>结果如何：成本收益波动明显。</li>
+<li>说明了什么：映射策略是后续优化重点。</li>
+</ul>
+<hr />
+<h2 id="9">9. 和已有工作的关系</h2>
+<ul>
+<li>这篇论文最接近哪些方法：LLM 能力评测、AutoML 路由、多模型服务编排。</li>
+<li>和已有方法相比，最大的不同：实例级复杂度学习 + 成本感知分配。</li>
+<li>真正的新意在哪里：把“能力排行榜”转化为“在线路由决策”。</li>
+<li>哪些地方更像“工程改进”而不是“方法创新”：映射规则和成本估算过程。</li>
+<li>这篇论文在整个研究脉络里的位置：面向推理成本优化的实用路线。</li>
+</ul>
+<hr />
+<h2 id="10">10. 我的理解（这一节不能照抄论文）</h2>
+<h3 id="101">10.1 直观理解</h3>
+<ul>
+<li>用自己的话解释这篇方法：先做“难度分诊”，再安排对应级别医生。</li>
+<li>它本质上像在做什么：轻量调度器驱动的成本感知推理系统。</li>
+</ul>
+<h3 id="102">10.2 我认为最关键的设计</h3>
+<ul>
+<li>最关键设计：复杂度标签生成机制（多模型多次验证）。</li>
+<li>为什么我觉得它最关键：标签质量决定路由上限。</li>
+</ul>
+<h3 id="103">10.3 我认为最强的一点</h3>
+<ul>
+<li>在非常简单管线下拿到显著降本结果。</li>
+</ul>
+<h3 id="104">10.4 我认为最可疑的一点</h3>
+<ul>
+<li>目前验证主要限于 MBPP，跨领域泛化证据不足。</li>
+</ul>
+<hr />
+<h2 id="11">11. 局限性</h2>
+<ul>
+<li>局限 1：任务范围窄（以代码任务为主）。</li>
+<li>局限 2：复杂度映射规则偏经验化。</li>
+<li>局限 3：成本模型依赖具体 API 价格，会随时间变化。</li>
+</ul>
+<blockquote>
+<p>可从假设过强、实验覆盖不足、开销过大、泛化不明、复现风险高等角度写。</p>
+</blockquote>
+<hr />
+<h2 id="12">12. 对我的启发</h2>
+<ul>
+<li>能直接借鉴的部分：模型路由前置复杂度判别。</li>
+<li>不能直接照搬的部分：复杂度规则需按任务重标注。</li>
+<li>对我当前课题的启发：先做“低成本可解”筛选，再触发高成本推理。</li>
+<li>可以尝试的改进方向：连续复杂度估计、在线反馈重标注、强化学习路由策略。</li>
+<li>可以作为 baseline / 对比项 / ablation 的部分：始终用最强模型、随机路由、单次标签路由。</li>
+</ul>
+<hr />
+<h2 id="13">13. 待验证问题</h2>
+<ul>
+<li>[ ] 问题 1：跨任务泛化到数学/问答后，复杂度路由是否仍有效？</li>
+<li>[ ] 问题 2：复杂度回归（连续值）是否优于分级分类？</li>
+<li>[ ] 问题 3：在线学习路由策略能否进一步提升成本-准确率前沿？</li>
+</ul>
+<hr />
+<h2 id="14">14. 一句话总结</h2>
+<ul>
+<li>ComplexityNet 用“复杂度预测 + 模型分配”将 LLM 推理从固定高配改为动态调度，在 MBPP 上实现了显著降本且保持高准确率。</li>
+</ul>
+<hr />
+<h2 id="15">15. 快速索引（便于二次回看）</h2>
+<ul>
+<li>核心公式：复杂度映射规则与成本估算公式（Section 3.1, 4.2）。</li>
+<li>核心图表：复杂度准确率对比图（Section 4.1）。</li>
+<li>最值得复看的章节：Section 3（标注与路由）+ Section 4（结果与成本分析）。</li>
+<li>复现时最需要注意的点：标签质量、验证脚本一致性、模型价格更新。</li>
+</ul>
+<h3 id="151">15.1 整合说明 / 索引</h3>
+<ul>
+<li>原始导入内容已归并至 <code>1~14</code>，本节仅保留整理说明。</li>
+</ul>
+<h3 id="152">15.2 导入来源与完整性记录</h3>
+<ul>
+<li>源页面 ID：<code>21a83182-0ec6-4c80-8ce2-31426a7c8808</code></li>
+<li>抓取块数量：<code>5</code></li>
+<li>未解析块引用：<code>0</code></li>
+<li>原始 JSON：<code>notes/_notion_raw/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity.json</code></li>
+<li>未解析块 ID：</li>
+<li>无</li>
+<li>联网校验来源（2026-04-08）：</li>
+<li>arXiv: https://arxiv.org/abs/2312.11511</li>
+</ul>
+<h2 id="wiki">Wiki 关联</h2>
+<ul>
+<li>参考摘要：<a href="../references/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity.html">ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity</a></li>
+<li>概念锚点：<a href="../concepts/Adaptive Compute Routing.html">Adaptive Compute Routing</a>、<a href="../concepts/Task Complexity-Aware Inference Budgeting.html">Task Complexity-Aware Inference Budgeting</a></li>
+<li>实体锚点：<a href="../entities/Henry Bae.html">Henry Bae</a>、<a href="../entities/GPT-4.html">GPT-4</a></li>
+<li>综合页面：<a href="../synthesis/Probabilistic Inference-Time Control for LLMs.html">Probabilistic Inference-Time Control for LLMs</a>、<a href="../synthesis/LLM Inference Efficiency and Scaling.html">LLM Inference Efficiency and Scaling</a>、<a href="../synthesis/Parameter-Efficient LLM Adaptation and Inference.html">Parameter-Efficient LLM Adaptation and Inference</a></li>
+</ul></div>
+      </article>
+    </main>
+
+    <aside class="rail panel">
+      <h3>Page Meta</h3>
+      <div class="meta-block">
+        <p class="meta-label">Section</p>
+        <p>notes</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Tags</p>
+        <div class="chip-list"><span class="chip">untagged</span></div>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Summary</p>
+        <p>﻿ ComplexityNet: Increasing LLM Inference Efficiency by Learning Task Complexity 阅读日期：2026 04 08 阅读状态：已读 标签： paper imported notion 相关方向：模型路由、推理成本优化、任务复杂度预测 阅读目的：评估“先估复杂度再分配模型”是否能显…</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Source</p>
+        <ul>
+          <li><a href="https://github.com/qianzhouyi2/Research-Paper-Notes/blob/main/notes/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity.md">Open Markdown On GitHub</a></li>
+          <li><a href="../search-index.json">Open Search Index</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

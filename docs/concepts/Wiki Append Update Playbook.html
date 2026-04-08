@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wiki Append Update Playbook | Research Paper Notes</title>
+  <meta name="description" content="该流程页沉淀了论文仓库的手工 append 更新实践，覆盖来源筛选、页面蒸馏、交叉链接、manifest 对账与日志回写。">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../site.js"></script>
+</head>
+<body data-root-prefix="../" data-page-path="concepts/Wiki Append Update Playbook.html">
+  <div class="site-shell">
+    <aside class="sidebar panel">
+      <a class="brand" href="../index.html">
+        <span class="brand-kicker">Research Wiki</span>
+        <h1>Research Paper Notes</h1>
+        <p>A browsable paper-reading vault published as a GitHub Pages site.</p>
+      </a>
+      <nav><h1 id="navigation">Navigation</h1>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../notes/index.html">Notes</a></li>
+<li><a href="../references/index.html">References</a></li>
+<li><a href="index.html">Concepts</a></li>
+<li><a href="../entities/index.html">Entities</a></li>
+<li><a href="../synthesis/index.html">Synthesis</a></li>
+<li><a href="../journal/index.html">Journal</a></li>
+<li><a href="../projects/index.html">Projects</a></li>
+<li><a href="../log.html">Log</a></li>
+</ul></nav>
+      <p class="footer-note">Static export from the local Obsidian-style wiki. Markdown was pre-rendered for GitHub Pages.</p>
+    </aside>
+
+    <main class="main">
+      <header class="topbar panel">
+        <div>
+          <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
+          <h2>Wiki Append Update Playbook</h2>
+          <p>该流程页沉淀了论文仓库的手工 append 更新实践，覆盖来源筛选、页面蒸馏、交叉链接、manifest 对账与日志回写。</p>
+        </div>
+        <div class="topbar-actions">
+          <div class="search-box">
+            <input data-search-input type="search" placeholder="Search pages, concepts, entities...">
+            <div data-search-results class="search-results"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="breadcrumbs"><a href="../index.html">Home</a><span> / </span><a href="index.html">Concepts</a><span> / </span><span>Wiki Append Update Playbook</span></div>
+
+      <article class="article-wrap panel">
+        <div class="article-path">concepts/Wiki Append Update Playbook.md</div>
+        <div class="markdown-body"><h1 id="wiki-append-update-playbook">Wiki Append Update Playbook</h1>
+<h2 id="_1">适用场景</h2>
+<ul>
+<li>已有 Obsidian wiki 结构，需做增量更新而非全量重建。</li>
+<li>来源以 <code>papers_sources/</code>、<code>notes/</code>、<code>tar</code> 源码包为主。</li>
+<li>目标是“沉淀可复用知识”，不是搬运原文。</li>
+</ul>
+<h2 id="_2">决策准则</h2>
+<ul>
+<li>默认使用 append；仅在 manifest 失效或用户明确要求时使用 full。</li>
+<li>优先更新已有页面；只有主题缺失时才新建页面。</li>
+<li>每次更新后必须同步 <code>[index](&lt;index.md&gt;)</code>、<code>[log](&lt;../log.md&gt;)</code>、<code>.manifest.json</code>。</li>
+</ul>
+<h2 id="_3">标准流程</h2>
+<ol>
+<li>读取 <code>.env</code> 与 <code>.manifest.json</code>，确认 vault 与已纳管来源。</li>
+<li>扫描候选来源，按“未纳管或有改动”筛选增量集。</li>
+<li>从主源提取结构化信息（优先 <code>main.tex</code> / <code>arxiv.tex</code> / <code>README</code>）。</li>
+<li>先更新 <code>[index](&lt;../references/index.md&gt;)</code>、<code>[index](&lt;index.md&gt;)</code>、<code>[index](&lt;../synthesis/index.md&gt;)</code> 的关联页，再补充新页面。</li>
+<li>页面 frontmatter 补齐 <code>summary</code> 与 <code>sources</code>，并标注 <code>provenance</code>。</li>
+<li>回写 <code>.manifest.json</code> 的 <code>sources</code> 与 <code>stats</code>，追加 <code>[log](&lt;../log.md&gt;)</code> 记录。</li>
+</ol>
+<h2 id="_4">常见故障与修复</h2>
+<ul>
+<li>编码乱码：统一使用 UTF-8 读取文本。</li>
+<li><code>rg</code> 不可用：改用 PowerShell <code>Select-String</code> 扫描。</li>
+<li>tar 仅需元信息时：使用流式读取 <code>tar -xOf ... main.tex</code>，避免全量解压。^[inferred]</li>
+</ul>
+<h2 id="_5">质量检查清单</h2>
+<ul>
+<li>新增页是否至少连回 2 个现有页面。</li>
+<li>索引页是否反映新增内容。</li>
+<li>manifest 的 <code>total_sources_ingested</code> 与 <code>sources</code> 实际条目数是否一致。</li>
+<li><code>log.md</code> 是否与本次页面变更数量大致对齐。^[inferred]</li>
+</ul>
+<h2 id="_6">关联页面</h2>
+<ul>
+<li><a href="index.html">index</a></li>
+<li><a href="../log.html">log</a></li>
+<li><a href="../references/index.html">index</a></li>
+<li><a href="index.html">index</a></li>
+<li><a href="../synthesis/index.html">index</a></li>
+</ul></div>
+      </article>
+    </main>
+
+    <aside class="rail panel">
+      <h3>Page Meta</h3>
+      <div class="meta-block">
+        <p class="meta-label">Section</p>
+        <p>concepts</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Tags</p>
+        <div class="chip-list"><span class="chip">concept</span><span class="chip">wiki</span><span class="chip">workflow</span><span class="chip">ingest</span></div>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Summary</p>
+        <p>该流程页沉淀了论文仓库的手工 append 更新实践，覆盖来源筛选、页面蒸馏、交叉链接、manifest 对账与日志回写。</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Source</p>
+        <ul>
+          <li><a href="https://github.com/qianzhouyi2/Research-Paper-Notes/blob/main/concepts/Wiki Append Update Playbook.md">Open Markdown On GitHub</a></li>
+          <li><a href="../search-index.json">Open Search Index</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

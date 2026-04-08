@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Monte Carlo Tree Search A Review of Recent Modifications and Applications | Research Paper Notes</title>
+  <meta name="description" content="﻿ Monte Carlo Tree Search: A Review of Recent Modifications and Applications 阅读日期：2026 04 08 阅读状态：已读 标签： paper imported notion 相关方向：MCTS、树搜索、序列决策、搜索 学习结合 阅读目的：补齐 MCTS 基础机制与选择策略笔记，…">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../site.js"></script>
+</head>
+<body data-root-prefix="../" data-page-path="notes/Monte Carlo Tree Search A Review of Recent Modifications and Applications.html">
+  <div class="site-shell">
+    <aside class="sidebar panel">
+      <a class="brand" href="../index.html">
+        <span class="brand-kicker">Research Wiki</span>
+        <h1>Research Paper Notes</h1>
+        <p>A browsable paper-reading vault published as a GitHub Pages site.</p>
+      </a>
+      <nav><h1 id="navigation">Navigation</h1>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="index.html">Notes</a></li>
+<li><a href="../references/index.html">References</a></li>
+<li><a href="../concepts/index.html">Concepts</a></li>
+<li><a href="../entities/index.html">Entities</a></li>
+<li><a href="../synthesis/index.html">Synthesis</a></li>
+<li><a href="../journal/index.html">Journal</a></li>
+<li><a href="../projects/index.html">Projects</a></li>
+<li><a href="../log.html">Log</a></li>
+</ul></nav>
+      <p class="footer-note">Static export from the local Obsidian-style wiki. Markdown was pre-rendered for GitHub Pages.</p>
+    </aside>
+
+    <main class="main">
+      <header class="topbar panel">
+        <div>
+          <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
+          <h2>Monte Carlo Tree Search A Review of Recent Modifications and Applications</h2>
+          <p>﻿ Monte Carlo Tree Search: A Review of Recent Modifications and Applications 阅读日期：2026 04 08 阅读状态：已读 标签： paper imported notion 相关方向：MCTS、树搜索、序列决策、搜索 学习结合 阅读目的：补齐 MCTS 基础机制与选择策略笔记，…</p>
+        </div>
+        <div class="topbar-actions">
+          <div class="search-box">
+            <input data-search-input type="search" placeholder="Search pages, concepts, entities...">
+            <div data-search-results class="search-results"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="breadcrumbs"><a href="../index.html">Home</a><span> / </span><a href="index.html">Notes</a><span> / </span><span>Monte Carlo Tree Search A Review of Recent Modifications and Applications</span></div>
+
+      <article class="article-wrap panel">
+        <div class="article-path">notes/Monte Carlo Tree Search A Review of Recent Modifications and Applications.md</div>
+        <div class="markdown-body"><p>﻿# Monte Carlo Tree Search: A Review of Recent Modifications and Applications</p>
+<ul>
+<li>阅读日期：2026-04-08</li>
+<li>阅读状态：已读</li>
+<li>标签：#paper #imported #notion</li>
+<li>相关方向：MCTS、树搜索、序列决策、搜索-学习结合</li>
+<li>阅读目的：补齐 MCTS 基础机制与选择策略笔记，作为后续推理/规划方法对照</li>
+</ul>
+<hr />
+<h2 id="1">1. 论文信息</h2>
+<ul>
+<li>题目：Monte Carlo Tree Search: A Review of Recent Modifications and Applications</li>
+<li>链接：https://doi.org/10.1007/s10462-022-10228-y</li>
+<li>作者：Maciej Świechowski, Konrad Godlewski, Bartosz Sawicki, Jacek Mańdziuk</li>
+<li>单位：QED Software；Warsaw University of Technology；AGH University of Science and Technology</li>
+<li>会议 / 期刊 / 年份：Artificial Intelligence Review / 2023（online: 2022-07-19）</li>
+<li>关键词（3~8个）：Monte Carlo Tree Search, UCT, exploration-exploitation, combinatorial optimization, survey</li>
+<li>论文一句话主题：系统综述 2012 年后 MCTS 的改进方法与跨领域应用。</li>
+</ul>
+<hr />
+<h2 id="2">2. 先看结论（适合快速回顾）</h2>
+<ul>
+<li>这篇论文主要解决什么问题：基础 MCTS 在复杂问题中常因分支爆炸、实时约束和领域差异而失效。</li>
+<li>提出的核心方法是什么：综述并归纳 MCTS 的改造方向（树策略、模拟策略、并行化、层次化、与学习模型结合等）。</li>
+<li>最终最重要的结果是什么：给出覆盖 240 篇工作的系统脉络，说明“问题相关改造 + 混合方法”是 MCTS 落地关键。</li>
+<li>我现在是否值得深入读：值得</li>
+<li>原因：适合作为 MCTS 变体与应用设计的总入口。</li>
+</ul>
+<hr />
+<h2 id="3">3. 问题定义</h2>
+<h3 id="31">3.1 研究问题</h3>
+<ul>
+<li>论文研究的核心问题：如何在复杂场景下改造 MCTS 以提升可用性和性能。</li>
+<li>输入是什么：已有 MCTS 文献与应用案例。</li>
+<li>输出是什么：方法分类、应用分类、代表改进策略与经验结论。</li>
+<li>优化目标是什么：总结“哪些改造在什么场景有效”。</li>
+<li>任务设定 / 威胁模型 / 前提假设：综述型工作，不是单一算法实验论文。</li>
+</ul>
+<h3 id="32">3.2 为什么重要</h3>
+<ul>
+<li>这个问题为什么值得做：MCTS 被广泛使用，但实践中“基础版可复用性”有限。</li>
+<li>现实应用价值：可直接指导游戏、调度、机器人、安全等领域的搜索器设计。</li>
+<li>学术上的意义：提供从经典 UCT 到现代混合范式的统一视角。</li>
+</ul>
+<h3 id="33">3.3 难点</h3>
+<ul>
+<li>难点 1：不同应用域对状态表示、动作空间、模拟质量要求差异大。</li>
+<li>难点 2：探索-利用平衡和计算预算分配强依赖问题结构。</li>
+<li>难点 3：综述需要统一对比大量异构研究并避免口径不一致。</li>
+</ul>
+<hr />
+<h2 id="4">4. 论文方法</h2>
+<h3 id="41">4.1 方法总览</h3>
+<ul>
+<li>方法名称：MCTS modifications and applications survey</li>
+<li>一句话概括方法：按“改进模块 + 应用领域”组织近十年 MCTS 文献并抽取共性规律。</li>
+<li>方法整体流程（按步骤写 1/2/3/4）：
+  1. 回顾标准 MCTS 流程与 UCT 理论基础。
+  2. 归纳各类改进（选择、扩展、模拟、回传、并行与混合）。
+  3. 归纳跨领域应用案例与约束。
+  4. 总结趋势与研究机会。</li>
+</ul>
+<h3 id="42">4.2 核心设计</h3>
+<blockquote>
+<p>每个设计都尽量回答：做了什么、为什么这么设计、解决了哪个难点</p>
+</blockquote>
+<h4 id="1_1">设计 1</h4>
+<ul>
+<li>做了什么：用标准四阶段（选择/扩展/模拟/回传）统一描述 MCTS 变体。</li>
+<li>为什么这样设计：便于把不同论文映射到同一框架比较。</li>
+<li>解决的难点：难点 3。</li>
+<li>关键公式 / 目标函数：UCT / UCB 系列选择公式。</li>
+<li>证据位置：Introduction + 基础方法章节。</li>
+</ul>
+<h4 id="2_1">设计 2</h4>
+<ul>
+<li>做了什么：按“问题相关改造”和“与其他技术融合”双主线组织文献。</li>
+<li>为什么这样设计：更贴近真实落地路径，而不只按年份堆叠。</li>
+<li>解决的难点：难点 1。</li>
+<li>关键公式 / 目标函数：无单一目标函数（综述论文）。</li>
+<li>证据位置：各改进分类章节 + 应用章节。</li>
+</ul>
+<h4 id="3_1">设计 3</h4>
+<ul>
+<li>做了什么：强调 MCTS 与机器学习结合（离线教师、策略/价值网络等）。</li>
+<li>为什么这样设计：缓解纯搜索的算力与泛化瓶颈。</li>
+<li>解决的难点：难点 2。</li>
+<li>关键公式 / 目标函数：依具体混合方法而定。</li>
+<li>证据位置：结论章节与代表应用综述。</li>
+</ul>
+<h3 id="43">4.3 训练 / 推理细节</h3>
+<ul>
+<li>训练阶段做了什么：无统一训练流程（综述性质）。</li>
+<li>推理阶段做了什么：总结不同变体在在线搜索中的行为模式。</li>
+<li>损失函数组成：不适用。</li>
+<li>关键超参数：不适用（由被综述论文各自决定）。</li>
+<li>复杂度 / 额外开销：指出高分支和实时场景下计算负担是主要瓶颈。</li>
+</ul>
+<h3 id="44">4.4 基础公式与流程图（原始内容迁移）</h3>
+<ul>
+<li>
+<p>MDP 可建模为元组 <code>(S, A_S, P_a, R_a)</code>。
+<img alt="image_001" src="assets/Monte Carlo Tree Search A Review of Recent Modifications and Applications/image_001.png" /></p>
+</li>
+<li>
+<p>MCTS 决策目标：</p>
+</li>
+<li><code>a* = argmax_{a∈A(s)} Q(s,a)</code></li>
+<li>
+<p>其中 <code>Q(s,a)</code> 是在状态 <code>s</code> 选择动作 <code>a</code> 的经验回报估计。
+<img alt="image_002" src="assets/Monte Carlo Tree Search A Review of Recent Modifications and Applications/image_002.png" /></p>
+</li>
+<li>
+<p>每轮迭代四阶段：
+  1. Selection
+  2. Expansion
+  3. Simulation
+  4. Backpropagation</p>
+</li>
+<li>
+<p>UCB 选择策略：</p>
+</li>
+<li><code>a* = argmax_{a∈A(s)} { Q(s,a) + C * sqrt( ln N(s) / N(s,a) ) }</code></li>
+<li>UCB1（方差增强）：</li>
+<li><code>a* = argmax_{a∈A(s)} { Q(s,a) + C * sqrt( ln N(s)/N(s,a) * min(1/4, σ_a + 2 ln N(s)/N(s,a)) ) }</code>
+<img alt="image_003" src="assets/Monte Carlo Tree Search A Review of Recent Modifications and Applications/image_003.png" /></li>
+</ul>
+<hr />
+<h2 id="5">5. 论文贡献（只写作者真正新增的东西）</h2>
+<ul>
+<li>贡献 1：提供 2012 年后 MCTS 改进与应用的系统综述。</li>
+<li>贡献 2：将方法改造与应用需求建立清晰映射关系。</li>
+<li>贡献 3：总结 MCTS 在复杂问题中常见失效点与可行补救路径。</li>
+</ul>
+<blockquote>
+<p>判断标准：如果删掉这一点，论文是否还成立？如果“是”，那它可能不是核心贡献。</p>
+</blockquote>
+<hr />
+<h2 id="6">6. 实验设置</h2>
+<ul>
+<li>数据集：不适用（综述论文）。</li>
+<li>模型 / 骨干网络：不适用。</li>
+<li>对比方法：不适用。</li>
+<li>评价指标：文献覆盖范围、分类完整性与分析深度。</li>
+<li>实现设置：文献调研与结构化归纳。</li>
+<li>关键超参数：不适用。</li>
+<li>是否开源代码 / 模型：不适用。</li>
+<li>实验是否公平（初步判断）：不适用。</li>
+</ul>
+<hr />
+<h2 id="7">7. 主要结果</h2>
+<h3 id="71">7.1 主结果</h3>
+<ul>
+<li>结果 1：给出 MCTS 改进版图与应用版图。</li>
+<li>结果 2：强调“领域知识注入 + 搜索机制改造”是性能关键。</li>
+<li>结果 3：指出与学习系统融合是未来主方向之一。</li>
+</ul>
+<h3 id="72">7.2 从结果中能读出的结论</h3>
+<ul>
+<li>结论 1：基础 UCT 只是起点，实战通常需要问题相关变体。</li>
+<li>结论 2：MCTS 在高复杂度场景的优势来自 anytime 与可并行特性。</li>
+<li>结论 3：混合范式（搜索+学习）比纯搜索更具长期潜力。</li>
+</ul>
+<h3 id="73">7.3 最关键的证据</h3>
+<ul>
+<li>最关键表格：文献分类汇总表（方法改进与应用领域两类表格）。</li>
+<li>最关键图：标准 MCTS 四阶段流程及改进位置示意。</li>
+<li>最关键数字：综述覆盖 240 篇文献（文中统计）。</li>
+<li>为什么它最关键：直接体现综述广度与分类价值。</li>
+</ul>
+<hr />
+<h2 id="8">8. 消融实验</h2>
+<ul>
+<li>消融点 1：</li>
+<li>改了什么：不适用（综述论文）。</li>
+<li>结果如何：不适用。</li>
+<li>
+<p>说明了什么：不适用。</p>
+</li>
+<li>
+<p>消融点 2：</p>
+</li>
+<li>改了什么：不适用（综述论文）。</li>
+<li>结果如何：不适用。</li>
+<li>
+<p>说明了什么：不适用。</p>
+</li>
+<li>
+<p>消融点 3：</p>
+</li>
+<li>改了什么：不适用（综述论文）。</li>
+<li>结果如何：不适用。</li>
+<li>说明了什么：不适用。</li>
+</ul>
+<hr />
+<h2 id="9">9. 和已有工作的关系</h2>
+<ul>
+<li>这篇论文最接近哪些方法：与 Browne et al. 2012 的经典 MCTS survey 形成更新关系。</li>
+<li>和已有方法相比，最大的不同：覆盖近十年大量新应用与混合方法。</li>
+<li>真正的新意在哪里：把“改造手段”与“应用场景约束”进行系统关联。</li>
+<li>哪些地方更像“工程改进”而不是“方法创新”：大量实践改造属于工程导向。</li>
+<li>这篇论文在整个研究脉络里的位置：MCTS 中期阶段的重要综述节点。</li>
+</ul>
+<hr />
+<h2 id="10">10. 我的理解（这一节不能照抄论文）</h2>
+<h3 id="101">10.1 直观理解</h3>
+<ul>
+<li>用自己的话解释这篇方法：这篇文章像“把 MCTS 各流派地图化”，告诉你在不同地形怎么改搜索器。</li>
+<li>它本质上像在做什么：给 MCTS 研究与工程落地提供设计手册。</li>
+</ul>
+<h3 id="102">10.2 我认为最关键的设计</h3>
+<ul>
+<li>最关键设计：以标准四阶段为主轴来组织所有变体。</li>
+<li>为什么我觉得它最关键：统一对比框架决定了综述可用性。</li>
+</ul>
+<h3 id="103">10.3 我认为最强的一点</h3>
+<ul>
+<li>将问题难度、算力约束、算法改造三者关联得较清楚。</li>
+</ul>
+<h3 id="104">10.4 我认为最可疑的一点</h3>
+<ul>
+<li>作为综述，缺少统一可复现实验基准，实践结论仍需任务内验证。</li>
+</ul>
+<hr />
+<h2 id="11">11. 局限性</h2>
+<ul>
+<li>局限 1：综述结论依赖被纳入文献质量与覆盖口径。</li>
+<li>局限 2：跨领域结论难避免“问题依赖性”。</li>
+<li>局限 3：对最新神经引导搜索发展（2023 以后）覆盖有限。</li>
+</ul>
+<blockquote>
+<p>可从假设过强、实验覆盖不足、开销过大、泛化不明、复现风险高等角度写。</p>
+</blockquote>
+<hr />
+<h2 id="12">12. 对我的启发</h2>
+<ul>
+<li>能直接借鉴的部分：用四阶段视角分析新搜索/规划算法。</li>
+<li>不能直接照搬的部分：跨领域经验不能直接迁移到特定任务。</li>
+<li>对我当前课题的启发：先诊断当前瓶颈属于选择/扩展/模拟/回传哪一层再改造。</li>
+<li>可以尝试的改进方向：把学习策略（policy/value）作为 MCTS 的先验引导。</li>
+<li>可以作为 baseline / 对比项 / ablation 的部分：基础 UCT、UCB1 及其简化改造。</li>
+</ul>
+<hr />
+<h2 id="13">13. 待验证问题</h2>
+<ul>
+<li>[ ] 问题 1：在大模型推理树搜索中，哪些经典 MCTS 改造仍最有效？</li>
+<li>[ ] 问题 2：实时约束下，模拟策略替换为学习模型会带来多大收益？</li>
+<li>[ ] 问题 3：MCTS 与反思/自改进框架结合时如何保证稳定性？</li>
+</ul>
+<hr />
+<h2 id="14">14. 一句话总结</h2>
+<ul>
+<li>这是一篇面向“复杂场景如何改 MCTS”的系统路线图，核心价值在于把改造策略与应用约束做了可执行的对应。</li>
+</ul>
+<hr />
+<h2 id="15">15. 快速索引（便于二次回看）</h2>
+<ul>
+<li>核心公式：UCT / UCB 选择公式。</li>
+<li>核心图表：MCTS 四阶段流程图与改进分类表。</li>
+<li>最值得复看的章节：基础机制章节 + 改进分类章节 + 结论章节。</li>
+<li>复现时最需要注意的点：先识别任务瓶颈，再选择对应的 MCTS 改造点。</li>
+</ul>
+<h3 id="151">15.1 整合说明 / 索引</h3>
+<ul>
+<li>原始导入中的 MDP/MCTS 公式与图示已迁移到正文 <code>4.4</code>。</li>
+<li>本节仅保留索引说明。</li>
+</ul>
+<h3 id="152">15.2 导入来源与完整性记录</h3>
+<ul>
+<li>源页面 ID：<code>6ac6e156-c691-4a81-9672-f6eb498776be</code></li>
+<li>抓取块数量：<code>26</code></li>
+<li>未解析块引用：<code>0</code></li>
+<li>原始 JSON：<code>notes/_notion_raw/Monte Carlo Tree Search A Review of Recent Modifications and Applications.json</code></li>
+<li>联网补充来源：</li>
+<li>Springer 页面：https://link.springer.com/article/10.1007/s10462-022-10228-y</li>
+<li>DOI 页面：https://doi.org/10.1007/s10462-022-10228-y</li>
+<li>术语补充（MCTS入门）：https://int8.io/monte-carlo-tree-search-beginners-guide/</li>
+</ul>
+<h2 id="wiki">Wiki 关联</h2>
+<ul>
+<li>参考摘要：<a href="../references/Monte Carlo Tree Search A Review of Recent Modifications and Applications.html">Monte Carlo Tree Search A Review of Recent Modifications and Applications</a></li>
+<li>概念锚点：<a href="../concepts/Monte Carlo Tree Search for LLM Reasoning.html">Monte Carlo Tree Search for LLM Reasoning</a>、<a href="../concepts/Tree of Thoughts Reasoning.html">Tree of Thoughts Reasoning</a>、<a href="../concepts/Monte Carlo Tree Self-Refine.html">Monte Carlo Tree Self-Refine</a></li>
+<li>实体锚点：<a href="../entities/Maciej Swiechowski.html">Maciej Swiechowski</a>、<a href="../entities/Shunyu Yao.html">Shunyu Yao</a>、<a href="../entities/Di Zhang.html">Di Zhang</a></li>
+<li>综合页面：<a href="../synthesis/Structured Reasoning Methods for LLMs.html">Structured Reasoning Methods for LLMs</a>、<a href="../synthesis/LLM Reasoning Search and Verification.html">LLM Reasoning Search and Verification</a></li>
+</ul></div>
+      </article>
+    </main>
+
+    <aside class="rail panel">
+      <h3>Page Meta</h3>
+      <div class="meta-block">
+        <p class="meta-label">Section</p>
+        <p>notes</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Tags</p>
+        <div class="chip-list"><span class="chip">untagged</span></div>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Summary</p>
+        <p>﻿ Monte Carlo Tree Search: A Review of Recent Modifications and Applications 阅读日期：2026 04 08 阅读状态：已读 标签： paper imported notion 相关方向：MCTS、树搜索、序列决策、搜索 学习结合 阅读目的：补齐 MCTS 基础机制与选择策略笔记，…</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Source</p>
+        <ul>
+          <li><a href="https://github.com/qianzhouyi2/Research-Paper-Notes/blob/main/notes/Monte Carlo Tree Search A Review of Recent Modifications and Applications.md">Open Markdown On GitHub</a></li>
+          <li><a href="../search-index.json">Open Search Index</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

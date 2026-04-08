@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GPT-ST Spatio-Temporal Pretraining | Research Paper Notes</title>
+  <meta name="description" content="﻿ GPT ST: Generative Pre Training of Spatio Temporal Graph Neural Networks 阅读日期：2026 04 08 阅读状态：已读 标签： paper spatio temporal gnn pretraining imported 相关方向：时空预测、图神经网络预训练、结构感知掩码 阅读目…">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../site.js"></script>
+</head>
+<body data-root-prefix="../" data-page-path="notes/GPT-ST Spatio-Temporal Pretraining.html">
+  <div class="site-shell">
+    <aside class="sidebar panel">
+      <a class="brand" href="../index.html">
+        <span class="brand-kicker">Research Wiki</span>
+        <h1>Research Paper Notes</h1>
+        <p>A browsable paper-reading vault published as a GitHub Pages site.</p>
+      </a>
+      <nav><h1 id="navigation">Navigation</h1>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="index.html">Notes</a></li>
+<li><a href="../references/index.html">References</a></li>
+<li><a href="../concepts/index.html">Concepts</a></li>
+<li><a href="../entities/index.html">Entities</a></li>
+<li><a href="../synthesis/index.html">Synthesis</a></li>
+<li><a href="../journal/index.html">Journal</a></li>
+<li><a href="../projects/index.html">Projects</a></li>
+<li><a href="../log.html">Log</a></li>
+</ul></nav>
+      <p class="footer-note">Static export from the local Obsidian-style wiki. Markdown was pre-rendered for GitHub Pages.</p>
+    </aside>
+
+    <main class="main">
+      <header class="topbar panel">
+        <div>
+          <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
+          <h2>GPT-ST Spatio-Temporal Pretraining</h2>
+          <p>﻿ GPT ST: Generative Pre Training of Spatio Temporal Graph Neural Networks 阅读日期：2026 04 08 阅读状态：已读 标签： paper spatio temporal gnn pretraining imported 相关方向：时空预测、图神经网络预训练、结构感知掩码 阅读目…</p>
+        </div>
+        <div class="topbar-actions">
+          <div class="search-box">
+            <input data-search-input type="search" placeholder="Search pages, concepts, entities...">
+            <div data-search-results class="search-results"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="breadcrumbs"><a href="../index.html">Home</a><span> / </span><a href="index.html">Notes</a><span> / </span><span>GPT ST Spatio Temporal Pretraining</span></div>
+
+      <article class="article-wrap panel">
+        <div class="article-path">notes/GPT-ST Spatio-Temporal Pretraining.md</div>
+        <div class="markdown-body"><p>﻿# GPT-ST: Generative Pre-Training of Spatio-Temporal Graph Neural Networks</p>
+<ul>
+<li>阅读日期：2026-04-08</li>
+<li>阅读状态：已读</li>
+<li>标签：#paper #spatio-temporal #gnn #pretraining #imported</li>
+<li>相关方向：时空预测、图神经网络预训练、结构感知掩码</li>
+<li>阅读目的：提炼 GPT-ST 的可迁移预训练范式并保留原始图文细节</li>
+</ul>
+<hr />
+<h2 id="1">1. 论文信息</h2>
+<ul>
+<li>题目：GPT-ST: Generative Pre-Training of Spatio-Temporal Graph Neural Networks</li>
+<li>链接：<a href="../papers_sources/Research-Paper-Notes/GPT-ST预训练时空框架.pdf">GPT-ST预训练时空框架.pdf</a></li>
+<li>作者：待从论文首页补全（当前依据导入笔记）</li>
+<li>单位：待确认（源笔记未完整记录全部作者单位）</li>
+<li>发表：2023（见引文文件）</li>
+<li>关键词：spatio-temporal prediction, masked autoencoder, hypergraph, cluster-aware masking, transferable pretraining</li>
+<li>源笔记：<a href="../papers_sources/Research-Paper-Notes/GPT-ST预训练时空框架.html">GPT-ST预训练时空框架.md</a></li>
+</ul>
+<hr />
+<h2 id="2">2. 先看结论（适合快速回顾）</h2>
+<ul>
+<li>这篇论文主要解决什么问题：时空预测预训练跨模型迁移弱、结构信息利用不足。</li>
+<li>提出的核心方法是什么：定制参数学习 + 分层超图编码 + 聚类感知掩码的两阶段预训练框架。</li>
+<li>最终最重要的结果是什么：在多数据集/多下游模型上实现稳定收益并兼顾可解释性。</li>
+<li>我现在是否值得深入读：值得</li>
+<li>原因：方法可插拔，工程复用价值高。</li>
+</ul>
+<hr />
+<h2 id="3">3. 问题定义</h2>
+<h3 id="31">3.1 研究问题</h3>
+<ul>
+<li>论文关注的核心问题：构建一个面向时空预测的生成式预训练框架，在不重做下游模型主干的前提下提高预测精度。</li>
+<li>为什么这个问题重要：现有方法通常针对单一架构优化，跨模型迁移弱，且直接改下游端到端网络容易导致性能不稳定。</li>
+<li>
+<p>论文要优化或解决的目标：统一建模“时间动态 + 节点个体 + 聚类内关系 + 聚类间迁移关系”，并把这种表示迁移到多类下游任务。</p>
+</li>
+<li>
+<p>图片与笔记（问题背景）</p>
+</li>
+<li><img alt="框架总览图" src="../papers_sources/Research-Paper-Notes/GPT-ST/image-20240104062311488.png" /></li>
+<li><img alt="GNN背景图" src="../papers_sources/Research-Paper-Notes/GPT-ST/image-20240104142949292.png" /></li>
+<li><img alt="时间动态示例1" src="../papers_sources/Research-Paper-Notes/GPT-ST/image-20240104144320020.png" /></li>
+<li><img alt="时间动态示例2" src="../papers_sources/Research-Paper-Notes/GPT-ST/image-20240104144513833.png" /></li>
+<li><img alt="时间动态示例3" src="../papers_sources/Research-Paper-Notes/GPT-ST/image-20240104145554000.png" /></li>
+<li><img alt="节点个体性示例" src="../papers_sources/Research-Paper-Notes/GPT-ST/image-20240104145243029.png" /></li>
+<li><img alt="跨层空间关系动机图" src="../papers_sources/Research-Paper-Notes/GPT-ST/image-20240104150540548.png" /></li>
+<li><img alt="超图解释补图" src="../papers_sources/Research-Paper-Notes/GPT-ST/image-20240104165426896.png" /></li>
+</ul>
+<h3 id="32">3.2 为什么重要</h3>
+<ul>
+<li>这个问题为什么值得做：时空任务分布复杂，单一建模假设难泛化。</li>
+<li>现实应用价值：交通/城市计算等场景需要稳定、可迁移的时空表示。</li>
+<li>学术上的意义：把“结构先验”显式注入到预训练过程。</li>
+</ul>
+<h3 id="33">3.3 难点</h3>
+<ul>
+<li>难点 1：时间模式不是静态的，工作日/周末和不同时段分布差异明显，单一时序参数难覆盖。</li>
+<li>难点 2：区域间关系存在层次结构，既有细粒度邻接，也有高层功能区语义联系。</li>
+<li>难点 3：随机掩码预训练常忽略结构信息，学习到的表示对下游回归任务不够“任务相关”。</li>
+</ul>
+<hr />
+<h2 id="4">4. 论文方法</h2>
+<h3 id="41">4.1 方法总览</h3>
+<ul>
+<li>方法名称：GPT-ST（Generative Pre-Training for Spatio-Temporal Graph Neural Networks）</li>
+<li>整体思路：先做结构感知预训练，再把预训练表示融合给下游预测器。</li>
+<li>代理目标 / 损失 / 优化目标：</li>
+<li>预训练损失由重建误差 <code>L_r</code> 与 KL 散度 <code>L_kl</code> 组成。</li>
+<li>
+<p>下游阶段使用 <code>ζ=f(X_{history})</code> 和原始信号联合输入任务模型 <code>g</code> 进行未来 <code>P</code> 步预测。</p>
+</li>
+<li>
+<p>图片与笔记（预训练范式）</p>
+</li>
+<li><img alt="预训练-下游两阶段示意" src="../papers_sources/Research-Paper-Notes/GPT-ST/image-20240111112023869.png" /></li>
+</ul>
+<h3 id="42">4.2 核心设计</h3>
+<blockquote>
+<p>每个设计都尽量回答：做了什么、为什么这么设计、解决了哪个难点</p>
+</blockquote>
+<h3 id="1_1">1. 模块一：定制时间模式编码器</h3>
+<ul>
+<li>做了什么：</li>
+<li>对掩码后的输入做初始嵌入，得到时空表示 <code>E</code>。</li>
+<li>使用时序超图神经网络编码不同时间片间高阶关系。</li>
+<li>使用参数学习器按“时间动态 + 区域个体”生成条件化参数。</li>
+<li>为什么这么设计：</li>
+<li>通过时间条件参数适应时段变化。</li>
+<li>通过区域条件参数保持节点个体差异，避免消息聚合后个体信息被抹平。</li>
+<li>关键实现：</li>
+<li>时间参数由 day-of-week 等特征经 MLP 生成。</li>
+<li>
+<p>区域参数由区域嵌入控制并参与超图传播。</p>
+</li>
+<li>
+<p>图片与笔记（模块一）</p>
+</li>
+<li><img alt="方法框架图" src="../papers_sources/Research-Paper-Notes/GPT-ST/image-20240111131206249.png" /></li>
+<li><img alt="初始嵌入相关笔记图" src="../papers_sources/Research-Paper-Notes/GPT-ST/image-20240111132328217.png" /></li>
+<li><img alt="LeakyReLU说明图" src="../papers_sources/Research-Paper-Notes/GPT-ST/image-20240111134234531.png" /></li>
+<li><img alt="LeakyReLU函数补图" src="../papers_sources/Research-Paper-Notes/GPT-ST/v2-9b1fc63cf1058e5543285494fa26a4c1_1440w.webp" /></li>
+</ul>
+<h3 id="2_1">2. 模块二：分层空间模式编码</h3>
+<ul>
+<li>做了什么：</li>
+<li>通过超图胶囊聚类网络（HCCN）得到聚类内结构。</li>
+<li>通过跨聚类关系学习模块建模簇间迁移模式。</li>
+<li>将高层关系回传到区域级表示形成增强表达。</li>
+<li>为什么这么设计：</li>
+<li>现实交通中同类功能区内部相似，且不同功能区存在跨簇流动关系。</li>
+<li>只建模点对点邻接会损失这种语义层信息。</li>
+<li>关键实现：</li>
+<li>使用动态路由刻画区域胶囊到簇胶囊的语义对应。</li>
+<li>
+<p>使用高层超图学习簇间关系，再通过低层超图映射回节点。</p>
+</li>
+<li>
+<p>图片与笔记（模块二）</p>
+</li>
+<li><img alt="Pasted image 20240410123511" src="../papers_sources/Research-Paper-Notes/GPT-ST/Pasted image 20240410123511.png" /></li>
+<li><img alt="Pasted image 20240410124703" src="../papers_sources/Research-Paper-Notes/GPT-ST/Pasted image 20240410124703.png" /></li>
+</ul>
+<h3 id="3_1">3. 模块三：聚类感知掩码机制</h3>
+<ul>
+<li>做了什么：</li>
+<li>先用分类器估计元素类别概率。</li>
+<li>按总掩码率分解出“自适应掩码数 + 随机掩码数”。</li>
+<li>先按类别块掩码，再对剩余元素做随机掩码。</li>
+<li>为什么这么设计：</li>
+<li>让模型先学习同簇关系，再逐步学习跨簇推理。</li>
+<li>避免纯随机掩码导致训练目标过于局部、缺少结构难度。</li>
+<li>关键实现：</li>
+<li>用 KL 散度对齐预测分类与聚类结果（阻断聚类分支反传）。</li>
+<li>
+<p>掩码算法显式控制 <code>m_t</code>, <code>m_a</code>, <code>m_r</code>。</p>
+</li>
+<li>
+<p>图片与笔记（模块三）</p>
+</li>
+<li><img alt="聚类感知掩码结构图" src="../papers_sources/Research-Paper-Notes/GPT-ST/image-20240111150152115.png" /></li>
+<li><img alt="掩码机制算法图" src="../papers_sources/Research-Paper-Notes/GPT-ST/image-20240111152209773.png" /></li>
+</ul>
+<h3 id="43">4.3 训练 / 推理细节</h3>
+<ul>
+<li>训练阶段做了什么：结构感知掩码预训练，联合 <code>L_r + L_kl</code>。</li>
+<li>推理阶段做了什么：将预训练表示与历史信号融合后送入下游模型预测。</li>
+<li>损失函数组成：重建误差与 KL 散度。</li>
+<li>关键超参数：<code>L=12</code>、掩码率、自适应掩码比例、数据划分策略等。</li>
+<li>复杂度 / 额外开销：预训练模块增加训练复杂度，但可换来跨模型迁移收益。</li>
+</ul>
+<h3 id="44">4.4 附录算法步骤（完整迁移）</h3>
+<ul>
+<li>输入：<code>X∈R^{R×T×F}</code>、掩码矩阵 <code>M</code>、动态路由迭代 <code>R</code>、最大 epoch <code>E</code>、学习率 <code>η</code>。</li>
+<li>输出：训练后参数集合 <code>Θ</code>。</li>
+<li>步骤 1：初始化 <code>Θ</code>。</li>
+<li>步骤 2：根据分类结果 <code>q</code> 生成掩码矩阵 <code>M</code>。
+<img alt="Pasted image 20240409173057" src="../papers_sources/Research-Paper-Notes/GPT-ST/Pasted image 20240409173057.png" /></li>
+<li>步骤 3：对 <code>X</code> 掩码并计算初始表示 <code>E</code>。</li>
+<li>步骤 4：计算时间特征 <code>d_t</code>，初始化区域嵌入 <code>c_r</code>。
+<img alt="Pasted image 20240409174009" src="../papers_sources/Research-Paper-Notes/GPT-ST/Pasted image 20240409174009.png" /></li>
+<li>步骤 5：把 <code>d_t</code> 与 <code>c_r</code> 融入时序超图网络，编码时序模式。
+<img alt="Pasted image 20240409175235" src="../papers_sources/Research-Paper-Notes/GPT-ST/Pasted image 20240409175235.png" /></li>
+<li>步骤 6：生成归一化区域嵌入并计算区域到聚类中心的信息传递。
+<img alt="Pasted image 20240409175553" src="../papers_sources/Research-Paper-Notes/GPT-ST/Pasted image 20240409175553.png" /></li>
+<li>步骤 7：执行动态路由计算区域-聚类语义相似性。
+<img alt="Pasted image 20240409175646" src="../papers_sources/Research-Paper-Notes/GPT-ST/Pasted image 20240409175646.png" /></li>
+<li>步骤 8：得到最终聚类嵌入用于跨类关系学习。</li>
+<li>步骤 9：构建个性化高级超图并建模类间关系。
+<img alt="Pasted image 20240409180024" src="../papers_sources/Research-Paper-Notes/GPT-ST/Pasted image 20240409180024.png" /></li>
+<li>步骤 10：将聚类嵌入回传到区域嵌入。
+<img alt="Pasted image 20240409180148" src="../papers_sources/Research-Paper-Notes/GPT-ST/Pasted image 20240409180148.png" /></li>
+<li>步骤 11：预测 <code>Ŷ</code> 并计算绝对误差损失 <code>L_r</code>。
+<img alt="Pasted image 20240409180235" src="../papers_sources/Research-Paper-Notes/GPT-ST/Pasted image 20240409180235.png" /></li>
+<li>步骤 12：计算 KL 散度 <code>L_kl</code>。
+<img alt="Pasted image 20240409180330" src="../papers_sources/Research-Paper-Notes/GPT-ST/Pasted image 20240409180330.png" /></li>
+<li>步骤 13：计算总损失 <code>L</code>。
+<img alt="Pasted image 20240409180350" src="../papers_sources/Research-Paper-Notes/GPT-ST/Pasted image 20240409180350.png" /></li>
+<li>步骤 14：梯度下降更新参数。</li>
+</ul>
+<hr />
+<h2 id="5">5. 论文贡献（只写作者真正新增的东西）</h2>
+<ul>
+<li>贡献 1：提出了可插拔、可扩展的时空预训练框架 GPT-ST。</li>
+<li>贡献 2：提出“定制参数学习 + 分层超图编码 + 聚类感知掩码”的联合机制。</li>
+<li>贡献 3：在多个真实数据集与多类下游模型上验证了泛化提升、可解释性与效率平衡。</li>
+</ul>
+<blockquote>
+<p>判断标准：如果删掉这一点，论文是否还成立？如果“是”，那它可能不是核心贡献。</p>
+</blockquote>
+<hr />
+<h2 id="6">6. 实验设置</h2>
+<ul>
+<li>数据集：PEMS08、METR-LA、NYC Taxi、NYC Citi Bike。</li>
+<li>模型：多类下游基线（如 STGCN、MSDR、GWN 等）+ GPT-ST 预训练增强。</li>
+<li>对比方法：</li>
+<li>原始下游模型（无预训练）。</li>
+<li>STEP 预训练。</li>
+<li>DGI / GraphCL 风格预训练替代。</li>
+<li>随机掩码与其他掩码策略替代（Ran0.25、Ran0.75、GMAE、AdaMAE）。</li>
+<li>评价指标：MAE、RMSE、MAPE。</li>
+<li>关键超参数：时间窗口 <code>L=12</code>，不同数据集划分比（METR-LA 7:1:2，其他 6:2:2），掩码率与自适应掩码率调参。</li>
+</ul>
+<hr />
+<h2 id="7">7. 主要结果</h2>
+<h3 id="71">7.1 主结果</h3>
+<ul>
+<li>结果 1：GPT-ST 对不同下游模型均有稳定增益，说明预训练表示具跨架构通用性。</li>
+<li>结果 2：对经典基线提升通常更明显，说明 GPT-ST 能补齐弱模型的结构表示能力。</li>
+<li>
+<p>结果 3：与 STEP 相比，在仅短期数据预训练场景仍具优势，适用场景更广。</p>
+</li>
+<li>
+<p>图片与笔记（主结果）</p>
+</li>
+<li><img alt="四数据集主结果图" src="../papers_sources/Research-Paper-Notes/GPT-ST/image-20240111155608412.png" /></li>
+</ul>
+<h3 id="72">7.2 从结果中能读出的结论</h3>
+<ul>
+<li>结论 1：结构感知预训练在多下游架构上都有迁移增益。</li>
+<li>结论 2：聚类网络与跨聚类关系模块是核心性能来源。</li>
+<li>结论 3：自适应掩码比纯随机掩码更有效。</li>
+</ul>
+<h3 id="73">7.3 最关键的证据</h3>
+<ul>
+<li>最关键表格：四数据集主结果对比（主结果图）。</li>
+<li>最关键图：框架总览图与消融图。</li>
+<li>最关键数字：多模型均有稳定提升（详见图表）。</li>
+<li>为什么它最关键：同时验证“泛化性 + 结构设计有效性”。</li>
+</ul>
+<hr />
+<h2 id="8">8. 消融实验</h2>
+<ul>
+<li>消融点 1：移除参数学习器（-P）会降性能，说明时间/区域条件化参数有效。</li>
+<li>消融点 2：移除聚类网络（-C）退化最大，说明聚类内结构是核心收益来源。</li>
+<li>消融点 3：移除跨聚类关系（-T）也显著退化，说明簇间迁移信息不可忽略。</li>
+<li>消融点 4：自适应掩码优于纯随机掩码与其他掩码替代策略。</li>
+<li>
+<p>消融点 5：用 DGI/GraphCL 替代预训练虽优于无预训练，但不如 GPT-ST 的掩码重构任务。</p>
+</li>
+<li>
+<p>图片与笔记（消融）</p>
+</li>
+<li><img alt="消融结果图" src="../papers_sources/Research-Paper-Notes/GPT-ST/image-20240111160610237.png" /></li>
+</ul>
+<hr />
+<h2 id="9">9. 和已有工作的关系</h2>
+<ul>
+<li>这篇论文最接近哪些方法：STEP、DGI、GraphCL 等时空/图预训练方法。</li>
+<li>和已有方法相比，最大的不同：聚类感知掩码与分层超图联合建模。</li>
+<li>真正的新意在哪里：把预训练目标与时空结构先验对齐。</li>
+<li>哪些地方更像“工程改进”而不是“方法创新”：具体超参数与模块拼接策略。</li>
+<li>这篇论文在整个研究脉络里的位置：时空图预训练从“通用掩码”走向“结构掩码”的代表工作。</li>
+</ul>
+<hr />
+<h2 id="10">10. 我的理解（这一节不能照抄论文）</h2>
+<ul>
+<li>直观理解：GPT-ST 把“时空预训练”从通用 MAE 升级为“关系驱动 MAE”，关键在于掩码策略和分层关系建模协同。</li>
+<li>最值得关注的设计：聚类感知掩码把训练难度与结构学习方向绑定，不是简单提升掩码比例。</li>
+<li>和已有方法相比的新意：强调可迁移增强而非替换下游主干，工程上更实用。</li>
+<li>
+<p>我认为最强的一点：同时兼顾性能增益、解释性展示（聚类可视化）和训练效率约束。</p>
+</li>
+<li>
+<p>图片与笔记（可解释性）</p>
+</li>
+<li><img alt="TSNE聚类可视化" src="../papers_sources/Research-Paper-Notes/GPT-ST/image-20240111164403923.png" /></li>
+<li><img alt="聚类内/跨聚类案例" src="../papers_sources/Research-Paper-Notes/GPT-ST/image-20240111164912254.png" /></li>
+</ul>
+<hr />
+<h2 id="11">11. 局限性</h2>
+<ul>
+<li>局限 1：聚类质量对整体效果敏感，若聚类偏差大，掩码与簇间关系学习会受影响。</li>
+<li>局限 2：模块较多，训练和调参复杂度高于简化预训练方案。</li>
+<li>局限 3：当前验证集中在交通场景，跨领域泛化需要进一步实证。</li>
+</ul>
+<blockquote>
+<p>可从假设过强、实验覆盖不足、开销过大、泛化不明、复现风险高等角度写。</p>
+</blockquote>
+<hr />
+<h2 id="12">12. 对我的启发</h2>
+<ul>
+<li>能直接借鉴的部分：结构感知掩码与层次关系编码的联合设计。</li>
+<li>不能直接照搬的部分：聚类质量与超参数调节对效果敏感。</li>
+<li>对我当前课题的启发：可将“簇内-簇间”思想迁移到其他时空任务。</li>
+<li>可以尝试的改进方向：在线聚类、不确定性掩码、自适应预算训练。</li>
+<li>可以作为 baseline / 对比项 / ablation 的部分：随机掩码、去聚类模块、去跨簇关系模块。</li>
+</ul>
+<hr />
+<h2 id="13">13. 待验证问题</h2>
+<ul>
+<li>问题 1：是否可用在线聚类替代静态聚类以应对分布漂移？</li>
+<li>问题 2：可否引入不确定性建模，让掩码策略自适应置信度？</li>
+<li>
+<p>问题 3：在固定训练预算下，GPT-ST 增强与下游主干扩容的性价比边界在哪里？</p>
+</li>
+<li>
+<p>图片与笔记（效率与超参）</p>
+</li>
+<li><img alt="训练效率对比" src="../papers_sources/Research-Paper-Notes/GPT-ST/image-20240111165901325.png" /></li>
+<li><img alt="掩码率超参实验" src="../papers_sources/Research-Paper-Notes/GPT-ST/image-20240111170308110.png" /></li>
+</ul>
+<hr />
+<h2 id="14">14. 一句话总结</h2>
+<ul>
+<li>GPT-ST 用结构感知预训练机制把时空关系学得更“可迁移”，并在多任务上稳定提升下游预测性能。</li>
+</ul>
+<hr />
+<h2 id="15">15. 快速索引（便于二次回看）</h2>
+<ul>
+<li>核心公式：<code>L_r + L_kl</code>、聚类感知掩码相关定义。</li>
+<li>核心图表：框架总览、主结果图、消融图、效率与超参图。</li>
+<li>最值得复看的章节：方法细节三模块与附录算法步骤。</li>
+<li>复现时最需要注意的点：聚类质量、掩码率设置、下游融合方式。</li>
+</ul>
+<h3 id="152">15.2 导入来源与完整性记录</h3>
+<ul>
+<li>源笔记：<a href="../papers_sources/Research-Paper-Notes/GPT-ST预训练时空框架.html">GPT-ST预训练时空框架.md</a></li>
+<li>论文文件：<a href="../papers_sources/Research-Paper-Notes/GPT-ST预训练时空框架.pdf">GPT-ST预训练时空框架.pdf</a></li>
+<li>联网补充来源：</li>
+<li>arXiv: https://arxiv.org/abs/2311.04250</li>
+</ul>
+<h3 id="153">15.3 已完成自检记录</h3>
+<ul>
+<li>[x] 原始笔记所有内容已整理进模板结构。</li>
+<li>[x] 图片已插入并保留在对应位置。</li>
+<li>[x] 已联网补充论文元信息。</li>
+</ul>
+<h3 id="151">15.1 整合说明 / 索引</h3>
+<ul>
+<li>原始导入中的附录算法步骤已完整迁移至正文 <code>4.4</code>。</li>
+<li>本节仅保留索引说明，不再堆放原始转录内容。</li>
+</ul>
+<h2 id="wiki">Wiki 关联</h2>
+<ul>
+<li>参考摘要：<a href="../references/GPT-ST Spatio-Temporal Pretraining.html">GPT-ST Spatio-Temporal Pretraining</a></li>
+<li>概念锚点：<a href="../concepts/Spatio-Temporal Pretraining for Language Models.html">Spatio-Temporal Pretraining for Language Models</a>、<a href="../concepts/Cluster-Aware Masked Pretraining.html">Cluster-Aware Masked Pretraining</a>、<a href="../concepts/Hierarchical Spatio-Temporal Hypergraph Encoding.html">Hierarchical Spatio-Temporal Hypergraph Encoding</a></li>
+<li>实体锚点：<a href="../entities/GPT-ST.html">GPT-ST</a>、<a href="../entities/Peiyi Wang.html">Peiyi Wang</a></li>
+<li>综合页面：<a href="../synthesis/Spatio-Temporal Representation in Language Models.html">Spatio-Temporal Representation in Language Models</a>、<a href="../synthesis/Structured Spatio-Temporal Representation Learning.html">Structured Spatio-Temporal Representation Learning</a></li>
+</ul></div>
+      </article>
+    </main>
+
+    <aside class="rail panel">
+      <h3>Page Meta</h3>
+      <div class="meta-block">
+        <p class="meta-label">Section</p>
+        <p>notes</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Tags</p>
+        <div class="chip-list"><span class="chip">untagged</span></div>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Summary</p>
+        <p>﻿ GPT ST: Generative Pre Training of Spatio Temporal Graph Neural Networks 阅读日期：2026 04 08 阅读状态：已读 标签： paper spatio temporal gnn pretraining imported 相关方向：时空预测、图神经网络预训练、结构感知掩码 阅读目…</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Source</p>
+        <ul>
+          <li><a href="https://github.com/qianzhouyi2/Research-Paper-Notes/blob/main/notes/GPT-ST Spatio-Temporal Pretraining.md">Open Markdown On GitHub</a></li>
+          <li><a href="../search-index.json">Open Search Index</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

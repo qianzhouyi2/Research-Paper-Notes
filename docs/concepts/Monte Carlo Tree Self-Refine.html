@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Monte Carlo Tree Self-Refine | Research Paper Notes</title>
+  <meta name="description" content="将 MCTS 与自评估-自修正循环结合，让 LLM 在高难推理中以搜索替代单次采样。">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../site.js"></script>
+</head>
+<body data-root-prefix="../" data-page-path="concepts/Monte Carlo Tree Self-Refine.html">
+  <div class="site-shell">
+    <aside class="sidebar panel">
+      <a class="brand" href="../index.html">
+        <span class="brand-kicker">Research Wiki</span>
+        <h1>Research Paper Notes</h1>
+        <p>A browsable paper-reading vault published as a GitHub Pages site.</p>
+      </a>
+      <nav><h1 id="navigation">Navigation</h1>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../notes/index.html">Notes</a></li>
+<li><a href="../references/index.html">References</a></li>
+<li><a href="index.html">Concepts</a></li>
+<li><a href="../entities/index.html">Entities</a></li>
+<li><a href="../synthesis/index.html">Synthesis</a></li>
+<li><a href="../journal/index.html">Journal</a></li>
+<li><a href="../projects/index.html">Projects</a></li>
+<li><a href="../log.html">Log</a></li>
+</ul></nav>
+      <p class="footer-note">Static export from the local Obsidian-style wiki. Markdown was pre-rendered for GitHub Pages.</p>
+    </aside>
+
+    <main class="main">
+      <header class="topbar panel">
+        <div>
+          <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
+          <h2>Monte Carlo Tree Self-Refine</h2>
+          <p>将 MCTS 与自评估-自修正循环结合，让 LLM 在高难推理中以搜索替代单次采样。</p>
+        </div>
+        <div class="topbar-actions">
+          <div class="search-box">
+            <input data-search-input type="search" placeholder="Search pages, concepts, entities...">
+            <div data-search-results class="search-results"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="breadcrumbs"><a href="../index.html">Home</a><span> / </span><a href="index.html">Concepts</a><span> / </span><span>Monte Carlo Tree Self Refine</span></div>
+
+      <article class="article-wrap panel">
+        <div class="article-path">concepts/Monte Carlo Tree Self-Refine.md</div>
+        <div class="markdown-body"><h1 id="monte-carlo-tree-self-refine">Monte Carlo Tree Self-Refine</h1>
+<p>核心思想是把“生成候选、打分、回传、再生成”组织成树搜索闭环，减少一次性 CoT 的路径依赖。</p>
+<h2 id="_1">关联页面</h2>
+<ul>
+<li><a href="../references/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report.html">Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report</a></li>
+<li><a href="Monte Carlo Tree Search for LLM Reasoning.html">Monte Carlo Tree Search for LLM Reasoning</a></li>
+<li><a href="Tree of Thoughts Reasoning.html">Tree of Thoughts Reasoning</a></li>
+<li><a href="../synthesis/LLM Reasoning Search and Verification.html">LLM Reasoning Search and Verification</a></li>
+</ul></div>
+      </article>
+    </main>
+
+    <aside class="rail panel">
+      <h3>Page Meta</h3>
+      <div class="meta-block">
+        <p class="meta-label">Section</p>
+        <p>concepts</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Tags</p>
+        <div class="chip-list"><span class="chip">concept</span><span class="chip">llm</span><span class="chip">reasoning</span><span class="chip">mcts</span></div>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Summary</p>
+        <p>将 MCTS 与自评估-自修正循环结合，让 LLM 在高难推理中以搜索替代单次采样。</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Source</p>
+        <ul>
+          <li><a href="https://github.com/qianzhouyi2/Research-Paper-Notes/blob/main/concepts/Monte Carlo Tree Self-Refine.md">Open Markdown On GitHub</a></li>
+          <li><a href="../search-index.json">Open Search Index</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>
