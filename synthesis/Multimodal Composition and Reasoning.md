@@ -11,7 +11,7 @@ sources:
   - notes/Multimodal Chain-of-Thought Reasoning in Language Models.md
   - notes/Are aligned neural networks adversarially aligned.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 汇总多模态生成与多模态推理中的可组合性设计，强调“组合表达能力”与“推理可验证性”的平衡。
 provenance:
   extracted: 0.73
@@ -39,3 +39,8 @@ provenance:
 - [[concepts/Multimodal Chain-of-Thought Reasoning]]
 - [[concepts/Two-Stage Multimodal CoT Pipeline]]
 - [[concepts/Multimodal Adversarial Image Prompting]]
+
+## 联网补充
+
+- Composable Diffusion 表明扩散模型可以通过能量函数组合实现可组合生成，为“模块化视觉组合”提供机制基础。
+- Multimodal-CoT 说明在视觉-语言任务中引入中间推理链可显著提升复杂问答性能，验证“组合能力 + 可解释推理”并行收益。

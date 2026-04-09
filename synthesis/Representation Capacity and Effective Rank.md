@@ -12,7 +12,7 @@ sources:
   - notes/PanGu-pi Nonlinearity Compensation.md
   - notes/Language Models Represent Space and Time.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 该主题从有效秩、特征多样性、线性可解码结构等视角审视模型表示容量，强调表示退化往往先于性能退化显现。
 provenance:
   extracted: 0.74
@@ -41,3 +41,8 @@ provenance:
 - [[concepts/Proximal L0 Feature Sparsification]]
 - [[concepts/LLM Nonlinearity Compensation]]
 - [[concepts/Linear Probe World-Model Evaluation]]
+
+## 联网补充
+
+- 持续学习与鲁棒增强工作共同表明：有效秩、特征稀疏性与表征多样性会先于任务精度变化，适合作为早期退化信号。
+- 《Language Models Represent Space and Time》提供了线性探针证据，说明“可解码结构”可以作为容量与结构化表示质量的补充指标。

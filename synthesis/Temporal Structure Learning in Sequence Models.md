@@ -11,7 +11,7 @@ sources:
   - notes/GPT-ST Spatio-Temporal Pretraining.md
   - notes/Language Models Represent Space and Time.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 该主题整合“软对齐、结构感知预训练、时空探针”三条路线，关注时间结构在不同模型范式中的可学习与可解释性。
 provenance:
   extracted: 0.76
@@ -39,3 +39,7 @@ provenance:
 - [[concepts/Linear Probe World-Model Evaluation]]
 - [[concepts/Prompt-Robust Representation Probing]]
 
+## 联网补充
+
+- CIF 及其后续线索表明，单调对齐与发射时机控制是序列时间结构学习的关键机制。
+- GPT-ST 与时空表示探针研究共同支持“预训练注入结构 + 线性探针验证结构”的双证据范式。

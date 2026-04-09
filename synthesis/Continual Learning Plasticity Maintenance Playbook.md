@@ -10,7 +10,7 @@ sources:
   - papers_sources/Maintaining Plasticity in Deep Continual Learning/arxiv.tex
   - notes/Maintaining Plasticity in Deep Continual Learning.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 持续学习应并行监测“可塑性指标+任务表现”，并用效用驱动重初始化等机制持续注入学习能力。
 provenance:
   extracted: 0.76
@@ -34,3 +34,7 @@ provenance:
 - [[concepts/Selective Neuron Reinitialization]]
 - [[concepts/Continual Backpropagation]]
 
+## 联网补充
+
+- 《Maintaining Plasticity in Deep Continual Learning》明确提出“loss of plasticity”是持续学习核心瓶颈，并给出 continual backprop 作为可长期维持可塑性的机制。
+- 因此该 playbook 的关键不是只看任务精度，而是并行监测“新任务吸收能力 + 历史能力保持 + 表征退化信号”。

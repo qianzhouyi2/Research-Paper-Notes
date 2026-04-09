@@ -11,7 +11,7 @@ sources:
   - notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md
   - notes/Multimodal Chain-of-Thought Reasoning in Language Models.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 该主题关注“显式过程监督如何迁移为隐式推理能力”，强调稳定训练策略与过程反馈信号的协同作用。
 provenance:
   extracted: 0.77
@@ -38,3 +38,8 @@ provenance:
 - [[concepts/Process-Supervised Step Verification]]
 - [[concepts/Removal Smoothing for CoT Internalization]]
 - [[concepts/Two-Stage Multimodal CoT Pipeline]]
+
+## 联网补充
+
+- 《From Explicit CoT to Implicit CoT》显示显式步骤监督可逐步内化为隐式推理能力，支持“先外显、后内化”的训练路径。
+- Math-Shepherd 的自动过程标注与步骤级奖励进一步提供了可扩展的过程监督信号来源，降低人工逐步标注成本。

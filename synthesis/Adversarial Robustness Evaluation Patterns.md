@@ -11,7 +11,7 @@ sources:
   - papers_sources/MeanSparse 2406.05927/main.tex
   - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/main.tex
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 综合三篇论文可得到鲁棒评估的三条主线：先校准攻击器能力、再做任务特定黑盒评测、最后用后处理策略做低成本鲁棒增益验证。
 provenance:
   extracted: 0.73
@@ -47,3 +47,8 @@ provenance:
 - [[concepts/Query-Efficient Attack Evaluation]]
 - [[synthesis/Alignment Robustness Evaluation Ladder]]
 - [[synthesis/Robust Representation and Adversarial Dynamics]]
+
+## 联网补充
+
+- 《Are aligned neural networks adversarially aligned?》显示：模型在常规对齐测试中表现良好，并不等价于在对抗输入下依然安全，鲁棒评估需要显式 worst-case 视角。
+- 结合 DLA（分割决策黑盒攻击）与 MeanSparse（后训练鲁棒增强）可形成“攻击能力校准 -> 任务攻击压测 -> 低成本防御增益验证”的闭环。

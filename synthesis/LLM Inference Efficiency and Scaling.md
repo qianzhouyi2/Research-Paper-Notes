@@ -13,7 +13,7 @@ sources:
   - notes/LoRA Low-Rank Adaptation of Large Language Models.md
   - notes/PanGu-pi Nonlinearity Compensation.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: LLM 效率优化正在从单一压缩走向“路由调度、摊销推理与参数高效适配”三线并进，目标是在质量与成本之间实现可控平衡。
 provenance:
   extracted: 0.74
@@ -50,3 +50,8 @@ provenance:
 - [[concepts/Cascaded Activation Nonlinearity Compensation]]
 - [[synthesis/Probabilistic Inference-Time Control for LLMs]]
 - [[synthesis/Long-Context Architecture Without Full Attention]]
+
+## 联网补充
+
+- ComplexityNet、Amortizing Inference、Synergy-of-Thoughts 共同指向“推理时控制”是效率提升主线：通过复杂度路由、后验近似与双过程切换减少单位问题成本。
+- LoRA 与 PanGu-π 则从参数与结构层面补足另一条主线，和推理时策略形成“训练/部署协同优化”。

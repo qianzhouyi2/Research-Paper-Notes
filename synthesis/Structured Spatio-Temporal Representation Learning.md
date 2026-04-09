@@ -11,7 +11,7 @@ sources:
   - papers_sources/Research-Paper-Notes/GPT-ST预训练时空框架.md
   - papers_sources/Research-Paper-Notes/LLM体现出时空概念.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 时空表示学习可分为“结构化学习机制”和“可解码性验证机制”两条线，前者提升迁移，后者验证内部表征真实性。
 provenance:
   extracted: 0.74
@@ -40,3 +40,7 @@ provenance:
 - [[concepts/Hierarchical Spatio-Temporal Hypergraph Encoding]]
 - [[concepts/Linear Probe World-Model Evaluation]]
 
+## 联网补充
+
+- CIF 机制给出了可微分的连续对齐与触发发射过程，为序列-标签的结构化时间对齐提供了通用思路。
+- 结合 GPT-ST 与时空探针结果可见，结构化学习应同时关注迁移性能提升与内部表示可解码性验证。

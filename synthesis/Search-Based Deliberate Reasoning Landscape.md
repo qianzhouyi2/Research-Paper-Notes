@@ -13,7 +13,7 @@ sources:
   - notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md
   - notes/Demystifying Chains, Trees, and Graphs of Thoughts.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 该主题聚焦“显式搜索结构 + 过程评估反馈”的深度推理路径，比较树/图/MCTS 三类展开机制的计算与效果权衡。
 provenance:
   extracted: 0.76
@@ -43,3 +43,7 @@ provenance:
 - [[concepts/Monte Carlo Tree Search for LLM Reasoning]]
 - [[concepts/Monte Carlo Tree Self-Refine]]
 
+## 联网补充
+
+- ToT 把“深思”形式化为可搜索树，GoT 则扩展到任意图结构并支持节点合并/反馈回路，覆盖更复杂的思维拓扑。
+- MCTS 综述中的选择-扩展-模拟-回传范式可直接映射到 LLM 推理搜索控制，适合作为可复用算法骨架。

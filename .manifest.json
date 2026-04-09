@@ -1,7 +1,7 @@
 {
   "version": 1,
   "stats": {
-    "total_sources_ingested": 28,
+    "total_sources_ingested": 29,
     "total_pages": 174
   },
   "sources": {
@@ -875,6 +875,41 @@
         "entities/Zhonghang Li.md",
         "entities/Zhuosheng Zhang.md",
         "entities/index.md",
+        "index.md",
+        "journal/Wiki Coverage Audit 2026-04-08.md",
+        "log.md"
+      ]
+    },
+    "workspace/wiki-update-2026-04-09-synthesis-online-refresh": {
+      "ingested_at": "2026-04-09T09:28:17+08:00",
+      "size_bytes": 0,
+      "modified_at": "2026-04-09T09:28:17+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [],
+      "pages_updated": [
+        "synthesis/Adversarial Robustness Evaluation Patterns.md",
+        "synthesis/Alignment Robustness Evaluation Ladder.md",
+        "synthesis/Continual Learning Plasticity Maintenance Playbook.md",
+        "synthesis/Decision-based Segmentation Attack Landscape.md",
+        "synthesis/Efficient Adaptation and Plasticity Retention.md",
+        "synthesis/Inference-Time Orchestration and Routing for LLMs.md",
+        "synthesis/LLM Inference Efficiency and Scaling.md",
+        "synthesis/LLM Reasoning Search and Verification.md",
+        "synthesis/Long-Context Architecture Without Full Attention.md",
+        "synthesis/Multi-Agent LLM Collaboration Landscape.md",
+        "synthesis/Multimodal Composition and Reasoning.md",
+        "synthesis/Parameter-Efficient LLM Adaptation and Inference.md",
+        "synthesis/Probabilistic Inference-Time Control for LLMs.md",
+        "synthesis/Process Supervision and CoT Internalization.md",
+        "synthesis/Representation Capacity and Effective Rank.md",
+        "synthesis/Robust Representation and Adversarial Dynamics.md",
+        "synthesis/Search-Based Deliberate Reasoning Landscape.md",
+        "synthesis/Spatio-Temporal Representation in Language Models.md",
+        "synthesis/Structured Reasoning Methods for LLMs.md",
+        "synthesis/Structured Spatio-Temporal Representation Learning.md",
+        "synthesis/Temporal Structure Learning in Sequence Models.md",
+        "synthesis/index.md",
         "index.md",
         "journal/Wiki Coverage Audit 2026-04-08.md",
         "log.md"

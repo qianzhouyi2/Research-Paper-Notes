@@ -4,7 +4,7 @@ category: index
 tags:
   - index
   - synthesis
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 跨论文对比、综合与主题结论页面索引。
 ---
 
@@ -35,6 +35,12 @@ summary: 跨论文对比、综合与主题结论页面索引。
 - [[synthesis/Spatio-Temporal Representation in Language Models]]
 - [[synthesis/Structured Spatio-Temporal Representation Learning]]
 - [[synthesis/Temporal Structure Learning in Sequence Models]]
+
+## 最新联网补充（2026-04-09）
+
+- 覆盖：21/21 `synthesis` 页面补齐 `联网补充`
+- 页面更新：全部 21 个主题综合页完成联网事实补强；无新增结构页
+- 主题重点：鲁棒评测、结构化推理、推理时编排、参数高效适配、时空表示学习
 
 ## 推荐结构
 

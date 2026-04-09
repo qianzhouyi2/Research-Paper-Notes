@@ -179,10 +179,28 @@ provenance:
   - `entities` 层已从“命名占位”提升到“实体定义 + 本库角色”的双层结构
   - 这轮之后，`concepts` 与 `entities` 两层都已完成全量联网补充
 
+## 十一轮联网核验后复测（synthesis refresh）
+
+- `synthesis` 总数：21
+- `synthesis` 联网补充覆盖：21/21
+- 本轮实质更新：
+  - 所有综合页新增 `联网补充`
+  - 重点补足鲁棒评测、结构化推理、推理时编排、PEFT 与时空表示的外部事实锚点
+  - 未新增或删除结构页
+- 结构总量保持不变：
+  - `notes`：26
+  - `references`：26
+  - `concepts`：50
+  - `entities`：67
+  - `synthesis`：21
+- 复核结论：
+  - `synthesis` 层已从“主题结论卡”提升到“主题结论 + 联网补充”双层结构
+  - 至此 `concepts / entities / synthesis` 三层均完成全量联网补充
+
 ## 优先修复顺序
 
 1. 把 `notes` 里的 `论文信息` 区统一成和 `references` 一样的联网核验格式。
-2. 对 `synthesis` 层做与 `concepts/entities` 一致的标准化联网补充。
+2. 统一新入库页面的 `联网补充` 写法，避免层间粒度不一致（尤其是 reference 到 synthesis 的映射说明）。
 3. 后续 ingest 新论文时优先复用现有实体页，避免重复创建近义 author/model/dataset 卡。^[inferred]
 
 ## 关联页面

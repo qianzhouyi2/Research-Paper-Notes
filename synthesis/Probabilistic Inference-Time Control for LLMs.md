@@ -11,7 +11,7 @@ sources:
   - notes/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity.md
   - notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 该主题整合“后验采样、复杂度路由、双过程策略”三类方法，强调在推理阶段动态控制计算与不确定性。
 provenance:
   extracted: 0.75
@@ -39,3 +39,8 @@ provenance:
 - [[concepts/Success-Rate Based Complexity Labeling]]
 - [[concepts/Task Complexity-Aware Inference Budgeting]]
 - [[concepts/Adaptive Compute Routing]]
+
+## 联网补充
+
+- Amortizing Inference 将复杂后验采样问题转化为可复用策略学习，给出了概率推理视角下的推理时控制框架。
+- ComplexityNet 与 SoT（训练无关双过程切换）说明实际系统可在不确定性与成本之间做动态折中，而非固定解码策略。

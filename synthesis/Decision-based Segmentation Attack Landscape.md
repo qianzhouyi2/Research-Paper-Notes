@@ -10,7 +10,7 @@ tags:
 sources:
   - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: DLA 展示了语义分割 decision-based 攻击可在极低查询下强力破坏 mIoU，提示鲁棒性评估应转向查询效率视角。
 provenance:
   extracted: 0.79
@@ -52,3 +52,8 @@ provenance:
 - [[entities/Cityscapes Dataset]]
 - [[entities/ADE20K Dataset]]
 - [[projects/index]]
+
+## 联网补充
+
+- 《Delving into Decision-based Black-box Attacks on Semantic Segmentation》提出 DLA，说明在仅有决策反馈时依然可以高效破坏分割性能，查询预算是核心评测轴。
+- 该方向提示分割鲁棒性评测应从“是否被攻破”扩展到“在给定查询/扰动预算下的退化曲线”。

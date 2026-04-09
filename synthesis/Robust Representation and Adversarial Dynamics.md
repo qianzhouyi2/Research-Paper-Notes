@@ -12,7 +12,7 @@ sources:
   - notes/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature.md
   - notes/Language Models Represent Space and Time.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 该主题从攻击、评测与后处理防御三侧讨论“表示是否稳健”，强调任务语义与特征几何共同决定鲁棒性。
 provenance:
   extracted: 0.74
@@ -41,3 +41,7 @@ provenance:
 - [[concepts/Mean-Centered Feature Sparsification]]
 - [[concepts/Proximal L0 Feature Sparsification]]
 
+## 联网补充
+
+- Are-aligned 与 DLA 结果共同说明：表示稳健性必须在对抗优化与黑盒查询约束下评估，常规分布测试不足以覆盖风险。
+- MeanSparse 证明后训练特征稀疏化可带来鲁棒增益，提示“表示几何后处理”是低成本防御的一条可行路线。

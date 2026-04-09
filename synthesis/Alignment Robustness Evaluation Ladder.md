@@ -11,7 +11,7 @@ sources:
   - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/main.tex
   - papers_sources/MeanSparse 2406.05927/main.tex
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 对齐鲁棒评估可按“攻击器校准->任务化攻击->防御增益验证”三级阶梯执行，减少安全结论的乐观偏差。
 provenance:
   extracted: 0.72
@@ -40,3 +40,7 @@ provenance:
 - [[concepts/Query-Efficient Attack Evaluation]]
 - [[concepts/Mean-Centered Feature Sparsification]]
 
+## 联网补充
+
+- adversarial alignment 研究强调：对齐结论应在攻击者可优化输入的条件下复核，而不是只看平均场景表现。
+- 语义分割场景的 decision-based 攻击与后训练鲁棒增强结果共同支持“分层评估梯度”：先校准攻击器，再做任务化压测，最后验证防御增益。

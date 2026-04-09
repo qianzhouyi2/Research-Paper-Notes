@@ -11,7 +11,7 @@ sources:
   - notes/Amortizing intractable inference in large language models.md
   - notes/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 该主题整合参数高效适配与推理时动态计算分配两条路线，目标是在性能与成本之间建立可控折中。
 provenance:
   extracted: 0.75
@@ -38,3 +38,8 @@ provenance:
 - [[concepts/Low-Rank Adaptation for LLMs]]
 - [[concepts/Adaptive Compute Routing]]
 - [[concepts/Task Complexity-Aware Inference Budgeting]]
+
+## 联网补充
+
+- LoRA 的核心结论是：在冻结预训练权重前提下，仅训练低秩适配矩阵即可完成有效迁移，显著降低显存与训练成本。
+- 结合复杂度路由与摊销推理可形成“参数高效微调 + 推理时预算控制”的双层效率策略。
