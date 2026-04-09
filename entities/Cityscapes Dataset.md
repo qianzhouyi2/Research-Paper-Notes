@@ -2,15 +2,15 @@
 title: Cityscapes Dataset
 category: entity
 tags:
-  - entity
-  - dataset
-  - semantic-segmentation
-  - adversarial-attack
+- entity
+- dataset
+- semantic-segmentation
+- adversarial-attack
 sources:
-  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/main.tex
-  - notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md
+- papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/main.tex
+- notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: Cityscapes 是语义分割黑盒攻击评测的重要基准，DLA 在该数据集上表现出高查询效率攻击能力。
 provenance:
   extracted: 0.86
@@ -19,6 +19,11 @@ provenance:
 ---
 
 # Cityscapes Dataset
+
+## 联网补充
+
+- Cityscapes 官方页面把它定义为城市场景语义理解数据集，包含 5000 张高质量精标注图像、20000 张粗标注图像，覆盖 50 个城市。
+- 在本库里，Cityscapes 是语义分割黑盒攻击的主评测场，重点不是类别本身，而是查询预算下 mIoU 能被压低多少。
 
 ## 关联论文
 

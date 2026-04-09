@@ -1,4 +1,4 @@
----
+﻿---
 title: Multimodal Adversarial Image Prompting
 category: concept
 tags:
@@ -10,7 +10,7 @@ sources:
   - papers_sources/Are aligned neural networks adversarially aligned 2306.15447/main.tex
   - notes/Are aligned neural networks adversarially aligned.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 多模态对抗图像提示通过连续像素优化诱导对齐模型输出有害文本，是离散文本攻击之外的重要威胁面。
 provenance:
   extracted: 0.84
@@ -29,6 +29,11 @@ provenance:
 - 适用于可微视觉编码链路。
 - 对纯文本模型不可直接使用，需要其他离散优化策略。^[inferred]
 
+## 联网补充
+
+- 2306.15447 显示多模态模型可通过对输入图像施加对抗扰动而被诱导输出任意不对齐行为，这一结论来自论文的一手攻击实验而非纯推测。
+- 该概念的重要边界是：连续视觉通道提供了比离散文本 token 更容易优化的攻击面，所以 text-only 安全结论不能直接外推到 VLM。
+
 ## 关联页面
 
 - [[references/Are aligned neural networks adversarially aligned]]
@@ -36,4 +41,6 @@ provenance:
 - [[entities/LLaVA]]
 - [[entities/LLaMA-Adapter]]
 - [[synthesis/Alignment Robustness Evaluation Ladder]]
+
+
 

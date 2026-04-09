@@ -1,4 +1,4 @@
----
+﻿---
 title: Adversarial Alignment Evaluation
 category: concept
 tags:
@@ -10,7 +10,7 @@ sources:
   - papers_sources/Are aligned neural networks adversarially aligned 2306.15447/main.tex
   - papers_sources/2306.15447.tar
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 对抗性对齐评估强调先校准攻击器能力，再判断对齐防御强度，避免将“攻击失败”误判为“模型安全”。
 provenance:
   extracted: 0.86
@@ -40,6 +40,11 @@ provenance:
 - 只报告攻击成功率，不报告攻击器校准能力。
 - 把离散文本攻击结论直接外推到多模态输入空间。^[inferred]
 
+## 联网补充
+
+- arXiv 2306.15447 明确指出，当前 NLP 攻击失败不能视为 text-only 对齐稳固的证据，因为即使优化攻击失败，暴力搜索仍可能找到对抗输入。
+- 同文还展示多模态模型可通过图像扰动诱导任意不对齐行为，说明安全评测必须把连续输入通道纳入威胁模型。
+
 ## 关联页面
 
 - [[references/Are aligned neural networks adversarially aligned]]
@@ -48,3 +53,5 @@ provenance:
 - [[concepts/Multimodal Adversarial Image Prompting]]
 - [[synthesis/Adversarial Robustness Evaluation Patterns]]
 - [[synthesis/Alignment Robustness Evaluation Ladder]]
+
+

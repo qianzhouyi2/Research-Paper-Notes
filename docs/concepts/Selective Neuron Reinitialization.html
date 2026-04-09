@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Selective Neuron Reinitialization | Research Paper Notes</title>
-  <meta name="description" content="选择性神经元重初始化通过替换低效隐藏单元并保护新单元成熟期，持续注入学习能力以减缓可塑性衰退。">
+  <meta name="description" content="﻿ title: Selective Neuron Reinitialization category: concept tags: concept continual learning optimization plasticity sources: papers sources/Maintaining Plasticity in Deep Contin…">
   <link rel="stylesheet" href="../styles.css">
   <script defer src="../site.js"></script>
 </head>
@@ -36,7 +36,7 @@
         <div>
           <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
           <h2>Selective Neuron Reinitialization</h2>
-          <p>选择性神经元重初始化通过替换低效隐藏单元并保护新单元成熟期，持续注入学习能力以减缓可塑性衰退。</p>
+          <p>﻿ title: Selective Neuron Reinitialization category: concept tags: concept continual learning optimization plasticity sources: papers sources/Maintaining Plasticity in Deep Contin…</p>
         </div>
         <div class="topbar-actions">
           <div class="search-box">
@@ -50,7 +50,26 @@
 
       <article class="article-wrap panel">
         <div class="article-path">concepts/Selective Neuron Reinitialization.md</div>
-        <div class="markdown-body"><h1 id="selective-neuron-reinitialization">Selective Neuron Reinitialization</h1>
+        <div class="markdown-body"><p>﻿&mdash;
+title: Selective Neuron Reinitialization
+category: concept
+tags:
+  - concept
+  - continual-learning
+  - optimization
+  - plasticity
+sources:
+  - papers_sources/Maintaining Plasticity in Deep Continual Learning/arxiv.tex
+  - notes/Maintaining Plasticity in Deep Continual Learning.md
+created: 2026-04-08
+updated: 2026-04-09
+summary: 选择性神经元重初始化通过替换低效隐藏单元并保护新单元成熟期，持续注入学习能力以减缓可塑性衰退。
+provenance:
+  extracted: 0.89
+  inferred: 0.09
+  ambiguous: 0.02</p>
+<hr />
+<h1 id="selective-neuron-reinitialization">Selective Neuron Reinitialization</h1>
 <h2 id="_1">定义</h2>
 <p>按效用分数和成熟阈值选择隐藏单元执行重置，输入权重重采样、输出权重置零，降低瞬时扰动。</p>
 <h2 id="_2">关键超参数</h2>
@@ -59,7 +78,12 @@
 <li>成熟阈值 <code>m</code></li>
 <li>效用统计平滑系数 <code>eta</code></li>
 </ul>
-<h2 id="_3">关联页面</h2>
+<h2 id="_3">联网补充</h2>
+<ul>
+<li>Nature 论文强调 continual backpropagation 每次只重初始化一小部分 less-used units，因此“selective”本身就是稳定性来源，而不是实现细节。</li>
+<li>成熟阈值和输出权重置零的设计同样关键：没有这些保护，新单元注入会更像噪声重置而不是可控的多样性补给。</li>
+</ul>
+<h2 id="_4">关联页面</h2>
 <ul>
 <li><a href="../references/Maintaining Plasticity in Deep Continual Learning.html">Maintaining Plasticity in Deep Continual Learning</a></li>
 <li><a href="Continual Backpropagation.html">Continual Backpropagation</a></li>
@@ -76,11 +100,11 @@
       </div>
       <div class="meta-block">
         <p class="meta-label">Tags</p>
-        <div class="chip-list"><span class="chip">concept</span><span class="chip">continual-learning</span><span class="chip">optimization</span><span class="chip">plasticity</span></div>
+        <div class="chip-list"><span class="chip">untagged</span></div>
       </div>
       <div class="meta-block">
         <p class="meta-label">Summary</p>
-        <p>选择性神经元重初始化通过替换低效隐藏单元并保护新单元成熟期，持续注入学习能力以减缓可塑性衰退。</p>
+        <p>﻿ title: Selective Neuron Reinitialization category: concept tags: concept continual learning optimization plasticity sources: papers sources/Maintaining Plasticity in Deep Contin…</p>
       </div>
       <div class="meta-block">
         <p class="meta-label">Source</p>

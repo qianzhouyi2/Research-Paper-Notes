@@ -1,4 +1,4 @@
----
+﻿---
 title: Discrete Linear Noise
 category: concept
 tags:
@@ -10,7 +10,7 @@ tags:
 sources:
   - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 通过离散化并结构化为线性噪声（横向/纵向），DLA 压缩搜索空间并提升有限查询下的攻击效率。
 provenance:
   extracted: 0.85
@@ -39,10 +39,17 @@ provenance:
 
 “更不易感知”主要基于论文可视化比较，跨数据集和跨观察者的主观一致性仍待系统验证。^[ambiguous]
 
+## 联网补充
+
+- DLA 将扰动搜索压到 l∞ 球极值点附近，并用水平/垂直线状离散噪声做 exploration 与 calibration，以显著压缩搜索空间。
+- 线状扰动的重要性不只在查询效率，还在于它比块状 patch 更不易察觉，同时仍能借助分割模型的上下文传播扩散攻击效果。
+
 ## 关联
 
 - [[concepts/Perturbation Interaction]]
 - [[concepts/Decision-based Black-box Attack for Segmentation]]
 - [[concepts/Query-Efficient Attack Evaluation]]
 - [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]
+
+
 

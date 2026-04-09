@@ -2,15 +2,15 @@
 title: MiniGPT-4
 category: entity
 tags:
-  - entity
-  - model
-  - multimodal
-  - llm-safety
+- entity
+- model
+- multimodal
+- llm-safety
 sources:
-  - papers_sources/Are aligned neural networks adversarially aligned 2306.15447/main.tex
-  - notes/Are aligned neural networks adversarially aligned.md
+- papers_sources/Are aligned neural networks adversarially aligned 2306.15447/main.tex
+- notes/Are aligned neural networks adversarially aligned.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: MiniGPT-4 在对齐评估中被用于多模态对抗攻击测试，显示连续视觉输入可诱导有害输出。
 provenance:
   extracted: 0.84
@@ -19,6 +19,11 @@ provenance:
 ---
 
 # MiniGPT-4
+
+## 联网补充
+
+- MiniGPT-4 通过单个投影层把冻结的视觉编码器与冻结的 Vicuna 对齐，并用第二阶段高质量对话微调来改善输出连贯性。
+- 在本库里，它主要用于说明多模态对齐模型即使结构很轻，也会暴露出与攻击迁移相关的安全面。
 
 ## 关联论文
 

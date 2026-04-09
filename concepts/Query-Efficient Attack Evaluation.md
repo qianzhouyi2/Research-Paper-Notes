@@ -1,4 +1,4 @@
----
+﻿---
 title: Query-Efficient Attack Evaluation
 category: concept
 tags:
@@ -10,7 +10,7 @@ tags:
 sources:
   - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 用固定查询预算比较攻击后 mIoU，可评估分割模型在现实黑盒条件下的鲁棒性与被攻破速度。
 provenance:
   extracted: 0.84
@@ -39,10 +39,17 @@ provenance:
 
 若方法在低查询预算下仍能显著降 mIoU，则更接近工业威胁模型。^[inferred]
 
+## 联网补充
+
+- DLA 在 Cityscapes 上 50 次查询就能把 PSPNet 的 mIoU 从 77.83% 压到 2.14%，说明 query efficiency 很大程度来自搜索空间设计，而不只是梯度估计技巧。
+- 但查询数不能脱离扰动形状单独解读；在 segmentation 里，攻击强度、可感知性和 query budget 是联动指标。
+
 ## 关联
 
 - [[concepts/Proxy Index mIoU Optimization]]
 - [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]
 - [[entities/SegFormer]]
 - [[synthesis/Decision-based Segmentation Attack Landscape]]
+
+
 

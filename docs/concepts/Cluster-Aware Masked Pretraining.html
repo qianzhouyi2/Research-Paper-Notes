@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cluster-Aware Masked Pretraining | Research Paper Notes</title>
-  <meta name="description" content="聚类感知掩码把预训练目标与簇内簇间结构绑定，较纯随机掩码更能学习可迁移时空关系。">
+  <meta name="description" content="﻿ title: Cluster Aware Masked Pretraining category: concept tags: concept spatio temporal pretraining graph learning sources: papers sources/Research Paper Notes/GPT ST预训练时空框架.md …">
   <link rel="stylesheet" href="../styles.css">
   <script defer src="../site.js"></script>
 </head>
@@ -36,7 +36,7 @@
         <div>
           <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
           <h2>Cluster-Aware Masked Pretraining</h2>
-          <p>聚类感知掩码把预训练目标与簇内簇间结构绑定，较纯随机掩码更能学习可迁移时空关系。</p>
+          <p>﻿ title: Cluster Aware Masked Pretraining category: concept tags: concept spatio temporal pretraining graph learning sources: papers sources/Research Paper Notes/GPT ST预训练时空框架.md …</p>
         </div>
         <div class="topbar-actions">
           <div class="search-box">
@@ -50,7 +50,26 @@
 
       <article class="article-wrap panel">
         <div class="article-path">concepts/Cluster-Aware Masked Pretraining.md</div>
-        <div class="markdown-body"><h1 id="cluster-aware-masked-pretraining">Cluster-Aware Masked Pretraining</h1>
+        <div class="markdown-body"><p>﻿&mdash;
+title: Cluster-Aware Masked Pretraining
+category: concept
+tags:
+  - concept
+  - spatio-temporal
+  - pretraining
+  - graph-learning
+sources:
+  - papers_sources/Research-Paper-Notes/GPT-ST预训练时空框架.md
+  - notes/GPT-ST Spatio-Temporal Pretraining.md
+created: 2026-04-08
+updated: 2026-04-09
+summary: 聚类感知掩码把预训练目标与簇内簇间结构绑定，较纯随机掩码更能学习可迁移时空关系。
+provenance:
+  extracted: 0.86
+  inferred: 0.12
+  ambiguous: 0.02</p>
+<hr />
+<h1 id="cluster-aware-masked-pretraining">Cluster-Aware Masked Pretraining</h1>
 <h2 id="_1">定义</h2>
 <p>把总掩码预算拆分为“结构感知掩码 + 随机掩码”，优先覆盖同簇元素并逐步引导跨簇关系学习。</p>
 <h2 id="_2">价值</h2>
@@ -58,7 +77,12 @@
 <li>提升时空表示的结构一致性。</li>
 <li>在多下游模型上更稳定迁移。^[inferred]</li>
 </ul>
-<h2 id="_3">关联页面</h2>
+<h2 id="_3">联网补充</h2>
+<ul>
+<li>GPT-ST 的 OpenReview 摘要明确把 adaptive mask strategy 作为核心设计，用 easy-to-hard 方式引导模型先学簇内再学簇间关系。</li>
+<li>因而这类掩码策略依赖“簇”本身有真实语义；若聚类质量差，预训练课程会同时失去结构性和迁移收益。</li>
+</ul>
+<h2 id="_4">关联页面</h2>
 <ul>
 <li><a href="../references/GPT-ST Spatio-Temporal Pretraining.html">GPT-ST Spatio-Temporal Pretraining</a></li>
 <li><a href="Spatio-Temporal Pretraining for Language Models.html">Spatio-Temporal Pretraining for Language Models</a></li>
@@ -75,11 +99,11 @@
       </div>
       <div class="meta-block">
         <p class="meta-label">Tags</p>
-        <div class="chip-list"><span class="chip">concept</span><span class="chip">spatio-temporal</span><span class="chip">pretraining</span><span class="chip">graph-learning</span></div>
+        <div class="chip-list"><span class="chip">untagged</span></div>
       </div>
       <div class="meta-block">
         <p class="meta-label">Summary</p>
-        <p>聚类感知掩码把预训练目标与簇内簇间结构绑定，较纯随机掩码更能学习可迁移时空关系。</p>
+        <p>﻿ title: Cluster Aware Masked Pretraining category: concept tags: concept spatio temporal pretraining graph learning sources: papers sources/Research Paper Notes/GPT ST预训练时空框架.md …</p>
       </div>
       <div class="meta-block">
         <p class="meta-label">Source</p>

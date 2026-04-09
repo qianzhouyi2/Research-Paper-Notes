@@ -51,17 +51,22 @@
       <article class="article-wrap panel">
         <div class="article-path">entities/SegFormer.md</div>
         <div class="markdown-body"><h1 id="segformer">SegFormer</h1>
-<h2 id="_1">在本批来源中的角色</h2>
+<h2 id="_1">联网补充</h2>
+<ul>
+<li>SegFormer 论文把它定义为层次化 Transformer 编码器加轻量 MLP 解码器的语义分割框架，并明确强调无需位置编码。</li>
+<li>在本库里，SegFormer 主要作为较难被黑盒决策攻击压垮的分割目标，用来承接 Transformer 分割模型的鲁棒性讨论。</li>
+</ul>
+<h2 id="_2">在本批来源中的角色</h2>
 <ul>
 <li>作为被攻击的语义分割模型之一参与主实验。</li>
 <li>在多个攻击方法下，相比部分 CNN 模型表现出更高鲁棒性。</li>
 </ul>
-<h2 id="_2">观测</h2>
+<h2 id="_3">观测</h2>
 <ul>
 <li>在 Cityscapes 与 ADE20K 的对比结果中，DLA 仍能显著降低其 mIoU，但降幅相对部分模型更受限。</li>
 <li>论文将其鲁棒性优势部分归因于 Transformer 结构。^[inferred]</li>
 </ul>
-<h2 id="_3">关联</h2>
+<h2 id="_4">关联</h2>
 <ul>
 <li><a href="../references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.html">Delving into Decision-based Black-box Attacks on Semantic Segmentation</a></li>
 <li><a href="../concepts/Query-Efficient Attack Evaluation.html">Query-Efficient Attack Evaluation</a></li>

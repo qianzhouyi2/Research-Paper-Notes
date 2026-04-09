@@ -2,13 +2,13 @@
 title: Shibhansh Dohare
 category: entity
 tags:
-  - entity
-  - author
-  - continual-learning
+- entity
+- author
+- continual-learning
 sources:
-  - notes/Maintaining Plasticity in Deep Continual Learning.md
+- notes/Maintaining Plasticity in Deep Continual Learning.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: Shibhansh Dohare 在该 wiki 中与持续学习可塑性丧失及 Continual Backpropagation 研究相关。
 provenance:
   extracted: 0.88
@@ -17,6 +17,11 @@ provenance:
 ---
 
 # Shibhansh Dohare
+
+## 联网补充
+
+- 根据《Maintaining Plasticity in Deep Continual Learning》的一手作者列表，Shibhansh Dohare 是该文共同作者之一；这篇工作主要围绕 通过持续反向传播和选择性重置保持深网塑性。
+- 从当前入库范围看，Shibhansh Dohare 在本库里首先与 持续学习中的塑性保持 这条研究线相连，说明已读材料对其关注面目前集中在这里。
 
 ## 关联页面
 

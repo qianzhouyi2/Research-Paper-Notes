@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Known-Solvable Attack Calibration | Research Paper Notes</title>
-  <meta name="description" content="Known-solvable calibration 先验证攻击器能否解出已知可解样本，再判断模型是否真正鲁棒。">
+  <meta name="description" content="﻿ title: Known Solvable Attack Calibration category: concept tags: concept llm safety adversarial attack evaluation sources: papers sources/Are aligned neural networks adversarial…">
   <link rel="stylesheet" href="../styles.css">
   <script defer src="../site.js"></script>
 </head>
@@ -36,7 +36,7 @@
         <div>
           <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
           <h2>Known-Solvable Attack Calibration</h2>
-          <p>Known-solvable calibration 先验证攻击器能否解出已知可解样本，再判断模型是否真正鲁棒。</p>
+          <p>﻿ title: Known Solvable Attack Calibration category: concept tags: concept llm safety adversarial attack evaluation sources: papers sources/Are aligned neural networks adversarial…</p>
         </div>
         <div class="topbar-actions">
           <div class="search-box">
@@ -50,7 +50,26 @@
 
       <article class="article-wrap panel">
         <div class="article-path">concepts/Known-Solvable Attack Calibration.md</div>
-        <div class="markdown-body"><h1 id="known-solvable-attack-calibration">Known-Solvable Attack Calibration</h1>
+        <div class="markdown-body"><p>﻿&mdash;
+title: Known-Solvable Attack Calibration
+category: concept
+tags:
+  - concept
+  - llm-safety
+  - adversarial-attack
+  - evaluation
+sources:
+  - papers_sources/Are aligned neural networks adversarially aligned 2306.15447/main.tex
+  - notes/Are aligned neural networks adversarially aligned.md
+created: 2026-04-08
+updated: 2026-04-09
+summary: Known-solvable calibration 先验证攻击器能否解出已知可解样本，再判断模型是否真正鲁棒。
+provenance:
+  extracted: 0.86
+  inferred: 0.12
+  ambiguous: 0.02</p>
+<hr />
+<h1 id="known-solvable-attack-calibration">Known-Solvable Attack Calibration</h1>
 <h2 id="_1">定义</h2>
 <p>先构造“保证存在触发解”的样本集合，再测试攻击器能否找到这些解，用于分离“攻击器弱”与“模型强”。</p>
 <h2 id="_2">价值</h2>
@@ -58,7 +77,12 @@
 <li>避免把攻击失败误判为对齐成功。</li>
 <li>把鲁棒评估拆成两阶段：攻击能力校准、真实目标评估。</li>
 </ul>
-<h2 id="_3">关联页面</h2>
+<h2 id="_3">联网补充</h2>
+<ul>
+<li>2306.15447 的一个核心方法论是先在已知存在解的设置上校准攻击器能力，再评估对齐防御；否则低攻击成功率没有解释力。</li>
+<li>这意味着安全评测必须区分“防御真的强”和“攻击器根本没找到路”两件事，尤其是在离散文本攻击容易失灵时。</li>
+</ul>
+<h2 id="_4">关联页面</h2>
 <ul>
 <li><a href="../references/Are aligned neural networks adversarially aligned.html">Are aligned neural networks adversarially aligned</a></li>
 <li><a href="Adversarial Alignment Evaluation.html">Adversarial Alignment Evaluation</a></li>
@@ -75,11 +99,11 @@
       </div>
       <div class="meta-block">
         <p class="meta-label">Tags</p>
-        <div class="chip-list"><span class="chip">concept</span><span class="chip">llm-safety</span><span class="chip">adversarial-attack</span><span class="chip">evaluation</span></div>
+        <div class="chip-list"><span class="chip">untagged</span></div>
       </div>
       <div class="meta-block">
         <p class="meta-label">Summary</p>
-        <p>Known-solvable calibration 先验证攻击器能否解出已知可解样本，再判断模型是否真正鲁棒。</p>
+        <p>﻿ title: Known Solvable Attack Calibration category: concept tags: concept llm safety adversarial attack evaluation sources: papers sources/Are aligned neural networks adversarial…</p>
       </div>
       <div class="meta-block">
         <p class="meta-label">Source</p>

@@ -2,14 +2,15 @@
 title: Yao Yao
 category: entity
 tags:
-  - entity
-  - author
-  - llm
-  - reasoning
+- entity
+- author
+- llm
+- reasoning
 sources:
-  - notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md
+- notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language
+  Models.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: Yao Yao 在该 wiki 主要关联图结构推理与结构化思维搜索方法。
 provenance:
   extracted: 0.83
@@ -18,6 +19,11 @@ provenance:
 ---
 
 # Yao Yao
+
+## 联网补充
+
+- 根据《Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models》的一手作者列表，Yao Yao 是该文共同作者之一；这篇工作主要围绕 把图结构推理扩展到比线性 CoT 更复杂的问题求解。
+- 从当前入库范围看，Yao Yao 在本库里首先与 结构化推理 这条研究线相连，说明已读材料对其关注面目前集中在这里。
 
 ## 关联页面
 

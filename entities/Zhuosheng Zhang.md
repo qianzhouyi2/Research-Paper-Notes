@@ -2,14 +2,14 @@
 title: Zhuosheng Zhang
 category: entity
 tags:
-  - entity
-  - author
-  - llm
-  - multimodal
+- entity
+- author
+- llm
+- multimodal
 sources:
-  - notes/Multimodal Chain-of-Thought Reasoning in Language Models.md
+- notes/Multimodal Chain-of-Thought Reasoning in Language Models.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: Zhuosheng Zhang 在该 wiki 主要关联多模态 CoT 推理路径。
 provenance:
   extracted: 0.81
@@ -18,6 +18,11 @@ provenance:
 ---
 
 # Zhuosheng Zhang
+
+## 联网补充
+
+- 根据《Multimodal Chain-of-Thought Reasoning in Language Models》的一手作者列表，Zhuosheng Zhang 是该文共同作者之一；这篇工作主要围绕 用两阶段方法注入多模态链式推理。
+- 从当前入库范围看，Zhuosheng Zhang 在本库里首先与 多模态推理与生成 这条研究线相连，说明已读材料对其关注面目前集中在这里。
 
 ## 关联页面
 

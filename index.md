@@ -6,7 +6,7 @@ category: index
 tags:
   - index
   - wiki
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 结果。
 ---
 
@@ -32,7 +32,7 @@ summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 
 - Concepts：50 篇（方法级与协议级概念）
 - Entities：67 篇（作者/模型/数据集）
 - Synthesis：21 篇（跨论文主题综合）
-- 已纳管来源：26 个（见 [[log]] 与 `.manifest.json`）
+- 已纳管来源：28 个（见 [[log]] 与 `.manifest.json`）
 - 原始资料：[[papers_sources]]
 - 模板：[[Templates/论文阅读模板|论文阅读模板]]
 
@@ -107,6 +107,22 @@ summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 
 - 页面更新：27 个轻量 concept 卡新增 `联网补充` 段；无新增结构页
 - 主题重点：budget routing、search-based reasoning、multimodal CoT、PEFT、CIF、multi-agent orchestration
 - 说明：本轮依据官方论文页与已整理 notes 补足机制定义、适用边界与跨论文区分；其余 23 个 concept 页结构已足够，仅完成复核不做机械改写
+
+## 最新 Concepts 联网补充（第二轮，2026-04-09）
+
+- 类型：`wiki-update`（online concept refresh）
+- 覆盖：剩余 23/23 `concepts` 补齐 `联网补充`
+- 页面更新：22 个学术 concept 页 + 1 个本地 workflow 页；无新增结构页
+- 主题重点：segmentation attacks、adversarial alignment、Hyena、plasticity、GPT-ST、Language world-model probes、CIF
+- 累计结果：50/50 `concepts` 页面现已全部带有 `联网补充`
+
+## 最新 Entities 联网补充（2026-04-09）
+
+- 类型：`wiki-update`（online entity refresh）
+- 覆盖：67/67 `entities` 补齐 `联网补充`
+- 页面更新：52 个 author、9 个 model、5 个 dataset、1 个 benchmark；无新增结构页
+- 主题重点：作者归因、一手模型定义、官方数据集范围、外部 benchmark 角色
+- 说明：本轮把实体层从“名称占位卡”提升到“实体定义 + 在本库中的作用”双层结构，便于后续继续 ingest 时直接复用
 
 ## 推荐工作流
 

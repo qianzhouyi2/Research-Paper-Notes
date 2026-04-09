@@ -1,4 +1,4 @@
----
+﻿---
 title: Perturbation Interaction
 category: concept
 tags:
@@ -10,7 +10,7 @@ tags:
 sources:
   - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 扰动交互指迭代更新之间相互抵消，导致分割攻击出现“本轮成功、下轮回退”的优化不稳定现象。
 provenance:
   extracted: 0.87
@@ -38,10 +38,17 @@ provenance:
 
 有限查询下，减少“互相打架”的更新比单次大幅扰动更关键。^[inferred]
 
+## 联网补充
+
+- DLA 论文把 perturbation interaction 作为 segmentation 黑盒攻击的核心难点之一：一个像素本轮被打错，下一轮叠加新扰动后又可能恢复正确。
+- 这正是局部、低重叠、结构化更新优于全图随机更新的原因，因为它们更少互相抵消已有攻击成果。
+
 ## 关联
 
 - [[concepts/Discrete Linear Noise]]
 - [[concepts/Proxy Index mIoU Optimization]]
 - [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]
 - [[synthesis/Decision-based Segmentation Attack Landscape]]
+
+
 

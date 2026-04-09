@@ -2,15 +2,15 @@
 title: Max Tegmark
 category: entity
 tags:
-  - entity
-  - author
-  - llm
-  - interpretability
+- entity
+- author
+- llm
+- interpretability
 sources:
-  - papers_sources/Research-Paper-Notes/LLM体现出时空概念.md
-  - notes/Language Models Represent Space and Time.md
+- papers_sources/Research-Paper-Notes/LLM体现出时空概念.md
+- notes/Language Models Represent Space and Time.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: Max Tegmark 参与时空表征探针研究，相关工作为 LLM 世界模型假设提供了可量化证据路径。
 provenance:
   extracted: 0.81
@@ -19,6 +19,11 @@ provenance:
 ---
 
 # Max Tegmark
+
+## 联网补充
+
+- 根据《Language Models Represent Space and Time》的一手作者列表，Max Tegmark 是该文共同作者之一；这篇工作主要围绕 用探针与行为任务检验语言模型的时空表征。
+- 从当前入库范围看，Max Tegmark 在本库里首先与 模型表征与探针分析 这条研究线相连，说明已读材料对其关注面目前集中在这里。
 
 ## 关联论文
 

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Perturbation Interaction | Research Paper Notes</title>
-  <meta name="description" content="扰动交互指迭代更新之间相互抵消，导致分割攻击出现“本轮成功、下轮回退”的优化不稳定现象。">
+  <meta name="description" content="﻿ title: Perturbation Interaction category: concept tags: concept adversarial attack optimization semantic segmentation perturbation sources: papers sources/Delving into Decision …">
   <link rel="stylesheet" href="../styles.css">
   <script defer src="../site.js"></script>
 </head>
@@ -36,7 +36,7 @@
         <div>
           <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
           <h2>Perturbation Interaction</h2>
-          <p>扰动交互指迭代更新之间相互抵消，导致分割攻击出现“本轮成功、下轮回退”的优化不稳定现象。</p>
+          <p>﻿ title: Perturbation Interaction category: concept tags: concept adversarial attack optimization semantic segmentation perturbation sources: papers sources/Delving into Decision …</p>
         </div>
         <div class="topbar-actions">
           <div class="search-box">
@@ -50,7 +50,26 @@
 
       <article class="article-wrap panel">
         <div class="article-path">concepts/Perturbation Interaction.md</div>
-        <div class="markdown-body"><h1 id="perturbation-interaction">Perturbation Interaction</h1>
+        <div class="markdown-body"><p>﻿&mdash;
+title: Perturbation Interaction
+category: concept
+tags:
+  - concept
+  - adversarial-attack
+  - optimization
+  - semantic-segmentation
+  - perturbation
+sources:
+  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md
+created: 2026-04-08
+updated: 2026-04-09
+summary: 扰动交互指迭代更新之间相互抵消，导致分割攻击出现“本轮成功、下轮回退”的优化不稳定现象。
+provenance:
+  extracted: 0.87
+  inferred: 0.11
+  ambiguous: 0.02</p>
+<hr />
+<h1 id="perturbation-interaction">Perturbation Interaction</h1>
 <h2 id="_1">定义</h2>
 <p>在语义分割攻击中，新加入的扰动可能抵消或破坏先前扰动的效果，导致像素类别在相邻迭代之间反复切换。</p>
 <h2 id="_2">现象</h2>
@@ -65,7 +84,12 @@
 </ul>
 <h2 id="_4">工程含义</h2>
 <p>有限查询下，减少“互相打架”的更新比单次大幅扰动更关键。^[inferred]</p>
-<h2 id="_5">关联</h2>
+<h2 id="_5">联网补充</h2>
+<ul>
+<li>DLA 论文把 perturbation interaction 作为 segmentation 黑盒攻击的核心难点之一：一个像素本轮被打错，下一轮叠加新扰动后又可能恢复正确。</li>
+<li>这正是局部、低重叠、结构化更新优于全图随机更新的原因，因为它们更少互相抵消已有攻击成果。</li>
+</ul>
+<h2 id="_6">关联</h2>
 <ul>
 <li><a href="Discrete Linear Noise.html">Discrete Linear Noise</a></li>
 <li><a href="Proxy Index mIoU Optimization.html">Proxy Index mIoU Optimization</a></li>
@@ -83,11 +107,11 @@
       </div>
       <div class="meta-block">
         <p class="meta-label">Tags</p>
-        <div class="chip-list"><span class="chip">concept</span><span class="chip">adversarial-attack</span><span class="chip">optimization</span><span class="chip">semantic-segmentation</span><span class="chip">perturbation</span></div>
+        <div class="chip-list"><span class="chip">untagged</span></div>
       </div>
       <div class="meta-block">
         <p class="meta-label">Summary</p>
-        <p>扰动交互指迭代更新之间相互抵消，导致分割攻击出现“本轮成功、下轮回退”的优化不稳定现象。</p>
+        <p>﻿ title: Perturbation Interaction category: concept tags: concept adversarial attack optimization semantic segmentation perturbation sources: papers sources/Delving into Decision …</p>
       </div>
       <div class="meta-block">
         <p class="meta-label">Source</p>

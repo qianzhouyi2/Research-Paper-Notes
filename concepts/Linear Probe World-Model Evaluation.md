@@ -1,4 +1,4 @@
----
+﻿---
 title: Linear Probe World-Model Evaluation
 category: concept
 tags:
@@ -10,7 +10,7 @@ sources:
   - papers_sources/Research-Paper-Notes/LLM体现出时空概念.md
   - notes/Language Models Represent Space and Time.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 线性探针世界模型评估通过层级激活回归时空变量，检验模型是否形成可解码且可泛化的内部结构表示。
 provenance:
   extracted: 0.9
@@ -29,9 +29,16 @@ provenance:
 - 线性可解码性是否跨提示、跨实体成立。
 - 严格留出设定下性能是否维持。
 
+## 联网补充
+
+- ICLR 2024 论文明确报告，空间和时间表征在线性探针下跨多尺度、跨实体类型成立，并且对 prompting variations 保持鲁棒。
+- 因而线性 probe 结果至少支持“表征可用性”；但作者同样强调仍需进一步研究，不能直接把 probe 成功等同于生成时的因果使用。
+
 ## 关联页面
 
 - [[references/Language Models Represent Space and Time]]
 - [[entities/Max Tegmark]]
 - [[synthesis/Structured Spatio-Temporal Representation Learning]]
+
+
 

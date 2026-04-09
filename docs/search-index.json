@@ -39,7 +39,7 @@
     "url": "concepts/Adversarial Alignment Evaluation.html",
     "path": "concepts/Adversarial Alignment Evaluation.md",
     "section": "concepts",
-    "summary": "对抗性对齐评估强调先校准攻击器能力，再判断对齐防御强度，避免将“攻击失败”误判为“模型安全”。"
+    "summary": "﻿ title: Adversarial Alignment Evaluation category: concept tags: concept llm safety adversarial attack evaluation sources: papers sources/Are aligned neural networks adversariall…"
   },
   {
     "title": "Adversarial Robustness Evaluation Patterns",
@@ -116,7 +116,7 @@
     "url": "concepts/Augmented Shortcut for Attention Blocks.html",
     "path": "concepts/Augmented Shortcut for Attention Blocks.md",
     "section": "concepts",
-    "summary": "增强捷径在注意力块并行保留多样化特征路径，可缓解深层特征坍塌与秩收缩问题。"
+    "summary": "﻿ title: Augmented Shortcut for Attention Blocks category: concept tags: concept llm architecture efficiency sources: papers sources/Research Paper Notes/PanGu π.md notes/PanGu pi…"
   },
   {
     "title": "Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models",
@@ -144,7 +144,7 @@
     "url": "concepts/Cascaded Activation Nonlinearity Compensation.html",
     "path": "concepts/Cascaded Activation Nonlinearity Compensation.md",
     "section": "concepts",
-    "summary": "级联激活补偿通过串联激活与可学习仿射变换增强 FFN 非线性表达，在有限开销下提升性能。"
+    "summary": "﻿ title: Cascaded Activation Nonlinearity Compensation category: concept tags: concept llm architecture nonlinearity sources: papers sources/Research Paper Notes/PanGu π.md notes/…"
   },
   {
     "title": "Chain of Agents Large Language Models Collaborating on Long-Context Tasks",
@@ -200,7 +200,7 @@
     "url": "concepts/Cluster-Aware Masked Pretraining.html",
     "path": "concepts/Cluster-Aware Masked Pretraining.md",
     "section": "concepts",
-    "summary": "聚类感知掩码把预训练目标与簇内簇间结构绑定，较纯随机掩码更能学习可迁移时空关系。"
+    "summary": "﻿ title: Cluster Aware Masked Pretraining category: concept tags: concept spatio temporal pretraining graph learning sources: papers sources/Research Paper Notes/GPT ST预训练时空框架.md …"
   },
   {
     "title": "ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity",
@@ -249,7 +249,7 @@
     "url": "concepts/Continual Backpropagation.html",
     "path": "concepts/Continual Backpropagation.md",
     "section": "concepts",
-    "summary": "Continual Backpropagation 在常规反向传播基础上持续替换低效隐藏单元，以低额外开销维持模型长期可塑性。"
+    "summary": "﻿ title: Continual Backpropagation category: concept tags: concept continual learning optimization plasticity sources: papers sources/Maintaining Plasticity in Deep Continual Lear…"
   },
   {
     "title": "Continual Learning Plasticity Maintenance Playbook",
@@ -270,14 +270,14 @@
     "url": "concepts/Data-Controlled Gating in Sequence Models.html",
     "path": "concepts/Data-Controlled Gating in Sequence Models.md",
     "section": "concepts",
-    "summary": "数据控制门控通过输入依赖的逐步调制提升长卷积算子表达力，是 Hyena 的核心增益来源之一。"
+    "summary": "﻿ title: Data Controlled Gating in Sequence Models category: concept tags: concept long context sequence modeling convolution sources: papers sources/Hyena Hierarchy 2302.10866/3 …"
   },
   {
     "title": "Decision-based Black-box Attack for Segmentation",
     "url": "concepts/Decision-based Black-box Attack for Segmentation.html",
     "path": "concepts/Decision-based Black-box Attack for Segmentation.md",
     "section": "concepts",
-    "summary": "语义分割中的 decision-based 攻击仅依赖标签输出，核心挑战来自像素级多约束优化和有限查询预算。"
+    "summary": "﻿ title: Decision based Black box Attack for Segmentation category: concept tags: concept adversarial attack black box attack semantic segmentation robustness sources: papers sour…"
   },
   {
     "title": "Decision-based Segmentation Attack Landscape",
@@ -333,7 +333,7 @@
     "url": "concepts/Discrete Linear Noise.html",
     "path": "concepts/Discrete Linear Noise.md",
     "section": "concepts",
-    "summary": "通过离散化并结构化为线性噪声（横向/纵向），DLA 压缩搜索空间并提升有限查询下的攻击效率。"
+    "summary": "﻿ title: Discrete Linear Noise category: concept tags: concept adversarial attack query efficient semantic segmentation perturbation sources: papers sources/Delving into Decision …"
   },
   {
     "title": "Edward Hu",
@@ -361,7 +361,7 @@
     "url": "concepts/Feature Effective Rank Diagnostics.html",
     "path": "concepts/Feature Effective Rank Diagnostics.md",
     "section": "concepts",
-    "summary": "有效秩诊断用表示谱熵近似衡量特征多样性退化，可用于监测持续学习中的可塑性丧失。"
+    "summary": "﻿ title: Feature Effective Rank Diagnostics category: concept tags: concept continual learning representation diagnostics sources: papers sources/Maintaining Plasticity in Deep Co…"
   },
   {
     "title": "Florian Tramer",
@@ -466,7 +466,7 @@
     "url": "concepts/Hierarchical Spatio-Temporal Hypergraph Encoding.html",
     "path": "concepts/Hierarchical Spatio-Temporal Hypergraph Encoding.md",
     "section": "concepts",
-    "summary": "分层时空超图编码通过簇内关系建模与簇间关系迁移联合提升复杂时空结构表达能力。"
+    "summary": "﻿ title: Hierarchical Spatio Temporal Hypergraph Encoding category: concept tags: concept spatio temporal hypergraph graph learning sources: papers sources/Research Paper Notes/GP…"
   },
   {
     "title": "Hyena Hierarchy Towards Larger Convolutional Language Models",
@@ -487,7 +487,7 @@
     "url": "concepts/Hyena Operator.html",
     "path": "concepts/Hyena Operator.md",
     "section": "concepts",
-    "summary": "Hyena Operator 以长卷积与数据控制门控交织递归，构建可替代注意力的次二次序列混合算子，面向超长上下文更具扩展性。"
+    "summary": "﻿ title: Hyena Operator category: concept tags: concept long context convolution sequence modeling sources: papers sources/Hyena Hierarchy 2302.10866/main.tex papers sources/2302.…"
   },
   {
     "title": "Implicit Chain-of-Thought Internalization",
@@ -501,7 +501,7 @@
     "url": "concepts/Implicit Long Convolution Parameterization.html",
     "path": "concepts/Implicit Long Convolution Parameterization.md",
     "section": "concepts",
-    "summary": "隐式长卷积参数化通过神经函数生成超长滤波器，解耦滤波器长度与参数规模，支撑高效长上下文建模。"
+    "summary": "﻿ title: Implicit Long Convolution Parameterization category: concept tags: concept long context convolution architecture sources: papers sources/Hyena Hierarchy 2302.10866/3 hyen…"
   },
   {
     "title": "Inference-Time Orchestration and Routing for LLMs",
@@ -543,7 +543,7 @@
     "url": "concepts/Known-Solvable Attack Calibration.html",
     "path": "concepts/Known-Solvable Attack Calibration.md",
     "section": "concepts",
-    "summary": "Known-solvable calibration 先验证攻击器能否解出已知可解样本，再判断模型是否真正鲁棒。"
+    "summary": "﻿ title: Known Solvable Attack Calibration category: concept tags: concept llm safety adversarial attack evaluation sources: papers sources/Are aligned neural networks adversarial…"
   },
   {
     "title": "Language Models Represent Space and Time",
@@ -578,7 +578,7 @@
     "url": "concepts/Linear Probe World-Model Evaluation.html",
     "path": "concepts/Linear Probe World-Model Evaluation.md",
     "section": "concepts",
-    "summary": "线性探针世界模型评估通过层级激活回归时空变量，检验模型是否形成可解码且可泛化的内部结构表示。"
+    "summary": "﻿ title: Linear Probe World Model Evaluation category: concept tags: concept llm interpretability probing sources: papers sources/Research Paper Notes/LLM体现出时空概念.md notes/Language…"
   },
   {
     "title": "Linhao Dong",
@@ -676,7 +676,7 @@
     "url": "concepts/Loss of Plasticity in Continual Learning.html",
     "path": "concepts/Loss of Plasticity in Continual Learning.md",
     "section": "concepts",
-    "summary": "可塑性丧失指模型在持续学习中逐步失去学习新任务的能力，区别于灾难性遗忘，需单独监测与干预。"
+    "summary": "﻿ title: Loss of Plasticity in Continual Learning category: concept tags: concept continual learning optimization representation sources: papers sources/Maintaining Plasticity in …"
   },
   {
     "title": "Low-Rank Adaptation for LLMs",
@@ -746,7 +746,7 @@
     "url": "concepts/Mean-Centered Feature Sparsification.html",
     "path": "concepts/Mean-Centered Feature Sparsification.md",
     "section": "concepts",
-    "summary": "均值中心化稀疏化通过在通道均值邻域内压平低信息波动，减少对抗扰动可利用空间，是一种可插拔后处理鲁棒增强策略。"
+    "summary": "﻿ title: Mean Centered Feature Sparsification category: concept tags: concept adversarial robustness feature engineering post training sources: papers sources/MeanSparse 2406.0592…"
   },
   {
     "title": "MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature",
@@ -865,7 +865,7 @@
     "url": "concepts/Multimodal Adversarial Image Prompting.html",
     "path": "concepts/Multimodal Adversarial Image Prompting.md",
     "section": "concepts",
-    "summary": "多模态对抗图像提示通过连续像素优化诱导对齐模型输出有害文本，是离散文本攻击之外的重要威胁面。"
+    "summary": "﻿ title: Multimodal Adversarial Image Prompting category: concept tags: concept multimodal adversarial attack llm safety sources: papers sources/Are aligned neural networks advers…"
   },
   {
     "title": "Multimodal Chain-of-Thought Reasoning",
@@ -1005,7 +1005,7 @@
     "url": "concepts/Perturbation Interaction.html",
     "path": "concepts/Perturbation Interaction.md",
     "section": "concepts",
-    "summary": "扰动交互指迭代更新之间相互抵消，导致分割攻击出现“本轮成功、下轮回退”的优化不稳定现象。"
+    "summary": "﻿ title: Perturbation Interaction category: concept tags: concept adversarial attack optimization semantic segmentation perturbation sources: papers sources/Delving into Decision …"
   },
   {
     "title": "Probabilistic Inference-Time Control for LLMs",
@@ -1054,7 +1054,7 @@
     "url": "concepts/Proxy Index mIoU Optimization.html",
     "path": "concepts/Proxy Index mIoU Optimization.md",
     "section": "concepts",
-    "summary": "在 decision-based 分割攻击中，以 mIoU 作为代理指标可提供稳定反馈，优于仅用像素准确率的局部目标。"
+    "summary": "﻿ title: Proxy Index mIoU Optimization category: concept tags: concept optimization semantic segmentation evaluation adversarial attack sources: papers sources/Delving into Decisi…"
   },
   {
     "title": "Qingfeng Lan",
@@ -1068,14 +1068,14 @@
     "url": "concepts/Quantity-Aware Emission Control in CIF.html",
     "path": "concepts/Quantity-Aware Emission Control in CIF.md",
     "section": "concepts",
-    "summary": "CIF 的数量感知发射控制通过缩放、数量损失与尾部处理三策略约束发射数量，稳定单调对齐训练与推理。"
+    "summary": "﻿ title: Quantity Aware Emission Control in CIF category: concept tags: concept asr alignment sequence modeling sources: papers sources/Research Paper Notes/CIF.md notes/CIF Conti…"
   },
   {
     "title": "Query-Efficient Attack Evaluation",
     "url": "concepts/Query-Efficient Attack Evaluation.html",
     "path": "concepts/Query-Efficient Attack Evaluation.md",
     "section": "concepts",
-    "summary": "用固定查询预算比较攻击后 mIoU，可评估分割模型在现实黑盒条件下的鲁棒性与被攻破速度。"
+    "summary": "﻿ title: Query Efficient Attack Evaluation category: concept tags: concept evaluation query efficient robustness semantic segmentation sources: papers sources/Delving into Decisio…"
   },
   {
     "title": "References 索引",
@@ -1166,7 +1166,7 @@
     "url": "concepts/Selective Neuron Reinitialization.html",
     "path": "concepts/Selective Neuron Reinitialization.md",
     "section": "concepts",
-    "summary": "选择性神经元重初始化通过替换低效隐藏单元并保护新单元成熟期，持续注入学习能力以减缓可塑性衰退。"
+    "summary": "﻿ title: Selective Neuron Reinitialization category: concept tags: concept continual learning optimization plasticity sources: papers sources/Maintaining Plasticity in Deep Contin…"
   },
   {
     "title": "Shibhansh Dohare",
@@ -1348,7 +1348,7 @@
     "url": "concepts/Wiki Append Update Playbook.html",
     "path": "concepts/Wiki Append Update Playbook.md",
     "section": "concepts",
-    "summary": "该流程页沉淀了论文仓库的手工 append 更新实践，覆盖来源筛选、页面蒸馏、交叉链接、manifest 对账与日志回写。"
+    "summary": "﻿ title: Wiki Append Update Playbook category: concept tags: concept wiki workflow ingest sources: workspace/wiki update 2026 04 08 created: 2026 04 08 updated: 2026 04 09 summary…"
   },
   {
     "title": "Wiki Coverage Audit 2026-04-08",

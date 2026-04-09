@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Decision-based Black-box Attack for Segmentation | Research Paper Notes</title>
-  <meta name="description" content="语义分割中的 decision-based 攻击仅依赖标签输出，核心挑战来自像素级多约束优化和有限查询预算。">
+  <meta name="description" content="﻿ title: Decision based Black box Attack for Segmentation category: concept tags: concept adversarial attack black box attack semantic segmentation robustness sources: papers sour…">
   <link rel="stylesheet" href="../styles.css">
   <script defer src="../site.js"></script>
 </head>
@@ -36,7 +36,7 @@
         <div>
           <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
           <h2>Decision-based Black-box Attack for Segmentation</h2>
-          <p>语义分割中的 decision-based 攻击仅依赖标签输出，核心挑战来自像素级多约束优化和有限查询预算。</p>
+          <p>﻿ title: Decision based Black box Attack for Segmentation category: concept tags: concept adversarial attack black box attack semantic segmentation robustness sources: papers sour…</p>
         </div>
         <div class="topbar-actions">
           <div class="search-box">
@@ -50,7 +50,26 @@
 
       <article class="article-wrap panel">
         <div class="article-path">concepts/Decision-based Black-box Attack for Segmentation.md</div>
-        <div class="markdown-body"><h1 id="decision-based-black-box-attack-for-segmentation">Decision-based Black-box Attack for Segmentation</h1>
+        <div class="markdown-body"><p>﻿&mdash;
+title: Decision-based Black-box Attack for Segmentation
+category: concept
+tags:
+  - concept
+  - adversarial-attack
+  - black-box-attack
+  - semantic-segmentation
+  - robustness
+sources:
+  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md
+created: 2026-04-08
+updated: 2026-04-09
+summary: 语义分割中的 decision-based 攻击仅依赖标签输出，核心挑战来自像素级多约束优化和有限查询预算。
+provenance:
+  extracted: 0.84
+  inferred: 0.14
+  ambiguous: 0.02</p>
+<hr />
+<h1 id="decision-based-black-box-attack-for-segmentation">Decision-based Black-box Attack for Segmentation</h1>
 <h2 id="_1">定义</h2>
 <p>攻击者只能访问分割模型输出标签（无概率、无梯度），目标是在查询预算内最大化像素误分并降低整体指标（常用 mIoU）。</p>
 <h2 id="_2">与图像分类差异</h2>
@@ -70,7 +89,12 @@
 <li>先定义稳定代理指标，再做可控搜索空间压缩。</li>
 <li>局部结构化扰动比全图随机噪声更有效。^[inferred]</li>
 </ul>
-<h2 id="_5">关联</h2>
+<h2 id="_5">联网补充</h2>
+<ul>
+<li>arXiv 2402.01220 将其定义为语义分割上的首个 decision-based black-box 系统研究，并把 DLA 建立在 random search、proxy index 与 discrete linear noise 之上。</li>
+<li>论文强调该问题不同于图像分类黑盒攻击：像素级输出把它变成大规模多约束优化，许多分类攻击套路不能直接照搬。</li>
+</ul>
+<h2 id="_6">关联</h2>
 <ul>
 <li><a href="../references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.html">Delving into Decision-based Black-box Attacks on Semantic Segmentation</a></li>
 <li><a href="Proxy Index mIoU Optimization.html">Proxy Index mIoU Optimization</a></li>
@@ -89,11 +113,11 @@
       </div>
       <div class="meta-block">
         <p class="meta-label">Tags</p>
-        <div class="chip-list"><span class="chip">concept</span><span class="chip">adversarial-attack</span><span class="chip">black-box-attack</span><span class="chip">semantic-segmentation</span><span class="chip">robustness</span></div>
+        <div class="chip-list"><span class="chip">untagged</span></div>
       </div>
       <div class="meta-block">
         <p class="meta-label">Summary</p>
-        <p>语义分割中的 decision-based 攻击仅依赖标签输出，核心挑战来自像素级多约束优化和有限查询预算。</p>
+        <p>﻿ title: Decision based Black box Attack for Segmentation category: concept tags: concept adversarial attack black box attack semantic segmentation robustness sources: papers sour…</p>
       </div>
       <div class="meta-block">
         <p class="meta-label">Source</p>

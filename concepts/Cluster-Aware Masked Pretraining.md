@@ -1,4 +1,4 @@
----
+﻿---
 title: Cluster-Aware Masked Pretraining
 category: concept
 tags:
@@ -10,7 +10,7 @@ sources:
   - papers_sources/Research-Paper-Notes/GPT-ST预训练时空框架.md
   - notes/GPT-ST Spatio-Temporal Pretraining.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 聚类感知掩码把预训练目标与簇内簇间结构绑定，较纯随机掩码更能学习可迁移时空关系。
 provenance:
   extracted: 0.86
@@ -29,9 +29,16 @@ provenance:
 - 提升时空表示的结构一致性。
 - 在多下游模型上更稳定迁移。^[inferred]
 
+## 联网补充
+
+- GPT-ST 的 OpenReview 摘要明确把 adaptive mask strategy 作为核心设计，用 easy-to-hard 方式引导模型先学簇内再学簇间关系。
+- 因而这类掩码策略依赖“簇”本身有真实语义；若聚类质量差，预训练课程会同时失去结构性和迁移收益。
+
 ## 关联页面
 
 - [[references/GPT-ST Spatio-Temporal Pretraining]]
 - [[concepts/Spatio-Temporal Pretraining for Language Models]]
 - [[synthesis/Structured Spatio-Temporal Representation Learning]]
+
+
 

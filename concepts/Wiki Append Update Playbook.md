@@ -1,4 +1,4 @@
----
+﻿---
 title: Wiki Append Update Playbook
 category: concept
 tags:
@@ -9,7 +9,7 @@ tags:
 sources:
   - workspace/wiki-update-2026-04-08
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 该流程页沉淀了论文仓库的手工 append 更新实践，覆盖来源筛选、页面蒸馏、交叉链接、manifest 对账与日志回写。
 provenance:
   extracted: 0.79
@@ -53,6 +53,11 @@ provenance:
 - manifest 的 `total_sources_ingested` 与 `sources` 实际条目数是否一致。
 - `log.md` 是否与本次页面变更数量大致对齐。^[inferred]
 
+## 联网补充
+
+- 本页来源仅是本地 workflow，不适用论文事实型联网核验；真正需要联网核对的对象应是 `references`、`concepts` 与对应官方论文页。
+- 它的边界是“组织和对账流程”，不是知识事实层；当 playbook 文字与 `.manifest.json` 或论文原页冲突时，应以后两者为准。
+
 ## 关联页面
 
 - [[index]]
@@ -60,4 +65,6 @@ provenance:
 - [[references/index]]
 - [[concepts/index]]
 - [[synthesis/index]]
+
+
 

@@ -9,7 +9,7 @@ tags:
 sources:
   - workspace/wiki-coverage-audit-2026-04-08
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 本页记录 2026-04-08 的全量缺口盘点结果，覆盖 notes 到 references 的映射完整性及 concepts/entities/synthesis 链接覆盖度。
 provenance:
   extracted: 0.91
@@ -138,11 +138,52 @@ provenance:
   - `concepts` 层已从“定义卡”提升到“定义 + 联网补充”的双层结构
   - richer concept 页未发现需要按一手来源重写的事实漂移
 
+## 九轮联网核验后复测（concept refresh 2）
+
+- `concepts` 总数：50
+- 第二轮 concept 联网补充覆盖：23/23 剩余页面
+- 本轮实质更新：
+  - 22 个学术 concept 页新增 `联网补充`
+  - 1 个本地 workflow 页补充“不适用论文型联网核验”的边界说明
+  - 重点收口 segmentation attacks、adversarial alignment、Hyena、plasticity、GPT-ST、CIF 等簇
+- 累计结果：
+  - 50/50 `concepts` 页面现已带有 `联网补充`
+  - `notes`：26
+  - `references`：26
+  - `entities`：67
+  - `synthesis`：21
+- 复核结论：
+  - `concepts` 层已从“部分联网补充”闭合到“全量联网补充”
+  - 本轮未新增结构页，主要是把厚概念卡补齐到与轻量概念卡一致的解释粒度
+
+## 十轮联网核验后复测（entity refresh）
+
+- `entities` 总数：67
+- `entities` 联网补充覆盖：67/67
+- 类型分布：
+  - `author`：52
+  - `model`：9
+  - `dataset`：5
+  - `benchmark`：1
+- 本轮实质更新：
+  - 所有实体页新增 `联网补充`
+  - 重点补足作者归因、模型官方定义、数据集范围与 benchmark 角色
+  - 未新增或删除结构页
+- 结构总量保持不变：
+  - `notes`：26
+  - `references`：26
+  - `concepts`：50
+  - `entities`：67
+  - `synthesis`：21
+- 复核结论：
+  - `entities` 层已从“命名占位”提升到“实体定义 + 本库角色”的双层结构
+  - 这轮之后，`concepts` 与 `entities` 两层都已完成全量联网补充
+
 ## 优先修复顺序
 
-1. 先补 `reference -> entities` 缺口（当前最明显）。
-2. 再补 `reference -> concepts/synthesis` 的剩余缺口。
-3. 最后逐篇回补 `note -> reference/concepts/entities/synthesis` 入口段落。^[inferred]
+1. 把 `notes` 里的 `论文信息` 区统一成和 `references` 一样的联网核验格式。
+2. 对 `synthesis` 层做与 `concepts/entities` 一致的标准化联网补充。
+3. 后续 ingest 新论文时优先复用现有实体页，避免重复创建近义 author/model/dataset 卡。^[inferred]
 
 ## 关联页面
 

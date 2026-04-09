@@ -1,4 +1,4 @@
----
+﻿---
 title: Mean-Centered Feature Sparsification
 category: concept
 tags:
@@ -10,7 +10,7 @@ sources:
   - papers_sources/MeanSparse 2406.05927/main.tex
   - papers_sources/MeanSparse 2406.05927/source.tar.gz
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 均值中心化稀疏化通过在通道均值邻域内压平低信息波动，减少对抗扰动可利用空间，是一种可插拔后处理鲁棒增强策略。
 provenance:
   extracted: 0.9
@@ -36,6 +36,11 @@ provenance:
 - 采用逐通道统计优于全局统一统计。
 - 需要在 clean 与 robust 指标之间搜索平衡阈值。^[inferred]
 
+## 联网补充
+
+- arXiv 2406.05927 将 MeanSparse 定义为对 adversarially trained model 的 post-processing：稀疏化 mean-centered feature vectors，以减少均值附近的小幅特征波动。
+- 论文强调这些被压平的变化对 utility 影响很小，却能显著削弱对抗扰动，因此它更像已有 AT 模型的鲁棒性放大器，而不是 AT 的替代品。
+
 ## 关联页面
 
 - [[references/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature Sparsification]]
@@ -43,3 +48,5 @@ provenance:
 - [[synthesis/Alignment Robustness Evaluation Ladder]]
 - [[entities/Amir Houmansadr]]
 - [[notes/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature]]
+
+

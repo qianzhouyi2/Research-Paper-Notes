@@ -2,15 +2,15 @@
 title: Hanting Chen
 category: entity
 tags:
-  - entity
-  - author
-  - llm
-  - architecture
+- entity
+- author
+- llm
+- architecture
 sources:
-  - papers_sources/Research-Paper-Notes/PanGu-π.md
-  - notes/PanGu-pi Nonlinearity Compensation.md
+- papers_sources/Research-Paper-Notes/PanGu-π.md
+- notes/PanGu-pi Nonlinearity Compensation.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: Hanting Chen 参与 PanGu-π 架构研究，工作重点是通过结构补偿提升大模型表达效率。
 provenance:
   extracted: 0.78
@@ -19,6 +19,11 @@ provenance:
 ---
 
 # Hanting Chen
+
+## 联网补充
+
+- 根据《PanGu-pi Nonlinearity Compensation》的一手作者列表，Hanting Chen 是该文共同作者之一；这篇工作主要围绕 在时序预测里加入级联非线性补偿。
+- 从当前入库范围看，Hanting Chen 在本库里首先与 模型结构与非线性补偿 这条研究线相连，说明已读材料对其关注面目前集中在这里。
 
 ## 关联论文
 

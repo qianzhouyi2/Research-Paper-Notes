@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Query-Efficient Attack Evaluation | Research Paper Notes</title>
-  <meta name="description" content="用固定查询预算比较攻击后 mIoU，可评估分割模型在现实黑盒条件下的鲁棒性与被攻破速度。">
+  <meta name="description" content="﻿ title: Query Efficient Attack Evaluation category: concept tags: concept evaluation query efficient robustness semantic segmentation sources: papers sources/Delving into Decisio…">
   <link rel="stylesheet" href="../styles.css">
   <script defer src="../site.js"></script>
 </head>
@@ -36,7 +36,7 @@
         <div>
           <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
           <h2>Query-Efficient Attack Evaluation</h2>
-          <p>用固定查询预算比较攻击后 mIoU，可评估分割模型在现实黑盒条件下的鲁棒性与被攻破速度。</p>
+          <p>﻿ title: Query Efficient Attack Evaluation category: concept tags: concept evaluation query efficient robustness semantic segmentation sources: papers sources/Delving into Decisio…</p>
         </div>
         <div class="topbar-actions">
           <div class="search-box">
@@ -50,7 +50,26 @@
 
       <article class="article-wrap panel">
         <div class="article-path">concepts/Query-Efficient Attack Evaluation.md</div>
-        <div class="markdown-body"><h1 id="query-efficient-attack-evaluation">Query-Efficient Attack Evaluation</h1>
+        <div class="markdown-body"><p>﻿&mdash;
+title: Query-Efficient Attack Evaluation
+category: concept
+tags:
+  - concept
+  - evaluation
+  - query-efficient
+  - robustness
+  - semantic-segmentation
+sources:
+  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md
+created: 2026-04-08
+updated: 2026-04-09
+summary: 用固定查询预算比较攻击后 mIoU，可评估分割模型在现实黑盒条件下的鲁棒性与被攻破速度。
+provenance:
+  extracted: 0.84
+  inferred: 0.14
+  ambiguous: 0.02</p>
+<hr />
+<h1 id="query-efficient-attack-evaluation">Query-Efficient Attack Evaluation</h1>
 <h2 id="_1">目的</h2>
 <p>在现实攻击场景中，查询次数通常受限。评估应报告“在 N 次查询内能把性能打到多低”。</p>
 <h2 id="_2">典型预算</h2>
@@ -66,7 +85,12 @@
 </ul>
 <h2 id="_4">结论模式</h2>
 <p>若方法在低查询预算下仍能显著降 mIoU，则更接近工业威胁模型。^[inferred]</p>
-<h2 id="_5">关联</h2>
+<h2 id="_5">联网补充</h2>
+<ul>
+<li>DLA 在 Cityscapes 上 50 次查询就能把 PSPNet 的 mIoU 从 77.83% 压到 2.14%，说明 query efficiency 很大程度来自搜索空间设计，而不只是梯度估计技巧。</li>
+<li>但查询数不能脱离扰动形状单独解读；在 segmentation 里，攻击强度、可感知性和 query budget 是联动指标。</li>
+</ul>
+<h2 id="_6">关联</h2>
 <ul>
 <li><a href="Proxy Index mIoU Optimization.html">Proxy Index mIoU Optimization</a></li>
 <li><a href="../references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.html">Delving into Decision-based Black-box Attacks on Semantic Segmentation</a></li>
@@ -84,11 +108,11 @@
       </div>
       <div class="meta-block">
         <p class="meta-label">Tags</p>
-        <div class="chip-list"><span class="chip">concept</span><span class="chip">evaluation</span><span class="chip">query-efficient</span><span class="chip">robustness</span><span class="chip">semantic-segmentation</span></div>
+        <div class="chip-list"><span class="chip">untagged</span></div>
       </div>
       <div class="meta-block">
         <p class="meta-label">Summary</p>
-        <p>用固定查询预算比较攻击后 mIoU，可评估分割模型在现实黑盒条件下的鲁棒性与被攻破速度。</p>
+        <p>﻿ title: Query Efficient Attack Evaluation category: concept tags: concept evaluation query efficient robustness semantic segmentation sources: papers sources/Delving into Decisio…</p>
       </div>
       <div class="meta-block">
         <p class="meta-label">Source</p>

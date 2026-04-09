@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Multimodal Adversarial Image Prompting | Research Paper Notes</title>
-  <meta name="description" content="多模态对抗图像提示通过连续像素优化诱导对齐模型输出有害文本，是离散文本攻击之外的重要威胁面。">
+  <meta name="description" content="﻿ title: Multimodal Adversarial Image Prompting category: concept tags: concept multimodal adversarial attack llm safety sources: papers sources/Are aligned neural networks advers…">
   <link rel="stylesheet" href="../styles.css">
   <script defer src="../site.js"></script>
 </head>
@@ -36,7 +36,7 @@
         <div>
           <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
           <h2>Multimodal Adversarial Image Prompting</h2>
-          <p>多模态对抗图像提示通过连续像素优化诱导对齐模型输出有害文本，是离散文本攻击之外的重要威胁面。</p>
+          <p>﻿ title: Multimodal Adversarial Image Prompting category: concept tags: concept multimodal adversarial attack llm safety sources: papers sources/Are aligned neural networks advers…</p>
         </div>
         <div class="topbar-actions">
           <div class="search-box">
@@ -50,7 +50,26 @@
 
       <article class="article-wrap panel">
         <div class="article-path">concepts/Multimodal Adversarial Image Prompting.md</div>
-        <div class="markdown-body"><h1 id="multimodal-adversarial-image-prompting">Multimodal Adversarial Image Prompting</h1>
+        <div class="markdown-body"><p>﻿&mdash;
+title: Multimodal Adversarial Image Prompting
+category: concept
+tags:
+  - concept
+  - multimodal
+  - adversarial-attack
+  - llm-safety
+sources:
+  - papers_sources/Are aligned neural networks adversarially aligned 2306.15447/main.tex
+  - notes/Are aligned neural networks adversarially aligned.md
+created: 2026-04-08
+updated: 2026-04-09
+summary: 多模态对抗图像提示通过连续像素优化诱导对齐模型输出有害文本，是离散文本攻击之外的重要威胁面。
+provenance:
+  extracted: 0.84
+  inferred: 0.14
+  ambiguous: 0.02</p>
+<hr />
+<h1 id="multimodal-adversarial-image-prompting">Multimodal Adversarial Image Prompting</h1>
 <h2 id="_1">定义</h2>
 <p>在视觉输入上执行梯度优化（如 PGD），以固定目标文本作为 teacher-forcing 监督，最大化目标有害输出出现概率。</p>
 <h2 id="_2">适用边界</h2>
@@ -58,7 +77,12 @@
 <li>适用于可微视觉编码链路。</li>
 <li>对纯文本模型不可直接使用，需要其他离散优化策略。^[inferred]</li>
 </ul>
-<h2 id="_3">关联页面</h2>
+<h2 id="_3">联网补充</h2>
+<ul>
+<li>2306.15447 显示多模态模型可通过对输入图像施加对抗扰动而被诱导输出任意不对齐行为，这一结论来自论文的一手攻击实验而非纯推测。</li>
+<li>该概念的重要边界是：连续视觉通道提供了比离散文本 token 更容易优化的攻击面，所以 text-only 安全结论不能直接外推到 VLM。</li>
+</ul>
+<h2 id="_4">关联页面</h2>
 <ul>
 <li><a href="../references/Are aligned neural networks adversarially aligned.html">Are aligned neural networks adversarially aligned</a></li>
 <li><a href="../entities/MiniGPT-4.html">MiniGPT-4</a></li>
@@ -77,11 +101,11 @@
       </div>
       <div class="meta-block">
         <p class="meta-label">Tags</p>
-        <div class="chip-list"><span class="chip">concept</span><span class="chip">multimodal</span><span class="chip">adversarial-attack</span><span class="chip">llm-safety</span></div>
+        <div class="chip-list"><span class="chip">untagged</span></div>
       </div>
       <div class="meta-block">
         <p class="meta-label">Summary</p>
-        <p>多模态对抗图像提示通过连续像素优化诱导对齐模型输出有害文本，是离散文本攻击之外的重要威胁面。</p>
+        <p>﻿ title: Multimodal Adversarial Image Prompting category: concept tags: concept multimodal adversarial attack llm safety sources: papers sources/Are aligned neural networks advers…</p>
       </div>
       <div class="meta-block">
         <p class="meta-label">Source</p>

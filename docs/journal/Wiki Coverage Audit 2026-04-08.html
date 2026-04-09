@@ -170,11 +170,52 @@
 <li><code>concepts</code> 层已从“定义卡”提升到“定义 + 联网补充”的双层结构</li>
 <li>richer concept 页未发现需要按一手来源重写的事实漂移</li>
 </ul>
+<h2 id="concept-refresh-2">九轮联网核验后复测（concept refresh 2）</h2>
+<ul>
+<li><code>concepts</code> 总数：50</li>
+<li>第二轮 concept 联网补充覆盖：23/23 剩余页面</li>
+<li>本轮实质更新：</li>
+<li>22 个学术 concept 页新增 <code>联网补充</code></li>
+<li>1 个本地 workflow 页补充“不适用论文型联网核验”的边界说明</li>
+<li>重点收口 segmentation attacks、adversarial alignment、Hyena、plasticity、GPT-ST、CIF 等簇</li>
+<li>累计结果：</li>
+<li>50/50 <code>concepts</code> 页面现已带有 <code>联网补充</code></li>
+<li><code>notes</code>：26</li>
+<li><code>references</code>：26</li>
+<li><code>entities</code>：67</li>
+<li><code>synthesis</code>：21</li>
+<li>复核结论：</li>
+<li><code>concepts</code> 层已从“部分联网补充”闭合到“全量联网补充”</li>
+<li>本轮未新增结构页，主要是把厚概念卡补齐到与轻量概念卡一致的解释粒度</li>
+</ul>
+<h2 id="entity-refresh">十轮联网核验后复测（entity refresh）</h2>
+<ul>
+<li><code>entities</code> 总数：67</li>
+<li><code>entities</code> 联网补充覆盖：67/67</li>
+<li>类型分布：</li>
+<li><code>author</code>：52</li>
+<li><code>model</code>：9</li>
+<li><code>dataset</code>：5</li>
+<li><code>benchmark</code>：1</li>
+<li>本轮实质更新：</li>
+<li>所有实体页新增 <code>联网补充</code></li>
+<li>重点补足作者归因、模型官方定义、数据集范围与 benchmark 角色</li>
+<li>未新增或删除结构页</li>
+<li>结构总量保持不变：</li>
+<li><code>notes</code>：26</li>
+<li><code>references</code>：26</li>
+<li><code>concepts</code>：50</li>
+<li><code>entities</code>：67</li>
+<li><code>synthesis</code>：21</li>
+<li>复核结论：</li>
+<li><code>entities</code> 层已从“命名占位”提升到“实体定义 + 本库角色”的双层结构</li>
+<li>这轮之后，<code>concepts</code> 与 <code>entities</code> 两层都已完成全量联网补充</li>
+</ul>
 <h2 id="_4">优先修复顺序</h2>
 <ol>
-<li>先补 <code>reference -&gt; entities</code> 缺口（当前最明显）。</li>
-<li>再补 <code>reference -&gt; concepts/synthesis</code> 的剩余缺口。</li>
-<li>最后逐篇回补 <code>note -&gt; reference/concepts/entities/synthesis</code> 入口段落。^[inferred]</li>
+<li>把 <code>notes</code> 里的 <code>论文信息</code> 区统一成和 <code>references</code> 一样的联网核验格式。</li>
+<li>对 <code>synthesis</code> 层做与 <code>concepts/entities</code> 一致的标准化联网补充。</li>
+<li>后续 ingest 新论文时优先复用现有实体页，避免重复创建近义 author/model/dataset 卡。^[inferred]</li>
 </ol>
 <h2 id="_5">关联页面</h2>
 <ul>

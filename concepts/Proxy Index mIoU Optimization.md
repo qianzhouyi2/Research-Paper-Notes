@@ -1,4 +1,4 @@
----
+﻿---
 title: Proxy Index mIoU Optimization
 category: concept
 tags:
@@ -10,7 +10,7 @@ tags:
 sources:
   - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 在 decision-based 分割攻击中，以 mIoU 作为代理指标可提供稳定反馈，优于仅用像素准确率的局部目标。
 provenance:
   extracted: 0.86
@@ -39,10 +39,17 @@ provenance:
 - 如果目标是特定类别破坏，单一 mIoU 可能过粗。
 - 代理指标与真实任务目标不一致时，会产生优化偏差。^[inferred]
 
+## 联网补充
+
+- 在 DLA 的 case study 里，mIoU 被选为 proxy index，不是因为它最容易算，而是因为它比 PAcc 更贴近分割整体结构质量和 benchmark 评估口径。
+- 因此代理指标的价值在于提供更有信息量的 accept/reject 信号；若 proxy 和真实目标脱节，再高频查询也只是低效搜索。
+
 ## 关联
 
 - [[concepts/Decision-based Black-box Attack for Segmentation]]
 - [[concepts/Query-Efficient Attack Evaluation]]
 - [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]
 - [[entities/SegFormer]]
+
+
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Decision-based Black-box Attack for Segmentation
 category: concept
 tags:
@@ -10,7 +10,7 @@ tags:
 sources:
   - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 语义分割中的 decision-based 攻击仅依赖标签输出，核心挑战来自像素级多约束优化和有限查询预算。
 provenance:
   extracted: 0.84
@@ -41,6 +41,11 @@ provenance:
 - 先定义稳定代理指标，再做可控搜索空间压缩。
 - 局部结构化扰动比全图随机噪声更有效。^[inferred]
 
+## 联网补充
+
+- arXiv 2402.01220 将其定义为语义分割上的首个 decision-based black-box 系统研究，并把 DLA 建立在 random search、proxy index 与 discrete linear noise 之上。
+- 论文强调该问题不同于图像分类黑盒攻击：像素级输出把它变成大规模多约束优化，许多分类攻击套路不能直接照搬。
+
 ## 关联
 
 - [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]
@@ -48,4 +53,6 @@ provenance:
 - [[concepts/Perturbation Interaction]]
 - [[concepts/Discrete Linear Noise]]
 - [[synthesis/Decision-based Segmentation Attack Landscape]]
+
+
 

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Data-Controlled Gating in Sequence Models | Research Paper Notes</title>
-  <meta name="description" content="数据控制门控通过输入依赖的逐步调制提升长卷积算子表达力，是 Hyena 的核心增益来源之一。">
+  <meta name="description" content="﻿ title: Data Controlled Gating in Sequence Models category: concept tags: concept long context sequence modeling convolution sources: papers sources/Hyena Hierarchy 2302.10866/3 …">
   <link rel="stylesheet" href="../styles.css">
   <script defer src="../site.js"></script>
 </head>
@@ -36,7 +36,7 @@
         <div>
           <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
           <h2>Data-Controlled Gating in Sequence Models</h2>
-          <p>数据控制门控通过输入依赖的逐步调制提升长卷积算子表达力，是 Hyena 的核心增益来源之一。</p>
+          <p>﻿ title: Data Controlled Gating in Sequence Models category: concept tags: concept long context sequence modeling convolution sources: papers sources/Hyena Hierarchy 2302.10866/3 …</p>
         </div>
         <div class="topbar-actions">
           <div class="search-box">
@@ -50,7 +50,26 @@
 
       <article class="article-wrap panel">
         <div class="article-path">concepts/Data-Controlled Gating in Sequence Models.md</div>
-        <div class="markdown-body"><h1 id="data-controlled-gating-in-sequence-models">Data-Controlled Gating in Sequence Models</h1>
+        <div class="markdown-body"><p>﻿&mdash;
+title: Data-Controlled Gating in Sequence Models
+category: concept
+tags:
+  - concept
+  - long-context
+  - sequence-modeling
+  - convolution
+sources:
+  - papers_sources/Hyena Hierarchy 2302.10866/3_hyena.tex
+  - notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md
+created: 2026-04-08
+updated: 2026-04-09
+summary: 数据控制门控通过输入依赖的逐步调制提升长卷积算子表达力，是 Hyena 的核心增益来源之一。
+provenance:
+  extracted: 0.87
+  inferred: 0.11
+  ambiguous: 0.02</p>
+<hr />
+<h1 id="data-controlled-gating-in-sequence-models">Data-Controlled Gating in Sequence Models</h1>
 <h2 id="_1">定义</h2>
 <p>在序列混合中使用输入相关门控系数，对卷积输出做逐步调制，形成“内容条件化”的全局混合算子。</p>
 <h2 id="_2">工程意义</h2>
@@ -58,7 +77,12 @@
 <li>提升次二次算子表达能力。</li>
 <li>在不回退到全注意力的前提下保留上下文选择性。^[inferred]</li>
 </ul>
-<h2 id="_3">关联页面</h2>
+<h2 id="_3">联网补充</h2>
+<ul>
+<li>Hyena 的核心不是长卷积本身，而是“长卷积 + data-controlled gating”的交织；门控让同一全局混合算子随输入内容改变行为。</li>
+<li>这解释了为什么 Hyena 能在长序列上接近注意力：如果只有静态滤波器而缺少输入条件控制，表达力通常不足。</li>
+</ul>
+<h2 id="_4">关联页面</h2>
 <ul>
 <li><a href="../references/Hyena Hierarchy Towards Larger Convolutional Language Models.html">Hyena Hierarchy Towards Larger Convolutional Language Models</a></li>
 <li><a href="Hyena Operator.html">Hyena Operator</a></li>
@@ -75,11 +99,11 @@
       </div>
       <div class="meta-block">
         <p class="meta-label">Tags</p>
-        <div class="chip-list"><span class="chip">concept</span><span class="chip">long-context</span><span class="chip">sequence-modeling</span><span class="chip">convolution</span></div>
+        <div class="chip-list"><span class="chip">untagged</span></div>
       </div>
       <div class="meta-block">
         <p class="meta-label">Summary</p>
-        <p>数据控制门控通过输入依赖的逐步调制提升长卷积算子表达力，是 Hyena 的核心增益来源之一。</p>
+        <p>﻿ title: Data Controlled Gating in Sequence Models category: concept tags: concept long context sequence modeling convolution sources: papers sources/Hyena Hierarchy 2302.10866/3 …</p>
       </div>
       <div class="meta-block">
         <p class="meta-label">Source</p>

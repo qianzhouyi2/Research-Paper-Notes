@@ -2,15 +2,16 @@
 title: SegFormer
 category: entity
 tags:
-  - entity
-  - model
-  - semantic-segmentation
-  - transformer
-  - robustness
+- entity
+- model
+- semantic-segmentation
+- transformer
+- robustness
 sources:
-  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md
+- papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving
+  into Decision-based Black-box Attacks on Semantic Segmentation.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 在 DLA 对比中，SegFormer 是相对更难攻击的分割模型之一，体现了较强的黑盒鲁棒性表现。
 provenance:
   extracted: 0.82
@@ -19,6 +20,11 @@ provenance:
 ---
 
 # SegFormer
+
+## 联网补充
+
+- SegFormer 论文把它定义为层次化 Transformer 编码器加轻量 MLP 解码器的语义分割框架，并明确强调无需位置编码。
+- 在本库里，SegFormer 主要作为较难被黑盒决策攻击压垮的分割目标，用来承接 Transformer 分割模型的鲁棒性讨论。
 
 ## 在本批来源中的角色
 

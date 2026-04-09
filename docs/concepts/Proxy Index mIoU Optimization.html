@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Proxy Index mIoU Optimization | Research Paper Notes</title>
-  <meta name="description" content="在 decision-based 分割攻击中，以 mIoU 作为代理指标可提供稳定反馈，优于仅用像素准确率的局部目标。">
+  <meta name="description" content="﻿ title: Proxy Index mIoU Optimization category: concept tags: concept optimization semantic segmentation evaluation adversarial attack sources: papers sources/Delving into Decisi…">
   <link rel="stylesheet" href="../styles.css">
   <script defer src="../site.js"></script>
 </head>
@@ -36,7 +36,7 @@
         <div>
           <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
           <h2>Proxy Index mIoU Optimization</h2>
-          <p>在 decision-based 分割攻击中，以 mIoU 作为代理指标可提供稳定反馈，优于仅用像素准确率的局部目标。</p>
+          <p>﻿ title: Proxy Index mIoU Optimization category: concept tags: concept optimization semantic segmentation evaluation adversarial attack sources: papers sources/Delving into Decisi…</p>
         </div>
         <div class="topbar-actions">
           <div class="search-box">
@@ -50,7 +50,26 @@
 
       <article class="article-wrap panel">
         <div class="article-path">concepts/Proxy Index mIoU Optimization.md</div>
-        <div class="markdown-body"><h1 id="proxy-index-miou-optimization">Proxy Index mIoU Optimization</h1>
+        <div class="markdown-body"><p>﻿&mdash;
+title: Proxy Index mIoU Optimization
+category: concept
+tags:
+  - concept
+  - optimization
+  - semantic-segmentation
+  - evaluation
+  - adversarial-attack
+sources:
+  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md
+created: 2026-04-08
+updated: 2026-04-09
+summary: 在 decision-based 分割攻击中，以 mIoU 作为代理指标可提供稳定反馈，优于仅用像素准确率的局部目标。
+provenance:
+  extracted: 0.86
+  inferred: 0.12
+  ambiguous: 0.02</p>
+<hr />
+<h1 id="proxy-index-miou-optimization">Proxy Index mIoU Optimization</h1>
 <h2 id="_1">概念</h2>
 <p>在无法访问梯度和置信度时，用可观测指标驱动搜索。DLA 选择 mIoU 作为代理指标，每次只接受能进一步降低 mIoU 的扰动更新。</p>
 <h2 id="miou">为什么是 mIoU</h2>
@@ -68,7 +87,12 @@
 <li>如果目标是特定类别破坏，单一 mIoU 可能过粗。</li>
 <li>代理指标与真实任务目标不一致时，会产生优化偏差。^[inferred]</li>
 </ul>
-<h2 id="_4">关联</h2>
+<h2 id="_4">联网补充</h2>
+<ul>
+<li>在 DLA 的 case study 里，mIoU 被选为 proxy index，不是因为它最容易算，而是因为它比 PAcc 更贴近分割整体结构质量和 benchmark 评估口径。</li>
+<li>因此代理指标的价值在于提供更有信息量的 accept/reject 信号；若 proxy 和真实目标脱节，再高频查询也只是低效搜索。</li>
+</ul>
+<h2 id="_5">关联</h2>
 <ul>
 <li><a href="Decision-based Black-box Attack for Segmentation.html">Decision-based Black-box Attack for Segmentation</a></li>
 <li><a href="Query-Efficient Attack Evaluation.html">Query-Efficient Attack Evaluation</a></li>
@@ -86,11 +110,11 @@
       </div>
       <div class="meta-block">
         <p class="meta-label">Tags</p>
-        <div class="chip-list"><span class="chip">concept</span><span class="chip">optimization</span><span class="chip">semantic-segmentation</span><span class="chip">evaluation</span><span class="chip">adversarial-attack</span></div>
+        <div class="chip-list"><span class="chip">untagged</span></div>
       </div>
       <div class="meta-block">
         <p class="meta-label">Summary</p>
-        <p>在 decision-based 分割攻击中，以 mIoU 作为代理指标可提供稳定反馈，优于仅用像素准确率的局部目标。</p>
+        <p>﻿ title: Proxy Index mIoU Optimization category: concept tags: concept optimization semantic segmentation evaluation adversarial attack sources: papers sources/Delving into Decisi…</p>
       </div>
       <div class="meta-block">
         <p class="meta-label">Source</p>

@@ -4,7 +4,7 @@ category: log
 tags:
   - log
   - wiki
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 记录 wiki 初始化、ingest 与维护操作的时间线。
 ---
 
@@ -42,3 +42,5 @@ summary: 记录 wiki 初始化、ingest 与维护操作的时间线。
 - [2026-04-08 22:48:28 +08:00] UPDATE source="workspace/wiki-update-2026-04-08-online-refresh" pages_updated=17 pages_created=10 mode=append notes="online metadata refresh: corrected author/entity attribution for CIF, implicit CoT, GPT-ST, Math-Shepherd, MoA, and SoT; removed 7 misattributed entity pages"
 - [2026-04-08 23:10:38 +08:00] UPDATE source="workspace/wiki-update-2026-04-08-online-refresh-2" pages_updated=24 pages_created=0 mode=append notes="completed online verification for the remaining 20 reference cards, added 4 author-entity anchors, and closed reference-level metadata coverage to 26/26"
 - [2026-04-08 23:43:13 +08:00] UPDATE source="workspace/wiki-update-2026-04-08-concepts-online-refresh" pages_updated=31 pages_created=0 mode=append notes="reviewed all 50 concept pages against primary sources and added online supplement sections to 27 lightweight concept cards"
+- [2026-04-09 00:07:09 +08:00] UPDATE source="workspace/wiki-update-2026-04-08-concepts-online-refresh-2" pages_updated=27 pages_created=0 mode=append notes="closed the remaining concept-layer online supplements across adversarial attack, plasticity, Hyena, GPT-ST, CIF, and world-model probing clusters"
+- [2026-04-09 00:41:56 +08:00] UPDATE source="workspace/wiki-update-2026-04-09-entities-online-refresh" pages_updated=71 pages_created=0 mode=append notes="added online supplement sections to all 67 entity pages and synced entities/index, home index, coverage audit, and manifest metadata"
