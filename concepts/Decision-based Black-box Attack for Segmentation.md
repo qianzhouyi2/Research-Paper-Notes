@@ -11,7 +11,7 @@ sources:
   - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md
   - https://arxiv.org/abs/2402.01220
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 summary: 语义分割中的 decision-based 攻击仅依赖标签输出，核心挑战来自像素级多约束优化和有限查询预算。
 provenance:
   extracted: 0.84
@@ -62,5 +62,12 @@ provenance:
 - [[concepts/Discrete Linear Noise]]
 - [[synthesis/Decision-based Segmentation Attack Landscape]]
 
+## Online Supplement (2026-04-10)
 
+- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
+- Text anchor used: 攻击者只能访问分割模型输出标签（无概率、无梯度），目标是在查询预算内最大化像素误分并降低整体指标（常用 mIoU）。
+- Primary online sources used in this pass:
+- https://arxiv.org/abs/2402.01220
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

@@ -1,0 +1,17 @@
+{
+  "index": 8,
+  "query_title": "On the Robustness of Semantic Segmentation Models to Adversarial Attacks",
+  "query_year": 2020,
+  "query_venue": "TPAMI",
+  "matched_title": "On the robustness of semantic segmentation models to adversarial attacks",
+  "matched_year": 2019,
+  "source_type": "tex_source",
+  "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\08_On_the_Robustness_of_Semantic_Segmentation_Models_to_Adversarial_Attac\\1711.09856.tar",
+  "status": "ok",
+  "note": "arXiv source downloaded",
+  "urls": {
+    "semantic_scholar": null,
+    "arxiv_source": "https://arxiv.org/e-print/1711.09856",
+    "arxiv_abs": "https://arxiv.org/abs/1711.09856"
+  }
+}

@@ -9,7 +9,7 @@ tags:
 sources:
 - notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 summary: Yusen Zhang 在该 wiki 中关联长上下文多智能体协作研究，代表页面是 Chain of Agents。
 provenance:
   extracted: 0.86
@@ -27,4 +27,13 @@ provenance:
 ## 关联页面
 
 - [[references/Chain of Agents Large Language Models Collaborating on Long-Context Tasks]]
+
+## Online Supplement (2026-04-10)
+
+- This entity page is cross-checked online for attribution and role consistency across linked papers.
+- Text anchor used: - 根据《Chain of Agents Large Language Models Collaborating on Long-Context Tasks》的一手作者列表，Yusen Zhang 是该文共同作者之一；这篇工作主要围绕 把长上下文任务拆成串联代理协作。 - 从当前入库范围看，Yusen Zhang 在本库里首先与 多代理协作与聚合 这条研究线相连，说明已读材料对其关注面目前集中在这里。
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

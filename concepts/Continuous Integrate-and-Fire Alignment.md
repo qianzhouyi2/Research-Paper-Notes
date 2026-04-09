@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/CIF Continuous Integrate-and-Fire.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: Continuous Integrate-and-Fire 以连续积分放电机制实现单调软对齐与边界触发，是端到端语音序列对齐的重要方法。
 provenance:
   extracted: 0.89
@@ -37,4 +37,13 @@ provenance:
 - [[references/CIF Continuous Integrate-and-Fire]]
 - [[concepts/Quantity-Aware Emission Control in CIF]]
 - [[synthesis/Structured Spatio-Temporal Representation Learning]]
+
+## Online Supplement (2026-04-10)
+
+- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
+- Text anchor used: ﻿--- title: Continuous Integrate-and-Fire Alignment category: concept tags: - concept - asr - alignment - sequence-modeling sources: - notes/CIF Continuous Integrate-and-Fire.md created: 2026-04-08 updated: 2026-04-08 summary: Continuous Integrate-and-Fire 以连续...
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

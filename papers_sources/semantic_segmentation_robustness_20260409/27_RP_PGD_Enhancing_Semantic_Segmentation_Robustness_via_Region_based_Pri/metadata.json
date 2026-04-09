@@ -1,0 +1,16 @@
+{
+  "index": 27,
+  "query_title": "RP-PGD: Enhancing Semantic Segmentation Robustness via Region-based Prioritized PGD",
+  "query_year": 2025,
+  "query_venue": "AAAI",
+  "matched_title": null,
+  "matched_year": null,
+  "source_type": "pdf",
+  "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\27_RP_PGD_Enhancing_Semantic_Segmentation_Robustness_via_Region_based_Pri\\paper.pdf",
+  "status": "ok",
+  "note": "pdf downloaded",
+  "urls": {
+    "semantic_scholar": null,
+    "pdf": "https://ojs.aaai.org/index.php/AAAI/article/download/33122/35277"
+  }
+}

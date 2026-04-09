@@ -10,7 +10,7 @@ sources:
   - notes/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity.md
   - notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: 自适应算力路由根据任务复杂度或中间信号动态分配推理资源，以在质量和成本间取得更优折中。
 provenance:
   extracted: 0.8
@@ -33,4 +33,12 @@ provenance:
 - [[references/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models]]
 - [[synthesis/LLM Inference Efficiency and Scaling]]
 
+## Online Supplement (2026-04-10)
+
+- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
+- Text anchor used: 固定推理预算会在“简单题浪费、难题不足”之间失衡；路由策略用于按需分配算力。
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

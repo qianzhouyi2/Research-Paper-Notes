@@ -10,7 +10,7 @@ tags:
 sources:
 - notes/Monte Carlo Tree Search A Review of Recent Modifications and Applications.md
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 summary: Maciej Świechowski 在该 wiki 中与 MCTS 改造综述及其应用分析相关。
 provenance:
   extracted: 0.87
@@ -29,4 +29,13 @@ provenance:
 
 - [[references/Monte Carlo Tree Search A Review of Recent Modifications and Applications]]
 - [[concepts/Monte Carlo Tree Search for LLM Reasoning]]
+
+## Online Supplement (2026-04-10)
+
+- This entity page is cross-checked online for attribution and role consistency across linked papers.
+- Text anchor used: - 根据《Monte Carlo Tree Search A Review of Recent Modifications and Applications》的一手作者列表，Maciej Swiechowski 是该文共同作者之一；这篇工作主要围绕 综述蒙特卡洛树搜索的主要变体与应用。 - 从当前入库范围看，Maciej Swiechowski 在本库里首先与 搜索式推理与树搜索 这条研究线相连，说明已读材料对其关注面目前集中在这里。
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

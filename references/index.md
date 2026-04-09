@@ -4,7 +4,7 @@ category: index
 tags:
   - index
   - reference
-updated: 2026-04-08
+updated: 2026-04-10
 summary: 单篇论文摘要与结论页面的入口索引。
 ---
 
@@ -50,3 +50,36 @@ summary: 单篇论文摘要与结论页面的入口索引。
 - 每篇论文保留一页“可复用摘要卡”
 - 重点记录：问题、方法、结论、边界、可迁移点
 - 与对应 `notes/` 页面建立双向链接
+
+## Segmentation Robustness Corpus (2026-04-10)
+
+- Verified and ingested 28 per-paper reference cards.
+- Scope: attacks, robust training, certification/verification, and benchmarking.
+- [[references/On the Robustness of Redundant Teacher-Student Frameworks for Semantic Segmentation|On the Robustness of Redundant Teacher-Student Frameworks for Semantic Segmentation]]
+- [[references/The Attack Generator - A Systematic Approach Towards Constructing Adversarial Attacks|The Attack Generator: A Systematic Approach Towards Constructing Adversarial Attacks]]
+- [[references/Indirect Local Attacks for Context-aware Semantic Segmentation Networks|Indirect Local Attacks for Context-aware Semantic Segmentation Networks]]
+- [[references/Benchmarking the Robustness of Semantic Segmentation Models (CVPR 2020)|Benchmarking the Robustness of Semantic Segmentation Models (CVPR 2020)]]
+- [[references/Benchmarking the Robustness of Semantic Segmentation Models (IJCV 2020)|Benchmarking the Robustness of Semantic Segmentation Models (IJCV 2020)]]
+- [[references/Increasing the Robustness of Semantic Segmentation Models with Painting-by-Numbers|Increasing the Robustness of Semantic Segmentation Models with Painting-by-Numbers]]
+- [[references/Improved Noise and Attack Robustness of Semantic Segmentation Models with Self-Supervised Depth Estimation|Improved Noise and Attack Robustness of Semantic Segmentation Models with Self-Supervised Depth Estimation]]
+- [[references/On the Robustness of Semantic Segmentation Models to Adversarial Attacks|On the Robustness of Semantic Segmentation Models to Adversarial Attacks]]
+- [[references/Robustness Verification of Semantic Segmentation Neural Networks using Relaxed Reachability|Robustness Verification of Semantic Segmentation Neural Networks using Relaxed Reachability]]
+- [[references/Scalable Certified Segmentation via Randomized Smoothing|Scalable Certified Segmentation via Randomized Smoothing]]
+- [[references/Dynamic Divide-and-Conquer Adversarial Training for Robust Semantic Segmentation|Dynamic Divide-and-Conquer Adversarial Training for Robust Semantic Segmentation]]
+- [[references/Adversarial Attacks against LiDAR Semantic Segmentation in Autonomous Driving|Adversarial Attacks against LiDAR Semantic Segmentation in Autonomous Driving]]
+- [[references/Towards Robust General Medical Image Segmentation|Towards Robust General Medical Image Segmentation]]
+- [[references/Evaluating the Robustness of Semantic Segmentation in Real-World Adversarial Patch Attacks|Evaluating the Robustness of Semantic Segmentation in Real-World Adversarial Patch Attacks]]
+- [[references/Towards Semantically Stealthy Adversarial Attacks Against Segmentation Models|Towards Semantically Stealthy Adversarial Attacks Against Segmentation Models]]
+- [[references/SegPGD - An Effective and Efficient Adversarial Attack for Segmentation|SegPGD: An Effective and Efficient Adversarial Attack for Segmentation]]
+- [[references/Attacking LiDAR Semantic Segmentation in Autonomous Driving|Attacking LiDAR Semantic Segmentation in Autonomous Driving]]
+- [[references/Certified Defences Against Adversarial Patch Attacks on Semantic Segmentation|Certified Defences Against Adversarial Patch Attacks on Semantic Segmentation]]
+- [[references/Ensemble-Based Blackbox Attacks on Dense Prediction|Ensemble-Based Blackbox Attacks on Dense Prediction]]
+- [[references/Proximal Splitting Adversarial Attack for Semantic Segmentation|Proximal Splitting Adversarial Attack for Semantic Segmentation]]
+- [[references/Reliability in Semantic Segmentation - Are We on the Right Track|Reliability in Semantic Segmentation: Are We on the Right Track?]]
+- [[references/Towards Robust Semantic Segmentation against Patch-based Attack via Attention Refinement|Towards Robust Semantic Segmentation against Patch-based Attack via Attention Refinement]]
+- [[references/Uncertainty-Based Detection of Adversarial Attacks in Semantic Segmentation|Uncertainty-Based Detection of Adversarial Attacks in Semantic Segmentation]]
+- [[references/Evaluating the Adversarial Robustness of Semantic Segmentation|Evaluating the Adversarial Robustness of Semantic Segmentation]]
+- [[references/Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models|Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models]]
+- [[references/SemSegBench and DetecBench - Benchmarking Reliability and Generalization Beyond Classification|SemSegBench and DetecBench: Benchmarking Reliability and Generalization Beyond Classification]]
+- [[references/RP-PGD - Enhancing Semantic Segmentation Robustness via Region-based Prioritized PGD|RP-PGD: Enhancing Semantic Segmentation Robustness via Region-based Prioritized PGD]]
+- [[references/Erosion Attack for Adversarial Training to Enhance Semantic Segmentation Robustness (arXiv preprint)|Erosion Attack for Adversarial Training to Enhance Semantic Segmentation Robustness (arXiv preprint)]]

@@ -10,7 +10,7 @@ sources:
   - papers_sources/Maintaining Plasticity in Deep Continual Learning/arxiv.tex
   - notes/Maintaining Plasticity in Deep Continual Learning.md
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 summary: 选择性神经元重初始化通过替换低效隐藏单元并保护新单元成熟期，持续注入学习能力以减缓可塑性衰退。
 provenance:
   extracted: 0.89
@@ -41,5 +41,12 @@ provenance:
 - [[concepts/Continual Backpropagation]]
 - [[synthesis/Continual Learning Plasticity Maintenance Playbook]]
 
+## Online Supplement (2026-04-10)
 
+- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
+- Text anchor used: ﻿--- title: Selective Neuron Reinitialization category: concept tags: - concept - continual-learning - optimization - plasticity sources: - papers_sources/Maintaining Plasticity in Deep Continual Learning/arxiv.tex - notes/Maintaining Plasticity in Deep Contin...
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

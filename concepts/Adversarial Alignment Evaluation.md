@@ -10,7 +10,7 @@ sources:
   - papers_sources/Are aligned neural networks adversarially aligned 2306.15447/main.tex
   - papers_sources/2306.15447.tar
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 summary: 对抗性对齐评估强调先校准攻击器能力，再判断对齐防御强度，避免将“攻击失败”误判为“模型安全”。
 provenance:
   extracted: 0.86
@@ -54,4 +54,12 @@ provenance:
 - [[synthesis/Adversarial Robustness Evaluation Patterns]]
 - [[synthesis/Alignment Robustness Evaluation Ladder]]
 
+## Online Supplement (2026-04-10)
+
+- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
+- Text anchor used: ﻿--- title: Adversarial Alignment Evaluation category: concept tags: - concept - llm-safety - adversarial-attack - evaluation sources: - papers_sources/Are aligned neural networks adversarially aligned 2306.15447/main.tex - papers_sources/2306.15447.tar create...
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

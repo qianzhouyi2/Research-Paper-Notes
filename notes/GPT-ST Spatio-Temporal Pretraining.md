@@ -1,4 +1,4 @@
-﻿# GPT-ST: Generative Pre-Training of Spatio-Temporal Graph Neural Networks
+# GPT-ST: Generative Pre-Training of Spatio-Temporal Graph Neural Networks
 
 - 阅读日期：[[2026-04-08]]
 - 阅读状态：已读

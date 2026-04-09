@@ -10,7 +10,7 @@ sources:
   - notes/GPT-ST Spatio-Temporal Pretraining.md
   - notes/Language Models Represent Space and Time.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: 时空预训练通过结构化目标让语言模型更稳定地学习空间与时间关系，并提升相关下游任务迁移能力。
 provenance:
   extracted: 0.84
@@ -35,4 +35,13 @@ provenance:
 - [[concepts/Hierarchical Spatio-Temporal Hypergraph Encoding]]
 - [[concepts/Linear Probe World-Model Evaluation]]
 - [[synthesis/Structured Spatio-Temporal Representation Learning]]
+
+## Online Supplement (2026-04-10)
+
+- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
+- Text anchor used: ﻿--- title: Spatio-Temporal Pretraining for Language Models category: concept tags: - concept - llm - spatio-temporal - pretraining sources: - notes/GPT-ST Spatio-Temporal Pretraining.md - notes/Language Models Represent Space and Time.md created: 2026-04-08 u...
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

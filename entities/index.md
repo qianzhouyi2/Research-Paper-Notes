@@ -4,7 +4,7 @@ category: index
 tags:
   - index
   - entity
-updated: 2026-04-09
+updated: 2026-04-10
 summary: 作者、模型、机构等实体页面入口索引。
 ---
 
@@ -100,3 +100,67 @@ summary: 作者、模型、机构等实体页面入口索引。
 ## 待补
 
 - 从后续新 ingest 的论文中继续抽取机构、实验室和更稳定的项目级实体
+
+## Segmentation Robustness Author Entities (2026-04-10)
+
+- Added and refreshed 60 author entities from verified paper metadata.
+- [[entities/Carsten Rother]]
+- [[entities/Christoph Kamann]]
+- [[entities/Andreas Bar]]
+- [[entities/Fabian Huger]]
+- [[entities/Peter Schlicht]]
+- [[entities/Tim Fingscheidt]]
+- [[entities/Jan Hendrik Metzen]]
+- [[entities/Hengshuang Zhao]]
+- [[entities/Chenglin Miao]]
+- [[entities/Chunming Qiao]]
+- [[entities/Foad Hajiaghajani]]
+- [[entities/Lu Su]]
+- [[entities/Mengdi Huai]]
+- [[entities/Yi Zhu]]
+- [[entities/Philip Torr]]
+- [[entities/Matthias Hein]]
+- [[entities/Felix Assion]]
+- [[entities/Florens Grener]]
+- [[entities/Nico Schmidt]]
+- [[entities/Umair Rasheed]]
+- [[entities/Wiebke Gunther]]
+- [[entities/Krishna Kanth Nakka]]
+- [[entities/Mathieu Salzmann]]
+- [[entities/Burkhard Gussefeld]]
+- [[entities/Robin Hutmacher]]
+- [[entities/Marvin Klingner]]
+- [[entities/Anurag Arnab]]
+- [[entities/Ondrej Miksik]]
+- [[entities/Philip H. S. Torr]]
+- [[entities/Diego Manzanas Lopez]]
+- [[entities/Hoang-Dung Tran]]
+- [[entities/Nathaniel Hamilton]]
+- [[entities/Neelanjana Pal]]
+- [[entities/Patrick Musau]]
+- [[entities/Stanley Bak]]
+- [[entities/Taylor T. Johnson]]
+- [[entities/Xiaodong Yang]]
+- [[entities/Marc Fischer]]
+- [[entities/Martin Vechev]]
+- [[entities/Maximilian Baader]]
+- [[entities/Jiaya Jia]]
+- [[entities/Xiaogang Xu]]
+- [[entities/Juan C. Perez]]
+- [[entities/Laura Daza]]
+- [[entities/Pablo Arbelaez]]
+- [[entities/Alessandro Biondi]]
+- [[entities/Federico Nesti]]
+- [[entities/Giorgio Buttazzo]]
+- [[entities/Giulio Rossolini]]
+- [[entities/Saasha Nair]]
+- [[entities/Chuhua Wang]]
+- [[entities/David J. Crandall]]
+- [[entities/Zhenhua Chen]]
+- [[entities/Jindong Gu]]
+- [[entities/Volker Tresp]]
+- [[entities/Kaspar Sakmann]]
+- [[entities/Maksym Yatsura]]
+- [[entities/N. Grace Hua]]
+- [[entities/M. Salman Asif]]
+- [[entities/Yaoteng Tan]]

@@ -10,7 +10,7 @@ sources:
 - papers_sources/Are aligned neural networks adversarially aligned 2306.15447/main.tex
 - notes/Are aligned neural networks adversarially aligned.md
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 summary: LLaMA-Adapter 在多模态对抗评估中用于验证视觉扰动诱导失配输出的可行性。
 provenance:
   extracted: 0.82
@@ -33,4 +33,13 @@ provenance:
 
 - [[concepts/Multimodal Adversarial Image Prompting]]
 - [[synthesis/Alignment Robustness Evaluation Ladder]]
+
+## Online Supplement (2026-04-10)
+
+- This entity page is cross-checked online for attribution and role consistency across linked papers.
+- Text anchor used: - LLaMA-Adapter 最早强调用 Zero-init Attention 和约 1.2M 可学习参数高效把 LLaMA 变成指令模型，后续 V2 又扩展到视觉指令场景。 - 在本库里，这个实体主要作为多模态对齐攻击对象出现，价值在于提供一种比全量微调更轻的适配路径对照。
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

@@ -10,7 +10,7 @@ sources:
   - papers_sources/Research-Paper-Notes/CIF.md
   - notes/CIF Continuous Integrate-and-Fire.md
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 summary: CIF 的数量感知发射控制通过缩放、数量损失与尾部处理三策略约束发射数量，稳定单调对齐训练与推理。
 provenance:
   extracted: 0.88
@@ -41,5 +41,12 @@ provenance:
 - [[concepts/Continuous Integrate-and-Fire Alignment]]
 - [[synthesis/Structured Spatio-Temporal Representation Learning]]
 
+## Online Supplement (2026-04-10)
 
+- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
+- Text anchor used: ﻿--- title: Quantity-Aware Emission Control in CIF category: concept tags: - concept - asr - alignment - sequence-modeling sources: - papers_sources/Research-Paper-Notes/CIF.md - notes/CIF Continuous Integrate-and-Fire.md created: 2026-04-08 updated: 2026-04-0...
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

@@ -1,0 +1,183 @@
+[
+  {
+    "idx": 1,
+    "query_title": "On the Robustness of Redundant Teacher-Student Frameworks for Semantic Segmentation",
+    "query_year": 2019,
+    "score": -1
+  },
+  {
+    "idx": 2,
+    "query_title": "The Attack Generator: A Systematic Approach Towards Constructing Adversarial Attacks",
+    "query_year": 2019,
+    "score": -1
+  },
+  {
+    "idx": 3,
+    "query_title": "Indirect Local Attacks for Context-aware Semantic Segmentation Networks",
+    "query_year": 2020,
+    "score": -1
+  },
+  {
+    "idx": 4,
+    "query_title": "Benchmarking the Robustness of Semantic Segmentation Models",
+    "query_year": 2020,
+    "score": -1
+  },
+  {
+    "idx": 5,
+    "query_title": "Benchmarking the Robustness of Semantic Segmentation Models",
+    "query_year": 2020,
+    "score": -1
+  },
+  {
+    "idx": 6,
+    "query_title": "Increasing the Robustness of Semantic Segmentation Models with Painting-by-Numbers",
+    "query_year": 2020,
+    "score": -1
+  },
+  {
+    "idx": 7,
+    "query_title": "Improved Noise and Attack Robustness of Semantic Segmentation Models with Self-Supervised Depth Estimation",
+    "query_year": 2020,
+    "score": 0.948,
+    "title": "Improved Noise and Attack Robustness for Semantic Segmentation by Using Multi-Task Training with Self-Supervised Depth Estimation",
+    "year": 2020,
+    "venue": "2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+    "authors": [
+      "Marvin Klingner",
+      "Andreas Bär",
+      "T. Fingscheidt"
+    ],
+    "abstract": "While current approaches for neural network training often aim at improving performance, less focus is put on training methods aiming at robustness towards varying noise conditions or directed attacks by adversarial examples. In this paper, we propose to improve robustness by a multi-task training, which extends supervised semantic segmentation by a self-supervised monocular depth estimation on unlabeled videos. This additional task is only performed during training to improve the semantic segmentation model’s robustness at test time under several input perturbations. Moreover, we even find that our joint training approach also improves the performance of the model on the original (supervised) semantic segmentation task. Our evaluation exhibits a particular novelty in that it allows to mutually compare the effect of input noises and adversarial attacks on the robustness of the semantic segmentation. We show the effectiveness of our method on the Cityscapes dataset, where our multi-task training approach consistently outperforms the single-task semantic segmentation baseline in terms of both robustness vs. noise and in terms of adversarial attacks, without the need for depth labels in training.",
+    "paper_url": "https://www.semanticscholar.org/paper/a90988b821691a089d1d39b041790b2cf92d5a4f",
+    "arxiv": "2004.11072",
+    "doi": "10.1109/CVPRW50498.2020.00168",
+    "pdf_url": "https://arxiv.org/pdf/2004.11072"
+  },
+  {
+    "idx": 8,
+    "query_title": "On the Robustness of Semantic Segmentation Models to Adversarial Attacks",
+    "query_year": 2020,
+    "score": -1
+  },
+  {
+    "idx": 9,
+    "query_title": "Robustness Verification of Semantic Segmentation Neural Networks using Relaxed Reachability",
+    "query_year": 2021,
+    "score": -1
+  },
+  {
+    "idx": 10,
+    "query_title": "Scalable Certified Segmentation via Randomized Smoothing",
+    "query_year": 2021,
+    "score": -1
+  },
+  {
+    "idx": 11,
+    "query_title": "Dynamic Divide-and-Conquer Adversarial Training for Robust Semantic Segmentation",
+    "query_year": 2021,
+    "score": -1
+  },
+  {
+    "idx": 12,
+    "query_title": "Adversarial Attacks against LiDAR Semantic Segmentation in Autonomous Driving",
+    "query_year": 2021,
+    "score": -1
+  },
+  {
+    "idx": 13,
+    "query_title": "Towards Robust General Medical Image Segmentation",
+    "query_year": 2021,
+    "score": -1
+  },
+  {
+    "idx": 14,
+    "query_title": "Evaluating the Robustness of Semantic Segmentation in Real-World Adversarial Patch Attacks",
+    "query_year": 2022,
+    "score": -1
+  },
+  {
+    "idx": 15,
+    "query_title": "Towards Semantically Stealthy Adversarial Attacks Against Segmentation Models",
+    "query_year": 2022,
+    "score": -1
+  },
+  {
+    "idx": 16,
+    "query_title": "SegPGD: An Effective and Efficient Adversarial Attack for Segmentation",
+    "query_year": 2022,
+    "score": -1
+  },
+  {
+    "idx": 17,
+    "query_title": "Attacking LiDAR Semantic Segmentation in Autonomous Driving",
+    "query_year": 2022,
+    "score": -1
+  },
+  {
+    "idx": 18,
+    "query_title": "Certified Defences Against Adversarial Patch Attacks on Semantic Segmentation",
+    "query_year": 2023,
+    "score": -1
+  },
+  {
+    "idx": 19,
+    "query_title": "Ensemble-Based Blackbox Attacks on Dense Prediction",
+    "query_year": 2023,
+    "score": -1
+  },
+  {
+    "idx": 20,
+    "query_title": "Proximal Splitting Adversarial Attack for Semantic Segmentation",
+    "query_year": 2023,
+    "score": -1
+  },
+  {
+    "idx": 21,
+    "query_title": "Reliability in Semantic Segmentation: Are We on the Right Track?",
+    "query_year": 2023,
+    "score": -1
+  },
+  {
+    "idx": 22,
+    "query_title": "Towards Robust Semantic Segmentation against Patch-based Attack via Attention Refinement",
+    "query_year": 2024,
+    "score": -1
+  },
+  {
+    "idx": 23,
+    "query_title": "Uncertainty-Based Detection of Adversarial Attacks in Semantic Segmentation",
+    "query_year": 2024,
+    "score": -1
+  },
+  {
+    "idx": 24,
+    "query_title": "Evaluating the Adversarial Robustness of Semantic Segmentation",
+    "query_year": 2024,
+    "score": -1
+  },
+  {
+    "idx": 25,
+    "query_title": "Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models",
+    "query_year": 2024,
+    "score": -1
+  },
+  {
+    "idx": 26,
+    "query_title": "SemSegBench and DetecBench: Benchmarking Reliability and Generalization Beyond Classification",
+    "query_year": 2025,
+    "score": -1
+  },
+  {
+    "idx": 27,
+    "query_title": "RP-PGD: Enhancing Semantic Segmentation Robustness via Region-based Prioritized PGD",
+    "query_year": 2025,
+    "score": -1
+  },
+  {
+    "idx": 28,
+    "query_title": "Erosion Attack for Adversarial Training to Enhance Semantic Segmentation Robustness",
+    "query_year": 2026,
+    "score": -1
+  }
+]

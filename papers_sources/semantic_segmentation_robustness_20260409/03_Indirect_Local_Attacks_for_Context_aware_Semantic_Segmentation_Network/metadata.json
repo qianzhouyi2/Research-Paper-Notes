@@ -1,0 +1,18 @@
+{
+  "index": 3,
+  "query_title": "Indirect Local Attacks for Context-aware Semantic Segmentation Networks",
+  "query_year": 2020,
+  "query_venue": "ECCV",
+  "matched_title": "Indirect Local Attacks for Context-Aware Semantic Segmentation Networks",
+  "matched_year": 2020,
+  "source_type": "tex_source",
+  "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\03_Indirect_Local_Attacks_for_Context_aware_Semantic_Segmentation_Network\\1911.13038.tar",
+  "status": "ok",
+  "note": "arXiv source downloaded",
+  "urls": {
+    "semantic_scholar": null,
+    "pdf": "https://arxiv.org/pdf/1911.13038",
+    "arxiv_source": "https://arxiv.org/e-print/1911.13038",
+    "arxiv_abs": "https://arxiv.org/abs/1911.13038"
+  }
+}

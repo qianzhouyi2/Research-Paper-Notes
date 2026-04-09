@@ -1,0 +1,17 @@
+{
+  "index": 15,
+  "query_title": "Towards Semantically Stealthy Adversarial Attacks Against Segmentation Models",
+  "query_year": 2022,
+  "query_venue": "WACV",
+  "matched_title": null,
+  "matched_year": null,
+  "source_type": "tex_source",
+  "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\15_Towards_Semantically_Stealthy_Adversarial_Attacks_Against_Segmentation\\2104.01732.tar",
+  "status": "ok",
+  "note": "arXiv source downloaded",
+  "urls": {
+    "semantic_scholar": null,
+    "arxiv_source": "https://arxiv.org/e-print/2104.01732",
+    "arxiv_abs": "https://arxiv.org/abs/2104.01732"
+  }
+}

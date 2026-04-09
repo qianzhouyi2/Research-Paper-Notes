@@ -1,0 +1,17 @@
+{
+  "index": 23,
+  "query_title": "Uncertainty-Based Detection of Adversarial Attacks in Semantic Segmentation",
+  "query_year": 2024,
+  "query_venue": "PDF",
+  "matched_title": "Uncertainty-Based Detection of Adversarial Attacks in Semantic Segmentation",
+  "matched_year": 2024,
+  "source_type": "tex_source",
+  "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\23_Uncertainty_Based_Detection_of_Adversarial_Attacks_in_Semantic_Segment\\2305.12825.tar",
+  "status": "ok",
+  "note": "arXiv source downloaded",
+  "urls": {
+    "semantic_scholar": null,
+    "arxiv_source": "https://arxiv.org/e-print/2305.12825",
+    "arxiv_abs": "https://arxiv.org/abs/2305.12825"
+  }
+}

@@ -10,7 +10,7 @@ tags:
 sources:
   - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 summary: 扰动交互指迭代更新之间相互抵消，导致分割攻击出现“本轮成功、下轮回退”的优化不稳定现象。
 provenance:
   extracted: 0.87
@@ -50,5 +50,12 @@ provenance:
 - [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]
 - [[synthesis/Decision-based Segmentation Attack Landscape]]
 
+## Online Supplement (2026-04-10)
 
+- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
+- Text anchor used: ﻿--- title: Perturbation Interaction category: concept tags: - concept - adversarial-attack - optimization - semantic-segmentation - perturbation sources: - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Deci...
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

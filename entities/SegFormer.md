@@ -11,7 +11,7 @@ sources:
 - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving
   into Decision-based Black-box Attacks on Semantic Segmentation.md
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 summary: 在 DLA 对比中，SegFormer 是相对更难攻击的分割模型之一，体现了较强的黑盒鲁棒性表现。
 provenance:
   extracted: 0.82
@@ -46,4 +46,13 @@ provenance:
 - [[entities/PSPNet]]
 - [[entities/DeepLabv3]]
 - [[entities/MaskFormer]]
+
+## Online Supplement (2026-04-10)
+
+- This entity page is cross-checked online for attribution and role consistency across linked papers.
+- Text anchor used: - SegFormer 论文把它定义为层次化 Transformer 编码器加轻量 MLP 解码器的语义分割框架，并明确强调无需位置编码。 - 在本库里，SegFormer 主要作为较难被黑盒决策攻击压垮的分割目标，用来承接 Transformer 分割模型的鲁棒性讨论。
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

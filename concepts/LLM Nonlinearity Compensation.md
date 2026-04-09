@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/PanGu-pi Nonlinearity Compensation.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: 非线性补偿通过结构增量与激活设计增强 LLM 表达能力，在较低额外成本下提升推理与任务表现。
 provenance:
   extracted: 0.87
@@ -33,4 +33,13 @@ provenance:
 - [[concepts/Cascaded Activation Nonlinearity Compensation]]
 - [[synthesis/LLM Inference Efficiency and Scaling]]
 - [[synthesis/Long-Context Architecture Without Full Attention]]
+
+## Online Supplement (2026-04-10)
+
+- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
+- Text anchor used: ﻿--- title: LLM Nonlinearity Compensation category: concept tags: - concept - llm - architecture - efficiency sources: - notes/PanGu-pi Nonlinearity Compensation.md created: 2026-04-08 updated: 2026-04-08 summary: 非线性补偿通过结构增量与激活设计增强 LLM 表达能力，在较低额外成本下提升推理与任务表现。...
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

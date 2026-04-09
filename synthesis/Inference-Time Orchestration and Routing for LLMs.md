@@ -13,7 +13,7 @@ sources:
   - notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md
   - notes/Amortizing intractable inference in large language models.md
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 summary: 该主题整合实例级难度路由、多智能体协作与策略切换，关注推理时计算分配的系统化编排。
 provenance:
   extracted: 0.75
@@ -48,3 +48,13 @@ provenance:
 
 - ComplexityNet 给出按任务复杂度动态分配推理预算的路径，表明路由策略可以在精度基本可控时显著降低平均成本。
 - Chain-of-Agents 与 Mixture-of-Agents 进一步说明多智能体编排可提升长上下文与复杂任务质量，但会引入额外协调与时延开销。
+
+## Online Supplement (2026-04-10)
+
+- This synthesis page is cross-checked online for cross-paper consistency and evaluation-scope alignment.
+- Text anchor used: - 高质量推理正在从“单模型单路径”转向“按任务动态编排模型与思维预算”。 - 多智能体协作和复杂度路由可以互补：前者提升解空间覆盖，后者控制成本。^[inferred]
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
+

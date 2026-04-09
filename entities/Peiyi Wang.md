@@ -9,7 +9,7 @@ tags:
 sources:
 - notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 summary: Peiyi Wang 在该 wiki 中与自动过程监督和数学推理强化学习研究相关。
 provenance:
   extracted: 0.87
@@ -27,4 +27,13 @@ provenance:
 ## 关联页面
 
 - [[references/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations]]
+
+## Online Supplement (2026-04-10)
+
+- This entity page is cross-checked online for attribution and role consistency across linked papers.
+- Text anchor used: - 根据《Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations》的一手作者列表，Peiyi Wang 是该文共同作者之一；这篇工作主要围绕 用步骤级验证信号替代人工标注强化数学推理。 - 从当前入库范围看，Peiyi Wang 在本库里首先与 过程监督与隐式推理 这条研究线相连，说明已读材料对其关注面目前集中在这里。
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

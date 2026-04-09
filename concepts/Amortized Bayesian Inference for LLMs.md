@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/Amortizing intractable inference in large language models.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: 将难解后验推理转化为可复用的近似策略学习，降低 LLM 推理时的采样与约束搜索成本。
 provenance:
   extracted: 0.82
@@ -32,4 +32,12 @@ provenance:
 - [[concepts/Task Complexity-Aware Inference Budgeting]]
 - [[synthesis/Probabilistic Inference-Time Control for LLMs]]
 
+## Online Supplement (2026-04-10)
+
+- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
+- Text anchor used: 该范式通过离线学习“近似后验策略”，在在线推理阶段复用，避免每次都做昂贵的显式后验推断。
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

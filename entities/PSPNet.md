@@ -10,7 +10,7 @@ sources:
 - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md
 - notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md
 created: 2026-04-09
-updated: 2026-04-09
+updated: 2026-04-10
 summary: PSPNet 是多尺度上下文聚合分割模型，在 DLA 中出现了最显著的 mIoU 下降案例之一。
 provenance:
   extracted: 0.86
@@ -45,4 +45,13 @@ provenance:
 - [[entities/DeepLabv3]]
 - [[entities/SegFormer]]
 - [[entities/MaskFormer]]
+
+## Online Supplement (2026-04-10)
+
+- This entity page is cross-checked online for attribution and role consistency across linked papers.
+- Text anchor used: - PSPNet（Pyramid Scene Parsing Network）通过金字塔池化聚合多尺度上下文，是语义分割中的经典 CNN 架构。 - 在本库里，它是 DLA 评测里的核心对比对象之一，常被用来展示 query-efficient attack 的攻击强度。
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

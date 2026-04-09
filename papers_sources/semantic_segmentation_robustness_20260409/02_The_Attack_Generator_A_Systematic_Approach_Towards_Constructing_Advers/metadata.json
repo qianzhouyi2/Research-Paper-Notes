@@ -1,0 +1,18 @@
+{
+  "index": 2,
+  "query_title": "The Attack Generator: A Systematic Approach Towards Constructing Adversarial Attacks",
+  "query_year": 2019,
+  "query_venue": "CVPRW",
+  "matched_title": "The Attack Generator: A Systematic Approach Towards Constructing Adversarial Attacks",
+  "matched_year": 2019,
+  "source_type": "tex_source",
+  "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\02_The_Attack_Generator_A_Systematic_Approach_Towards_Constructing_Advers\\1906.07077.tar",
+  "status": "ok",
+  "note": "arXiv source downloaded",
+  "urls": {
+    "semantic_scholar": null,
+    "pdf": "https://arxiv.org/pdf/1906.07077",
+    "arxiv_source": "https://arxiv.org/e-print/1906.07077",
+    "arxiv_abs": "https://arxiv.org/abs/1906.07077"
+  }
+}

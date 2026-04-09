@@ -1,0 +1,16 @@
+{
+  "index": 17,
+  "query_title": "Attacking LiDAR Semantic Segmentation in Autonomous Driving",
+  "query_year": 2022,
+  "query_venue": "NDSS",
+  "matched_title": "Demo: Attacking LiDAR Semantic Segmentation in Autonomous Driving",
+  "matched_year": 2022,
+  "source_type": "pdf",
+  "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\17_Attacking_LiDAR_Semantic_Segmentation_in_Autonomous_Driving\\paper.pdf",
+  "status": "ok",
+  "note": "pdf already exists",
+  "urls": {
+    "semantic_scholar": null,
+    "pdf": "https://doi.org/10.14722/autosec.2022.23022"
+  }
+}

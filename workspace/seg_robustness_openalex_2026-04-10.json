@@ -1,0 +1,170 @@
+[
+  {
+    "query_title": "On the Robustness of Redundant Teacher-Student Frameworks for Semantic Segmentation",
+    "query_year": 2019,
+    "query_venue": "CVPRW",
+    "match_score": -1
+  },
+  {
+    "query_title": "The Attack Generator: A Systematic Approach Towards Constructing Adversarial Attacks",
+    "query_year": 2019,
+    "query_venue": "CVPRW",
+    "match_score": -1
+  },
+  {
+    "query_title": "Indirect Local Attacks for Context-aware Semantic Segmentation Networks",
+    "query_year": 2020,
+    "query_venue": "ECCV",
+    "match_score": -1
+  },
+  {
+    "query_title": "Benchmarking the Robustness of Semantic Segmentation Models",
+    "query_year": 2020,
+    "query_venue": "CVPR",
+    "match_score": -1
+  },
+  {
+    "query_title": "Benchmarking the Robustness of Semantic Segmentation Models",
+    "query_year": 2020,
+    "query_venue": "IJCV",
+    "match_score": -1
+  },
+  {
+    "query_title": "Increasing the Robustness of Semantic Segmentation Models with Painting-by-Numbers",
+    "query_year": 2020,
+    "query_venue": "ECCV",
+    "match_score": -1
+  },
+  {
+    "query_title": "Improved Noise and Attack Robustness of Semantic Segmentation Models with Self-Supervised Depth Estimation",
+    "query_year": 2020,
+    "query_venue": "CVPRW",
+    "match_score": -1
+  },
+  {
+    "query_title": "On the Robustness of Semantic Segmentation Models to Adversarial Attacks",
+    "query_year": 2020,
+    "query_venue": "TPAMI",
+    "match_score": -1
+  },
+  {
+    "query_title": "Robustness Verification of Semantic Segmentation Neural Networks using Relaxed Reachability",
+    "query_year": 2021,
+    "query_venue": "CAV",
+    "match_score": -1
+  },
+  {
+    "query_title": "Scalable Certified Segmentation via Randomized Smoothing",
+    "query_year": 2021,
+    "query_venue": "ICML",
+    "match_score": -1
+  },
+  {
+    "query_title": "Dynamic Divide-and-Conquer Adversarial Training for Robust Semantic Segmentation",
+    "query_year": 2021,
+    "query_venue": "ICCV",
+    "match_score": -1
+  },
+  {
+    "query_title": "Adversarial Attacks against LiDAR Semantic Segmentation in Autonomous Driving",
+    "query_year": 2021,
+    "query_venue": "SenSys",
+    "match_score": -1
+  },
+  {
+    "query_title": "Towards Robust General Medical Image Segmentation",
+    "query_year": 2021,
+    "query_venue": "MICCAI",
+    "match_score": -1
+  },
+  {
+    "query_title": "Evaluating the Robustness of Semantic Segmentation in Real-World Adversarial Patch Attacks",
+    "query_year": 2022,
+    "query_venue": "WACV",
+    "match_score": -1
+  },
+  {
+    "query_title": "Towards Semantically Stealthy Adversarial Attacks Against Segmentation Models",
+    "query_year": 2022,
+    "query_venue": "WACV",
+    "match_score": -1
+  },
+  {
+    "query_title": "SegPGD: An Effective and Efficient Adversarial Attack for Segmentation",
+    "query_year": 2022,
+    "query_venue": "ECCV",
+    "match_score": -1
+  },
+  {
+    "query_title": "Attacking LiDAR Semantic Segmentation in Autonomous Driving",
+    "query_year": 2022,
+    "query_venue": "NDSS",
+    "match_score": -1
+  },
+  {
+    "query_title": "Certified Defences Against Adversarial Patch Attacks on Semantic Segmentation",
+    "query_year": 2023,
+    "query_venue": "ICLR",
+    "match_score": -1
+  },
+  {
+    "query_title": "Ensemble-Based Blackbox Attacks on Dense Prediction",
+    "query_year": 2023,
+    "query_venue": "CVPR",
+    "match_score": -1
+  },
+  {
+    "query_title": "Proximal Splitting Adversarial Attack for Semantic Segmentation",
+    "query_year": 2023,
+    "query_venue": "CVPR",
+    "match_score": -1
+  },
+  {
+    "query_title": "Reliability in Semantic Segmentation: Are We on the Right Track?",
+    "query_year": 2023,
+    "query_venue": "CVPR",
+    "match_score": -1
+  },
+  {
+    "query_title": "Towards Robust Semantic Segmentation against Patch-based Attack via Attention Refinement",
+    "query_year": 2024,
+    "query_venue": "IJCV",
+    "match_score": -1
+  },
+  {
+    "query_title": "Uncertainty-Based Detection of Adversarial Attacks in Semantic Segmentation",
+    "query_year": 2024,
+    "query_venue": "PDF",
+    "match_score": -1
+  },
+  {
+    "query_title": "Evaluating the Adversarial Robustness of Semantic Segmentation",
+    "query_year": 2024,
+    "query_venue": "ECCV",
+    "match_score": -1
+  },
+  {
+    "query_title": "Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models",
+    "query_year": 2024,
+    "query_venue": "ECCV",
+    "match_score": -1
+  },
+  {
+    "query_title": "SemSegBench and DetecBench: Benchmarking Reliability and Generalization Beyond Classification",
+    "query_year": 2025,
+    "query_venue": "arXiv",
+    "match_score": -1
+  },
+  {
+    "query_title": "RP-PGD: Enhancing Semantic Segmentation Robustness via Region-based Prioritized PGD",
+    "query_year": 2025,
+    "query_venue": "AAAI",
+    "match_score": -1
+  },
+  {
+    "query_title": "Erosion Attack for Adversarial Training to Enhance Semantic Segmentation Robustness",
+    "query_year": 2026,
+    "query_venue": "arXiv",
+    "match_score": -1
+  }
+]

@@ -12,7 +12,7 @@ sources:
   - notes/PanGu-pi Nonlinearity Compensation.md
   - notes/Language Models Represent Space and Time.md
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 summary: 该主题从有效秩、特征多样性、线性可解码结构等视角审视模型表示容量，强调表示退化往往先于性能退化显现。
 provenance:
   extracted: 0.74
@@ -46,3 +46,13 @@ provenance:
 
 - 持续学习与鲁棒增强工作共同表明：有效秩、特征稀疏性与表征多样性会先于任务精度变化，适合作为早期退化信号。
 - 《Language Models Represent Space and Time》提供了线性探针证据，说明“可解码结构”可以作为容量与结构化表示质量的补充指标。
+
+## Online Supplement (2026-04-10)
+
+- This synthesis page is cross-checked online for cross-paper consistency and evaluation-scope alignment.
+- Text anchor used: - 表示容量不足通常表现为有效秩下降、特征坍塌或可解码结构受损。 - 结构补偿、稀疏化后处理和持续重初始化都可被视为“恢复表示可分性”的不同干预。^[inferred]
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
+

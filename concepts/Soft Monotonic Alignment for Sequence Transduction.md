@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/CIF Continuous Integrate-and-Fire.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: 在保留单调对齐假设的前提下引入可微分软边界，提升序列转导中的对齐稳定性与可训练性。
 provenance:
   extracted: 0.84
@@ -32,4 +32,12 @@ provenance:
 - [[concepts/Continuous Integrate-and-Fire Alignment]]
 - [[synthesis/Structured Spatio-Temporal Representation Learning]]
 
+## Online Supplement (2026-04-10)
+
+- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
+- Text anchor used: ﻿--- title: Soft Monotonic Alignment for Sequence Transduction category: concept tags: - concept - alignment - sequence - asr sources: - notes/CIF Continuous Integrate-and-Fire.md created: 2026-04-08 updated: 2026-04-08 summary: 在保留单调对齐假设的前提下引入可微分软边界，提升序列转导中的对...
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

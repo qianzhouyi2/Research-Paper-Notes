@@ -10,7 +10,7 @@ sources:
   - papers_sources/Hyena Hierarchy 2302.10866/3_hyena.tex
   - notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 summary: 数据控制门控通过输入依赖的逐步调制提升长卷积算子表达力，是 Hyena 的核心增益来源之一。
 provenance:
   extracted: 0.87
@@ -40,5 +40,12 @@ provenance:
 - [[concepts/Hyena Operator]]
 - [[synthesis/Long-Context Architecture Without Full Attention]]
 
+## Online Supplement (2026-04-10)
 
+- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
+- Text anchor used: 在序列混合中使用输入相关门控系数，对卷积输出做逐步调制，形成“内容条件化”的全局混合算子。
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

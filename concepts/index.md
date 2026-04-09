@@ -4,7 +4,7 @@ category: index
 tags:
   - index
   - concept
-updated: 2026-04-09
+updated: 2026-04-10
 summary: 可复用概念页面索引，聚焦方法、术语与评测框架。
 ---
 
@@ -90,4 +90,37 @@ summary: 可复用概念页面索引，聚焦方法、术语与评测框架。
 
 - 一个概念一页，标题尽量标准化
 - 写明定义、适用场景、边界、关联论文
-- 用 `[[concepts/...]]` 做横向连接
+
+## Segmentation Robustness Concepts (2026-04-10)
+
+- Added 30 concepts for the segmentation-robustness corpus.
+- [[concepts/Redundant Teacher-Student Robustness in Segmentation]]
+- [[concepts/Attack Generator Framework for Segmentation Threat Modeling]]
+- [[concepts/Context-aware Indirect Local Attack]]
+- [[concepts/Segmentation Robustness Benchmark Protocol]]
+- [[concepts/Painting-by-Numbers Robust Segmentation Training]]
+- [[concepts/Depth-Assisted Robustness via Self-Supervised Multi-Tasking]]
+- [[concepts/Adversarial Vulnerability Profiling for Segmentation Models]]
+- [[concepts/Relaxed Reachability Verification for Segmentation]]
+- [[concepts/Randomized Smoothing Certification for Segmentation]]
+- [[concepts/Divide-and-Conquer Adversarial Training for Segmentation]]
+- [[concepts/LiDAR Point-Cloud Segmentation Attack Surface]]
+- [[concepts/Robust Medical Image Segmentation under Adversarial Shift]]
+- [[concepts/Physical Adversarial Patch Evaluation for Segmentation]]
+- [[concepts/Semantically Stealthy Segmentation Attack]]
+- [[concepts/SegPGD-AT for Robust Segmentation]]
+- [[concepts/Patch-certified Defense with Demasked Smoothing]]
+- [[concepts/Ensemble Black-box Transfer Attack on Dense Prediction]]
+- [[concepts/Proximal Splitting Optimization for Segmentation Attacks]]
+- [[concepts/Segmentation Reliability Audit Protocol]]
+- [[concepts/Attention Refinement against Patch Attacks]]
+- [[concepts/Uncertainty-based Adversarial Detection in Segmentation]]
+- [[concepts/Standardized Evaluation Attack (SEA) Protocol]]
+- [[concepts/Prior-informed Robust Adversarial Training (PIR-AT)]]
+- [[concepts/SemSegBench Robustness Benchmarking]]
+- [[concepts/DetecBench Generalization Benchmarking]]
+- [[concepts/Region-and-Prototype Prioritized PGD (RP-PGD)]]
+- [[concepts/Erosion Attack Training for Segmentation]]
+- [[concepts/Robustness-Generalization Decoupling in Dense Prediction]]
+- [[concepts/Patch-robust Attention Regularization]]
+- [[concepts/End-to-End Reliability Reporting for Segmentation Systems]]

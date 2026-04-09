@@ -10,7 +10,7 @@ sources:
   - notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md
   - notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: 通过分层代理协作与聚合策略整合多模型候选解，提升长上下文与复杂任务的整体输出质量。
 provenance:
   extracted: 0.81
@@ -34,4 +34,12 @@ provenance:
 - [[concepts/Multi-Agent LLM Orchestration]]
 - [[synthesis/Multi-Agent LLM Collaboration Landscape]]
 
+## Online Supplement (2026-04-10)
+
+- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
+- Text anchor used: ﻿--- title: Mixture-of-Agents Aggregation category: concept tags: - concept - llm - multi-agent - orchestration sources: - notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md - notes/Chain of Agents Large Language Models Collaborating on Long...
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

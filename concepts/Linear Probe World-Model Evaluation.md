@@ -10,7 +10,7 @@ sources:
   - papers_sources/Research-Paper-Notes/LLM体现出时空概念.md
   - notes/Language Models Represent Space and Time.md
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 summary: 线性探针世界模型评估通过层级激活回归时空变量，检验模型是否形成可解码且可泛化的内部结构表示。
 provenance:
   extracted: 0.9
@@ -40,5 +40,12 @@ provenance:
 - [[entities/Max Tegmark]]
 - [[synthesis/Structured Spatio-Temporal Representation Learning]]
 
+## Online Supplement (2026-04-10)
 
+- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
+- Text anchor used: ﻿--- title: Linear Probe World-Model Evaluation category: concept tags: - concept - llm - interpretability - probing sources: - papers_sources/Research-Paper-Notes/LLM体现出时空概念.md - notes/Language Models Represent Space and Time.md created: 2026-04-08 updated: 2...
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

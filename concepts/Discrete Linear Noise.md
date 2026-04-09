@@ -12,7 +12,7 @@ sources:
   - https://proceedings.mlr.press/v97/moon19a.html
   - https://arxiv.org/abs/1811.10828
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 summary: 通过离散化并结构化为线性噪声（横向/纵向），DLA 压缩搜索空间并提升有限查询下的攻击效率。
 provenance:
   extracted: 0.85
@@ -58,4 +58,13 @@ provenance:
 - [[concepts/Query-Efficient Attack Evaluation]]
 - [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]
 
+## Online Supplement (2026-04-10)
+
+- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
+- Text anchor used: 将连续扰动空间压缩到离散符号空间，并采用线状结构（horizontal / vertical）生成候选扰动。
+- Primary online sources used in this pass:
+- https://proceedings.mlr.press/v97/moon19a.html
+- https://arxiv.org/abs/1811.10828
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

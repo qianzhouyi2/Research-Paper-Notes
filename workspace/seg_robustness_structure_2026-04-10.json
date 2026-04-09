@@ -1,0 +1,325 @@
+[
+  {
+    "index": 1,
+    "sections": [],
+    "origin": ""
+  },
+  {
+    "index": 2,
+    "sections": [
+      "Introduction",
+      "Taxonomy of Adversarial Perturbations",
+      "Threat Model",
+      "Attack Strategy",
+      "The Attack Generator",
+      "Experiments",
+      "Conclusion",
+      "Analysis Existing Attacks"
+    ],
+    "origin": "tex-sections"
+  },
+  {
+    "index": 3,
+    "sections": [
+      "Indirect Local Segmentation Attacks",
+      "Indirect Local Attacks",
+      "Adaptive Attacks",
+      "Universal Local Attacks",
+      "Adversarial Attack Detection",
+      "Conclusion"
+    ],
+    "origin": "tex-sections"
+  },
+  {
+    "index": 4,
+    "sections": [
+      "Introduction",
+      "Related Work",
+      "Image Corruption Models",
+      "ImageNet-C",
+      "Additional Image Corruptions",
+      "Models",
+      "DeepLabv3$+$",
+      "Architectural Ablations"
+    ],
+    "origin": "tex-sections"
+  },
+  {
+    "index": 5,
+    "sections": [
+      "Introduction",
+      "Related Work",
+      "Image Corruption Models",
+      "ImageNet-C",
+      "Additional Image Corruptions",
+      "Models",
+      "DeepLabv3$+$",
+      "Architectural Ablations"
+    ],
+    "origin": "tex-sections"
+  },
+  {
+    "index": 6,
+    "sections": [
+      "Introduction",
+      "Related Work",
+      "Training Schema: Painting-by-Numbers",
+      "Experimental Evaluation and Validation",
+      "Implementation Details",
+      "Results on Cityscapes",
+      "Understanding Painting-by-Numbers",
+      "Conclusions"
+    ],
+    "origin": "tex-sections"
+  },
+  {
+    "index": 7,
+    "sections": [],
+    "origin": ""
+  },
+  {
+    "index": 8,
+    "sections": [],
+    "origin": ""
+  },
+  {
+    "index": 9,
+    "sections": [],
+    "origin": ""
+  },
+  {
+    "index": 10,
+    "sections": [
+      "Introduction",
+      "Related Work",
+      "Randomized Smoothing for Classification",
+      "Conclusion",
+      "Experimental Evaluation",
+      "Toy Data",
+      "Semantic Image Segmentation",
+      "Pointcloud Part Segmentation"
+    ],
+    "origin": "tex-sections"
+  },
+  {
+    "index": 11,
+    "sections": [
+      "Introduction",
+      "Related Work",
+      "Standard Adversarial Attack",
+      "Standard Adversarial Training",
+      "DDC-AT",
+      "Divide-and-Conquer Procedure",
+      "Dynamical Division and Implementation",
+      "Overall Loss Function"
+    ],
+    "origin": "tex-sections"
+  },
+  {
+    "index": 12,
+    "sections": [],
+    "origin": ""
+  },
+  {
+    "index": 13,
+    "sections": [
+      "Introduction",
+      "Methodology",
+      "Adversarial robustness",
+      "Generic Medical Segmentation",
+      "Experiments",
+      "Adversarial robustness assessment",
+      "General medical segmentation",
+      "Results"
+    ],
+    "origin": "tex-sections"
+  },
+  {
+    "index": 14,
+    "sections": [
+      "Experimental results",
+      "Experimental setup",
+      "EOT-based patches on Cityscapes",
+      "Scene-specific patches on CARLA",
+      "Real-world patches",
+      "Introduction",
+      "This paper",
+      "Related Work"
+    ],
+    "origin": "tex-sections"
+  },
+  {
+    "index": 15,
+    "sections": [
+      "Introduction",
+      "Related work",
+      "Universal adversarial attacks",
+      "Image-dependent adversarial attacks",
+      "Semantic adversarial attacks",
+      "Physical adversarial attacks",
+      "Our Approach",
+      "Problem definition"
+    ],
+    "origin": "tex-sections"
+  },
+  {
+    "index": 16,
+    "sections": [
+      "Introduction",
+      "Related Work",
+      "SegPGD for Evaluating and Boosting Segmentation",
+      "SegPGD: An Effective and Efficient Segmentation Attack",
+      "Convergence Analysis of SegPGD",
+      "Segmentation Adversarial Training with SegPGD",
+      "Experiment",
+      "Experimental Setting"
+    ],
+    "origin": "tex-sections"
+  },
+  {
+    "index": 17,
+    "sections": [],
+    "origin": ""
+  },
+  {
+    "index": 18,
+    "sections": [
+      "Introduction",
+      "Related Work",
+      "Problem Setup",
+      "Semantic Segmentation",
+      "Threat model",
+      "Defence objective",
+      "Demasked Smoothing",
+      "Input masking"
+    ],
+    "origin": "tex-sections"
+  },
+  {
+    "index": 19,
+    "sections": [
+      "Introduction",
+      "Conclusion",
+      "Summary",
+      "Joint attack for multiple blackbox models",
+      "Attacks against object detection",
+      "Attacks against semantic segmentation",
+      "Runtime and resource usage",
+      "Method"
+    ],
+    "origin": "tex-sections"
+  },
+  {
+    "index": 20,
+    "sections": [
+      "Introduction",
+      "Proposed Method",
+      "Adaptive constraints strategies",
+      "Proximal splitting",
+      "Results",
+      "Dense Adversary Generation attack",
+      "Proof of Proposition 1",
+      "ALMA prox attack algorithm"
+    ],
+    "origin": "tex-sections"
+  },
+  {
+    "index": 21,
+    "sections": [
+      "Introduction",
+      "Related work",
+      "Ablation of calibration metrics",
+      "Ablation of number of pixels for calibration",
+      "Ablation of confidence score: max probability  entropy",
+      "Ablation number of clusters",
+      "Visualization of cluster samples",
+      "Subset calibration"
+    ],
+    "origin": "tex-sections"
+  },
+  {
+    "index": 22,
+    "sections": [
+      "Introduction",
+      "Related Work",
+      "Semantic Segmentation",
+      "Patch-based Adversarial Attack",
+      "Robustness of Vision Transformer",
+      "Analyses of Receptive Field and Robustness",
+      "Receptive Field",
+      "Analysis"
+    ],
+    "origin": "tex-sections"
+  },
+  {
+    "index": 23,
+    "sections": [
+      "Experimental Setting",
+      "Numerical Results",
+      "ACKNOWLEDGEMENTS",
+      "More Adversarial Examples"
+    ],
+    "origin": "tex-sections"
+  },
+  {
+    "index": 24,
+    "sections": [
+      "Acknowledgements",
+      "Investigated Models",
+      "Robustness to Bounded Attacks",
+      "Cosine Internal Representation Attacks",
+      "Attacking Segmentation Networks",
+      "Attacking the Internal Representations",
+      "CIRA+: a Hybrid Attack",
+      "CIRA vs. CIRA+"
+    ],
+    "origin": "tex-sections"
+  },
+  {
+    "index": 25,
+    "sections": [
+      "Introduction",
+      "Related Work",
+      "Adversarial Attacks for Semantic Segmentation",
+      "Setup",
+      "How to efficiently attack",
+      "Why do attacks on semantic segmentation require new loss functions compared to image segmentation?",
+      "Novel attacks on semantic segmentation",
+      "Optimization techniques for adversarial attacks on semantic segmentation"
+    ],
+    "origin": "tex-sections"
+  },
+  {
+    "index": 26,
+    "sections": [
+      "Introduction",
+      "Related Work",
+      "Model Zoo",
+      "Robustness Evaluations",
+      "Metrics For Analysis At Scale",
+      "Reliability Measure",
+      "Generalization Ability Measure",
+      "Analysis And Key Findings"
+    ],
+    "origin": "tex-sections"
+  },
+  {
+    "index": 27,
+    "sections": [],
+    "origin": ""
+  },
+  {
+    "index": 28,
+    "sections": [
+      "Limitation and Conclusion",
+      "Acknowledgements",
+      "Related Works",
+      "Semantic Segmentation Models",
+      "Adversarial Training",
+      "Methodology",
+      "Motivation",
+      "EroSeg: A Complete Illustration"
+    ],
+    "origin": "tex-sections"
+  }
+]

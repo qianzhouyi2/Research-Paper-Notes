@@ -10,7 +10,7 @@ sources:
 - papers_sources/Are aligned neural networks adversarially aligned 2306.15447/main.tex
 - notes/Are aligned neural networks adversarially aligned.md
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 summary: LLaVA 在多模态对齐攻击实验中被用于验证视觉对抗扰动对有害文本输出的诱导风险。
 provenance:
   extracted: 0.83
@@ -33,4 +33,13 @@ provenance:
 
 - [[concepts/Multimodal Adversarial Image Prompting]]
 - [[synthesis/Alignment Robustness Evaluation Ladder]]
+
+## Online Supplement (2026-04-10)
+
+- This entity page is cross-checked online for attribution and role consistency across linked papers.
+- Text anchor used: - LLaVA 项目把它定义为连接视觉编码器与 Vicuna 的端到端多模态模型，并采用两阶段指令调优来获得通用视觉语言理解能力。 - 在本库里，LLaVA 的角色偏向被攻击的对齐模型，因此关注点落在鲁棒性与越狱面，而不是它本身的 benchmark 冲榜。
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

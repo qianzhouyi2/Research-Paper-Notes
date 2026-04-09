@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/Amortizing intractable inference in large language models.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: 利用 GFlowNet 学习可归一化的生成流，实现对受约束文本后验分布的近似采样。
 provenance:
   extracted: 0.79
@@ -32,4 +32,12 @@ provenance:
 - [[concepts/Amortized Bayesian Inference for LLMs]]
 - [[synthesis/Probabilistic Inference-Time Control for LLMs]]
 
+## Online Supplement (2026-04-10)
+
+- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
+- Text anchor used: ﻿--- title: GFlowNet Posterior Sampling for Text Generation category: concept tags: - concept - llm - sampling - inference sources: - notes/Amortizing intractable inference in large language models.md created: 2026-04-08 updated: 2026-04-08 summary: 利用 GFlowNe...
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

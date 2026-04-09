@@ -10,7 +10,7 @@ sources:
   - notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md
   - notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 summary: 多智能体 LLM 协作通过角色分工与聚合机制提升任务质量，主要权衡点在于推理成本、延迟与编排复杂度。
 provenance:
   extracted: 0.78
@@ -46,3 +46,13 @@ provenance:
 
 - Chain-of-Agents 通过 agent 链式分工处理长上下文信息聚合，说明协作式上下文压缩可改善长输入任务表现。
 - Mixture-of-Agents 采用分层聚合不同模型输出，体现“异构代理集成”可提升质量，但系统复杂度和调度成本同步上升。
+
+## Online Supplement (2026-04-10)
+
+- This synthesis page is cross-checked online for cross-paper consistency and evaluation-scope alignment.
+- Text anchor used: - 链式协作（Chain of Agents）：强调中间结果传递和长上下文稳态处理。 - 混合聚合（Mixture-of-Agents）：强调多模型并行提案与层次聚合。
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
+

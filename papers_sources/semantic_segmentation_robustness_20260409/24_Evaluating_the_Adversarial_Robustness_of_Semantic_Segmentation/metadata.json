@@ -1,0 +1,18 @@
+{
+  "index": 24,
+  "query_title": "Evaluating the Adversarial Robustness of Semantic Segmentation",
+  "query_year": 2024,
+  "query_venue": "ECCV",
+  "matched_title": "On Evaluating the Adversarial Robustness of Semantic Segmentation Models",
+  "matched_year": 2023,
+  "source_type": "tex_source",
+  "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\24_Evaluating_the_Adversarial_Robustness_of_Semantic_Segmentation\\2306.14217.tar",
+  "status": "ok",
+  "note": "arXiv source downloaded",
+  "urls": {
+    "semantic_scholar": null,
+    "pdf": "https://arxiv.org/pdf/2306.14217",
+    "arxiv_source": "https://arxiv.org/e-print/2306.14217",
+    "arxiv_abs": "https://arxiv.org/abs/2306.14217"
+  }
+}

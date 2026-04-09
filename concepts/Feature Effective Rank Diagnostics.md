@@ -10,7 +10,7 @@ sources:
   - papers_sources/Maintaining Plasticity in Deep Continual Learning/arxiv.tex
   - notes/Maintaining Plasticity in Deep Continual Learning.md
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 summary: 有效秩诊断用表示谱熵近似衡量特征多样性退化，可用于监测持续学习中的可塑性丧失。
 provenance:
   extracted: 0.9
@@ -40,5 +40,12 @@ provenance:
 - [[concepts/Loss of Plasticity in Continual Learning]]
 - [[synthesis/Continual Learning Plasticity Maintenance Playbook]]
 
+## Online Supplement (2026-04-10)
 
+- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
+- Text anchor used: ﻿--- title: Feature Effective Rank Diagnostics category: concept tags: - concept - continual-learning - representation - diagnostics sources: - papers_sources/Maintaining Plasticity in Deep Continual Learning/arxiv.tex - notes/Maintaining Plasticity in Deep Co...
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

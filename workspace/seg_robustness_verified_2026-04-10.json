@@ -1,0 +1,646 @@
+[
+  {
+    "index": 1,
+    "query_title": "On the Robustness of Redundant Teacher-Student Frameworks for Semantic Segmentation",
+    "query_year": 2019,
+    "query_venue": "CVPRW",
+    "local_source_type": "pdf",
+    "local_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\01_On_the_Robustness_of_Redundant_Teacher_Student_Frameworks_for_Semantic\\paper.pdf",
+    "verified": {
+      "source": "crossref",
+      "title": "On the Robustness of Redundant Teacher-Student Frameworks for Semantic Segmentation",
+      "year": 2019,
+      "authors": [
+        "Andreas Bar",
+        "Fabian Huger",
+        "Peter Schlicht",
+        "Tim Fingscheidt"
+      ],
+      "abstract": "",
+      "doi": "10.1109/cvprw.2019.00178",
+      "url": "https://doi.org/10.1109/cvprw.2019.00178",
+      "score": 1.08
+    }
+  },
+  {
+    "index": 2,
+    "query_title": "The Attack Generator: A Systematic Approach Towards Constructing Adversarial Attacks",
+    "query_year": 2019,
+    "query_venue": "CVPRW",
+    "local_source_type": "tex_source",
+    "local_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\02_The_Attack_Generator_A_Systematic_Approach_Towards_Constructing_Advers\\1906.07077.tar",
+    "verified": {
+      "source": "arxiv",
+      "title": "The Attack Generator: A Systematic Approach Towards Constructing Adversarial Attacks",
+      "year": 2019,
+      "published": "2019-06-17T15:06:47Z",
+      "authors": [
+        "Felix Assion",
+        "Peter Schlicht",
+        "Florens Greßner",
+        "Wiebke Günther",
+        "Fabian Hüger",
+        "Nico Schmidt",
+        "Umair Rasheed"
+      ],
+      "abstract": "Most state-of-the-art machine learning (ML) classification systems are vulnerable to adversarial perturbations. As a consequence, adversarial robustness poses a significant challenge for the deployment of ML-based systems in safety- and security-critical environments like autonomous driving, disease detection or unmanned aerial vehicles. In the past years we have seen an impressive amount of publications presenting more and more new adversarial attacks. However, the attack research seems to be rather unstructured and new attacks often appear to be random selections from the unlimited set of possible adversarial attacks. With this publication, we present a structured analysis of the adversarial attack creation process. By detecting different building blocks of adversarial attacks, we outline the road to new sets of adversarial attacks. We call this the \"attack generator\". In the pursuit of this objective, we summarize and extend existing adversarial perturbation taxonomies. The resulting taxonomy is then linked to the application context of computer vision systems for autonomous vehicles, i.e. semantic segmentation and object detection. Finally, in order to prove the usefulness of the attack generator, we investigate existing semantic segmentation attacks with respect to the detected defining components of adversarial attacks.",
+      "arxiv_id": "1906.07077",
+      "abs_url": "https://arxiv.org/abs/1906.07077"
+    }
+  },
+  {
+    "index": 3,
+    "query_title": "Indirect Local Attacks for Context-aware Semantic Segmentation Networks",
+    "query_year": 2020,
+    "query_venue": "ECCV",
+    "local_source_type": "tex_source",
+    "local_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\03_Indirect_Local_Attacks_for_Context_aware_Semantic_Segmentation_Network\\1911.13038.tar",
+    "verified": {
+      "source": "arxiv",
+      "title": "Indirect Local Attacks for Context-aware Semantic Segmentation Networks",
+      "year": 2019,
+      "published": "2019-11-29T10:28:11Z",
+      "authors": [
+        "Krishna Kanth Nakka",
+        "Mathieu Salzmann"
+      ],
+      "abstract": "Recently, deep networks have achieved impressive semantic segmentation performance, in particular thanks to their use of larger contextual information. In this paper, we show that the resulting networks are sensitive not only to global attacks, where perturbations affect the entire input image, but also to indirect local attacks where perturbations are confined to a small image region that does not overlap with the area that we aim to fool. To this end, we introduce several indirect attack strategies, including adaptive local attacks, aiming to find the best image location to perturb, and universal local attacks. Furthermore, we propose attack detection techniques both for the global image level and to obtain a pixel-wise localization of the fooled regions. Our results are unsettling: Because they exploit a larger context, more accurate semantic segmentation networks are more sensitive to indirect local attacks.",
+      "arxiv_id": "1911.13038",
+      "abs_url": "https://arxiv.org/abs/1911.13038"
+    }
+  },
+  {
+    "index": 4,
+    "query_title": "Benchmarking the Robustness of Semantic Segmentation Models",
+    "query_year": 2020,
+    "query_venue": "CVPR",
+    "local_source_type": "tex_source",
+    "local_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\04_Benchmarking_the_Robustness_of_Semantic_Segmentation_Models\\1908.05005.tar",
+    "verified": {
+      "source": "arxiv",
+      "title": "Benchmarking the Robustness of Semantic Segmentation Models",
+      "year": 2019,
+      "published": "2019-08-14T07:51:56Z",
+      "authors": [
+        "Christoph Kamann",
+        "Carsten Rother"
+      ],
+      "abstract": "When designing a semantic segmentation module for a practical application, such as autonomous driving, it is crucial to understand the robustness of the module with respect to a wide range of image corruptions. While there are recent robustness studies for full-image classification, we are the first to present an exhaustive study for semantic segmentation, based on the state-of-the-art model DeepLabv3+. To increase the realism of our study, we utilize almost 400,000 images generated from Cityscapes, PASCAL VOC 2012, and ADE20K. Based on the benchmark study, we gain several new insights. Firstly, contrary to full-image classification, model robustness increases with model performance, in most cases. Secondly, some architecture properties affect robustness significantly, such as a Dense Prediction Cell, which was designed to maximize performance on clean data only.",
+      "arxiv_id": "1908.05005",
+      "abs_url": "https://arxiv.org/abs/1908.05005"
+    }
+  },
+  {
+    "index": 5,
+    "query_title": "Benchmarking the Robustness of Semantic Segmentation Models",
+    "query_year": 2020,
+    "query_venue": "IJCV",
+    "local_source_type": "tex_source",
+    "local_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\05_Benchmarking_the_Robustness_of_Semantic_Segmentation_Models\\1908.05005.tar",
+    "verified": {
+      "source": "arxiv",
+      "title": "Benchmarking the Robustness of Semantic Segmentation Models",
+      "year": 2019,
+      "published": "2019-08-14T07:51:56Z",
+      "authors": [
+        "Christoph Kamann",
+        "Carsten Rother"
+      ],
+      "abstract": "When designing a semantic segmentation module for a practical application, such as autonomous driving, it is crucial to understand the robustness of the module with respect to a wide range of image corruptions. While there are recent robustness studies for full-image classification, we are the first to present an exhaustive study for semantic segmentation, based on the state-of-the-art model DeepLabv3+. To increase the realism of our study, we utilize almost 400,000 images generated from Cityscapes, PASCAL VOC 2012, and ADE20K. Based on the benchmark study, we gain several new insights. Firstly, contrary to full-image classification, model robustness increases with model performance, in most cases. Secondly, some architecture properties affect robustness significantly, such as a Dense Prediction Cell, which was designed to maximize performance on clean data only.",
+      "arxiv_id": "1908.05005",
+      "abs_url": "https://arxiv.org/abs/1908.05005"
+    }
+  },
+  {
+    "index": 6,
+    "query_title": "Increasing the Robustness of Semantic Segmentation Models with Painting-by-Numbers",
+    "query_year": 2020,
+    "query_venue": "ECCV",
+    "local_source_type": "tex_source",
+    "local_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\06_Increasing_the_Robustness_of_Semantic_Segmentation_Models_with_Paintin\\2010.05495.tar",
+    "verified": {
+      "source": "arxiv",
+      "title": "Increasing the Robustness of Semantic Segmentation Models with Painting-by-Numbers",
+      "year": 2020,
+      "published": "2020-10-12T07:42:39Z",
+      "authors": [
+        "Christoph Kamann",
+        "Burkhard Güssefeld",
+        "Robin Hutmacher",
+        "Jan Hendrik Metzen",
+        "Carsten Rother"
+      ],
+      "abstract": "For safety-critical applications such as autonomous driving, CNNs have to be robust with respect to unavoidable image corruptions, such as image noise. While previous works addressed the task of robust prediction in the context of full-image classification, we consider it for dense semantic segmentation. We build upon an insight from image classification that output robustness can be improved by increasing the network-bias towards object shapes. We present a new training schema that increases this shape bias. Our basic idea is to alpha-blend a portion of the RGB training images with faked images, where each class-label is given a fixed, randomly chosen color that is not likely to appear in real imagery. This forces the network to rely more strongly on shape cues. We call this data augmentation technique ``Painting-by-Numbers''. We demonstrate the effectiveness of our training schema for DeepLabv3+ with various network backbones, MobileNet-V2, ResNets, and Xception, and evaluate it on the Cityscapes dataset. With respect to our 16 different types of image corruptions and 5 different network backbones, we are in 74% better than training with clean data. For cases where we are worse than a model trained without our training schema, it is mostly only marginally worse. However, for some image corruptions such as images with noise, we see a considerable performance gain of up to 25%.",
+      "arxiv_id": "2010.05495",
+      "abs_url": "https://arxiv.org/abs/2010.05495"
+    }
+  },
+  {
+    "index": 7,
+    "query_title": "Improved Noise and Attack Robustness of Semantic Segmentation Models with Self-Supervised Depth Estimation",
+    "query_year": 2020,
+    "query_venue": "CVPRW",
+    "local_source_type": "pdf",
+    "local_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\07_Improved_Noise_and_Attack_Robustness_of_Semantic_Segmentation_Models_w\\paper.pdf",
+    "verified": {
+      "source": "crossref",
+      "title": "Improved Noise and Attack Robustness for Semantic Segmentation by Using Multi-Task Training with Self-Supervised Depth Estimation",
+      "year": 2020,
+      "authors": [
+        "Marvin Klingner",
+        "Andreas Bar",
+        "Tim Fingscheidt"
+      ],
+      "abstract": "",
+      "doi": "10.1109/cvprw50498.2020.00168",
+      "url": "https://doi.org/10.1109/cvprw50498.2020.00168",
+      "score": 0.948
+    }
+  },
+  {
+    "index": 8,
+    "query_title": "On the Robustness of Semantic Segmentation Models to Adversarial Attacks",
+    "query_year": 2020,
+    "query_venue": "TPAMI",
+    "local_source_type": "tex_source",
+    "local_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\08_On_the_Robustness_of_Semantic_Segmentation_Models_to_Adversarial_Attac\\1711.09856.tar",
+    "verified": {
+      "source": "arxiv",
+      "title": "On the Robustness of Semantic Segmentation Models to Adversarial Attacks",
+      "year": 2017,
+      "published": "2017-11-27T17:59:50Z",
+      "authors": [
+        "Anurag Arnab",
+        "Ondrej Miksik",
+        "Philip H. S. Torr"
+      ],
+      "abstract": "Deep Neural Networks (DNNs) have demonstrated exceptional performance on most recognition tasks such as image classification and segmentation. However, they have also been shown to be vulnerable to adversarial examples. This phenomenon has recently attracted a lot of attention but it has not been extensively studied on multiple, large-scale datasets and structured prediction tasks such as semantic segmentation which often require more specialised networks with additional components such as CRFs, dilated convolutions, skip-connections and multiscale processing. In this paper, we present what to our knowledge is the first rigorous evaluation of adversarial attacks on modern semantic segmentation models, using two large-scale datasets. We analyse the effect of different network architectures, model capacity and multiscale processing, and show that many observations made on the task of classification do not always transfer to this more complex task. Furthermore, we show how mean-field inference in deep structured models, multiscale processing (and more generally, input transformations) naturally implement recently proposed adversarial defenses. Our observations will aid future efforts in understanding and defending against adversarial examples. Moreover, in the shorter term, we show how to effectively benchmark robustness and show which segmentation models should currently be preferred in safety-critical applications due to their inherent robustness.",
+      "arxiv_id": "1711.09856",
+      "abs_url": "https://arxiv.org/abs/1711.09856"
+    }
+  },
+  {
+    "index": 9,
+    "query_title": "Robustness Verification of Semantic Segmentation Neural Networks using Relaxed Reachability",
+    "query_year": 2021,
+    "query_venue": "CAV",
+    "local_source_type": "pdf",
+    "local_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\09_Robustness_Verification_of_Semantic_Segmentation_Neural_Networks_using\\paper.pdf",
+    "verified": {
+      "source": "crossref",
+      "title": "Robustness Verification of Semantic Segmentation Neural Networks Using Relaxed Reachability",
+      "year": 2021,
+      "authors": [
+        "Hoang-Dung Tran",
+        "Neelanjana Pal",
+        "Patrick Musau",
+        "Diego Manzanas Lopez",
+        "Nathaniel Hamilton",
+        "Xiaodong Yang",
+        "Stanley Bak",
+        "Taylor T. Johnson"
+      ],
+      "abstract": "Abstract This paper introduces robustness verification for semantic segmentation neural networks (in short, semantic segmentation networks [SSNs]), building on and extending recent approaches for robustness verification of image classification neural networks. Despite recent progress in developing verification methods for specifications such as local adversarial robustness in deep neural networks (DNNs) in terms of scalability, precision, and applicability to different network architectures, layers, and activation functions, robustness verification of semantic segmentation has not yet been considered. We address this limitation by developing and applying new robustness analysis methods for several segmentation neural network architectures, specifically by addressing reachability analysis of up-sampling layers, such as transposed convolution and dilated convolution. We consider several definitions of robustness for segmentation, such as the percentage of pixels in the output that can be proven robust under different adversarial perturbations, and a robust variant of intersection-over-union (IoU), the typical performance evaluation measure for segmentation tasks. Our approach is based on a new relaxed reachability method, allowing users to select the percentage of a number of linear programming problems (LPs) to solve when constructing the reachable set, through a relaxation factor percentage. The approach is implemented within NNV, then applied and evaluated on segmentation datasets, such as a multi-digit variant of MNIST known as M2NIST. Thorough experiments show that by using transposed convolution for up-sampling and average-pooling for down-sampling, combined with minimizing the number of ReLU layers in the SSNs, we can obtain SSNs with not only high accuracy (IoU), but also that are more robust to adversarial attacks and amenable to verification. Additionally, using our new relaxed reachability method, we can significantly reduce the verification time for neural networks whose ReLU layers dominate the total analysis time, even in classification tasks.",
+      "doi": "10.1007/978-3-030-81685-8_12",
+      "url": "https://doi.org/10.1007/978-3-030-81685-8_12",
+      "score": 1.08
+    }
+  },
+  {
+    "index": 10,
+    "query_title": "Scalable Certified Segmentation via Randomized Smoothing",
+    "query_year": 2021,
+    "query_venue": "ICML",
+    "local_source_type": "tex_source",
+    "local_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\10_Scalable_Certified_Segmentation_via_Randomized_Smoothing\\2107.00228.tar",
+    "verified": {
+      "source": "arxiv",
+      "title": "Scalable Certified Segmentation via Randomized Smoothing",
+      "year": 2021,
+      "published": "2021-07-01T05:52:39Z",
+      "authors": [
+        "Marc Fischer",
+        "Maximilian Baader",
+        "Martin Vechev"
+      ],
+      "abstract": "We present a new certification method for image and point cloud segmentation based on randomized smoothing. The method leverages a novel scalable algorithm for prediction and certification that correctly accounts for multiple testing, necessary for ensuring statistical guarantees. The key to our approach is reliance on established multiple-testing correction mechanisms as well as the ability to abstain from classifying single pixels or points while still robustly segmenting the overall input. Our experimental evaluation on synthetic data and challenging datasets, such as Pascal Context, Cityscapes, and ShapeNet, shows that our algorithm can achieve, for the first time, competitive accuracy and certification guarantees on real-world segmentation tasks. We provide an implementation at https://github.com/eth-sri/segmentation-smoothing.",
+      "arxiv_id": "2107.00228",
+      "abs_url": "https://arxiv.org/abs/2107.00228"
+    }
+  },
+  {
+    "index": 11,
+    "query_title": "Dynamic Divide-and-Conquer Adversarial Training for Robust Semantic Segmentation",
+    "query_year": 2021,
+    "query_venue": "ICCV",
+    "local_source_type": "tex_source",
+    "local_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\11_Dynamic_Divide_and_Conquer_Adversarial_Training_for_Robust_Semantic_Se\\2003.06555.tar",
+    "verified": {
+      "source": "arxiv",
+      "title": "Dynamic Divide-and-Conquer Adversarial Training for Robust Semantic Segmentation",
+      "year": 2020,
+      "published": "2020-03-14T05:06:49Z",
+      "authors": [
+        "Xiaogang Xu",
+        "Hengshuang Zhao",
+        "Jiaya Jia"
+      ],
+      "abstract": "Adversarial training is promising for improving robustness of deep neural networks towards adversarial perturbations, especially on the classification task. The effect of this type of training on semantic segmentation, contrarily, just commences. We make the initial attempt to explore the defense strategy on semantic segmentation by formulating a general adversarial training procedure that can perform decently on both adversarial and clean samples. We propose a dynamic divide-and-conquer adversarial training (DDC-AT) strategy to enhance the defense effect, by setting additional branches in the target model during training, and dealing with pixels with diverse properties towards adversarial perturbation. Our dynamical division mechanism divides pixels into multiple branches automatically. Note all these additional branches can be abandoned during inference and thus leave no extra parameter and computation cost. Extensive experiments with various segmentation models are conducted on PASCAL VOC 2012 and Cityscapes datasets, in which DDC-AT yields satisfying performance under both white- and black-box attack.",
+      "arxiv_id": "2003.06555",
+      "abs_url": "https://arxiv.org/abs/2003.06555"
+    }
+  },
+  {
+    "index": 12,
+    "query_title": "Adversarial Attacks against LiDAR Semantic Segmentation in Autonomous Driving",
+    "query_year": 2021,
+    "query_venue": "SenSys",
+    "local_source_type": "pdf",
+    "local_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\12_Adversarial_Attacks_against_LiDAR_Semantic_Segmentation_in_Autonomous_\\paper.pdf",
+    "verified": {
+      "source": "crossref",
+      "title": "Adversarial Attacks against LiDAR Semantic Segmentation in Autonomous Driving",
+      "year": 2021,
+      "authors": [
+        "Yi Zhu",
+        "Chenglin Miao",
+        "Foad Hajiaghajani",
+        "Mengdi Huai",
+        "Lu Su",
+        "Chunming Qiao"
+      ],
+      "abstract": "",
+      "doi": "10.1145/3485730.3485935",
+      "url": "https://doi.org/10.1145/3485730.3485935",
+      "score": 1.08
+    }
+  },
+  {
+    "index": 13,
+    "query_title": "Towards Robust General Medical Image Segmentation",
+    "query_year": 2021,
+    "query_venue": "MICCAI",
+    "local_source_type": "tex_source",
+    "local_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\13_Towards_Robust_General_Medical_Image_Segmentation\\2107.04263.tar",
+    "verified": {
+      "source": "arxiv",
+      "title": "Towards Robust General Medical Image Segmentation",
+      "year": 2021,
+      "published": "2021-07-09T07:17:05Z",
+      "authors": [
+        "Laura Daza",
+        "Juan C. Pérez",
+        "Pablo Arbeláez"
+      ],
+      "abstract": "The reliability of Deep Learning systems depends on their accuracy but also on their robustness against adversarial perturbations to the input data. Several attacks and defenses have been proposed to improve the performance of Deep Neural Networks under the presence of adversarial noise in the natural image domain. However, robustness in computer-aided diagnosis for volumetric data has only been explored for specific tasks and with limited attacks. We propose a new framework to assess the robustness of general medical image segmentation systems. Our contributions are two-fold: (i) we propose a new benchmark to evaluate robustness in the context of the Medical Segmentation Decathlon (MSD) by extending the recent AutoAttack natural image classification framework to the domain of volumetric data segmentation, and (ii) we present a novel lattice architecture for RObust Generic medical image segmentation (ROG). Our results show that ROG is capable of generalizing across different tasks of the MSD and largely surpasses the state-of-the-art under sophisticated adversarial attacks.",
+      "arxiv_id": "2107.04263",
+      "abs_url": "https://arxiv.org/abs/2107.04263"
+    }
+  },
+  {
+    "index": 14,
+    "query_title": "Evaluating the Robustness of Semantic Segmentation in Real-World Adversarial Patch Attacks",
+    "query_year": 2022,
+    "query_venue": "WACV",
+    "local_source_type": "tex_source",
+    "local_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\14_Evaluating_the_Robustness_of_Semantic_Segmentation_in_Real_World_Adver\\2108.06179.tar",
+    "verified": {
+      "source": "arxiv",
+      "title": "Evaluating the Robustness of Semantic Segmentation for Autonomous Driving against Real-World Adversarial Patch Attacks",
+      "year": 2021,
+      "published": "2021-08-13T11:49:09Z",
+      "authors": [
+        "Federico Nesti",
+        "Giulio Rossolini",
+        "Saasha Nair",
+        "Alessandro Biondi",
+        "Giorgio Buttazzo"
+      ],
+      "abstract": "Deep learning and convolutional neural networks allow achieving impressive performance in computer vision tasks, such as object detection and semantic segmentation (SS). However, recent studies have shown evident weaknesses of such models against adversarial perturbations. In a real-world scenario instead, like autonomous driving, more attention should be devoted to real-world adversarial examples (RWAEs), which are physical objects (e.g., billboards and printable patches) optimized to be adversarial to the entire perception pipeline. This paper presents an in-depth evaluation of the robustness of popular SS models by testing the effects of both digital and real-world adversarial patches. These patches are crafted with powerful attacks enriched with a novel loss function. Firstly, an investigation on the Cityscapes dataset is conducted by extending the Expectation Over Transformation (EOT) paradigm to cope with SS. Then, a novel attack optimization, called scene-specific attack, is proposed. Such an attack leverages the CARLA driving simulator to improve the transferability of the proposed EOT-based attack to a real 3D environment. Finally, a printed physical billboard containing an adversarial patch was tested in an outdoor driving scenario to assess the feasibility of the studied attacks in the real world. Exhaustive experiments revealed that the proposed attack formulations outperform previous work to craft both digital and real-world adversarial patches for SS. At the same time, the experimental results showed how these attacks are notably less effective in the real world, hence questioning the practical relevance of adversarial attacks to SS models for autonomous/assisted driving.",
+      "arxiv_id": "2108.06179",
+      "abs_url": "https://arxiv.org/abs/2108.06179"
+    }
+  },
+  {
+    "index": 15,
+    "query_title": "Towards Semantically Stealthy Adversarial Attacks Against Segmentation Models",
+    "query_year": 2022,
+    "query_venue": "WACV",
+    "local_source_type": "tex_source",
+    "local_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\15_Towards_Semantically_Stealthy_Adversarial_Attacks_Against_Segmentation\\2104.01732.tar",
+    "verified": {
+      "source": "arxiv",
+      "title": "Semantically Stealthy Adversarial Attacks against Segmentation Models",
+      "year": 2021,
+      "published": "2021-04-05T00:56:45Z",
+      "authors": [
+        "Zhenhua Chen",
+        "Chuhua Wang",
+        "David J. Crandall"
+      ],
+      "abstract": "Segmentation models have been found to be vulnerable to targeted and non-targeted adversarial attacks. However, the resulting segmentation outputs are often so damaged that it is easy to spot an attack. In this paper, we propose semantically stealthy adversarial attacks which can manipulate targeted labels while preserving non-targeted labels at the same time. One challenge is making semantically meaningful manipulations across datasets and models. Another challenge is avoiding damaging non-targeted labels. To solve these challenges, we consider each input image as prior knowledge to generate perturbations. We also design a special regularizer to help extract features. To evaluate our model's performance, we design three basic attack types, namely `vanishing into the context,' `embedding fake labels,' and `displacing target objects.' Our experiments show that our stealthy adversarial model can attack segmentation models with a relatively high success rate on Cityscapes, Mapillary, and BDD100K. Our framework shows good empirical generalization across datasets and models.",
+      "arxiv_id": "2104.01732",
+      "abs_url": "https://arxiv.org/abs/2104.01732"
+    }
+  },
+  {
+    "index": 16,
+    "query_title": "SegPGD: An Effective and Efficient Adversarial Attack for Segmentation",
+    "query_year": 2022,
+    "query_venue": "ECCV",
+    "local_source_type": "tex_source",
+    "local_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\16_SegPGD_An_Effective_and_Efficient_Adversarial_Attack_for_Segmentation\\2207.12391.tar",
+    "verified": {
+      "source": "arxiv",
+      "title": "SegPGD: An Effective and Efficient Adversarial Attack for Evaluating and Boosting Segmentation Robustness",
+      "year": 2022,
+      "published": "2022-07-25T17:56:54Z",
+      "authors": [
+        "Jindong Gu",
+        "Hengshuang Zhao",
+        "Volker Tresp",
+        "Philip Torr"
+      ],
+      "abstract": "Deep neural network-based image classifications are vulnerable to adversarial perturbations. The image classifications can be easily fooled by adding artificial small and imperceptible perturbations to input images. As one of the most effective defense strategies, adversarial training was proposed to address the vulnerability of classification models, where the adversarial examples are created and injected into training data during training. The attack and defense of classification models have been intensively studied in past years. Semantic segmentation, as an extension of classifications, has also received great attention recently. Recent work shows a large number of attack iterations are required to create effective adversarial examples to fool segmentation models. The observation makes both robustness evaluation and adversarial training on segmentation models challenging. In this work, we propose an effective and efficient segmentation attack method, dubbed SegPGD. Besides, we provide a convergence analysis to show the proposed SegPGD can create more effective adversarial examples than PGD under the same number of attack iterations. Furthermore, we propose to apply our SegPGD as the underlying attack method for segmentation adversarial training. Since SegPGD can create more effective adversarial examples, the adversarial training with our SegPGD can boost the robustness of segmentation models. Our proposals are also verified with experiments on popular Segmentation model architectures and standard segmentation datasets.",
+      "arxiv_id": "2207.12391",
+      "abs_url": "https://arxiv.org/abs/2207.12391"
+    }
+  },
+  {
+    "index": 17,
+    "query_title": "Attacking LiDAR Semantic Segmentation in Autonomous Driving",
+    "query_year": 2022,
+    "query_venue": "NDSS",
+    "local_source_type": "pdf",
+    "local_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\17_Attacking_LiDAR_Semantic_Segmentation_in_Autonomous_Driving\\paper.pdf",
+    "verified": {
+      "source": "crossref",
+      "title": "Demo: Attacking LiDAR Semantic Segmentation in Autonomous Driving",
+      "year": 2022,
+      "authors": [
+        "Yi Zhu",
+        "Chenglin Miao",
+        "Foad Hajiaghajani",
+        "Mengdi Huai",
+        "Lu Su",
+        "Chunming Qiao"
+      ],
+      "abstract": "",
+      "doi": "10.14722/autosec.2022.23022",
+      "url": "https://doi.org/10.14722/autosec.2022.23022",
+      "score": 1.039
+    }
+  },
+  {
+    "index": 18,
+    "query_title": "Certified Defences Against Adversarial Patch Attacks on Semantic Segmentation",
+    "query_year": 2023,
+    "query_venue": "ICLR",
+    "local_source_type": "tex_source",
+    "local_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\18_Certified_Defences_Against_Adversarial_Patch_Attacks_on_Semantic_Segme\\2209.05980.tar",
+    "verified": {
+      "source": "arxiv",
+      "title": "Certified Defences Against Adversarial Patch Attacks on Semantic Segmentation",
+      "year": 2022,
+      "published": "2022-09-13T13:24:22Z",
+      "authors": [
+        "Maksym Yatsura",
+        "Kaspar Sakmann",
+        "N. Grace Hua",
+        "Matthias Hein",
+        "Jan Hendrik Metzen"
+      ],
+      "abstract": "Adversarial patch attacks are an emerging security threat for real world deep learning applications. We present Demasked Smoothing, the first approach (up to our knowledge) to certify the robustness of semantic segmentation models against this threat model. Previous work on certifiably defending against patch attacks has mostly focused on image classification task and often required changes in the model architecture and additional training which is undesirable and computationally expensive. In Demasked Smoothing, any segmentation model can be applied without particular training, fine-tuning, or restriction of the architecture. Using different masking strategies, Demasked Smoothing can be applied both for certified detection and certified recovery. In extensive experiments we show that Demasked Smoothing can on average certify 64% of the pixel predictions for a 1% patch in the detection task and 48% against a 0.5% patch for the recovery task on the ADE20K dataset.",
+      "arxiv_id": "2209.05980",
+      "abs_url": "https://arxiv.org/abs/2209.05980"
+    }
+  },
+  {
+    "index": 19,
+    "query_title": "Ensemble-Based Blackbox Attacks on Dense Prediction",
+    "query_year": 2023,
+    "query_venue": "CVPR",
+    "local_source_type": "tex_source",
+    "local_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\19_Ensemble_Based_Blackbox_Attacks_on_Dense_Prediction\\2303.14304.tar",
+    "verified": {
+      "source": "arxiv",
+      "title": "Ensemble-based Blackbox Attacks on Dense Prediction",
+      "year": 2023,
+      "published": "2023-03-25T00:08:03Z",
+      "authors": [
+        "Zikui Cai",
+        "Yaoteng Tan",
+        "M. Salman Asif"
+      ],
+      "abstract": "We propose an approach for adversarial attacks on dense prediction models (such as object detectors and segmentation). It is well known that the attacks generated by a single surrogate model do not transfer to arbitrary (blackbox) victim models. Furthermore, targeted attacks are often more challenging than the untargeted attacks. In this paper, we show that a carefully designed ensemble can create effective attacks for a number of victim models. In particular, we show that normalization of the weights for individual models plays a critical role in the success of the attacks. We then demonstrate that by adjusting the weights of the ensemble according to the victim model can further improve the performance of the attacks. We performed a number of experiments for object detectors and segmentation to highlight the significance of the our proposed methods. Our proposed ensemble-based method outperforms existing blackbox attack methods for object detection and segmentation. Finally we show that our proposed method can also generate a single perturbation that can fool multiple blackbox detection and segmentation models simultaneously. Code is available at https://github.com/CSIPlab/EBAD.",
+      "arxiv_id": "2303.14304",
+      "abs_url": "https://arxiv.org/abs/2303.14304"
+    }
+  },
+  {
+    "index": 20,
+    "query_title": "Proximal Splitting Adversarial Attack for Semantic Segmentation",
+    "query_year": 2023,
+    "query_venue": "CVPR",
+    "local_source_type": "tex_source",
+    "local_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\20_Proximal_Splitting_Adversarial_Attack_for_Semantic_Segmentation\\2206.07179.tar",
+    "verified": {
+      "source": "arxiv",
+      "title": "Proximal Splitting Adversarial Attacks for Semantic Segmentation",
+      "year": 2022,
+      "published": "2022-06-14T21:23:02Z",
+      "authors": [
+        "Jérôme Rony",
+        "Jean-Christophe Pesquet",
+        "Ismail Ben Ayed"
+      ],
+      "abstract": "Classification has been the focal point of research on adversarial attacks, but only a few works investigate methods suited to denser prediction tasks, such as semantic segmentation. The methods proposed in these works do not accurately solve the adversarial segmentation problem and, therefore, overestimate the size of the perturbations required to fool models. Here, we propose a white-box attack for these models based on a proximal splitting to produce adversarial perturbations with much smaller $\\ell_\\infty$ norms. Our attack can handle large numbers of constraints within a nonconvex minimization framework via an Augmented Lagrangian approach, coupled with adaptive constraint scaling and masking strategies. We demonstrate that our attack significantly outperforms previously proposed ones, as well as classification attacks that we adapted for segmentation, providing a first comprehensive benchmark for this dense task.",
+      "arxiv_id": "2206.07179",
+      "abs_url": "https://arxiv.org/abs/2206.07179"
+    }
+  },
+  {
+    "index": 21,
+    "query_title": "Reliability in Semantic Segmentation: Are We on the Right Track?",
+    "query_year": 2023,
+    "query_venue": "CVPR",
+    "local_source_type": "tex_source",
+    "local_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\21_Reliability_in_Semantic_Segmentation_Are_We_on_the_Right_Track\\2303.11298.tar",
+    "verified": {
+      "source": "arxiv",
+      "title": "Reliability in Semantic Segmentation: Are We on the Right Track?",
+      "year": 2023,
+      "published": "2023-03-20T17:38:24Z",
+      "authors": [
+        "Pau de Jorge",
+        "Riccardo Volpi",
+        "Philip Torr",
+        "Gregory Rogez"
+      ],
+      "abstract": "Motivated by the increasing popularity of transformers in computer vision, in recent times there has been a rapid development of novel architectures. While in-domain performance follows a constant, upward trend, properties like robustness or uncertainty estimation are less explored -leaving doubts about advances in model reliability. Studies along these axes exist, but they are mainly limited to classification models. In contrast, we carry out a study on semantic segmentation, a relevant task for many real-world applications where model reliability is paramount. We analyze a broad variety of models, spanning from older ResNet-based architectures to novel transformers and assess their reliability based on four metrics: robustness, calibration, misclassification detection and out-of-distribution (OOD) detection. We find that while recent models are significantly more robust, they are not overall more reliable in terms of uncertainty estimation. We further explore methods that can come to the rescue and show that improving calibration can also help with other uncertainty metrics such as misclassification or OOD detection. This is the first study on modern segmentation models focused on both robustness and uncertainty estimation and we hope it will help practitioners and researchers interested in this fundamental vision task. Code available at https://github.com/naver/relis.",
+      "arxiv_id": "2303.11298",
+      "abs_url": "https://arxiv.org/abs/2303.11298"
+    }
+  },
+  {
+    "index": 22,
+    "query_title": "Towards Robust Semantic Segmentation against Patch-based Attack via Attention Refinement",
+    "query_year": 2024,
+    "query_venue": "IJCV",
+    "local_source_type": "tex_source",
+    "local_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\22_Towards_Robust_Semantic_Segmentation_against_Patch_based_Attack_via_At\\2401.01750.tar",
+    "verified": {
+      "source": "arxiv",
+      "title": "Towards Robust Semantic Segmentation against Patch-based Attack via Attention Refinement",
+      "year": 2024,
+      "published": "2024-01-03T13:58:35Z",
+      "authors": [
+        "Zheng Yuan",
+        "Jie Zhang",
+        "Yude Wang",
+        "Shiguang Shan",
+        "Xilin Chen"
+      ],
+      "abstract": "The attention mechanism has been proven effective on various visual tasks in recent years. In the semantic segmentation task, the attention mechanism is applied in various methods, including the case of both Convolution Neural Networks (CNN) and Vision Transformer (ViT) as backbones. However, we observe that the attention mechanism is vulnerable to patch-based adversarial attacks. Through the analysis of the effective receptive field, we attribute it to the fact that the wide receptive field brought by global attention may lead to the spread of the adversarial patch. To address this issue, in this paper, we propose a Robust Attention Mechanism (RAM) to improve the robustness of the semantic segmentation model, which can notably relieve the vulnerability against patch-based attacks. Compared to the vallina attention mechanism, RAM introduces two novel modules called Max Attention Suppression and Random Attention Dropout, both of which aim to refine the attention matrix and limit the influence of a single adversarial patch on the semantic segmentation results of other positions. Extensive experiments demonstrate the effectiveness of our RAM to improve the robustness of semantic segmentation models against various patch-based attack methods under different attack settings.",
+      "arxiv_id": "2401.01750",
+      "abs_url": "https://arxiv.org/abs/2401.01750"
+    }
+  },
+  {
+    "index": 23,
+    "query_title": "Uncertainty-Based Detection of Adversarial Attacks in Semantic Segmentation",
+    "query_year": 2024,
+    "query_venue": "PDF",
+    "local_source_type": "tex_source",
+    "local_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\23_Uncertainty_Based_Detection_of_Adversarial_Attacks_in_Semantic_Segment\\2305.12825.tar",
+    "verified": {
+      "source": "arxiv",
+      "title": "Uncertainty-based Detection of Adversarial Attacks in Semantic Segmentation",
+      "year": 2023,
+      "published": "2023-05-22T08:36:35Z",
+      "authors": [
+        "Kira Maag",
+        "Asja Fischer"
+      ],
+      "abstract": "State-of-the-art deep neural networks have proven to be highly powerful in a broad range of tasks, including semantic image segmentation. However, these networks are vulnerable against adversarial attacks, i.e., non-perceptible perturbations added to the input image causing incorrect predictions, which is hazardous in safety-critical applications like automated driving. Adversarial examples and defense strategies are well studied for the image classification task, while there has been limited research in the context of semantic segmentation. First works however show that the segmentation outcome can be severely distorted by adversarial attacks. In this work, we introduce an uncertainty-based approach for the detection of adversarial attacks in semantic segmentation. We observe that uncertainty as for example captured by the entropy of the output distribution behaves differently on clean and perturbed images and leverage this property to distinguish between the two cases. Our method works in a light-weight and post-processing manner, i.e., we do not modify the model or need knowledge of the process used for generating adversarial examples. In a thorough empirical analysis, we demonstrate the ability of our approach to detect perturbed images across multiple types of adversarial attacks.",
+      "arxiv_id": "2305.12825",
+      "abs_url": "https://arxiv.org/abs/2305.12825"
+    }
+  },
+  {
+    "index": 24,
+    "query_title": "Evaluating the Adversarial Robustness of Semantic Segmentation",
+    "query_year": 2024,
+    "query_venue": "ECCV",
+    "local_source_type": "tex_source",
+    "local_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\24_Evaluating_the_Adversarial_Robustness_of_Semantic_Segmentation\\2306.14217.tar",
+    "verified": {
+      "source": "arxiv",
+      "title": "On Evaluating the Adversarial Robustness of Semantic Segmentation Models",
+      "year": 2023,
+      "published": "2023-06-25T11:45:08Z",
+      "authors": [
+        "Levente Halmosi",
+        "Mark Jelasity"
+      ],
+      "abstract": "Achieving robustness against adversarial input perturbation is an important and intriguing problem in machine learning. In the area of semantic image segmentation, a number of adversarial training approaches have been proposed as a defense against adversarial perturbation, but the methodology of evaluating the robustness of the models is still lacking, compared to image classification. Here, we demonstrate that, just like in image classification, it is important to evaluate the models over several different and hard attacks. We propose a set of gradient based iterative attacks and show that it is essential to perform a large number of iterations. We include attacks against the internal representations of the models as well. We apply two types of attacks: maximizing the error with a bounded perturbation, and minimizing the perturbation for a given level of error. Using this set of attacks, we show for the first time that a number of models in previous work that are claimed to be robust are in fact not robust at all. We then evaluate simple adversarial training algorithms that produce reasonably robust models even under our set of strong attacks. Our results indicate that a key design decision to achieve any robustness is to use only adversarial examples during training. However, this introduces a trade-off between robustness and accuracy.",
+      "arxiv_id": "2306.14217",
+      "abs_url": "https://arxiv.org/abs/2306.14217"
+    }
+  },
+  {
+    "index": 25,
+    "query_title": "Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models",
+    "query_year": 2024,
+    "query_venue": "ECCV",
+    "local_source_type": "tex_source",
+    "local_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\25_Towards_Reliable_Evaluation_and_Fast_Training_of_Robust_Semantic_Segme\\2306.12941.tar",
+    "verified": {
+      "source": "arxiv",
+      "title": "Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models",
+      "year": 2023,
+      "published": "2023-06-22T14:56:06Z",
+      "authors": [
+        "Francesco Croce",
+        "Naman D Singh",
+        "Matthias Hein"
+      ],
+      "abstract": "Adversarial robustness has been studied extensively in image classification, especially for the $\\ell_\\infty$-threat model, but significantly less so for related tasks such as object detection and semantic segmentation, where attacks turn out to be a much harder optimization problem than for image classification. We propose several problem-specific novel attacks minimizing different metrics in accuracy and mIoU. The ensemble of our attacks, SEA, shows that existing attacks severely overestimate the robustness of semantic segmentation models. Surprisingly, existing attempts of adversarial training for semantic segmentation models turn out to be weak or even completely non-robust. We investigate why previous adaptations of adversarial training to semantic segmentation failed and show how recently proposed robust ImageNet backbones can be used to obtain adversarially robust semantic segmentation models with up to six times less training time for PASCAL-VOC and the more challenging ADE20k. The associated code and robust models are available at https://github.com/nmndeep/robust-segmentation",
+      "arxiv_id": "2306.12941",
+      "abs_url": "https://arxiv.org/abs/2306.12941"
+    }
+  },
+  {
+    "index": 26,
+    "query_title": "SemSegBench and DetecBench: Benchmarking Reliability and Generalization Beyond Classification",
+    "query_year": 2025,
+    "query_venue": "arXiv",
+    "local_source_type": "tex_source",
+    "local_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\26_SemSegBench_and_DetecBench_Benchmarking_Reliability_and_Generalization\\2505.18015.tar",
+    "verified": {
+      "source": "arxiv",
+      "title": "SemSegBench & DetecBench: Benchmarking Reliability and Generalization Beyond Classification",
+      "year": 2025,
+      "published": "2025-05-23T15:17:45Z",
+      "authors": [
+        "Shashank Agnihotri",
+        "David Schader",
+        "Jonas Jakubassa",
+        "Nico Sharei",
+        "Simon Kral",
+        "Mehmet Ege Kaçar",
+        "Ruben Weber",
+        "Margret Keuper"
+      ],
+      "abstract": "Reliability and generalization in deep learning are predominantly studied in the context of image classification. Yet, real-world applications in safety-critical domains involve a broader set of semantic tasks, such as semantic segmentation and object detection, which come with a diverse set of dedicated model architectures. To facilitate research towards robust model design in segmentation and detection, our primary objective is to provide benchmarking tools regarding robustness to distribution shifts and adversarial manipulations. We propose the benchmarking tools SEMSEGBENCH and DETECBENCH, along with the most extensive evaluation to date on the reliability and generalization of semantic segmentation and object detection models. In particular, we benchmark 76 segmentation models across four datasets and 61 object detectors across two datasets, evaluating their performance under diverse adversarial attacks and common corruptions. Our findings reveal systematic weaknesses in state-of-the-art models and uncover key trends based on architecture, backbone, and model capacity. SEMSEGBENCH and DETECBENCH are open-sourced in our GitHub repository (https://github.com/shashankskagnihotri/benchmarking_reliability_generalization) along with our complete set of total 6139 evaluations. We anticipate the collected data to foster and encourage future research towards improved model reliability beyond classification.",
+      "arxiv_id": "2505.18015",
+      "abs_url": "https://arxiv.org/abs/2505.18015"
+    }
+  },
+  {
+    "index": 27,
+    "query_title": "RP-PGD: Enhancing Semantic Segmentation Robustness via Region-based Prioritized PGD",
+    "query_year": 2025,
+    "query_venue": "AAAI",
+    "local_source_type": "pdf",
+    "local_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\27_RP_PGD_Enhancing_Semantic_Segmentation_Robustness_via_Region_based_Pri\\paper.pdf",
+    "verified": {
+      "source": "crossref",
+      "title": "RP-PGD: Boosting Segmentation Robustness with a Region-and-Prototype Based Adversarial Attack",
+      "year": 2025,
+      "authors": [
+        "Yuxuan Zhang",
+        "Zhenbo Shi",
+        "Shuchang Wang",
+        "Wei Yang",
+        "Shaowei Wang",
+        "Yinxing Xue"
+      ],
+      "abstract": "Adversarial attack and defense have been extensively explored in classification tasks, but their study in semantic segmentation remains limited. Moreover, current attacks fail to act as strong underlying attacks for adversarial training (AT), making it difficult to achieve segmentation robustness against strong attacks. In this paper, we present RP-PGD, a novel Region-and-Prototype based Projected Gradient Descent attack tailored to fool segmentation models. In particular, we propose a region-based attack, which leverages a spatial-temporal way to separate the pixels into three disjoint regions, and highlights the attack on the crucial True Region and Boundary Region. Moreover, we introduce a prototype-based attack to disrupt the feature space, further enhancing the attack capability. To boost the robustness of segmentation models, we inject adversaries generated by RP-PGD into the clean data and perform AT. Extensive experiments on multiple datasets showcase that RP-PGD generates adversaries with faster convergence and stronger attack effectiveness, surpassing state-of-the-art attacks by a large margin. Consequently, RP-PGD serves as a strong underlying attack for segmentation models to perform AT, assisting them in defending against a variety of strong attacks without incurring additional computational costs during inference.",
+      "doi": "10.1609/aaai.v39i10.33122",
+      "url": "https://doi.org/10.1609/aaai.v39i10.33122",
+      "score": 0.701
+    }
+  },
+  {
+    "index": 28,
+    "query_title": "Erosion Attack for Adversarial Training to Enhance Semantic Segmentation Robustness",
+    "query_year": 2026,
+    "query_venue": "arXiv",
+    "local_source_type": "tex_source",
+    "local_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\28_Erosion_Attack_for_Adversarial_Training_to_Enhance_Semantic_Segmentati\\2601.14950.tar",
+    "verified": {
+      "source": "crossref",
+      "title": "Single-step Adversarial Training for Semantic Segmentation",
+      "year": 2022,
+      "authors": [
+        "Daniel Wiens",
+        "Barbara Hammer"
+      ],
+      "abstract": "",
+      "doi": "10.5220/0010788400003122",
+      "url": "https://doi.org/10.5220/0010788400003122",
+      "score": 0.709
+    }
+  }
+]

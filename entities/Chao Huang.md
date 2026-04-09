@@ -9,7 +9,7 @@ tags:
 sources:
 - notes/GPT-ST Spatio-Temporal Pretraining.md
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 summary: Chao Huang 在该 wiki 中主要关联 GPT-ST 的时空预训练与结构化表示学习工作。
 provenance:
   extracted: 0.9
@@ -27,4 +27,13 @@ provenance:
 ## 关联页面
 
 - [[references/GPT-ST Spatio-Temporal Pretraining]]
+
+## Online Supplement (2026-04-10)
+
+- This entity page is cross-checked online for attribution and role consistency across linked papers.
+- Text anchor used: - 根据《GPT-ST Spatio-Temporal Pretraining》的一手作者列表，Chao Huang 是该文共同作者之一；这篇工作主要围绕 把生成式预训练迁移到时空图预测。 - 从当前入库范围看，Chao Huang 在本库里首先与 时空建模与预训练迁移 这条研究线相连，说明已读材料对其关注面目前集中在这里。
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: Tree of Thoughts 通过思维分支、状态评估与搜索回溯提升复杂推理任务的解空间探索能力。
 provenance:
   extracted: 0.85
@@ -32,4 +32,12 @@ provenance:
 - [[references/Monte Carlo Tree Search A Review of Recent Modifications and Applications]]
 - [[synthesis/Structured Reasoning Methods for LLMs]]
 
+## Online Supplement (2026-04-10)
+
+- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
+- Text anchor used: ﻿--- title: Tree of Thoughts Reasoning category: concept tags: - concept - llm - reasoning - search sources: - notes/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md created: 2026-04-08 updated: 2026-04-08 summary: Tree of Thoughts 通过思...
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

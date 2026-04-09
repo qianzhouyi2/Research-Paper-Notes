@@ -1,0 +1,16 @@
+{
+  "index": 9,
+  "query_title": "Robustness Verification of Semantic Segmentation Neural Networks using Relaxed Reachability",
+  "query_year": 2021,
+  "query_venue": "CAV",
+  "matched_title": "Robustness Verification of Semantic Segmentation Neural Networks Using Relaxed Reachability",
+  "matched_year": 2021,
+  "source_type": "pdf",
+  "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\09_Robustness_Verification_of_Semantic_Segmentation_Neural_Networks_using\\paper.pdf",
+  "status": "ok",
+  "note": "pdf already exists",
+  "urls": {
+    "semantic_scholar": "https://www.semanticscholar.org/paper/43ba3e55d295d0312126c34bccfa70c5fa62d556",
+    "pdf": "https://link.springer.com/content/pdf/10.1007/978-3-030-81685-8_12.pdf"
+  }
+}

@@ -4,7 +4,7 @@ category: log
 tags:
   - log
   - wiki
-updated: 2026-04-09
+updated: 2026-04-10
 summary: 记录 wiki 初始化、ingest 与维护操作的时间线。
 ---
 
@@ -52,3 +52,11 @@ summary: 记录 wiki 初始化、ingest 与维护操作的时间线。
 - [2026-04-09 12:37:22 +08:00] UPDATE source="workspace/wiki-update-2026-04-09-segmentation-attack-priors" pages_updated=7 pages_created=2 mode=append notes="added concept cards for Indirect Local Attack in Segmentation and SegPGD, linked them into the Delving segmentation attack thread, and synced concept/home indexes with manifest"
 - [2026-04-09 12:36:48 +08:00] TAG_NORMALIZE tags_renamed=8 pages_modified=10 new_tags_added=1 notes="reconstructed _meta/taxonomy.md, normalized ambiguous legacy tags, and backfilled frontmatter on journal/projects index pages"
 - [2026-04-09 16:12:38 +08:00] UPDATE source="workspace/wiki-update-2026-04-09-nes-linf-calibration" pages_updated=10 pages_created=2 mode=append notes="added concept cards for NES and L-infinity Norm Ball, calibrated Random Attack / NES / l-infinity explanations in the Delving segmentation attack thread, and synced concept/home indexes with manifest"
+- [2026-04-09 22:01:44 +08:00] UPDATE source="papers_sources/semantic_segmentation_robustness_20260409" pages_updated=4 pages_created=2 mode=append notes="synced 28-paper semantic segmentation robustness corpus (22 arXiv TeX sources + 6 PDF fallback) into synthesis/journal and refreshed indexes"
+- [2026-04-10 11:30:00 +08:00] INGEST source="workspace/wiki-ingest-2026-04-10-seg-robustness-batches" pages_updated=7 pages_created=125 mode=append notes="per-paper verified ingest for 28 segmentation robustness papers; added 30 concepts, 60 entities, and 6 synthesis pages"
+- [2026-04-10 12:05:00 +08:00] UPDATE source="workspace/wiki-update-2026-04-10-seg-robustness-deepening" pages_updated=30 pages_created=1 mode=append notes="deepened 28 per-paper reference cards with local abstract evidence and added a batch reading matrix synthesis page"
+- [2026-04-10 12:26:00 +08:00] UPDATE source="workspace/wiki-update-2026-04-10-seg-robustness-structure-pass" pages_updated=28 pages_created=0 mode=append notes="added local TeX section-structure evidence to per-paper reference cards and saved structure extraction artifact"
+- [2026-04-10 13:10:00 +08:00] UPDATE source="workspace/wiki-update-2026-04-10-full-online-pass" pages_updated=100 pages_created=0 mode=append notes="completed one-by-one online supplement for extracted concepts/entities/synthesis pages in segmentation robustness corpus"
+- [2026-04-10 13:32:00 +08:00] UPDATE source="workspace/wiki-update-2026-04-10-online-pass-encoding-fix" pages_updated=104 pages_created=0 mode=append notes="replaced garbled online-supplement sections with clean one-by-one online supplement blocks"
+- [2026-04-10 13:45:00 +08:00] UPDATE source="workspace/wiki-update-2026-04-10-global-online-pass" pages_updated=252 pages_created=0 mode=append notes="normalized online supplement sections for all concepts/entities/synthesis pages"
+- [2026-04-10 13:52:00 +08:00] UPDATE source="workspace/wiki-update-2026-04-10-index-cleanup" pages_updated=7 pages_created=0 mode=append notes="removed garbled heading blocks from index pages and normalized updated dates"

@@ -1,0 +1,16 @@
+{
+  "index": 1,
+  "query_title": "On the Robustness of Redundant Teacher-Student Frameworks for Semantic Segmentation",
+  "query_year": 2019,
+  "query_venue": "CVPRW",
+  "matched_title": "On the Robustness of Redundant Teacher-Student Frameworks for Semantic Segmentation",
+  "matched_year": 2019,
+  "source_type": "pdf",
+  "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\01_On_the_Robustness_of_Redundant_Teacher_Student_Frameworks_for_Semantic\\paper.pdf",
+  "status": "ok",
+  "note": "pdf downloaded",
+  "urls": {
+    "semantic_scholar": null,
+    "pdf": "https://openaccess.thecvf.com/content_CVPRW_2019/papers/SAIAD/Bar_On_the_Robustness_of_Redundant_Teacher-Student_Frameworks_for_Semantic_Segmentation_CVPRW_2019_paper.pdf"
+  }
+}

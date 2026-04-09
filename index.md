@@ -6,7 +6,7 @@ category: index
 tags:
   - index
   - wiki
-updated: 2026-04-09
+updated: 2026-04-10
 summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 结果。
 ---
 
@@ -52,10 +52,17 @@ summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 
 - References：26 篇（含 1 个 MeanSparse 命名桥接页）
 - Concepts：60 篇（方法级与协议级概念）
 - Entities：71 篇（作者/模型/数据集）
-- Synthesis：21 篇（跨论文主题综合）
-- 已纳管来源：34 个（见 [[log]] 与 `.manifest.json`）
+- Synthesis：22 篇（跨论文主题综合）
+- 已纳管来源：36 个（见 [[log]] 与 `.manifest.json`）
 - 原始资料：[[papers_sources]]
 - 模板：[[Templates/论文阅读模板|论文阅读模板]]
+
+## 最新 Wiki Update（2026-04-09，Segmentation Robustness Corpus Sync）
+
+- 类型：`wiki-update`（corpus sync）
+- 新增页面：[[synthesis/Semantic Segmentation Robustness Corpus 2019-2026]]、[[journal/Semantic Segmentation Robustness Corpus Update 2026-04-09]]
+- 更新页面：[[synthesis/index]]、[[journal/index]]、[[index]]、[[log]]
+- 说明：将 `papers_sources/semantic_segmentation_robustness_20260409` 的 28 篇语义分割鲁棒性论文下载结果同步入库（22 个 TeX 源码包 + 6 个 PDF 回退）。
 
 ## 最新 Wiki Update（2026-04-09，模型实体补齐）
 
@@ -180,3 +187,12 @@ summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 
 - [x] 为重点薄弱笔记补齐第二轮概念/实体/综合锚点
 - [x] 在 `references/` 补齐单篇摘要卡并完成联网核验
 - [ ] 新建一个 `projects/` 专题页（例如“长上下文建模”）
+
+## Latest Wiki Ingest (2026-04-10, Segmentation Robustness Batch 1-4)
+
+- Type: `wiki-ingest + wiki-update` (batch-wise per-paper verification).
+- Created: 28 references, 30 concepts, 60 entities, 6 synthesis, 1 journal page.
+- Updated: [[references/index]], [[concepts/index]], [[entities/index]], [[synthesis/index]], [[journal/index]], [[index]], [[log]].
+- Note: all 28 papers were checked against online metadata (arXiv/Crossref) and local downloads.
+- Follow-up: completed one-by-one online supplement pass for all extracted concepts/entities/synthesis pages.
+- Deepening pass: upgraded all 28 reference cards with local abstract evidence and added [[synthesis/Segmentation Robustness Batch Reading Matrix 2019-2026]].

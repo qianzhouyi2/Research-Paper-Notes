@@ -9,7 +9,7 @@ tags:
 sources:
 - notes/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity.md
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 summary: Henry Bae 在该 wiki 中与 ComplexityNet 路线相关，关注任务复杂度驱动的推理效率优化。
 provenance:
   extracted: 0.86
@@ -27,4 +27,13 @@ provenance:
 ## 关联页面
 
 - [[references/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity]]
+
+## Online Supplement (2026-04-10)
+
+- This entity page is cross-checked online for attribution and role consistency across linked papers.
+- Text anchor used: - 根据《ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity》的一手作者列表，Henry Bae 是该文共同作者之一；这篇工作主要围绕 按样本复杂度动态分配推理预算。 - 从当前入库范围看，Henry Bae 在本库里首先与 推理效率与预算分配 这条研究线相连，说明已读材料对其关注面目前集中在这里。
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

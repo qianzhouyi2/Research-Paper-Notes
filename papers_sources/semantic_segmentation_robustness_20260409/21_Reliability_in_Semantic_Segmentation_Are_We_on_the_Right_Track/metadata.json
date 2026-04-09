@@ -1,0 +1,17 @@
+{
+  "index": 21,
+  "query_title": "Reliability in Semantic Segmentation: Are We on the Right Track?",
+  "query_year": 2023,
+  "query_venue": "CVPR",
+  "matched_title": "Reliability in Semantic Segmentation: Are we on the Right Track?",
+  "matched_year": 2023,
+  "source_type": "tex_source",
+  "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\21_Reliability_in_Semantic_Segmentation_Are_We_on_the_Right_Track\\2303.11298.tar",
+  "status": "ok",
+  "note": "arXiv source already exists",
+  "urls": {
+    "semantic_scholar": "https://www.semanticscholar.org/paper/e925e0211bc260dad9946592ee1698be279f26d9",
+    "arxiv_source": "https://arxiv.org/e-print/2303.11298",
+    "arxiv_abs": "https://arxiv.org/abs/2303.11298"
+  }
+}

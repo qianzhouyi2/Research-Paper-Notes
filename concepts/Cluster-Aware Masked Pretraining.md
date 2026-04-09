@@ -10,7 +10,7 @@ sources:
   - papers_sources/Research-Paper-Notes/GPT-ST预训练时空框架.md
   - notes/GPT-ST Spatio-Temporal Pretraining.md
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 summary: 聚类感知掩码把预训练目标与簇内簇间结构绑定，较纯随机掩码更能学习可迁移时空关系。
 provenance:
   extracted: 0.86
@@ -40,5 +40,12 @@ provenance:
 - [[concepts/Spatio-Temporal Pretraining for Language Models]]
 - [[synthesis/Structured Spatio-Temporal Representation Learning]]
 
+## Online Supplement (2026-04-10)
 
+- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
+- Text anchor used: 把总掩码预算拆分为“结构感知掩码 + 随机掩码”，优先覆盖同簇元素并逐步引导跨簇关系学习。
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

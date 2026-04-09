@@ -1,0 +1,17 @@
+{
+  "index": 11,
+  "query_title": "Dynamic Divide-and-Conquer Adversarial Training for Robust Semantic Segmentation",
+  "query_year": 2021,
+  "query_venue": "ICCV",
+  "matched_title": "Dynamic Divide-and-Conquer Adversarial Training for Robust Semantic Segmentation",
+  "matched_year": 2021,
+  "source_type": "tex_source",
+  "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\11_Dynamic_Divide_and_Conquer_Adversarial_Training_for_Robust_Semantic_Se\\2003.06555.tar",
+  "status": "ok",
+  "note": "arXiv source downloaded",
+  "urls": {
+    "semantic_scholar": null,
+    "arxiv_source": "https://arxiv.org/e-print/2003.06555",
+    "arxiv_abs": "https://arxiv.org/abs/2003.06555"
+  }
+}

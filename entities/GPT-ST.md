@@ -9,7 +9,7 @@ tags:
 sources:
 - notes/GPT-ST Spatio-Temporal Pretraining.md
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 summary: GPT-ST 在该 wiki 中代表时空结构预训练路线，用于增强语言模型的时空关系建模能力。
 provenance:
   extracted: 0.87
@@ -28,4 +28,13 @@ provenance:
 
 - [[references/GPT-ST Spatio-Temporal Pretraining]]
 - [[synthesis/Spatio-Temporal Representation in Language Models]]
+
+## Online Supplement (2026-04-10)
+
+- This entity page is cross-checked online for attribution and role consistency across linked papers.
+- Text anchor used: - GPT-ST 在 OpenReview 上被定义为面向时空图神经网络的生成式预训练框架，核心是时空 mask autoencoder、定制参数学习器和层次化空间模式编码。 - 在本库里，GPT-ST 指向的是交通预测骨干而不是通用聊天 LLM，因此它连接的是时空表征与预训练迁移两条线。
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

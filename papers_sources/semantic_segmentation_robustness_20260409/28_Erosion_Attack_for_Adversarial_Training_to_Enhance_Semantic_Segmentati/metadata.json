@@ -1,0 +1,17 @@
+{
+  "index": 28,
+  "query_title": "Erosion Attack for Adversarial Training to Enhance Semantic Segmentation Robustness",
+  "query_year": 2026,
+  "query_venue": "arXiv",
+  "matched_title": "Erosion Attack for Adversarial Training to Enhance Semantic Segmentation Robustness",
+  "matched_year": 2026,
+  "source_type": "tex_source",
+  "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\28_Erosion_Attack_for_Adversarial_Training_to_Enhance_Semantic_Segmentati\\2601.14950.tar",
+  "status": "ok",
+  "note": "arXiv source downloaded",
+  "urls": {
+    "semantic_scholar": null,
+    "arxiv_source": "https://arxiv.org/e-print/2601.14950",
+    "arxiv_abs": "https://arxiv.org/abs/2601.14950"
+  }
+}

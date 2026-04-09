@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: 隐式 CoT 内化通过逐步移除显式推理 token，使模型在不依赖长推理文本的情况下保持推理能力。
 provenance:
   extracted: 0.86
@@ -32,4 +32,12 @@ provenance:
 - [[references/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations]]
 - [[synthesis/Structured Reasoning Methods for LLMs]]
 
+## Online Supplement (2026-04-10)
+
+- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
+- Text anchor used: ﻿--- title: Implicit Chain-of-Thought Internalization category: concept tags: - concept - llm - reasoning - cot sources: - notes/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step.md created: 2026-04-08 updated: 2026-04-08 summary: 隐式 C...
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

@@ -10,7 +10,7 @@ sources:
   - papers_sources/Maintaining Plasticity in Deep Continual Learning/arxiv.tex
   - papers_sources/Maintaining Plasticity in Deep Continual Learning/arxiv_2306.13812_source.tar.gz
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 summary: Continual Backpropagation 在常规反向传播基础上持续替换低效隐藏单元，以低额外开销维持模型长期可塑性。
 provenance:
   extracted: 0.9
@@ -49,4 +49,12 @@ CBP 是在标准反向传播之外，持续执行“低效单元选择性重初�
 - [[notes/Maintaining Plasticity in Deep Continual Learning]]
 - [[synthesis/Continual Learning Plasticity Maintenance Playbook]]
 
+## Online Supplement (2026-04-10)
+
+- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
+- Text anchor used: CBP 是在标准反向传播之外，持续执行“低效单元选择性重初始化”的训练机制。
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

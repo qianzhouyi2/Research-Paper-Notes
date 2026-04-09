@@ -1,0 +1,17 @@
+{
+  "index": 16,
+  "query_title": "SegPGD: An Effective and Efficient Adversarial Attack for Segmentation",
+  "query_year": 2022,
+  "query_venue": "ECCV",
+  "matched_title": "SegPGD: An Effective and Efficient Adversarial Attack for Evaluating and Boosting Segmentation Robustness",
+  "matched_year": 2022,
+  "source_type": "tex_source",
+  "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\16_SegPGD_An_Effective_and_Efficient_Adversarial_Attack_for_Segmentation\\2207.12391.tar",
+  "status": "ok",
+  "note": "arXiv source downloaded",
+  "urls": {
+    "semantic_scholar": null,
+    "arxiv_source": "https://arxiv.org/e-print/2207.12391",
+    "arxiv_abs": "https://arxiv.org/abs/2207.12391"
+  }
+}

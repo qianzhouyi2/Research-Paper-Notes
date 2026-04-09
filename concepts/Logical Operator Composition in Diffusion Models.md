@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/Compositional Visual Generation with Composable Diffusion Models.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: 使用 AND/NOT 等逻辑算子组合条件分布，实现可控的组合式视觉生成。
 provenance:
   extracted: 0.83
@@ -32,4 +32,12 @@ provenance:
 - [[concepts/Composable Diffusion Generation]]
 - [[synthesis/Multimodal Composition and Reasoning]]
 
+## Online Supplement (2026-04-10)
+
+- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
+- Text anchor used: ﻿--- title: Logical Operator Composition in Diffusion Models category: concept tags: - concept - diffusion - multimodal - generation sources: - notes/Compositional Visual Generation with Composable Diffusion Models.md created: 2026-04-08 updated: 2026-04-08 su...
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

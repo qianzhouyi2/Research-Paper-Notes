@@ -1,0 +1,18 @@
+{
+  "index": 18,
+  "query_title": "Certified Defences Against Adversarial Patch Attacks on Semantic Segmentation",
+  "query_year": 2023,
+  "query_venue": "ICLR",
+  "matched_title": "Certified Defences Against Adversarial Patch Attacks on Semantic Segmentation",
+  "matched_year": 2022,
+  "source_type": "tex_source",
+  "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\18_Certified_Defences_Against_Adversarial_Patch_Attacks_on_Semantic_Segme\\2209.05980.tar",
+  "status": "ok",
+  "note": "arXiv source downloaded",
+  "urls": {
+    "semantic_scholar": null,
+    "pdf": "https://arxiv.org/pdf/2209.05980",
+    "arxiv_source": "https://arxiv.org/e-print/2209.05980",
+    "arxiv_abs": "https://arxiv.org/abs/2209.05980"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "index": 20,
+  "query_title": "Proximal Splitting Adversarial Attack for Semantic Segmentation",
+  "query_year": 2023,
+  "query_venue": "CVPR",
+  "matched_title": "Proximal Splitting Adversarial Attack for Semantic Segmentation",
+  "matched_year": 2023,
+  "source_type": "tex_source",
+  "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\20_Proximal_Splitting_Adversarial_Attack_for_Semantic_Segmentation\\2206.07179.tar",
+  "status": "ok",
+  "note": "arXiv source downloaded",
+  "urls": {
+    "semantic_scholar": null,
+    "arxiv_source": "https://arxiv.org/e-print/2206.07179",
+    "arxiv_abs": "https://arxiv.org/abs/2206.07179"
+  }
+}

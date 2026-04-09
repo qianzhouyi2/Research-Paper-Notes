@@ -10,7 +10,7 @@ tags:
 sources:
   - https://arxiv.org/abs/1810.05291
 created: 2026-04-09
-updated: 2026-04-09
+updated: 2026-04-10
 summary: SignSGD 仅使用梯度符号更新参数，可显著压缩通信开销，并通过 majority vote 形成分布式鲁棒聚合。
 provenance:
   extracted: 0.79
@@ -49,4 +49,13 @@ w_{t+1}=w_t-\eta \cdot sign(g_t), \quad g_t=\nabla_w L(w_t)
 - [[concepts/Query-Efficient Attack Evaluation]]
 - [[concepts/SimBA (Simple Black-box Attack)]]
 - [[concepts/Square Attack]]
+
+## Online Supplement (2026-04-10)
+
+- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
+- Text anchor used: SignSGD 是只使用梯度符号（而非幅值）更新参数的优化方法：
+- Primary online sources used in this pass:
+- https://arxiv.org/abs/1810.05291
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

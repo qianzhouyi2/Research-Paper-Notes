@@ -1,0 +1,17 @@
+{
+  "index": 22,
+  "query_title": "Towards Robust Semantic Segmentation against Patch-based Attack via Attention Refinement",
+  "query_year": 2024,
+  "query_venue": "IJCV",
+  "matched_title": "Towards Robust Semantic Segmentation against Patch-Based Attack via Attention Refinement",
+  "matched_year": 2024,
+  "source_type": "tex_source",
+  "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\22_Towards_Robust_Semantic_Segmentation_against_Patch_based_Attack_via_At\\2401.01750.tar",
+  "status": "ok",
+  "note": "arXiv source downloaded",
+  "urls": {
+    "semantic_scholar": null,
+    "arxiv_source": "https://arxiv.org/e-print/2401.01750",
+    "arxiv_abs": "https://arxiv.org/abs/2401.01750"
+  }
+}

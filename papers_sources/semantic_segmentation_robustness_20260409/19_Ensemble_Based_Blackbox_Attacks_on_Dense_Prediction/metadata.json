@@ -1,0 +1,17 @@
+{
+  "index": 19,
+  "query_title": "Ensemble-Based Blackbox Attacks on Dense Prediction",
+  "query_year": 2023,
+  "query_venue": "CVPR",
+  "matched_title": "Ensemble-based Blackbox Attacks on Dense Prediction",
+  "matched_year": 2023,
+  "source_type": "tex_source",
+  "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\19_Ensemble_Based_Blackbox_Attacks_on_Dense_Prediction\\2303.14304.tar",
+  "status": "ok",
+  "note": "arXiv source downloaded",
+  "urls": {
+    "semantic_scholar": null,
+    "arxiv_source": "https://arxiv.org/e-print/2303.14304",
+    "arxiv_abs": "https://arxiv.org/abs/2303.14304"
+  }
+}

@@ -1,4 +1,4 @@
-﻿# CIF: Continuous Integrate-and-Fire for End-to-End Speech Recognition
+# CIF: Continuous Integrate-and-Fire for End-to-End Speech Recognition
 
 - 阅读日期：[[2026-04-08]]
 - 阅读状态：已读

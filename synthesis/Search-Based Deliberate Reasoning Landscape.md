@@ -13,7 +13,7 @@ sources:
   - notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md
   - notes/Demystifying Chains, Trees, and Graphs of Thoughts.md
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 summary: 该主题聚焦“显式搜索结构 + 过程评估反馈”的深度推理路径，比较树/图/MCTS 三类展开机制的计算与效果权衡。
 provenance:
   extracted: 0.76
@@ -47,3 +47,13 @@ provenance:
 
 - ToT 把“深思”形式化为可搜索树，GoT 则扩展到任意图结构并支持节点合并/反馈回路，覆盖更复杂的思维拓扑。
 - MCTS 综述中的选择-扩展-模拟-回传范式可直接映射到 LLM 推理搜索控制，适合作为可复用算法骨架。
+
+## Online Supplement (2026-04-10)
+
+- This synthesis page is cross-checked online for cross-paper consistency and evaluation-scope alignment.
+- Text anchor used: - 树搜索在分支控制上更直观，图搜索在状态复用与合并上更灵活。 - MCTS 与自评估结合可在固定预算下提高难题求解稳定性。^[inferred]
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
+

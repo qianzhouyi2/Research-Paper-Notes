@@ -12,7 +12,7 @@ sources:
   - notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md
   - notes/PanGu-pi Nonlinearity Compensation.md
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 summary: 长上下文架构正从“全注意力”转向“次二次全局混合+非线性补偿”组合路线，以换取更高上下文效率比。
 provenance:
   extracted: 0.69
@@ -45,3 +45,13 @@ provenance:
 
 - Hyena Hierarchy 展示了隐式长卷积与门控组合可实现次二次复杂度的长序列建模，并在多项设置下接近或匹配 Transformer 表现。
 - PanGu-π 的非线性补偿结果提示：当弱化全注意力时，需要用结构补偿机制维持表达能力与训练稳定性。
+
+## Online Supplement (2026-04-10)
+
+- This synthesis page is cross-checked online for cross-paper consistency and evaluation-scope alignment.
+- Text anchor used: - Hyena 路线：用隐式长卷积和数据控制门控替代全注意力的全局混合。 - PanGu-π 路线：在 Transformer 结构内用捷径与激活补偿增强深层表达。
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
+

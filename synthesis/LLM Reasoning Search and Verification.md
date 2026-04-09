@@ -12,7 +12,7 @@ sources:
   - notes/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md
   - notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 summary: 该主题聚焦“搜索式思维展开 + 过程级验证反馈”的组合范式，强调在可控推理预算下提升复杂任务稳定性。
 provenance:
   extracted: 0.77
@@ -46,3 +46,13 @@ provenance:
 
 - Tree of Thoughts 与 Graph of Thoughts 把推理从线性链条扩展到树/图结构，使分支探索、合并与回溯成为可控操作。
 - Math-Shepherd 证明过程级 verifier 可用于重排和强化训练，支持“搜索生成 + 过程验证”一体化推理框架。
+
+## Online Supplement (2026-04-10)
+
+- This synthesis page is cross-checked online for cross-paper consistency and evaluation-scope alignment.
+- Text anchor used: - 搜索结构（Tree/Graph/MCTS）负责扩展候选思路，过程验证负责筛选与回传。 - 两者组合比单纯长链 CoT 更稳健，尤其在高难数学与复杂规划任务中更明显。^[inferred]
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
+

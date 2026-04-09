@@ -10,7 +10,7 @@ sources:
   - notes/Monte Carlo Tree Search A Review of Recent Modifications and Applications.md
   - notes/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: MCTS 在 LLM 推理中提供了可扩展搜索框架，可与自评估和自修正机制结合提升复杂任务求解率。
 provenance:
   extracted: 0.83
@@ -33,4 +33,12 @@ provenance:
 - [[references/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report]]
 - [[synthesis/Structured Reasoning Methods for LLMs]]
 
+## Online Supplement (2026-04-10)
+
+- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
+- Text anchor used: ﻿--- title: Monte Carlo Tree Search for LLM Reasoning category: concept tags: - concept - llm - reasoning - mcts sources: - notes/Monte Carlo Tree Search A Review of Recent Modifications and Applications.md - notes/Accessing GPT-4 level Mathematical Olympiad S...
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

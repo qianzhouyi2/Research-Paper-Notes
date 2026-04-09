@@ -1,0 +1,16 @@
+{
+  "index": 7,
+  "query_title": "Improved Noise and Attack Robustness of Semantic Segmentation Models with Self-Supervised Depth Estimation",
+  "query_year": 2020,
+  "query_venue": "CVPRW",
+  "matched_title": "Improved Noise and Attack Robustness for Semantic Segmentation by Using Multi-Task Training with Self-Supervised Depth Estimation",
+  "matched_year": 2020,
+  "source_type": "pdf",
+  "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\07_Improved_Noise_and_Attack_Robustness_of_Semantic_Segmentation_Models_w\\paper.pdf",
+  "status": "ok",
+  "note": "pdf already exists",
+  "urls": {
+    "semantic_scholar": null,
+    "pdf": "https://arxiv.org/pdf/2004.11072"
+  }
+}

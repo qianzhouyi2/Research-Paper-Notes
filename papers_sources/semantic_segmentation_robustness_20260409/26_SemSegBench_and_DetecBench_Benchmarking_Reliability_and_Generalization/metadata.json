@@ -1,0 +1,17 @@
+{
+  "index": 26,
+  "query_title": "SemSegBench and DetecBench: Benchmarking Reliability and Generalization Beyond Classification",
+  "query_year": 2025,
+  "query_venue": "arXiv",
+  "matched_title": null,
+  "matched_year": null,
+  "source_type": "tex_source",
+  "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\26_SemSegBench_and_DetecBench_Benchmarking_Reliability_and_Generalization\\2505.18015.tar",
+  "status": "ok",
+  "note": "arXiv source downloaded",
+  "urls": {
+    "semantic_scholar": null,
+    "arxiv_source": "https://arxiv.org/e-print/2505.18015",
+    "arxiv_abs": "https://arxiv.org/abs/2505.18015"
+  }
+}

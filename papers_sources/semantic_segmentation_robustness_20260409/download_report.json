@@ -1,0 +1,487 @@
+{
+  "output_dir": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409",
+  "total": 28,
+  "ok": 28,
+  "failed": 0,
+  "results": [
+    {
+      "index": 1,
+      "query_title": "On the Robustness of Redundant Teacher-Student Frameworks for Semantic Segmentation",
+      "query_year": 2019,
+      "query_venue": "CVPRW",
+      "matched_title": "On the Robustness of Redundant Teacher-Student Frameworks for Semantic Segmentation",
+      "matched_year": 2019,
+      "source_type": "pdf",
+      "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\01_On_the_Robustness_of_Redundant_Teacher_Student_Frameworks_for_Semantic\\paper.pdf",
+      "status": "ok",
+      "note": "pdf downloaded",
+      "urls": {
+        "semantic_scholar": null,
+        "pdf": "https://openaccess.thecvf.com/content_CVPRW_2019/papers/SAIAD/Bar_On_the_Robustness_of_Redundant_Teacher-Student_Frameworks_for_Semantic_Segmentation_CVPRW_2019_paper.pdf"
+      }
+    },
+    {
+      "index": 2,
+      "query_title": "The Attack Generator: A Systematic Approach Towards Constructing Adversarial Attacks",
+      "query_year": 2019,
+      "query_venue": "CVPRW",
+      "matched_title": "The Attack Generator: A Systematic Approach Towards Constructing Adversarial Attacks",
+      "matched_year": 2019,
+      "source_type": "tex_source",
+      "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\02_The_Attack_Generator_A_Systematic_Approach_Towards_Constructing_Advers\\1906.07077.tar",
+      "status": "ok",
+      "note": "arXiv source downloaded",
+      "urls": {
+        "semantic_scholar": null,
+        "pdf": "https://arxiv.org/pdf/1906.07077",
+        "arxiv_source": "https://arxiv.org/e-print/1906.07077",
+        "arxiv_abs": "https://arxiv.org/abs/1906.07077"
+      }
+    },
+    {
+      "index": 3,
+      "query_title": "Indirect Local Attacks for Context-aware Semantic Segmentation Networks",
+      "query_year": 2020,
+      "query_venue": "ECCV",
+      "matched_title": "Indirect Local Attacks for Context-Aware Semantic Segmentation Networks",
+      "matched_year": 2020,
+      "source_type": "tex_source",
+      "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\03_Indirect_Local_Attacks_for_Context_aware_Semantic_Segmentation_Network\\1911.13038.tar",
+      "status": "ok",
+      "note": "arXiv source downloaded",
+      "urls": {
+        "semantic_scholar": null,
+        "pdf": "https://arxiv.org/pdf/1911.13038",
+        "arxiv_source": "https://arxiv.org/e-print/1911.13038",
+        "arxiv_abs": "https://arxiv.org/abs/1911.13038"
+      }
+    },
+    {
+      "index": 4,
+      "query_title": "Benchmarking the Robustness of Semantic Segmentation Models",
+      "query_year": 2020,
+      "query_venue": "CVPR",
+      "matched_title": "Benchmarking the Robustness of Semantic Segmentation Models",
+      "matched_year": 2020,
+      "source_type": "tex_source",
+      "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\04_Benchmarking_the_Robustness_of_Semantic_Segmentation_Models\\1908.05005.tar",
+      "status": "ok",
+      "note": "arXiv source downloaded",
+      "urls": {
+        "semantic_scholar": null,
+        "pdf": "https://arxiv.org/pdf/1908.05005",
+        "arxiv_source": "https://arxiv.org/e-print/1908.05005",
+        "arxiv_abs": "https://arxiv.org/abs/1908.05005"
+      }
+    },
+    {
+      "index": 5,
+      "query_title": "Benchmarking the Robustness of Semantic Segmentation Models",
+      "query_year": 2020,
+      "query_venue": "IJCV",
+      "matched_title": "Benchmarking the Robustness of Semantic Segmentation Models",
+      "matched_year": 2020,
+      "source_type": "tex_source",
+      "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\05_Benchmarking_the_Robustness_of_Semantic_Segmentation_Models\\1908.05005.tar",
+      "status": "ok",
+      "note": "arXiv source downloaded",
+      "urls": {
+        "semantic_scholar": null,
+        "pdf": "https://arxiv.org/pdf/1908.05005",
+        "arxiv_source": "https://arxiv.org/e-print/1908.05005",
+        "arxiv_abs": "https://arxiv.org/abs/1908.05005"
+      }
+    },
+    {
+      "index": 6,
+      "query_title": "Increasing the Robustness of Semantic Segmentation Models with Painting-by-Numbers",
+      "query_year": 2020,
+      "query_venue": "ECCV",
+      "matched_title": "Increasing the Robustness of Semantic Segmentation Models with Painting-by-Numbers",
+      "matched_year": 2020,
+      "source_type": "tex_source",
+      "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\06_Increasing_the_Robustness_of_Semantic_Segmentation_Models_with_Paintin\\2010.05495.tar",
+      "status": "ok",
+      "note": "arXiv source downloaded",
+      "urls": {
+        "semantic_scholar": null,
+        "pdf": "https://arxiv.org/pdf/2010.05495",
+        "arxiv_source": "https://arxiv.org/e-print/2010.05495",
+        "arxiv_abs": "https://arxiv.org/abs/2010.05495"
+      }
+    },
+    {
+      "index": 7,
+      "query_title": "Improved Noise and Attack Robustness of Semantic Segmentation Models with Self-Supervised Depth Estimation",
+      "query_year": 2020,
+      "query_venue": "CVPRW",
+      "matched_title": "Improved Noise and Attack Robustness for Semantic Segmentation by Using Multi-Task Training with Self-Supervised Depth Estimation",
+      "matched_year": 2020,
+      "source_type": "pdf",
+      "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\07_Improved_Noise_and_Attack_Robustness_of_Semantic_Segmentation_Models_w\\paper.pdf",
+      "status": "ok",
+      "note": "pdf already exists",
+      "urls": {
+        "semantic_scholar": null,
+        "pdf": "https://arxiv.org/pdf/2004.11072"
+      }
+    },
+    {
+      "index": 8,
+      "query_title": "On the Robustness of Semantic Segmentation Models to Adversarial Attacks",
+      "query_year": 2020,
+      "query_venue": "TPAMI",
+      "matched_title": "On the robustness of semantic segmentation models to adversarial attacks",
+      "matched_year": 2019,
+      "source_type": "tex_source",
+      "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\08_On_the_Robustness_of_Semantic_Segmentation_Models_to_Adversarial_Attac\\1711.09856.tar",
+      "status": "ok",
+      "note": "arXiv source downloaded",
+      "urls": {
+        "semantic_scholar": null,
+        "arxiv_source": "https://arxiv.org/e-print/1711.09856",
+        "arxiv_abs": "https://arxiv.org/abs/1711.09856"
+      }
+    },
+    {
+      "index": 9,
+      "query_title": "Robustness Verification of Semantic Segmentation Neural Networks using Relaxed Reachability",
+      "query_year": 2021,
+      "query_venue": "CAV",
+      "matched_title": "Robustness Verification of Semantic Segmentation Neural Networks Using Relaxed Reachability",
+      "matched_year": 2021,
+      "source_type": "pdf",
+      "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\09_Robustness_Verification_of_Semantic_Segmentation_Neural_Networks_using\\paper.pdf",
+      "status": "ok",
+      "note": "pdf already exists",
+      "urls": {
+        "semantic_scholar": "https://www.semanticscholar.org/paper/43ba3e55d295d0312126c34bccfa70c5fa62d556",
+        "pdf": "https://link.springer.com/content/pdf/10.1007/978-3-030-81685-8_12.pdf"
+      }
+    },
+    {
+      "index": 10,
+      "query_title": "Scalable Certified Segmentation via Randomized Smoothing",
+      "query_year": 2021,
+      "query_venue": "ICML",
+      "matched_title": "Scalable Certified Segmentation via Randomized Smoothing",
+      "matched_year": 2021,
+      "source_type": "tex_source",
+      "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\10_Scalable_Certified_Segmentation_via_Randomized_Smoothing\\2107.00228.tar",
+      "status": "ok",
+      "note": "arXiv source downloaded",
+      "urls": {
+        "semantic_scholar": null,
+        "pdf": "https://arxiv.org/pdf/2107.00228",
+        "arxiv_source": "https://arxiv.org/e-print/2107.00228",
+        "arxiv_abs": "https://arxiv.org/abs/2107.00228"
+      }
+    },
+    {
+      "index": 11,
+      "query_title": "Dynamic Divide-and-Conquer Adversarial Training for Robust Semantic Segmentation",
+      "query_year": 2021,
+      "query_venue": "ICCV",
+      "matched_title": "Dynamic Divide-and-Conquer Adversarial Training for Robust Semantic Segmentation",
+      "matched_year": 2021,
+      "source_type": "tex_source",
+      "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\11_Dynamic_Divide_and_Conquer_Adversarial_Training_for_Robust_Semantic_Se\\2003.06555.tar",
+      "status": "ok",
+      "note": "arXiv source downloaded",
+      "urls": {
+        "semantic_scholar": null,
+        "arxiv_source": "https://arxiv.org/e-print/2003.06555",
+        "arxiv_abs": "https://arxiv.org/abs/2003.06555"
+      }
+    },
+    {
+      "index": 12,
+      "query_title": "Adversarial Attacks against LiDAR Semantic Segmentation in Autonomous Driving",
+      "query_year": 2021,
+      "query_venue": "SenSys",
+      "matched_title": "Adversarial Attacks against LiDAR Semantic Segmentation in Autonomous Driving",
+      "matched_year": 2021,
+      "source_type": "pdf",
+      "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\12_Adversarial_Attacks_against_LiDAR_Semantic_Segmentation_in_Autonomous_\\paper.pdf",
+      "status": "ok",
+      "note": "pdf downloaded",
+      "urls": {
+        "semantic_scholar": null,
+        "pdf": "https://engineering.purdue.edu/~lusu/papers/SenSys2021.pdf"
+      }
+    },
+    {
+      "index": 13,
+      "query_title": "Towards Robust General Medical Image Segmentation",
+      "query_year": 2021,
+      "query_venue": "MICCAI",
+      "matched_title": "Towards Robust General Medical Image Segmentation",
+      "matched_year": 2021,
+      "source_type": "tex_source",
+      "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\13_Towards_Robust_General_Medical_Image_Segmentation\\2107.04263.tar",
+      "status": "ok",
+      "note": "arXiv source downloaded",
+      "urls": {
+        "semantic_scholar": null,
+        "pdf": "https://arxiv.org/pdf/2107.04263",
+        "arxiv_source": "https://arxiv.org/e-print/2107.04263",
+        "arxiv_abs": "https://arxiv.org/abs/2107.04263"
+      }
+    },
+    {
+      "index": 14,
+      "query_title": "Evaluating the Robustness of Semantic Segmentation in Real-World Adversarial Patch Attacks",
+      "query_year": 2022,
+      "query_venue": "WACV",
+      "matched_title": "Evaluating the Robustness of Semantic Segmentation for Autonomous Driving against Real-World Adversarial Patch Attacks",
+      "matched_year": 2022,
+      "source_type": "tex_source",
+      "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\14_Evaluating_the_Robustness_of_Semantic_Segmentation_in_Real_World_Adver\\2108.06179.tar",
+      "status": "ok",
+      "note": "arXiv source downloaded",
+      "urls": {
+        "semantic_scholar": null,
+        "arxiv_source": "https://arxiv.org/e-print/2108.06179",
+        "arxiv_abs": "https://arxiv.org/abs/2108.06179"
+      }
+    },
+    {
+      "index": 15,
+      "query_title": "Towards Semantically Stealthy Adversarial Attacks Against Segmentation Models",
+      "query_year": 2022,
+      "query_venue": "WACV",
+      "matched_title": null,
+      "matched_year": null,
+      "source_type": "tex_source",
+      "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\15_Towards_Semantically_Stealthy_Adversarial_Attacks_Against_Segmentation\\2104.01732.tar",
+      "status": "ok",
+      "note": "arXiv source downloaded",
+      "urls": {
+        "semantic_scholar": null,
+        "arxiv_source": "https://arxiv.org/e-print/2104.01732",
+        "arxiv_abs": "https://arxiv.org/abs/2104.01732"
+      }
+    },
+    {
+      "index": 16,
+      "query_title": "SegPGD: An Effective and Efficient Adversarial Attack for Segmentation",
+      "query_year": 2022,
+      "query_venue": "ECCV",
+      "matched_title": "SegPGD: An Effective and Efficient Adversarial Attack for Evaluating and Boosting Segmentation Robustness",
+      "matched_year": 2022,
+      "source_type": "tex_source",
+      "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\16_SegPGD_An_Effective_and_Efficient_Adversarial_Attack_for_Segmentation\\2207.12391.tar",
+      "status": "ok",
+      "note": "arXiv source downloaded",
+      "urls": {
+        "semantic_scholar": null,
+        "arxiv_source": "https://arxiv.org/e-print/2207.12391",
+        "arxiv_abs": "https://arxiv.org/abs/2207.12391"
+      }
+    },
+    {
+      "index": 17,
+      "query_title": "Attacking LiDAR Semantic Segmentation in Autonomous Driving",
+      "query_year": 2022,
+      "query_venue": "NDSS",
+      "matched_title": "Demo: Attacking LiDAR Semantic Segmentation in Autonomous Driving",
+      "matched_year": 2022,
+      "source_type": "pdf",
+      "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\17_Attacking_LiDAR_Semantic_Segmentation_in_Autonomous_Driving\\paper.pdf",
+      "status": "ok",
+      "note": "pdf already exists",
+      "urls": {
+        "semantic_scholar": null,
+        "pdf": "https://doi.org/10.14722/autosec.2022.23022"
+      }
+    },
+    {
+      "index": 18,
+      "query_title": "Certified Defences Against Adversarial Patch Attacks on Semantic Segmentation",
+      "query_year": 2023,
+      "query_venue": "ICLR",
+      "matched_title": "Certified Defences Against Adversarial Patch Attacks on Semantic Segmentation",
+      "matched_year": 2022,
+      "source_type": "tex_source",
+      "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\18_Certified_Defences_Against_Adversarial_Patch_Attacks_on_Semantic_Segme\\2209.05980.tar",
+      "status": "ok",
+      "note": "arXiv source downloaded",
+      "urls": {
+        "semantic_scholar": null,
+        "pdf": "https://arxiv.org/pdf/2209.05980",
+        "arxiv_source": "https://arxiv.org/e-print/2209.05980",
+        "arxiv_abs": "https://arxiv.org/abs/2209.05980"
+      }
+    },
+    {
+      "index": 19,
+      "query_title": "Ensemble-Based Blackbox Attacks on Dense Prediction",
+      "query_year": 2023,
+      "query_venue": "CVPR",
+      "matched_title": "Ensemble-based Blackbox Attacks on Dense Prediction",
+      "matched_year": 2023,
+      "source_type": "tex_source",
+      "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\19_Ensemble_Based_Blackbox_Attacks_on_Dense_Prediction\\2303.14304.tar",
+      "status": "ok",
+      "note": "arXiv source downloaded",
+      "urls": {
+        "semantic_scholar": null,
+        "arxiv_source": "https://arxiv.org/e-print/2303.14304",
+        "arxiv_abs": "https://arxiv.org/abs/2303.14304"
+      }
+    },
+    {
+      "index": 20,
+      "query_title": "Proximal Splitting Adversarial Attack for Semantic Segmentation",
+      "query_year": 2023,
+      "query_venue": "CVPR",
+      "matched_title": "Proximal Splitting Adversarial Attack for Semantic Segmentation",
+      "matched_year": 2023,
+      "source_type": "tex_source",
+      "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\20_Proximal_Splitting_Adversarial_Attack_for_Semantic_Segmentation\\2206.07179.tar",
+      "status": "ok",
+      "note": "arXiv source downloaded",
+      "urls": {
+        "semantic_scholar": null,
+        "arxiv_source": "https://arxiv.org/e-print/2206.07179",
+        "arxiv_abs": "https://arxiv.org/abs/2206.07179"
+      }
+    },
+    {
+      "index": 21,
+      "query_title": "Reliability in Semantic Segmentation: Are We on the Right Track?",
+      "query_year": 2023,
+      "query_venue": "CVPR",
+      "matched_title": "Reliability in Semantic Segmentation: Are we on the Right Track?",
+      "matched_year": 2023,
+      "source_type": "tex_source",
+      "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\21_Reliability_in_Semantic_Segmentation_Are_We_on_the_Right_Track\\2303.11298.tar",
+      "status": "ok",
+      "note": "arXiv source already exists",
+      "urls": {
+        "semantic_scholar": "https://www.semanticscholar.org/paper/e925e0211bc260dad9946592ee1698be279f26d9",
+        "arxiv_source": "https://arxiv.org/e-print/2303.11298",
+        "arxiv_abs": "https://arxiv.org/abs/2303.11298"
+      }
+    },
+    {
+      "index": 22,
+      "query_title": "Towards Robust Semantic Segmentation against Patch-based Attack via Attention Refinement",
+      "query_year": 2024,
+      "query_venue": "IJCV",
+      "matched_title": "Towards Robust Semantic Segmentation against Patch-Based Attack via Attention Refinement",
+      "matched_year": 2024,
+      "source_type": "tex_source",
+      "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\22_Towards_Robust_Semantic_Segmentation_against_Patch_based_Attack_via_At\\2401.01750.tar",
+      "status": "ok",
+      "note": "arXiv source downloaded",
+      "urls": {
+        "semantic_scholar": null,
+        "arxiv_source": "https://arxiv.org/e-print/2401.01750",
+        "arxiv_abs": "https://arxiv.org/abs/2401.01750"
+      }
+    },
+    {
+      "index": 23,
+      "query_title": "Uncertainty-Based Detection of Adversarial Attacks in Semantic Segmentation",
+      "query_year": 2024,
+      "query_venue": "PDF",
+      "matched_title": "Uncertainty-Based Detection of Adversarial Attacks in Semantic Segmentation",
+      "matched_year": 2024,
+      "source_type": "tex_source",
+      "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\23_Uncertainty_Based_Detection_of_Adversarial_Attacks_in_Semantic_Segment\\2305.12825.tar",
+      "status": "ok",
+      "note": "arXiv source downloaded",
+      "urls": {
+        "semantic_scholar": null,
+        "arxiv_source": "https://arxiv.org/e-print/2305.12825",
+        "arxiv_abs": "https://arxiv.org/abs/2305.12825"
+      }
+    },
+    {
+      "index": 24,
+      "query_title": "Evaluating the Adversarial Robustness of Semantic Segmentation",
+      "query_year": 2024,
+      "query_venue": "ECCV",
+      "matched_title": "On Evaluating the Adversarial Robustness of Semantic Segmentation Models",
+      "matched_year": 2023,
+      "source_type": "tex_source",
+      "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\24_Evaluating_the_Adversarial_Robustness_of_Semantic_Segmentation\\2306.14217.tar",
+      "status": "ok",
+      "note": "arXiv source downloaded",
+      "urls": {
+        "semantic_scholar": null,
+        "pdf": "https://arxiv.org/pdf/2306.14217",
+        "arxiv_source": "https://arxiv.org/e-print/2306.14217",
+        "arxiv_abs": "https://arxiv.org/abs/2306.14217"
+      }
+    },
+    {
+      "index": 25,
+      "query_title": "Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models",
+      "query_year": 2024,
+      "query_venue": "ECCV",
+      "matched_title": "Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models",
+      "matched_year": 2024,
+      "source_type": "tex_source",
+      "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\25_Towards_Reliable_Evaluation_and_Fast_Training_of_Robust_Semantic_Segme\\2306.12941.tar",
+      "status": "ok",
+      "note": "arXiv source downloaded",
+      "urls": {
+        "semantic_scholar": null,
+        "arxiv_source": "https://arxiv.org/e-print/2306.12941",
+        "arxiv_abs": "https://arxiv.org/abs/2306.12941"
+      }
+    },
+    {
+      "index": 26,
+      "query_title": "SemSegBench and DetecBench: Benchmarking Reliability and Generalization Beyond Classification",
+      "query_year": 2025,
+      "query_venue": "arXiv",
+      "matched_title": null,
+      "matched_year": null,
+      "source_type": "tex_source",
+      "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\26_SemSegBench_and_DetecBench_Benchmarking_Reliability_and_Generalization\\2505.18015.tar",
+      "status": "ok",
+      "note": "arXiv source downloaded",
+      "urls": {
+        "semantic_scholar": null,
+        "arxiv_source": "https://arxiv.org/e-print/2505.18015",
+        "arxiv_abs": "https://arxiv.org/abs/2505.18015"
+      }
+    },
+    {
+      "index": 27,
+      "query_title": "RP-PGD: Enhancing Semantic Segmentation Robustness via Region-based Prioritized PGD",
+      "query_year": 2025,
+      "query_venue": "AAAI",
+      "matched_title": null,
+      "matched_year": null,
+      "source_type": "pdf",
+      "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\27_RP_PGD_Enhancing_Semantic_Segmentation_Robustness_via_Region_based_Pri\\paper.pdf",
+      "status": "ok",
+      "note": "pdf downloaded",
+      "urls": {
+        "semantic_scholar": null,
+        "pdf": "https://ojs.aaai.org/index.php/AAAI/article/download/33122/35277"
+      }
+    },
+    {
+      "index": 28,
+      "query_title": "Erosion Attack for Adversarial Training to Enhance Semantic Segmentation Robustness",
+      "query_year": 2026,
+      "query_venue": "arXiv",
+      "matched_title": "Erosion Attack for Adversarial Training to Enhance Semantic Segmentation Robustness",
+      "matched_year": 2026,
+      "source_type": "tex_source",
+      "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\28_Erosion_Attack_for_Adversarial_Training_to_Enhance_Semantic_Segmentati\\2601.14950.tar",
+      "status": "ok",
+      "note": "arXiv source downloaded",
+      "urls": {
+        "semantic_scholar": null,
+        "arxiv_source": "https://arxiv.org/e-print/2601.14950",
+        "arxiv_abs": "https://arxiv.org/abs/2601.14950"
+      }
+    }
+  ]
+}

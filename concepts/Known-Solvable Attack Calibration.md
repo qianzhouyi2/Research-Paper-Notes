@@ -10,7 +10,7 @@ sources:
   - papers_sources/Are aligned neural networks adversarially aligned 2306.15447/main.tex
   - notes/Are aligned neural networks adversarially aligned.md
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 summary: Known-solvable calibration 先验证攻击器能否解出已知可解样本，再判断模型是否真正鲁棒。
 provenance:
   extracted: 0.86
@@ -40,5 +40,12 @@ provenance:
 - [[concepts/Adversarial Alignment Evaluation]]
 - [[synthesis/Alignment Robustness Evaluation Ladder]]
 
+## Online Supplement (2026-04-10)
 
+- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
+- Text anchor used: ﻿--- title: Known-Solvable Attack Calibration category: concept tags: - concept - llm-safety - adversarial-attack - evaluation sources: - papers_sources/Are aligned neural networks adversarially aligned 2306.15447/main.tex - notes/Are aligned neural networks a...
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

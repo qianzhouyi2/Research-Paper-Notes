@@ -1,0 +1,18 @@
+{
+  "index": 13,
+  "query_title": "Towards Robust General Medical Image Segmentation",
+  "query_year": 2021,
+  "query_venue": "MICCAI",
+  "matched_title": "Towards Robust General Medical Image Segmentation",
+  "matched_year": 2021,
+  "source_type": "tex_source",
+  "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\13_Towards_Robust_General_Medical_Image_Segmentation\\2107.04263.tar",
+  "status": "ok",
+  "note": "arXiv source downloaded",
+  "urls": {
+    "semantic_scholar": null,
+    "pdf": "https://arxiv.org/pdf/2107.04263",
+    "arxiv_source": "https://arxiv.org/e-print/2107.04263",
+    "arxiv_abs": "https://arxiv.org/abs/2107.04263"
+  }
+}

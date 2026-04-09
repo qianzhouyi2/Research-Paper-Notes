@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: 对推理过程的中间步骤进行细粒度监督与反馈，提升复杂题目的可控性和正确率。
 provenance:
   extracted: 0.84
@@ -32,4 +32,12 @@ provenance:
 - [[concepts/Implicit Chain-of-Thought Internalization]]
 - [[synthesis/LLM Reasoning Search and Verification]]
 
+## Online Supplement (2026-04-10)
+
+- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
+- Text anchor used: ﻿--- title: Process-Supervised Step Verification category: concept tags: - concept - llm - reasoning - verification sources: - notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md created: 2026-04-08 updated: 2026-04-08 summa...
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 

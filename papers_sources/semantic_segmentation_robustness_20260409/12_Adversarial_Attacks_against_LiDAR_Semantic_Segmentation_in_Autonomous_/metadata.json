@@ -1,0 +1,16 @@
+{
+  "index": 12,
+  "query_title": "Adversarial Attacks against LiDAR Semantic Segmentation in Autonomous Driving",
+  "query_year": 2021,
+  "query_venue": "SenSys",
+  "matched_title": "Adversarial Attacks against LiDAR Semantic Segmentation in Autonomous Driving",
+  "matched_year": 2021,
+  "source_type": "pdf",
+  "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\12_Adversarial_Attacks_against_LiDAR_Semantic_Segmentation_in_Autonomous_\\paper.pdf",
+  "status": "ok",
+  "note": "pdf downloaded",
+  "urls": {
+    "semantic_scholar": null,
+    "pdf": "https://engineering.purdue.edu/~lusu/papers/SenSys2021.pdf"
+  }
+}

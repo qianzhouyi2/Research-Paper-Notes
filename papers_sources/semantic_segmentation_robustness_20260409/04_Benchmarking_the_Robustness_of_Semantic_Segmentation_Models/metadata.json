@@ -1,0 +1,18 @@
+{
+  "index": 4,
+  "query_title": "Benchmarking the Robustness of Semantic Segmentation Models",
+  "query_year": 2020,
+  "query_venue": "CVPR",
+  "matched_title": "Benchmarking the Robustness of Semantic Segmentation Models",
+  "matched_year": 2020,
+  "source_type": "tex_source",
+  "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\04_Benchmarking_the_Robustness_of_Semantic_Segmentation_Models\\1908.05005.tar",
+  "status": "ok",
+  "note": "arXiv source downloaded",
+  "urls": {
+    "semantic_scholar": null,
+    "pdf": "https://arxiv.org/pdf/1908.05005",
+    "arxiv_source": "https://arxiv.org/e-print/1908.05005",
+    "arxiv_abs": "https://arxiv.org/abs/1908.05005"
+  }
+}

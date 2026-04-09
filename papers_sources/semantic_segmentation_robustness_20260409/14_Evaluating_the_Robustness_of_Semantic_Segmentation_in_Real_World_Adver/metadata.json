@@ -1,0 +1,17 @@
+{
+  "index": 14,
+  "query_title": "Evaluating the Robustness of Semantic Segmentation in Real-World Adversarial Patch Attacks",
+  "query_year": 2022,
+  "query_venue": "WACV",
+  "matched_title": "Evaluating the Robustness of Semantic Segmentation for Autonomous Driving against Real-World Adversarial Patch Attacks",
+  "matched_year": 2022,
+  "source_type": "tex_source",
+  "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\14_Evaluating_the_Robustness_of_Semantic_Segmentation_in_Real_World_Adver\\2108.06179.tar",
+  "status": "ok",
+  "note": "arXiv source downloaded",
+  "urls": {
+    "semantic_scholar": null,
+    "arxiv_source": "https://arxiv.org/e-print/2108.06179",
+    "arxiv_abs": "https://arxiv.org/abs/2108.06179"
+  }
+}

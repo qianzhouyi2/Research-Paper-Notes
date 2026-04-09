@@ -1,0 +1,18 @@
+{
+  "index": 10,
+  "query_title": "Scalable Certified Segmentation via Randomized Smoothing",
+  "query_year": 2021,
+  "query_venue": "ICML",
+  "matched_title": "Scalable Certified Segmentation via Randomized Smoothing",
+  "matched_year": 2021,
+  "source_type": "tex_source",
+  "downloaded_file": "D:\\paper_reading\\paper_reading\\papers_sources\\semantic_segmentation_robustness_20260409\\10_Scalable_Certified_Segmentation_via_Randomized_Smoothing\\2107.00228.tar",
+  "status": "ok",
+  "note": "arXiv source downloaded",
+  "urls": {
+    "semantic_scholar": null,
+    "pdf": "https://arxiv.org/pdf/2107.00228",
+    "arxiv_source": "https://arxiv.org/e-print/2107.00228",
+    "arxiv_abs": "https://arxiv.org/abs/2107.00228"
+  }
+}

@@ -15,7 +15,7 @@ sources:
   - https://www.cityscapes-dataset.com/
   - https://openaccess.thecvf.com/content_CVPR_2019/html/Kirillov_Panoptic_Segmentation_CVPR_2019_paper.html
 created: 2026-04-09
-updated: 2026-04-09
+updated: 2026-04-10
 summary: 语义分割将每个像素映射到语义类别，是场景理解中的密集预测基础任务，主评估指标通常是 mIoU。
 provenance:
   extracted: 0.72
@@ -79,3 +79,17 @@ provenance:
 - [[entities/SegFormer]]
 - [[entities/MaskFormer]]
 - [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]
+
+## Online Supplement (2026-04-10)
+
+- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
+- Text anchor used: 语义分割是像素级分类任务：为图像中每个像素分配一个语义类别（如 road、person、sky）。
+- Primary online sources used in this pass:
+- https://openaccess.thecvf.com/content_cvpr_2015/html/Long_Fully_Convolutional_Networks_2015_CVPR_paper.html
+- https://arxiv.org/abs/1706.05587
+- https://arxiv.org/abs/2105.15203
+- https://arxiv.org/abs/2304.02643
+- https://openaccess.thecvf.com/content_cvpr_2017/html/Zhou_Scene_Parsing_Through_CVPR_2017_paper.html
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
+

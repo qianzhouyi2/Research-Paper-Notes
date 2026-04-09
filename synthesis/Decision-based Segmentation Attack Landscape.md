@@ -10,7 +10,7 @@ tags:
 sources:
   - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 summary: DLA 展示了语义分割 decision-based 攻击可在极低查询下强力破坏 mIoU，提示鲁棒性评估应转向查询效率视角。
 provenance:
   extracted: 0.79
@@ -59,3 +59,13 @@ provenance:
 - 《Delving into Decision-based Black-box Attacks on Semantic Segmentation》提出 DLA，说明在仅有决策反馈时依然可以高效破坏分割性能，查询预算是核心评测轴。
 - 该方向提示分割鲁棒性评测应从“是否被攻破”扩展到“在给定查询/扰动预算下的退化曲线”。
 - 因而这条脉络可粗分为三步：先由 [[concepts/Indirect Local Attack in Segmentation]] 证明上下文会放大局部扰动，再由 [[concepts/SegPGD]] 强化白盒评测与训练基线，最后由 DLA 推进到 query-limited decision-based 黑盒设置。^[inferred]
+
+## Online Supplement (2026-04-10)
+
+- This synthesis page is cross-checked online for cross-paper consistency and evaluation-scope alignment.
+- Text anchor used: - 语义分割黑盒攻击难点与图像分类不同，不能直接复用边界攻击直觉。 - 以查询效率为核心的攻击框架更能反映真实部署风险。 - DLA 路线强调三件事：指标稳定、搜索空间压缩、结构化局部校准。
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
+

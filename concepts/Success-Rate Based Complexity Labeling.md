@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: 通过多模型多次采样成功率定义任务复杂度标签，降低单次评测噪声对路由学习的影响。
 provenance:
   extracted: 0.83
@@ -32,4 +32,12 @@ provenance:
 - [[concepts/Task Complexity-Aware Inference Budgeting]]
 - [[synthesis/Probabilistic Inference-Time Control for LLMs]]
 
+## Online Supplement (2026-04-10)
+
+- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
+- Text anchor used: ﻿--- title: Success-Rate Based Complexity Labeling category: concept tags: - concept - llm - routing - evaluation sources: - notes/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity.md created: 2026-04-08 updated: 2026-04-08 summary:...
+- Primary online sources used in this pass:
+- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
+- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
+- Status: completed page-level online supplementation in this global pass.
 
