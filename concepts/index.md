@@ -14,9 +14,14 @@ summary: 可复用概念页面索引，聚焦方法、术语与评测框架。
 
 ## 当前状态
 
-- 2026-04-09：50/50 `concepts` 页面现已补齐 `联网补充`。
+- 2026-04-09：60/60 `concepts` 页面现已补齐 `联网补充`。
 - 第一轮补了 27 个轻量概念卡；第二轮补齐剩余 22 个学术概念页与 1 个本地 workflow 页。
 - 第二轮重点覆盖 attack robustness、plasticity、Hyena 长上下文、GPT-ST 时空结构与 CIF 发射控制几组主题。
+- 2026-04-09（增补）：新增 [[concepts/Deep Neural Network (DNN)]]，并回链到语义分割 black-box attack 脉络。
+- 2026-04-09（增补）：新增 [[concepts/Semantic Segmentation]]，补充任务定义、评估指标与公开基准脉络。
+- 2026-04-09（增补）：新增 [[concepts/Vision Transformer (ViT)]]、[[concepts/SignSGD]]、[[concepts/SimBA (Simple Black-box Attack)]]、[[concepts/Square Attack]]，并补齐联网核验信息。
+- 2026-04-09（增补）：新增 [[concepts/Indirect Local Attack in Segmentation]]、[[concepts/SegPGD]]，补齐语义分割攻击主线里的“长程上下文脆弱性”和“分割专用 PGD 加权”两类方法锚点。
+- 2026-04-09（增补）：新增 [[concepts/Natural Evolutionary Strategies (NES)]]、[[concepts/L-infinity Norm Ball]]，把 NES 梯度估计与 `L_\infty` 顶点化搜索动机沉淀成独立概念卡。
 
 ## 已收录
 
@@ -30,6 +35,7 @@ summary: 可复用概念页面索引，聚焦方法、术语与评测框架。
 - [[concepts/Continual Backpropagation]]
 - [[concepts/Continuous Integrate-and-Fire Alignment]]
 - [[concepts/Data-Controlled Gating in Sequence Models]]
+- [[concepts/Deep Neural Network (DNN)]]
 - [[concepts/Decision-based Black-box Attack for Segmentation]]
 - [[concepts/Discrete Linear Noise]]
 - [[concepts/Feature Effective Rank Diagnostics]]
@@ -37,11 +43,13 @@ summary: 可复用概念页面索引，聚焦方法、术语与评测框架。
 - [[concepts/GFlowNet Posterior Sampling for Text Generation]]
 - [[concepts/Hierarchical Spatio-Temporal Hypergraph Encoding]]
 - [[concepts/Hyena Operator]]
+- [[concepts/Indirect Local Attack in Segmentation]]
 - [[concepts/Implicit Chain-of-Thought Internalization]]
 - [[concepts/Implicit Long Convolution Parameterization]]
 - [[concepts/Known-Solvable Attack Calibration]]
 - [[concepts/Linear Probe World-Model Evaluation]]
 - [[concepts/LLM Nonlinearity Compensation]]
+- [[concepts/L-infinity Norm Ball]]
 - [[concepts/Loss of Plasticity in Continual Learning]]
 - [[concepts/Mean-Centered Feature Sparsification]]
 - [[concepts/Mixture-of-Agents Aggregation]]
@@ -52,6 +60,7 @@ summary: 可复用概念页面索引，聚焦方法、术语与评测框架。
 - [[concepts/Multi-Agent LLM Orchestration]]
 - [[concepts/Multimodal Adversarial Image Prompting]]
 - [[concepts/Multimodal Chain-of-Thought Reasoning]]
+- [[concepts/Natural Evolutionary Strategies (NES)]]
 - [[concepts/Perturbation Interaction]]
 - [[concepts/Parameter-Efficient Fine-Tuning for LLMs]]
 - [[concepts/Process-Supervised Step Verification]]
@@ -61,12 +70,18 @@ summary: 可复用概念页面索引，聚焦方法、术语与评测框架。
 - [[concepts/Quantity-Aware Emission Control in CIF]]
 - [[concepts/Query-Efficient Attack Evaluation]]
 - [[concepts/Selective Neuron Reinitialization]]
+- [[concepts/Semantic Segmentation]]
+- [[concepts/SegPGD]]
+- [[concepts/SignSGD]]
+- [[concepts/SimBA (Simple Black-box Attack)]]
 - [[concepts/Soft Monotonic Alignment for Sequence Transduction]]
 - [[concepts/Spatio-Temporal Pretraining for Language Models]]
+- [[concepts/Square Attack]]
 - [[concepts/Success-Rate Based Complexity Labeling]]
 - [[concepts/Task Complexity-Aware Inference Budgeting]]
 - [[concepts/Thought Structure Taxonomy]]
 - [[concepts/Tree of Thoughts Reasoning]]
+- [[concepts/Vision Transformer (ViT)]]
 - [[concepts/Removal Smoothing for CoT Internalization]]
 - [[concepts/Two-Stage Multimodal CoT Pipeline]]
 - [[concepts/Wiki Append Update Playbook]]

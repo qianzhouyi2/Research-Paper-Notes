@@ -1,4 +1,4 @@
-﻿---
+---
 title: Continual Backpropagation
 category: concept
 tags:

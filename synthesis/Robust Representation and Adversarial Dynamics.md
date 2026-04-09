@@ -4,7 +4,7 @@ category: synthesis
 tags:
   - synthesis
   - robustness
-  - adversarial
+  - adversarial-robustness
   - representation
 sources:
   - notes/Are aligned neural networks adversarially aligned.md

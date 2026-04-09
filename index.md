@@ -25,16 +25,51 @@ summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 
 - [[journal/index|Journal（阅读日志）]]
 - [[log|系统日志]]
 
+## Latest Wiki Update (2026-04-09, NES + L-infinity Calibration)
+
+- 类型：`wiki-update`（concept + source-note calibration）
+- 新增页面：[[concepts/Natural Evolutionary Strategies (NES)]]、[[concepts/L-infinity Norm Ball]]
+- 更新页面：[[concepts/Discrete Linear Noise]]、[[concepts/Decision-based Black-box Attack for Segmentation]]、[[concepts/Proxy Index mIoU Optimization]]、[[concepts/Query-Efficient Attack Evaluation]]、[[concepts/index]]、[[notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]、[[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]、[[papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation_zh]]、[[index]]、[[log]]
+- 说明：把这轮对话里解释过的 Random Attack、NES 和 `L_\infty` 范数球沉淀进语义分割攻击主线，并联网校准了“边界”与“顶点”这两个容易混淆的说法。
+
+## Latest Wiki Update (2026-04-09, Segmentation Attack Priors)
+
+- 类型：`wiki-update`（concept distillation）
+- 新增页面：[[concepts/Indirect Local Attack in Segmentation]]、[[concepts/SegPGD]]
+- 更新页面：[[concepts/Decision-based Black-box Attack for Segmentation]]、[[synthesis/Decision-based Segmentation Attack Landscape]]、[[notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]、[[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]、[[concepts/index]]、[[index]]、[[log]]
+- 说明：补齐语义分割攻击主线里的两类前置方法锚点：ILA 解释“局部扰动为何会借长程上下文影响远处区域”，SegPGD 概括“如何用动态像素加权提升白盒攻击效率”。
+
+## Latest Wiki Update (2026-04-09, ViT + Black-box Online Refresh)
+
+- 类型：`wiki-update`（concept online refresh）
+- 新增页面：[[concepts/Vision Transformer (ViT)]]、[[concepts/SignSGD]]、[[concepts/SimBA (Simple Black-box Attack)]]、[[concepts/Square Attack]]
+- 更新页面：[[concepts/Query-Efficient Attack Evaluation]]、[[concepts/index]]、[[index]]、[[log]]
+- 说明：对 ViT / 黑盒攻击 / SignSGD / SimBA / Square Attack 做了联网核验并补充时间锚点与方法边界。
+
 ## 当前资产
 
 - 已导入论文笔记：26 篇（见 [[notes/index]]）
 - References：26 篇（含 1 个 MeanSparse 命名桥接页）
-- Concepts：50 篇（方法级与协议级概念）
-- Entities：67 篇（作者/模型/数据集）
+- Concepts：60 篇（方法级与协议级概念）
+- Entities：71 篇（作者/模型/数据集）
 - Synthesis：21 篇（跨论文主题综合）
-- 已纳管来源：28 个（见 [[log]] 与 `.manifest.json`）
+- 已纳管来源：34 个（见 [[log]] 与 `.manifest.json`）
 - 原始资料：[[papers_sources]]
 - 模板：[[Templates/论文阅读模板|论文阅读模板]]
+
+## 最新 Wiki Update（2026-04-09，模型实体补齐）
+
+- 类型：`wiki-update`（entity 增补）
+- 新增页：4 个 entities（[[entities/FCN]]、[[entities/PSPNet]]、[[entities/DeepLabv3]]、[[entities/MaskFormer]]）
+- 更新页：[[entities/SegFormer]]、[[entities/index]]、[[concepts/Semantic Segmentation]]、[[concepts/Query-Efficient Attack Evaluation]]、[[notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]、[[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]、[[index]]、[[log]]
+- 说明：补齐分割评测五模型实体锚点（FCN/PSPNet/DeepLabv3/SegFormer/MaskFormer），并把 note/reference/concept 的模型链接统一回链到实体层。
+
+## 上一轮 Wiki Update（2026-04-09）
+
+- 类型：`wiki-update`（concept 增补）
+- 新增页：2 个 concepts（[[concepts/Deep Neural Network (DNN)]]、[[concepts/Semantic Segmentation]]）
+- 更新页：[[concepts/index]]、[[papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation_zh]]、[[notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]、[[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]、[[index]]、[[log]]
+- 说明：新增 DNN 与 Semantic Segmentation 两个上位概念卡，并把源文、note、reference 的语义分割锚点统一回链到概念层。
 
 ## 最新 Ingest（2026-04-08）
 
@@ -114,13 +149,13 @@ summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 
 - 覆盖：剩余 23/23 `concepts` 补齐 `联网补充`
 - 页面更新：22 个学术 concept 页 + 1 个本地 workflow 页；无新增结构页
 - 主题重点：segmentation attacks、adversarial alignment、Hyena、plasticity、GPT-ST、Language world-model probes、CIF
-- 累计结果：50/50 `concepts` 页面现已全部带有 `联网补充`
+- 累计结果：52/52 `concepts` 页面现已全部带有 `联网补充`
 
 ## 最新 Entities 联网补充（2026-04-09）
 
 - 类型：`wiki-update`（online entity refresh）
-- 覆盖：67/67 `entities` 补齐 `联网补充`
-- 页面更新：52 个 author、9 个 model、5 个 dataset、1 个 benchmark；无新增结构页
+- 覆盖：71/71 `entities` 补齐 `联网补充`
+- 页面更新：52 个 author、13 个 model、5 个 dataset、1 个 benchmark；无新增结构页
 - 主题重点：作者归因、一手模型定义、官方数据集范围、外部 benchmark 角色
 - 说明：本轮把实体层从“名称占位卡”提升到“实体定义 + 在本库中的作用”双层结构，便于后续继续 ingest 时直接复用
 

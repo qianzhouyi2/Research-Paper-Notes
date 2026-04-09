@@ -42,4 +42,8 @@ provenance:
 - [[concepts/Query-Efficient Attack Evaluation]]
 - [[concepts/Decision-based Black-box Attack for Segmentation]]
 - [[notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]
+- [[entities/FCN]]
+- [[entities/PSPNet]]
+- [[entities/DeepLabv3]]
+- [[entities/MaskFormer]]
 

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Natural Evolutionary Strategies (NES) | Research Paper Notes</title>
+  <meta name="description" content="NES 通过优化搜索分布并用采样估计自然梯度，在黑盒攻击中常被用作高维无梯度梯度估计器。">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../site.js"></script>
+</head>
+<body data-root-prefix="../" data-page-path="concepts/Natural Evolutionary Strategies (NES).html">
+  <div class="site-shell">
+    <aside class="sidebar panel">
+      <a class="brand" href="../index.html">
+        <span class="brand-kicker">Research Wiki</span>
+        <h1>Research Paper Notes</h1>
+        <p>A browsable paper-reading vault published as a GitHub Pages site.</p>
+      </a>
+      <nav><h1 id="navigation">Navigation</h1>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../notes/index.html">Notes</a></li>
+<li><a href="../references/index.html">References</a></li>
+<li><a href="index.html">Concepts</a></li>
+<li><a href="../entities/index.html">Entities</a></li>
+<li><a href="../synthesis/index.html">Synthesis</a></li>
+<li><a href="../journal/index.html">Journal</a></li>
+<li><a href="../projects/index.html">Projects</a></li>
+<li><a href="../log.html">Log</a></li>
+</ul></nav>
+      <p class="footer-note">Static export from the local Obsidian-style wiki. Markdown was pre-rendered for GitHub Pages.</p>
+    </aside>
+
+    <main class="main">
+      <header class="topbar panel">
+        <div>
+          <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
+          <h2>Natural Evolutionary Strategies (NES)</h2>
+          <p>NES 通过优化搜索分布并用采样估计自然梯度，在黑盒攻击中常被用作高维无梯度梯度估计器。</p>
+        </div>
+        <div class="topbar-actions">
+          <div class="search-box">
+            <input data-search-input type="search" placeholder="Search pages, concepts, entities...">
+            <div data-search-results class="search-results"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="breadcrumbs"><a href="../index.html">Home</a><span> / </span><a href="index.html">Concepts</a><span> / </span><span>Natural Evolutionary Strategies (NES)</span></div>
+
+      <article class="article-wrap panel">
+        <div class="article-path">concepts/Natural Evolutionary Strategies (NES).md</div>
+        <div class="markdown-body"><h1 id="natural-evolutionary-strategies-nes">Natural Evolutionary Strategies (NES)</h1>
+<h2 id="_1">定义</h2>
+<p>NES 不是直接优化单个点，而是优化一个搜索分布 <code>p_\theta(z)</code>，目标通常写成 <code>J(\theta) = E_{z ~ p_\theta}[f(z)]</code>。更新时使用 natural gradient，而不是普通参数梯度。</p>
+<h2 id="_2">在黑盒攻击里的常见用法</h2>
+<ul>
+<li>在输入 <code>x</code> 附近采样高斯方向 <code>u_i</code>。</li>
+<li>比较 <code>f(x + \sigma u_i)</code> 与 <code>f(x - \sigma u_i)</code> 的变化。</li>
+<li>用这些采样结果加权平均，估计一个梯度方向。</li>
+<li>再把这个估计方向用于后续攻击更新。^[inferred]</li>
+</ul>
+<h2 id="_3">直观理解</h2>
+<ul>
+<li>拿不到真实梯度时，就沿很多随机方向各试一次。</li>
+<li>哪些方向让目标函数更优，就说明真实梯度更可能朝那边。</li>
+<li>NES 把“方向试探”组织成了一个分布优化问题。^[inferred]</li>
+</ul>
+<h2 id="_4">在黑盒攻击里的边界</h2>
+<ul>
+<li>更适合 <a href="Query-Efficient Attack Evaluation.html">score-based 黑盒攻击</a>，因为通常需要可比较的分数或损失。</li>
+<li>若接口只返回最终标签，NES 就不如 decision-based 的 accept/reject 搜索直接。^[inferred]</li>
+<li>维度越高、采样方差越大，查询成本通常越高。</li>
+</ul>
+<h2 id="_5">联网补充</h2>
+<ul>
+<li>JMLR 2014 的原始 NES 工作把它表述为“在搜索分布上最大化期望 fitness，并用 natural gradient 更新分布参数”。</li>
+<li>ICML 2018 的黑盒攻击论文把 NES 明确用作 query-limited attack 的梯度估计器，并采用 antithetic sampling 降低估计方差。</li>
+<li>在 DLA 这篇分割攻击论文里，NES 的角色主要是 score-based baseline；DLA 的改进点不在更精细的梯度估计，而在于把搜索空间离散化并结构化。^[inferred]</li>
+</ul>
+<h2 id="_6">关联</h2>
+<ul>
+<li><a href="Query-Efficient Attack Evaluation.html">Query-Efficient Attack Evaluation</a></li>
+<li><a href="Decision-based Black-box Attack for Segmentation.html">Decision-based Black-box Attack for Segmentation</a></li>
+<li><a href="L-infinity Norm Ball.html">L-infinity Norm Ball</a></li>
+<li><a href="../references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.html">Delving into Decision-based Black-box Attacks on Semantic Segmentation</a></li>
+</ul></div>
+      </article>
+    </main>
+
+    <aside class="rail panel">
+      <h3>Page Meta</h3>
+      <div class="meta-block">
+        <p class="meta-label">Section</p>
+        <p>concepts</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Tags</p>
+        <div class="chip-list"><span class="chip">concept</span><span class="chip">optimization</span><span class="chip">adversarial-attack</span><span class="chip">black-box-attack</span><span class="chip">query-efficient</span></div>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Summary</p>
+        <p>NES 通过优化搜索分布并用采样估计自然梯度，在黑盒攻击中常被用作高维无梯度梯度估计器。</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Source</p>
+        <ul>
+          <li><a href="https://github.com/qianzhouyi2/Research-Paper-Notes/blob/main/concepts/Natural Evolutionary Strategies (NES).md">Open Markdown On GitHub</a></li>
+          <li><a href="../search-index.json">Open Search Index</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

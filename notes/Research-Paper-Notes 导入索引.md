@@ -2,7 +2,7 @@
 title: Research-Paper-Notes 导入索引
 category: note-index
 tags:
-  - imported
+  - ingest
   - paper
   - index
 sources:

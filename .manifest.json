@@ -1,8 +1,8 @@
 {
   "version": 1,
   "stats": {
-    "total_sources_ingested": 29,
-    "total_pages": 174
+    "total_sources_ingested": 35,
+    "total_pages": 188
   },
   "sources": {
     "papers_sources/Research-Paper-Notes": {
@@ -912,6 +912,127 @@
         "synthesis/index.md",
         "index.md",
         "journal/Wiki Coverage Audit 2026-04-08.md",
+        "log.md"
+      ]
+    },
+    "workspace/wiki-update-2026-04-09-dnn-concept": {
+      "ingested_at": "2026-04-09T11:57:24+08:00",
+      "size_bytes": 0,
+      "modified_at": "2026-04-09T11:57:24+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "concepts/Deep Neural Network (DNN).md"
+      ],
+      "pages_updated": [
+        "papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation_zh.md",
+        "concepts/index.md",
+        "notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+        "references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+        "index.md",
+        "log.md"
+      ]
+    },
+    "workspace/wiki-update-2026-04-09-semantic-segmentation-concept": {
+      "ingested_at": "2026-04-09T12:01:44+08:00",
+      "size_bytes": 0,
+      "modified_at": "2026-04-09T12:01:44+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "concepts/Semantic Segmentation.md"
+      ],
+      "pages_updated": [
+        "papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation_zh.md",
+        "concepts/index.md",
+        "notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+        "references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+        "index.md",
+        "log.md"
+      ]
+    },
+    "workspace/wiki-update-2026-04-09-segmentation-model-entities": {
+      "ingested_at": "2026-04-09T12:08:46+08:00",
+      "size_bytes": 0,
+      "modified_at": "2026-04-09T12:08:46+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "entities/FCN.md",
+        "entities/PSPNet.md",
+        "entities/DeepLabv3.md",
+        "entities/MaskFormer.md"
+      ],
+      "pages_updated": [
+        "entities/SegFormer.md",
+        "entities/index.md",
+        "concepts/Semantic Segmentation.md",
+        "concepts/Query-Efficient Attack Evaluation.md",
+        "notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+        "references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+        "index.md",
+        "log.md"
+      ]
+    },
+    "workspace/wiki-update-2026-04-09-vit-blackbox-online": {
+      "ingested_at": "2026-04-09T12:19:30+08:00",
+      "size_bytes": 0,
+      "modified_at": "2026-04-09T12:19:30+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "concepts/Vision Transformer (ViT).md",
+        "concepts/SignSGD.md",
+        "concepts/SimBA (Simple Black-box Attack).md",
+        "concepts/Square Attack.md"
+      ],
+      "pages_updated": [
+        "concepts/Query-Efficient Attack Evaluation.md",
+        "concepts/index.md",
+        "index.md",
+        "log.md"
+      ]
+    },
+    "workspace/wiki-update-2026-04-09-segmentation-attack-priors": {
+      "ingested_at": "2026-04-09T12:37:22+08:00",
+      "size_bytes": 0,
+      "modified_at": "2026-04-09T12:37:22+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "concepts/Indirect Local Attack in Segmentation.md",
+        "concepts/SegPGD.md"
+      ],
+      "pages_updated": [
+        "concepts/Decision-based Black-box Attack for Segmentation.md",
+        "synthesis/Decision-based Segmentation Attack Landscape.md",
+        "notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+        "references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+        "concepts/index.md",
+        "index.md",
+        "log.md"
+      ]
+    },
+    "workspace/wiki-update-2026-04-09-nes-linf-calibration": {
+      "ingested_at": "2026-04-09T16:12:38+08:00",
+      "size_bytes": 0,
+      "modified_at": "2026-04-09T16:12:38+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "concepts/Natural Evolutionary Strategies (NES).md",
+        "concepts/L-infinity Norm Ball.md"
+      ],
+      "pages_updated": [
+        "concepts/Discrete Linear Noise.md",
+        "concepts/Decision-based Black-box Attack for Segmentation.md",
+        "concepts/Proxy Index mIoU Optimization.md",
+        "concepts/Query-Efficient Attack Evaluation.md",
+        "concepts/index.md",
+        "notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+        "references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+        "papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation_zh.md",
+        "index.md",
         "log.md"
       ]
     }

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Proxy Index mIoU Optimization
 category: concept
 tags:
@@ -24,6 +24,12 @@ provenance:
 
 在无法访问梯度和置信度时，用可观测指标驱动搜索。DLA 选择 mIoU 作为代理指标，每次只接受能进一步降低 mIoU 的扰动更新。
 
+## Random Attack 作为最小基线
+
+- 从干净图像出发，每轮随机采样一个小扰动，并把结果投影回 `\epsilon` 邻域。
+- 只要新的代理指标更小，就接受这次更新；否则丢弃。^[extracted]
+- 因而它本质上是“随机搜索 + 贪心接受”的黑盒基线，而不是显式梯度估计。^[inferred]
+
 ## 为什么是 mIoU
 
 - 比 PAcc 更能反映分割的整体结构质量。
@@ -48,8 +54,8 @@ provenance:
 
 - [[concepts/Decision-based Black-box Attack for Segmentation]]
 - [[concepts/Query-Efficient Attack Evaluation]]
+- [[concepts/L-infinity Norm Ball]]
 - [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]
 - [[entities/SegFormer]]
-
 
 

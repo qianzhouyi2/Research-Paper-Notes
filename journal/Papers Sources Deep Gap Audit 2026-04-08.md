@@ -4,7 +4,7 @@ category: journal
 tags:
   - journal
   - audit
-  - wiki-update
+  - wiki
 updated: 2026-04-08
 summary: 对 papers_sources 的 9 篇论文做逐篇覆盖度盘点，定位 concepts、entities、synthesis 的细化缺口并给出补全目标。
 ---

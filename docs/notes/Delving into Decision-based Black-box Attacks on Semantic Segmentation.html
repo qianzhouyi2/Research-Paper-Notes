@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Delving into Decision-based Black-box Attacks on Semantic Segmentation | Research Paper Notes</title>
-  <meta name="description" content="﻿ title: Delving into Decision based Black box Attacks on Semantic Segmentation category: note tags: paper semantic segmentation black box attack adversarial attack sources: paper…">
+  <meta name="description" content="DLA 论文阅读笔记，覆盖问题定义、方法细节、实验结果与可复用实现思路。">
   <link rel="stylesheet" href="../styles.css">
   <script defer src="../site.js"></script>
 </head>
@@ -36,7 +36,7 @@
         <div>
           <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
           <h2>Delving into Decision-based Black-box Attacks on Semantic Segmentation</h2>
-          <p>﻿ title: Delving into Decision based Black box Attacks on Semantic Segmentation category: note tags: paper semantic segmentation black box attack adversarial attack sources: paper…</p>
+          <p>DLA 论文阅读笔记，覆盖问题定义、方法细节、实验结果与可复用实现思路。</p>
         </div>
         <div class="topbar-actions">
           <div class="search-box">
@@ -50,26 +50,7 @@
 
       <article class="article-wrap panel">
         <div class="article-path">notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md</div>
-        <div class="markdown-body"><p>﻿&mdash;
-title: Delving into Decision-based Black-box Attacks on Semantic Segmentation
-category: note
-tags:
-  - paper
-  - semantic-segmentation
-  - black-box-attack
-  - adversarial-attack
-sources:
-  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md
-  - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation_zh.md
-created: 2026-04-06
-updated: 2026-04-08
-summary: DLA 论文阅读笔记，覆盖问题定义、方法细节、实验结果与可复用实现思路。
-provenance:
-  extracted: 0.82
-  inferred: 0.16
-  ambiguous: 0.02</p>
-<hr />
-<h1 id="delving-into-decision-based-black-box-attacks-on-semantic-segmentation">Delving into Decision-based Black-box Attacks on Semantic Segmentation</h1>
+        <div class="markdown-body"><h1 id="delving-into-decision-based-black-box-attacks-on-semantic-segmentation">Delving into Decision-based Black-box Attacks on Semantic Segmentation</h1>
 <ul>
 <li>阅读日期：2026-04-06</li>
 <li>阅读状态：已读</li>
@@ -90,9 +71,9 @@ provenance:
 <h3 id="11">1.1 关联页面</h3>
 <ul>
 <li>Reference：<a href="../references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.html">Delving into Decision-based Black-box Attacks on Semantic Segmentation</a></li>
-<li>Concepts：<a href="../concepts/Decision-based Black-box Attack for Segmentation.html">Decision-based Black-box Attack for Segmentation</a>、<a href="../concepts/Proxy Index mIoU Optimization.html">Proxy Index mIoU Optimization</a>、<a href="../concepts/Discrete Linear Noise.html">Discrete Linear Noise</a>、<a href="../concepts/Perturbation Interaction.html">Perturbation Interaction</a>、<a href="../concepts/Query-Efficient Attack Evaluation.html">Query-Efficient Attack Evaluation</a></li>
+<li>Concepts：<a href="../concepts/Deep Neural Network (DNN).html">Deep Neural Network (DNN)</a>、<a href="../concepts/Semantic Segmentation.html">Semantic Segmentation</a>、<a href="../concepts/Decision-based Black-box Attack for Segmentation.html">Decision-based Black-box Attack for Segmentation</a>、<a href="../concepts/Indirect Local Attack in Segmentation.html">Indirect Local Attack in Segmentation</a>、<a href="../concepts/SegPGD.html">SegPGD</a>、<a href="../concepts/Proxy Index mIoU Optimization.html">Proxy Index mIoU Optimization</a>、<a href="../concepts/Discrete Linear Noise.html">Discrete Linear Noise</a>、<a href="../concepts/Natural Evolutionary Strategies (NES).html">Natural Evolutionary Strategies (NES)</a>、<a href="../concepts/L-infinity Norm Ball.html">L-infinity Norm Ball</a>、<a href="../concepts/Perturbation Interaction.html">Perturbation Interaction</a>、<a href="../concepts/Query-Efficient Attack Evaluation.html">Query-Efficient Attack Evaluation</a></li>
 <li>Synthesis：<a href="../synthesis/Decision-based Segmentation Attack Landscape.html">Decision-based Segmentation Attack Landscape</a></li>
-<li>Entities：<a href="../entities/Zhaoyu Chen.html">Zhaoyu Chen</a>、<a href="../entities/Wenqiang Zhang.html">Wenqiang Zhang</a>、<a href="../entities/SegFormer.html">SegFormer</a></li>
+<li>Entities：<a href="../entities/Zhaoyu Chen.html">Zhaoyu Chen</a>、<a href="../entities/Wenqiang Zhang.html">Wenqiang Zhang</a>、<a href="../entities/FCN.html">FCN</a>、<a href="../entities/PSPNet.html">PSPNet</a>、<a href="../entities/DeepLabv3.html">DeepLabv3</a>、<a href="../entities/SegFormer.html">SegFormer</a>、<a href="../entities/MaskFormer.html">MaskFormer</a></li>
 </ul>
 <hr />
 <h2 id="2">2. 先看结论（适合快速回顾）</h2>
@@ -142,10 +123,12 @@ provenance:
 <li>但在 decision-based 设置下，模型只返回每个像素的类别标签，不返回概率，所以 DLA 不直接做梯度或边界逼近，而是用一个可比较的代理指标 <code>L(x')</code> 来决定“这次更新要不要收下”。</li>
 <li>论文最终选的是单张图像上的 <code>mIoU</code> 作为 <code>L(x')</code>。每次 query 后，只要新样本的 <code>mIoU</code> 更低，就接受这次更新；否则回退。</li>
 <li>这点很关键：DLA 本质上是一个“基于 mIoU 单调下降准则的随机搜索”，不是传统 boundary attack 那种“先越界、再缩扰动”。</li>
+<li>用来说明这一点的最小基线就是 Random Attack：从干净图像出发随机试探小扰动，只在代理指标下降时接受更新，属于 <a href="../concepts/Proxy Index mIoU Optimization.html">proxy-guided accept/reject search</a>。</li>
 </ul>
 <h3 id="1_1">1. 扰动是怎么表示的</h3>
 <ul>
 <li>DLA 不是在整张图的每个像素上独立采样连续值，而是把扰动直接限制到 <code>{-ε, +ε}</code>，即把连续空间 <code>[-ε, +ε]^d</code> 压成离散空间。</li>
+<li>这可以直观理解为：先把搜索限制在 <a href="../concepts/L-infinity Norm Ball.html"><code>L_\infty</code> 范数球</a> 的顶点集合里，因为这些顶点正对应“每一维都取到 <code>±ε</code>”。</li>
 <li>更进一步，它不是采样 patch，也不是采样 full-image random noise，而是采样 <strong>discrete linear noise</strong>。</li>
 <li>论文伪代码里，线性噪声只有一个空间维度的自由度：
   <code>δ ~ {-ε, +ε}^h</code> 或 <code>δ ~ {-ε, +ε}^w</code>。</li>
@@ -182,6 +165,7 @@ provenance:
 <li>这里的 <code>d</code> 很重要，它记录“当前最好初始化来自哪个方向”，后面的 calibration 会沿着这个方向继续细分。</li>
 <li>所以 exploration 的作用不是做最终攻击，而是回答一个更具体的问题：
   “在有限 query 下，横向条纹还是纵向条纹更适合这张图、这个模型、这个数据分布？”</li>
+<li>这也和 <a href="../concepts/Natural Evolutionary Strategies (NES).html">NES</a> 形成对比：NES 试图用采样估计梯度方向，而 DLA 先压缩搜索空间，再在离散结构上做贪心搜索。</li>
 </ul>
 <h3 id="4-perturbation-calibration">4. Perturbation Calibration：对初始化做分层离散局部搜索</h3>
 <ul>
@@ -874,8 +858,8 @@ provenance:
 <h2 id="wiki">Wiki 关联</h2>
 <ul>
 <li>参考摘要：<a href="../references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.html">Delving into Decision-based Black-box Attacks on Semantic Segmentation</a></li>
-<li>概念锚点：<a href="../concepts/Decision-based Black-box Attack for Segmentation.html">Decision-based Black-box Attack for Segmentation</a>、<a href="../concepts/Proxy Index mIoU Optimization.html">Proxy Index mIoU Optimization</a>、<a href="../concepts/Query-Efficient Attack Evaluation.html">Query-Efficient Attack Evaluation</a></li>
-<li>实体锚点：<a href="../entities/Zhaoyu Chen.html">Zhaoyu Chen</a>、<a href="../entities/Zhengyang Shan.html">Zhengyang Shan</a>、<a href="../entities/Cityscapes Dataset.html">Cityscapes Dataset</a></li>
+<li>概念锚点：<a href="../concepts/Deep Neural Network (DNN).html">Deep Neural Network (DNN)</a>、<a href="../concepts/Semantic Segmentation.html">Semantic Segmentation</a>、<a href="../concepts/Decision-based Black-box Attack for Segmentation.html">Decision-based Black-box Attack for Segmentation</a>、<a href="../concepts/Indirect Local Attack in Segmentation.html">Indirect Local Attack in Segmentation</a>、<a href="../concepts/SegPGD.html">SegPGD</a>、<a href="../concepts/Proxy Index mIoU Optimization.html">Proxy Index mIoU Optimization</a>、<a href="../concepts/Discrete Linear Noise.html">Discrete Linear Noise</a>、<a href="../concepts/Natural Evolutionary Strategies (NES).html">Natural Evolutionary Strategies (NES)</a>、<a href="../concepts/L-infinity Norm Ball.html">L-infinity Norm Ball</a>、<a href="../concepts/Query-Efficient Attack Evaluation.html">Query-Efficient Attack Evaluation</a></li>
+<li>实体锚点：<a href="../entities/Zhaoyu Chen.html">Zhaoyu Chen</a>、<a href="../entities/Zhengyang Shan.html">Zhengyang Shan</a>、<a href="../entities/Cityscapes Dataset.html">Cityscapes Dataset</a>、<a href="../entities/FCN.html">FCN</a>、<a href="../entities/PSPNet.html">PSPNet</a>、<a href="../entities/DeepLabv3.html">DeepLabv3</a>、<a href="../entities/SegFormer.html">SegFormer</a>、<a href="../entities/MaskFormer.html">MaskFormer</a></li>
 <li>综合页面：<a href="../synthesis/Robust Representation and Adversarial Dynamics.html">Robust Representation and Adversarial Dynamics</a>、<a href="../synthesis/Decision-based Segmentation Attack Landscape.html">Decision-based Segmentation Attack Landscape</a>、<a href="../synthesis/Alignment Robustness Evaluation Ladder.html">Alignment Robustness Evaluation Ladder</a></li>
 </ul></div>
       </article>
@@ -889,11 +873,11 @@ provenance:
       </div>
       <div class="meta-block">
         <p class="meta-label">Tags</p>
-        <div class="chip-list"><span class="chip">untagged</span></div>
+        <div class="chip-list"><span class="chip">paper</span><span class="chip">semantic-segmentation</span><span class="chip">black-box-attack</span><span class="chip">adversarial-attack</span></div>
       </div>
       <div class="meta-block">
         <p class="meta-label">Summary</p>
-        <p>﻿ title: Delving into Decision based Black box Attacks on Semantic Segmentation category: note tags: paper semantic segmentation black box attack adversarial attack sources: paper…</p>
+        <p>DLA 论文阅读笔记，覆盖问题定义、方法细节、实验结果与可复用实现思路。</p>
       </div>
       <div class="meta-block">
         <p class="meta-label">Source</p>

@@ -14,8 +14,8 @@ summary: 作者、模型、机构等实体页面入口索引。
 
 ## 最新联网补充（2026-04-09）
 
-- 覆盖：67/67 `entities` 页面已补齐 `联网补充`
-- 类型分布：52 个作者页、9 个模型页、5 个数据集页、1 个 benchmark 页
+- 覆盖：71/71 `entities` 页面已补齐 `联网补充`
+- 类型分布：52 个作者页、13 个模型页、5 个数据集页、1 个 benchmark 页
 - 本轮重点：用一手论文页、官方模型卡、官方数据集/benchmark 页面补足定义、角色与归因，不新增结构页
 
 ## 已收录
@@ -25,6 +25,7 @@ summary: 作者、模型、机构等实体页面入口索引。
 - [[entities/Amir Houmansadr]]
 - [[entities/Antonio Torralba]]
 - [[entities/Cityscapes Dataset]]
+- [[entities/DeepLabv3]]
 - [[entities/Dian Yu]]
 - [[entities/Di Zhang]]
 - [[entities/Zhaoyu Chen]]
@@ -67,6 +68,9 @@ summary: 作者、模型、机构等实体页面入口索引。
 - [[entities/Sajjad Amini]]
 - [[entities/Richard S. Sutton]]
 - [[entities/RobustBench]]
+- [[entities/FCN]]
+- [[entities/MaskFormer]]
+- [[entities/PSPNet]]
 - [[entities/Shiqing Ma]]
 - [[entities/Shunyu Yao]]
 - [[entities/Stuart Shieber]]

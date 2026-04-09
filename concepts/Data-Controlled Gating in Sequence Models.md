@@ -1,4 +1,4 @@
-﻿---
+---
 title: Data-Controlled Gating in Sequence Models
 category: concept
 tags:

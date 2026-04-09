@@ -1,4 +1,4 @@
-﻿---
+---
 title: Graph of Thoughts Reasoning
 category: concept
 tags:

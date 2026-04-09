@@ -4,7 +4,7 @@ category: concept
 tags:
   - concept
   - adversarial-robustness
-  - feature-engineering
+  - sparsification
   - post-training
 sources:
   - papers_sources/MeanSparse 2406.05927/main.tex

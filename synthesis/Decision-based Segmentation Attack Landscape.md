@@ -30,6 +30,7 @@ provenance:
 
 - 在 [[notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation]] 中给出了完整方法和数据表。
 - 与 [[synthesis/Alignment Robustness Evaluation Ladder]] 一起可形成“评测协议到任务攻击”的完整链路。^[inferred]
+- 若往前追溯方法脉络，可把 [[concepts/Indirect Local Attack in Segmentation]] 看作“上下文脆弱性”证据，把 [[concepts/SegPGD]] 看作“白盒强攻击/强训练基线”。
 
 ## 可复用模式
 
@@ -57,3 +58,4 @@ provenance:
 
 - 《Delving into Decision-based Black-box Attacks on Semantic Segmentation》提出 DLA，说明在仅有决策反馈时依然可以高效破坏分割性能，查询预算是核心评测轴。
 - 该方向提示分割鲁棒性评测应从“是否被攻破”扩展到“在给定查询/扰动预算下的退化曲线”。
+- 因而这条脉络可粗分为三步：先由 [[concepts/Indirect Local Attack in Segmentation]] 证明上下文会放大局部扰动，再由 [[concepts/SegPGD]] 强化白盒评测与训练基线，最后由 DLA 推进到 query-limited decision-based 黑盒设置。^[inferred]

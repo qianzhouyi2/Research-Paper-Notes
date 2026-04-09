@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>L-infinity Norm Ball | Research Paper Notes</title>
+  <meta name="description" content="L-infinity 范数球约束每个坐标的最大改变量；在对抗攻击里，其顶点对应每一维都取到 ±epsilon 的符号向量。">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../site.js"></script>
+</head>
+<body data-root-prefix="../" data-page-path="concepts/L-infinity Norm Ball.html">
+  <div class="site-shell">
+    <aside class="sidebar panel">
+      <a class="brand" href="../index.html">
+        <span class="brand-kicker">Research Wiki</span>
+        <h1>Research Paper Notes</h1>
+        <p>A browsable paper-reading vault published as a GitHub Pages site.</p>
+      </a>
+      <nav><h1 id="navigation">Navigation</h1>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../notes/index.html">Notes</a></li>
+<li><a href="../references/index.html">References</a></li>
+<li><a href="index.html">Concepts</a></li>
+<li><a href="../entities/index.html">Entities</a></li>
+<li><a href="../synthesis/index.html">Synthesis</a></li>
+<li><a href="../journal/index.html">Journal</a></li>
+<li><a href="../projects/index.html">Projects</a></li>
+<li><a href="../log.html">Log</a></li>
+</ul></nav>
+      <p class="footer-note">Static export from the local Obsidian-style wiki. Markdown was pre-rendered for GitHub Pages.</p>
+    </aside>
+
+    <main class="main">
+      <header class="topbar panel">
+        <div>
+          <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
+          <h2>L-infinity Norm Ball</h2>
+          <p>L-infinity 范数球约束每个坐标的最大改变量；在对抗攻击里，其顶点对应每一维都取到 ±epsilon 的符号向量。</p>
+        </div>
+        <div class="topbar-actions">
+          <div class="search-box">
+            <input data-search-input type="search" placeholder="Search pages, concepts, entities...">
+            <div data-search-results class="search-results"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="breadcrumbs"><a href="../index.html">Home</a><span> / </span><a href="index.html">Concepts</a><span> / </span><span>L infinity Norm Ball</span></div>
+
+      <article class="article-wrap panel">
+        <div class="article-path">concepts/L-infinity Norm Ball.md</div>
+        <div class="markdown-body"><h1 id="l-infinity-norm-ball">L-infinity Norm Ball</h1>
+<h2 id="_1">定义</h2>
+<p>以输入 <code>x</code> 为中心、半径为 <code>\epsilon</code> 的 <code>L_\infty</code> 范数球写作：</p>
+<p>[
+B_\infty(x, \epsilon) = {x&rsquo; \mid |x&rsquo; - x|_\infty \le \epsilon}
+]</p>
+<p>其中 <code>\|v\|_\infty = max_i |v_i|</code>，也就是所有分量里绝对值最大的那个。</p>
+<h2 id="_2">直观理解</h2>
+<ul>
+<li>在 2 维里，它是正方形而不是圆。</li>
+<li>在 3 维里，它是立方体而不是球。</li>
+<li>在高维里，它是超立方体。^[inferred]</li>
+<li>它约束的是“每个像素最多能改多少”，不是“所有像素总共改了多少”。</li>
+</ul>
+<h2 id="_3">顶点 / 极值点</h2>
+<ul>
+<li><code>L_\infty</code> 球的顶点对应每一维都取到边界，因此可写成 <code>x + \delta</code>，其中 <code>\delta_i \in \{-\epsilon, +\epsilon\}</code>。</li>
+<li>这就是很多离散符号攻击里常见的 <code>\{-\epsilon, +\epsilon\}^d</code>。</li>
+</ul>
+<h2 id="_4">在对抗攻击里的意义</h2>
+<ul>
+<li>它是最常见的 threat model 之一，因为它直接限制单像素最大扰动。^[inferred]</li>
+<li>许多 <code>L_\infty</code> 攻击都会把解推到约束边界；而把搜索进一步压到顶点，是一种更激进的离散化近似。</li>
+</ul>
+<h2 id="_5">联网补充</h2>
+<ul>
+<li>Moon et al. (ICML 2019) 对 <code>L_\infty</code> 顶点化给出了更直接的动机：在线性 surrogate 下，最优解落在 <code>L_\infty</code> 球的 vertex；论文同时报告 PGD 得到的样本也常位于这些顶点。</li>
+<li>Chen et al. (AAAI 2020, Frank-Wolfe) 的表述更偏“边界”而不是“所有解都在顶点”，因此它支持的是 boundary-biased intuition，而不是更强的 vertex 定理。</li>
+<li>DLA 利用这一经验，把连续空间 <code>[-\epsilon, \epsilon]^d</code> 直接压成 <code>\{-\epsilon, \epsilon\}^d</code>，再进一步限制为线状离散噪声。</li>
+</ul>
+<h2 id="_6">关联</h2>
+<ul>
+<li><a href="Discrete Linear Noise.html">Discrete Linear Noise</a></li>
+<li><a href="Natural Evolutionary Strategies (NES).html">Natural Evolutionary Strategies (NES)</a></li>
+<li><a href="Decision-based Black-box Attack for Segmentation.html">Decision-based Black-box Attack for Segmentation</a></li>
+<li><a href="../references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.html">Delving into Decision-based Black-box Attacks on Semantic Segmentation</a></li>
+</ul></div>
+      </article>
+    </main>
+
+    <aside class="rail panel">
+      <h3>Page Meta</h3>
+      <div class="meta-block">
+        <p class="meta-label">Section</p>
+        <p>concepts</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Tags</p>
+        <div class="chip-list"><span class="chip">concept</span><span class="chip">geometry</span><span class="chip">optimization</span><span class="chip">adversarial-attack</span><span class="chip">robustness</span></div>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Summary</p>
+        <p>L-infinity 范数球约束每个坐标的最大改变量；在对抗攻击里，其顶点对应每一维都取到 ±epsilon 的符号向量。</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Source</p>
+        <ul>
+          <li><a href="https://github.com/qianzhouyi2/Research-Paper-Notes/blob/main/concepts/L-infinity Norm Ball.md">Open Markdown On GitHub</a></li>
+          <li><a href="../search-index.json">Open Search Index</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

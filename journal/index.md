@@ -1,5 +1,11 @@
 ---
 title: Journal 索引
+category: index
+tags:
+  - index
+  - journal
+updated: 2026-04-09
+summary: 阅读过程记录、覆盖审计与 wiki 维护日志的入口页。
 ---
 
 # Journal 索引

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SegPGD | Research Paper Notes</title>
+  <meta name="description" content="SegPGD 是面向语义分割的高效 PGD 变体，通过动态重加权正确与错误像素损失，在相同步数下生成更强攻击并支撑更强对抗训练。">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../site.js"></script>
+</head>
+<body data-root-prefix="../" data-page-path="concepts/SegPGD.html">
+  <div class="site-shell">
+    <aside class="sidebar panel">
+      <a class="brand" href="../index.html">
+        <span class="brand-kicker">Research Wiki</span>
+        <h1>Research Paper Notes</h1>
+        <p>A browsable paper-reading vault published as a GitHub Pages site.</p>
+      </a>
+      <nav><h1 id="navigation">Navigation</h1>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../notes/index.html">Notes</a></li>
+<li><a href="../references/index.html">References</a></li>
+<li><a href="index.html">Concepts</a></li>
+<li><a href="../entities/index.html">Entities</a></li>
+<li><a href="../synthesis/index.html">Synthesis</a></li>
+<li><a href="../journal/index.html">Journal</a></li>
+<li><a href="../projects/index.html">Projects</a></li>
+<li><a href="../log.html">Log</a></li>
+</ul></nav>
+      <p class="footer-note">Static export from the local Obsidian-style wiki. Markdown was pre-rendered for GitHub Pages.</p>
+    </aside>
+
+    <main class="main">
+      <header class="topbar panel">
+        <div>
+          <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
+          <h2>SegPGD</h2>
+          <p>SegPGD 是面向语义分割的高效 PGD 变体，通过动态重加权正确与错误像素损失，在相同步数下生成更强攻击并支撑更强对抗训练。</p>
+        </div>
+        <div class="topbar-actions">
+          <div class="search-box">
+            <input data-search-input type="search" placeholder="Search pages, concepts, entities...">
+            <div data-search-results class="search-results"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="breadcrumbs"><a href="../index.html">Home</a><span> / </span><a href="index.html">Concepts</a><span> / </span><span>SegPGD</span></div>
+
+      <article class="article-wrap panel">
+        <div class="article-path">concepts/SegPGD.md</div>
+        <div class="markdown-body"><h1 id="segpgd">SegPGD</h1>
+<h2 id="_1">定义</h2>
+<p>SegPGD 是专门针对语义分割设计的 PGD 变体，目标是在较少攻击迭代下更快地误导更多像素预测。</p>
+<h2 id="_2">核心机制</h2>
+<ul>
+<li>论文把像素分成“当前仍预测正确”和“已经被攻破”的两组。</li>
+<li>标准 PGD 中，已被攻破像素往往带来较大的损失，容易主导梯度，但继续放大这部分损失不一定能进一步提升攻击效果。</li>
+<li>SegPGD 对这两组像素的损失做动态加权：前期更关注还没攻破的像素，后期再逐渐提高对已错像素的权重，以避免它们重新变回正确预测。</li>
+<li>论文最终采用简单的线性权重调度。 </li>
+</ul>
+<h2 id="pgd">为什么比普通 PGD 更适合分割</h2>
+<ul>
+<li>分割是密集预测任务，攻击目标不是单个标签，而是尽可能多像素同时出错。</li>
+<li>如果所有像素损失一视同仁，梯度会被“已经错的像素”拖偏，导致需要更多步数才能继续攻破剩余正确像素。</li>
+<li>SegPGD 通过重加权减少这种梯度浪费，因此在相同步数下往往比 PGD 更强。</li>
+</ul>
+<h2 id="_3">作用</h2>
+<ul>
+<li>作为白盒攻击：更适合评估分割模型是否真的鲁棒。</li>
+<li>作为对抗训练底层攻击：SegPGD-AT 往往比 PGD-AT 产出更强的鲁棒基线。</li>
+</ul>
+<h2 id="_4">联网补充</h2>
+<ul>
+<li>ECCV 2022 论文把 SegPGD 定义为“effective and efficient segmentation attack”，并给出收敛分析说明其在同样迭代步数下可比 PGD 生成更强样本。</li>
+<li>论文实验显示，动态线性权重调度比固定权重或简单只看正确像素的方案更稳定。</li>
+</ul>
+<h2 id="_5">关联</h2>
+<ul>
+<li><a href="Semantic Segmentation.html">Semantic Segmentation</a></li>
+<li><a href="Indirect Local Attack in Segmentation.html">Indirect Local Attack in Segmentation</a></li>
+<li><a href="Decision-based Black-box Attack for Segmentation.html">Decision-based Black-box Attack for Segmentation</a></li>
+<li><a href="Proxy Index mIoU Optimization.html">Proxy Index mIoU Optimization</a></li>
+<li><a href="../references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.html">Delving into Decision-based Black-box Attacks on Semantic Segmentation</a></li>
+<li><a href="../synthesis/Decision-based Segmentation Attack Landscape.html">Decision-based Segmentation Attack Landscape</a></li>
+</ul></div>
+      </article>
+    </main>
+
+    <aside class="rail panel">
+      <h3>Page Meta</h3>
+      <div class="meta-block">
+        <p class="meta-label">Section</p>
+        <p>concepts</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Tags</p>
+        <div class="chip-list"><span class="chip">concept</span><span class="chip">adversarial-attack</span><span class="chip">semantic-segmentation</span><span class="chip">robustness</span><span class="chip">optimization</span></div>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Summary</p>
+        <p>SegPGD 是面向语义分割的高效 PGD 变体，通过动态重加权正确与错误像素损失，在相同步数下生成更强攻击并支撑更强对抗训练。</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Source</p>
+        <ul>
+          <li><a href="https://github.com/qianzhouyi2/Research-Paper-Notes/blob/main/concepts/SegPGD.md">Open Markdown On GitHub</a></li>
+          <li><a href="../search-index.json">Open Search Index</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

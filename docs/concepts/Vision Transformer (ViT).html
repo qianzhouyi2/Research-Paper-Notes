@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vision Transformer (ViT) | Research Paper Notes</title>
+  <meta name="description" content="ViT 将图像切分为 patch token 并使用 Transformer 编码器进行全局建模，已从分类 backbone 演进为视觉基础模型核心路线。">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../site.js"></script>
+</head>
+<body data-root-prefix="../" data-page-path="concepts/Vision Transformer (ViT).html">
+  <div class="site-shell">
+    <aside class="sidebar panel">
+      <a class="brand" href="../index.html">
+        <span class="brand-kicker">Research Wiki</span>
+        <h1>Research Paper Notes</h1>
+        <p>A browsable paper-reading vault published as a GitHub Pages site.</p>
+      </a>
+      <nav><h1 id="navigation">Navigation</h1>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../notes/index.html">Notes</a></li>
+<li><a href="../references/index.html">References</a></li>
+<li><a href="index.html">Concepts</a></li>
+<li><a href="../entities/index.html">Entities</a></li>
+<li><a href="../synthesis/index.html">Synthesis</a></li>
+<li><a href="../journal/index.html">Journal</a></li>
+<li><a href="../projects/index.html">Projects</a></li>
+<li><a href="../log.html">Log</a></li>
+</ul></nav>
+      <p class="footer-note">Static export from the local Obsidian-style wiki. Markdown was pre-rendered for GitHub Pages.</p>
+    </aside>
+
+    <main class="main">
+      <header class="topbar panel">
+        <div>
+          <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
+          <h2>Vision Transformer (ViT)</h2>
+          <p>ViT 将图像切分为 patch token 并使用 Transformer 编码器进行全局建模，已从分类 backbone 演进为视觉基础模型核心路线。</p>
+        </div>
+        <div class="topbar-actions">
+          <div class="search-box">
+            <input data-search-input type="search" placeholder="Search pages, concepts, entities...">
+            <div data-search-results class="search-results"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="breadcrumbs"><a href="../index.html">Home</a><span> / </span><a href="index.html">Concepts</a><span> / </span><span>Vision Transformer (ViT)</span></div>
+
+      <article class="article-wrap panel">
+        <div class="article-path">concepts/Vision Transformer (ViT).md</div>
+        <div class="markdown-body"><h1 id="vision-transformer-vit">Vision Transformer (ViT)</h1>
+<h2 id="_1">定义</h2>
+<p>Vision Transformer（ViT）将图像切分为固定大小 patch（如 16x16），每个 patch 线性投影为 token，再送入 Transformer 编码器做全局建模。</p>
+<h2 id="_2">核心机制</h2>
+<ul>
+<li>Patchify + Linear Projection：把 2D 图像转成 token 序列。</li>
+<li>Position Embedding：补足空间位置信息。</li>
+<li>Self-Attention：直接建模远距离依赖，不依赖卷积感受野逐层扩张。</li>
+<li>通常配合大规模预训练，再迁移到下游任务。^[inferred]</li>
+</ul>
+<h2 id="_3">发展脉络（简）</h2>
+<ul>
+<li>ViT：提出纯 Transformer 视觉分类路线。</li>
+<li>DeiT：降低训练门槛，使 ImageNet 规模下的训练更可行。</li>
+<li>Swin：引入分层结构与 shifted window，推进到检测/分割等密集任务。</li>
+<li>MAE：高掩码率自监督预训练，提高数据效率与迁移能力。</li>
+<li>DINOv2 / SAM / SAM 2：推动 ViT 路线向通用视觉表征与可提示分割扩展。^[inferred]</li>
+</ul>
+<h2 id="_4">联网补充</h2>
+<ul>
+<li>2020-10（arXiv:2010.11929）：ViT 明确提出“图像可视作 patch 序列”，并展示大规模预训练下的强迁移能力。</li>
+<li>2020-12（DeiT, PMLR 2021）：通过蒸馏与训练策略，使 data-efficient 的 ViT 训练在更常见算力条件下可落地。</li>
+<li>2021-03（arXiv:2103.14030）：Swin 以 shifted windows 构造分层视觉 Transformer，成为密集预测主流 backbone 之一。</li>
+<li>2021-11（arXiv:2111.06377）：MAE 采用高掩码率重建式预训练，推动 ViT 自监督规模化。</li>
+<li>2023-04（arXiv:2304.07193 / 2304.02643）：DINOv2 与 SAM 分别代表“通用视觉特征”和“promptable segmentation”两条 ViT 基础模型化路径。</li>
+<li>2024-08（arXiv:2408.00714）：SAM 2 将同一路线扩展到图像与视频统一分割。</li>
+</ul>
+<h2 id="_5">关联</h2>
+<ul>
+<li><a href="Semantic Segmentation.html">Semantic Segmentation</a></li>
+<li><a href="Query-Efficient Attack Evaluation.html">Query-Efficient Attack Evaluation</a></li>
+<li><a href="SimBA (Simple Black-box Attack).html">SimBA (Simple Black-box Attack)</a></li>
+<li><a href="Square Attack.html">Square Attack</a></li>
+<li><a href="../references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.html">Delving into Decision-based Black-box Attacks on Semantic Segmentation</a></li>
+</ul></div>
+      </article>
+    </main>
+
+    <aside class="rail panel">
+      <h3>Page Meta</h3>
+      <div class="meta-block">
+        <p class="meta-label">Section</p>
+        <p>concepts</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Tags</p>
+        <div class="chip-list"><span class="chip">concept</span><span class="chip">architecture</span><span class="chip">pretraining</span><span class="chip">representation</span><span class="chip">robustness</span></div>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Summary</p>
+        <p>ViT 将图像切分为 patch token 并使用 Transformer 编码器进行全局建模，已从分类 backbone 演进为视觉基础模型核心路线。</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Source</p>
+        <ul>
+          <li><a href="https://github.com/qianzhouyi2/Research-Paper-Notes/blob/main/concepts/Vision Transformer (ViT).md">Open Markdown On GitHub</a></li>
+          <li><a href="../search-index.json">Open Search Index</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

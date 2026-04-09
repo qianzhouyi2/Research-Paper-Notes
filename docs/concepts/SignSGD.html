@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SignSGD | Research Paper Notes</title>
+  <meta name="description" content="SignSGD 仅使用梯度符号更新参数，可显著压缩通信开销，并通过 majority vote 形成分布式鲁棒聚合。">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../site.js"></script>
+</head>
+<body data-root-prefix="../" data-page-path="concepts/SignSGD.html">
+  <div class="site-shell">
+    <aside class="sidebar panel">
+      <a class="brand" href="../index.html">
+        <span class="brand-kicker">Research Wiki</span>
+        <h1>Research Paper Notes</h1>
+        <p>A browsable paper-reading vault published as a GitHub Pages site.</p>
+      </a>
+      <nav><h1 id="navigation">Navigation</h1>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../notes/index.html">Notes</a></li>
+<li><a href="../references/index.html">References</a></li>
+<li><a href="index.html">Concepts</a></li>
+<li><a href="../entities/index.html">Entities</a></li>
+<li><a href="../synthesis/index.html">Synthesis</a></li>
+<li><a href="../journal/index.html">Journal</a></li>
+<li><a href="../projects/index.html">Projects</a></li>
+<li><a href="../log.html">Log</a></li>
+</ul></nav>
+      <p class="footer-note">Static export from the local Obsidian-style wiki. Markdown was pre-rendered for GitHub Pages.</p>
+    </aside>
+
+    <main class="main">
+      <header class="topbar panel">
+        <div>
+          <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
+          <h2>SignSGD</h2>
+          <p>SignSGD 仅使用梯度符号更新参数，可显著压缩通信开销，并通过 majority vote 形成分布式鲁棒聚合。</p>
+        </div>
+        <div class="topbar-actions">
+          <div class="search-box">
+            <input data-search-input type="search" placeholder="Search pages, concepts, entities...">
+            <div data-search-results class="search-results"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="breadcrumbs"><a href="../index.html">Home</a><span> / </span><a href="index.html">Concepts</a><span> / </span><span>SignSGD</span></div>
+
+      <article class="article-wrap panel">
+        <div class="article-path">concepts/SignSGD.md</div>
+        <div class="markdown-body"><h1 id="signsgd">SignSGD</h1>
+<h2 id="_1">定义</h2>
+<p>SignSGD 是只使用梯度符号（而非幅值）更新参数的优化方法：</p>
+<p>[
+w_{t+1}=w_t-\eta \cdot sign(g_t), \quad g_t=\nabla_w L(w_t)
+]</p>
+<h2 id="_2">直观理解</h2>
+<ul>
+<li>只保留“方向信息”（+/-），忽略精确梯度大小。</li>
+<li>在分布式场景中可把通信从 32-bit/16-bit 梯度压缩到 1-bit 符号。^[inferred]</li>
+<li>常见实现会配合 momentum 以提升稳定性。^[inferred]</li>
+</ul>
+<h2 id="_3">联网补充</h2>
+<ul>
+<li>2018-10（arXiv:1810.05291）：SignSGD with Majority Vote 给出非凸情形收敛分析，并强调极低通信成本。</li>
+<li>同一工作指出 majority vote 聚合对部分 Byzantine worker 具有鲁棒性，这也是其在分布式训练中的关键价值。</li>
+</ul>
+<h2 id="_4">在黑盒攻击语境中的角色</h2>
+<ul>
+<li>黑盒攻击常受查询预算限制，sign-based 更新可作为轻量迭代策略之一。^[inferred]</li>
+<li>但 SignSGD 本身是优化算法，不等同于具体攻击方法；真正攻击效果仍取决于目标函数与查询接口。^[inferred]</li>
+</ul>
+<h2 id="_5">关联</h2>
+<ul>
+<li><a href="Query-Efficient Attack Evaluation.html">Query-Efficient Attack Evaluation</a></li>
+<li><a href="SimBA (Simple Black-box Attack).html">SimBA (Simple Black-box Attack)</a></li>
+<li><a href="Square Attack.html">Square Attack</a></li>
+</ul></div>
+      </article>
+    </main>
+
+    <aside class="rail panel">
+      <h3>Page Meta</h3>
+      <div class="meta-block">
+        <p class="meta-label">Section</p>
+        <p>concepts</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Tags</p>
+        <div class="chip-list"><span class="chip">concept</span><span class="chip">optimization</span><span class="chip">efficiency</span><span class="chip">query-efficient</span><span class="chip">robustness</span></div>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Summary</p>
+        <p>SignSGD 仅使用梯度符号更新参数，可显著压缩通信开销，并通过 majority vote 形成分布式鲁棒聚合。</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Source</p>
+        <ul>
+          <li><a href="https://github.com/qianzhouyi2/Research-Paper-Notes/blob/main/concepts/SignSGD.md">Open Markdown On GitHub</a></li>
+          <li><a href="../search-index.json">Open Search Index</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

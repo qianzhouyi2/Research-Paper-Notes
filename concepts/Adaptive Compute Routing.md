@@ -1,4 +1,4 @@
-﻿---
+---
 title: Adaptive Compute Routing
 category: concept
 tags:

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Delving into Decision-based Black-box Attacks on Semantic Segmentation
 category: note
 tags:
@@ -10,7 +10,7 @@ sources:
   - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md
   - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation_zh.md
 created: 2026-04-06
-updated: 2026-04-08
+updated: 2026-04-09
 summary: DLA 论文阅读笔记，覆盖问题定义、方法细节、实验结果与可复用实现思路。
 provenance:
   extracted: 0.82
@@ -40,9 +40,9 @@ provenance:
 ### 1.1 关联页面
 
 - Reference：[[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]
-- Concepts：[[concepts/Decision-based Black-box Attack for Segmentation]]、[[concepts/Proxy Index mIoU Optimization]]、[[concepts/Discrete Linear Noise]]、[[concepts/Perturbation Interaction]]、[[concepts/Query-Efficient Attack Evaluation]]
+- Concepts：[[concepts/Deep Neural Network (DNN)]]、[[concepts/Semantic Segmentation]]、[[concepts/Decision-based Black-box Attack for Segmentation]]、[[concepts/Indirect Local Attack in Segmentation]]、[[concepts/SegPGD]]、[[concepts/Proxy Index mIoU Optimization]]、[[concepts/Discrete Linear Noise]]、[[concepts/Natural Evolutionary Strategies (NES)]]、[[concepts/L-infinity Norm Ball]]、[[concepts/Perturbation Interaction]]、[[concepts/Query-Efficient Attack Evaluation]]
 - Synthesis：[[synthesis/Decision-based Segmentation Attack Landscape]]
-- Entities：[[entities/Zhaoyu Chen]]、[[entities/Wenqiang Zhang]]、[[entities/SegFormer]]
+- Entities：[[entities/Zhaoyu Chen]]、[[entities/Wenqiang Zhang]]、[[entities/FCN]]、[[entities/PSPNet]]、[[entities/DeepLabv3]]、[[entities/SegFormer]]、[[entities/MaskFormer]]
 
 ---
 
@@ -96,10 +96,12 @@ provenance:
 - 但在 decision-based 设置下，模型只返回每个像素的类别标签，不返回概率，所以 DLA 不直接做梯度或边界逼近，而是用一个可比较的代理指标 `L(x')` 来决定“这次更新要不要收下”。
 - 论文最终选的是单张图像上的 `mIoU` 作为 `L(x')`。每次 query 后，只要新样本的 `mIoU` 更低，就接受这次更新；否则回退。
 - 这点很关键：DLA 本质上是一个“基于 mIoU 单调下降准则的随机搜索”，不是传统 boundary attack 那种“先越界、再缩扰动”。
+- 用来说明这一点的最小基线就是 Random Attack：从干净图像出发随机试探小扰动，只在代理指标下降时接受更新，属于 [[concepts/Proxy Index mIoU Optimization|proxy-guided accept/reject search]]。
 
 ### 1. 扰动是怎么表示的
 
 - DLA 不是在整张图的每个像素上独立采样连续值，而是把扰动直接限制到 `{-ε, +ε}`，即把连续空间 `[-ε, +ε]^d` 压成离散空间。
+- 这可以直观理解为：先把搜索限制在 [[concepts/L-infinity Norm Ball|`L_\infty` 范数球]] 的顶点集合里，因为这些顶点正对应“每一维都取到 `±ε`”。
 - 更进一步，它不是采样 patch，也不是采样 full-image random noise，而是采样 **discrete linear noise**。
 - 论文伪代码里，线性噪声只有一个空间维度的自由度：
   `δ ~ {-ε, +ε}^h` 或 `δ ~ {-ε, +ε}^w`。
@@ -136,6 +138,7 @@ provenance:
 - 这里的 `d` 很重要，它记录“当前最好初始化来自哪个方向”，后面的 calibration 会沿着这个方向继续细分。
 - 所以 exploration 的作用不是做最终攻击，而是回答一个更具体的问题：
   “在有限 query 下，横向条纹还是纵向条纹更适合这张图、这个模型、这个数据分布？”
+- 这也和 [[concepts/Natural Evolutionary Strategies (NES)|NES]] 形成对比：NES 试图用采样估计梯度方向，而 DLA 先压缩搜索空间，再在离散结构上做贪心搜索。
 
 ### 4. Perturbation Calibration：对初始化做分层离散局部搜索
 
@@ -559,6 +562,6 @@ function PERTURB(model, inputs, targets):
 ## Wiki 关联
 
 - 参考摘要：[[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation|Delving into Decision-based Black-box Attacks on Semantic Segmentation]]
-- 概念锚点：[[concepts/Decision-based Black-box Attack for Segmentation]]、[[concepts/Proxy Index mIoU Optimization]]、[[concepts/Query-Efficient Attack Evaluation]]
-- 实体锚点：[[entities/Zhaoyu Chen]]、[[entities/Zhengyang Shan]]、[[entities/Cityscapes Dataset]]
+- 概念锚点：[[concepts/Deep Neural Network (DNN)]]、[[concepts/Semantic Segmentation]]、[[concepts/Decision-based Black-box Attack for Segmentation]]、[[concepts/Indirect Local Attack in Segmentation]]、[[concepts/SegPGD]]、[[concepts/Proxy Index mIoU Optimization]]、[[concepts/Discrete Linear Noise]]、[[concepts/Natural Evolutionary Strategies (NES)]]、[[concepts/L-infinity Norm Ball]]、[[concepts/Query-Efficient Attack Evaluation]]
+- 实体锚点：[[entities/Zhaoyu Chen]]、[[entities/Zhengyang Shan]]、[[entities/Cityscapes Dataset]]、[[entities/FCN]]、[[entities/PSPNet]]、[[entities/DeepLabv3]]、[[entities/SegFormer]]、[[entities/MaskFormer]]
 - 综合页面：[[synthesis/Robust Representation and Adversarial Dynamics]]、[[synthesis/Decision-based Segmentation Attack Landscape]]、[[synthesis/Alignment Robustness Evaluation Ladder]]

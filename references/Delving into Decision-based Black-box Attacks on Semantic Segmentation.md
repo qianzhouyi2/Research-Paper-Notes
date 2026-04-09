@@ -12,7 +12,7 @@ sources:
   - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation_zh.md
   - papers_sources/2402.01220-source.tar
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 summary: 首篇系统研究语义分割 decision-based 黑盒攻击的论文，提出 DLA 并在有限查询下显著降低多个模型 mIoU。
 provenance:
   extracted: 0.88
@@ -65,8 +65,14 @@ provenance:
 ## 关联页面
 
 - [[concepts/Decision-based Black-box Attack for Segmentation]]
+- [[concepts/Deep Neural Network (DNN)]]
+- [[concepts/Semantic Segmentation]]
+- [[concepts/Indirect Local Attack in Segmentation]]
+- [[concepts/SegPGD]]
 - [[concepts/Proxy Index mIoU Optimization]]
 - [[concepts/Discrete Linear Noise]]
+- [[concepts/Natural Evolutionary Strategies (NES)]]
+- [[concepts/L-infinity Norm Ball]]
 - [[concepts/Perturbation Interaction]]
 - [[concepts/Query-Efficient Attack Evaluation]]
 - [[synthesis/Decision-based Segmentation Attack Landscape]]
@@ -74,6 +80,10 @@ provenance:
 - [[entities/Zhaoyu Chen]]
 - [[entities/Wenqiang Zhang]]
 - [[entities/Zhengyang Shan]]
+- [[entities/FCN]]
+- [[entities/PSPNet]]
+- [[entities/DeepLabv3]]
 - [[entities/SegFormer]]
+- [[entities/MaskFormer]]
 - [[entities/Cityscapes Dataset]]
 - [[entities/ADE20K Dataset]]

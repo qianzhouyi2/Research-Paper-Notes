@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SimBA (Simple Black-box Attack) | Research Paper Notes</title>
+  <meta name="description" content="SimBA 通过逐方向随机试探并保留有利更新，在无需梯度的黑盒设置下实现高查询效率攻击。">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../site.js"></script>
+</head>
+<body data-root-prefix="../" data-page-path="concepts/SimBA (Simple Black-box Attack).html">
+  <div class="site-shell">
+    <aside class="sidebar panel">
+      <a class="brand" href="../index.html">
+        <span class="brand-kicker">Research Wiki</span>
+        <h1>Research Paper Notes</h1>
+        <p>A browsable paper-reading vault published as a GitHub Pages site.</p>
+      </a>
+      <nav><h1 id="navigation">Navigation</h1>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../notes/index.html">Notes</a></li>
+<li><a href="../references/index.html">References</a></li>
+<li><a href="index.html">Concepts</a></li>
+<li><a href="../entities/index.html">Entities</a></li>
+<li><a href="../synthesis/index.html">Synthesis</a></li>
+<li><a href="../journal/index.html">Journal</a></li>
+<li><a href="../projects/index.html">Projects</a></li>
+<li><a href="../log.html">Log</a></li>
+</ul></nav>
+      <p class="footer-note">Static export from the local Obsidian-style wiki. Markdown was pre-rendered for GitHub Pages.</p>
+    </aside>
+
+    <main class="main">
+      <header class="topbar panel">
+        <div>
+          <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
+          <h2>SimBA (Simple Black-box Attack)</h2>
+          <p>SimBA 通过逐方向随机试探并保留有利更新，在无需梯度的黑盒设置下实现高查询效率攻击。</p>
+        </div>
+        <div class="topbar-actions">
+          <div class="search-box">
+            <input data-search-input type="search" placeholder="Search pages, concepts, entities...">
+            <div data-search-results class="search-results"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="breadcrumbs"><a href="../index.html">Home</a><span> / </span><a href="index.html">Concepts</a><span> / </span><span>SimBA (Simple Black box Attack)</span></div>
+
+      <article class="article-wrap panel">
+        <div class="article-path">concepts/SimBA (Simple Black-box Attack).md</div>
+        <div class="markdown-body"><h1 id="simba-simple-black-box-attack">SimBA (Simple Black-box Attack)</h1>
+<h2 id="_1">定义</h2>
+<p>SimBA 是 score-based 黑盒对抗攻击方法。它不估计完整梯度，而是沿随机基方向做“正负两次试探”，保留让攻击目标更优的更新。</p>
+<h2 id="_2">基本流程</h2>
+<ol>
+<li>选取方向 (q)（像素基或 DCT 基）。</li>
+<li>查询 (x+\epsilon q) 与 (x-\epsilon q)。</li>
+<li>保留更有利的一侧（例如非定向攻击里降低真类分数）。</li>
+<li>迭代直到成功或预算耗尽。</li>
+</ol>
+<h2 id="_3">方法特点</h2>
+<ul>
+<li>实现简单，不需要显式梯度估计。</li>
+<li>在有限查询预算下通常优于大量早期随机攻击基线。^[inferred]</li>
+<li>SimBA-DCT 常比纯像素方向更省查询。^[inferred]</li>
+</ul>
+<h2 id="_4">联网补充</h2>
+<ul>
+<li>2019-05（arXiv:1905.07121）：论文直接将方法命名为 “Simple Black-box Adversarial Attacks”，核心贡献就是“简化攻击步骤 + 提升查询效率”。</li>
+<li>该方法属于 score-based 路线，适配能返回置信度/分数的 API；若仅有 top-1 标签则通常需转为 decision-based 方法。^[inferred]</li>
+</ul>
+<h2 id="_5">关联</h2>
+<ul>
+<li><a href="Query-Efficient Attack Evaluation.html">Query-Efficient Attack Evaluation</a></li>
+<li><a href="Square Attack.html">Square Attack</a></li>
+<li><a href="SignSGD.html">SignSGD</a></li>
+<li><a href="Decision-based Black-box Attack for Segmentation.html">Decision-based Black-box Attack for Segmentation</a></li>
+</ul></div>
+      </article>
+    </main>
+
+    <aside class="rail panel">
+      <h3>Page Meta</h3>
+      <div class="meta-block">
+        <p class="meta-label">Section</p>
+        <p>concepts</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Tags</p>
+        <div class="chip-list"><span class="chip">concept</span><span class="chip">adversarial-attack</span><span class="chip">black-box-attack</span><span class="chip">query-efficient</span><span class="chip">robustness</span></div>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Summary</p>
+        <p>SimBA 通过逐方向随机试探并保留有利更新，在无需梯度的黑盒设置下实现高查询效率攻击。</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Source</p>
+        <ul>
+          <li><a href="https://github.com/qianzhouyi2/Research-Paper-Notes/blob/main/concepts/SimBA (Simple Black-box Attack).md">Open Markdown On GitHub</a></li>
+          <li><a href="../search-index.json">Open Search Index</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

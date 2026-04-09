@@ -1,4 +1,4 @@
-﻿---
+---
 title: Amortized Bayesian Inference for LLMs
 category: concept
 tags:

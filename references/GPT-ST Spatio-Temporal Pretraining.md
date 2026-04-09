@@ -3,7 +3,7 @@ title: GPT-ST Spatio-Temporal Pretraining
 category: reference
 tags:
   - paper
-  - gnn
+  - graph-learning
   - spatio-temporal
   - pretraining
 sources:

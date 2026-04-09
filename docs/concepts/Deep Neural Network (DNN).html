@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deep Neural Network (DNN) | Research Paper Notes</title>
+  <meta name="description" content="DNN 通过多层可学习表示进行端到端建模，是现代语义分割与对抗鲁棒性研究的基础模型范式。">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../site.js"></script>
+</head>
+<body data-root-prefix="../" data-page-path="concepts/Deep Neural Network (DNN).html">
+  <div class="site-shell">
+    <aside class="sidebar panel">
+      <a class="brand" href="../index.html">
+        <span class="brand-kicker">Research Wiki</span>
+        <h1>Research Paper Notes</h1>
+        <p>A browsable paper-reading vault published as a GitHub Pages site.</p>
+      </a>
+      <nav><h1 id="navigation">Navigation</h1>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../notes/index.html">Notes</a></li>
+<li><a href="../references/index.html">References</a></li>
+<li><a href="index.html">Concepts</a></li>
+<li><a href="../entities/index.html">Entities</a></li>
+<li><a href="../synthesis/index.html">Synthesis</a></li>
+<li><a href="../journal/index.html">Journal</a></li>
+<li><a href="../projects/index.html">Projects</a></li>
+<li><a href="../log.html">Log</a></li>
+</ul></nav>
+      <p class="footer-note">Static export from the local Obsidian-style wiki. Markdown was pre-rendered for GitHub Pages.</p>
+    </aside>
+
+    <main class="main">
+      <header class="topbar panel">
+        <div>
+          <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
+          <h2>Deep Neural Network (DNN)</h2>
+          <p>DNN 通过多层可学习表示进行端到端建模，是现代语义分割与对抗鲁棒性研究的基础模型范式。</p>
+        </div>
+        <div class="topbar-actions">
+          <div class="search-box">
+            <input data-search-input type="search" placeholder="Search pages, concepts, entities...">
+            <div data-search-results class="search-results"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="breadcrumbs"><a href="../index.html">Home</a><span> / </span><a href="index.html">Concepts</a><span> / </span><span>Deep Neural Network (DNN)</span></div>
+
+      <article class="article-wrap panel">
+        <div class="article-path">concepts/Deep Neural Network (DNN).md</div>
+        <div class="markdown-body"><h1 id="deep-neural-network-dnn">Deep Neural Network (DNN)</h1>
+<h2 id="_1">定义</h2>
+<p>DNN 是由多层参数化非线性变换组成的神经网络，通过端到端训练学习从输入到任务输出的分层表示。</p>
+<h2 id="_2">在语义分割中的角色</h2>
+<ul>
+<li>语义分割主流方法（FCN、DeepLab、PSPNet、SegFormer）本质上都建立在 DNN 表示学习能力之上。</li>
+<li>在 black-box attack 语境下，攻击目标是 DNN 的像素级决策输出，而非单标签分类输出。</li>
+</ul>
+<h2 id="_3">联网补充</h2>
+<ul>
+<li>Nature 2015 的综述将 deep learning 定义为“多层表示学习”，核心是通过多级表示逐层抽取更抽象特征。</li>
+<li>AlexNet（NeurIPS 2012）证明了深层卷积网络在大规模视觉识别上的显著性能跃迁，推动 DNN 成为视觉主流范式。</li>
+<li>FCN（CVPR 2015）把卷积网络扩展为 end-to-end、pixels-to-pixels 的密集预测框架，奠定了 DNN 在语义分割中的基础路径。</li>
+<li>Explaining and Harnessing Adversarial Examples（2014/2015）显示小幅最坏方向扰动可使 DNN 高置信误判，直接引出鲁棒性与对抗攻击研究。</li>
+</ul>
+<h2 id="_4">关联</h2>
+<ul>
+<li><a href="../references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.html">Delving into Decision-based Black-box Attacks on Semantic Segmentation</a></li>
+<li><a href="../notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.html">Delving into Decision-based Black-box Attacks on Semantic Segmentation</a></li>
+<li><a href="Decision-based Black-box Attack for Segmentation.html">Decision-based Black-box Attack for Segmentation</a></li>
+<li><a href="Proxy Index mIoU Optimization.html">Proxy Index mIoU Optimization</a></li>
+<li><a href="Query-Efficient Attack Evaluation.html">Query-Efficient Attack Evaluation</a></li>
+</ul></div>
+      </article>
+    </main>
+
+    <aside class="rail panel">
+      <h3>Page Meta</h3>
+      <div class="meta-block">
+        <p class="meta-label">Section</p>
+        <p>concepts</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Tags</p>
+        <div class="chip-list"><span class="chip">concept</span><span class="chip">architecture</span><span class="chip">adversarial-attack</span><span class="chip">semantic-segmentation</span><span class="chip">robustness</span></div>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Summary</p>
+        <p>DNN 通过多层可学习表示进行端到端建模，是现代语义分割与对抗鲁棒性研究的基础模型范式。</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Source</p>
+        <ul>
+          <li><a href="https://github.com/qianzhouyi2/Research-Paper-Notes/blob/main/concepts/Deep Neural Network (DNN).md">Open Markdown On GitHub</a></li>
+          <li><a href="../search-index.json">Open Search Index</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

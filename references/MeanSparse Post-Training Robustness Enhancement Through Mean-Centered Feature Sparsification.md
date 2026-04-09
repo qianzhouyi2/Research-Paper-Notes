@@ -5,7 +5,7 @@ tags:
   - paper
   - adversarial-robustness
   - post-training
-  - feature-sparsification
+  - sparsification
 sources:
   - papers_sources/MeanSparse 2406.05927/main.tex
   - papers_sources/MeanSparse 2406.05927/source.tar.gz

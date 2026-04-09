@@ -4,7 +4,7 @@ category: synthesis
 tags:
   - synthesis
   - sequence
-  - temporal
+  - sequence-modeling
   - representation
 sources:
   - notes/CIF Continuous Integrate-and-Fire.md
