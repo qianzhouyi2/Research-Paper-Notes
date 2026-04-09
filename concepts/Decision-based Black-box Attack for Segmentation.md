@@ -1,4 +1,4 @@
-﻿---
+---
 title: Decision-based Black-box Attack for Segmentation
 category: concept
 tags:

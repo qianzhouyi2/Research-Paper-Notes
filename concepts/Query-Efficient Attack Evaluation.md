@@ -1,4 +1,4 @@
-﻿---
+---
 title: Query-Efficient Attack Evaluation
 category: concept
 tags:

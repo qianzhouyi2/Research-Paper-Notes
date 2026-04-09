@@ -277,7 +277,7 @@
     "url": "concepts/Decision-based Black-box Attack for Segmentation.html",
     "path": "concepts/Decision-based Black-box Attack for Segmentation.md",
     "section": "concepts",
-    "summary": "﻿ title: Decision based Black box Attack for Segmentation category: concept tags: concept adversarial attack black box attack semantic segmentation robustness sources: papers sour…"
+    "summary": "语义分割中的 decision-based 攻击仅依赖标签输出，核心挑战来自像素级多约束优化和有限查询预算。"
   },
   {
     "title": "Decision-based Segmentation Attack Landscape",
@@ -319,7 +319,7 @@
     "url": "notes/Demystifying Chains, Trees, and Graphs of Thoughts.html",
     "path": "notes/Demystifying Chains, Trees, and Graphs of Thoughts.md",
     "section": "notes",
-    "summary": "﻿ Demystifying Chains, Trees, and Graphs of Thoughts 阅读日期：2026 04 08 阅读状态：已读 标签： paper imported notion 相关方向：Prompt Engineering、推理拓扑（Reasoning Topologies） 阅读目的：建立 CoT / ToT / GoT 等…"
+    "summary": "Demystifying Chains, Trees, and Graphs of Thoughts 阅读日期：2026 04 08 阅读状态：已读 标签： paper imported notion 相关方向：Prompt Engineering、推理拓扑（Reasoning Topologies） 阅读目的：建立 CoT / ToT / GoT 等结构…"
   },
   {
     "title": "Demystifying Chains, Trees, and Graphs of Thoughts",
@@ -1131,7 +1131,7 @@
     "url": "concepts/Query-Efficient Attack Evaluation.html",
     "path": "concepts/Query-Efficient Attack Evaluation.md",
     "section": "concepts",
-    "summary": "﻿ title: Query Efficient Attack Evaluation category: concept tags: concept evaluation query efficient robustness semantic segmentation sources: papers sources/Delving into Decisio…"
+    "summary": "用固定查询预算比较攻击后 mIoU，可评估分割模型在现实黑盒条件下的鲁棒性与被攻破速度，并区分反馈接口与搜索空间设计的影响。"
   },
   {
     "title": "References 索引",

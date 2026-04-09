@@ -130,7 +130,7 @@
 <li>DLA 不是在整张图的每个像素上独立采样连续值，而是把扰动直接限制到 <code>{-ε, +ε}</code>，即把连续空间 <code>[-ε, +ε]^d</code> 压成离散空间。</li>
 <li>这可以直观理解为：先把搜索限制在 <a href="../concepts/L-infinity Norm Ball.html"><code>L_\infty</code> 范数球</a> 的顶点集合里，因为这些顶点正对应“每一维都取到 <code>±ε</code>”。</li>
 <li>更进一步，它不是采样 patch，也不是采样 full-image random noise，而是采样 <strong>discrete linear noise</strong>。</li>
-<li>论文伪代码里，线性噪声只有一个空间维度的自由度：
+<li>方法定义里，线性噪声只有一个空间维度的自由度：
   <code>δ ~ {-ε, +ε}^h</code> 或 <code>δ ~ {-ε, +ε}^w</code>。</li>
 <li>这意味着可以把它理解成：
   <code>horizontal</code> 时，先为每一行采一个 <code>±ε</code>，再沿整行展开，形成横向条纹；
@@ -140,87 +140,13 @@
   1. 参数维度从“每个像素一个值”降成“每行或每列一个符号”。
   2. 扰动形状比 patch 更细长，不容易出现特别显眼的彩色块，同时不同更新之间也更不容易互相覆盖。</li>
 </ul>
-<h3 id="2-exploration-calibration">2. 整体流程：先 Exploration，再 Calibration</h3>
+<h3 id="2_1">2. 方法流程（非伪代码版）</h3>
 <ul>
-<li>DLA 的总查询次数记为 <code>T</code>。</li>
-<li>伪代码里把前 <code>T/5</code> 次查询分给 <strong>Perturbation Exploration</strong>，后 <code>4T/5</code> 次分给 <strong>Perturbation Calibration</strong>。</li>
-<li>初始化时：</li>
-<li><code>l_min = L(x)</code>：当前最好的代理指标，从干净图像开始。</li>
-<li><code>δ_hat = 0</code>：当前保留的最好扰动。</li>
-<li><code>M = 1</code>：后面做符号翻转时用的 mask，初始全为 <code>+1</code>。</li>
-<li><code>i = 0, n = 0</code>：分别表示当前层级下的 block 编号，以及当前分块层级。</li>
+<li>DLA 把攻击分成“探索 + 校准”两段：先找到有效扰动方向，再进行局部细化。</li>
+<li>探索阶段交替试 horizontal / vertical 的离散线性噪声，用 <code>mIoU</code> 下降作为接受准则，选出更有效的初始化扰动。</li>
+<li>校准阶段在该初始化上做逐步细化的局部符号翻转，只保留能继续降低 <code>mIoU</code> 的更新。</li>
 </ul>
-<h3 id="3-perturbation-exploration">3. Perturbation Exploration：先找到一个“够强”的初始化</h3>
-<ul>
-<li>在前 <code>T/5</code> 次迭代里，DLA 不是累积式地一点点加噪声，而是不断在干净图像 <code>x</code> 上测试候选线性扰动，并保留效果最好的那个。</li>
-<li>具体做法是交替采样横向和纵向线噪声：</li>
-<li><code>k = t % 2</code></li>
-<li>当 <code>k = 1</code> 时采样一种方向的线噪声；</li>
-<li>当 <code>k = 0</code> 时采样另一种方向的线噪声。</li>
-<li>对每个候选扰动 <code>δ</code>，都直接计算 <code>L(x + δ)</code>。</li>
-<li>如果这个候选让 <code>mIoU</code> 更低，就更新：</li>
-<li><code>l_min = L(x + δ)</code></li>
-<li><code>δ_hat = δ</code></li>
-<li><code>d = k</code></li>
-<li>这里的 <code>d</code> 很重要，它记录“当前最好初始化来自哪个方向”，后面的 calibration 会沿着这个方向继续细分。</li>
-<li>所以 exploration 的作用不是做最终攻击，而是回答一个更具体的问题：
-  “在有限 query 下，横向条纹还是纵向条纹更适合这张图、这个模型、这个数据分布？”</li>
-<li>这也和 <a href="../concepts/Natural Evolutionary Strategies (NES).html">NES</a> 形成对比：NES 试图用采样估计梯度方向，而 DLA 先压缩搜索空间，再在离散结构上做贪心搜索。</li>
-</ul>
-<h3 id="4-perturbation-calibration">4. Perturbation Calibration：对初始化做分层离散局部搜索</h3>
-<ul>
-<li>exploration 找到 <code>δ_hat</code> 之后，DLA 不再重新随机采样整张图，而是固定住这份离散线性扰动的基本形状，只去优化它在局部区域上的符号分配。</li>
-<li>这一步的核心变量是 <code>M</code>。可以把它理解成一个只取 <code>±1</code> 的翻转掩码，真正送进模型的是
-  <code>x + δ_hat * M</code>
-  这里是逐元素乘法。</li>
-<li>如果某块区域在 <code>M</code> 里被翻成 <code>-1</code>，就相当于把该区域原本的 <code>+ε</code> 改成 <code>-ε</code>，或者把 <code>-ε</code> 改成 <code>+ε</code>。</li>
-</ul>
-<h3 id="5-calibration">5. Calibration 的分块方式到底怎么做</h3>
-<ul>
-<li>DLA 不是二维网格那样同时切高和宽，而是沿 exploration 阶段选中的方向做一维层次划分。</li>
-<li>如果 <code>d</code> 对应横向条纹，那么就沿高度方向切分，得到一组横向带状区域。</li>
-<li>如果 <code>d</code> 对应纵向条纹，那么就沿宽度方向切分，得到一组纵向带状区域。</li>
-<li>在第 <code>n</code> 层，当前 block 的尺寸写成：
-  <code>c = ceil(axis_len / 2^n)</code>
-  其中 <code>axis_len</code> 是当前要切分的那一维长度，也就是 <code>h</code> 或 <code>w</code>。</li>
-<li>这表示：</li>
-<li><code>n = 0</code> 时，先测整条大带；</li>
-<li><code>n = 1</code> 时，切成 2 块；</li>
-<li><code>n = 2</code> 时，切成 4 块；</li>
-<li>之后继续二分，直到足够细。</li>
-<li>对于当前层级的第 <code>i</code> 个 block，DLA 会先把这块区域在 <code>M</code> 里的符号整体翻转一次，然后 query 一下：</li>
-<li>如果 <code>L(x + δ_hat * M)</code> 更低，保留这次 flip；</li>
-<li>否则立刻把这块翻回去。</li>
-<li>于是 calibration 其实是在做一种非常直接的贪心搜索：
-  “这块带状区域整体反号，能不能让分割结果进一步变差？”</li>
-</ul>
-<h3 id="6-inm">6. <code>i</code>、<code>n</code>、<code>M</code> 在伪代码里各自负责什么</h3>
-<ul>
-<li><code>i</code>：当前层中正在测试第几个 block。</li>
-<li><code>n</code>：当前已经细化到第几层。</li>
-<li><code>M</code>：当前这轮局部搜索里，已经累计接受了哪些 block flip。</li>
-<li>当某一层的所有 <code>2^n</code> 个 block 都测完后：</li>
-<li><code>i</code> 归零；</li>
-<li><code>n = n + 1</code>；</li>
-<li>进入更细一层继续翻。</li>
-<li>当层级已经细到
-  <code>ceil(log2(axis_len)) + 1</code>
-  时，就认为这一轮分层校准走完了。</li>
-<li>伪代码随后把当前有效的翻转结果并入 <code>δ_hat</code>，再把 <code>i</code>、<code>n</code> 重新置零，开始下一轮更高层面的校准。</li>
-<li>也就是说，DLA 不是“一次 coarse-to-fine 就结束”，而是在剩余 query 允许的范围内，反复做这种分层翻转搜索。</li>
-</ul>
-<h3 id="7">7. 把伪代码翻成更容易实现的流程</h3>
-<ol>
-<li>输入干净图像 <code>x</code>、真值标签 <code>y</code>、模型 <code>f</code>、扰动预算 <code>ε</code>、总 query <code>T</code>。</li>
-<li>定义代理指标 <code>L(x') = mIoU(f(x'), y)</code>。</li>
-<li>用前 <code>T/5</code> 次 query 交替测试 horizontal / vertical 的离散线噪声，选出让 <code>L</code> 最小的 <code>δ_hat</code>，并记录方向 <code>d</code>。</li>
-<li>用剩余 query 对 <code>δ_hat</code> 做 coarse-to-fine 的 block sign flip：
-   - 先测大块；
-   - 再测更细的块；
-   - 每次只保留能进一步降低 <code>mIoU</code> 的 flip。</li>
-<li>输出最终对抗样本 <code>x_adv = x + δ_hat</code>（严格按伪代码理解，是合并了当前最佳 flip mask 之后的 <code>δ_hat</code>）。</li>
-</ol>
-<h3 id="8">8. 为什么这个实现比普通随机搜索更有效</h3>
+<h3 id="3_1">3. 为什么这个设计比普通随机搜索更有效</h3>
 <ul>
 <li>它先用 <code>mIoU</code> 把“有没有进步”定义清楚了，避免了 segmentation 下目标函数和边界缩扰动目标不一致的问题。</li>
 <li>它把连续高维空间压成了离散线结构，所以前期 exploration 的 query 利用率更高。</li>
@@ -256,7 +182,7 @@
         miou = mean(intersection / union over present classes)
     return per-image miou
 </code></pre>
-<h3 id="2_1">2. 线性噪声采样</h3>
+<h3 id="2_2">2. 线性噪声采样</h3>
 <pre><code class="language-text">function RANDOM_LINEAR_NOISE(C, H, W, axis):
     if axis == horizontal:
         sample H row signs from {-1, +1}
@@ -266,7 +192,7 @@
         expand each column sign across the full height and all channels
     return noise
 </code></pre>
-<h3 id="3_1">3. 分层翻转细化</h3>
+<h3 id="3_2">3. 分层翻转细化</h3>
 <pre><code class="language-text">function REFINE_NOISE(model, x, y, base_noise, axis, current_best_miou, queries_left):
     current_noise = clone(base_noise)
     best_noise = clone(base_noise)
@@ -403,7 +329,7 @@
 <li>查询预算：主要报告 50 / 200 queries，另做了 10 queries 的极限实验</li>
 <li>扰动预算：<code>epsilon = 8</code></li>
 </ul>
-<h2 id="7_1">7. 主要结果</h2>
+<h2 id="7">7. 主要结果</h2>
 <h3 id="71">7.1 主结果</h3>
 <h3 id="72-markdown">7.2 重要实验表格（Markdown）</h3>
 <ul>
@@ -771,7 +697,7 @@
 <li>在 10 queries 的极低预算下，DLA 依旧很强：SegFormer 在 Cityscapes 上从 80.43 降到 18.89，在 ADE20K 上从 43.74 降到 30.85。</li>
 </ul>
 <hr />
-<h2 id="8_1">8. 消融实验</h2>
+<h2 id="8">8. 消融实验</h2>
 <ul>
 <li>使用 mIoU 作为 proxy index 比用 PAcc 更有效。</li>
 <li>离散噪声优于连续随机噪声，说明“压缩搜索空间”是有效的。</li>
