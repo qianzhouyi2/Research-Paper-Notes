@@ -14,36 +14,35 @@ sources:
   - https://doi.org/10.1109/WACV51458.2022.00290
 created: 2026-04-10
 updated: 2026-04-10
-summary: "Batch-3 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+summary: "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
 provenance:
   extracted: 0.8
   inferred: 0.15
   ambiguous: 0.05
 ---
-
 # Towards Semantically Stealthy Adversarial Attacks Against Segmentation Models
 
-## Reading Status
+## 阅读状态
 
-- Batch: 3 / 4
-- Per-paper review status: completed (metadata + abstract-level local reading + cross-source verification)
+- 批次：3 / 4
+- 逐篇审阅状态：已完成（元数据 + 摘要级本地阅读 + 跨源核验）
 
-## Metadata
+## 元数据
 
-- Year: 2022
-- Venue: WACV
-- Verification source: arxiv+crossref
-- Verified title: Semantically Stealthy Adversarial Attacks against Segmentation Models
+- 年份：2022
+- 发表 venue：WACV
+- 核验来源：crossref
+- 核验标题：Towards Semantically Stealthy Adversarial Attacks Against Segmentation Models
 
-## Problem and Method (From Extracted Evidence)
+## 问题与方法（基于抽取证据）
 
-- Evidence summary: Segmentation models have been found to be vulnerable to targeted and non-targeted adversarial attacks. However, the resulting segmentation outputs are often so damaged that it is easy to spot an attack.
-- Method hint: In this paper, we propose semantically stealthy adversarial attacks which can manipulate targeted labels while preserving non-targeted labels at the same time. One challenge is making semantically meaningful manipulations across datasets and models.
+- 证据摘要：Segmentation models have been found to be vulnerable to targeted and non-targeted adversarial attacks. However, the resulting segmentation outputs are often so damaged that it is easy to spot an attack.
+- 方法线索：In this paper, we propose semantically stealthy adversarial attacks which can manipulate targeted labels while preserving non-targeted labels at the same time. One challenge is making semantically meaningful manipulations across datasets and models.
 
-## Local Paper Structure Evidence
+## 本地论文结构证据
 
-- Extraction source: tex-sections
-- Section/subsection headings observed in local source:
+- 抽取来源：tex-sections
+- 本地源码中观测到的章节/小节标题：
 - Introduction
 - Related work
 - Universal adversarial attacks
@@ -53,30 +52,28 @@ provenance:
 - Our Approach
 - Problem definition
 
-## Extracted Themes
+## 抽取主题
 
-- Theme tags pending deeper full-text parsing. ^[ambiguous]
+- 主题标签仍待更深层全文解析。^[ambiguous]
 
-## Experimental Context
+## 实验语境
 
-- Dataset mentions in extracted text: Cityscapes
-- Local artifact type: tex_source
+- 抽取文本中的数据集提及：当前摘要片段未显式给出。^[ambiguous]
+- 本地材料类型：tex_source
 
-## Linked Author Entities
+## 关联作者实体
 
 - [[entities/Zhenhua Chen]]
 - [[entities/Chuhua Wang]]
 - [[entities/David J. Crandall]]
 
-## Linked Concepts and Synthesis
+## 关联概念与综合
 
 - [[synthesis/Semantic Segmentation Robustness Corpus 2019-2026]]
 - [[synthesis/Segmentation Adversarial Attack Methods 2019-2026]]
 - [[concepts/Segmentation Robustness Benchmark Protocol]]
 
-## Online Verification Notes
+## 联网核验备注
 
-- Primary verification link: https://arxiv.org/abs/2104.01732
-- DOI verification link: https://doi.org/10.1109/WACV51458.2022.00290
-- Local artifacts are stored under `papers_sources/semantic_segmentation_robustness_20260409`.
-
+- 主核验链接：https://arxiv.org/abs/2104.01732
+- 本地材料存放于 `papers_sources/semantic_segmentation_robustness_20260409`。

@@ -13,59 +13,57 @@ sources:
   - https://doi.org/10.1109/cvprw50498.2020.00168
 created: 2026-04-10
 updated: 2026-04-10
-summary: "Batch-1 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+summary: "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
 provenance:
   extracted: 0.8
   inferred: 0.15
   ambiguous: 0.05
 ---
-
 # Improved Noise and Attack Robustness of Semantic Segmentation Models with Self-Supervised Depth Estimation
 
-## Reading Status
+## 阅读状态
 
-- Batch: 1 / 4
-- Per-paper review status: completed (metadata + abstract-level local reading + cross-source verification)
+- 批次：1 / 4
+- 逐篇审阅状态：已完成（元数据 + 摘要级本地阅读 + 跨源核验）
 
-## Metadata
+## 元数据
 
-- Year: 2020
-- Venue: CVPRW
-- Verification source: crossref
-- Verified title: Improved Noise and Attack Robustness for Semantic Segmentation by Using Multi-Task Training with Self-Supervised Depth Estimation
+- 年份：2020
+- 发表 venue：CVPRW
+- 核验来源：crossref
+- 核验标题：Improved Noise and Attack Robustness of Semantic Segmentation Models with Self-Supervised Depth Estimation
 
-## Problem and Method (From Extracted Evidence)
+## 问题与方法（基于抽取证据）
 
-- Evidence summary: While current approaches for neural network training of- ten aim at improving performance, less focus is put on train- ing methods aiming at robustness towards varying noise conditions or directed attacks by adversarial examples. In this paper, we propose to improve robustness by a multi-task training, which extends supervised semantic segmentation by a self-supervised monocular depth estimation on unla- beled videos.
-- Method hint: This additional task is only performed dur- ing training to improve the semantic segmentation model’s robustness at test time under several input perturbations. Moreover, we even ﬁnd that our joint training approach also improves the performance of the model on the original (su- pervised) semantic segmentation task.
+- 证据摘要：While current approaches for neural network training of- ten aim at improving performance, less focus is put on train- ing methods aiming at robustness towards varying noise conditions or directed attacks by adversarial examples. In this paper, we propose to improve robustness by a multi-task training, which extends supervised semantic segmentation by a self-supervised monocular depth estimation on unla- beled videos.
+- 方法线索：This additional task is only performed dur- ing training to improve the semantic segmentation model’s robustness at test time under several input perturbations. Moreover, we even ﬁnd that our joint training approach also improves the performance of the model on the original (su- pervised) semantic segmentation task.
 
-## Local Paper Structure Evidence
+## 本地论文结构证据
 
-- Structure extraction unavailable from local source format in this pass. ^[ambiguous]
+- 本轮未能从本地源格式稳定抽取章节结构。^[ambiguous]
 
-## Extracted Themes
+## 抽取主题
 
 - Adversarial training strategy
 
-## Experimental Context
+## 实验语境
 
-- Dataset mentions in extracted text: Cityscapes
-- Local artifact type: pdf
+- 抽取文本中的数据集提及：当前摘要片段未显式给出。^[ambiguous]
+- 本地材料类型：pdf
 
-## Linked Author Entities
+## 关联作者实体
 
 - [[entities/Marvin Klingner]]
 - [[entities/Andreas Bar]]
 - [[entities/Tim Fingscheidt]]
 
-## Linked Concepts and Synthesis
+## 关联概念与综合
 
 - [[synthesis/Semantic Segmentation Robustness Corpus 2019-2026]]
 - [[synthesis/Segmentation Adversarial Attack Methods 2019-2026]]
 - [[concepts/Segmentation Robustness Benchmark Protocol]]
 
-## Online Verification Notes
+## 联网核验备注
 
-- Primary verification link: https://doi.org/10.1109/cvprw50498.2020.00168
-- Local artifacts are stored under `papers_sources/semantic_segmentation_robustness_20260409`.
-
+- 主核验链接：https://doi.org/10.1109/cvprw50498.2020.00168
+- 本地材料存放于 `papers_sources/semantic_segmentation_robustness_20260409`。

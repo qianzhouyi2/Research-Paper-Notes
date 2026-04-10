@@ -9,11 +9,11 @@ sources:
   - workspace/wiki-update-2026-04-10-global-lint-remediation
   - workspace/wiki-update-2026-04-10-cn-localization
   - workspace/wiki-update-2026-04-10-cn-placeholder-remediation
+  - workspace/wiki-update-2026-04-10-references-cn-localization
 created: 2026-04-08
 updated: 2026-04-10
 summary: 记录 wiki 初始化、ingest 与维护操作的时间线。
 ---
-
 # Wiki 日志
 
 - [2026-04-08 11:13:50 +08:00] INIT vault_path="D:/paper_reading/paper_reading" sources="D:/paper_reading/paper_reading/papers_sources" preserved_existing_folders="notes,papers_sources,Templates"
@@ -74,3 +74,4 @@ summary: 记录 wiki 初始化、ingest 与维护操作的时间线。
 - [2026-04-10 20:05:00 +08:00] UPDATE source="workspace/wiki-update-2026-04-10-cn-localization" pages_updated=97 pages_created=0 mode=append notes="rewrote newly added concepts/entities/synthesis internal pages (created on 2026-04-10) into Chinese templates while preserving titles and linked paper names"
 - [2026-04-10 13:12:00 +08:00] UPDATE source="workspace/wiki-update-2026-04-10-cn-placeholder-remediation" pages_updated=154 pages_created=0 mode=append notes="批量清理 concepts/entities/synthesis 内部页中的问号占位段，统一为中文正文并移除乱码尾块"
 - [2026-04-10 13:13:00 +08:00] LINT source="workspace/wiki_lint_global_2026-04-10_cnfix_final" issues_found=0 orphans=0 broken_links=0 missing_frontmatter=0 missing_summary=0 notes="全库关键知识层（concepts/entities/references/synthesis/journal/projects/notes/index/log）硬性检查全部通过"
+- [2026-04-10 13:40:00 +08:00] UPDATE source="workspace/wiki-update-2026-04-10-references-cn-localization" pages_updated=29 pages_created=0 mode=append notes="references 层完成中文化修复：28 张 segmentation 论文卡改为中文结构模板，并重建 references 索引为连续列表"

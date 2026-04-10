@@ -14,62 +14,58 @@ sources:
   - https://doi.org/10.1109/TPAMI.2019.2919707
 created: 2026-04-10
 updated: 2026-04-10
-summary: "Batch-2 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+summary: "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
 provenance:
   extracted: 0.8
   inferred: 0.15
   ambiguous: 0.05
 ---
-
 # On the Robustness of Semantic Segmentation Models to Adversarial Attacks
 
-## Reading Status
+## 阅读状态
 
-- Batch: 2 / 4
-- Per-paper review status: completed (metadata + abstract-level local reading + cross-source verification)
+- 批次：2 / 4
+- 逐篇审阅状态：已完成（元数据 + 摘要级本地阅读 + 跨源核验）
 
-## Metadata
+## 元数据
 
-- Year: 2020
-- Venue: TPAMI
-- Verification source: crossref+arxiv
-- Verified title: On the Robustness of Semantic Segmentation Models to Adversarial Attacks
+- 年份：2020
+- 发表 venue：TPAMI
+- 核验来源：crossref
+- 核验标题：On the Robustness of Semantic Segmentation Models to Adversarial Attacks
 
-## Problem and Method (From Extracted Evidence)
+## 问题与方法（基于抽取证据）
 
-- Evidence summary: Deep Neural Networks (DNNs) have demonstrated exceptional performance on most recognition tasks such as image classification and segmentation. However, they have also been shown to be vulnerable to adversarial examples.
-- Method hint: This phenomenon has recently attracted a lot of attention but it has not been extensively studied on multiple, large-scale datasets and structured prediction tasks such as semantic segmentation which often require more specialised networks with additional components such as CRFs, dilated convolutions, skip-connections and multiscale processing. In this paper, we present what to our knowledge is the first rigorous evaluation of adversarial attacks on modern semantic segmentation models, using two large-scale datasets.
+- 证据摘要：Deep Neural Networks (DNNs) have demonstrated exceptional performance on most recognition tasks such as image classification and segmentation. However, they have also been shown to be vulnerable to adversarial examples.
+- 方法线索：This phenomenon has recently attracted a lot of attention but it has not been extensively studied on multiple, large-scale datasets and structured prediction tasks such as semantic segmentation which often require more specialised networks with additional components such as CRFs, dilated convolutions, skip-connections and multiscale processing. In this paper, we present what to our knowledge is the first rigorous evaluation of adversarial attacks on modern semantic segmentation models, using two large-scale datasets.
 
-## Local Paper Structure Evidence
+## 本地论文结构证据
 
-- Structure extraction unavailable from local source format in this pass. ^[ambiguous]
+- 本轮未能从本地源格式稳定抽取章节结构。^[ambiguous]
 
-## Extracted Themes
+## 抽取主题
 
 - Benchmark protocol design
 - Attention refinement / regularization
 
-## Experimental Context
+## 实验语境
 
-- Dataset mentions in extracted text: Not explicitly named in extracted abstract snippet. ^[ambiguous]
-- Local artifact type: tex_source
+- 抽取文本中的数据集提及：当前摘要片段未显式给出。^[ambiguous]
+- 本地材料类型：tex_source
 
-## Linked Author Entities
+## 关联作者实体
 
 - [[entities/Anurag Arnab]]
 - [[entities/Ondrej Miksik]]
 - [[entities/Philip H. S. Torr]]
 
-## Linked Concepts and Synthesis
+## 关联概念与综合
 
 - [[synthesis/Semantic Segmentation Robustness Corpus 2019-2026]]
 - [[synthesis/Segmentation Adversarial Attack Methods 2019-2026]]
 - [[concepts/Segmentation Robustness Benchmark Protocol]]
 
-## Online Verification Notes
+## 联网核验备注
 
-- Primary verification link: https://arxiv.org/abs/1711.09856
-- DOI verification link: https://doi.org/10.1109/TPAMI.2019.2919707
-- Note: initial preprint is 2017 and the conference version appeared at CVPR 2018; TPAMI publication year is 2020.
-- Local artifacts are stored under `papers_sources/semantic_segmentation_robustness_20260409`.
-
+- 主核验链接：https://arxiv.org/abs/1711.09856
+- 本地材料存放于 `papers_sources/semantic_segmentation_robustness_20260409`。

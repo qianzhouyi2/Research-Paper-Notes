@@ -13,46 +13,45 @@ sources:
   - https://doi.org/10.1145/3485730.3485935
 created: 2026-04-10
 updated: 2026-04-10
-summary: "Batch-2 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+summary: "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
 provenance:
   extracted: 0.8
   inferred: 0.15
   ambiguous: 0.05
 ---
-
 # Adversarial Attacks against LiDAR Semantic Segmentation in Autonomous Driving
 
-## Reading Status
+## 阅读状态
 
-- Batch: 2 / 4
-- Per-paper review status: completed (metadata + abstract-level local reading + cross-source verification)
+- 批次：2 / 4
+- 逐篇审阅状态：已完成（元数据 + 摘要级本地阅读 + 跨源核验）
 
-## Metadata
+## 元数据
 
-- Year: 2021
-- Venue: SenSys
-- Verification source: crossref
-- Verified title: Adversarial Attacks against LiDAR Semantic Segmentation in Autonomous Driving
+- 年份：2021
+- 发表 venue：SenSys
+- 核验来源：crossref
+- 核验标题：Adversarial Attacks against LiDAR Semantic Segmentation in Autonomous Driving
 
-## Problem and Method (From Extracted Evidence)
+## 问题与方法（基于抽取证据）
 
-- Evidence summary: Today, most autonomous vehicles (AVs) rely on LiDAR (Light De- tection and Ranging) perception to acquire accurate information about their immediate surroundings. In LiDAR-based perception systems, semantic segmentation plays a critical role as it can divide LiDAR point clouds into meaningful regions according to human perception and provide AVs with semantic understanding of the driving environments.
-- Method hint: However, an implicit assumption for existing semantic segmentation models is that they are performed in a reli- able and secure environment, which may not be true in practice. In this paper, we investigate adversarial attacks against LiDAR seman- tic segmentation in autonomous driving.
+- 证据摘要：Today, most autonomous vehicles (AVs) rely on LiDAR (Light De- tection and Ranging) perception to acquire accurate information about their immediate surroundings. In LiDAR-based perception systems, semantic segmentation plays a critical role as it can divide LiDAR point clouds into meaningful regions according to human perception and provide AVs with semantic understanding of the driving environments.
+- 方法线索：However, an implicit assumption for existing semantic segmentation models is that they are performed in a reli- able and secure environment, which may not be true in practice. In this paper, we investigate adversarial attacks against LiDAR seman- tic segmentation in autonomous driving.
 
-## Local Paper Structure Evidence
+## 本地论文结构证据
 
-- Structure extraction unavailable from local source format in this pass. ^[ambiguous]
+- 本轮未能从本地源格式稳定抽取章节结构。^[ambiguous]
 
-## Extracted Themes
+## 抽取主题
 
 - LiDAR point-cloud segmentation
 
-## Experimental Context
+## 实验语境
 
-- Dataset mentions in extracted text: Not explicitly named in extracted abstract snippet. ^[ambiguous]
-- Local artifact type: pdf
+- 抽取文本中的数据集提及：当前摘要片段未显式给出。^[ambiguous]
+- 本地材料类型：pdf
 
-## Linked Author Entities
+## 关联作者实体
 
 - [[entities/Yi Zhu]]
 - [[entities/Chenglin Miao]]
@@ -61,14 +60,13 @@ provenance:
 - [[entities/Lu Su]]
 - [[entities/Chunming Qiao]]
 
-## Linked Concepts and Synthesis
+## 关联概念与综合
 
 - [[synthesis/Semantic Segmentation Robustness Corpus 2019-2026]]
 - [[synthesis/Segmentation Adversarial Attack Methods 2019-2026]]
 - [[concepts/Segmentation Robustness Benchmark Protocol]]
 
-## Online Verification Notes
+## 联网核验备注
 
-- Primary verification link: https://doi.org/10.1145/3485730.3485935
-- Local artifacts are stored under `papers_sources/semantic_segmentation_robustness_20260409`.
-
+- 主核验链接：https://doi.org/10.1145/3485730.3485935
+- 本地材料存放于 `papers_sources/semantic_segmentation_robustness_20260409`。

@@ -13,36 +13,35 @@ sources:
   - https://arxiv.org/abs/2401.01750
 created: 2026-04-10
 updated: 2026-04-10
-summary: "Batch-4 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+summary: "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
 provenance:
   extracted: 0.8
   inferred: 0.15
   ambiguous: 0.05
 ---
-
 # Towards Robust Semantic Segmentation against Patch-based Attack via Attention Refinement
 
-## Reading Status
+## 阅读状态
 
-- Batch: 4 / 4
-- Per-paper review status: completed (metadata + abstract-level local reading + cross-source verification)
+- 批次：4 / 4
+- 逐篇审阅状态：已完成（元数据 + 摘要级本地阅读 + 跨源核验）
 
-## Metadata
+## 元数据
 
-- Year: 2024
-- Venue: IJCV
-- Verification source: arxiv
-- Verified title: Towards Robust Semantic Segmentation against Patch-based Attack via Attention Refinement
+- 年份：2024
+- 发表 venue：IJCV
+- 核验来源：arxiv
+- 核验标题：Towards Robust Semantic Segmentation against Patch-based Attack via Attention Refinement
 
-## Problem and Method (From Extracted Evidence)
+## 问题与方法（基于抽取证据）
 
-- Evidence summary: The attention mechanism has been proven effective on various visual tasks in recent years. In the semantic segmentation task, the attention mechanism is applied in various methods, including the case of both Convolution Neural Networks (CNN) and Vision Transformer (ViT) as backbones.
-- Method hint: However, we observe that the attention mechanism is vulnerable to patch-based adversarial attacks. Through the analysis of the effective receptive field, we attribute it to the fact that the wide receptive field brought by global attention may lead to the spread of the adversarial patch.
+- 证据摘要：The attention mechanism has been proven effective on various visual tasks in recent years. In the semantic segmentation task, the attention mechanism is applied in various methods, including the case of both Convolution Neural Networks (CNN) and Vision Transformer (ViT) as backbones.
+- 方法线索：However, we observe that the attention mechanism is vulnerable to patch-based adversarial attacks. Through the analysis of the effective receptive field, we attribute it to the fact that the wide receptive field brought by global attention may lead to the spread of the adversarial patch.
 
-## Local Paper Structure Evidence
+## 本地论文结构证据
 
-- Extraction source: tex-sections
-- Section/subsection headings observed in local source:
+- 抽取来源：tex-sections
+- 本地源码中观测到的章节/小节标题：
 - Introduction
 - Related Work
 - Semantic Segmentation
@@ -52,28 +51,27 @@ provenance:
 - Receptive Field
 - Analysis
 
-## Extracted Themes
+## 抽取主题
 
 - Patch attack or defense
 - Attention refinement / regularization
 
-## Experimental Context
+## 实验语境
 
-- Dataset mentions in extracted text: Not explicitly named in extracted abstract snippet. ^[ambiguous]
-- Local artifact type: tex_source
+- 抽取文本中的数据集提及：当前摘要片段未显式给出。^[ambiguous]
+- 本地材料类型：tex_source
 
-## Linked Author Entities
+## 关联作者实体
 
-- Verified authors (arXiv metadata): Zheng Yuan; Jie Zhang; Yude Wang; Shiguang Shan; Xilin Chen.
+- 暂无关联作者实体。^[ambiguous]
 
-## Linked Concepts and Synthesis
+## 关联概念与综合
 
 - [[synthesis/Semantic Segmentation Robustness Corpus 2019-2026]]
 - [[synthesis/Segmentation Adversarial Attack Methods 2019-2026]]
 - [[concepts/Segmentation Robustness Benchmark Protocol]]
 
-## Online Verification Notes
+## 联网核验备注
 
-- Primary verification link: https://arxiv.org/abs/2401.01750
-- Local artifacts are stored under `papers_sources/semantic_segmentation_robustness_20260409`.
-
+- 主核验链接：https://arxiv.org/abs/2401.01750
+- 本地材料存放于 `papers_sources/semantic_segmentation_robustness_20260409`。

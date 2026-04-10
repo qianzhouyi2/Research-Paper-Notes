@@ -13,36 +13,35 @@ sources:
   - https://arxiv.org/abs/2303.11298
 created: 2026-04-10
 updated: 2026-04-10
-summary: "Batch-3 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+summary: "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
 provenance:
   extracted: 0.8
   inferred: 0.15
   ambiguous: 0.05
 ---
-
 # Reliability in Semantic Segmentation: Are We on the Right Track?
 
-## Reading Status
+## 阅读状态
 
-- Batch: 3 / 4
-- Per-paper review status: completed (metadata + abstract-level local reading + cross-source verification)
+- 批次：3 / 4
+- 逐篇审阅状态：已完成（元数据 + 摘要级本地阅读 + 跨源核验）
 
-## Metadata
+## 元数据
 
-- Year: 2023
-- Venue: CVPR
-- Verification source: arxiv
-- Verified title: Reliability in Semantic Segmentation: Are We on the Right Track?
+- 年份：2023
+- 发表 venue：CVPR
+- 核验来源：arxiv
+- 核验标题：Reliability in Semantic Segmentation: Are We on the Right Track?
 
-## Problem and Method (From Extracted Evidence)
+## 问题与方法（基于抽取证据）
 
-- Evidence summary: Motivated by the increasing popularity of transformers in computer vision, in recent times there has been a rapid development of novel architectures. While in-domain performance follows a constant, upward trend, properties like robustness or uncertainty estimation are less explored---leaving doubts about advances in model reliability .
-- Method hint: Studies along these axes exist, but they are mainly limited to classification models. In contrast, we carry out a study on semantic segmentation, a relevant task for many real-world applications where model reliability is paramount.
+- 证据摘要：Motivated by the increasing popularity of transformers in computer vision, in recent times there has been a rapid development of novel architectures. While in-domain performance follows a constant, upward trend, properties like robustness or uncertainty estimation are less explored---leaving doubts about advances in model reliability .
+- 方法线索：Studies along these axes exist, but they are mainly limited to classification models. In contrast, we carry out a study on semantic segmentation, a relevant task for many real-world applications where model reliability is paramount.
 
-## Local Paper Structure Evidence
+## 本地论文结构证据
 
-- Extraction source: tex-sections
-- Section/subsection headings observed in local source:
+- 抽取来源：tex-sections
+- 本地源码中观测到的章节/小节标题：
 - Introduction
 - Related work
 - Ablation of calibration metrics
@@ -52,28 +51,27 @@ provenance:
 - Visualization of cluster samples
 - Subset calibration
 
-## Extracted Themes
+## 抽取主题
 
 - Reliability-focused evaluation
 - Uncertainty-driven detection
 
-## Experimental Context
+## 实验语境
 
-- Dataset mentions in extracted text: Not explicitly named in extracted abstract snippet. ^[ambiguous]
-- Local artifact type: tex_source
+- 抽取文本中的数据集提及：当前摘要片段未显式给出。^[ambiguous]
+- 本地材料类型：tex_source
 
-## Linked Author Entities
+## 关联作者实体
 
 - [[entities/Philip Torr]]
 
-## Linked Concepts and Synthesis
+## 关联概念与综合
 
 - [[synthesis/Semantic Segmentation Robustness Corpus 2019-2026]]
 - [[synthesis/Segmentation Adversarial Attack Methods 2019-2026]]
 - [[concepts/Segmentation Robustness Benchmark Protocol]]
 
-## Online Verification Notes
+## 联网核验备注
 
-- Primary verification link: https://arxiv.org/abs/2303.11298
-- Local artifacts are stored under `papers_sources/semantic_segmentation_robustness_20260409`.
-
+- 主核验链接：https://arxiv.org/abs/2303.11298
+- 本地材料存放于 `papers_sources/semantic_segmentation_robustness_20260409`。

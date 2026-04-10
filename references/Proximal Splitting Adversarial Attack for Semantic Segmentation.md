@@ -13,36 +13,35 @@ sources:
   - https://arxiv.org/abs/2206.07179
 created: 2026-04-10
 updated: 2026-04-10
-summary: "Batch-3 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+summary: "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
 provenance:
   extracted: 0.8
   inferred: 0.15
   ambiguous: 0.05
 ---
-
 # Proximal Splitting Adversarial Attack for Semantic Segmentation
 
-## Reading Status
+## 阅读状态
 
-- Batch: 3 / 4
-- Per-paper review status: completed (metadata + abstract-level local reading + cross-source verification)
+- 批次：3 / 4
+- 逐篇审阅状态：已完成（元数据 + 摘要级本地阅读 + 跨源核验）
 
-## Metadata
+## 元数据
 
-- Year: 2023
-- Venue: CVPR
-- Verification source: arxiv
-- Verified title: Proximal Splitting Adversarial Attacks for Semantic Segmentation
+- 年份：2023
+- 发表 venue：CVPR
+- 核验来源：arxiv
+- 核验标题：Proximal Splitting Adversarial Attack for Semantic Segmentation
 
-## Problem and Method (From Extracted Evidence)
+## 问题与方法（基于抽取证据）
 
-- Evidence summary: Classification has been the focal point of research on adversarial attacks, but only a few works investigate methods suited to denser prediction tasks, such as semantic segmentation. The methods proposed in these works do not accurately solve the adversarial segmentation problem and, therefore, overestimate the size of the perturbations required to fool models.
-- Method hint: Here, we propose a white-box attack for these models based on a proximal splitting to produce adversarial perturbations with much smaller _ norms. Our attack can handle large numbers of constraints within a nonconvex minimization framework via an Augmented Lagrangian approach, coupled with adaptive constraint scaling and masking strategies.
+- 证据摘要：Classification has been the focal point of research on adversarial attacks, but only a few works investigate methods suited to denser prediction tasks, such as semantic segmentation. The methods proposed in these works do not accurately solve the adversarial segmentation problem and, therefore, overestimate the size of the perturbations required to fool models.
+- 方法线索：Here, we propose a white-box attack for these models based on a proximal splitting to produce adversarial perturbations with much smaller _ norms. Our attack can handle large numbers of constraints within a nonconvex minimization framework via an Augmented Lagrangian approach, coupled with adaptive constraint scaling and masking strategies.
 
-## Local Paper Structure Evidence
+## 本地论文结构证据
 
-- Extraction source: tex-sections
-- Section/subsection headings observed in local source:
+- 抽取来源：tex-sections
+- 本地源码中观测到的章节/小节标题：
 - Introduction
 - Proposed Method
 - Adaptive constraints strategies
@@ -52,27 +51,26 @@ provenance:
 - Proof of Proposition 1
 - ALMA prox attack algorithm
 
-## Extracted Themes
+## 抽取主题
 
 - Benchmark protocol design
 
-## Experimental Context
+## 实验语境
 
-- Dataset mentions in extracted text: Not explicitly named in extracted abstract snippet. ^[ambiguous]
-- Local artifact type: tex_source
+- 抽取文本中的数据集提及：当前摘要片段未显式给出。^[ambiguous]
+- 本地材料类型：tex_source
 
-## Linked Author Entities
+## 关联作者实体
 
-- Verified authors (arXiv metadata): Jerome Rony; Jean-Christophe Pesquet; Ismail Ben Ayed.
+- 暂无关联作者实体。^[ambiguous]
 
-## Linked Concepts and Synthesis
+## 关联概念与综合
 
 - [[synthesis/Semantic Segmentation Robustness Corpus 2019-2026]]
 - [[synthesis/Segmentation Adversarial Attack Methods 2019-2026]]
 - [[concepts/Segmentation Robustness Benchmark Protocol]]
 
-## Online Verification Notes
+## 联网核验备注
 
-- Primary verification link: https://arxiv.org/abs/2206.07179
-- Local artifacts are stored under `papers_sources/semantic_segmentation_robustness_20260409`.
-
+- 主核验链接：https://arxiv.org/abs/2206.07179
+- 本地材料存放于 `papers_sources/semantic_segmentation_robustness_20260409`。

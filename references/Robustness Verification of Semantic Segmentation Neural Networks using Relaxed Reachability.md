@@ -13,46 +13,45 @@ sources:
   - https://doi.org/10.1007/978-3-030-81685-8_12
 created: 2026-04-10
 updated: 2026-04-10
-summary: "Batch-2 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+summary: "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
 provenance:
   extracted: 0.8
   inferred: 0.15
   ambiguous: 0.05
 ---
-
 # Robustness Verification of Semantic Segmentation Neural Networks using Relaxed Reachability
 
-## Reading Status
+## 阅读状态
 
-- Batch: 2 / 4
-- Per-paper review status: completed (metadata + abstract-level local reading + cross-source verification)
+- 批次：2 / 4
+- 逐篇审阅状态：已完成（元数据 + 摘要级本地阅读 + 跨源核验）
 
-## Metadata
+## 元数据
 
-- Year: 2021
-- Venue: CAV
-- Verification source: crossref
-- Verified title: Robustness Verification of Semantic Segmentation Neural Networks Using Relaxed Reachability
+- 年份：2021
+- 发表 venue：CAV
+- 核验来源：crossref
+- 核验标题：Robustness Verification of Semantic Segmentation Neural Networks using Relaxed Reachability
 
-## Problem and Method (From Extracted Evidence)
+## 问题与方法（基于抽取证据）
 
-- Evidence summary: This paper introduces robustness veriﬁcation for semantic segmentation neural networks (in short, semantic segmentation networks [SSNs]), building on and extending recent approaches for robustness ver- iﬁcation of image classiﬁcation neural networks. Despite recent progress in developing veriﬁcation methods for speciﬁcations such as local adver- sarial robustness in deep neural networks (DNNs) in terms of scalability, precision, and applicability to diﬀerent network architectures, layers, and activation functions, robustness veriﬁcation of semantic segmentation has not yet been considered.
-- Method hint: We address this limitation by developing and applying new robustness analysis methods for several segmentation neu- ral network architectures, speciﬁcally by addressing reachability anal- ysis of up-sampling layers, such as transposed convolution and dilated convolution. We consider several deﬁnitions of robustness for segmenta- tion, such as the percentage of pixels in the output that can be proven robust under diﬀerent adversarial perturbations, and a robust variant of intersection-over-union (IoU), the typical performance evaluation mea- sure for segmentation tasks.
+- 证据摘要：This paper introduces robustness veriﬁcation for semantic segmentation neural networks (in short, semantic segmentation networks [SSNs]), building on and extending recent approaches for robustness ver- iﬁcation of image classiﬁcation neural networks. Despite recent progress in developing veriﬁcation methods for speciﬁcations such as local adver- sarial robustness in deep neural networks (DNNs) in terms of scalability, precision, and applicability to diﬀerent network architectures, layers, and activation functions, robustness veriﬁcation of semantic segmentation has not yet been considered.
+- 方法线索：We address this limitation by developing and applying new robustness analysis methods for several segmentation neu- ral network architectures, speciﬁcally by addressing reachability anal- ysis of up-sampling layers, such as transposed convolution and dilated convolution. We consider several deﬁnitions of robustness for segmenta- tion, such as the percentage of pixels in the output that can be proven robust under diﬀerent adversarial perturbations, and a robust variant of intersection-over-union (IoU), the typical performance evaluation mea- sure for segmentation tasks.
 
-## Local Paper Structure Evidence
+## 本地论文结构证据
 
-- Structure extraction unavailable from local source format in this pass. ^[ambiguous]
+- 本轮未能从本地源格式稳定抽取章节结构。^[ambiguous]
 
-## Extracted Themes
+## 抽取主题
 
 - Formal verification / reachability
 
-## Experimental Context
+## 实验语境
 
-- Dataset mentions in extracted text: Not explicitly named in extracted abstract snippet. ^[ambiguous]
-- Local artifact type: pdf
+- 抽取文本中的数据集提及：当前摘要片段未显式给出。^[ambiguous]
+- 本地材料类型：pdf
 
-## Linked Author Entities
+## 关联作者实体
 
 - [[entities/Hoang-Dung Tran]]
 - [[entities/Neelanjana Pal]]
@@ -63,14 +62,13 @@ provenance:
 - [[entities/Stanley Bak]]
 - [[entities/Taylor T. Johnson]]
 
-## Linked Concepts and Synthesis
+## 关联概念与综合
 
 - [[synthesis/Semantic Segmentation Robustness Corpus 2019-2026]]
 - [[synthesis/Segmentation Adversarial Attack Methods 2019-2026]]
 - [[concepts/Segmentation Robustness Benchmark Protocol]]
 
-## Online Verification Notes
+## 联网核验备注
 
-- Primary verification link: https://doi.org/10.1007/978-3-030-81685-8_12
-- Local artifacts are stored under `papers_sources/semantic_segmentation_robustness_20260409`.
-
+- 主核验链接：https://doi.org/10.1007/978-3-030-81685-8_12
+- 本地材料存放于 `papers_sources/semantic_segmentation_robustness_20260409`。

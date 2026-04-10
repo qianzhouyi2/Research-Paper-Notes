@@ -1,7 +1,7 @@
 {
   "version": 1,
   "stats": {
-    "total_sources_ingested": 47,
+    "total_sources_ingested": 48,
     "total_pages": 347
   },
   "sources": {
@@ -2169,6 +2169,45 @@
         "synthesis/Structured Spatio-Temporal Representation Learning.md",
         "synthesis/Temporal Structure Learning in Sequence Models.md",
         "index.md"
+      ]
+    },
+    "workspace/wiki-update-2026-04-10-references-cn-localization": {
+      "ingested_at": "2026-04-10T13:40:00+08:00",
+      "size_bytes": 0,
+      "modified_at": "2026-04-10T13:40:00+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [],
+      "pages_updated": [
+        "references/Adversarial Attacks against LiDAR Semantic Segmentation in Autonomous Driving.md",
+        "references/Attacking LiDAR Semantic Segmentation in Autonomous Driving.md",
+        "references/Benchmarking the Robustness of Semantic Segmentation Models (CVPR 2020).md",
+        "references/Benchmarking the Robustness of Semantic Segmentation Models (IJCV 2020).md",
+        "references/Certified Defences Against Adversarial Patch Attacks on Semantic Segmentation.md",
+        "references/Dynamic Divide-and-Conquer Adversarial Training for Robust Semantic Segmentation.md",
+        "references/Ensemble-Based Blackbox Attacks on Dense Prediction.md",
+        "references/Erosion Attack for Adversarial Training to Enhance Semantic Segmentation Robustness (arXiv preprint).md",
+        "references/Evaluating the Adversarial Robustness of Semantic Segmentation.md",
+        "references/Evaluating the Robustness of Semantic Segmentation in Real-World Adversarial Patch Attacks.md",
+        "references/Improved Noise and Attack Robustness of Semantic Segmentation Models with Self-Supervised Depth Estimation.md",
+        "references/Increasing the Robustness of Semantic Segmentation Models with Painting-by-Numbers.md",
+        "references/Indirect Local Attacks for Context-aware Semantic Segmentation Networks.md",
+        "references/On the Robustness of Redundant Teacher-Student Frameworks for Semantic Segmentation.md",
+        "references/On the Robustness of Semantic Segmentation Models to Adversarial Attacks.md",
+        "references/Proximal Splitting Adversarial Attack for Semantic Segmentation.md",
+        "references/Reliability in Semantic Segmentation - Are We on the Right Track.md",
+        "references/Robustness Verification of Semantic Segmentation Neural Networks using Relaxed Reachability.md",
+        "references/RP-PGD - Enhancing Semantic Segmentation Robustness via Region-based Prioritized PGD.md",
+        "references/Scalable Certified Segmentation via Randomized Smoothing.md",
+        "references/SegPGD - An Effective and Efficient Adversarial Attack for Segmentation.md",
+        "references/SemSegBench and DetecBench - Benchmarking Reliability and Generalization Beyond Classification.md",
+        "references/The Attack Generator - A Systematic Approach Towards Constructing Adversarial Attacks.md",
+        "references/Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models.md",
+        "references/Towards Robust General Medical Image Segmentation.md",
+        "references/Towards Robust Semantic Segmentation against Patch-based Attack via Attention Refinement.md",
+        "references/Towards Semantically Stealthy Adversarial Attacks Against Segmentation Models.md",
+        "references/Uncertainty-Based Detection of Adversarial Attacks in Semantic Segmentation.md",
+        "references/index.md"
       ]
     }
   }

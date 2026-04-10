@@ -60,7 +60,7 @@
     "url": "references/Adversarial Attacks against LiDAR Semantic Segmentation in Autonomous Driving.html",
     "path": "references/Adversarial Attacks against LiDAR Semantic Segmentation in Autonomous Driving.md",
     "section": "references",
-    "summary": "Batch-2 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
   },
   {
     "title": "Adversarial Robustness Evaluation Patterns",
@@ -172,7 +172,7 @@
     "url": "references/Attacking LiDAR Semantic Segmentation in Autonomous Driving.html",
     "path": "references/Attacking LiDAR Semantic Segmentation in Autonomous Driving.md",
     "section": "references",
-    "summary": "Batch-3 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
   },
   {
     "title": "Attention Refinement against Patch Attacks",
@@ -193,14 +193,14 @@
     "url": "references/Benchmarking the Robustness of Semantic Segmentation Models (CVPR 2020).html",
     "path": "references/Benchmarking the Robustness of Semantic Segmentation Models (CVPR 2020).md",
     "section": "references",
-    "summary": "Batch-1 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
   },
   {
     "title": "Benchmarking the Robustness of Semantic Segmentation Models (IJCV 2020)",
     "url": "references/Benchmarking the Robustness of Semantic Segmentation Models (IJCV 2020).html",
     "path": "references/Benchmarking the Robustness of Semantic Segmentation Models (IJCV 2020).md",
     "section": "references",
-    "summary": "Batch-1 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
   },
   {
     "title": "Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models",
@@ -256,7 +256,7 @@
     "url": "references/Certified Defences Against Adversarial Patch Attacks on Semantic Segmentation.html",
     "path": "references/Certified Defences Against Adversarial Patch Attacks on Semantic Segmentation.md",
     "section": "references",
-    "summary": "Batch-3 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
   },
   {
     "title": "Chain of Agents Large Language Models Collaborating on Long-Context Tasks",
@@ -382,7 +382,7 @@
     "url": "concepts/index.html",
     "path": "concepts/index.md",
     "section": "concepts",
-    "summary": "可复用概念页面索引，聚焦方法、术语与评测框架。"
+    "summary": "可复用概念页面索引，覆盖方法、术语、机制与评测框架。"
   },
   {
     "title": "Context-aware Indirect Local Attack",
@@ -536,7 +536,7 @@
     "url": "references/Dynamic Divide-and-Conquer Adversarial Training for Robust Semantic Segmentation.html",
     "path": "references/Dynamic Divide-and-Conquer Adversarial Training for Robust Semantic Segmentation.md",
     "section": "references",
-    "summary": "Batch-2 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
   },
   {
     "title": "Edward Hu",
@@ -571,21 +571,21 @@
     "url": "references/Ensemble-Based Blackbox Attacks on Dense Prediction.html",
     "path": "references/Ensemble-Based Blackbox Attacks on Dense Prediction.md",
     "section": "references",
-    "summary": "Batch-3 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
   },
   {
     "title": "Entities 索引",
     "url": "entities/index.html",
     "path": "entities/index.md",
     "section": "entities",
-    "summary": "作者、模型、机构等实体页面入口索引。"
+    "summary": "作者、模型、机构、数据集与基准等实体页面入口索引。"
   },
   {
     "title": "Erosion Attack for Adversarial Training to Enhance Semantic Segmentation Robustness (arXiv preprint)",
     "url": "references/Erosion Attack for Adversarial Training to Enhance Semantic Segmentation Robustness (arXiv preprint).html",
     "path": "references/Erosion Attack for Adversarial Training to Enhance Semantic Segmentation Robustness (arXiv preprint).md",
     "section": "references",
-    "summary": "Batch-4 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
   },
   {
     "title": "Erosion Attack Training for Segmentation",
@@ -599,14 +599,14 @@
     "url": "references/Evaluating the Adversarial Robustness of Semantic Segmentation.html",
     "path": "references/Evaluating the Adversarial Robustness of Semantic Segmentation.md",
     "section": "references",
-    "summary": "Batch-4 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
   },
   {
     "title": "Evaluating the Robustness of Semantic Segmentation in Real-World Adversarial Patch Attacks",
     "url": "references/Evaluating the Robustness of Semantic Segmentation in Real-World Adversarial Patch Attacks.html",
     "path": "references/Evaluating the Robustness of Semantic Segmentation in Real-World Adversarial Patch Attacks.md",
     "section": "references",
-    "summary": "Batch-2 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
   },
   {
     "title": "Fabian Huger",
@@ -830,14 +830,14 @@
     "url": "references/Improved Noise and Attack Robustness of Semantic Segmentation Models with Self-Supervised Depth Estimation.html",
     "path": "references/Improved Noise and Attack Robustness of Semantic Segmentation Models with Self-Supervised Depth Estimation.md",
     "section": "references",
-    "summary": "Batch-1 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
   },
   {
     "title": "Increasing the Robustness of Semantic Segmentation Models with Painting-by-Numbers",
     "url": "references/Increasing the Robustness of Semantic Segmentation Models with Painting-by-Numbers.html",
     "path": "references/Increasing the Robustness of Semantic Segmentation Models with Painting-by-Numbers.md",
     "section": "references",
-    "summary": "Batch-1 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
   },
   {
     "title": "Indirect Local Attack in Segmentation",
@@ -851,7 +851,7 @@
     "url": "references/Indirect Local Attacks for Context-aware Semantic Segmentation Networks.html",
     "path": "references/Indirect Local Attacks for Context-aware Semantic Segmentation Networks.md",
     "section": "references",
-    "summary": "Batch-1 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
   },
   {
     "title": "Inference-Time Orchestration and Routing for LLMs",
@@ -1460,14 +1460,14 @@
     "url": "references/On the Robustness of Redundant Teacher-Student Frameworks for Semantic Segmentation.html",
     "path": "references/On the Robustness of Redundant Teacher-Student Frameworks for Semantic Segmentation.md",
     "section": "references",
-    "summary": "Batch-1 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
   },
   {
     "title": "On the Robustness of Semantic Segmentation Models to Adversarial Attacks",
     "url": "references/On the Robustness of Semantic Segmentation Models to Adversarial Attacks.html",
     "path": "references/On the Robustness of Semantic Segmentation Models to Adversarial Attacks.md",
     "section": "references",
-    "summary": "Batch-2 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
   },
   {
     "title": "Ondrej Miksik",
@@ -1684,7 +1684,7 @@
     "url": "references/Proximal Splitting Adversarial Attack for Semantic Segmentation.html",
     "path": "references/Proximal Splitting Adversarial Attack for Semantic Segmentation.md",
     "section": "references",
-    "summary": "Batch-3 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
   },
   {
     "title": "Proximal Splitting Optimization for Segmentation Attacks",
@@ -1747,7 +1747,7 @@
     "url": "references/index.html",
     "path": "references/index.md",
     "section": "references",
-    "summary": "单篇论文摘要与结论页面的入口索引。"
+    "summary": "单篇论文摘要与可复用阅读结论页面入口索引。"
   },
   {
     "title": "Region-and-Prototype Prioritized PGD (RP-PGD)",
@@ -1775,7 +1775,7 @@
     "url": "references/Reliability in Semantic Segmentation - Are We on the Right Track.html",
     "path": "references/Reliability in Semantic Segmentation - Are We on the Right Track.md",
     "section": "references",
-    "summary": "Batch-3 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
   },
   {
     "title": "Removal Smoothing for CoT Internalization",
@@ -1859,7 +1859,7 @@
     "url": "references/Robustness Verification of Semantic Segmentation Neural Networks using Relaxed Reachability.html",
     "path": "references/Robustness Verification of Semantic Segmentation Neural Networks using Relaxed Reachability.md",
     "section": "references",
-    "summary": "Batch-2 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
   },
   {
     "title": "Robustness-Generalization Decoupling in Dense Prediction",
@@ -1873,7 +1873,7 @@
     "url": "references/RP-PGD - Enhancing Semantic Segmentation Robustness via Region-based Prioritized PGD.html",
     "path": "references/RP-PGD - Enhancing Semantic Segmentation Robustness via Region-based Prioritized PGD.md",
     "section": "references",
-    "summary": "Batch-4 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
   },
   {
     "title": "Saasha Nair",
@@ -1894,7 +1894,7 @@
     "url": "references/Scalable Certified Segmentation via Randomized Smoothing.html",
     "path": "references/Scalable Certified Segmentation via Randomized Smoothing.md",
     "section": "references",
-    "summary": "Batch-2 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
   },
   {
     "title": "Search-Based Deliberate Reasoning Landscape",
@@ -1964,7 +1964,7 @@
     "url": "references/SegPGD - An Effective and Efficient Adversarial Attack for Segmentation.html",
     "path": "references/SegPGD - An Effective and Efficient Adversarial Attack for Segmentation.md",
     "section": "references",
-    "summary": "Batch-3 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
   },
   {
     "title": "Selective Neuron Reinitialization",
@@ -2006,7 +2006,7 @@
     "url": "references/SemSegBench and DetecBench - Benchmarking Reliability and Generalization Beyond Classification.html",
     "path": "references/SemSegBench and DetecBench - Benchmarking Reliability and Generalization Beyond Classification.md",
     "section": "references",
-    "summary": "Batch-4 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
   },
   {
     "title": "SemSegBench Robustness Benchmarking",
@@ -2174,7 +2174,7 @@
     "url": "references/The Attack Generator - A Systematic Approach Towards Constructing Adversarial Attacks.html",
     "path": "references/The Attack Generator - A Systematic Approach Towards Constructing Adversarial Attacks.md",
     "section": "references",
-    "summary": "Batch-1 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
   },
   {
     "title": "Thought Structure Taxonomy",
@@ -2195,28 +2195,28 @@
     "url": "references/Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models.html",
     "path": "references/Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models.md",
     "section": "references",
-    "summary": "Batch-4 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
   },
   {
     "title": "Towards Robust General Medical Image Segmentation",
     "url": "references/Towards Robust General Medical Image Segmentation.html",
     "path": "references/Towards Robust General Medical Image Segmentation.md",
     "section": "references",
-    "summary": "Batch-2 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
   },
   {
     "title": "Towards Robust Semantic Segmentation against Patch-based Attack via Attention Refinement",
     "url": "references/Towards Robust Semantic Segmentation against Patch-based Attack via Attention Refinement.html",
     "path": "references/Towards Robust Semantic Segmentation against Patch-based Attack via Attention Refinement.md",
     "section": "references",
-    "summary": "Batch-4 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
   },
   {
     "title": "Towards Semantically Stealthy Adversarial Attacks Against Segmentation Models",
     "url": "references/Towards Semantically Stealthy Adversarial Attacks Against Segmentation Models.html",
     "path": "references/Towards Semantically Stealthy Adversarial Attacks Against Segmentation Models.md",
     "section": "references",
-    "summary": "Batch-3 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
   },
   {
     "title": "Tree of Thoughts Deliberate Problem Solving with Large Language Models",
@@ -2272,7 +2272,7 @@
     "url": "references/Uncertainty-Based Detection of Adversarial Attacks in Semantic Segmentation.html",
     "path": "references/Uncertainty-Based Detection of Adversarial Attacks in Semantic Segmentation.md",
     "section": "references",
-    "summary": "Batch-4 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
   },
   {
     "title": "Vicuna",

@@ -13,60 +13,58 @@ sources:
   - https://doi.org/10.1109/cvprw.2019.00178
 created: 2026-04-10
 updated: 2026-04-10
-summary: "Batch-1 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+summary: "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
 provenance:
   extracted: 0.8
   inferred: 0.15
   ambiguous: 0.05
 ---
-
 # On the Robustness of Redundant Teacher-Student Frameworks for Semantic Segmentation
 
-## Reading Status
+## 阅读状态
 
-- Batch: 1 / 4
-- Per-paper review status: completed (metadata + abstract-level local reading + cross-source verification)
+- 批次：1 / 4
+- 逐篇审阅状态：已完成（元数据 + 摘要级本地阅读 + 跨源核验）
 
-## Metadata
+## 元数据
 
-- Year: 2019
-- Venue: CVPRW
-- Verification source: crossref
-- Verified title: On the Robustness of Redundant Teacher-Student Frameworks for Semantic Segmentation
+- 年份：2019
+- 发表 venue：CVPRW
+- 核验来源：crossref
+- 核验标题：On the Robustness of Redundant Teacher-Student Frameworks for Semantic Segmentation
 
-## Problem and Method (From Extracted Evidence)
+## 问题与方法（基于抽取证据）
 
-- Evidence summary: The trend towards autonomous systems in today’s tech- nology comes with the need for environment perception. Deep neural networks (DNNs) constantly showed state-of- the-art performance over the last few years in visual ma- chine perception, e.g., semantic segmentation.
-- Method hint: While DNNs work ﬁne on uncorrupted data, recently introduced adver- sarial examples (AEs) led to misclassiﬁcation with high conﬁdence. This lack of robustness against such adversar- ial attacks questions the use of DNNs in safety-critical au- tonomous systems, e.g., autonomous driving vehicles.
+- 证据摘要：The trend towards autonomous systems in today’s tech- nology comes with the need for environment perception. Deep neural networks (DNNs) constantly showed state-of- the-art performance over the last few years in visual ma- chine perception, e.g., semantic segmentation.
+- 方法线索：While DNNs work ﬁne on uncorrupted data, recently introduced adver- sarial examples (AEs) led to misclassiﬁcation with high conﬁdence. This lack of robustness against such adversar- ial attacks questions the use of DNNs in safety-critical au- tonomous systems, e.g., autonomous driving vehicles.
 
-## Local Paper Structure Evidence
+## 本地论文结构证据
 
-- Structure extraction unavailable from local source format in this pass. ^[ambiguous]
+- 本轮未能从本地源格式稳定抽取章节结构。^[ambiguous]
 
-## Extracted Themes
+## 抽取主题
 
-- Theme tags pending deeper full-text parsing. ^[ambiguous]
+- 主题标签仍待更深层全文解析。^[ambiguous]
 
-## Experimental Context
+## 实验语境
 
-- Dataset mentions in extracted text: Not explicitly named in extracted abstract snippet. ^[ambiguous]
-- Local artifact type: pdf
+- 抽取文本中的数据集提及：当前摘要片段未显式给出。^[ambiguous]
+- 本地材料类型：pdf
 
-## Linked Author Entities
+## 关联作者实体
 
 - [[entities/Andreas Bar]]
 - [[entities/Fabian Huger]]
 - [[entities/Peter Schlicht]]
 - [[entities/Tim Fingscheidt]]
 
-## Linked Concepts and Synthesis
+## 关联概念与综合
 
 - [[synthesis/Semantic Segmentation Robustness Corpus 2019-2026]]
 - [[synthesis/Segmentation Adversarial Attack Methods 2019-2026]]
 - [[concepts/Segmentation Robustness Benchmark Protocol]]
 
-## Online Verification Notes
+## 联网核验备注
 
-- Primary verification link: https://doi.org/10.1109/cvprw.2019.00178
-- Local artifacts are stored under `papers_sources/semantic_segmentation_robustness_20260409`.
-
+- 主核验链接：https://doi.org/10.1109/cvprw.2019.00178
+- 本地材料存放于 `papers_sources/semantic_segmentation_robustness_20260409`。

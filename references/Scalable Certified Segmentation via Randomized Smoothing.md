@@ -13,36 +13,35 @@ sources:
   - https://arxiv.org/abs/2107.00228
 created: 2026-04-10
 updated: 2026-04-10
-summary: "Batch-2 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+summary: "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
 provenance:
   extracted: 0.8
   inferred: 0.15
   ambiguous: 0.05
 ---
-
 # Scalable Certified Segmentation via Randomized Smoothing
 
-## Reading Status
+## 阅读状态
 
-- Batch: 2 / 4
-- Per-paper review status: completed (metadata + abstract-level local reading + cross-source verification)
+- 批次：2 / 4
+- 逐篇审阅状态：已完成（元数据 + 摘要级本地阅读 + 跨源核验）
 
-## Metadata
+## 元数据
 
-- Year: 2021
-- Venue: ICML
-- Verification source: arxiv
-- Verified title: Scalable Certified Segmentation via Randomized Smoothing
+- 年份：2021
+- 发表 venue：ICML
+- 核验来源：arxiv
+- 核验标题：Scalable Certified Segmentation via Randomized Smoothing
 
-## Problem and Method (From Extracted Evidence)
+## 问题与方法（基于抽取证据）
 
-- Evidence summary: We present a new certiﬁcation method for image and point cloud segmentation based on random- ized smoothing. The method leverages a novel scalable algorithm for prediction and certiﬁcation that correctly accounts for multiple testing, nec- essary for ensuring statistical guarantees.
-- Method hint: The key to our approach is reliance on established multiple-testing correction mechanisms as well as the ability to abstain from classifying single pixels or points while still robustly segmenting the overall input. Our experimental evaluation on synthetic data and challenging datasets, such as Pascal Context, Cityscapes, and ShapeNet, shows that our algorithm can achieve, for the ﬁrst time, competitive accuracy and certiﬁcation guarantees on real-world segmentation tasks.
+- 证据摘要：We present a new certiﬁcation method for image and point cloud segmentation based on random- ized smoothing. The method leverages a novel scalable algorithm for prediction and certiﬁcation that correctly accounts for multiple testing, nec- essary for ensuring statistical guarantees.
+- 方法线索：The key to our approach is reliance on established multiple-testing correction mechanisms as well as the ability to abstain from classifying single pixels or points while still robustly segmenting the overall input. Our experimental evaluation on synthetic data and challenging datasets, such as Pascal Context, Cityscapes, and ShapeNet, shows that our algorithm can achieve, for the ﬁrst time, competitive accuracy and certiﬁcation guarantees on real-world segmentation tasks.
 
-## Local Paper Structure Evidence
+## 本地论文结构证据
 
-- Extraction source: tex-sections
-- Section/subsection headings observed in local source:
+- 抽取来源：tex-sections
+- 本地源码中观测到的章节/小节标题：
 - Introduction
 - Related Work
 - Randomized Smoothing for Classification
@@ -52,30 +51,29 @@ provenance:
 - Semantic Image Segmentation
 - Pointcloud Part Segmentation
 
-## Extracted Themes
+## 抽取主题
 
 - Randomized smoothing / certification
 - Certified robustness guarantees
 
-## Experimental Context
+## 实验语境
 
-- Dataset mentions in extracted text: Cityscapes
-- Local artifact type: tex_source
+- 抽取文本中的数据集提及：当前摘要片段未显式给出。^[ambiguous]
+- 本地材料类型：tex_source
 
-## Linked Author Entities
+## 关联作者实体
 
 - [[entities/Marc Fischer]]
 - [[entities/Maximilian Baader]]
 - [[entities/Martin Vechev]]
 
-## Linked Concepts and Synthesis
+## 关联概念与综合
 
 - [[synthesis/Semantic Segmentation Robustness Corpus 2019-2026]]
 - [[synthesis/Segmentation Adversarial Attack Methods 2019-2026]]
 - [[concepts/Segmentation Robustness Benchmark Protocol]]
 
-## Online Verification Notes
+## 联网核验备注
 
-- Primary verification link: https://arxiv.org/abs/2107.00228
-- Local artifacts are stored under `papers_sources/semantic_segmentation_robustness_20260409`.
-
+- 主核验链接：https://arxiv.org/abs/2107.00228
+- 本地材料存放于 `papers_sources/semantic_segmentation_robustness_20260409`。

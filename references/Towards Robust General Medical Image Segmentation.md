@@ -13,36 +13,35 @@ sources:
   - https://arxiv.org/abs/2107.04263
 created: 2026-04-10
 updated: 2026-04-10
-summary: "Batch-2 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+summary: "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
 provenance:
   extracted: 0.8
   inferred: 0.15
   ambiguous: 0.05
 ---
-
 # Towards Robust General Medical Image Segmentation
 
-## Reading Status
+## 阅读状态
 
-- Batch: 2 / 4
-- Per-paper review status: completed (metadata + abstract-level local reading + cross-source verification)
+- 批次：2 / 4
+- 逐篇审阅状态：已完成（元数据 + 摘要级本地阅读 + 跨源核验）
 
-## Metadata
+## 元数据
 
-- Year: 2021
-- Venue: MICCAI
-- Verification source: arxiv
-- Verified title: Towards Robust General Medical Image Segmentation
+- 年份：2021
+- 发表 venue：MICCAI
+- 核验来源：arxiv
+- 核验标题：Towards Robust General Medical Image Segmentation
 
-## Problem and Method (From Extracted Evidence)
+## 问题与方法（基于抽取证据）
 
-- Evidence summary: The reliability of Deep Learning systems depends on their accuracy but also on their robustness against adversarial perturbations to the input data. Several attacks and defenses have been proposed to improve the performance of Deep Neural Networks under the presence of adversarial noise in the natural image domain.
-- Method hint: However, robustness in computer-aided diagnosis for volumetric data has only been explored for specific tasks and with limited attacks. We propose a new framework to assess the robustness of general medical image segmentation systems.
+- 证据摘要：The reliability of Deep Learning systems depends on their accuracy but also on their robustness against adversarial perturbations to the input data. Several attacks and defenses have been proposed to improve the performance of Deep Neural Networks under the presence of adversarial noise in the natural image domain.
+- 方法线索：However, robustness in computer-aided diagnosis for volumetric data has only been explored for specific tasks and with limited attacks. We propose a new framework to assess the robustness of general medical image segmentation systems.
 
-## Local Paper Structure Evidence
+## 本地论文结构证据
 
-- Extraction source: tex-sections
-- Section/subsection headings observed in local source:
+- 抽取来源：tex-sections
+- 本地源码中观测到的章节/小节标题：
 - Introduction
 - Methodology
 - Adversarial robustness
@@ -52,32 +51,31 @@ provenance:
 - General medical segmentation
 - Results
 
-## Extracted Themes
+## 抽取主题
 
 - Medical image segmentation
 - Adversarial training strategy
 - Benchmark protocol design
 - Reliability-focused evaluation
 
-## Experimental Context
+## 实验语境
 
-- Dataset mentions in extracted text: Not explicitly named in extracted abstract snippet. ^[ambiguous]
-- Local artifact type: tex_source
+- 抽取文本中的数据集提及：当前摘要片段未显式给出。^[ambiguous]
+- 本地材料类型：tex_source
 
-## Linked Author Entities
+## 关联作者实体
 
 - [[entities/Laura Daza]]
 - [[entities/Juan C. Perez]]
 - [[entities/Pablo Arbelaez]]
 
-## Linked Concepts and Synthesis
+## 关联概念与综合
 
 - [[synthesis/Semantic Segmentation Robustness Corpus 2019-2026]]
 - [[synthesis/Segmentation Adversarial Attack Methods 2019-2026]]
 - [[concepts/Segmentation Robustness Benchmark Protocol]]
 
-## Online Verification Notes
+## 联网核验备注
 
-- Primary verification link: https://arxiv.org/abs/2107.04263
-- Local artifacts are stored under `papers_sources/semantic_segmentation_robustness_20260409`.
-
+- 主核验链接：https://arxiv.org/abs/2107.04263
+- 本地材料存放于 `papers_sources/semantic_segmentation_robustness_20260409`。

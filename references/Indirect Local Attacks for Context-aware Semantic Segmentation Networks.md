@@ -13,36 +13,35 @@ sources:
   - https://arxiv.org/abs/1911.13038
 created: 2026-04-10
 updated: 2026-04-10
-summary: "Batch-1 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+summary: "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
 provenance:
   extracted: 0.8
   inferred: 0.15
   ambiguous: 0.05
 ---
-
 # Indirect Local Attacks for Context-aware Semantic Segmentation Networks
 
-## Reading Status
+## 阅读状态
 
-- Batch: 1 / 4
-- Per-paper review status: completed (metadata + abstract-level local reading + cross-source verification)
+- 批次：1 / 4
+- 逐篇审阅状态：已完成（元数据 + 摘要级本地阅读 + 跨源核验）
 
-## Metadata
+## 元数据
 
-- Year: 2019
-- Venue: ECCV
-- Verification source: arxiv
-- Verified title: Indirect Local Attacks for Context-aware Semantic Segmentation Networks
+- 年份：2019
+- 发表 venue：ECCV
+- 核验来源：arxiv
+- 核验标题：Indirect Local Attacks for Context-aware Semantic Segmentation Networks
 
-## Problem and Method (From Extracted Evidence)
+## 问题与方法（基于抽取证据）
 
-- Evidence summary: Recently, deep networks have achieved impressive semantic segmentation performance, in particular thanks to their use of larger contextual information. In this paper, we show that the resulting networks are sensitive not only to global attacks, where perturbations affect the entire input image, but also to indirect local attacks where perturbations are confined to a small image region that does not overlap with the area that we aim to fool.
-- Method hint: To this end, we introduce several indirect attack strategies, including adaptive local attacks, aiming to find the best image location to perturb, and universal local attacks. Furthermore, we propose attack detection techniques both for the global image level and to obtain a pixel-wise localization of the fooled regions.
+- 证据摘要：Recently, deep networks have achieved impressive semantic segmentation performance, in particular thanks to their use of larger contextual information. In this paper, we show that the resulting networks are sensitive not only to global attacks, where perturbations affect the entire input image, but also to indirect local attacks where perturbations are confined to a small image region that does not overlap with the area that we aim to fool.
+- 方法线索：To this end, we introduce several indirect attack strategies, including adaptive local attacks, aiming to find the best image location to perturb, and universal local attacks. Furthermore, we propose attack detection techniques both for the global image level and to obtain a pixel-wise localization of the fooled regions.
 
-## Local Paper Structure Evidence
+## 本地论文结构证据
 
-- Extraction source: tex-sections
-- Section/subsection headings observed in local source:
+- 抽取来源：tex-sections
+- 本地源码中观测到的章节/小节标题：
 - Indirect Local Segmentation Attacks
 - Indirect Local Attacks
 - Adaptive Attacks
@@ -50,28 +49,27 @@ provenance:
 - Adversarial Attack Detection
 - Conclusion
 
-## Extracted Themes
+## 抽取主题
 
-- Theme tags pending deeper full-text parsing. ^[ambiguous]
+- 主题标签仍待更深层全文解析。^[ambiguous]
 
-## Experimental Context
+## 实验语境
 
-- Dataset mentions in extracted text: Not explicitly named in extracted abstract snippet. ^[ambiguous]
-- Local artifact type: tex_source
+- 抽取文本中的数据集提及：当前摘要片段未显式给出。^[ambiguous]
+- 本地材料类型：tex_source
 
-## Linked Author Entities
+## 关联作者实体
 
 - [[entities/Krishna Kanth Nakka]]
 - [[entities/Mathieu Salzmann]]
 
-## Linked Concepts and Synthesis
+## 关联概念与综合
 
 - [[synthesis/Semantic Segmentation Robustness Corpus 2019-2026]]
 - [[synthesis/Segmentation Adversarial Attack Methods 2019-2026]]
 - [[concepts/Segmentation Robustness Benchmark Protocol]]
 
-## Online Verification Notes
+## 联网核验备注
 
-- Primary verification link: https://arxiv.org/abs/1911.13038
-- Local artifacts are stored under `papers_sources/semantic_segmentation_robustness_20260409`.
-
+- 主核验链接：https://arxiv.org/abs/1911.13038
+- 本地材料存放于 `papers_sources/semantic_segmentation_robustness_20260409`。

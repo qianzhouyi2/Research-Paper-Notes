@@ -13,36 +13,35 @@ sources:
   - https://arxiv.org/abs/2207.12391
 created: 2026-04-10
 updated: 2026-04-10
-summary: "Batch-3 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
+summary: "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
 provenance:
   extracted: 0.8
   inferred: 0.15
   ambiguous: 0.05
 ---
-
 # SegPGD: An Effective and Efficient Adversarial Attack for Segmentation
 
-## Reading Status
+## 阅读状态
 
-- Batch: 3 / 4
-- Per-paper review status: completed (metadata + abstract-level local reading + cross-source verification)
+- 批次：3 / 4
+- 逐篇审阅状态：已完成（元数据 + 摘要级本地阅读 + 跨源核验）
 
-## Metadata
+## 元数据
 
-- Year: 2022
-- Venue: ECCV
-- Verification source: arxiv
-- Verified title: SegPGD: An Effective and Efficient Adversarial Attack for Evaluating and Boosting Segmentation Robustness
+- 年份：2022
+- 发表 venue：ECCV
+- 核验来源：arxiv
+- 核验标题：SegPGD: An Effective and Efficient Adversarial Attack for Segmentation
 
-## Problem and Method (From Extracted Evidence)
+## 问题与方法（基于抽取证据）
 
-- Evidence summary: Deep neural network-based image classifications are vulnerable to adversarial perturbations. The image classifications can be easily fooled by adding artificial small and imperceptible perturbations to input images.
-- Method hint: As one of the most effective defense strategies, adversarial training was proposed to address the vulnerability of classification models, where the adversarial examples are created and injected into training data during training. The attack and defense of classification models have been intensively studied in past years.
+- 证据摘要：Deep neural network-based image classifications are vulnerable to adversarial perturbations. The image classifications can be easily fooled by adding artificial small and imperceptible perturbations to input images.
+- 方法线索：As one of the most effective defense strategies, adversarial training was proposed to address the vulnerability of classification models, where the adversarial examples are created and injected into training data during training. The attack and defense of classification models have been intensively studied in past years.
 
-## Local Paper Structure Evidence
+## 本地论文结构证据
 
-- Extraction source: tex-sections
-- Section/subsection headings observed in local source:
+- 抽取来源：tex-sections
+- 本地源码中观测到的章节/小节标题：
 - Introduction
 - Related Work
 - SegPGD for Evaluating and Boosting Segmentation
@@ -52,32 +51,31 @@ provenance:
 - Experiment
 - Experimental Setting
 
-## Extracted Themes
+## 抽取主题
 
 - Adversarial training strategy
 - Attention refinement / regularization
 - SegPGD family attack/training
 
-## Experimental Context
+## 实验语境
 
-- Dataset mentions in extracted text: Not explicitly named in extracted abstract snippet. ^[ambiguous]
-- Local artifact type: tex_source
+- 抽取文本中的数据集提及：当前摘要片段未显式给出。^[ambiguous]
+- 本地材料类型：tex_source
 
-## Linked Author Entities
+## 关联作者实体
 
 - [[entities/Jindong Gu]]
 - [[entities/Hengshuang Zhao]]
 - [[entities/Volker Tresp]]
 - [[entities/Philip Torr]]
 
-## Linked Concepts and Synthesis
+## 关联概念与综合
 
 - [[synthesis/Semantic Segmentation Robustness Corpus 2019-2026]]
 - [[synthesis/Segmentation Adversarial Attack Methods 2019-2026]]
 - [[concepts/Segmentation Robustness Benchmark Protocol]]
 
-## Online Verification Notes
+## 联网核验备注
 
-- Primary verification link: https://arxiv.org/abs/2207.12391
-- Local artifacts are stored under `papers_sources/semantic_segmentation_robustness_20260409`.
-
+- 主核验链接：https://arxiv.org/abs/2207.12391
+- 本地材料存放于 `papers_sources/semantic_segmentation_robustness_20260409`。
