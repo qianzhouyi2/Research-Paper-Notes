@@ -9,6 +9,7 @@ tags:
 sources:
   - workspace/wiki-update-2026-04-10-lint-update-online
   - workspace/wiki-update-2026-04-10-global-lint-remediation
+  - workspace/wiki-update-2026-04-10-cn-placeholder-remediation
 created: 2026-04-08
 updated: 2026-04-10
 summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 结果。
@@ -202,7 +203,7 @@ summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 
 ## 推荐工作流
 
 1. 把原始 PDF/源码/草稿放入 [[papers_sources/index|papers_sources]]
-2. 在 [[notes]] 产出单篇阅读笔记（建议用模板）
+2. 在 [[notes/index|notes]] 产出单篇阅读笔记（建议用模板）
 3. 将单篇结论沉淀到 [[references/index]]
 4. 抽取可复用方法、术语、公式到 [[concepts/index]]
 5. 在 [[synthesis/index]] 做跨论文对比和总结
@@ -223,3 +224,10 @@ summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 
 - Deepening pass: upgraded all 28 reference cards with local abstract evidence and added [[synthesis/Segmentation Robustness Batch Reading Matrix 2019-2026]].
 
 - [[_meta/taxonomy|标签词表]]
+
+## 最新全库中文修复与检查（2026-04-10）
+
+- 类型：`wiki-update + wiki-lint`（全库修复）
+- 修复范围：153 个 `concepts/entities/synthesis` 页面移除异常占位尾块；并修正首页 `notes` 导航链接。
+- 校验结果：`workspace/wiki_lint_global_2026-04-10_cnfix_final.json` 显示 `orphans=0`、`broken_links=0`、`missing_frontmatter=0`、`missing_summary=0`、`placeholder_like_issues=0`。
+- 说明：本轮重点是把内部页残留的问号占位内容彻底清理，保留既有标题与知识结构，仅修复页面可读性和一致性。

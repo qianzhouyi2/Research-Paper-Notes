@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-04-10T13:18:38.992603+08:00",
+  "scope": "concepts+entities+references+synthesis+journal+projects+notes+index+log",
+  "counts": {
+    "orphans": 0,
+    "broken_total": 0,
+    "missing_frontmatter": 0,
+    "missing_summary": 0,
+    "placeholder_like_issues": 0
+  }
+}

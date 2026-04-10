@@ -8,6 +8,7 @@ sources:
   - workspace/wiki-update-2026-04-10-lint-update-online
   - workspace/wiki-update-2026-04-10-global-lint-remediation
   - workspace/wiki-update-2026-04-10-cn-localization
+  - workspace/wiki-update-2026-04-10-cn-placeholder-remediation
 created: 2026-04-08
 updated: 2026-04-10
 summary: 记录 wiki 初始化、ingest 与维护操作的时间线。
@@ -71,3 +72,5 @@ summary: 记录 wiki 初始化、ingest 与维护操作的时间线。
 - [2026-04-10 16:05:00 +08:00] UPDATE source="workspace/wiki-update-2026-04-10-global-lint-remediation" pages_updated=73 pages_created=2 mode=append notes="normalized frontmatter across legacy concepts/notes/meta pages, repaired date and template links, synced stale updated dates, added timeline anchor pages, and cleared full-vault hard lint issues"
 - [2026-04-10 16:20:00 +08:00] LINT source="workspace/wiki_lint_soft_2026-04-10_final" stale=0 contradictions=0 prov_issues=0 notes="date-granularity stale check cleared after updated-date sync"
 - [2026-04-10 20:05:00 +08:00] UPDATE source="workspace/wiki-update-2026-04-10-cn-localization" pages_updated=97 pages_created=0 mode=append notes="rewrote newly added concepts/entities/synthesis internal pages (created on 2026-04-10) into Chinese templates while preserving titles and linked paper names"
+- [2026-04-10 13:12:00 +08:00] UPDATE source="workspace/wiki-update-2026-04-10-cn-placeholder-remediation" pages_updated=154 pages_created=0 mode=append notes="批量清理 concepts/entities/synthesis 内部页中的问号占位段，统一为中文正文并移除乱码尾块"
+- [2026-04-10 13:13:00 +08:00] LINT source="workspace/wiki_lint_global_2026-04-10_cnfix_final" issues_found=0 orphans=0 broken_links=0 missing_frontmatter=0 missing_summary=0 notes="全库关键知识层（concepts/entities/references/synthesis/journal/projects/notes/index/log）硬性检查全部通过"
