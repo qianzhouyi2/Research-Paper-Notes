@@ -14,7 +14,7 @@ summary: 阅读过程记录、覆盖审计与 wiki 维护日志的入口页。
 
 # Journal 索引
 
-阅读过程记录与反思入口。
+阅读过程记录与复盘入口。
 
 ## 建议记录模板
 
@@ -31,11 +31,11 @@ summary: 阅读过程记录、覆盖审计与 wiki 维护日志的入口页。
 - 覆盖度盘点：[[journal/Wiki Coverage Audit 2026-04-08]]
 - 深度缺口盘点：[[journal/Papers Sources Deep Gap Audit 2026-04-08]]
 
-## Segmentation Robustness Batch Ingest (2026-04-10)
+## Segmentation Robustness Batch Ingest（2026-04-10）
 
 - [[journal/Segmentation Robustness Batch Ingest Plan 2026-04-10]]
 
-## Timeline Anchors
+## 时间锚点
 
 - [[journal/2026-04-08]]
 - [[journal/2026-04-06]]
