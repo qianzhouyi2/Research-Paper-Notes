@@ -31,7 +31,7 @@ provenance:
 
 - Year: 2026
 - Venue: arXiv
-- Verification source: arxiv-local
+- Verification source: arxiv
 - Verified title: Erosion Attack for Adversarial Training to Enhance Semantic Segmentation Robustness
 
 ## Problem and Method (From Extracted Evidence)
@@ -63,7 +63,7 @@ provenance:
 
 ## Linked Author Entities
 
-- Author entities pending for this paper. ^[ambiguous]
+- Verified authors (arXiv metadata): Yufei Song; Ziqi Zhou; Menghao Deng; Yifan Hu; Shengshan Hu; Minghui Li; Leo Yu Zhang.
 
 ## Linked Concepts and Synthesis
 
@@ -75,4 +75,4 @@ provenance:
 
 - Primary verification link: https://arxiv.org/abs/2601.14950
 - Local artifacts are stored under `papers_sources/semantic_segmentation_robustness_20260409`.
-- Note: arXiv API rate-limit prevented direct query in this session; local arXiv id and downloaded source are used as primary evidence. ^[ambiguous]
+- Note: arXiv comment indicates this work was accepted by ICASSP 2026.

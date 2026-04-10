@@ -11,6 +11,7 @@ sources:
   - papers_sources/semantic_segmentation_robustness_20260409/download_report.json
   - workspace/seg_robustness_local_reading_2026-04-10.json
   - https://arxiv.org/abs/2104.01732
+  - https://doi.org/10.1109/WACV51458.2022.00290
 created: 2026-04-10
 updated: 2026-04-10
 summary: "Batch-3 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
@@ -29,9 +30,9 @@ provenance:
 
 ## Metadata
 
-- Year: 2021
+- Year: 2022
 - Venue: WACV
-- Verification source: arxiv
+- Verification source: arxiv+crossref
 - Verified title: Semantically Stealthy Adversarial Attacks against Segmentation Models
 
 ## Problem and Method (From Extracted Evidence)
@@ -76,5 +77,6 @@ provenance:
 ## Online Verification Notes
 
 - Primary verification link: https://arxiv.org/abs/2104.01732
+- DOI verification link: https://doi.org/10.1109/WACV51458.2022.00290
 - Local artifacts are stored under `papers_sources/semantic_segmentation_robustness_20260409`.
 

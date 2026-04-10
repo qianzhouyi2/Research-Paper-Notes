@@ -11,6 +11,7 @@ sources:
   - papers_sources/semantic_segmentation_robustness_20260409/download_report.json
   - workspace/seg_robustness_local_reading_2026-04-10.json
   - https://arxiv.org/abs/2505.18015
+  - https://github.com/shashankskagnihotri/benchmarking_reliability_generalization
 created: 2026-04-10
 updated: 2026-04-10
 summary: "Batch-4 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
@@ -64,7 +65,7 @@ provenance:
 
 ## Linked Author Entities
 
-- Author entities pending for this paper. ^[ambiguous]
+- Verified authors (arXiv metadata): Shashank Agnihotri; David Schader; Jonas Jakubassa; Nico Sharei; Simon Kral; Mehmet Ege Kacar; Ruben Weber; Margret Keuper.
 
 ## Linked Concepts and Synthesis
 
@@ -75,5 +76,6 @@ provenance:
 ## Online Verification Notes
 
 - Primary verification link: https://arxiv.org/abs/2505.18015
+- Repository link from arXiv comment: https://github.com/shashankskagnihotri/benchmarking_reliability_generalization
 - Local artifacts are stored under `papers_sources/semantic_segmentation_robustness_20260409`.
 

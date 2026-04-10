@@ -4,8 +4,11 @@ category: index
 tags:
   - index
   - project
-updated: 2026-04-09
+updated: 2026-04-10
 summary: 面向可执行目标的专题项目入口页。
+sources:
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-09
 ---
 
 # Projects 索引

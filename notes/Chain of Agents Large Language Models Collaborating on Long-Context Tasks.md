@@ -1,4 +1,15 @@
-﻿# Chain of Agents: Large Language Models Collaborating on Long-Context Tasks
+---
+title: "Chain of Agents Large Language Models Collaborating on Long-Context Tasks"
+category: note
+tags:
+  - note
+sources:
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-10
+updated: 2026-04-10
+summary: "﻿# Chain of Agents: Large Language Models Collaborating on Long-Context Tasks"
+---
+# Chain of Agents: Large Language Models Collaborating on Long-Context Tasks
 
 - 阅读日期：2026-04-08
 - 阅读状态：已读

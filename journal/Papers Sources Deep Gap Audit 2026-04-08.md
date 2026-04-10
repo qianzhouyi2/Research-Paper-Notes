@@ -5,8 +5,11 @@ tags:
   - journal
   - audit
   - wiki
-updated: 2026-04-08
+updated: 2026-04-10
 summary: 对 papers_sources 的 9 篇论文做逐篇覆盖度盘点，定位 concepts、entities、synthesis 的细化缺口并给出补全目标。
+sources:
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-08
 ---
 
 # Papers Sources Deep Gap Audit 2026-04-08

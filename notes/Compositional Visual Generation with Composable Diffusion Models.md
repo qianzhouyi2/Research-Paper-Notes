@@ -1,6 +1,17 @@
-﻿# Compositional Visual Generation with Composable Diffusion Models
+---
+title: "Compositional Visual Generation with Composable Diffusion Models"
+category: note
+tags:
+  - note
+sources:
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-10
+updated: 2026-04-10
+summary: "﻿# Compositional Visual Generation with Composable Diffusion Models"
+---
+# Compositional Visual Generation with Composable Diffusion Models
 
-- 阅读日期：[[2026-04-08]]
+- 阅读日期：[[journal/2026-04-08]]
 - 阅读状态：已读
 - 标签：#paper #imported #notion
 - 相关方向：可控生成、扩散模型、组合泛化

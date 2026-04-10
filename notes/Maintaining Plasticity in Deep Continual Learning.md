@@ -1,4 +1,15 @@
-﻿# Maintaining Plasticity in Deep Continual Learning
+---
+title: "Maintaining Plasticity in Deep Continual Learning"
+category: note
+tags:
+  - note
+sources:
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-10
+updated: 2026-04-10
+summary: "﻿# Maintaining Plasticity in Deep Continual Learning"
+---
+# Maintaining Plasticity in Deep Continual Learning
 
 - 阅读日期：2026-04-08
 - 阅读状态：已读

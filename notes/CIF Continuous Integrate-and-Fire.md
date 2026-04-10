@@ -1,6 +1,17 @@
+---
+title: "CIF Continuous Integrate-and-Fire"
+category: note
+tags:
+  - note
+sources:
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-10
+updated: 2026-04-10
+summary: "- 阅读日期：2026-04-08"
+---
 # CIF: Continuous Integrate-and-Fire for End-to-End Speech Recognition
 
-- 阅读日期：[[2026-04-08]]
+- 阅读日期：[[journal/2026-04-08]]
 - 阅读状态：已读
 - 标签：#paper #asr #alignment #cif #imported
 - 相关方向：端到端语音识别、软单调对齐、流式识别

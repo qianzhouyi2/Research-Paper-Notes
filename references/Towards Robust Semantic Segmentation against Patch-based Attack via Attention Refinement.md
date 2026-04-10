@@ -64,7 +64,7 @@ provenance:
 
 ## Linked Author Entities
 
-- Author entities pending for this paper. ^[ambiguous]
+- Verified authors (arXiv metadata): Zheng Yuan; Jie Zhang; Yude Wang; Shiguang Shan; Xilin Chen.
 
 ## Linked Concepts and Synthesis
 

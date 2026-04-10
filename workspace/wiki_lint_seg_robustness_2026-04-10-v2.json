@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-04-10T03:00:49.132889+08:00",
+  "subset_pages": 135,
+  "counts": {
+    "orphans": 0,
+    "broken_wikilinks": 2,
+    "missing_frontmatter": 7
+  },
+  "orphans": [],
+  "broken_wikilinks": [
+    {
+      "file": "index.md",
+      "target": "papers_sources",
+      "raw": "papers_sources"
+    },
+    {
+      "file": "index.md",
+      "target": "papers_sources",
+      "raw": "papers_sources"
+    }
+  ],
+  "missing_frontmatter": [
+    {
+      "file": "concepts/index.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    },
+    {
+      "file": "entities/index.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    },
+    {
+      "file": "index.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    },
+    {
+      "file": "journal/index.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    },
+    {
+      "file": "log.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    },
+    {
+      "file": "references/index.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    },
+    {
+      "file": "synthesis/index.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    }
+  ]
+}

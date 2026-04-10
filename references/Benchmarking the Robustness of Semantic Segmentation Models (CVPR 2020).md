@@ -11,6 +11,7 @@ sources:
   - papers_sources/semantic_segmentation_robustness_20260409/download_report.json
   - workspace/seg_robustness_local_reading_2026-04-10.json
   - https://arxiv.org/abs/1908.05005
+  - https://doi.org/10.1109/CVPR42600.2020.00885
 created: 2026-04-10
 updated: 2026-04-10
 summary: "Batch-1 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
@@ -29,9 +30,9 @@ provenance:
 
 ## Metadata
 
-- Year: 2019
+- Year: 2020
 - Venue: CVPR
-- Verification source: arxiv
+- Verification source: arxiv+crossref
 - Verified title: Benchmarking the Robustness of Semantic Segmentation Models
 
 ## Problem and Method (From Extracted Evidence)
@@ -75,5 +76,7 @@ provenance:
 ## Online Verification Notes
 
 - Primary verification link: https://arxiv.org/abs/1908.05005
+- DOI verification link: https://doi.org/10.1109/CVPR42600.2020.00885
+- Note: arXiv preprint was first posted in 2019 and updated for CVPR 2020 camera-ready.
 - Local artifacts are stored under `papers_sources/semantic_segmentation_robustness_20260409`.
 

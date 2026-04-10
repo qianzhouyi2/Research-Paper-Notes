@@ -1,6 +1,17 @@
-﻿# Hyena Hierarchy: Towards Larger Convolutional Language Models
+---
+title: "Hyena Hierarchy Towards Larger Convolutional Language Models"
+category: note
+tags:
+  - note
+sources:
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-10
+updated: 2026-04-10
+summary: "﻿# Hyena Hierarchy: Towards Larger Convolutional Language Models"
+---
+# Hyena Hierarchy: Towards Larger Convolutional Language Models
 
-- 阅读日期：[[2026-04-08]]
+- 阅读日期：[[journal/2026-04-08]]
 - 阅读状态：已读
 - 标签：#paper #long-context #convolution #attention-alternative
 - 相关方向：长序列建模、次二次复杂度、卷积式语言模型

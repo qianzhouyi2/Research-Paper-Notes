@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-04-10T08:05:45.109777+08:00",
+  "scope_pages": 346,
+  "counts": {
+    "orphans": 0,
+    "broken_total": 3,
+    "broken_md": 3,
+    "broken_resource": 0,
+    "missing_frontmatter": 0,
+    "missing_summary": 0,
+    "index_issues": 0
+  },
+  "orphans": [],
+  "broken_wikilinks": [
+    {
+      "file": "notes/index.md",
+      "raw": "[[notes/_notion_raw/Are aligned neural networks adversarially aligned.ordered]]",
+      "target": "notes/_notion_raw/Are aligned neural networks adversarially aligned.ordered",
+      "kind": "md",
+      "embed": false
+    },
+    {
+      "file": "notes/index.md",
+      "raw": "[[notes/_notion_raw/Are aligned neural networks adversarially aligned.rendered]]",
+      "target": "notes/_notion_raw/Are aligned neural networks adversarially aligned.rendered",
+      "kind": "md",
+      "embed": false
+    },
+    {
+      "file": "index.md",
+      "raw": "[[Templates/??????|??????]]",
+      "target": "Templates/??????",
+      "kind": "md",
+      "embed": false
+    }
+  ],
+  "top_broken_targets": [
+    {
+      "kind": "md",
+      "target": "notes/_notion_raw/Are aligned neural networks adversarially aligned.ordered",
+      "count": 1
+    },
+    {
+      "kind": "md",
+      "target": "notes/_notion_raw/Are aligned neural networks adversarially aligned.rendered",
+      "count": 1
+    },
+    {
+      "kind": "md",
+      "target": "Templates/??????",
+      "count": 1
+    }
+  ],
+  "missing_frontmatter": [],
+  "missing_summary": [],
+  "index_issues": []
+}

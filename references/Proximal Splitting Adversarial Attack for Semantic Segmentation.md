@@ -29,7 +29,7 @@ provenance:
 
 ## Metadata
 
-- Year: 2022
+- Year: 2023
 - Venue: CVPR
 - Verification source: arxiv
 - Verified title: Proximal Splitting Adversarial Attacks for Semantic Segmentation
@@ -63,7 +63,7 @@ provenance:
 
 ## Linked Author Entities
 
-- Author entities pending for this paper. ^[ambiguous]
+- Verified authors (arXiv metadata): Jerome Rony; Jean-Christophe Pesquet; Ismail Ben Ayed.
 
 ## Linked Concepts and Synthesis
 

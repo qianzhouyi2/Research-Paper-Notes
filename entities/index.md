@@ -4,6 +4,10 @@ category: index
 tags:
   - index
   - entity
+sources:
+  - workspace/wiki-update-2026-04-10-lint-update-online
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-08
 updated: 2026-04-10
 summary: 作者、模型、机构等实体页面入口索引。
 ---
@@ -164,3 +168,5 @@ summary: 作者、模型、机构等实体页面入口索引。
 - [[entities/N. Grace Hua]]
 - [[entities/M. Salman Asif]]
 - [[entities/Yaoteng Tan]]
+- [[entities/Bo Xu]]
+- [[entities/Chao Huang]]

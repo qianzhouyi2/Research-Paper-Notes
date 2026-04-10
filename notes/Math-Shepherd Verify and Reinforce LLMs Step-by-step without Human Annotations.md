@@ -1,6 +1,17 @@
-﻿# Math-Shepherd: Verify and Reinforce LLMs Step-by-step without Human Annotations
+---
+title: "Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations"
+category: note
+tags:
+  - note
+sources:
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-10
+updated: 2026-04-10
+summary: "﻿# Math-Shepherd: Verify and Reinforce LLMs Step-by-step without Human Annotations"
+---
+# Math-Shepherd: Verify and Reinforce LLMs Step-by-step without Human Annotations
 
-- 阅读日期：[[2026-04-08]]
+- 阅读日期：[[journal/2026-04-08]]
 - 阅读状态：已读
 - 标签：#paper #reasoning #process-reward-model #verification #rl
 - 相关方向：数学推理、过程监督、奖励建模、LLM 对齐

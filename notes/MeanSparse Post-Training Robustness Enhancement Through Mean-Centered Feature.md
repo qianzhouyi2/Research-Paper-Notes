@@ -1,4 +1,15 @@
-﻿# MeanSparse: Post-Training Robustness Enhancement Through Mean-Centered Feature Sparsification
+---
+title: "MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature"
+category: note
+tags:
+  - note
+sources:
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-10
+updated: 2026-04-10
+summary: "﻿# MeanSparse: Post-Training Robustness Enhancement Through Mean-Centered Feature Sparsification"
+---
+# MeanSparse: Post-Training Robustness Enhancement Through Mean-Centered Feature Sparsification
 
 > 填写要求：
 > 1. 尽量使用短句，不写空话。

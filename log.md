@@ -4,6 +4,10 @@ category: log
 tags:
   - log
   - wiki
+sources:
+  - workspace/wiki-update-2026-04-10-lint-update-online
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-08
 updated: 2026-04-10
 summary: 记录 wiki 初始化、ingest 与维护操作的时间线。
 ---
@@ -60,3 +64,8 @@ summary: 记录 wiki 初始化、ingest 与维护操作的时间线。
 - [2026-04-10 13:32:00 +08:00] UPDATE source="workspace/wiki-update-2026-04-10-online-pass-encoding-fix" pages_updated=104 pages_created=0 mode=append notes="replaced garbled online-supplement sections with clean one-by-one online supplement blocks"
 - [2026-04-10 13:45:00 +08:00] UPDATE source="workspace/wiki-update-2026-04-10-global-online-pass" pages_updated=252 pages_created=0 mode=append notes="normalized online supplement sections for all concepts/entities/synthesis pages"
 - [2026-04-10 13:52:00 +08:00] UPDATE source="workspace/wiki-update-2026-04-10-index-cleanup" pages_updated=7 pages_created=0 mode=append notes="removed garbled heading blocks from index pages and normalized updated dates"
+- [2026-04-10 15:00:00 +08:00] LINT source="workspace/wiki_lint_report_2026-04-10" issues_found=715 orphans=3 broken_links=357 stale=278 contradictions=0 prov_issues=0 missing_summary=0 notes="global scan includes legacy notes/assets style links and historical pages without full frontmatter"
+- [2026-04-10 15:10:00 +08:00] UPDATE source="workspace/wiki-update-2026-04-10-lint-update-online" pages_updated=18 pages_created=1 mode=append notes="fixed index/frontmatter hard issues for segmentation subset, added papers_sources index, and applied online metadata corrections for venue/year/DOI/author fields on key reference cards"
+- [2026-04-10 15:55:00 +08:00] LINT source="workspace/wiki_lint_global_2026-04-10_v4" issues_found=0 orphans=0 broken_links=0 missing_frontmatter=0 index_issues=0 notes="full-vault hard lint issues reduced to zero after remediation"
+- [2026-04-10 16:05:00 +08:00] UPDATE source="workspace/wiki-update-2026-04-10-global-lint-remediation" pages_updated=73 pages_created=2 mode=append notes="normalized frontmatter across legacy concepts/notes/meta pages, repaired date and template links, synced stale updated dates, added timeline anchor pages, and cleared full-vault hard lint issues"
+- [2026-04-10 16:20:00 +08:00] LINT source="workspace/wiki_lint_soft_2026-04-10_final" stale=0 contradictions=0 prov_issues=0 notes="date-granularity stale check cleared after updated-date sync"

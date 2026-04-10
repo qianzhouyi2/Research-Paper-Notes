@@ -6,6 +6,10 @@ category: index
 tags:
   - index
   - wiki
+sources:
+  - workspace/wiki-update-2026-04-10-lint-update-online
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-08
 updated: 2026-04-10
 summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 结果。
 ---
@@ -24,6 +28,21 @@ summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 
 - [[entities/index|Entities（作者/机构/模型）]]
 - [[journal/index|Journal（阅读日志）]]
 - [[log|系统日志]]
+- [[_meta/taxonomy|Tag Taxonomy]]
+
+## Latest Wiki Update (2026-04-10, Global Lint Remediation)
+
+- 类型：`wiki-lint + wiki-update`（全库历史遗留问题分批修复）。
+- 新增页面：[[journal/2026-04-08]]、[[journal/2026-04-06]]。
+- 修复内容：补齐 68 个历史页面 frontmatter，修复日期锚点、模板链接、索引漏收录与遗留坏链。
+- 结果：全库 lint 已归零（`orphans=0`、`broken_total=0`、`missing_frontmatter=0`、`index_issues=0`、`stale_by_date=0`）。
+
+## Latest Wiki Update (2026-04-10, Lint + Online Metadata Calibration)
+
+- 类型：`wiki-lint + wiki-update`（联网核验与元数据校准）。
+- 新增页面：[[papers_sources/index]]。
+- 更新页面：[[references/Benchmarking the Robustness of Semantic Segmentation Models (CVPR 2020)]]、[[references/Benchmarking the Robustness of Semantic Segmentation Models (IJCV 2020)]]、[[references/On the Robustness of Semantic Segmentation Models to Adversarial Attacks]]、[[references/Towards Semantically Stealthy Adversarial Attacks Against Segmentation Models]]、[[references/RP-PGD - Enhancing Semantic Segmentation Robustness via Region-based Prioritized PGD]]、[[references/SemSegBench and DetecBench - Benchmarking Reliability and Generalization Beyond Classification]]、[[references/Erosion Attack for Adversarial Training to Enhance Semantic Segmentation Robustness (arXiv preprint)]]、[[references/Evaluating the Adversarial Robustness of Semantic Segmentation]]、[[references/Proximal Splitting Adversarial Attack for Semantic Segmentation]]、[[references/Towards Robust Semantic Segmentation against Patch-based Attack via Attention Refinement]]、[[references/Uncertainty-Based Detection of Adversarial Attacks in Semantic Segmentation]]、[[index]]、[[log]]。
+- 结果：语义分割鲁棒性子集 lint 硬检查已清零（`orphans=0`、`broken=0`、`missing_frontmatter=0`）。
 
 ## Latest Wiki Update (2026-04-09, NES + L-infinity Calibration)
 
@@ -54,8 +73,8 @@ summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 
 - Entities：71 篇（作者/模型/数据集）
 - Synthesis：22 篇（跨论文主题综合）
 - 已纳管来源：36 个（见 [[log]] 与 `.manifest.json`）
-- 原始资料：[[papers_sources]]
-- 模板：[[Templates/论文阅读模板|论文阅读模板]]
+- 原始资料：[[papers_sources/index|papers_sources]]
+- 模板：`Templates`
 
 ## 最新 Wiki Update（2026-04-09，Segmentation Robustness Corpus Sync）
 
@@ -176,7 +195,7 @@ summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 
 
 ## 推荐工作流
 
-1. 把原始 PDF/源码/草稿放入 [[papers_sources]]
+1. 把原始 PDF/源码/草稿放入 [[papers_sources/index|papers_sources]]
 2. 在 [[notes]] 产出单篇阅读笔记（建议用模板）
 3. 将单篇结论沉淀到 [[references/index]]
 4. 抽取可复用方法、术语、公式到 [[concepts/index]]
@@ -196,3 +215,5 @@ summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 
 - Note: all 28 papers were checked against online metadata (arXiv/Crossref) and local downloads.
 - Follow-up: completed one-by-one online supplement pass for all extracted concepts/entities/synthesis pages.
 - Deepening pass: upgraded all 28 reference cards with local abstract evidence and added [[synthesis/Segmentation Robustness Batch Reading Matrix 2019-2026]].
+
+- [[_meta/taxonomy|Tag Taxonomy]]

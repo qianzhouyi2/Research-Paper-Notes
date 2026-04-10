@@ -1,6 +1,17 @@
-﻿# Multimodal Chain-of-Thought Reasoning in Language Models
+---
+title: "Multimodal Chain-of-Thought Reasoning in Language Models"
+category: note
+tags:
+  - note
+sources:
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-10
+updated: 2026-04-10
+summary: "﻿# Multimodal Chain-of-Thought Reasoning in Language Models"
+---
+# Multimodal Chain-of-Thought Reasoning in Language Models
 
-- 阅读日期：[[2026-04-08]]
+- 阅读日期：[[journal/2026-04-08]]
 - 阅读状态：已读
 - 标签：#paper #multimodal #cot #reasoning #vision-language
 - 相关方向：多模态推理、视觉-语言融合、可解释推理链

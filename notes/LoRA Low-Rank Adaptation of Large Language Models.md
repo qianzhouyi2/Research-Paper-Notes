@@ -1,4 +1,15 @@
-﻿# LoRA: Low-Rank Adaptation of Large Language Models
+---
+title: "LoRA Low-Rank Adaptation of Large Language Models"
+category: note
+tags:
+  - note
+sources:
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-10
+updated: 2026-04-10
+summary: "﻿# LoRA: Low-Rank Adaptation of Large Language Models"
+---
+# LoRA: Low-Rank Adaptation of Large Language Models
 
 - 阅读日期：2026-04-08
 - 阅读状态：已读

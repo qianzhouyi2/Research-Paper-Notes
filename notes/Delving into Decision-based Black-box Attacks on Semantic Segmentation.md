@@ -10,7 +10,7 @@ sources:
   - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md
   - papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation_zh.md
 created: 2026-04-06
-updated: 2026-04-09
+updated: 2026-04-10
 summary: DLA 论文阅读笔记，覆盖问题定义、方法细节、实验结果与可复用实现思路。
 provenance:
   extracted: 0.82
@@ -20,7 +20,7 @@ provenance:
 
 # Delving into Decision-based Black-box Attacks on Semantic Segmentation
 
-- 阅读日期：[[2026-04-06]]
+- 阅读日期：[[journal/2026-04-06]]
 - 阅读状态：已读
 - 标签：#paper #semantic-segmentation #black-box-attack #adversarial-attack
 - 相关方向：决策型黑盒攻击、语义分割鲁棒性

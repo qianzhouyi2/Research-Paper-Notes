@@ -11,6 +11,7 @@ sources:
   - papers_sources/semantic_segmentation_robustness_20260409/download_report.json
   - workspace/seg_robustness_local_reading_2026-04-10.json
   - https://arxiv.org/abs/1711.09856
+  - https://doi.org/10.1109/TPAMI.2019.2919707
 created: 2026-04-10
 updated: 2026-04-10
 summary: "Batch-2 per-paper reading card with verified metadata, local abstract evidence, and reusable robustness notes."
@@ -29,9 +30,9 @@ provenance:
 
 ## Metadata
 
-- Year: 2017
+- Year: 2020
 - Venue: TPAMI
-- Verification source: arxiv
+- Verification source: crossref+arxiv
 - Verified title: On the Robustness of Semantic Segmentation Models to Adversarial Attacks
 
 ## Problem and Method (From Extracted Evidence)
@@ -68,5 +69,7 @@ provenance:
 ## Online Verification Notes
 
 - Primary verification link: https://arxiv.org/abs/1711.09856
+- DOI verification link: https://doi.org/10.1109/TPAMI.2019.2919707
+- Note: initial preprint is 2017 and the conference version appeared at CVPR 2018; TPAMI publication year is 2020.
 - Local artifacts are stored under `papers_sources/semantic_segmentation_robustness_20260409`.
 

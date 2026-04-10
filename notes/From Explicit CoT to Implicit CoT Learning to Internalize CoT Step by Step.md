@@ -1,6 +1,17 @@
-﻿# From Explicit CoT to Implicit CoT: Learning to Internalize CoT Step by Step
+---
+title: "From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step"
+category: note
+tags:
+  - note
+sources:
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-10
+updated: 2026-04-10
+summary: "﻿# From Explicit CoT to Implicit CoT: Learning to Internalize CoT Step by Step"
+---
+# From Explicit CoT to Implicit CoT: Learning to Internalize CoT Step by Step
 
-- 阅读日期：[[2026-04-08]]
+- 阅读日期：[[journal/2026-04-08]]
 - 阅读状态：已读
 - 标签：#paper #imported #notion
 - 相关方向：LLM 推理、CoT 内化、课程学习

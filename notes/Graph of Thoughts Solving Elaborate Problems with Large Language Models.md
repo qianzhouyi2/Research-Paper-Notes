@@ -1,6 +1,17 @@
-﻿# Graph of Thoughts: Solving Elaborate Problems with Large Language Models
+---
+title: "Graph of Thoughts Solving Elaborate Problems with Large Language Models"
+category: note
+tags:
+  - note
+sources:
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-10
+updated: 2026-04-10
+summary: "﻿# Graph of Thoughts: Solving Elaborate Problems with Large Language Models"
+---
+# Graph of Thoughts: Solving Elaborate Problems with Large Language Models
 
-- 阅读日期：[[2026-04-08]]
+- 阅读日期：[[journal/2026-04-08]]
 - 阅读状态：已读
 - 标签：#paper #imported #notion
 - 相关方向：结构化推理、图搜索、LLM 规划

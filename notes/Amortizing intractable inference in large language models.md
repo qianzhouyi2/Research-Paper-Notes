@@ -1,4 +1,15 @@
-﻿# Amortizing intractable inference in large language models
+---
+title: "Amortizing intractable inference in large language models"
+category: note
+tags:
+  - note
+sources:
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-10
+updated: 2026-04-10
+summary: "﻿# Amortizing intractable inference in large language models"
+---
+# Amortizing intractable inference in large language models
 
 - 阅读日期：2026-04-08
 - 阅读状态：已读

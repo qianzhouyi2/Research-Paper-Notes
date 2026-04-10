@@ -62,6 +62,21 @@
 <li><a href="entities/index.html">Entities（作者/机构/模型）</a></li>
 <li><a href="journal/index.html">Journal（阅读日志）</a></li>
 <li><a href="log.html">系统日志</a></li>
+<li><a href="_meta/taxonomy.md">Tag Taxonomy</a></li>
+</ul>
+<h2 id="latest-wiki-update-2026-04-10-global-lint-remediation">Latest Wiki Update (2026-04-10, Global Lint Remediation)</h2>
+<ul>
+<li>类型：<code>wiki-lint + wiki-update</code>（全库历史遗留问题分批修复）。</li>
+<li>新增页面：<a href="journal/2026-04-08.html">2026-04-08</a>、<a href="journal/2026-04-06.html">2026-04-06</a>。</li>
+<li>修复内容：补齐 68 个历史页面 frontmatter，修复日期锚点、模板链接、索引漏收录与遗留坏链。</li>
+<li>结果：全库 lint 已归零（<code>orphans=0</code>、<code>broken_total=0</code>、<code>missing_frontmatter=0</code>、<code>index_issues=0</code>、<code>stale_by_date=0</code>）。</li>
+</ul>
+<h2 id="latest-wiki-update-2026-04-10-lint-online-metadata-calibration">Latest Wiki Update (2026-04-10, Lint + Online Metadata Calibration)</h2>
+<ul>
+<li>类型：<code>wiki-lint + wiki-update</code>（联网核验与元数据校准）。</li>
+<li>新增页面：<a href="papers_sources/index.md">index</a>。</li>
+<li>更新页面：<a href="references/Benchmarking the Robustness of Semantic Segmentation Models (CVPR 2020).html">Benchmarking the Robustness of Semantic Segmentation Models (CVPR 2020)</a>、<a href="references/Benchmarking the Robustness of Semantic Segmentation Models (IJCV 2020).html">Benchmarking the Robustness of Semantic Segmentation Models (IJCV 2020)</a>、<a href="references/On the Robustness of Semantic Segmentation Models to Adversarial Attacks.html">On the Robustness of Semantic Segmentation Models to Adversarial Attacks</a>、<a href="references/Towards Semantically Stealthy Adversarial Attacks Against Segmentation Models.html">Towards Semantically Stealthy Adversarial Attacks Against Segmentation Models</a>、<a href="references/RP-PGD - Enhancing Semantic Segmentation Robustness via Region-based Prioritized PGD.html">RP-PGD - Enhancing Semantic Segmentation Robustness via Region-based Prioritized PGD</a>、<a href="references/SemSegBench and DetecBench - Benchmarking Reliability and Generalization Beyond Classification.html">SemSegBench and DetecBench - Benchmarking Reliability and Generalization Beyond Classification</a>、<a href="references/Erosion Attack for Adversarial Training to Enhance Semantic Segmentation Robustness (arXiv preprint).html">Erosion Attack for Adversarial Training to Enhance Semantic Segmentation Robustness (arXiv preprint)</a>、<a href="references/Evaluating the Adversarial Robustness of Semantic Segmentation.html">Evaluating the Adversarial Robustness of Semantic Segmentation</a>、<a href="references/Proximal Splitting Adversarial Attack for Semantic Segmentation.html">Proximal Splitting Adversarial Attack for Semantic Segmentation</a>、<a href="references/Towards Robust Semantic Segmentation against Patch-based Attack via Attention Refinement.html">Towards Robust Semantic Segmentation against Patch-based Attack via Attention Refinement</a>、<a href="references/Uncertainty-Based Detection of Adversarial Attacks in Semantic Segmentation.html">Uncertainty-Based Detection of Adversarial Attacks in Semantic Segmentation</a>、<a href="index.html">index</a>、<a href="log.html">log</a>。</li>
+<li>结果：语义分割鲁棒性子集 lint 硬检查已清零（<code>orphans=0</code>、<code>broken=0</code>、<code>missing_frontmatter=0</code>）。</li>
 </ul>
 <h2 id="latest-wiki-update-2026-04-09-nes-l-infinity-calibration">Latest Wiki Update (2026-04-09, NES + L-infinity Calibration)</h2>
 <ul>
@@ -92,8 +107,8 @@
 <li>Entities：71 篇（作者/模型/数据集）</li>
 <li>Synthesis：22 篇（跨论文主题综合）</li>
 <li>已纳管来源：36 个（见 <a href="log.html">log</a> 与 <code>.manifest.json</code>）</li>
-<li>原始资料：<a href="papers_sources">papers_sources</a></li>
-<li>模板：<a href="Templates/论文阅读模板.html">论文阅读模板</a></li>
+<li>原始资料：<a href="papers_sources/index.md">papers_sources</a></li>
+<li>模板：<code>Templates</code></li>
 </ul>
 <h2 id="wiki-update2026-04-09segmentation-robustness-corpus-sync">最新 Wiki Update（2026-04-09，Segmentation Robustness Corpus Sync）</h2>
 <ul>
@@ -214,7 +229,7 @@
 </ul>
 <h2 id="_3">推荐工作流</h2>
 <ol>
-<li>把原始 PDF/源码/草稿放入 <a href="papers_sources">papers_sources</a></li>
+<li>把原始 PDF/源码/草稿放入 <a href="papers_sources/index.md">papers_sources</a></li>
 <li>在 <a href="notes/index.html">notes</a> 产出单篇阅读笔记（建议用模板）</li>
 <li>将单篇结论沉淀到 <a href="references/index.html">index</a></li>
 <li>抽取可复用方法、术语、公式到 <a href="concepts/index.html">index</a></li>
@@ -233,7 +248,12 @@
 <li>Updated: <a href="references/index.html">index</a>, <a href="concepts/index.html">index</a>, <a href="entities/index.html">index</a>, <a href="synthesis/index.html">index</a>, <a href="journal/index.html">index</a>, <a href="index.html">index</a>, <a href="log.html">log</a>.</li>
 <li>Note: all 28 papers were checked against online metadata (arXiv/Crossref) and local downloads.</li>
 <li>Follow-up: completed one-by-one online supplement pass for all extracted concepts/entities/synthesis pages.</li>
-<li>Deepening pass: upgraded all 28 reference cards with local abstract evidence and added <a href="synthesis/Segmentation Robustness Batch Reading Matrix 2019-2026.html">Segmentation Robustness Batch Reading Matrix 2019-2026</a>.</li>
+<li>
+<p>Deepening pass: upgraded all 28 reference cards with local abstract evidence and added <a href="synthesis/Segmentation Robustness Batch Reading Matrix 2019-2026.html">Segmentation Robustness Batch Reading Matrix 2019-2026</a>.</p>
+</li>
+<li>
+<p><a href="_meta/taxonomy.md">Tag Taxonomy</a></p>
+</li>
 </ul></div>
       </article>
     </main>

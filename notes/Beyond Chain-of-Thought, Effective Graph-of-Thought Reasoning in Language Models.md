@@ -1,4 +1,15 @@
-﻿# Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models
+---
+title: "Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models"
+category: note
+tags:
+  - note
+sources:
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-10
+updated: 2026-04-10
+summary: "﻿# Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models"
+---
+# Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models
 
 - 阅读日期：2026-04-08
 - 阅读状态：已读

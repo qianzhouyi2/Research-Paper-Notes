@@ -4,6 +4,10 @@ category: index
 tags:
   - index
   - journal
+sources:
+  - workspace/wiki-update-2026-04-10-lint-update-online
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-08
 updated: 2026-04-10
 summary: 阅读过程记录、覆盖审计与 wiki 维护日志的入口页。
 ---
@@ -30,3 +34,8 @@ summary: 阅读过程记录、覆盖审计与 wiki 维护日志的入口页。
 ## Segmentation Robustness Batch Ingest (2026-04-10)
 
 - [[journal/Segmentation Robustness Batch Ingest Plan 2026-04-10]]
+
+## Timeline Anchors
+
+- [[journal/2026-04-08]]
+- [[journal/2026-04-06]]

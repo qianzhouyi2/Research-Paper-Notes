@@ -1,4 +1,15 @@
-﻿# Are aligned neural networks adversarially aligned?
+---
+title: "Are aligned neural networks adversarially aligned"
+category: note
+tags:
+  - note
+sources:
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-10
+updated: 2026-04-10
+summary: "- 阅读日期：2026-04-08"
+---
+# Are aligned neural networks adversarially aligned?
 
 - 阅读日期：2026-04-08
 - 阅读状态：已读

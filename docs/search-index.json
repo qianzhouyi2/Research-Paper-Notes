@@ -7,11 +7,25 @@
     "summary": "GPT ST: Generative Pre Training of Spatio Temporal Graph Neural Networks GPT ST：时空图神经网络的生成预训练 摘要 时空预测技术（spatio temporal prediction）快速发展 时空预测（Spatio Temporal Prediction）是指对空间和时间上的变…"
   },
   {
+    "title": "2026-04-06",
+    "url": "journal/2026-04-06.html",
+    "path": "journal/2026-04-06.md",
+    "section": "journal",
+    "summary": "Timeline anchor page for links that reference the date 2026-04-06."
+  },
+  {
+    "title": "2026-04-08",
+    "url": "journal/2026-04-08.html",
+    "path": "journal/2026-04-08.md",
+    "section": "journal",
+    "summary": "Timeline anchor page for links that reference the date 2026-04-08."
+  },
+  {
     "title": "Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report",
     "url": "notes/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report.html",
     "path": "notes/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report.md",
     "section": "notes",
-    "summary": "﻿ Accessing GPT 4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self refine with LLaMa 3 8B: A Technical Report 阅读日期：2026 04 08 阅读状态：已读 标签： paper imported notion 相关方向…"
+    "summary": "﻿# Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B: A Technical Report"
   },
   {
     "title": "Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report",
@@ -39,7 +53,7 @@
     "url": "concepts/Adversarial Alignment Evaluation.html",
     "path": "concepts/Adversarial Alignment Evaluation.md",
     "section": "concepts",
-    "summary": "﻿ title: Adversarial Alignment Evaluation category: concept tags: concept llm safety adversarial attack evaluation sources: papers sources/Are aligned neural networks adversariall…"
+    "summary": "﻿---"
   },
   {
     "title": "Adversarial Attacks against LiDAR Semantic Segmentation in Autonomous Driving",
@@ -102,7 +116,7 @@
     "url": "notes/Amortizing intractable inference in large language models.html",
     "path": "notes/Amortizing intractable inference in large language models.md",
     "section": "notes",
-    "summary": "﻿ Amortizing intractable inference in large language models 阅读日期：2026 04 08 阅读状态：已读 标签： paper imported notion 相关方向：贝叶斯推断、GFlowNets、CoT 潜变量建模、受约束文本生成 阅读目的：理解“分布匹配微调”如何替代传统 MLE / PP…"
+    "summary": "﻿# Amortizing intractable inference in large language models"
   },
   {
     "title": "Amortizing intractable inference in large language models",
@@ -137,7 +151,7 @@
     "url": "notes/Are aligned neural networks adversarially aligned.html",
     "path": "notes/Are aligned neural networks adversarially aligned.md",
     "section": "notes",
-    "summary": "﻿ Are aligned neural networks adversarially aligned? 阅读日期：2026 04 08 阅读状态：已读 标签： paper imported notion 相关方向：LLM 对齐、对抗样本、越狱攻击、多模态安全 阅读目的：梳理“对齐模型是否在对抗输入下仍对齐”这个问题，并提取可复用的评估框架与实验结论 1.…"
+    "summary": "- 阅读日期：2026-04-08"
   },
   {
     "title": "Are aligned neural networks adversarially aligned?",
@@ -172,7 +186,7 @@
     "url": "concepts/Augmented Shortcut for Attention Blocks.html",
     "path": "concepts/Augmented Shortcut for Attention Blocks.md",
     "section": "concepts",
-    "summary": "﻿ title: Augmented Shortcut for Attention Blocks category: concept tags: concept llm architecture efficiency sources: papers sources/Research Paper Notes/PanGu π.md notes/PanGu pi…"
+    "summary": "﻿---"
   },
   {
     "title": "Benchmarking the Robustness of Semantic Segmentation Models (CVPR 2020)",
@@ -193,7 +207,7 @@
     "url": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.html",
     "path": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
     "section": "notes",
-    "summary": "﻿ Beyond Chain of Thought, Effective Graph of Thought Reasoning in Language Models 阅读日期：2026 04 08 阅读状态：已读 标签： paper imported notion 相关方向：推理增强、图结构表示、多模态推理、CoT 扩展 阅读目的：评估“图式思维表示”相对…"
+    "summary": "﻿# Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models"
   },
   {
     "title": "Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models",
@@ -228,7 +242,7 @@
     "url": "concepts/Cascaded Activation Nonlinearity Compensation.html",
     "path": "concepts/Cascaded Activation Nonlinearity Compensation.md",
     "section": "concepts",
-    "summary": "﻿ title: Cascaded Activation Nonlinearity Compensation category: concept tags: concept llm architecture nonlinearity sources: papers sources/Research Paper Notes/PanGu π.md notes/…"
+    "summary": "﻿---"
   },
   {
     "title": "Certified and Verified Robust Segmentation",
@@ -249,7 +263,7 @@
     "url": "notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.html",
     "path": "notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
     "section": "notes",
-    "summary": "﻿ Chain of Agents: Large Language Models Collaborating on Long Context Tasks 阅读日期：2026 04 08 阅读状态：已读 标签： paper imported notion 相关方向：长上下文建模、多智能体协作、推理效率、RAG 对比 阅读目的：验证多代理协作能否替代“单模型扩…"
+    "summary": "﻿# Chain of Agents: Large Language Models Collaborating on Long-Context Tasks"
   },
   {
     "title": "Chain of Agents Large Language Models Collaborating on Long-Context Tasks",
@@ -295,17 +309,17 @@
   },
   {
     "title": "CIF Continuous Integrate-and-Fire",
+    "url": "notes/CIF Continuous Integrate-and-Fire.html",
+    "path": "notes/CIF Continuous Integrate-and-Fire.md",
+    "section": "notes",
+    "summary": "- 阅读日期：2026-04-08"
+  },
+  {
+    "title": "CIF Continuous Integrate-and-Fire",
     "url": "references/CIF Continuous Integrate-and-Fire.html",
     "path": "references/CIF Continuous Integrate-and-Fire.md",
     "section": "references",
     "summary": "CIF 通过连续积分放电机制统一单调软对齐、边界定位与端到端训练，是语音序列建模的重要对齐方法。"
-  },
-  {
-    "title": "CIF: Continuous Integrate-and-Fire for End-to-End Speech Recognition",
-    "url": "notes/CIF Continuous Integrate-and-Fire.html",
-    "path": "notes/CIF Continuous Integrate-and-Fire.md",
-    "section": "notes",
-    "summary": "CIF: Continuous Integrate and Fire for End to End Speech Recognition 阅读日期：2026 04 08 阅读状态：已读 标签： paper asr alignment cif imported 相关方向：端到端语音识别、软单调对齐、流式识别 阅读目的：理解 CIF 如何统一对齐、边界定位与可…"
   },
   {
     "title": "CIF:用于端到端语音识别的连续积分放电机制",
@@ -333,7 +347,7 @@
     "url": "notes/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity.html",
     "path": "notes/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity.md",
     "section": "notes",
-    "summary": "﻿ ComplexityNet: Increasing LLM Inference Efficiency by Learning Task Complexity 阅读日期：2026 04 08 阅读状态：已读 标签： paper imported notion 相关方向：模型路由、推理成本优化、任务复杂度预测 阅读目的：评估“先估复杂度再分配模型”是否能显…"
+    "summary": "﻿# ComplexityNet: Increasing LLM Inference Efficiency by Learning Task Complexity"
   },
   {
     "title": "ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity",
@@ -347,14 +361,14 @@
     "url": "concepts/Composable Diffusion Generation.html",
     "path": "concepts/Composable Diffusion Generation.md",
     "section": "concepts",
-    "summary": "﻿ title: Composable Diffusion Generation category: concept tags: concept diffusion generation compositionality sources: notes/Compositional Visual Generation with Composable Diffu…"
+    "summary": "﻿---"
   },
   {
     "title": "Compositional Visual Generation with Composable Diffusion Models",
     "url": "notes/Compositional Visual Generation with Composable Diffusion Models.html",
     "path": "notes/Compositional Visual Generation with Composable Diffusion Models.md",
     "section": "notes",
-    "summary": "﻿ Compositional Visual Generation with Composable Diffusion Models 阅读日期：2026 04 08 阅读状态：已读 标签： paper imported notion 相关方向：可控生成、扩散模型、组合泛化 阅读目的：整理“推理时组合 score”这一路线在视觉生成中的可复用设计 1. 论文…"
+    "summary": "﻿# Compositional Visual Generation with Composable Diffusion Models"
   },
   {
     "title": "Compositional Visual Generation with Composable Diffusion Models",
@@ -396,7 +410,7 @@
     "url": "concepts/Continuous Integrate-and-Fire Alignment.html",
     "path": "concepts/Continuous Integrate-and-Fire Alignment.md",
     "section": "concepts",
-    "summary": "﻿ title: Continuous Integrate and Fire Alignment category: concept tags: concept asr alignment sequence modeling sources: notes/CIF Continuous Integrate and Fire.md created: 2026 …"
+    "summary": "﻿---"
   },
   {
     "title": "Data-Controlled Gating in Sequence Models",
@@ -459,7 +473,7 @@
     "url": "notes/Demystifying Chains, Trees, and Graphs of Thoughts.html",
     "path": "notes/Demystifying Chains, Trees, and Graphs of Thoughts.md",
     "section": "notes",
-    "summary": "Demystifying Chains, Trees, and Graphs of Thoughts 阅读日期：2026 04 08 阅读状态：已读 标签： paper imported notion 相关方向：Prompt Engineering、推理拓扑（Reasoning Topologies） 阅读目的：建立 CoT / ToT / GoT 等结构…"
+    "summary": "- 阅读日期：2026-04-08"
   },
   {
     "title": "Demystifying Chains, Trees, and Graphs of Thoughts",
@@ -613,7 +627,7 @@
     "url": "concepts/Feature Effective Rank Diagnostics.html",
     "path": "concepts/Feature Effective Rank Diagnostics.md",
     "section": "concepts",
-    "summary": "﻿ title: Feature Effective Rank Diagnostics category: concept tags: concept continual learning representation diagnostics sources: papers sources/Maintaining Plasticity in Deep Co…"
+    "summary": "﻿---"
   },
   {
     "title": "Federico Nesti",
@@ -655,7 +669,7 @@
     "url": "notes/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step.html",
     "path": "notes/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step.md",
     "section": "notes",
-    "summary": "﻿ From Explicit CoT to Implicit CoT: Learning to Internalize CoT Step by Step 阅读日期：2026 04 08 阅读状态：已读 标签： paper imported notion 相关方向：LLM 推理、CoT 内化、课程学习 阅读目的：梳理从显式 CoT 到隐式 CoT 的训练路…"
+    "summary": "﻿# From Explicit CoT to Implicit CoT: Learning to Internalize CoT Step by Step"
   },
   {
     "title": "From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step",
@@ -669,7 +683,7 @@
     "url": "concepts/GFlowNet Posterior Sampling for Text Generation.html",
     "path": "concepts/GFlowNet Posterior Sampling for Text Generation.md",
     "section": "concepts",
-    "summary": "﻿ title: GFlowNet Posterior Sampling for Text Generation category: concept tags: concept llm sampling inference sources: notes/Amortizing intractable inference in large language m…"
+    "summary": "﻿---"
   },
   {
     "title": "Giorgio Buttazzo",
@@ -701,17 +715,17 @@
   },
   {
     "title": "GPT-ST Spatio-Temporal Pretraining",
+    "url": "notes/GPT-ST Spatio-Temporal Pretraining.html",
+    "path": "notes/GPT-ST Spatio-Temporal Pretraining.md",
+    "section": "notes",
+    "summary": "- 阅读日期：2026-04-08"
+  },
+  {
+    "title": "GPT-ST Spatio-Temporal Pretraining",
     "url": "references/GPT-ST Spatio-Temporal Pretraining.html",
     "path": "references/GPT-ST Spatio-Temporal Pretraining.md",
     "section": "references",
     "summary": "GPT-ST 通过结构感知预训练学习可迁移时空关系，在多任务上带来稳定下游性能增益。"
-  },
-  {
-    "title": "GPT-ST: Generative Pre-Training of Spatio-Temporal Graph Neural Networks",
-    "url": "notes/GPT-ST Spatio-Temporal Pretraining.html",
-    "path": "notes/GPT-ST Spatio-Temporal Pretraining.md",
-    "section": "notes",
-    "summary": "GPT ST: Generative Pre Training of Spatio Temporal Graph Neural Networks 阅读日期：2026 04 08 阅读状态：已读 标签： paper spatio temporal gnn pretraining imported 相关方向：时空预测、图神经网络预训练、结构感知掩码 阅读目的：…"
   },
   {
     "title": "Graph of Thoughts Reasoning",
@@ -725,7 +739,7 @@
     "url": "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.html",
     "path": "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
     "section": "notes",
-    "summary": "﻿ Graph of Thoughts: Solving Elaborate Problems with Large Language Models 阅读日期：2026 04 08 阅读状态：已读 标签： paper imported notion 相关方向：结构化推理、图搜索、LLM 规划 阅读目的：系统整理 GoT 的图推理范式、系统架构与任务实证 1…"
+    "summary": "﻿# Graph of Thoughts: Solving Elaborate Problems with Large Language Models"
   },
   {
     "title": "Graph of Thoughts Solving Elaborate Problems with Large Language Models",
@@ -767,7 +781,7 @@
     "url": "concepts/Hierarchical Spatio-Temporal Hypergraph Encoding.html",
     "path": "concepts/Hierarchical Spatio-Temporal Hypergraph Encoding.md",
     "section": "concepts",
-    "summary": "﻿ title: Hierarchical Spatio Temporal Hypergraph Encoding category: concept tags: concept spatio temporal hypergraph graph learning sources: papers sources/Research Paper Notes/GP…"
+    "summary": "﻿---"
   },
   {
     "title": "Hoang-Dung Tran",
@@ -781,7 +795,7 @@
     "url": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.html",
     "path": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
     "section": "notes",
-    "summary": "﻿ Hyena Hierarchy: Towards Larger Convolutional Language Models 阅读日期：2026 04 08 阅读状态：已读 标签： paper long context convolution attention alternative 相关方向：长序列建模、次二次复杂度、卷积式语言模型 阅读目的：理解 …"
+    "summary": "﻿# Hyena Hierarchy: Towards Larger Convolutional Language Models"
   },
   {
     "title": "Hyena Hierarchy Towards Larger Convolutional Language Models",
@@ -795,21 +809,21 @@
     "url": "concepts/Hyena Operator.html",
     "path": "concepts/Hyena Operator.md",
     "section": "concepts",
-    "summary": "﻿ title: Hyena Operator category: concept tags: concept long context convolution sequence modeling sources: papers sources/Hyena Hierarchy 2302.10866/main.tex papers sources/2302.…"
+    "summary": "﻿---"
   },
   {
     "title": "Implicit Chain-of-Thought Internalization",
     "url": "concepts/Implicit Chain-of-Thought Internalization.html",
     "path": "concepts/Implicit Chain-of-Thought Internalization.md",
     "section": "concepts",
-    "summary": "﻿ title: Implicit Chain of Thought Internalization category: concept tags: concept llm reasoning cot sources: notes/From Explicit CoT to Implicit CoT Learning to Internalize CoT S…"
+    "summary": "﻿---"
   },
   {
     "title": "Implicit Long Convolution Parameterization",
     "url": "concepts/Implicit Long Convolution Parameterization.html",
     "path": "concepts/Implicit Long Convolution Parameterization.md",
     "section": "concepts",
-    "summary": "﻿ title: Implicit Long Convolution Parameterization category: concept tags: concept long context convolution architecture sources: papers sources/Hyena Hierarchy 2302.10866/3 hyen…"
+    "summary": "﻿---"
   },
   {
     "title": "Improved Noise and Attack Robustness of Semantic Segmentation Models with Self-Supervised Depth Estimation",
@@ -914,7 +928,7 @@
     "url": "concepts/Known-Solvable Attack Calibration.html",
     "path": "concepts/Known-Solvable Attack Calibration.md",
     "section": "concepts",
-    "summary": "﻿ title: Known Solvable Attack Calibration category: concept tags: concept llm safety adversarial attack evaluation sources: papers sources/Are aligned neural networks adversarial…"
+    "summary": "﻿---"
   },
   {
     "title": "Krishna Kanth Nakka",
@@ -935,7 +949,7 @@
     "url": "notes/Language Models Represent Space and Time.html",
     "path": "notes/Language Models Represent Space and Time.md",
     "section": "notes",
-    "summary": "﻿ Language Models Represent Space and Time 阅读日期：2026 04 08 阅读状态：已读 标签： paper llm world model probing imported 相关方向：世界模型、可解释性、表示探针 阅读目的：沉淀“LLM 时空表示”证据链并保留全部图示 1. 论文信息 题目：Language M…"
+    "summary": "﻿# Language Models Represent Space and Time"
   },
   {
     "title": "Language Models Represent Space and Time",
@@ -984,7 +998,7 @@
     "url": "concepts/Linear Probe World-Model Evaluation.html",
     "path": "concepts/Linear Probe World-Model Evaluation.md",
     "section": "concepts",
-    "summary": "﻿ title: Linear Probe World Model Evaluation category: concept tags: concept llm interpretability probing sources: papers sources/Research Paper Notes/LLM体现出时空概念.md notes/Language…"
+    "summary": "﻿---"
   },
   {
     "title": "Linhao Dong",
@@ -1033,7 +1047,7 @@
     "url": "concepts/LLM Nonlinearity Compensation.html",
     "path": "concepts/LLM Nonlinearity Compensation.md",
     "section": "concepts",
-    "summary": "﻿ title: LLM Nonlinearity Compensation category: concept tags: concept llm architecture efficiency sources: notes/PanGu pi Nonlinearity Compensation.md created: 2026 04 08 updated…"
+    "summary": "﻿---"
   },
   {
     "title": "LLM Reasoning Search and Verification",
@@ -1054,7 +1068,7 @@
     "url": "concepts/Logical Operator Composition in Diffusion Models.html",
     "path": "concepts/Logical Operator Composition in Diffusion Models.md",
     "section": "concepts",
-    "summary": "﻿ title: Logical Operator Composition in Diffusion Models category: concept tags: concept diffusion multimodal generation sources: notes/Compositional Visual Generation with Compo…"
+    "summary": "﻿---"
   },
   {
     "title": "Long-Context Architecture Without Full Attention",
@@ -1068,7 +1082,7 @@
     "url": "notes/LoRA Low-Rank Adaptation of Large Language Models.html",
     "path": "notes/LoRA Low-Rank Adaptation of Large Language Models.md",
     "section": "notes",
-    "summary": "﻿ LoRA: Low Rank Adaptation of Large Language Models 阅读日期：2026 04 08 阅读状态：已读 标签： paper imported notion 相关方向：参数高效微调（PEFT）、大模型部署优化 阅读目的：理解 LoRA 的核心机制、适用边界和与 Adapter/全量微调的取舍 1. 论文信息 …"
+    "summary": "﻿# LoRA: Low-Rank Adaptation of Large Language Models"
   },
   {
     "title": "LoRA Low-Rank Adaptation of Large Language Models",
@@ -1082,14 +1096,14 @@
     "url": "concepts/Loss of Plasticity in Continual Learning.html",
     "path": "concepts/Loss of Plasticity in Continual Learning.md",
     "section": "concepts",
-    "summary": "﻿ title: Loss of Plasticity in Continual Learning category: concept tags: concept continual learning optimization representation sources: papers sources/Maintaining Plasticity in …"
+    "summary": "﻿---"
   },
   {
     "title": "Low-Rank Adaptation for LLMs",
     "url": "concepts/Low-Rank Adaptation for LLMs.html",
     "path": "concepts/Low-Rank Adaptation for LLMs.md",
     "section": "concepts",
-    "summary": "﻿ title: Low Rank Adaptation for LLMs category: concept tags: concept llm finetuning parameter efficient sources: notes/LoRA Low Rank Adaptation of Large Language Models.md create…"
+    "summary": "﻿---"
   },
   {
     "title": "Lu Su",
@@ -1131,7 +1145,7 @@
     "url": "notes/Maintaining Plasticity in Deep Continual Learning.html",
     "path": "notes/Maintaining Plasticity in Deep Continual Learning.md",
     "section": "notes",
-    "summary": "﻿ Maintaining Plasticity in Deep Continual Learning 阅读日期：2026 04 08 阅读状态：已读 标签： paper imported notion continual learning plasticity 相关方向：持续学习、优化与表征退化、深度强化学习 阅读目的：系统整理“可塑性丧失”问题、理解 …"
+    "summary": "﻿# Maintaining Plasticity in Deep Continual Learning"
   },
   {
     "title": "Maintaining Plasticity in Deep Continual Learning",
@@ -1180,7 +1194,7 @@
     "url": "notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.html",
     "path": "notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md",
     "section": "notes",
-    "summary": "﻿ Math Shepherd: Verify and Reinforce LLMs Step by step without Human Annotations 阅读日期：2026 04 08 阅读状态：已读 标签： paper reasoning process reward model verification rl 相关方向：数学推理、过程监督、奖…"
+    "summary": "﻿# Math-Shepherd: Verify and Reinforce LLMs Step-by-step without Human Annotations"
   },
   {
     "title": "Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations",
@@ -1222,14 +1236,14 @@
     "url": "concepts/Mean-Centered Feature Sparsification.html",
     "path": "concepts/Mean-Centered Feature Sparsification.md",
     "section": "concepts",
-    "summary": "﻿ title: Mean Centered Feature Sparsification category: concept tags: concept adversarial robustness sparsification post training sources: papers sources/MeanSparse 2406.05927/mai…"
+    "summary": "﻿---"
   },
   {
     "title": "MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature",
     "url": "notes/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature.html",
     "path": "notes/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature.md",
     "section": "notes",
-    "summary": "﻿ MeanSparse: Post Training Robustness Enhancement Through Mean Centered Feature Sparsification 填写要求： 1. 尽量使用短句，不写空话。 2. 每个要点优先回答“做了什么 / 为什么 / 证据是什么”。 3. 不确定的内容明确写“待确认”，不要猜。 4. 尽量…"
+    "summary": "﻿# MeanSparse: Post-Training Robustness Enhancement Through Mean-Centered Feature Sparsification"
   },
   {
     "title": "MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature",
@@ -1271,14 +1285,14 @@
     "url": "concepts/Mixture-of-Agents Aggregation.html",
     "path": "concepts/Mixture-of-Agents Aggregation.md",
     "section": "concepts",
-    "summary": "﻿ title: Mixture of Agents Aggregation category: concept tags: concept llm multi agent orchestration sources: notes/Mixture of Agents Enhances Large Language Model Capabilities.md…"
+    "summary": "﻿---"
   },
   {
     "title": "Mixture-of-Agents Enhances Large Language Model Capabilities",
     "url": "notes/Mixture-of-Agents Enhances Large Language Model Capabilities.html",
     "path": "notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
     "section": "notes",
-    "summary": "﻿ Mixture of Agents: Enhances Large Language Model Capabilities 阅读日期：2026 04 08 阅读状态：已读 标签： paper llm ensemble multi agent reasoning 相关方向：模型集成、多智能体协作、推理增强 阅读目的：梳理 MoA 分层协作机制、效果来源与…"
+    "summary": "﻿# Mixture-of-Agents: Enhances Large Language Model Capabilities"
   },
   {
     "title": "Mixture-of-Agents Enhances Large Language Model Capabilities",
@@ -1306,7 +1320,7 @@
     "url": "notes/Monte Carlo Tree Search A Review of Recent Modifications and Applications.html",
     "path": "notes/Monte Carlo Tree Search A Review of Recent Modifications and Applications.md",
     "section": "notes",
-    "summary": "﻿ Monte Carlo Tree Search: A Review of Recent Modifications and Applications 阅读日期：2026 04 08 阅读状态：已读 标签： paper imported notion 相关方向：MCTS、树搜索、序列决策、搜索 学习结合 阅读目的：补齐 MCTS 基础机制与选择策略笔记，…"
+    "summary": "﻿# Monte Carlo Tree Search: A Review of Recent Modifications and Applications"
   },
   {
     "title": "Monte Carlo Tree Search A Review of Recent Modifications and Applications",
@@ -1320,14 +1334,14 @@
     "url": "concepts/Monte Carlo Tree Search for LLM Reasoning.html",
     "path": "concepts/Monte Carlo Tree Search for LLM Reasoning.md",
     "section": "concepts",
-    "summary": "﻿ title: Monte Carlo Tree Search for LLM Reasoning category: concept tags: concept llm reasoning mcts sources: notes/Monte Carlo Tree Search A Review of Recent Modifications and A…"
+    "summary": "﻿---"
   },
   {
     "title": "Monte Carlo Tree Self-Refine",
     "url": "concepts/Monte Carlo Tree Self-Refine.html",
     "path": "concepts/Monte Carlo Tree Self-Refine.md",
     "section": "concepts",
-    "summary": "﻿ title: Monte Carlo Tree Self Refine category: concept tags: concept llm reasoning mcts sources: notes/Accessing GPT 4 level Mathematical Olympiad Solutions via Monte Carlo Tree …"
+    "summary": "﻿---"
   },
   {
     "title": "Multi-Agent LLM Collaboration Landscape",
@@ -1341,28 +1355,28 @@
     "url": "concepts/Multi-Agent LLM Orchestration.html",
     "path": "concepts/Multi-Agent LLM Orchestration.md",
     "section": "concepts",
-    "summary": "﻿ title: Multi Agent LLM Orchestration category: concept tags: concept llm multi agent orchestration sources: notes/Chain of Agents Large Language Models Collaborating on Long Con…"
+    "summary": "﻿---"
   },
   {
     "title": "Multimodal Adversarial Image Prompting",
     "url": "concepts/Multimodal Adversarial Image Prompting.html",
     "path": "concepts/Multimodal Adversarial Image Prompting.md",
     "section": "concepts",
-    "summary": "﻿ title: Multimodal Adversarial Image Prompting category: concept tags: concept multimodal adversarial attack llm safety sources: papers sources/Are aligned neural networks advers…"
+    "summary": "﻿---"
   },
   {
     "title": "Multimodal Chain-of-Thought Reasoning",
     "url": "concepts/Multimodal Chain-of-Thought Reasoning.html",
     "path": "concepts/Multimodal Chain-of-Thought Reasoning.md",
     "section": "concepts",
-    "summary": "﻿ title: Multimodal Chain of Thought Reasoning category: concept tags: concept multimodal reasoning cot sources: notes/Multimodal Chain of Thought Reasoning in Language Models.md …"
+    "summary": "﻿---"
   },
   {
     "title": "Multimodal Chain-of-Thought Reasoning in Language Models",
     "url": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.html",
     "path": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
     "section": "notes",
-    "summary": "﻿ Multimodal Chain of Thought Reasoning in Language Models 阅读日期：2026 04 08 阅读状态：已读 标签： paper multimodal cot reasoning vision language 相关方向：多模态推理、视觉 语言融合、可解释推理链 阅读目的：梳理 MM CoT 两阶段框…"
+    "summary": "﻿# Multimodal Chain-of-Thought Reasoning in Language Models"
   },
   {
     "title": "Multimodal Chain-of-Thought Reasoning in Language Models",
@@ -1495,7 +1509,7 @@
     "url": "notes/PanGu-pi Nonlinearity Compensation.html",
     "path": "notes/PanGu-pi Nonlinearity Compensation.md",
     "section": "notes",
-    "summary": "﻿ PanGu π: Enhancing Language Model Architectures via Nonlinearity Compensation 阅读日期：2026 04 08 阅读状态：已读 标签： paper llm architecture nonlinearity imported 相关方向：Transformer 架构改造、特征坍塌…"
+    "summary": "﻿# PanGu-π: Enhancing Language Model Architectures via Nonlinearity Compensation"
   },
   {
     "title": "PanGu-pi Nonlinearity Compensation",
@@ -1530,7 +1544,7 @@
     "url": "concepts/Parameter-Efficient Fine-Tuning for LLMs.html",
     "path": "concepts/Parameter-Efficient Fine-Tuning for LLMs.md",
     "section": "concepts",
-    "summary": "﻿ title: Parameter Efficient Fine Tuning for LLMs category: concept tags: concept llm adaptation efficiency sources: notes/LoRA Low Rank Adaptation of Large Language Models.md not…"
+    "summary": "﻿---"
   },
   {
     "title": "Parameter-Efficient LLM Adaptation and Inference",
@@ -1586,7 +1600,7 @@
     "url": "concepts/Perturbation Interaction.html",
     "path": "concepts/Perturbation Interaction.md",
     "section": "concepts",
-    "summary": "﻿ title: Perturbation Interaction category: concept tags: concept adversarial attack optimization semantic segmentation perturbation sources: papers sources/Delving into Decision …"
+    "summary": "﻿---"
   },
   {
     "title": "Peter Schlicht",
@@ -1642,7 +1656,7 @@
     "url": "concepts/Process-Supervised Step Verification.html",
     "path": "concepts/Process-Supervised Step Verification.md",
     "section": "concepts",
-    "summary": "﻿ title: Process Supervised Step Verification category: concept tags: concept llm reasoning verification sources: notes/Math Shepherd Verify and Reinforce LLMs Step by step withou…"
+    "summary": "﻿---"
   },
   {
     "title": "Projects 索引",
@@ -1656,14 +1670,14 @@
     "url": "concepts/Prompt-Robust Representation Probing.html",
     "path": "concepts/Prompt-Robust Representation Probing.md",
     "section": "concepts",
-    "summary": "﻿ title: Prompt Robust Representation Probing category: concept tags: concept llm probing robustness sources: notes/Language Models Represent Space and Time.md created: 2026 04 08…"
+    "summary": "﻿---"
   },
   {
     "title": "Proximal L0 Feature Sparsification",
     "url": "concepts/Proximal L0 Feature Sparsification.html",
     "path": "concepts/Proximal L0 Feature Sparsification.md",
     "section": "concepts",
-    "summary": "﻿ title: Proximal L0 Feature Sparsification category: concept tags: concept robustness optimization sparsification sources: notes/MeanSparse Post Training Robustness Enhancement T…"
+    "summary": "﻿---"
   },
   {
     "title": "Proximal Splitting Adversarial Attack for Semantic Segmentation",
@@ -1705,7 +1719,7 @@
     "url": "concepts/Quantity-Aware Emission Control in CIF.html",
     "path": "concepts/Quantity-Aware Emission Control in CIF.md",
     "section": "concepts",
-    "summary": "﻿ title: Quantity Aware Emission Control in CIF category: concept tags: concept asr alignment sequence modeling sources: papers sources/Research Paper Notes/CIF.md notes/CIF Conti…"
+    "summary": "﻿---"
   },
   {
     "title": "Query-Efficient Attack Evaluation",
@@ -1768,7 +1782,7 @@
     "url": "concepts/Removal Smoothing for CoT Internalization.html",
     "path": "concepts/Removal Smoothing for CoT Internalization.md",
     "section": "concepts",
-    "summary": "﻿ title: Removal Smoothing for CoT Internalization category: concept tags: concept llm cot optimization sources: notes/From Explicit CoT to Implicit CoT Learning to Internalize Co…"
+    "summary": "﻿---"
   },
   {
     "title": "Representation Capacity and Effective Rank",
@@ -1957,7 +1971,7 @@
     "url": "concepts/Selective Neuron Reinitialization.html",
     "path": "concepts/Selective Neuron Reinitialization.md",
     "section": "concepts",
-    "summary": "﻿ title: Selective Neuron Reinitialization category: concept tags: concept continual learning optimization plasticity sources: papers sources/Maintaining Plasticity in Deep Contin…"
+    "summary": "﻿---"
   },
   {
     "title": "Semantic Segmentation",
@@ -2041,14 +2055,14 @@
     "url": "concepts/Soft Monotonic Alignment for Sequence Transduction.html",
     "path": "concepts/Soft Monotonic Alignment for Sequence Transduction.md",
     "section": "concepts",
-    "summary": "﻿ title: Soft Monotonic Alignment for Sequence Transduction category: concept tags: concept alignment sequence asr sources: notes/CIF Continuous Integrate and Fire.md created: 202…"
+    "summary": "﻿---"
   },
   {
     "title": "Spatio-Temporal Pretraining for Language Models",
     "url": "concepts/Spatio-Temporal Pretraining for Language Models.html",
     "path": "concepts/Spatio-Temporal Pretraining for Language Models.md",
     "section": "concepts",
-    "summary": "﻿ title: Spatio Temporal Pretraining for Language Models category: concept tags: concept llm spatio temporal pretraining sources: notes/GPT ST Spatio Temporal Pretraining.md notes…"
+    "summary": "﻿---"
   },
   {
     "title": "Spatio-Temporal Representation in Language Models",
@@ -2104,14 +2118,14 @@
     "url": "concepts/Success-Rate Based Complexity Labeling.html",
     "path": "concepts/Success-Rate Based Complexity Labeling.md",
     "section": "concepts",
-    "summary": "﻿ title: Success Rate Based Complexity Labeling category: concept tags: concept llm routing evaluation sources: notes/ComplexityNet Increasing LLM Inference Efficiency by Learning…"
+    "summary": "﻿---"
   },
   {
     "title": "Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models",
     "url": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.html",
     "path": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
     "section": "notes",
-    "summary": "﻿ Synergy of Thoughts: Eliciting Efficient Reasoning in Hybrid Language Models 阅读日期：2026 04 08 阅读状态：已读 标签： paper reasoning hybrid llm cost efficiency multi agent 相关方向：高效推理、双系统认知、混…"
+    "summary": "﻿# Synergy-of-Thoughts: Eliciting Efficient Reasoning in Hybrid Language Models"
   },
   {
     "title": "Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models",
@@ -2132,7 +2146,7 @@
     "url": "concepts/Task Complexity-Aware Inference Budgeting.html",
     "path": "concepts/Task Complexity-Aware Inference Budgeting.md",
     "section": "concepts",
-    "summary": "﻿ title: Task Complexity Aware Inference Budgeting category: concept tags: concept llm inference efficiency sources: notes/ComplexityNet Increasing LLM Inference Efficiency by Lea…"
+    "summary": "﻿---"
   },
   {
     "title": "Taylor T. Johnson",
@@ -2167,7 +2181,7 @@
     "url": "concepts/Thought Structure Taxonomy.html",
     "path": "concepts/Thought Structure Taxonomy.md",
     "section": "concepts",
-    "summary": "﻿ title: Thought Structure Taxonomy category: concept tags: concept llm reasoning taxonomy sources: notes/Demystifying Chains, Trees, and Graphs of Thoughts.md created: 2026 04 08…"
+    "summary": "﻿---"
   },
   {
     "title": "Tim Fingscheidt",
@@ -2209,7 +2223,7 @@
     "url": "notes/Tree of Thoughts Deliberate Problem Solving with Large Language Models.html",
     "path": "notes/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md",
     "section": "notes",
-    "summary": "﻿ Tree of Thoughts: Deliberate Problem Solving with Large Language Models 阅读日期：2026 04 08 阅读状态：已读 标签： paper imported notion 相关方向：LLM 推理、搜索增强推理、规划与回溯 阅读目的：系统整理 ToT 框架的方法细节、实验设置与可复用…"
+    "summary": "﻿# Tree of Thoughts: Deliberate Problem Solving with Large Language Models"
   },
   {
     "title": "Tree of Thoughts Deliberate Problem Solving with Large Language Models",
@@ -2223,7 +2237,7 @@
     "url": "concepts/Tree of Thoughts Reasoning.html",
     "path": "concepts/Tree of Thoughts Reasoning.md",
     "section": "concepts",
-    "summary": "﻿ title: Tree of Thoughts Reasoning category: concept tags: concept llm reasoning search sources: notes/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md c…"
+    "summary": "﻿---"
   },
   {
     "title": "Tri Dao",
@@ -2237,7 +2251,7 @@
     "url": "concepts/Two-Stage Multimodal CoT Pipeline.html",
     "path": "concepts/Two-Stage Multimodal CoT Pipeline.md",
     "section": "concepts",
-    "summary": "﻿ title: Two Stage Multimodal CoT Pipeline category: concept tags: concept multimodal cot reasoning sources: notes/Multimodal Chain of Thought Reasoning in Language Models.md crea…"
+    "summary": "﻿---"
   },
   {
     "title": "Umair Rasheed",
@@ -2307,7 +2321,7 @@
     "url": "concepts/Wiki Append Update Playbook.html",
     "path": "concepts/Wiki Append Update Playbook.md",
     "section": "concepts",
-    "summary": "﻿ title: Wiki Append Update Playbook category: concept tags: concept wiki workflow ingest sources: workspace/wiki update 2026 04 08 created: 2026 04 08 updated: 2026 04 10 summary…"
+    "summary": "﻿---"
   },
   {
     "title": "Wiki Coverage Audit 2026-04-08",

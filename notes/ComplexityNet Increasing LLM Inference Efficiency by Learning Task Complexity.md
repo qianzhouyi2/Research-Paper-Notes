@@ -1,4 +1,15 @@
-﻿# ComplexityNet: Increasing LLM Inference Efficiency by Learning Task Complexity
+---
+title: "ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity"
+category: note
+tags:
+  - note
+sources:
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-10
+updated: 2026-04-10
+summary: "﻿# ComplexityNet: Increasing LLM Inference Efficiency by Learning Task Complexity"
+---
+# ComplexityNet: Increasing LLM Inference Efficiency by Learning Task Complexity
 
 - 阅读日期：2026-04-08
 - 阅读状态：已读

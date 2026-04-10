@@ -1,0 +1,121 @@
+{
+  "generated_at": "2026-04-10T02:59:31.046914+08:00",
+  "subset_sources": [
+    "papers_sources/semantic_segmentation_robustness_20260409",
+    "workspace/wiki-ingest-2026-04-10-seg-robustness-batches",
+    "workspace/wiki-update-2026-04-10-seg-robustness-deepening",
+    "workspace/wiki-update-2026-04-10-seg-robustness-structure-pass"
+  ],
+  "subset_pages": 135,
+  "counts": {
+    "orphans": 0,
+    "broken_wikilinks": 10,
+    "missing_frontmatter": 7,
+    "missing_summary": 0
+  },
+  "orphans": [],
+  "broken_wikilinks": [
+    {
+      "file": "index.md",
+      "target": "papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation_zh",
+      "raw": "papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation_zh"
+    },
+    {
+      "file": "index.md",
+      "target": "papers_sources",
+      "raw": "papers_sources"
+    },
+    {
+      "file": "index.md",
+      "target": "Templates/论文阅读模板",
+      "raw": "Templates/论文阅读模板|论文阅读模板"
+    },
+    {
+      "file": "index.md",
+      "target": "papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation_zh",
+      "raw": "papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation_zh"
+    },
+    {
+      "file": "index.md",
+      "target": "papers_sources",
+      "raw": "papers_sources"
+    },
+    {
+      "file": "index.md",
+      "target": "notes",
+      "raw": "notes"
+    },
+    {
+      "file": "journal/Segmentation Robustness Batch Ingest Plan 2026-04-10.md",
+      "target": "papers_sources/semantic_segmentation_robustness_20260409/download_report",
+      "raw": "papers_sources/semantic_segmentation_robustness_20260409/download_report"
+    },
+    {
+      "file": "journal/Semantic Segmentation Robustness Corpus Update 2026-04-09.md",
+      "target": "papers_sources/semantic_segmentation_robustness_20260409/download_report",
+      "raw": "papers_sources/semantic_segmentation_robustness_20260409/download_report"
+    },
+    {
+      "file": "synthesis/Semantic Segmentation Robustness Corpus 2019-2026.md",
+      "target": "papers_sources/semantic_segmentation_robustness_20260409/download_report",
+      "raw": "papers_sources/semantic_segmentation_robustness_20260409/download_report"
+    },
+    {
+      "file": "synthesis/Semantic Segmentation Robustness Corpus 2019-2026.md",
+      "target": "papers_sources/semantic_segmentation_robustness_20260409/download_report",
+      "raw": "papers_sources/semantic_segmentation_robustness_20260409/download_report"
+    }
+  ],
+  "missing_frontmatter": [
+    {
+      "file": "concepts/index.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    },
+    {
+      "file": "entities/index.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    },
+    {
+      "file": "index.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    },
+    {
+      "file": "journal/index.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    },
+    {
+      "file": "log.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    },
+    {
+      "file": "references/index.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    },
+    {
+      "file": "synthesis/index.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    }
+  ],
+  "missing_summary": []
+}

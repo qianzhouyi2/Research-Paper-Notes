@@ -6,8 +6,11 @@ tags:
   - wiki
   - workflow
   - audit
-updated: 2026-04-09
+updated: 2026-04-10
 summary: Authoritative canonical tag vocabulary, usage rules, and migration guidance for this vault.
+sources:
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-09
 ---
 
 # Tag Taxonomy

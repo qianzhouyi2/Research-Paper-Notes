@@ -1,6 +1,17 @@
-﻿# Mixture-of-Agents: Enhances Large Language Model Capabilities
+---
+title: "Mixture-of-Agents Enhances Large Language Model Capabilities"
+category: note
+tags:
+  - note
+sources:
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-10
+updated: 2026-04-10
+summary: "﻿# Mixture-of-Agents: Enhances Large Language Model Capabilities"
+---
+# Mixture-of-Agents: Enhances Large Language Model Capabilities
 
-- 阅读日期：[[2026-04-08]]
+- 阅读日期：[[journal/2026-04-08]]
 - 阅读状态：已读
 - 标签：#paper #llm #ensemble #multi-agent #reasoning
 - 相关方向：模型集成、多智能体协作、推理增强

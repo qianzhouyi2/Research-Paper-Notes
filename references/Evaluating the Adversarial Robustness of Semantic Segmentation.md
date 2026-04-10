@@ -30,8 +30,8 @@ provenance:
 ## Metadata
 
 - Year: 2023
-- Venue: ECCV
-- Verification source: arxiv
+- Venue: arXiv preprint (with related ECCV 2024 follow-up)
+- Verification source: arxiv+ecva
 - Verified title: On Evaluating the Adversarial Robustness of Semantic Segmentation Models
 
 ## Problem and Method (From Extracted Evidence)
@@ -63,7 +63,7 @@ provenance:
 
 ## Linked Author Entities
 
-- Author entities pending for this paper. ^[ambiguous]
+- Verified authors (arXiv metadata): Levente Halmosi; Mark Jelasity.
 
 ## Linked Concepts and Synthesis
 
@@ -74,5 +74,6 @@ provenance:
 ## Online Verification Notes
 
 - Primary verification link: https://arxiv.org/abs/2306.14217
+- Related ECCV 2024 follow-up line: https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/10111_ECCV_2024_paper.php
 - Local artifacts are stored under `papers_sources/semantic_segmentation_robustness_20260409`.
 

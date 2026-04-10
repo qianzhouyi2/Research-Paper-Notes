@@ -1,6 +1,17 @@
+---
+title: "GPT-ST Spatio-Temporal Pretraining"
+category: note
+tags:
+  - note
+sources:
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-10
+updated: 2026-04-10
+summary: "- 阅读日期：2026-04-08"
+---
 # GPT-ST: Generative Pre-Training of Spatio-Temporal Graph Neural Networks
 
-- 阅读日期：[[2026-04-08]]
+- 阅读日期：[[journal/2026-04-08]]
 - 阅读状态：已读
 - 标签：#paper #spatio-temporal #gnn #pretraining #imported
 - 相关方向：时空预测、图神经网络预训练、结构感知掩码

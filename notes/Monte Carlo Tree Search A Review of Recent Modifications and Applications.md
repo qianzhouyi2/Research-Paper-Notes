@@ -1,4 +1,15 @@
-﻿# Monte Carlo Tree Search: A Review of Recent Modifications and Applications
+---
+title: "Monte Carlo Tree Search A Review of Recent Modifications and Applications"
+category: note
+tags:
+  - note
+sources:
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-10
+updated: 2026-04-10
+summary: "﻿# Monte Carlo Tree Search: A Review of Recent Modifications and Applications"
+---
+# Monte Carlo Tree Search: A Review of Recent Modifications and Applications
 
 - 阅读日期：2026-04-08
 - 阅读状态：已读

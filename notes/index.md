@@ -4,8 +4,11 @@ category: index
 tags:
   - index
   - note
-updated: 2026-04-08
+updated: 2026-04-10
 summary: 汇总当前论文阅读笔记与导入索引页面，append ingest 已覆盖 notes 全目录。
+sources:
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-08
 ---
 
 # Notes 索引

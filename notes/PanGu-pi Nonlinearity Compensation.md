@@ -1,4 +1,15 @@
-﻿# PanGu-π: Enhancing Language Model Architectures via Nonlinearity Compensation
+---
+title: "PanGu-pi Nonlinearity Compensation"
+category: note
+tags:
+  - note
+sources:
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-10
+updated: 2026-04-10
+summary: "﻿# PanGu-π: Enhancing Language Model Architectures via Nonlinearity Compensation"
+---
+# PanGu-π: Enhancing Language Model Architectures via Nonlinearity Compensation
 
 - 阅读日期：2026-04-08
 - 阅读状态：已读

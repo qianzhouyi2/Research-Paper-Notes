@@ -30,7 +30,7 @@ provenance:
 ## Metadata
 
 - Year: 2023
-- Venue: PDF
+- Venue: arXiv preprint
 - Verification source: arxiv
 - Verified title: Uncertainty-based Detection of Adversarial Attacks in Semantic Segmentation
 
@@ -59,7 +59,7 @@ provenance:
 
 ## Linked Author Entities
 
-- Author entities pending for this paper. ^[ambiguous]
+- Verified authors (arXiv metadata): Kira Maag; Asja Fischer.
 
 ## Linked Concepts and Synthesis
 

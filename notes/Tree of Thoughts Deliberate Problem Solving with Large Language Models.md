@@ -1,6 +1,17 @@
-﻿# Tree of Thoughts: Deliberate Problem Solving with Large Language Models
+---
+title: "Tree of Thoughts Deliberate Problem Solving with Large Language Models"
+category: note
+tags:
+  - note
+sources:
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-10
+updated: 2026-04-10
+summary: "﻿# Tree of Thoughts: Deliberate Problem Solving with Large Language Models"
+---
+# Tree of Thoughts: Deliberate Problem Solving with Large Language Models
 
-- 阅读日期：[[2026-04-08]]
+- 阅读日期：[[journal/2026-04-08]]
 - 阅读状态：已读
 - 标签：#paper #imported #notion
 - 相关方向：LLM 推理、搜索增强推理、规划与回溯

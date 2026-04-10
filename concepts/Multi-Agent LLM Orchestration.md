@@ -1,4 +1,15 @@
-﻿---
+---
+title: "Multi-Agent LLM Orchestration"
+category: concept
+tags:
+  - concept
+sources:
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-10
+updated: 2026-04-10
+summary: "﻿---"
+---
+---
 title: Multi-Agent LLM Orchestration
 category: concept
 tags:

@@ -1,0 +1,1168 @@
+{
+  "generated_at": "2026-04-10T07:55:16.649510+08:00",
+  "scope_pages": 346,
+  "counts": {
+    "orphans": 10,
+    "broken_wikilinks_total": 37,
+    "broken_md_links": 22,
+    "broken_resource_links": 15,
+    "missing_frontmatter": 70,
+    "missing_summary": 0,
+    "index_issues": 9
+  },
+  "orphans": [
+    {
+      "file": "entities/David J. Crandall.md"
+    },
+    {
+      "file": "entities/Juan C. Perez.md"
+    },
+    {
+      "file": "entities/M. Salman Asif.md"
+    },
+    {
+      "file": "entities/N. Grace Hua.md"
+    },
+    {
+      "file": "entities/Philip H. S. Torr.md"
+    },
+    {
+      "file": "entities/Richard S. Sutton.md"
+    },
+    {
+      "file": "entities/Taylor T. Johnson.md"
+    },
+    {
+      "file": "notes/_notion_raw/Are aligned neural networks adversarially aligned.ordered.md"
+    },
+    {
+      "file": "notes/_notion_raw/Are aligned neural networks adversarially aligned.rendered.md"
+    },
+    {
+      "file": "_meta/taxonomy.md"
+    }
+  ],
+  "broken_wikilinks": [
+    {
+      "file": "entities/index.md",
+      "raw": "[[entities/Richard S. Sutton]]",
+      "target": "entities/Richard S. Sutton",
+      "kind": "resource",
+      "embed": false
+    },
+    {
+      "file": "entities/index.md",
+      "raw": "[[entities/Philip H. S. Torr]]",
+      "target": "entities/Philip H. S. Torr",
+      "kind": "resource",
+      "embed": false
+    },
+    {
+      "file": "entities/index.md",
+      "raw": "[[entities/Taylor T. Johnson]]",
+      "target": "entities/Taylor T. Johnson",
+      "kind": "resource",
+      "embed": false
+    },
+    {
+      "file": "entities/index.md",
+      "raw": "[[entities/Juan C. Perez]]",
+      "target": "entities/Juan C. Perez",
+      "kind": "resource",
+      "embed": false
+    },
+    {
+      "file": "entities/index.md",
+      "raw": "[[entities/David J. Crandall]]",
+      "target": "entities/David J. Crandall",
+      "kind": "resource",
+      "embed": false
+    },
+    {
+      "file": "entities/index.md",
+      "raw": "[[entities/N. Grace Hua]]",
+      "target": "entities/N. Grace Hua",
+      "kind": "resource",
+      "embed": false
+    },
+    {
+      "file": "entities/index.md",
+      "raw": "[[entities/M. Salman Asif]]",
+      "target": "entities/M. Salman Asif",
+      "kind": "resource",
+      "embed": false
+    },
+    {
+      "file": "synthesis/Semantic Segmentation Robustness Corpus 2019-2026.md",
+      "raw": "[[papers_sources/semantic_segmentation_robustness_20260409/download_report]]",
+      "target": "papers_sources/semantic_segmentation_robustness_20260409/download_report",
+      "kind": "md",
+      "embed": false
+    },
+    {
+      "file": "synthesis/Semantic Segmentation Robustness Corpus 2019-2026.md",
+      "raw": "[[papers_sources/semantic_segmentation_robustness_20260409/download_report]]",
+      "target": "papers_sources/semantic_segmentation_robustness_20260409/download_report",
+      "kind": "md",
+      "embed": false
+    },
+    {
+      "file": "references/Certified Defences Against Adversarial Patch Attacks on Semantic Segmentation.md",
+      "raw": "[[entities/N. Grace Hua]]",
+      "target": "entities/N. Grace Hua",
+      "kind": "resource",
+      "embed": false
+    },
+    {
+      "file": "references/Ensemble-Based Blackbox Attacks on Dense Prediction.md",
+      "raw": "[[entities/M. Salman Asif]]",
+      "target": "entities/M. Salman Asif",
+      "kind": "resource",
+      "embed": false
+    },
+    {
+      "file": "references/Maintaining Plasticity in Deep Continual Learning.md",
+      "raw": "[[entities/Richard S. Sutton]]",
+      "target": "entities/Richard S. Sutton",
+      "kind": "resource",
+      "embed": false
+    },
+    {
+      "file": "references/On the Robustness of Semantic Segmentation Models to Adversarial Attacks.md",
+      "raw": "[[entities/Philip H. S. Torr]]",
+      "target": "entities/Philip H. S. Torr",
+      "kind": "resource",
+      "embed": false
+    },
+    {
+      "file": "references/Robustness Verification of Semantic Segmentation Neural Networks using Relaxed Reachability.md",
+      "raw": "[[entities/Taylor T. Johnson]]",
+      "target": "entities/Taylor T. Johnson",
+      "kind": "resource",
+      "embed": false
+    },
+    {
+      "file": "references/Towards Robust General Medical Image Segmentation.md",
+      "raw": "[[entities/Juan C. Perez]]",
+      "target": "entities/Juan C. Perez",
+      "kind": "resource",
+      "embed": false
+    },
+    {
+      "file": "references/Towards Semantically Stealthy Adversarial Attacks Against Segmentation Models.md",
+      "raw": "[[entities/David J. Crandall]]",
+      "target": "entities/David J. Crandall",
+      "kind": "resource",
+      "embed": false
+    },
+    {
+      "file": "notes/CIF Continuous Integrate-and-Fire.md",
+      "raw": "[[2026-04-08]]",
+      "target": "2026-04-08",
+      "kind": "md",
+      "embed": false
+    },
+    {
+      "file": "notes/Compositional Visual Generation with Composable Diffusion Models.md",
+      "raw": "[[2026-04-08]]",
+      "target": "2026-04-08",
+      "kind": "md",
+      "embed": false
+    },
+    {
+      "file": "notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+      "raw": "[[2026-04-06]]",
+      "target": "2026-04-06",
+      "kind": "md",
+      "embed": false
+    },
+    {
+      "file": "notes/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step.md",
+      "raw": "[[2026-04-08]]",
+      "target": "2026-04-08",
+      "kind": "md",
+      "embed": false
+    },
+    {
+      "file": "notes/GPT-ST Spatio-Temporal Pretraining.md",
+      "raw": "[[2026-04-08]]",
+      "target": "2026-04-08",
+      "kind": "md",
+      "embed": false
+    },
+    {
+      "file": "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+      "raw": "[[2026-04-08]]",
+      "target": "2026-04-08",
+      "kind": "md",
+      "embed": false
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "raw": "[[2026-04-08]]",
+      "target": "2026-04-08",
+      "kind": "md",
+      "embed": false
+    },
+    {
+      "file": "notes/Language Models Represent Space and Time.md",
+      "raw": "[[2026-04-08]]",
+      "target": "2026-04-08",
+      "kind": "md",
+      "embed": false
+    },
+    {
+      "file": "notes/Maintaining Plasticity in Deep Continual Learning.md",
+      "raw": "[[entities/Richard S. Sutton]]",
+      "target": "entities/Richard S. Sutton",
+      "kind": "resource",
+      "embed": false
+    },
+    {
+      "file": "notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md",
+      "raw": "[[2026-04-08]]",
+      "target": "2026-04-08",
+      "kind": "md",
+      "embed": false
+    },
+    {
+      "file": "notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
+      "raw": "[[2026-04-08]]",
+      "target": "2026-04-08",
+      "kind": "md",
+      "embed": false
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "raw": "[[2026-04-08]]",
+      "target": "2026-04-08",
+      "kind": "md",
+      "embed": false
+    },
+    {
+      "file": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "raw": "[[2026-04-08]]",
+      "target": "2026-04-08",
+      "kind": "md",
+      "embed": false
+    },
+    {
+      "file": "notes/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md",
+      "raw": "[[2026-04-08]]",
+      "target": "2026-04-08",
+      "kind": "md",
+      "embed": false
+    },
+    {
+      "file": "journal/Segmentation Robustness Batch Ingest Plan 2026-04-10.md",
+      "raw": "[[papers_sources/semantic_segmentation_robustness_20260409/download_report]]",
+      "target": "papers_sources/semantic_segmentation_robustness_20260409/download_report",
+      "kind": "md",
+      "embed": false
+    },
+    {
+      "file": "journal/Semantic Segmentation Robustness Corpus Update 2026-04-09.md",
+      "raw": "[[papers_sources/semantic_segmentation_robustness_20260409/download_report]]",
+      "target": "papers_sources/semantic_segmentation_robustness_20260409/download_report",
+      "kind": "md",
+      "embed": false
+    },
+    {
+      "file": "index.md",
+      "raw": "[[papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation_zh]]",
+      "target": "papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation_zh",
+      "kind": "md",
+      "embed": false
+    },
+    {
+      "file": "index.md",
+      "raw": "[[papers_sources]]",
+      "target": "papers_sources",
+      "kind": "md",
+      "embed": false
+    },
+    {
+      "file": "index.md",
+      "raw": "[[Templates/论文阅读模板|论文阅读模板]]",
+      "target": "Templates/论文阅读模板",
+      "kind": "md",
+      "embed": false
+    },
+    {
+      "file": "index.md",
+      "raw": "[[papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation_zh]]",
+      "target": "papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation_zh",
+      "kind": "md",
+      "embed": false
+    },
+    {
+      "file": "index.md",
+      "raw": "[[papers_sources]]",
+      "target": "papers_sources",
+      "kind": "md",
+      "embed": false
+    }
+  ],
+  "top_broken_targets": [
+    {
+      "kind": "md",
+      "target": "2026-04-08",
+      "count": 12
+    },
+    {
+      "kind": "md",
+      "target": "papers_sources/semantic_segmentation_robustness_20260409/download_report",
+      "count": 4
+    },
+    {
+      "kind": "resource",
+      "target": "entities/Richard S. Sutton",
+      "count": 3
+    },
+    {
+      "kind": "resource",
+      "target": "entities/Philip H. S. Torr",
+      "count": 2
+    },
+    {
+      "kind": "resource",
+      "target": "entities/Taylor T. Johnson",
+      "count": 2
+    },
+    {
+      "kind": "resource",
+      "target": "entities/Juan C. Perez",
+      "count": 2
+    },
+    {
+      "kind": "resource",
+      "target": "entities/David J. Crandall",
+      "count": 2
+    },
+    {
+      "kind": "resource",
+      "target": "entities/N. Grace Hua",
+      "count": 2
+    },
+    {
+      "kind": "resource",
+      "target": "entities/M. Salman Asif",
+      "count": 2
+    },
+    {
+      "kind": "md",
+      "target": "papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation_zh",
+      "count": 2
+    },
+    {
+      "kind": "md",
+      "target": "papers_sources",
+      "count": 2
+    },
+    {
+      "kind": "md",
+      "target": "2026-04-06",
+      "count": 1
+    },
+    {
+      "kind": "md",
+      "target": "Templates/论文阅读模板",
+      "count": 1
+    }
+  ],
+  "missing_frontmatter": [
+    {
+      "file": "concepts/Adversarial Alignment Evaluation.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Augmented Shortcut for Attention Blocks.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Cascaded Activation Nonlinearity Compensation.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Composable Diffusion Generation.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Continuous Integrate-and-Fire Alignment.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Feature Effective Rank Diagnostics.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/GFlowNet Posterior Sampling for Text Generation.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Hierarchical Spatio-Temporal Hypergraph Encoding.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Hyena Operator.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Implicit Chain-of-Thought Internalization.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Implicit Long Convolution Parameterization.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Known-Solvable Attack Calibration.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Linear Probe World-Model Evaluation.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/LLM Nonlinearity Compensation.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Logical Operator Composition in Diffusion Models.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Loss of Plasticity in Continual Learning.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Low-Rank Adaptation for LLMs.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Mean-Centered Feature Sparsification.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Mixture-of-Agents Aggregation.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Monte Carlo Tree Search for LLM Reasoning.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Monte Carlo Tree Self-Refine.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Multi-Agent LLM Orchestration.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Multimodal Adversarial Image Prompting.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Multimodal Chain-of-Thought Reasoning.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Parameter-Efficient Fine-Tuning for LLMs.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Perturbation Interaction.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Process-Supervised Step Verification.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Prompt-Robust Representation Probing.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Proximal L0 Feature Sparsification.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Quantity-Aware Emission Control in CIF.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Removal Smoothing for CoT Internalization.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Selective Neuron Reinitialization.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Soft Monotonic Alignment for Sequence Transduction.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Spatio-Temporal Pretraining for Language Models.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Success-Rate Based Complexity Labeling.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Task Complexity-Aware Inference Budgeting.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Thought Structure Taxonomy.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Tree of Thoughts Reasoning.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Two-Stage Multimodal CoT Pipeline.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Wiki Append Update Playbook.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Amortizing intractable inference in large language models.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Are aligned neural networks adversarially aligned.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/CIF Continuous Integrate-and-Fire.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Compositional Visual Generation with Composable Diffusion Models.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Demystifying Chains, Trees, and Graphs of Thoughts.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/GPT-ST Spatio-Temporal Pretraining.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/index.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    },
+    {
+      "file": "notes/Language Models Represent Space and Time.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/LoRA Low-Rank Adaptation of Large Language Models.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Maintaining Plasticity in Deep Continual Learning.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Monte Carlo Tree Search A Review of Recent Modifications and Applications.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/_notion_raw/Are aligned neural networks adversarially aligned.ordered.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/_notion_raw/Are aligned neural networks adversarially aligned.rendered.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "projects/index.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    },
+    {
+      "file": "journal/Papers Sources Deep Gap Audit 2026-04-08.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    },
+    {
+      "file": "_meta/taxonomy.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    }
+  ],
+  "missing_summary": [],
+  "index_issues": [
+    {
+      "file": "entities/Bo Xu.md",
+      "issue": "not_listed_in_entities/index.md"
+    },
+    {
+      "file": "entities/Chao Huang.md",
+      "issue": "not_listed_in_entities/index.md"
+    },
+    {
+      "file": "entities/David J. Crandall.md",
+      "issue": "not_listed_in_entities/index.md"
+    },
+    {
+      "file": "entities/Juan C. Perez.md",
+      "issue": "not_listed_in_entities/index.md"
+    },
+    {
+      "file": "entities/M. Salman Asif.md",
+      "issue": "not_listed_in_entities/index.md"
+    },
+    {
+      "file": "entities/N. Grace Hua.md",
+      "issue": "not_listed_in_entities/index.md"
+    },
+    {
+      "file": "entities/Philip H. S. Torr.md",
+      "issue": "not_listed_in_entities/index.md"
+    },
+    {
+      "file": "entities/Richard S. Sutton.md",
+      "issue": "not_listed_in_entities/index.md"
+    },
+    {
+      "file": "entities/Taylor T. Johnson.md",
+      "issue": "not_listed_in_entities/index.md"
+    }
+  ]
+}

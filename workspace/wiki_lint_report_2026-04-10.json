@@ -1,0 +1,4024 @@
+{
+  "generated_at": "2026-04-10T02:57:21.226077+08:00",
+  "scope_pages": 346,
+  "orphans": [
+    {
+      "file": "notes/_notion_raw/Are aligned neural networks adversarially aligned.ordered.md"
+    },
+    {
+      "file": "notes/_notion_raw/Are aligned neural networks adversarially aligned.rendered.md"
+    },
+    {
+      "file": "_meta/taxonomy.md"
+    }
+  ],
+  "broken_wikilinks": [
+    {
+      "file": "synthesis/Semantic Segmentation Robustness Corpus 2019-2026.md",
+      "target": "papers_sources/semantic_segmentation_robustness_20260409/download_report",
+      "raw": "[[papers_sources/semantic_segmentation_robustness_20260409/download_report]]"
+    },
+    {
+      "file": "synthesis/Semantic Segmentation Robustness Corpus 2019-2026.md",
+      "target": "papers_sources/semantic_segmentation_robustness_20260409/download_report",
+      "raw": "[[papers_sources/semantic_segmentation_robustness_20260409/download_report]]"
+    },
+    {
+      "file": "notes/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report.md",
+      "target": "assets/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report/image_001.png",
+      "raw": "[[synthesis/Structured Reasoning Methods for LLMs]]"
+    },
+    {
+      "file": "notes/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report.md",
+      "target": "assets/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report/image_002.png",
+      "raw": "[[synthesis/Structured Reasoning Methods for LLMs]]"
+    },
+    {
+      "file": "notes/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report.md",
+      "target": "assets/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report/image_003.png",
+      "raw": "[[synthesis/Structured Reasoning Methods for LLMs]]"
+    },
+    {
+      "file": "notes/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report.md",
+      "target": "assets/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report/image_004.png",
+      "raw": "[[synthesis/Structured Reasoning Methods for LLMs]]"
+    },
+    {
+      "file": "notes/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report.md",
+      "target": "assets/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report/image_005.png",
+      "raw": "[[synthesis/Structured Reasoning Methods for LLMs]]"
+    },
+    {
+      "file": "notes/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report.md",
+      "target": "assets/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report/image_006.png",
+      "raw": "[[synthesis/Structured Reasoning Methods for LLMs]]"
+    },
+    {
+      "file": "notes/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report.md",
+      "target": "assets/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report/image_007.png",
+      "raw": "[[synthesis/Structured Reasoning Methods for LLMs]]"
+    },
+    {
+      "file": "notes/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report.md",
+      "target": "assets/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report/image_008.png",
+      "raw": "[[synthesis/Structured Reasoning Methods for LLMs]]"
+    },
+    {
+      "file": "notes/Amortizing intractable inference in large language models.md",
+      "target": "assets/Amortizing intractable inference in large language models/image_002.png",
+      "raw": "[[synthesis/Parameter-Efficient LLM Adaptation and Inference]]"
+    },
+    {
+      "file": "notes/Amortizing intractable inference in large language models.md",
+      "target": "assets/Amortizing intractable inference in large language models/image_003.png",
+      "raw": "[[synthesis/Parameter-Efficient LLM Adaptation and Inference]]"
+    },
+    {
+      "file": "notes/Amortizing intractable inference in large language models.md",
+      "target": "assets/Amortizing intractable inference in large language models/image_001.png",
+      "raw": "[[synthesis/Parameter-Efficient LLM Adaptation and Inference]]"
+    },
+    {
+      "file": "notes/Amortizing intractable inference in large language models.md",
+      "target": "assets/Amortizing intractable inference in large language models/image_004.png",
+      "raw": "[[synthesis/Parameter-Efficient LLM Adaptation and Inference]]"
+    },
+    {
+      "file": "notes/Amortizing intractable inference in large language models.md",
+      "target": "assets/Amortizing intractable inference in large language models/image_005.png",
+      "raw": "[[synthesis/Parameter-Efficient LLM Adaptation and Inference]]"
+    },
+    {
+      "file": "notes/Amortizing intractable inference in large language models.md",
+      "target": "assets/Amortizing intractable inference in large language models/image_006.png",
+      "raw": "[[synthesis/Parameter-Efficient LLM Adaptation and Inference]]"
+    },
+    {
+      "file": "notes/Amortizing intractable inference in large language models.md",
+      "target": "assets/Amortizing intractable inference in large language models/image_007.png",
+      "raw": "[[synthesis/Parameter-Efficient LLM Adaptation and Inference]]"
+    },
+    {
+      "file": "notes/Amortizing intractable inference in large language models.md",
+      "target": "assets/Amortizing intractable inference in large language models/image_008.png",
+      "raw": "[[synthesis/Parameter-Efficient LLM Adaptation and Inference]]"
+    },
+    {
+      "file": "notes/Amortizing intractable inference in large language models.md",
+      "target": "assets/Amortizing intractable inference in large language models/image_009.png",
+      "raw": "[[synthesis/Parameter-Efficient LLM Adaptation and Inference]]"
+    },
+    {
+      "file": "notes/Amortizing intractable inference in large language models.md",
+      "target": "assets/Amortizing intractable inference in large language models/image_010.png",
+      "raw": "[[synthesis/Parameter-Efficient LLM Adaptation and Inference]]"
+    },
+    {
+      "file": "notes/Amortizing intractable inference in large language models.md",
+      "target": "assets/Amortizing intractable inference in large language models/image_011.png",
+      "raw": "[[synthesis/Parameter-Efficient LLM Adaptation and Inference]]"
+    },
+    {
+      "file": "notes/Amortizing intractable inference in large language models.md",
+      "target": "assets/Amortizing intractable inference in large language models/image_021.png",
+      "raw": "[[synthesis/Parameter-Efficient LLM Adaptation and Inference]]"
+    },
+    {
+      "file": "notes/Amortizing intractable inference in large language models.md",
+      "target": "assets/Amortizing intractable inference in large language models/image_012.png",
+      "raw": "[[synthesis/Parameter-Efficient LLM Adaptation and Inference]]"
+    },
+    {
+      "file": "notes/Amortizing intractable inference in large language models.md",
+      "target": "assets/Amortizing intractable inference in large language models/image_013.png",
+      "raw": "[[synthesis/Parameter-Efficient LLM Adaptation and Inference]]"
+    },
+    {
+      "file": "notes/Amortizing intractable inference in large language models.md",
+      "target": "assets/Amortizing intractable inference in large language models/image_014.png",
+      "raw": "[[synthesis/Parameter-Efficient LLM Adaptation and Inference]]"
+    },
+    {
+      "file": "notes/Amortizing intractable inference in large language models.md",
+      "target": "assets/Amortizing intractable inference in large language models/image_015.png",
+      "raw": "[[synthesis/Parameter-Efficient LLM Adaptation and Inference]]"
+    },
+    {
+      "file": "notes/Amortizing intractable inference in large language models.md",
+      "target": "assets/Amortizing intractable inference in large language models/image_016.png",
+      "raw": "[[synthesis/Parameter-Efficient LLM Adaptation and Inference]]"
+    },
+    {
+      "file": "notes/Amortizing intractable inference in large language models.md",
+      "target": "assets/Amortizing intractable inference in large language models/image_017.png",
+      "raw": "[[synthesis/Parameter-Efficient LLM Adaptation and Inference]]"
+    },
+    {
+      "file": "notes/Amortizing intractable inference in large language models.md",
+      "target": "assets/Amortizing intractable inference in large language models/image_018.png",
+      "raw": "[[synthesis/Parameter-Efficient LLM Adaptation and Inference]]"
+    },
+    {
+      "file": "notes/Amortizing intractable inference in large language models.md",
+      "target": "assets/Amortizing intractable inference in large language models/image_019.png",
+      "raw": "[[synthesis/Parameter-Efficient LLM Adaptation and Inference]]"
+    },
+    {
+      "file": "notes/Amortizing intractable inference in large language models.md",
+      "target": "assets/Amortizing intractable inference in large language models/image_020.png",
+      "raw": "[[synthesis/Parameter-Efficient LLM Adaptation and Inference]]"
+    },
+    {
+      "file": "notes/Are aligned neural networks adversarially aligned.md",
+      "target": "assets/Are aligned neural networks adversarially aligned/image_001.png",
+      "raw": "[[synthesis/Alignment Robustness Evaluation Ladder]]"
+    },
+    {
+      "file": "notes/Are aligned neural networks adversarially aligned.md",
+      "target": "assets/Are aligned neural networks adversarially aligned/image_002.png",
+      "raw": "[[synthesis/Alignment Robustness Evaluation Ladder]]"
+    },
+    {
+      "file": "notes/Are aligned neural networks adversarially aligned.md",
+      "target": "assets/Are aligned neural networks adversarially aligned/image_003.png",
+      "raw": "[[synthesis/Alignment Robustness Evaluation Ladder]]"
+    },
+    {
+      "file": "notes/Are aligned neural networks adversarially aligned.md",
+      "target": "assets/Are aligned neural networks adversarially aligned/image_004.png",
+      "raw": "[[synthesis/Alignment Robustness Evaluation Ladder]]"
+    },
+    {
+      "file": "notes/Are aligned neural networks adversarially aligned.md",
+      "target": "assets/Are aligned neural networks adversarially aligned/image_005.png",
+      "raw": "[[synthesis/Alignment Robustness Evaluation Ladder]]"
+    },
+    {
+      "file": "notes/Are aligned neural networks adversarially aligned.md",
+      "target": "assets/Are aligned neural networks adversarially aligned/image_006.png",
+      "raw": "[[synthesis/Alignment Robustness Evaluation Ladder]]"
+    },
+    {
+      "file": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_001.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_002.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_003.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_004.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_005.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_014.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_015.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_016.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_006.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_007.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_008.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_009.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_010.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_011.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_012.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_013.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_017.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_018.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_019.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_020.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_021.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_022.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_023.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_024.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
+      "target": "assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_001.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
+      "target": "assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_002.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
+      "target": "assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_003.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
+      "target": "assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_004.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
+      "target": "assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_005.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
+      "target": "assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_006.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
+      "target": "assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_012.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
+      "target": "assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_007.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
+      "target": "assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_008.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
+      "target": "assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_009.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
+      "target": "assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_010.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
+      "target": "assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_011.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
+      "target": "assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_013.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
+      "target": "assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_014.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
+      "target": "assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_015.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
+      "target": "assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_016.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
+      "target": "assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_017.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
+      "target": "assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_018.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
+      "target": "assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_019.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/CIF Continuous Integrate-and-Fire.md",
+      "target": "2026-04-08",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/CIF Continuous Integrate-and-Fire.md",
+      "target": "papers_sources/Research-Paper-Notes/CIF.pdf",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/CIF Continuous Integrate-and-Fire.md",
+      "target": "papers_sources/Research-Paper-Notes/CIF.md",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/CIF Continuous Integrate-and-Fire.md",
+      "target": "papers_sources/Research-Paper-Notes/CIF.aseets/1.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/CIF Continuous Integrate-and-Fire.md",
+      "target": "papers_sources/Research-Paper-Notes/CIF.aseets/2.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/CIF Continuous Integrate-and-Fire.md",
+      "target": "papers_sources/Research-Paper-Notes/CIF.aseets/3.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/CIF Continuous Integrate-and-Fire.md",
+      "target": "papers_sources/Research-Paper-Notes/CIF.aseets/4.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/CIF Continuous Integrate-and-Fire.md",
+      "target": "papers_sources/Research-Paper-Notes/CIF.aseets/5.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/CIF Continuous Integrate-and-Fire.md",
+      "target": "papers_sources/Research-Paper-Notes/CIF.aseets/6.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/CIF Continuous Integrate-and-Fire.md",
+      "target": "papers_sources/Research-Paper-Notes/CIF.aseets/8.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/CIF Continuous Integrate-and-Fire.md",
+      "target": "papers_sources/Research-Paper-Notes/CIF.aseets/9.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/CIF Continuous Integrate-and-Fire.md",
+      "target": "papers_sources/Research-Paper-Notes/CIF.aseets/7.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/CIF Continuous Integrate-and-Fire.md",
+      "target": "papers_sources/Research-Paper-Notes/CIF.md",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/Compositional Visual Generation with Composable Diffusion Models.md",
+      "target": "2026-04-08",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Compositional Visual Generation with Composable Diffusion Models.md",
+      "target": "assets/Compositional Visual Generation with Composable Diffusion Models/image_001.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Compositional Visual Generation with Composable Diffusion Models.md",
+      "target": "assets/Compositional Visual Generation with Composable Diffusion Models/image_002.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+      "target": "2026-04-06",
+      "raw": "[[synthesis/Alignment Robustness Evaluation Ladder]]"
+    },
+    {
+      "file": "notes/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step.md",
+      "target": "2026-04-08",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step.md",
+      "target": "assets/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step/image_001.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step.md",
+      "target": "assets/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step/image_002.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step.md",
+      "target": "assets/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step/image_003.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step.md",
+      "target": "assets/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step/image_004.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step.md",
+      "target": "assets/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step/image_005.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step.md",
+      "target": "assets/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step/image_006.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step.md",
+      "target": "assets/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step/image_007.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step.md",
+      "target": "assets/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step/image_008.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/GPT-ST Spatio-Temporal Pretraining.md",
+      "target": "2026-04-08",
+      "raw": "[[synthesis/Structured Spatio-Temporal Representation Learning]]"
+    },
+    {
+      "file": "notes/GPT-ST Spatio-Temporal Pretraining.md",
+      "target": "papers_sources/Research-Paper-Notes/GPT-ST预训练时空框架.pdf",
+      "raw": "[[synthesis/Structured Spatio-Temporal Representation Learning]]"
+    },
+    {
+      "file": "notes/GPT-ST Spatio-Temporal Pretraining.md",
+      "target": "papers_sources/Research-Paper-Notes/GPT-ST预训练时空框架.md",
+      "raw": "[[synthesis/Structured Spatio-Temporal Representation Learning]]"
+    },
+    {
+      "file": "notes/GPT-ST Spatio-Temporal Pretraining.md",
+      "target": "papers_sources/Research-Paper-Notes/GPT-ST/Pasted image 20240410123511.png",
+      "raw": "[[synthesis/Structured Spatio-Temporal Representation Learning]]"
+    },
+    {
+      "file": "notes/GPT-ST Spatio-Temporal Pretraining.md",
+      "target": "papers_sources/Research-Paper-Notes/GPT-ST/Pasted image 20240410124703.png",
+      "raw": "[[synthesis/Structured Spatio-Temporal Representation Learning]]"
+    },
+    {
+      "file": "notes/GPT-ST Spatio-Temporal Pretraining.md",
+      "target": "papers_sources/Research-Paper-Notes/GPT-ST/Pasted image 20240409173057.png",
+      "raw": "[[synthesis/Structured Spatio-Temporal Representation Learning]]"
+    },
+    {
+      "file": "notes/GPT-ST Spatio-Temporal Pretraining.md",
+      "target": "papers_sources/Research-Paper-Notes/GPT-ST/Pasted image 20240409174009.png",
+      "raw": "[[synthesis/Structured Spatio-Temporal Representation Learning]]"
+    },
+    {
+      "file": "notes/GPT-ST Spatio-Temporal Pretraining.md",
+      "target": "papers_sources/Research-Paper-Notes/GPT-ST/Pasted image 20240409175235.png",
+      "raw": "[[synthesis/Structured Spatio-Temporal Representation Learning]]"
+    },
+    {
+      "file": "notes/GPT-ST Spatio-Temporal Pretraining.md",
+      "target": "papers_sources/Research-Paper-Notes/GPT-ST/Pasted image 20240409175553.png",
+      "raw": "[[synthesis/Structured Spatio-Temporal Representation Learning]]"
+    },
+    {
+      "file": "notes/GPT-ST Spatio-Temporal Pretraining.md",
+      "target": "papers_sources/Research-Paper-Notes/GPT-ST/Pasted image 20240409175646.png",
+      "raw": "[[synthesis/Structured Spatio-Temporal Representation Learning]]"
+    },
+    {
+      "file": "notes/GPT-ST Spatio-Temporal Pretraining.md",
+      "target": "papers_sources/Research-Paper-Notes/GPT-ST/Pasted image 20240409180024.png",
+      "raw": "[[synthesis/Structured Spatio-Temporal Representation Learning]]"
+    },
+    {
+      "file": "notes/GPT-ST Spatio-Temporal Pretraining.md",
+      "target": "papers_sources/Research-Paper-Notes/GPT-ST/Pasted image 20240409180148.png",
+      "raw": "[[synthesis/Structured Spatio-Temporal Representation Learning]]"
+    },
+    {
+      "file": "notes/GPT-ST Spatio-Temporal Pretraining.md",
+      "target": "papers_sources/Research-Paper-Notes/GPT-ST/Pasted image 20240409180235.png",
+      "raw": "[[synthesis/Structured Spatio-Temporal Representation Learning]]"
+    },
+    {
+      "file": "notes/GPT-ST Spatio-Temporal Pretraining.md",
+      "target": "papers_sources/Research-Paper-Notes/GPT-ST/Pasted image 20240409180330.png",
+      "raw": "[[synthesis/Structured Spatio-Temporal Representation Learning]]"
+    },
+    {
+      "file": "notes/GPT-ST Spatio-Temporal Pretraining.md",
+      "target": "papers_sources/Research-Paper-Notes/GPT-ST/Pasted image 20240409180350.png",
+      "raw": "[[synthesis/Structured Spatio-Temporal Representation Learning]]"
+    },
+    {
+      "file": "notes/GPT-ST Spatio-Temporal Pretraining.md",
+      "target": "papers_sources/Research-Paper-Notes/GPT-ST预训练时空框架.md",
+      "raw": "[[synthesis/Structured Spatio-Temporal Representation Learning]]"
+    },
+    {
+      "file": "notes/GPT-ST Spatio-Temporal Pretraining.md",
+      "target": "papers_sources/Research-Paper-Notes/GPT-ST预训练时空框架.pdf",
+      "raw": "[[synthesis/Structured Spatio-Temporal Representation Learning]]"
+    },
+    {
+      "file": "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+      "target": "2026-04-08",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+      "target": "assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_001.jpg",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+      "target": "assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_002.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+      "target": "assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_003.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+      "target": "assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_004.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+      "target": "assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_005.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+      "target": "assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_006.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+      "target": "assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_007.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+      "target": "assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_008.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+      "target": "assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_009.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+      "target": "assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_010.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+      "target": "assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_011.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+      "target": "assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_012.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+      "target": "assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_013.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+      "target": "assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_014.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+      "target": "assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_015.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+      "target": "assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_016.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+      "target": "assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_017.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+      "target": "assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_018.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+      "target": "assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_019.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+      "target": "assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_020.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "2026-04-08",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_001.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_002.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_003.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_004.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_005.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_006.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_007.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_008.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_009.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_010.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_011.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_012.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_013.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_014.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_015.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_016.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_017.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_018.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_019.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_020.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_021.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_022.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_023.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_024.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_025.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_026.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_027.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_028.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_029.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_030.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "target": "assets/Hyena Hierarchy/image_031.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Language Models Represent Space and Time.md",
+      "target": "2026-04-08",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/Language Models Represent Space and Time.md",
+      "target": "papers_sources/Research-Paper-Notes/LLM体现出时空概念.md",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/Language Models Represent Space and Time.md",
+      "target": "papers_sources/Research-Paper-Notes/LLM体现出时空概念.md",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/Language Models Represent Space and Time.md",
+      "target": "papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231028081613089.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/Language Models Represent Space and Time.md",
+      "target": "papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231113135715004.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/Language Models Represent Space and Time.md",
+      "target": "papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231113160852447.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/Language Models Represent Space and Time.md",
+      "target": "papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231113163328644.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/Language Models Represent Space and Time.md",
+      "target": "papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231113163921496.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/Language Models Represent Space and Time.md",
+      "target": "papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231113163851877.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/Language Models Represent Space and Time.md",
+      "target": "papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231113214001125.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/Language Models Represent Space and Time.md",
+      "target": "papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231118051047815.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/Language Models Represent Space and Time.md",
+      "target": "papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231118052706921.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/Language Models Represent Space and Time.md",
+      "target": "papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231118054909751.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/Language Models Represent Space and Time.md",
+      "target": "papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231118070045617.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/Language Models Represent Space and Time.md",
+      "target": "papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231118071955644.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/Language Models Represent Space and Time.md",
+      "target": "papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231119211038146.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/Language Models Represent Space and Time.md",
+      "target": "papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231119202814940.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/Language Models Represent Space and Time.md",
+      "target": "papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231119212213066.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/Language Models Represent Space and Time.md",
+      "target": "papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231119212504785.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/Language Models Represent Space and Time.md",
+      "target": "papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231119213103499.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/Language Models Represent Space and Time.md",
+      "target": "papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231119223503171.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/Language Models Represent Space and Time.md",
+      "target": "papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231119224716033.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/Language Models Represent Space and Time.md",
+      "target": "papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231119225154705.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/Language Models Represent Space and Time.md",
+      "target": "papers_sources/Research-Paper-Notes/LLM体现出时空概念.assets/image-20231119225204089.png",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/Language Models Represent Space and Time.md",
+      "target": "papers_sources/Research-Paper-Notes/LLM体现出时空概念.md",
+      "raw": "[[synthesis/Spatio-Temporal Representation in Language Models]]"
+    },
+    {
+      "file": "notes/Maintaining Plasticity in Deep Continual Learning.md",
+      "target": "assets/Maintaining Plasticity in Deep Continual Learning/image_001.png",
+      "raw": "[[synthesis/Continual Learning Plasticity Maintenance Playbook]]"
+    },
+    {
+      "file": "notes/Maintaining Plasticity in Deep Continual Learning.md",
+      "target": "assets/Maintaining Plasticity in Deep Continual Learning/image_013.png",
+      "raw": "[[synthesis/Continual Learning Plasticity Maintenance Playbook]]"
+    },
+    {
+      "file": "notes/Maintaining Plasticity in Deep Continual Learning.md",
+      "target": "assets/Maintaining Plasticity in Deep Continual Learning/image_014.png",
+      "raw": "[[synthesis/Continual Learning Plasticity Maintenance Playbook]]"
+    },
+    {
+      "file": "notes/Maintaining Plasticity in Deep Continual Learning.md",
+      "target": "assets/Maintaining Plasticity in Deep Continual Learning/image_002.png",
+      "raw": "[[synthesis/Continual Learning Plasticity Maintenance Playbook]]"
+    },
+    {
+      "file": "notes/Maintaining Plasticity in Deep Continual Learning.md",
+      "target": "assets/Maintaining Plasticity in Deep Continual Learning/image_004.png",
+      "raw": "[[synthesis/Continual Learning Plasticity Maintenance Playbook]]"
+    },
+    {
+      "file": "notes/Maintaining Plasticity in Deep Continual Learning.md",
+      "target": "assets/Maintaining Plasticity in Deep Continual Learning/image_008.png",
+      "raw": "[[synthesis/Continual Learning Plasticity Maintenance Playbook]]"
+    },
+    {
+      "file": "notes/Maintaining Plasticity in Deep Continual Learning.md",
+      "target": "assets/Maintaining Plasticity in Deep Continual Learning/image_019.png",
+      "raw": "[[synthesis/Continual Learning Plasticity Maintenance Playbook]]"
+    },
+    {
+      "file": "notes/Maintaining Plasticity in Deep Continual Learning.md",
+      "target": "assets/Maintaining Plasticity in Deep Continual Learning/image_003.png",
+      "raw": "[[synthesis/Continual Learning Plasticity Maintenance Playbook]]"
+    },
+    {
+      "file": "notes/Maintaining Plasticity in Deep Continual Learning.md",
+      "target": "assets/Maintaining Plasticity in Deep Continual Learning/image_005.png",
+      "raw": "[[synthesis/Continual Learning Plasticity Maintenance Playbook]]"
+    },
+    {
+      "file": "notes/Maintaining Plasticity in Deep Continual Learning.md",
+      "target": "assets/Maintaining Plasticity in Deep Continual Learning/image_010.png",
+      "raw": "[[synthesis/Continual Learning Plasticity Maintenance Playbook]]"
+    },
+    {
+      "file": "notes/Maintaining Plasticity in Deep Continual Learning.md",
+      "target": "assets/Maintaining Plasticity in Deep Continual Learning/image_015.png",
+      "raw": "[[synthesis/Continual Learning Plasticity Maintenance Playbook]]"
+    },
+    {
+      "file": "notes/Maintaining Plasticity in Deep Continual Learning.md",
+      "target": "assets/Maintaining Plasticity in Deep Continual Learning/image_017.png",
+      "raw": "[[synthesis/Continual Learning Plasticity Maintenance Playbook]]"
+    },
+    {
+      "file": "notes/Maintaining Plasticity in Deep Continual Learning.md",
+      "target": "assets/Maintaining Plasticity in Deep Continual Learning/image_011.png",
+      "raw": "[[synthesis/Continual Learning Plasticity Maintenance Playbook]]"
+    },
+    {
+      "file": "notes/Maintaining Plasticity in Deep Continual Learning.md",
+      "target": "assets/Maintaining Plasticity in Deep Continual Learning/image_012.png",
+      "raw": "[[synthesis/Continual Learning Plasticity Maintenance Playbook]]"
+    },
+    {
+      "file": "notes/Maintaining Plasticity in Deep Continual Learning.md",
+      "target": "assets/Maintaining Plasticity in Deep Continual Learning/image_016.png",
+      "raw": "[[synthesis/Continual Learning Plasticity Maintenance Playbook]]"
+    },
+    {
+      "file": "notes/Maintaining Plasticity in Deep Continual Learning.md",
+      "target": "assets/Maintaining Plasticity in Deep Continual Learning/image_006.png",
+      "raw": "[[synthesis/Continual Learning Plasticity Maintenance Playbook]]"
+    },
+    {
+      "file": "notes/Maintaining Plasticity in Deep Continual Learning.md",
+      "target": "assets/Maintaining Plasticity in Deep Continual Learning/image_007.png",
+      "raw": "[[synthesis/Continual Learning Plasticity Maintenance Playbook]]"
+    },
+    {
+      "file": "notes/Maintaining Plasticity in Deep Continual Learning.md",
+      "target": "assets/Maintaining Plasticity in Deep Continual Learning/image_009.png",
+      "raw": "[[synthesis/Continual Learning Plasticity Maintenance Playbook]]"
+    },
+    {
+      "file": "notes/Maintaining Plasticity in Deep Continual Learning.md",
+      "target": "assets/Maintaining Plasticity in Deep Continual Learning/image_018.png",
+      "raw": "[[synthesis/Continual Learning Plasticity Maintenance Playbook]]"
+    },
+    {
+      "file": "notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md",
+      "target": "2026-04-08",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md",
+      "target": "assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_001.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md",
+      "target": "assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_002.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md",
+      "target": "assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_003.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md",
+      "target": "assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_004.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md",
+      "target": "assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_005.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md",
+      "target": "assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_011.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md",
+      "target": "assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_006.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md",
+      "target": "assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_007.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md",
+      "target": "assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_008.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md",
+      "target": "assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_009.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md",
+      "target": "assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_010.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature.md",
+      "target": "assets/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature/image_002.png",
+      "raw": "[[synthesis/Adversarial Robustness Evaluation Patterns]]"
+    },
+    {
+      "file": "notes/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature.md",
+      "target": "assets/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature/image_001.png",
+      "raw": "[[synthesis/Adversarial Robustness Evaluation Patterns]]"
+    },
+    {
+      "file": "notes/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature.md",
+      "target": "assets/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature/image_003.png",
+      "raw": "[[synthesis/Adversarial Robustness Evaluation Patterns]]"
+    },
+    {
+      "file": "notes/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature.md",
+      "target": "assets/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature/image_004.png",
+      "raw": "[[synthesis/Adversarial Robustness Evaluation Patterns]]"
+    },
+    {
+      "file": "notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
+      "target": "2026-04-08",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
+      "target": "assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_001.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
+      "target": "assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_002.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
+      "target": "assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_003.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
+      "target": "assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_004.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
+      "target": "assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_005.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
+      "target": "assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_006.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
+      "target": "assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_007.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
+      "target": "assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_008.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
+      "target": "assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_009.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
+      "target": "assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_010.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
+      "target": "assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_011.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
+      "target": "assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_012.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
+      "target": "assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_013.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
+      "target": "assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_014.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
+      "target": "assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_015.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
+      "target": "assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_016.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Monte Carlo Tree Search A Review of Recent Modifications and Applications.md",
+      "target": "assets/Monte Carlo Tree Search A Review of Recent Modifications and Applications/image_001.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Monte Carlo Tree Search A Review of Recent Modifications and Applications.md",
+      "target": "assets/Monte Carlo Tree Search A Review of Recent Modifications and Applications/image_002.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Monte Carlo Tree Search A Review of Recent Modifications and Applications.md",
+      "target": "assets/Monte Carlo Tree Search A Review of Recent Modifications and Applications/image_003.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "target": "2026-04-08",
+      "raw": "[[synthesis/Multimodal Composition and Reasoning]]"
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_001.png",
+      "raw": "[[synthesis/Multimodal Composition and Reasoning]]"
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_006.png",
+      "raw": "[[synthesis/Multimodal Composition and Reasoning]]"
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_002.png",
+      "raw": "[[synthesis/Multimodal Composition and Reasoning]]"
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_003.png",
+      "raw": "[[synthesis/Multimodal Composition and Reasoning]]"
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_004.png",
+      "raw": "[[synthesis/Multimodal Composition and Reasoning]]"
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_005.png",
+      "raw": "[[synthesis/Multimodal Composition and Reasoning]]"
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_007.png",
+      "raw": "[[synthesis/Multimodal Composition and Reasoning]]"
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_008.png",
+      "raw": "[[synthesis/Multimodal Composition and Reasoning]]"
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_009.png",
+      "raw": "[[synthesis/Multimodal Composition and Reasoning]]"
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_010.png",
+      "raw": "[[synthesis/Multimodal Composition and Reasoning]]"
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_011.png",
+      "raw": "[[synthesis/Multimodal Composition and Reasoning]]"
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_012.png",
+      "raw": "[[synthesis/Multimodal Composition and Reasoning]]"
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_015.png",
+      "raw": "[[synthesis/Multimodal Composition and Reasoning]]"
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_013.png",
+      "raw": "[[synthesis/Multimodal Composition and Reasoning]]"
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_014.png",
+      "raw": "[[synthesis/Multimodal Composition and Reasoning]]"
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_016.png",
+      "raw": "[[synthesis/Multimodal Composition and Reasoning]]"
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_017.png",
+      "raw": "[[synthesis/Multimodal Composition and Reasoning]]"
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_018.png",
+      "raw": "[[synthesis/Multimodal Composition and Reasoning]]"
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_019.png",
+      "raw": "[[synthesis/Multimodal Composition and Reasoning]]"
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_020.png",
+      "raw": "[[synthesis/Multimodal Composition and Reasoning]]"
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_021.png",
+      "raw": "[[synthesis/Multimodal Composition and Reasoning]]"
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_022.png",
+      "raw": "[[synthesis/Multimodal Composition and Reasoning]]"
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_023.png",
+      "raw": "[[synthesis/Multimodal Composition and Reasoning]]"
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_024.png",
+      "raw": "[[synthesis/Multimodal Composition and Reasoning]]"
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "target": "assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_025.png",
+      "raw": "[[synthesis/Multimodal Composition and Reasoning]]"
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "target": "papers_sources/Research-Paper-Notes/PanGu-π.assets/image-20240113144541459.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "target": "papers_sources/Research-Paper-Notes/PanGu-π.assets/Pasted image 20240527090007.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "target": "papers_sources/Research-Paper-Notes/PanGu-π.assets/2e5da125639231dafb2192eb8fa3a85.jpg",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "target": "papers_sources/Research-Paper-Notes/PanGu-π.assets/image-20240615102730020.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "target": "papers_sources/Research-Paper-Notes/PanGu-π.assets/image-20240615104846695.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "target": "papers_sources/Research-Paper-Notes/PanGu-π.assets/image-20240615104913496.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "target": "papers_sources/Research-Paper-Notes/PanGu-π.assets/image-20240615101802637.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "target": "papers_sources/Research-Paper-Notes/PanGu-π.assets/image-20240603182905666.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "target": "papers_sources/Research-Paper-Notes/PanGu-π.assets/image-20240115145155773.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "target": "papers_sources/Research-Paper-Notes/PanGu-π.assets/image-20240527105322039.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "target": "papers_sources/Research-Paper-Notes/PanGu-π.assets/image-20240115172259913.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "target": "papers_sources/Research-Paper-Notes/PanGu-π.assets/image-20240115172912370.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "target": "papers_sources/Research-Paper-Notes/PanGu-π.assets/image-20240115173729787.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "target": "papers_sources/Research-Paper-Notes/PanGu-π.assets/image-20240115173917028.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "target": "papers_sources/Research-Paper-Notes/PanGu-π.assets/image-20240115174154290.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "target": "papers_sources/Research-Paper-Notes/PanGu-π.assets/image-20240115174830591.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "target": "papers_sources/Research-Paper-Notes/PanGu-π.assets/image-20240115174944301.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "target": "papers_sources/Research-Paper-Notes/PanGu-π.assets/image-20240115175315785.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "target": "papers_sources/Research-Paper-Notes/PanGu-π.assets/image-20240115175603887.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "target": "papers_sources/Research-Paper-Notes/PanGu-π.assets/image-20240113173637058.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "target": "papers_sources/Research-Paper-Notes/PanGu-π.assets/image-20240113155639879.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "target": "papers_sources/Research-Paper-Notes/PanGu-π.assets/image-20240113181436026.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "target": "papers_sources/Research-Paper-Notes/PanGu-π.assets/image-20240115180232092.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "target": "papers_sources/Research-Paper-Notes/PanGu-π.assets/image-20240115181129106.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "target": "papers_sources/Research-Paper-Notes/PanGu-π.assets/image-20240115181549937.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "target": "papers_sources/Research-Paper-Notes/PanGu-π.assets/image-20240115182358602.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "target": "papers_sources/Research-Paper-Notes/PanGu-π.assets/image-20240115182516982.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "target": "papers_sources/Research-Paper-Notes/PanGu-π.assets/image-20240115182647904.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Research-Paper-Notes 导入索引.md",
+      "target": "papers_sources/Research-Paper-Notes/README.md",
+      "raw": "[[concepts/index]]"
+    },
+    {
+      "file": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "target": "2026-04-08",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "target": "assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_001.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "target": "assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_002.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "target": "assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_020.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "target": "assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_021.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "target": "assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_022.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "target": "assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_023.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "target": "assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_024.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "target": "assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_003.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "target": "assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_004.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "target": "assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_005.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "target": "assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_006.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "target": "assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_007.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "target": "assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_008.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "target": "assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_009.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "target": "assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_010.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "target": "assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_011.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "target": "assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_012.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "target": "assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_013.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "target": "assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_014.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "target": "assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_015.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "target": "assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_016.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "target": "assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_017.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "target": "assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_018.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "target": "assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_019.png",
+      "raw": "[[synthesis/LLM Inference Efficiency and Scaling]]"
+    },
+    {
+      "file": "notes/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md",
+      "target": "2026-04-08",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md",
+      "target": "assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_001.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md",
+      "target": "assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_002.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md",
+      "target": "assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_003.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md",
+      "target": "assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_006.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md",
+      "target": "assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_008.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md",
+      "target": "assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_004.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md",
+      "target": "assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_005.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md",
+      "target": "assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_007.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md",
+      "target": "assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_009.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md",
+      "target": "assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_010.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md",
+      "target": "assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_011.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "notes/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md",
+      "target": "assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_012.png",
+      "raw": "[[synthesis/LLM Reasoning Search and Verification]]"
+    },
+    {
+      "file": "journal/Segmentation Robustness Batch Ingest Plan 2026-04-10.md",
+      "target": "papers_sources/semantic_segmentation_robustness_20260409/download_report",
+      "raw": "[[papers_sources/semantic_segmentation_robustness_20260409/download_report]]"
+    },
+    {
+      "file": "journal/Semantic Segmentation Robustness Corpus Update 2026-04-09.md",
+      "target": "papers_sources/semantic_segmentation_robustness_20260409/download_report",
+      "raw": "[[synthesis/Adversarial Robustness Evaluation Patterns]]"
+    },
+    {
+      "file": "index.md",
+      "target": "papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation_zh",
+      "raw": "[[synthesis/Segmentation Robustness Batch Reading Matrix 2019-2026]]"
+    },
+    {
+      "file": "index.md",
+      "target": "papers_sources",
+      "raw": "[[synthesis/Segmentation Robustness Batch Reading Matrix 2019-2026]]"
+    },
+    {
+      "file": "index.md",
+      "target": "Templates/论文阅读模板",
+      "raw": "[[synthesis/Segmentation Robustness Batch Reading Matrix 2019-2026]]"
+    },
+    {
+      "file": "index.md",
+      "target": "papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation_zh",
+      "raw": "[[synthesis/Segmentation Robustness Batch Reading Matrix 2019-2026]]"
+    },
+    {
+      "file": "index.md",
+      "target": "papers_sources",
+      "raw": "[[synthesis/Segmentation Robustness Batch Reading Matrix 2019-2026]]"
+    },
+    {
+      "file": "index.md",
+      "target": "notes",
+      "raw": "[[synthesis/Segmentation Robustness Batch Reading Matrix 2019-2026]]"
+    }
+  ],
+  "missing_frontmatter": [
+    {
+      "file": "concepts/Adversarial Alignment Evaluation.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Augmented Shortcut for Attention Blocks.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Cascaded Activation Nonlinearity Compensation.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Composable Diffusion Generation.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Continuous Integrate-and-Fire Alignment.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Feature Effective Rank Diagnostics.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/GFlowNet Posterior Sampling for Text Generation.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Hierarchical Spatio-Temporal Hypergraph Encoding.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Hyena Operator.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Implicit Chain-of-Thought Internalization.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Implicit Long Convolution Parameterization.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/index.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    },
+    {
+      "file": "concepts/Known-Solvable Attack Calibration.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Linear Probe World-Model Evaluation.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/LLM Nonlinearity Compensation.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Logical Operator Composition in Diffusion Models.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Loss of Plasticity in Continual Learning.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Low-Rank Adaptation for LLMs.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Mean-Centered Feature Sparsification.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Mixture-of-Agents Aggregation.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Monte Carlo Tree Search for LLM Reasoning.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Monte Carlo Tree Self-Refine.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Multi-Agent LLM Orchestration.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Multimodal Adversarial Image Prompting.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Multimodal Chain-of-Thought Reasoning.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Parameter-Efficient Fine-Tuning for LLMs.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Perturbation Interaction.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Process-Supervised Step Verification.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Prompt-Robust Representation Probing.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Proximal L0 Feature Sparsification.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Quantity-Aware Emission Control in CIF.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Removal Smoothing for CoT Internalization.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Selective Neuron Reinitialization.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Soft Monotonic Alignment for Sequence Transduction.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Spatio-Temporal Pretraining for Language Models.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Success-Rate Based Complexity Labeling.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Task Complexity-Aware Inference Budgeting.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Thought Structure Taxonomy.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Tree of Thoughts Reasoning.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Two-Stage Multimodal CoT Pipeline.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "concepts/Wiki Append Update Playbook.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "entities/index.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    },
+    {
+      "file": "synthesis/index.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    },
+    {
+      "file": "references/index.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    },
+    {
+      "file": "notes/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Amortizing intractable inference in large language models.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Are aligned neural networks adversarially aligned.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/CIF Continuous Integrate-and-Fire.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Compositional Visual Generation with Composable Diffusion Models.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Demystifying Chains, Trees, and Graphs of Thoughts.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/GPT-ST Spatio-Temporal Pretraining.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/index.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    },
+    {
+      "file": "notes/Language Models Represent Space and Time.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/LoRA Low-Rank Adaptation of Large Language Models.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Maintaining Plasticity in Deep Continual Learning.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Monte Carlo Tree Search A Review of Recent Modifications and Applications.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/PanGu-pi Nonlinearity Compensation.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/_notion_raw/Are aligned neural networks adversarially aligned.ordered.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "notes/_notion_raw/Are aligned neural networks adversarially aligned.rendered.md",
+      "missing": [
+        "title",
+        "category",
+        "tags",
+        "sources",
+        "created",
+        "updated"
+      ]
+    },
+    {
+      "file": "projects/index.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    },
+    {
+      "file": "journal/index.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    },
+    {
+      "file": "journal/Papers Sources Deep Gap Audit 2026-04-08.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    },
+    {
+      "file": "_meta/taxonomy.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    },
+    {
+      "file": "index.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    },
+    {
+      "file": "log.md",
+      "missing": [
+        "sources",
+        "created"
+      ]
+    }
+  ],
+  "missing_summary": [],
+  "long_summary": [],
+  "stale_content": [
+    {
+      "file": "concepts/Adaptive Compute Routing.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Adversarial Vulnerability Profiling for Segmentation Models.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Amortized Bayesian Inference for LLMs.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Attack Generator Framework for Segmentation Threat Modeling.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Attention Refinement against Patch Attacks.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Cluster-Aware Masked Pretraining.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Context-aware Indirect Local Attack.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Continual Backpropagation.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Data-Controlled Gating in Sequence Models.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Decision-based Black-box Attack for Segmentation.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Deep Neural Network (DNN).md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Depth-Assisted Robustness via Self-Supervised Multi-Tasking.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/DetecBench Generalization Benchmarking.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Discrete Linear Noise.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Divide-and-Conquer Adversarial Training for Segmentation.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/End-to-End Reliability Reporting for Segmentation Systems.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Ensemble Black-box Transfer Attack on Dense Prediction.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Erosion Attack Training for Segmentation.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Graph of Thoughts Reasoning.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/index.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:52:00+08:00"
+    },
+    {
+      "file": "concepts/Indirect Local Attack in Segmentation.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/L-infinity Norm Ball.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/LiDAR Point-Cloud Segmentation Attack Surface.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Natural Evolutionary Strategies (NES).md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Painting-by-Numbers Robust Segmentation Training.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Patch-certified Defense with Demasked Smoothing.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Patch-robust Attention Regularization.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Physical Adversarial Patch Evaluation for Segmentation.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Prior-informed Robust Adversarial Training (PIR-AT).md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Proximal Splitting Optimization for Segmentation Attacks.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Proxy Index mIoU Optimization.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Query-Efficient Attack Evaluation.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Randomized Smoothing Certification for Segmentation.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Redundant Teacher-Student Robustness in Segmentation.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Region-and-Prototype Prioritized PGD (RP-PGD).md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Relaxed Reachability Verification for Segmentation.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Robust Medical Image Segmentation under Adversarial Shift.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Robustness-Generalization Decoupling in Dense Prediction.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Segmentation Reliability Audit Protocol.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Segmentation Robustness Benchmark Protocol.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/SegPGD-AT for Robust Segmentation.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/SegPGD.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Semantic Segmentation.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Semantically Stealthy Segmentation Attack.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/SemSegBench Robustness Benchmarking.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/SignSGD.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/SimBA (Simple Black-box Attack).md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Square Attack.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Standardized Evaluation Attack (SEA) Protocol.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Uncertainty-based Adversarial Detection in Segmentation.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "concepts/Vision Transformer (ViT).md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/ADE20K Dataset.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Aghyad Deeb.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Alessandro Biondi.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Amir Houmansadr.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Andreas Bar.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Antonio Torralba.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Anurag Arnab.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Bo Xu.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Burkhard Gussefeld.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Carsten Rother.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Chao Huang.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Chenglin Miao.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Christoph Kamann.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Chuhua Wang.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Chunming Qiao.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Cityscapes Dataset.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/David J. Crandall.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/DeepLabv3.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Di Zhang.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Dian Yu.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Diego Manzanas Lopez.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Edward Hu.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Fabian Huger.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/FCN.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Federico Nesti.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Felix Assion.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Florens Grener.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Florian Tramer.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Foad Hajiaghajani.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Giorgio Buttazzo.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Giulio Rossolini.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/GPT-4.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/GPT-ST.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Hai Zhao.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Hanting Chen.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Hengshuang Zhao.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Henry Bae.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Hoang-Dung Tran.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/index.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:52:00+08:00"
+    },
+    {
+      "file": "entities/Jan Hendrik Metzen.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Jiaya Jia.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Jindong Gu.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Juan C. Perez.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Jue Wang.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Junlin Wang.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Kai Han.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Kaspar Sakmann.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Krishna Kanth Nakka.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Laura Daza.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Lei Li.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/LibriSpeech Dataset.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Linhao Dong.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Llama-2.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/LLaMA-3 8B.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/LLaMA-Adapter.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/LLaVA.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Lu Su.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Ludwig Schmidt.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/M. Salman Asif.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Maciej Besta.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Maciej Swiechowski.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Maksym Yatsura.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Marc Fischer.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Martin Vechev.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Marvin Klingner.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/MaskFormer.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Mathieu Salzmann.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Matthias Hein.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Max Tegmark.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Maximilian Baader.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Mengdi Huai.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Michael Poli.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/MiniGPT-4.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Mohammadreza Teymoorianfard.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Moksh Jain.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/N. Grace Hua.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Nan Liu.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Nathaniel Hamilton.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Neelanjana Pal.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Nicholas Carlini.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Nico Schmidt.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Nils Blach.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Ondrej Miksik.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Onur Mutlu.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/OpenAssistant.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Pablo Arbelaez.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Patrick Musau.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Peiyi Wang.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/PEMS08 Dataset.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Peter Schlicht.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Philip H. S. Torr.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Philip Torr.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/PSPNet.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Qingfeng Lan.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Richard S. Sutton.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Robin Hutmacher.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/RobustBench.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Saasha Nair.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Sajjad Amini.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/SegFormer.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Shibhansh Dohare.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Shiqing Ma.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Shunyu Yao.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Stanley Bak.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Stuart Shieber.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Taylor T. Johnson.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Tim Fingscheidt.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Tri Dao.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Umair Rasheed.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Vicuna.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Volker Tresp.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Wenqiang Zhang.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Wes Gurnee.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Wiebke Gunther.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Xiaodong Yang.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Xiaogang Xu.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Yao Yao.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Yaoteng Tan.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Yejin Choi.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Yelong Shen.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Yi Zhu.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Yoshua Bengio.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Yu Li.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Yu Shang.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Yunhe Wang.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Yuntian Deng.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Yusen Zhang.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Zhaoyu Chen.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Zhengyang Shan.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Zhenhua Chen.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Zhonghang Li.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "entities/Zhuosheng Zhang.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/Adversarial Robustness Evaluation Patterns.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/Alignment Robustness Evaluation Ladder.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/Certified and Verified Robust Segmentation.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/Continual Learning Plasticity Maintenance Playbook.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/Decision-based Segmentation Attack Landscape.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/Efficient Adaptation and Plasticity Retention.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/index.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:52:00+08:00"
+    },
+    {
+      "file": "synthesis/Inference-Time Orchestration and Routing for LLMs.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/LiDAR Semantic Segmentation Security Landscape.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/LLM Inference Efficiency and Scaling.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/LLM Reasoning Search and Verification.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/Long-Context Architecture Without Full Attention.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/Multi-Agent LLM Collaboration Landscape.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/Multimodal Composition and Reasoning.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/Parameter-Efficient LLM Adaptation and Inference.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/Patch Attack and Defense in Segmentation.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/Probabilistic Inference-Time Control for LLMs.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/Process Supervision and CoT Internalization.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/Reliability and Benchmarking for Robust Segmentation.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/Representation Capacity and Effective Rank.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/Robust Representation and Adversarial Dynamics.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/Robust Training Strategies for Semantic Segmentation.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/Search-Based Deliberate Reasoning Landscape.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/Segmentation Adversarial Attack Methods 2019-2026.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/Segmentation Robustness Batch Reading Matrix 2019-2026.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/Semantic Segmentation Robustness Corpus 2019-2026.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/Spatio-Temporal Representation in Language Models.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/Structured Reasoning Methods for LLMs.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/Structured Spatio-Temporal Representation Learning.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "synthesis/Temporal Structure Learning in Sequence Models.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "references/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report.md",
+      "updated": "2026-04-08T00:00:00+08:00",
+      "source_newer": "2026-04-08T23:10:38+08:00"
+    },
+    {
+      "file": "references/Adversarial Attacks against LiDAR Semantic Segmentation in Autonomous Driving.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T12:26:00+08:00"
+    },
+    {
+      "file": "references/Amortizing intractable inference in large language models.md",
+      "updated": "2026-04-08T00:00:00+08:00",
+      "source_newer": "2026-04-08T23:10:38+08:00"
+    },
+    {
+      "file": "references/Are aligned neural networks adversarially aligned.md",
+      "updated": "2026-04-08T00:00:00+08:00",
+      "source_newer": "2026-04-08T23:10:38+08:00"
+    },
+    {
+      "file": "references/Attacking LiDAR Semantic Segmentation in Autonomous Driving.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T12:26:00+08:00"
+    },
+    {
+      "file": "references/Benchmarking the Robustness of Semantic Segmentation Models (CVPR 2020).md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T12:26:00+08:00"
+    },
+    {
+      "file": "references/Benchmarking the Robustness of Semantic Segmentation Models (IJCV 2020).md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T12:26:00+08:00"
+    },
+    {
+      "file": "references/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+      "updated": "2026-04-08T00:00:00+08:00",
+      "source_newer": "2026-04-08T23:10:38+08:00"
+    },
+    {
+      "file": "references/Certified Defences Against Adversarial Patch Attacks on Semantic Segmentation.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T12:26:00+08:00"
+    },
+    {
+      "file": "references/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
+      "updated": "2026-04-08T00:00:00+08:00",
+      "source_newer": "2026-04-08T23:10:38+08:00"
+    },
+    {
+      "file": "references/CIF Continuous Integrate-and-Fire.md",
+      "updated": "2026-04-08T00:00:00+08:00",
+      "source_newer": "2026-04-08T22:48:28+08:00"
+    },
+    {
+      "file": "references/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity.md",
+      "updated": "2026-04-08T00:00:00+08:00",
+      "source_newer": "2026-04-08T23:10:38+08:00"
+    },
+    {
+      "file": "references/Compositional Visual Generation with Composable Diffusion Models.md",
+      "updated": "2026-04-08T00:00:00+08:00",
+      "source_newer": "2026-04-08T23:10:38+08:00"
+    },
+    {
+      "file": "references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+      "updated": "2026-04-09T00:00:00+08:00",
+      "source_newer": "2026-04-09T16:12:38+08:00"
+    },
+    {
+      "file": "references/Demystifying Chains, Trees, and Graphs of Thoughts.md",
+      "updated": "2026-04-08T00:00:00+08:00",
+      "source_newer": "2026-04-08T23:10:38+08:00"
+    },
+    {
+      "file": "references/Dynamic Divide-and-Conquer Adversarial Training for Robust Semantic Segmentation.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T12:26:00+08:00"
+    },
+    {
+      "file": "references/Ensemble-Based Blackbox Attacks on Dense Prediction.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T12:26:00+08:00"
+    },
+    {
+      "file": "references/Erosion Attack for Adversarial Training to Enhance Semantic Segmentation Robustness (arXiv preprint).md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T12:26:00+08:00"
+    },
+    {
+      "file": "references/Evaluating the Adversarial Robustness of Semantic Segmentation.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T12:26:00+08:00"
+    },
+    {
+      "file": "references/Evaluating the Robustness of Semantic Segmentation in Real-World Adversarial Patch Attacks.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T12:26:00+08:00"
+    },
+    {
+      "file": "references/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step.md",
+      "updated": "2026-04-08T00:00:00+08:00",
+      "source_newer": "2026-04-08T22:48:28+08:00"
+    },
+    {
+      "file": "references/GPT-ST Spatio-Temporal Pretraining.md",
+      "updated": "2026-04-08T00:00:00+08:00",
+      "source_newer": "2026-04-08T22:48:28+08:00"
+    },
+    {
+      "file": "references/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+      "updated": "2026-04-08T00:00:00+08:00",
+      "source_newer": "2026-04-08T23:10:38+08:00"
+    },
+    {
+      "file": "references/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+      "updated": "2026-04-08T00:00:00+08:00",
+      "source_newer": "2026-04-08T23:10:38+08:00"
+    },
+    {
+      "file": "references/Improved Noise and Attack Robustness of Semantic Segmentation Models with Self-Supervised Depth Estimation.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T12:26:00+08:00"
+    },
+    {
+      "file": "references/Increasing the Robustness of Semantic Segmentation Models with Painting-by-Numbers.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T12:26:00+08:00"
+    },
+    {
+      "file": "references/index.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:52:00+08:00"
+    },
+    {
+      "file": "references/Indirect Local Attacks for Context-aware Semantic Segmentation Networks.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T12:26:00+08:00"
+    },
+    {
+      "file": "references/Language Models Represent Space and Time.md",
+      "updated": "2026-04-08T00:00:00+08:00",
+      "source_newer": "2026-04-08T23:10:38+08:00"
+    },
+    {
+      "file": "references/LoRA Low-Rank Adaptation of Large Language Models.md",
+      "updated": "2026-04-08T00:00:00+08:00",
+      "source_newer": "2026-04-08T23:10:38+08:00"
+    },
+    {
+      "file": "references/Maintaining Plasticity in Deep Continual Learning.md",
+      "updated": "2026-04-08T00:00:00+08:00",
+      "source_newer": "2026-04-08T23:10:38+08:00"
+    },
+    {
+      "file": "references/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md",
+      "updated": "2026-04-08T00:00:00+08:00",
+      "source_newer": "2026-04-08T22:48:28+08:00"
+    },
+    {
+      "file": "references/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature Sparsification.md",
+      "updated": "2026-04-08T00:00:00+08:00",
+      "source_newer": "2026-04-08T23:10:38+08:00"
+    },
+    {
+      "file": "references/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature.md",
+      "updated": "2026-04-08T00:00:00+08:00",
+      "source_newer": "2026-04-08T23:10:38+08:00"
+    },
+    {
+      "file": "references/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
+      "updated": "2026-04-08T00:00:00+08:00",
+      "source_newer": "2026-04-08T22:48:28+08:00"
+    },
+    {
+      "file": "references/Monte Carlo Tree Search A Review of Recent Modifications and Applications.md",
+      "updated": "2026-04-08T00:00:00+08:00",
+      "source_newer": "2026-04-08T23:10:38+08:00"
+    },
+    {
+      "file": "references/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+      "updated": "2026-04-08T00:00:00+08:00",
+      "source_newer": "2026-04-08T23:10:38+08:00"
+    },
+    {
+      "file": "references/On the Robustness of Redundant Teacher-Student Frameworks for Semantic Segmentation.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T12:26:00+08:00"
+    },
+    {
+      "file": "references/On the Robustness of Semantic Segmentation Models to Adversarial Attacks.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T12:26:00+08:00"
+    },
+    {
+      "file": "references/PanGu-pi Nonlinearity Compensation.md",
+      "updated": "2026-04-08T00:00:00+08:00",
+      "source_newer": "2026-04-08T23:10:38+08:00"
+    },
+    {
+      "file": "references/Proximal Splitting Adversarial Attack for Semantic Segmentation.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T12:26:00+08:00"
+    },
+    {
+      "file": "references/Reliability in Semantic Segmentation - Are We on the Right Track.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T12:26:00+08:00"
+    },
+    {
+      "file": "references/Robustness Verification of Semantic Segmentation Neural Networks using Relaxed Reachability.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T12:26:00+08:00"
+    },
+    {
+      "file": "references/RP-PGD - Enhancing Semantic Segmentation Robustness via Region-based Prioritized PGD.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T12:26:00+08:00"
+    },
+    {
+      "file": "references/Scalable Certified Segmentation via Randomized Smoothing.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T12:26:00+08:00"
+    },
+    {
+      "file": "references/SegPGD - An Effective and Efficient Adversarial Attack for Segmentation.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T12:26:00+08:00"
+    },
+    {
+      "file": "references/SemSegBench and DetecBench - Benchmarking Reliability and Generalization Beyond Classification.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T12:26:00+08:00"
+    },
+    {
+      "file": "references/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+      "updated": "2026-04-08T00:00:00+08:00",
+      "source_newer": "2026-04-08T22:48:28+08:00"
+    },
+    {
+      "file": "references/The Attack Generator - A Systematic Approach Towards Constructing Adversarial Attacks.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T12:26:00+08:00"
+    },
+    {
+      "file": "references/Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T12:26:00+08:00"
+    },
+    {
+      "file": "references/Towards Robust General Medical Image Segmentation.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T12:26:00+08:00"
+    },
+    {
+      "file": "references/Towards Robust Semantic Segmentation against Patch-based Attack via Attention Refinement.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T12:26:00+08:00"
+    },
+    {
+      "file": "references/Towards Semantically Stealthy Adversarial Attacks Against Segmentation Models.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T12:26:00+08:00"
+    },
+    {
+      "file": "references/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md",
+      "updated": "2026-04-08T00:00:00+08:00",
+      "source_newer": "2026-04-08T23:10:38+08:00"
+    },
+    {
+      "file": "references/Uncertainty-Based Detection of Adversarial Attacks in Semantic Segmentation.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T12:26:00+08:00"
+    },
+    {
+      "file": "notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+      "updated": "2026-04-09T00:00:00+08:00",
+      "source_newer": "2026-04-09T16:12:38+08:00"
+    },
+    {
+      "file": "notes/index.md",
+      "updated": "2026-04-08T00:00:00+08:00",
+      "source_newer": "2026-04-08T21:52:23+08:00"
+    },
+    {
+      "file": "notes/Research-Paper-Notes 导入索引.md",
+      "updated": "2026-04-08T00:00:00+08:00",
+      "source_newer": "2026-04-08T18:43:08+08:00"
+    },
+    {
+      "file": "journal/index.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:52:00+08:00"
+    },
+    {
+      "file": "journal/Papers Sources Deep Gap Audit 2026-04-08.md",
+      "updated": "2026-04-08T00:00:00+08:00",
+      "source_newer": "2026-04-08T18:43:08+08:00"
+    },
+    {
+      "file": "journal/Segmentation Robustness Batch Ingest Plan 2026-04-10.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:45:00+08:00"
+    },
+    {
+      "file": "journal/Semantic Segmentation Robustness Corpus Update 2026-04-09.md",
+      "updated": "2026-04-09T00:00:00+08:00",
+      "source_newer": "2026-04-09T22:01:44+08:00"
+    },
+    {
+      "file": "journal/Wiki Coverage Audit 2026-04-08.md",
+      "updated": "2026-04-09T00:00:00+08:00",
+      "source_newer": "2026-04-09T09:28:17+08:00"
+    },
+    {
+      "file": "index.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:52:00+08:00"
+    },
+    {
+      "file": "log.md",
+      "updated": "2026-04-10T00:00:00+08:00",
+      "source_newer": "2026-04-10T13:52:00+08:00"
+    }
+  ],
+  "contradictions": [],
+  "index_issues": [
+    {
+      "file": "entities/Bo Xu.md",
+      "issue": "not_listed_in_entities/index.md"
+    },
+    {
+      "file": "entities/Chao Huang.md",
+      "issue": "not_listed_in_entities/index.md"
+    }
+  ],
+  "provenance_issues": [],
+  "counts": {
+    "orphans": 3,
+    "broken_wikilinks": 357,
+    "missing_frontmatter": 77,
+    "missing_summary": 0,
+    "long_summary": 0,
+    "stale_content": 278,
+    "contradictions": 0,
+    "index_issues": 2,
+    "provenance_issues": 0
+  }
+}

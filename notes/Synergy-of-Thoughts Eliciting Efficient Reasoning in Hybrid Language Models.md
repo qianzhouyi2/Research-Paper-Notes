@@ -1,6 +1,17 @@
-﻿# Synergy-of-Thoughts: Eliciting Efficient Reasoning in Hybrid Language Models
+---
+title: "Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models"
+category: note
+tags:
+  - note
+sources:
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-10
+updated: 2026-04-10
+summary: "﻿# Synergy-of-Thoughts: Eliciting Efficient Reasoning in Hybrid Language Models"
+---
+# Synergy-of-Thoughts: Eliciting Efficient Reasoning in Hybrid Language Models
 
-- 阅读日期：[[2026-04-08]]
+- 阅读日期：[[journal/2026-04-08]]
 - 阅读状态：已读
 - 标签：#paper #reasoning #hybrid-llm #cost-efficiency #multi-agent
 - 相关方向：高效推理、双系统认知、混合模型协作

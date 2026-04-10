@@ -4,6 +4,9 @@ category: index
 tags:
   - index
   - synthesis
+sources:
+  - workspace/wiki-update-2026-04-10-lint-update-online
+created: 2026-04-08
 updated: 2026-04-10
 summary: 跨论文对比、综合与主题结论页面索引。
 ---

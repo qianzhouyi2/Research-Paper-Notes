@@ -1,6 +1,17 @@
-﻿# Language Models Represent Space and Time
+---
+title: "Language Models Represent Space and Time"
+category: note
+tags:
+  - note
+sources:
+  - workspace/wiki-update-2026-04-10-global-lint-remediation
+created: 2026-04-10
+updated: 2026-04-10
+summary: "﻿# Language Models Represent Space and Time"
+---
+# Language Models Represent Space and Time
 
-- 阅读日期：[[2026-04-08]]
+- 阅读日期：[[journal/2026-04-08]]
 - 阅读状态：已读
 - 标签：#paper #llm #world-model #probing #imported
 - 相关方向：世界模型、可解释性、表示探针

@@ -54,7 +54,7 @@ provenance:
 
 ## Linked Author Entities
 
-- Author entities pending for this paper. ^[ambiguous]
+- Verified authors (Crossref metadata): Yuxuan Zhang; Zhenbo Shi; Shuchang Wang; Wei Yang; Shaowei Wang; Yinxing Xue.
 
 ## Linked Concepts and Synthesis
 
@@ -65,5 +65,6 @@ provenance:
 ## Online Verification Notes
 
 - Primary verification link: https://doi.org/10.1609/aaai.v39i10.33122
+- Secondary metadata link: https://dblp.org/rec/conf/aaai/ZhangSW00X25
 - Local artifacts are stored under `papers_sources/semantic_segmentation_robustness_20260409`.
 
