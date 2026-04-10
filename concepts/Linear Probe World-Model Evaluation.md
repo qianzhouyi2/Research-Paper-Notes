@@ -1,15 +1,4 @@
 ---
-title: "Linear Probe World-Model Evaluation"
-category: concept
-tags:
-  - concept
-sources:
-  - workspace/wiki-update-2026-04-10-global-lint-remediation
-created: 2026-04-10
-updated: 2026-04-10
-summary: "﻿---"
----
----
 title: Linear Probe World-Model Evaluation
 category: concept
 tags:
@@ -51,12 +40,12 @@ provenance:
 - [[entities/Max Tegmark]]
 - [[synthesis/Structured Spatio-Temporal Representation Learning]]
 
-## Online Supplement (2026-04-10)
+## ?????2026-04-10?
 
-- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
-- Text anchor used: ﻿--- title: Linear Probe World-Model Evaluation category: concept tags: - concept - llm - interpretability - probing sources: - papers_sources/Research-Paper-Notes/LLM体现出时空概念.md - notes/Language Models Represent Space and Time.md created: 2026-04-08 updated: 2...
-- Primary online sources used in this pass:
-- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
-- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
-- Status: completed page-level online supplementation in this global pass.
+- ????????????????????????????????
+- ?????? ﻿--- title: Linear Probe World-Model Evaluation category: concept tags: - concept - llm - interpretability - probing sources: - papers_sources/Research-Paper-Notes/LLM体现出时空概念.md - notes/Language Models Represent Space and Time.md created: 2026-04-08 updated: 2...
+- ????????????
+- ??????????? URL???????????????^[ambiguous]
+- ????????????arXiv / DOI / ???????????????????
+- ?????????????????????
 

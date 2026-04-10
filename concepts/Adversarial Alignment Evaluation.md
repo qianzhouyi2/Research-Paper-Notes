@@ -1,15 +1,4 @@
 ---
-title: "Adversarial Alignment Evaluation"
-category: concept
-tags:
-  - concept
-sources:
-  - workspace/wiki-update-2026-04-10-global-lint-remediation
-created: 2026-04-10
-updated: 2026-04-10
-summary: "﻿---"
----
----
 title: Adversarial Alignment Evaluation
 category: concept
 tags:
@@ -65,12 +54,12 @@ provenance:
 - [[synthesis/Adversarial Robustness Evaluation Patterns]]
 - [[synthesis/Alignment Robustness Evaluation Ladder]]
 
-## Online Supplement (2026-04-10)
+## ?????2026-04-10?
 
-- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
-- Text anchor used: ﻿--- title: Adversarial Alignment Evaluation category: concept tags: - concept - llm-safety - adversarial-attack - evaluation sources: - papers_sources/Are aligned neural networks adversarially aligned 2306.15447/main.tex - papers_sources/2306.15447.tar create...
-- Primary online sources used in this pass:
-- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
-- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
-- Status: completed page-level online supplementation in this global pass.
+- ????????????????????????????????
+- ?????? ﻿--- title: Adversarial Alignment Evaluation category: concept tags: - concept - llm-safety - adversarial-attack - evaluation sources: - papers_sources/Are aligned neural networks adversarially aligned 2306.15447/main.tex - papers_sources/2306.15447.tar create...
+- ????????????
+- ??????????? URL???????????????^[ambiguous]
+- ????????????arXiv / DOI / ???????????????????
+- ?????????????????????
 

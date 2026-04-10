@@ -34,12 +34,12 @@ provenance:
 - [[concepts/Mean-Centered Feature Sparsification]]
 - [[synthesis/Alignment Robustness Evaluation Ladder]]
 
-## Online Supplement (2026-04-10)
+## ?????2026-04-10?
 
-- This entity page is cross-checked online for attribution and role consistency across linked papers.
-- Text anchor used: - 在《MeanSparse 2406.05927》与《MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature Sparsification》的作者列表中，Shiqing Ma 都作为共同作者出现；联网复核后，这个实体页不再只是单篇论文里的名字。 - 从当前入库范围看，Shiqing Ma 在本库中主要连接 模型安全与对抗鲁棒性 这一簇问题，说明已纳管材料对其关注集中在这条研究线上。
-- Primary online sources used in this pass:
-- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
-- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
-- Status: completed page-level online supplementation in this global pass.
+- ?????????????????????????????
+- ?????? - 在《MeanSparse 2406.05927》与《MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature Sparsification》的作者列表中，Shiqing Ma 都作为共同作者出现；联网复核后，这个实体页不再只是单篇论文里的名字。 - 从当前入库范围看，Shiqing Ma 在本库中主要连接 模型安全与对抗鲁棒性 这一簇问题，说明已纳管材料对其关注集中在这条研究线上。
+- ????????????
+- ??????????? URL???????????????^[ambiguous]
+- ????????????arXiv / DOI / ???????????????????
+- ?????????????????????
 

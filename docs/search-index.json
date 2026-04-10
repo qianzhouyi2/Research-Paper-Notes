@@ -53,7 +53,7 @@
     "url": "concepts/Adversarial Alignment Evaluation.html",
     "path": "concepts/Adversarial Alignment Evaluation.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "对抗性对齐评估强调先校准攻击器能力，再判断对齐防御强度，避免将“攻击失败”误判为“模型安全”。"
   },
   {
     "title": "Adversarial Attacks against LiDAR Semantic Segmentation in Autonomous Driving",
@@ -74,7 +74,7 @@
     "url": "concepts/Adversarial Vulnerability Profiling for Segmentation Models.html",
     "path": "concepts/Adversarial Vulnerability Profiling for Segmentation Models.md",
     "section": "concepts",
-    "summary": "Characterize failure modes and degradation patterns under adversarial perturbations."
+    "summary": "Adversarial Vulnerability Profiling for Segmentation Models：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "Aghyad Deeb",
@@ -88,7 +88,7 @@
     "url": "entities/Alessandro Biondi.html",
     "path": "entities/Alessandro Biondi.md",
     "section": "entities",
-    "summary": "Alessandro Biondi is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Alessandro Biondi：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Alignment Robustness Evaluation Ladder",
@@ -130,7 +130,7 @@
     "url": "entities/Andreas Bar.html",
     "path": "entities/Andreas Bar.md",
     "section": "entities",
-    "summary": "Andreas Bar is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Andreas Bar：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Antonio Torralba",
@@ -144,7 +144,7 @@
     "url": "entities/Anurag Arnab.html",
     "path": "entities/Anurag Arnab.md",
     "section": "entities",
-    "summary": "Anurag Arnab is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Anurag Arnab：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Are aligned neural networks adversarially aligned",
@@ -165,7 +165,7 @@
     "url": "concepts/Attack Generator Framework for Segmentation Threat Modeling.html",
     "path": "concepts/Attack Generator Framework for Segmentation Threat Modeling.md",
     "section": "concepts",
-    "summary": "Systematically generate adversarial examples as a reusable threat model component."
+    "summary": "Attack Generator Framework for Segmentation Threat Modeling：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "Attacking LiDAR Semantic Segmentation in Autonomous Driving",
@@ -179,14 +179,14 @@
     "url": "concepts/Attention Refinement against Patch Attacks.html",
     "path": "concepts/Attention Refinement against Patch Attacks.md",
     "section": "concepts",
-    "summary": "Refine attention to reduce patch-dominant failures."
+    "summary": "Attention Refinement against Patch Attacks：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "Augmented Shortcut for Attention Blocks",
     "url": "concepts/Augmented Shortcut for Attention Blocks.html",
     "path": "concepts/Augmented Shortcut for Attention Blocks.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "增强捷径在注意力块并行保留多样化特征路径，可缓解深层特征坍塌与秩收缩问题。"
   },
   {
     "title": "Benchmarking the Robustness of Semantic Segmentation Models (CVPR 2020)",
@@ -228,28 +228,28 @@
     "url": "entities/Burkhard Gussefeld.html",
     "path": "entities/Burkhard Gussefeld.md",
     "section": "entities",
-    "summary": "Burkhard Gussefeld is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Burkhard Gussefeld：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Carsten Rother",
     "url": "entities/Carsten Rother.html",
     "path": "entities/Carsten Rother.md",
     "section": "entities",
-    "summary": "Carsten Rother is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Carsten Rother：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Cascaded Activation Nonlinearity Compensation",
     "url": "concepts/Cascaded Activation Nonlinearity Compensation.html",
     "path": "concepts/Cascaded Activation Nonlinearity Compensation.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "级联激活补偿通过串联激活与可学习仿射变换增强 FFN 非线性表达，在有限开销下提升性能。"
   },
   {
     "title": "Certified and Verified Robust Segmentation",
     "url": "synthesis/Certified and Verified Robust Segmentation.html",
     "path": "synthesis/Certified and Verified Robust Segmentation.md",
     "section": "synthesis",
-    "summary": "Focuses on formal verification and certification routes: reachability, randomized smoothing, and demasked smoothing."
+    "summary": "Certified and Verified Robust Segmentation：语义分割鲁棒性语料中的主题综合页。"
   },
   {
     "title": "Certified Defences Against Adversarial Patch Attacks on Semantic Segmentation",
@@ -284,28 +284,28 @@
     "url": "entities/Chenglin Miao.html",
     "path": "entities/Chenglin Miao.md",
     "section": "entities",
-    "summary": "Chenglin Miao is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Chenglin Miao：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Christoph Kamann",
     "url": "entities/Christoph Kamann.html",
     "path": "entities/Christoph Kamann.md",
     "section": "entities",
-    "summary": "Christoph Kamann is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Christoph Kamann：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Chuhua Wang",
     "url": "entities/Chuhua Wang.html",
     "path": "entities/Chuhua Wang.md",
     "section": "entities",
-    "summary": "Chuhua Wang is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Chuhua Wang：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Chunming Qiao",
     "url": "entities/Chunming Qiao.html",
     "path": "entities/Chunming Qiao.md",
     "section": "entities",
-    "summary": "Chunming Qiao is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Chunming Qiao：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "CIF Continuous Integrate-and-Fire",
@@ -361,7 +361,7 @@
     "url": "concepts/Composable Diffusion Generation.html",
     "path": "concepts/Composable Diffusion Generation.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "可组合扩散生成通过在扩散过程中组合多个条件或子目标，提升复杂语义约束下的可控图像生成能力。"
   },
   {
     "title": "Compositional Visual Generation with Composable Diffusion Models",
@@ -389,7 +389,7 @@
     "url": "concepts/Context-aware Indirect Local Attack.html",
     "path": "concepts/Context-aware Indirect Local Attack.md",
     "section": "concepts",
-    "summary": "Use local perturbations that propagate through context to degrade distant regions."
+    "summary": "Context-aware Indirect Local Attack：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "Continual Backpropagation",
@@ -410,7 +410,7 @@
     "url": "concepts/Continuous Integrate-and-Fire Alignment.html",
     "path": "concepts/Continuous Integrate-and-Fire Alignment.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "Continuous Integrate-and-Fire 以连续积分放电机制实现单调软对齐与边界触发，是端到端语音序列对齐的重要方法。"
   },
   {
     "title": "Data-Controlled Gating in Sequence Models",
@@ -424,7 +424,7 @@
     "url": "entities/David J. Crandall.html",
     "path": "entities/David J. Crandall.md",
     "section": "entities",
-    "summary": "David J. Crandall is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "David J. Crandall：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Decision-based Black-box Attack for Segmentation",
@@ -487,14 +487,14 @@
     "url": "concepts/Depth-Assisted Robustness via Self-Supervised Multi-Tasking.html",
     "path": "concepts/Depth-Assisted Robustness via Self-Supervised Multi-Tasking.md",
     "section": "concepts",
-    "summary": "Leverage self-supervised depth estimation to improve robustness and noise tolerance."
+    "summary": "Depth-Assisted Robustness via Self-Supervised Multi-Tasking：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "DetecBench Generalization Benchmarking",
     "url": "concepts/DetecBench Generalization Benchmarking.html",
     "path": "concepts/DetecBench Generalization Benchmarking.md",
     "section": "concepts",
-    "summary": "Benchmark reliability and generalization beyond classification."
+    "summary": "DetecBench Generalization Benchmarking：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "Di Zhang",
@@ -515,7 +515,7 @@
     "url": "entities/Diego Manzanas Lopez.html",
     "path": "entities/Diego Manzanas Lopez.md",
     "section": "entities",
-    "summary": "Diego Manzanas Lopez is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Diego Manzanas Lopez：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Discrete Linear Noise",
@@ -529,7 +529,7 @@
     "url": "concepts/Divide-and-Conquer Adversarial Training for Segmentation.html",
     "path": "concepts/Divide-and-Conquer Adversarial Training for Segmentation.md",
     "section": "concepts",
-    "summary": "Train robust segmentation models with divide-and-conquer adversarial curricula."
+    "summary": "Divide-and-Conquer Adversarial Training for Segmentation：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "Dynamic Divide-and-Conquer Adversarial Training for Robust Semantic Segmentation",
@@ -557,14 +557,14 @@
     "url": "concepts/End-to-End Reliability Reporting for Segmentation Systems.html",
     "path": "concepts/End-to-End Reliability Reporting for Segmentation Systems.md",
     "section": "concepts",
-    "summary": "Standardize reporting from attack setup to reliability conclusions."
+    "summary": "End-to-End Reliability Reporting for Segmentation Systems：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "Ensemble Black-box Transfer Attack on Dense Prediction",
     "url": "concepts/Ensemble Black-box Transfer Attack on Dense Prediction.html",
     "path": "concepts/Ensemble Black-box Transfer Attack on Dense Prediction.md",
     "section": "concepts",
-    "summary": "Boost black-box transfer attacks on dense prediction with model ensembles."
+    "summary": "Ensemble Black-box Transfer Attack on Dense Prediction：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "Ensemble-Based Blackbox Attacks on Dense Prediction",
@@ -592,7 +592,7 @@
     "url": "concepts/Erosion Attack Training for Segmentation.html",
     "path": "concepts/Erosion Attack Training for Segmentation.md",
     "section": "concepts",
-    "summary": "Use erosion-style attacks as a training signal for robustness."
+    "summary": "Erosion Attack Training for Segmentation：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "Evaluating the Adversarial Robustness of Semantic Segmentation",
@@ -613,7 +613,7 @@
     "url": "entities/Fabian Huger.html",
     "path": "entities/Fabian Huger.md",
     "section": "entities",
-    "summary": "Fabian Huger is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Fabian Huger：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "FCN",
@@ -627,28 +627,28 @@
     "url": "concepts/Feature Effective Rank Diagnostics.html",
     "path": "concepts/Feature Effective Rank Diagnostics.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "有效秩诊断用表示谱熵近似衡量特征多样性退化，可用于监测持续学习中的可塑性丧失。"
   },
   {
     "title": "Federico Nesti",
     "url": "entities/Federico Nesti.html",
     "path": "entities/Federico Nesti.md",
     "section": "entities",
-    "summary": "Federico Nesti is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Federico Nesti：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Felix Assion",
     "url": "entities/Felix Assion.html",
     "path": "entities/Felix Assion.md",
     "section": "entities",
-    "summary": "Felix Assion is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Felix Assion：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Florens Grener",
     "url": "entities/Florens Grener.html",
     "path": "entities/Florens Grener.md",
     "section": "entities",
-    "summary": "Florens Grener is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Florens Grener：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Florian Tramer",
@@ -662,7 +662,7 @@
     "url": "entities/Foad Hajiaghajani.html",
     "path": "entities/Foad Hajiaghajani.md",
     "section": "entities",
-    "summary": "Foad Hajiaghajani is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Foad Hajiaghajani：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step",
@@ -683,21 +683,21 @@
     "url": "concepts/GFlowNet Posterior Sampling for Text Generation.html",
     "path": "concepts/GFlowNet Posterior Sampling for Text Generation.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "利用 GFlowNet 学习可归一化的生成流，实现对受约束文本后验分布的近似采样。"
   },
   {
     "title": "Giorgio Buttazzo",
     "url": "entities/Giorgio Buttazzo.html",
     "path": "entities/Giorgio Buttazzo.md",
     "section": "entities",
-    "summary": "Giorgio Buttazzo is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Giorgio Buttazzo：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Giulio Rossolini",
     "url": "entities/Giulio Rossolini.html",
     "path": "entities/Giulio Rossolini.md",
     "section": "entities",
-    "summary": "Giulio Rossolini is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Giulio Rossolini：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "GPT-4",
@@ -767,7 +767,7 @@
     "url": "entities/Hengshuang Zhao.html",
     "path": "entities/Hengshuang Zhao.md",
     "section": "entities",
-    "summary": "Hengshuang Zhao is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Hengshuang Zhao：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Henry Bae",
@@ -781,14 +781,14 @@
     "url": "concepts/Hierarchical Spatio-Temporal Hypergraph Encoding.html",
     "path": "concepts/Hierarchical Spatio-Temporal Hypergraph Encoding.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "分层时空超图编码通过簇内关系建模与簇间关系迁移联合提升复杂时空结构表达能力。"
   },
   {
     "title": "Hoang-Dung Tran",
     "url": "entities/Hoang-Dung Tran.html",
     "path": "entities/Hoang-Dung Tran.md",
     "section": "entities",
-    "summary": "Hoang-Dung Tran is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Hoang-Dung Tran：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Hyena Hierarchy Towards Larger Convolutional Language Models",
@@ -809,21 +809,21 @@
     "url": "concepts/Hyena Operator.html",
     "path": "concepts/Hyena Operator.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "Hyena Operator 以长卷积与数据控制门控交织递归，构建可替代注意力的次二次序列混合算子，面向超长上下文更具扩展性。"
   },
   {
     "title": "Implicit Chain-of-Thought Internalization",
     "url": "concepts/Implicit Chain-of-Thought Internalization.html",
     "path": "concepts/Implicit Chain-of-Thought Internalization.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "隐式 CoT 内化通过逐步移除显式推理 token，使模型在不依赖长推理文本的情况下保持推理能力。"
   },
   {
     "title": "Implicit Long Convolution Parameterization",
     "url": "concepts/Implicit Long Convolution Parameterization.html",
     "path": "concepts/Implicit Long Convolution Parameterization.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "隐式长卷积参数化通过神经函数生成超长滤波器，解耦滤波器长度与参数规模，支撑高效长上下文建模。"
   },
   {
     "title": "Improved Noise and Attack Robustness of Semantic Segmentation Models with Self-Supervised Depth Estimation",
@@ -865,21 +865,21 @@
     "url": "entities/Jan Hendrik Metzen.html",
     "path": "entities/Jan Hendrik Metzen.md",
     "section": "entities",
-    "summary": "Jan Hendrik Metzen is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Jan Hendrik Metzen：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Jiaya Jia",
     "url": "entities/Jiaya Jia.html",
     "path": "entities/Jiaya Jia.md",
     "section": "entities",
-    "summary": "Jiaya Jia is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Jiaya Jia：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Jindong Gu",
     "url": "entities/Jindong Gu.html",
     "path": "entities/Jindong Gu.md",
     "section": "entities",
-    "summary": "Jindong Gu is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Jindong Gu：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Journal 索引",
@@ -893,7 +893,7 @@
     "url": "entities/Juan C. Perez.html",
     "path": "entities/Juan C. Perez.md",
     "section": "entities",
-    "summary": "Juan C. Perez is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Juan C. Perez：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Jue Wang",
@@ -921,21 +921,21 @@
     "url": "entities/Kaspar Sakmann.html",
     "path": "entities/Kaspar Sakmann.md",
     "section": "entities",
-    "summary": "Kaspar Sakmann is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Kaspar Sakmann：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Known-Solvable Attack Calibration",
     "url": "concepts/Known-Solvable Attack Calibration.html",
     "path": "concepts/Known-Solvable Attack Calibration.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "Known-solvable calibration 先验证攻击器能否解出已知可解样本，再判断模型是否真正鲁棒。"
   },
   {
     "title": "Krishna Kanth Nakka",
     "url": "entities/Krishna Kanth Nakka.html",
     "path": "entities/Krishna Kanth Nakka.md",
     "section": "entities",
-    "summary": "Krishna Kanth Nakka is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Krishna Kanth Nakka：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "L-infinity Norm Ball",
@@ -963,7 +963,7 @@
     "url": "entities/Laura Daza.html",
     "path": "entities/Laura Daza.md",
     "section": "entities",
-    "summary": "Laura Daza is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Laura Daza：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Lei Li",
@@ -984,21 +984,21 @@
     "url": "concepts/LiDAR Point-Cloud Segmentation Attack Surface.html",
     "path": "concepts/LiDAR Point-Cloud Segmentation Attack Surface.md",
     "section": "concepts",
-    "summary": "Model attack surfaces for LiDAR semantic segmentation in autonomous driving."
+    "summary": "LiDAR Point-Cloud Segmentation Attack Surface：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "LiDAR Semantic Segmentation Security Landscape",
     "url": "synthesis/LiDAR Semantic Segmentation Security Landscape.html",
     "path": "synthesis/LiDAR Semantic Segmentation Security Landscape.md",
     "section": "synthesis",
-    "summary": "Summarizes autonomous-driving LiDAR segmentation attack surfaces, demos, and evaluation gaps."
+    "summary": "LiDAR Semantic Segmentation Security Landscape：语义分割鲁棒性语料中的主题综合页。"
   },
   {
     "title": "Linear Probe World-Model Evaluation",
     "url": "concepts/Linear Probe World-Model Evaluation.html",
     "path": "concepts/Linear Probe World-Model Evaluation.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "线性探针世界模型评估通过层级激活回归时空变量，检验模型是否形成可解码且可泛化的内部结构表示。"
   },
   {
     "title": "Linhao Dong",
@@ -1047,7 +1047,7 @@
     "url": "concepts/LLM Nonlinearity Compensation.html",
     "path": "concepts/LLM Nonlinearity Compensation.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "非线性补偿通过结构增量与激活设计增强 LLM 表达能力，在较低额外成本下提升推理与任务表现。"
   },
   {
     "title": "LLM Reasoning Search and Verification",
@@ -1068,7 +1068,7 @@
     "url": "concepts/Logical Operator Composition in Diffusion Models.html",
     "path": "concepts/Logical Operator Composition in Diffusion Models.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "使用 AND/NOT 等逻辑算子组合条件分布，实现可控的组合式视觉生成。"
   },
   {
     "title": "Long-Context Architecture Without Full Attention",
@@ -1096,21 +1096,21 @@
     "url": "concepts/Loss of Plasticity in Continual Learning.html",
     "path": "concepts/Loss of Plasticity in Continual Learning.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "可塑性丧失指模型在持续学习中逐步失去学习新任务的能力，区别于灾难性遗忘，需单独监测与干预。"
   },
   {
     "title": "Low-Rank Adaptation for LLMs",
     "url": "concepts/Low-Rank Adaptation for LLMs.html",
     "path": "concepts/Low-Rank Adaptation for LLMs.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "低秩适配通过在冻结主干权重上注入小规模低秩增量，实现参数高效微调并降低部署成本。"
   },
   {
     "title": "Lu Su",
     "url": "entities/Lu Su.html",
     "path": "entities/Lu Su.md",
     "section": "entities",
-    "summary": "Lu Su is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Lu Su：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Ludwig Schmidt",
@@ -1124,7 +1124,7 @@
     "url": "entities/M. Salman Asif.html",
     "path": "entities/M. Salman Asif.md",
     "section": "entities",
-    "summary": "M. Salman Asif is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "M. Salman Asif：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Maciej Besta",
@@ -1159,28 +1159,28 @@
     "url": "entities/Maksym Yatsura.html",
     "path": "entities/Maksym Yatsura.md",
     "section": "entities",
-    "summary": "Maksym Yatsura is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Maksym Yatsura：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Marc Fischer",
     "url": "entities/Marc Fischer.html",
     "path": "entities/Marc Fischer.md",
     "section": "entities",
-    "summary": "Marc Fischer is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Marc Fischer：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Martin Vechev",
     "url": "entities/Martin Vechev.html",
     "path": "entities/Martin Vechev.md",
     "section": "entities",
-    "summary": "Martin Vechev is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Martin Vechev：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Marvin Klingner",
     "url": "entities/Marvin Klingner.html",
     "path": "entities/Marvin Klingner.md",
     "section": "entities",
-    "summary": "Marvin Klingner is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Marvin Klingner：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "MaskFormer",
@@ -1208,14 +1208,14 @@
     "url": "entities/Mathieu Salzmann.html",
     "path": "entities/Mathieu Salzmann.md",
     "section": "entities",
-    "summary": "Mathieu Salzmann is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Mathieu Salzmann：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Matthias Hein",
     "url": "entities/Matthias Hein.html",
     "path": "entities/Matthias Hein.md",
     "section": "entities",
-    "summary": "Matthias Hein is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Matthias Hein：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Max Tegmark",
@@ -1229,14 +1229,14 @@
     "url": "entities/Maximilian Baader.html",
     "path": "entities/Maximilian Baader.md",
     "section": "entities",
-    "summary": "Maximilian Baader is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Maximilian Baader：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Mean-Centered Feature Sparsification",
     "url": "concepts/Mean-Centered Feature Sparsification.html",
     "path": "concepts/Mean-Centered Feature Sparsification.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "均值中心化稀疏化通过在通道均值邻域内压平低信息波动，减少对抗扰动可利用空间，是一种可插拔后处理鲁棒增强策略。"
   },
   {
     "title": "MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature",
@@ -1264,7 +1264,7 @@
     "url": "entities/Mengdi Huai.html",
     "path": "entities/Mengdi Huai.md",
     "section": "entities",
-    "summary": "Mengdi Huai is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Mengdi Huai：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Michael Poli",
@@ -1285,7 +1285,7 @@
     "url": "concepts/Mixture-of-Agents Aggregation.html",
     "path": "concepts/Mixture-of-Agents Aggregation.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "通过分层代理协作与聚合策略整合多模型候选解，提升长上下文与复杂任务的整体输出质量。"
   },
   {
     "title": "Mixture-of-Agents Enhances Large Language Model Capabilities",
@@ -1334,14 +1334,14 @@
     "url": "concepts/Monte Carlo Tree Search for LLM Reasoning.html",
     "path": "concepts/Monte Carlo Tree Search for LLM Reasoning.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "MCTS 在 LLM 推理中提供了可扩展搜索框架，可与自评估和自修正机制结合提升复杂任务求解率。"
   },
   {
     "title": "Monte Carlo Tree Self-Refine",
     "url": "concepts/Monte Carlo Tree Self-Refine.html",
     "path": "concepts/Monte Carlo Tree Self-Refine.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "将 MCTS 与自评估-自修正循环结合，让 LLM 在高难推理中以搜索替代单次采样。"
   },
   {
     "title": "Multi-Agent LLM Collaboration Landscape",
@@ -1355,21 +1355,21 @@
     "url": "concepts/Multi-Agent LLM Orchestration.html",
     "path": "concepts/Multi-Agent LLM Orchestration.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "多智能体编排通过角色分工、消息传递与聚合策略提升复杂任务表现，但同时引入额外成本与系统复杂度。"
   },
   {
     "title": "Multimodal Adversarial Image Prompting",
     "url": "concepts/Multimodal Adversarial Image Prompting.html",
     "path": "concepts/Multimodal Adversarial Image Prompting.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "多模态对抗图像提示通过连续像素优化诱导对齐模型输出有害文本，是离散文本攻击之外的重要威胁面。"
   },
   {
     "title": "Multimodal Chain-of-Thought Reasoning",
     "url": "concepts/Multimodal Chain-of-Thought Reasoning.html",
     "path": "concepts/Multimodal Chain-of-Thought Reasoning.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "多模态 CoT 通过引入视觉证据链改善推理可解释性与答案稳定性，是跨模态复杂推理的重要技术路线。"
   },
   {
     "title": "Multimodal Chain-of-Thought Reasoning in Language Models",
@@ -1397,7 +1397,7 @@
     "url": "entities/N. Grace Hua.html",
     "path": "entities/N. Grace Hua.md",
     "section": "entities",
-    "summary": "N. Grace Hua is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "N. Grace Hua：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Nan Liu",
@@ -1411,7 +1411,7 @@
     "url": "entities/Nathaniel Hamilton.html",
     "path": "entities/Nathaniel Hamilton.md",
     "section": "entities",
-    "summary": "Nathaniel Hamilton is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Nathaniel Hamilton：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Natural Evolutionary Strategies (NES)",
@@ -1425,7 +1425,7 @@
     "url": "entities/Neelanjana Pal.html",
     "path": "entities/Neelanjana Pal.md",
     "section": "entities",
-    "summary": "Neelanjana Pal is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Neelanjana Pal：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Nicholas Carlini",
@@ -1439,7 +1439,7 @@
     "url": "entities/Nico Schmidt.html",
     "path": "entities/Nico Schmidt.md",
     "section": "entities",
-    "summary": "Nico Schmidt is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Nico Schmidt：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Nils Blach",
@@ -1474,7 +1474,7 @@
     "url": "entities/Ondrej Miksik.html",
     "path": "entities/Ondrej Miksik.md",
     "section": "entities",
-    "summary": "Ondrej Miksik is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Ondrej Miksik：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Onur Mutlu",
@@ -1495,14 +1495,14 @@
     "url": "entities/Pablo Arbelaez.html",
     "path": "entities/Pablo Arbelaez.md",
     "section": "entities",
-    "summary": "Pablo Arbelaez is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Pablo Arbelaez：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Painting-by-Numbers Robust Segmentation Training",
     "url": "concepts/Painting-by-Numbers Robust Segmentation Training.html",
     "path": "concepts/Painting-by-Numbers Robust Segmentation Training.md",
     "section": "concepts",
-    "summary": "Inject class-aware structural priors to improve robust segmentation training."
+    "summary": "Painting-by-Numbers Robust Segmentation Training：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "PanGu-pi Nonlinearity Compensation",
@@ -1544,7 +1544,7 @@
     "url": "concepts/Parameter-Efficient Fine-Tuning for LLMs.html",
     "path": "concepts/Parameter-Efficient Fine-Tuning for LLMs.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "通过限制可训练参数子空间或结构增量，实现低成本微调并保留大模型基础能力。"
   },
   {
     "title": "Parameter-Efficient LLM Adaptation and Inference",
@@ -1558,28 +1558,28 @@
     "url": "synthesis/Patch Attack and Defense in Segmentation.html",
     "path": "synthesis/Patch Attack and Defense in Segmentation.md",
     "section": "synthesis",
-    "summary": "Covers physical patch threats, semantically stealthy attacks, and patch-focused defenses."
+    "summary": "Patch Attack and Defense in Segmentation：语义分割鲁棒性语料中的主题综合页。"
   },
   {
     "title": "Patch-certified Defense with Demasked Smoothing",
     "url": "concepts/Patch-certified Defense with Demasked Smoothing.html",
     "path": "concepts/Patch-certified Defense with Demasked Smoothing.md",
     "section": "concepts",
-    "summary": "Certify robustness against patch attacks with demasked smoothing."
+    "summary": "Patch-certified Defense with Demasked Smoothing：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "Patch-robust Attention Regularization",
     "url": "concepts/Patch-robust Attention Regularization.html",
     "path": "concepts/Patch-robust Attention Regularization.md",
     "section": "concepts",
-    "summary": "Regularize attention to suppress local patch dominance."
+    "summary": "Patch-robust Attention Regularization：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "Patrick Musau",
     "url": "entities/Patrick Musau.html",
     "path": "entities/Patrick Musau.md",
     "section": "entities",
-    "summary": "Patrick Musau is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Patrick Musau：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Peiyi Wang",
@@ -1600,42 +1600,42 @@
     "url": "concepts/Perturbation Interaction.html",
     "path": "concepts/Perturbation Interaction.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "扰动交互指迭代更新之间相互抵消，导致分割攻击出现“本轮成功、下轮回退”的优化不稳定现象。"
   },
   {
     "title": "Peter Schlicht",
     "url": "entities/Peter Schlicht.html",
     "path": "entities/Peter Schlicht.md",
     "section": "entities",
-    "summary": "Peter Schlicht is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Peter Schlicht：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Philip H. S. Torr",
     "url": "entities/Philip H. S. Torr.html",
     "path": "entities/Philip H. S. Torr.md",
     "section": "entities",
-    "summary": "Philip H. S. Torr is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Philip H. S. Torr：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Philip Torr",
     "url": "entities/Philip Torr.html",
     "path": "entities/Philip Torr.md",
     "section": "entities",
-    "summary": "Philip Torr is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Philip Torr：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Physical Adversarial Patch Evaluation for Segmentation",
     "url": "concepts/Physical Adversarial Patch Evaluation for Segmentation.html",
     "path": "concepts/Physical Adversarial Patch Evaluation for Segmentation.md",
     "section": "concepts",
-    "summary": "Evaluate real-world patch attacks against segmentation systems."
+    "summary": "Physical Adversarial Patch Evaluation for Segmentation：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "Prior-informed Robust Adversarial Training (PIR-AT)",
     "url": "concepts/Prior-informed Robust Adversarial Training (PIR-AT).html",
     "path": "concepts/Prior-informed Robust Adversarial Training (PIR-AT).md",
     "section": "concepts",
-    "summary": "Inject priors to accelerate and stabilize robust adversarial training."
+    "summary": "Prior-informed Robust Adversarial Training (PIR-AT)：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "Probabilistic Inference-Time Control for LLMs",
@@ -1656,7 +1656,7 @@
     "url": "concepts/Process-Supervised Step Verification.html",
     "path": "concepts/Process-Supervised Step Verification.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "对推理过程的中间步骤进行细粒度监督与反馈，提升复杂题目的可控性和正确率。"
   },
   {
     "title": "Projects 索引",
@@ -1670,14 +1670,14 @@
     "url": "concepts/Prompt-Robust Representation Probing.html",
     "path": "concepts/Prompt-Robust Representation Probing.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "通过多提示模板一致性检验，验证探针解码结果不依赖单一 prompt 偶然性。"
   },
   {
     "title": "Proximal L0 Feature Sparsification",
     "url": "concepts/Proximal L0 Feature Sparsification.html",
     "path": "concepts/Proximal L0 Feature Sparsification.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "以近端算子视角实现 L0 特征稀疏化，为后处理鲁棒增强提供可解释优化基础。"
   },
   {
     "title": "Proximal Splitting Adversarial Attack for Semantic Segmentation",
@@ -1691,7 +1691,7 @@
     "url": "concepts/Proximal Splitting Optimization for Segmentation Attacks.html",
     "path": "concepts/Proximal Splitting Optimization for Segmentation Attacks.md",
     "section": "concepts",
-    "summary": "Optimize segmentation attacks using proximal splitting for stability and efficiency."
+    "summary": "Proximal Splitting Optimization for Segmentation Attacks：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "Proxy Index mIoU Optimization",
@@ -1719,7 +1719,7 @@
     "url": "concepts/Quantity-Aware Emission Control in CIF.html",
     "path": "concepts/Quantity-Aware Emission Control in CIF.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "CIF 的数量感知发射控制通过缩放、数量损失与尾部处理三策略约束发射数量，稳定单调对齐训练与推理。"
   },
   {
     "title": "Query-Efficient Attack Evaluation",
@@ -1733,14 +1733,14 @@
     "url": "concepts/Randomized Smoothing Certification for Segmentation.html",
     "path": "concepts/Randomized Smoothing Certification for Segmentation.md",
     "section": "concepts",
-    "summary": "Provide certified robustness guarantees for segmentation via randomized smoothing."
+    "summary": "Randomized Smoothing Certification for Segmentation：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "Redundant Teacher-Student Robustness in Segmentation",
     "url": "concepts/Redundant Teacher-Student Robustness in Segmentation.html",
     "path": "concepts/Redundant Teacher-Student Robustness in Segmentation.md",
     "section": "concepts",
-    "summary": "Use teacher-student redundancy to improve segmentation robustness against perturbations."
+    "summary": "Redundant Teacher-Student Robustness in Segmentation：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "References 索引",
@@ -1754,21 +1754,21 @@
     "url": "concepts/Region-and-Prototype Prioritized PGD (RP-PGD).html",
     "path": "concepts/Region-and-Prototype Prioritized PGD (RP-PGD).md",
     "section": "concepts",
-    "summary": "Prioritize perturbation budget by region and prototype importance."
+    "summary": "Region-and-Prototype Prioritized PGD (RP-PGD)：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "Relaxed Reachability Verification for Segmentation",
     "url": "concepts/Relaxed Reachability Verification for Segmentation.html",
     "path": "concepts/Relaxed Reachability Verification for Segmentation.md",
     "section": "concepts",
-    "summary": "Verify segmentation behavior under bounded perturbations via relaxed reachability."
+    "summary": "Relaxed Reachability Verification for Segmentation：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "Reliability and Benchmarking for Robust Segmentation",
     "url": "synthesis/Reliability and Benchmarking for Robust Segmentation.html",
     "path": "synthesis/Reliability and Benchmarking for Robust Segmentation.md",
     "section": "synthesis",
-    "summary": "Integrates benchmark protocol design across robustness, reliability, and generalization reporting."
+    "summary": "Reliability and Benchmarking for Robust Segmentation：语义分割鲁棒性语料中的主题综合页。"
   },
   {
     "title": "Reliability in Semantic Segmentation: Are We on the Right Track?",
@@ -1782,7 +1782,7 @@
     "url": "concepts/Removal Smoothing for CoT Internalization.html",
     "path": "concepts/Removal Smoothing for CoT Internalization.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "在逐步移除 CoT token 的训练中引入随机平滑偏移，缓解目标分布突变导致的优化不稳定。"
   },
   {
     "title": "Representation Capacity and Effective Rank",
@@ -1824,14 +1824,14 @@
     "url": "entities/Robin Hutmacher.html",
     "path": "entities/Robin Hutmacher.md",
     "section": "entities",
-    "summary": "Robin Hutmacher is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Robin Hutmacher：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Robust Medical Image Segmentation under Adversarial Shift",
     "url": "concepts/Robust Medical Image Segmentation under Adversarial Shift.html",
     "path": "concepts/Robust Medical Image Segmentation under Adversarial Shift.md",
     "section": "concepts",
-    "summary": "Study robust segmentation strategies for medical imaging under adversarial shifts."
+    "summary": "Robust Medical Image Segmentation under Adversarial Shift：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "Robust Representation and Adversarial Dynamics",
@@ -1845,7 +1845,7 @@
     "url": "synthesis/Robust Training Strategies for Semantic Segmentation.html",
     "path": "synthesis/Robust Training Strategies for Semantic Segmentation.md",
     "section": "synthesis",
-    "summary": "Compares robust training routes including divide-and-conquer training, SegPGD-AT, PIR-AT, and erosion-style training."
+    "summary": "Robust Training Strategies for Semantic Segmentation：语义分割鲁棒性语料中的主题综合页。"
   },
   {
     "title": "RobustBench",
@@ -1866,7 +1866,7 @@
     "url": "concepts/Robustness-Generalization Decoupling in Dense Prediction.html",
     "path": "concepts/Robustness-Generalization Decoupling in Dense Prediction.md",
     "section": "concepts",
-    "summary": "Evaluate robustness and generalization as distinct axes."
+    "summary": "Robustness-Generalization Decoupling in Dense Prediction：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "RP-PGD: Enhancing Semantic Segmentation Robustness via Region-based Prioritized PGD",
@@ -1880,7 +1880,7 @@
     "url": "entities/Saasha Nair.html",
     "path": "entities/Saasha Nair.md",
     "section": "entities",
-    "summary": "Saasha Nair is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Saasha Nair：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Sajjad Amini",
@@ -1915,14 +1915,14 @@
     "url": "synthesis/Segmentation Adversarial Attack Methods 2019-2026.html",
     "path": "synthesis/Segmentation Adversarial Attack Methods 2019-2026.md",
     "section": "synthesis",
-    "summary": "Summarizes attack evolution for semantic segmentation from local perturbations to patch and black-box transfer attacks."
+    "summary": "Segmentation Adversarial Attack Methods 2019-2026：语义分割鲁棒性语料中的主题综合页。"
   },
   {
     "title": "Segmentation Reliability Audit Protocol",
     "url": "concepts/Segmentation Reliability Audit Protocol.html",
     "path": "concepts/Segmentation Reliability Audit Protocol.md",
     "section": "concepts",
-    "summary": "Audit segmentation reliability beyond headline in-domain metrics."
+    "summary": "Segmentation Reliability Audit Protocol：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "Segmentation Robustness Batch Ingest Plan 2026-04-10",
@@ -1936,14 +1936,14 @@
     "url": "synthesis/Segmentation Robustness Batch Reading Matrix 2019-2026.html",
     "path": "synthesis/Segmentation Robustness Batch Reading Matrix 2019-2026.md",
     "section": "synthesis",
-    "summary": "Batch-level matrix that maps all 28 papers to attack, training, certification, and reliability tracks."
+    "summary": "Segmentation Robustness Batch Reading Matrix 2019-2026：语义分割鲁棒性语料中的主题综合页。"
   },
   {
     "title": "Segmentation Robustness Benchmark Protocol",
     "url": "concepts/Segmentation Robustness Benchmark Protocol.html",
     "path": "concepts/Segmentation Robustness Benchmark Protocol.md",
     "section": "concepts",
-    "summary": "Benchmark segmentation models under unified noise and adversarial settings."
+    "summary": "Segmentation Robustness Benchmark Protocol：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "SegPGD",
@@ -1957,7 +1957,7 @@
     "url": "concepts/SegPGD-AT for Robust Segmentation.html",
     "path": "concepts/SegPGD-AT for Robust Segmentation.md",
     "section": "concepts",
-    "summary": "Use SegPGD-generated adversarial examples in robust segmentation training."
+    "summary": "SegPGD-AT for Robust Segmentation：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "SegPGD: An Effective and Efficient Adversarial Attack for Segmentation",
@@ -1971,7 +1971,7 @@
     "url": "concepts/Selective Neuron Reinitialization.html",
     "path": "concepts/Selective Neuron Reinitialization.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "选择性神经元重初始化通过替换低效隐藏单元并保护新单元成熟期，持续注入学习能力以减缓可塑性衰退。"
   },
   {
     "title": "Semantic Segmentation",
@@ -1999,7 +1999,7 @@
     "url": "concepts/Semantically Stealthy Segmentation Attack.html",
     "path": "concepts/Semantically Stealthy Segmentation Attack.md",
     "section": "concepts",
-    "summary": "Construct stealthy attacks with semantic consistency constraints."
+    "summary": "Semantically Stealthy Segmentation Attack：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "SemSegBench and DetecBench: Benchmarking Reliability and Generalization Beyond Classification",
@@ -2013,7 +2013,7 @@
     "url": "concepts/SemSegBench Robustness Benchmarking.html",
     "path": "concepts/SemSegBench Robustness Benchmarking.md",
     "section": "concepts",
-    "summary": "Benchmark reliability and robustness for semantic segmentation at scale."
+    "summary": "SemSegBench Robustness Benchmarking：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "Shibhansh Dohare",
@@ -2055,14 +2055,14 @@
     "url": "concepts/Soft Monotonic Alignment for Sequence Transduction.html",
     "path": "concepts/Soft Monotonic Alignment for Sequence Transduction.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "在保留单调对齐假设的前提下引入可微分软边界，提升序列转导中的对齐稳定性与可训练性。"
   },
   {
     "title": "Spatio-Temporal Pretraining for Language Models",
     "url": "concepts/Spatio-Temporal Pretraining for Language Models.html",
     "path": "concepts/Spatio-Temporal Pretraining for Language Models.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "时空预训练通过结构化目标让语言模型更稳定地学习空间与时间关系，并提升相关下游任务迁移能力。"
   },
   {
     "title": "Spatio-Temporal Representation in Language Models",
@@ -2083,14 +2083,14 @@
     "url": "concepts/Standardized Evaluation Attack (SEA) Protocol.html",
     "path": "concepts/Standardized Evaluation Attack (SEA) Protocol.md",
     "section": "concepts",
-    "summary": "Use strong, reproducible evaluation attacks for robust segmentation assessment."
+    "summary": "Standardized Evaluation Attack (SEA) Protocol：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "Stanley Bak",
     "url": "entities/Stanley Bak.html",
     "path": "entities/Stanley Bak.md",
     "section": "entities",
-    "summary": "Stanley Bak is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Stanley Bak：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Structured Reasoning Methods for LLMs",
@@ -2118,7 +2118,7 @@
     "url": "concepts/Success-Rate Based Complexity Labeling.html",
     "path": "concepts/Success-Rate Based Complexity Labeling.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "通过多模型多次采样成功率定义任务复杂度标签，降低单次评测噪声对路由学习的影响。"
   },
   {
     "title": "Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models",
@@ -2146,14 +2146,14 @@
     "url": "concepts/Task Complexity-Aware Inference Budgeting.html",
     "path": "concepts/Task Complexity-Aware Inference Budgeting.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "根据样本难度动态分配推理计算预算，以降低平均计算成本并保持关键样本性能。"
   },
   {
     "title": "Taylor T. Johnson",
     "url": "entities/Taylor T. Johnson.html",
     "path": "entities/Taylor T. Johnson.md",
     "section": "entities",
-    "summary": "Taylor T. Johnson is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Taylor T. Johnson：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Templates Index",
@@ -2181,14 +2181,14 @@
     "url": "concepts/Thought Structure Taxonomy.html",
     "path": "concepts/Thought Structure Taxonomy.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "对 Chain/Tree/Graph 三类思维结构进行统一定义与比较，降低不同推理方法的术语歧义。"
   },
   {
     "title": "Tim Fingscheidt",
     "url": "entities/Tim Fingscheidt.html",
     "path": "entities/Tim Fingscheidt.md",
     "section": "entities",
-    "summary": "Tim Fingscheidt is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Tim Fingscheidt：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models",
@@ -2237,7 +2237,7 @@
     "url": "concepts/Tree of Thoughts Reasoning.html",
     "path": "concepts/Tree of Thoughts Reasoning.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "Tree of Thoughts 通过思维分支、状态评估与搜索回溯提升复杂推理任务的解空间探索能力。"
   },
   {
     "title": "Tri Dao",
@@ -2251,21 +2251,21 @@
     "url": "concepts/Two-Stage Multimodal CoT Pipeline.html",
     "path": "concepts/Two-Stage Multimodal CoT Pipeline.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "将多模态推理拆分为“生成中间推理线索 + 条件化答案生成”两阶段，以缓解幻觉并提升可解释性。"
   },
   {
     "title": "Umair Rasheed",
     "url": "entities/Umair Rasheed.html",
     "path": "entities/Umair Rasheed.md",
     "section": "entities",
-    "summary": "Umair Rasheed is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Umair Rasheed：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Uncertainty-based Adversarial Detection in Segmentation",
     "url": "concepts/Uncertainty-based Adversarial Detection in Segmentation.html",
     "path": "concepts/Uncertainty-based Adversarial Detection in Segmentation.md",
     "section": "concepts",
-    "summary": "Detect adversarial segmentation inputs using uncertainty signals."
+    "summary": "Uncertainty-based Adversarial Detection in Segmentation：语义分割鲁棒性语料中的概念卡。"
   },
   {
     "title": "Uncertainty-Based Detection of Adversarial Attacks in Semantic Segmentation",
@@ -2293,7 +2293,7 @@
     "url": "entities/Volker Tresp.html",
     "path": "entities/Volker Tresp.md",
     "section": "entities",
-    "summary": "Volker Tresp is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Volker Tresp：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Wenqiang Zhang",
@@ -2314,14 +2314,14 @@
     "url": "entities/Wiebke Gunther.html",
     "path": "entities/Wiebke Gunther.md",
     "section": "entities",
-    "summary": "Wiebke Gunther is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Wiebke Gunther：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Wiki Append Update Playbook",
     "url": "concepts/Wiki Append Update Playbook.html",
     "path": "concepts/Wiki Append Update Playbook.md",
     "section": "concepts",
-    "summary": "﻿---"
+    "summary": "该流程页沉淀了论文仓库的手工 append 更新实践，覆盖来源筛选、页面蒸馏、交叉链接、manifest 对账与日志回写。"
   },
   {
     "title": "Wiki Coverage Audit 2026-04-08",
@@ -2349,14 +2349,14 @@
     "url": "entities/Xiaodong Yang.html",
     "path": "entities/Xiaodong Yang.md",
     "section": "entities",
-    "summary": "Xiaodong Yang is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Xiaodong Yang：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Xiaogang Xu",
     "url": "entities/Xiaogang Xu.html",
     "path": "entities/Xiaogang Xu.md",
     "section": "entities",
-    "summary": "Xiaogang Xu is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Xiaogang Xu：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Yao Yao",
@@ -2370,7 +2370,7 @@
     "url": "entities/Yaoteng Tan.html",
     "path": "entities/Yaoteng Tan.md",
     "section": "entities",
-    "summary": "Yaoteng Tan is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Yaoteng Tan：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Yejin Choi",
@@ -2391,7 +2391,7 @@
     "url": "entities/Yi Zhu.html",
     "path": "entities/Yi Zhu.md",
     "section": "entities",
-    "summary": "Yi Zhu is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Yi Zhu：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Yoshua Bengio",
@@ -2454,7 +2454,7 @@
     "url": "entities/Zhenhua Chen.html",
     "path": "entities/Zhenhua Chen.md",
     "section": "entities",
-    "summary": "Zhenhua Chen is an author entity linked to the verified semantic-segmentation robustness corpus."
+    "summary": "Zhenhua Chen：语义分割鲁棒性语料中的实体卡。"
   },
   {
     "title": "Zhonghang Li",

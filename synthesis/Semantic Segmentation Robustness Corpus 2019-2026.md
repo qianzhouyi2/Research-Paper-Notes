@@ -20,7 +20,7 @@ provenance:
 
 # Semantic Segmentation Robustness Corpus 2019-2026
 
-## Snapshot
+## ??
 
 - 语料规模：28 篇（2019-2026）。
 - 下载结果：28/28 成功。
@@ -53,12 +53,12 @@ provenance:
 - [[synthesis/Adversarial Robustness Evaluation Patterns]]
 - [[journal/Semantic Segmentation Robustness Corpus Update 2026-04-09]]
 
-## Online Supplement (2026-04-10)
+## ?????2026-04-10?
 
-- This synthesis page is cross-checked online for cross-paper consistency and evaluation-scope alignment.
-- Text anchor used: - 语料规模：28 篇（2019-2026）。 - 下载结果：28/28 成功。 - 资源类型：22 篇 arXiv TeX 源码（`.tar`），6 篇 PDF 回退。 - 本地入口：[[papers_sources/semantic_segmentation_robustness_20260409/download_report]]
-- Primary online sources used in this pass:
-- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
-- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
-- Status: completed page-level online supplementation in this global pass.
+- ?????????????????????????????
+- ?????? - 语料规模：28 篇（2019-2026）。 - 下载结果：28/28 成功。 - 资源类型：22 篇 arXiv TeX 源码（`.tar`），6 篇 PDF 回退。 - 本地入口：[[papers_sources/semantic_segmentation_robustness_20260409/download_report]]
+- ????????????
+- ??????????? URL???????????????^[ambiguous]
+- ????????????arXiv / DOI / ???????????????????
+- ?????????????????????
 

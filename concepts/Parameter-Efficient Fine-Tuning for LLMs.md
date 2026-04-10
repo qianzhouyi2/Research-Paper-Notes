@@ -1,15 +1,4 @@
 ---
-title: "Parameter-Efficient Fine-Tuning for LLMs"
-category: concept
-tags:
-  - concept
-sources:
-  - workspace/wiki-update-2026-04-10-global-lint-remediation
-created: 2026-04-10
-updated: 2026-04-10
-summary: "﻿---"
----
----
 title: Parameter-Efficient Fine-Tuning for LLMs
 category: concept
 tags:
@@ -44,12 +33,12 @@ provenance:
 - [[concepts/Low-Rank Adaptation for LLMs]]
 - [[synthesis/Parameter-Efficient LLM Adaptation and Inference]]
 
-## Online Supplement (2026-04-10)
+## ?????2026-04-10?
 
-- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
-- Text anchor used: ﻿--- title: Parameter-Efficient Fine-Tuning for LLMs category: concept tags: - concept - llm - adaptation - efficiency sources: - notes/LoRA Low-Rank Adaptation of Large Language Models.md - notes/Amortizing intractable inference in large language models.md cr...
-- Primary online sources used in this pass:
-- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
-- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
-- Status: completed page-level online supplementation in this global pass.
+- ????????????????????????????????
+- ?????? ﻿--- title: Parameter-Efficient Fine-Tuning for LLMs category: concept tags: - concept - llm - adaptation - efficiency sources: - notes/LoRA Low-Rank Adaptation of Large Language Models.md - notes/Amortizing intractable inference in large language models.md cr...
+- ????????????
+- ??????????? URL???????????????^[ambiguous]
+- ????????????arXiv / DOI / ???????????????????
+- ?????????????????????
 

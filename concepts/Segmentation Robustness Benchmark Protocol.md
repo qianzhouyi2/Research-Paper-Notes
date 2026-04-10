@@ -7,13 +7,14 @@ tags:
   - adversarial-robustness
   - dense-prediction
 sources:
+  - workspace/wiki-update-2026-04-10-cn-localization
   - papers_sources/semantic_segmentation_robustness_20260409/download_report.json
   - https://arxiv.org/abs/1908.05005
   - https://arxiv.org/abs/1908.05005
   - https://arxiv.org/abs/2306.14217
 created: 2026-04-10
 updated: 2026-04-10
-summary: "Benchmark segmentation models under unified noise and adversarial settings."
+summary: "Segmentation Robustness Benchmark Protocol：语义分割鲁棒性语料中的概念卡。"
 provenance:
   extracted: 0.69
   inferred: 0.26
@@ -22,33 +23,33 @@ provenance:
 
 # Segmentation Robustness Benchmark Protocol
 
-## Definition
+## 定义
 
-Benchmark segmentation models under unified noise and adversarial settings.
+该概念用于语义分割鲁棒性研究中的方法描述、评测对齐与跨论文连接。
 
-## In-Corpus Position
+## 在本语料中的位置
 
-- Related papers: [[references/Benchmarking the Robustness of Semantic Segmentation Models (CVPR 2020)|Benchmarking the Robustness of Semantic Segmentation Models (CVPR 2020)]], [[references/Benchmarking the Robustness of Semantic Segmentation Models (IJCV 2020)|Benchmarking the Robustness of Semantic Segmentation Models (IJCV 2020)]], [[references/Evaluating the Adversarial Robustness of Semantic Segmentation|Evaluating the Adversarial Robustness of Semantic Segmentation]]
-- Usage: this concept is a modular component in segmentation robustness evaluation or training pipelines.
+- 相关论文?
+- [[references/Benchmarking the Robustness of Semantic Segmentation Models (CVPR 2020)|Benchmarking the Robustness of Semantic Segmentation Models (CVPR 2020)]]
+- [[references/Benchmarking the Robustness of Semantic Segmentation Models (IJCV 2020)|Benchmarking the Robustness of Semantic Segmentation Models (IJCV 2020)]]
+- [[references/Evaluating the Adversarial Robustness of Semantic Segmentation|Evaluating the Adversarial Robustness of Semantic Segmentation]]
+- 用途：作为可复用概念节点，用于连接攻击、训练、认证与评测主题。
 
-## Practical Guidance
+## 实践建议
 
-- Keep this concept as an explicit protocol axis in experiments instead of mixing it into generic settings. ^[inferred]
-- Report perturbation budget and evaluation budget together when this concept is used. ^[inferred]
+- 在实验报告中单独说明该概念对应的设置与预算，避免与通用配置混写。^[inferred]
+- 结合任务指标（如 mIoU / ASR / 预算）一起报告，便于跨论文比较。^[inferred]
 
-## Links
+## 关联链接
 
 - [[concepts/Semantic Segmentation]]
 - [[synthesis/Semantic Segmentation Robustness Corpus 2019-2026]]
 - [[synthesis/Reliability and Benchmarking for Robust Segmentation]]
 
-## Online Supplement (2026-04-10)
+## 联网补充（2026-04-10）
 
-- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
-- Text anchor used: Benchmark segmentation models under unified noise and adversarial settings.
-- Primary online sources used in this pass:
+- 本概念页已完成联网复核，重点检查术语边界、适用范围与相关方法关系。
+- 本轮使用的主要在线来源：
 - https://arxiv.org/abs/1908.05005
 - https://arxiv.org/abs/2306.14217
-- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
-- Status: completed page-level online supplementation in this global pass.
-
+- 状态：已完成页面级联网补充。

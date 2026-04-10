@@ -7,11 +7,12 @@ tags:
   - semantic-segmentation
   - adversarial-robustness
 sources:
+  - workspace/wiki-update-2026-04-10-cn-localization
   - papers_sources/semantic_segmentation_robustness_20260409/download_report.json
   - https://arxiv.org/abs/1906.07077
 created: 2026-04-10
 updated: 2026-04-10
-summary: "Nico Schmidt is an author entity linked to the verified semantic-segmentation robustness corpus."
+summary: "Nico Schmidt：语义分割鲁棒性语料中的实体卡。"
 provenance:
   extracted: 0.81
   inferred: 0.16
@@ -20,30 +21,27 @@ provenance:
 
 # Nico Schmidt
 
-## Role in This Corpus
+## 在本语料中的角色
 
-- Appears in 1 verified paper(s) from the segmentation robustness corpus.
-- Primary context: adversarial attacks, robust training, certification, or reliability benchmarking. ^[inferred]
+- 在该语义分割鲁棒性语料中出现于 1 篇已核验论文。
+- 主要语境：对抗攻击、鲁棒训练、认证方法或可靠性基准评测。^[inferred]
 
-## Linked Papers
+## 相关论文
 
 - [[references/The Attack Generator - A Systematic Approach Towards Constructing Adversarial Attacks|The Attack Generator: A Systematic Approach Towards Constructing Adversarial Attacks]]
 
-## Online Verification Notes
+## 联网核验说明
 
-- Author attribution is grounded in official paper metadata (arXiv or Crossref) and aligned with local artifacts.
+- 作者归属基于官方论文元数据（arXiv 或 Crossref），并与本地资料对齐。
 
-## Links
+## 关联链接
 
 - [[synthesis/Semantic Segmentation Robustness Corpus 2019-2026]]
 - [[concepts/Segmentation Robustness Benchmark Protocol]]
 
-## Online Supplement (2026-04-10)
+## 联网补充（2026-04-10）
 
-- This entity page is cross-checked online for attribution and role consistency across linked papers.
-- Text anchor used: - Appears in 1 verified paper(s) from the segmentation robustness corpus. - Primary context: adversarial attacks, robust training, certification, or reliability benchmarking. ^[inferred]
-- Primary online sources used in this pass:
+- 本实体页已完成联网复核，重点检查作者归属与跨论文角色一致性。
+- 本轮使用的主要在线来源：
 - https://arxiv.org/abs/1906.07077
-- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
-- Status: completed page-level online supplementation in this global pass.
-
+- 状态：已完成页面级联网补充。

@@ -1,15 +1,4 @@
 ---
-title: "Two-Stage Multimodal CoT Pipeline"
-category: concept
-tags:
-  - concept
-sources:
-  - workspace/wiki-update-2026-04-10-global-lint-remediation
-created: 2026-04-10
-updated: 2026-04-10
-summary: "﻿---"
----
----
 title: Two-Stage Multimodal CoT Pipeline
 category: concept
 tags:
@@ -43,12 +32,12 @@ provenance:
 - [[concepts/Multimodal Chain-of-Thought Reasoning]]
 - [[synthesis/Multimodal Composition and Reasoning]]
 
-## Online Supplement (2026-04-10)
+## ?????2026-04-10?
 
-- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
-- Text anchor used: ﻿--- title: Two-Stage Multimodal CoT Pipeline category: concept tags: - concept - multimodal - cot - reasoning sources: - notes/Multimodal Chain-of-Thought Reasoning in Language Models.md created: 2026-04-08 updated: 2026-04-08 summary: 将多模态推理拆分为“生成中间推理线索 + 条件...
-- Primary online sources used in this pass:
-- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
-- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
-- Status: completed page-level online supplementation in this global pass.
+- ????????????????????????????????
+- ?????? ﻿--- title: Two-Stage Multimodal CoT Pipeline category: concept tags: - concept - multimodal - cot - reasoning sources: - notes/Multimodal Chain-of-Thought Reasoning in Language Models.md created: 2026-04-08 updated: 2026-04-08 summary: 将多模态推理拆分为“生成中间推理线索 + 条件...
+- ????????????
+- ??????????? URL???????????????^[ambiguous]
+- ????????????arXiv / DOI / ???????????????????
+- ?????????????????????
 

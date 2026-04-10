@@ -1,15 +1,4 @@
 ---
-title: "Loss of Plasticity in Continual Learning"
-category: concept
-tags:
-  - concept
-sources:
-  - workspace/wiki-update-2026-04-10-global-lint-remediation
-created: 2026-04-10
-updated: 2026-04-10
-summary: "﻿---"
----
----
 title: Loss of Plasticity in Continual Learning
 category: concept
 tags:
@@ -58,12 +47,12 @@ provenance:
 - [[concepts/Selective Neuron Reinitialization]]
 - [[synthesis/Continual Learning Plasticity Maintenance Playbook]]
 
-## Online Supplement (2026-04-10)
+## ?????2026-04-10?
 
-- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
-- Text anchor used: ﻿--- title: Loss of Plasticity in Continual Learning category: concept tags: - concept - continual-learning - optimization - representation sources: - papers_sources/Maintaining Plasticity in Deep Continual Learning/arxiv.tex created: 2026-04-08 updated: 2026-...
-- Primary online sources used in this pass:
-- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
-- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
-- Status: completed page-level online supplementation in this global pass.
+- ????????????????????????????????
+- ?????? ﻿--- title: Loss of Plasticity in Continual Learning category: concept tags: - concept - continual-learning - optimization - representation sources: - papers_sources/Maintaining Plasticity in Deep Continual Learning/arxiv.tex created: 2026-04-08 updated: 2026-...
+- ????????????
+- ??????????? URL???????????????^[ambiguous]
+- ????????????arXiv / DOI / ???????????????????
+- ?????????????????????
 

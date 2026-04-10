@@ -1,15 +1,4 @@
 ---
-title: "Implicit Long Convolution Parameterization"
-category: concept
-tags:
-  - concept
-sources:
-  - workspace/wiki-update-2026-04-10-global-lint-remediation
-created: 2026-04-10
-updated: 2026-04-10
-summary: "﻿---"
----
----
 title: Implicit Long Convolution Parameterization
 category: concept
 tags:
@@ -51,12 +40,12 @@ provenance:
 - [[concepts/Hyena Operator]]
 - [[synthesis/Long-Context Architecture Without Full Attention]]
 
-## Online Supplement (2026-04-10)
+## ?????2026-04-10?
 
-- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
-- Text anchor used: ﻿--- title: Implicit Long Convolution Parameterization category: concept tags: - concept - long-context - convolution - architecture sources: - papers_sources/Hyena Hierarchy 2302.10866/3_hyena.tex - notes/Hyena Hierarchy Towards Larger Convolutional Language ...
-- Primary online sources used in this pass:
-- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
-- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
-- Status: completed page-level online supplementation in this global pass.
+- ????????????????????????????????
+- ?????? ﻿--- title: Implicit Long Convolution Parameterization category: concept tags: - concept - long-context - convolution - architecture sources: - papers_sources/Hyena Hierarchy 2302.10866/3_hyena.tex - notes/Hyena Hierarchy Towards Larger Convolutional Language ...
+- ????????????
+- ??????????? URL???????????????^[ambiguous]
+- ????????????arXiv / DOI / ???????????????????
+- ?????????????????????
 

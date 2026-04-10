@@ -80,16 +80,16 @@ provenance:
 - [[entities/MaskFormer]]
 - [[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]
 
-## Online Supplement (2026-04-10)
+## ?????2026-04-10?
 
-- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
-- Text anchor used: 语义分割是像素级分类任务：为图像中每个像素分配一个语义类别（如 road、person、sky）。
-- Primary online sources used in this pass:
+- ????????????????????????????????
+- ?????? 语义分割是像素级分类任务：为图像中每个像素分配一个语义类别（如 road、person、sky）。
+- ????????????
 - https://openaccess.thecvf.com/content_cvpr_2015/html/Long_Fully_Convolutional_Networks_2015_CVPR_paper.html
 - https://arxiv.org/abs/1706.05587
 - https://arxiv.org/abs/2105.15203
 - https://arxiv.org/abs/2304.02643
 - https://openaccess.thecvf.com/content_cvpr_2017/html/Zhou_Scene_Parsing_Through_CVPR_2017_paper.html
-- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
-- Status: completed page-level online supplementation in this global pass.
+- ????????????arXiv / DOI / ???????????????????
+- ?????????????????????
 

@@ -28,12 +28,12 @@ provenance:
 - [[references/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature]]
 - [[references/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature Sparsification]]
 
-## Online Supplement (2026-04-10)
+## ?????2026-04-10?
 
-- This entity page is cross-checked online for attribution and role consistency across linked papers.
-- Text anchor used: - 根据《MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature Sparsification》的一手作者列表，Sajjad Amini 是该文共同作者之一；这篇工作主要围绕 通过均值中心化的特征稀疏化提升后训练对抗鲁棒性。 - 从当前入库范围看，Sajjad Amini 在本库里首先与 大语言模型方法 这条研究线相连，说明已读材料对其关注面目前集中在这里。
-- Primary online sources used in this pass:
-- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
-- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
-- Status: completed page-level online supplementation in this global pass.
+- ?????????????????????????????
+- ?????? - 根据《MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature Sparsification》的一手作者列表，Sajjad Amini 是该文共同作者之一；这篇工作主要围绕 通过均值中心化的特征稀疏化提升后训练对抗鲁棒性。 - 从当前入库范围看，Sajjad Amini 在本库里首先与 大语言模型方法 这条研究线相连，说明已读材料对其关注面目前集中在这里。
+- ????????????
+- ??????????? URL???????????????^[ambiguous]
+- ????????????arXiv / DOI / ???????????????????
+- ?????????????????????
 

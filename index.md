@@ -28,37 +28,43 @@ summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 
 - [[entities/index|Entities（作者/机构/模型）]]
 - [[journal/index|Journal（阅读日志）]]
 - [[log|系统日志]]
-- [[_meta/taxonomy|Tag Taxonomy]]
+- [[_meta/taxonomy|标签词表]]
 
-## Latest Wiki Update (2026-04-10, Global Lint Remediation)
+## 最新 Wiki 更新（2026-04-10，内部页中文化）
+
+- 类型：`wiki-update`（concept/entity/synthesis 内部页中文化）。
+- 更新页面：97 个（本轮新增且创建日期为 2026-04-10 的 `concepts`、`entities`、`synthesis` 页面）。
+- 说明：正文模板统一改为中文，保留标题与论文名原文，清理模板英文段落与异常占位符。
+
+## 最新 Wiki 更新（2026-04-10，Global Lint Remediation）
 
 - 类型：`wiki-lint + wiki-update`（全库历史遗留问题分批修复）。
 - 新增页面：[[journal/2026-04-08]]、[[journal/2026-04-06]]。
 - 修复内容：补齐 68 个历史页面 frontmatter，修复日期锚点、模板链接、索引漏收录与遗留坏链。
 - 结果：全库 lint 已归零（`orphans=0`、`broken_total=0`、`missing_frontmatter=0`、`index_issues=0`、`stale_by_date=0`）。
 
-## Latest Wiki Update (2026-04-10, Lint + Online Metadata Calibration)
+## 最新 Wiki 更新（2026-04-10，Lint + Online Metadata Calibration）
 
 - 类型：`wiki-lint + wiki-update`（联网核验与元数据校准）。
 - 新增页面：[[papers_sources/index]]。
 - 更新页面：[[references/Benchmarking the Robustness of Semantic Segmentation Models (CVPR 2020)]]、[[references/Benchmarking the Robustness of Semantic Segmentation Models (IJCV 2020)]]、[[references/On the Robustness of Semantic Segmentation Models to Adversarial Attacks]]、[[references/Towards Semantically Stealthy Adversarial Attacks Against Segmentation Models]]、[[references/RP-PGD - Enhancing Semantic Segmentation Robustness via Region-based Prioritized PGD]]、[[references/SemSegBench and DetecBench - Benchmarking Reliability and Generalization Beyond Classification]]、[[references/Erosion Attack for Adversarial Training to Enhance Semantic Segmentation Robustness (arXiv preprint)]]、[[references/Evaluating the Adversarial Robustness of Semantic Segmentation]]、[[references/Proximal Splitting Adversarial Attack for Semantic Segmentation]]、[[references/Towards Robust Semantic Segmentation against Patch-based Attack via Attention Refinement]]、[[references/Uncertainty-Based Detection of Adversarial Attacks in Semantic Segmentation]]、[[index]]、[[log]]。
 - 结果：语义分割鲁棒性子集 lint 硬检查已清零（`orphans=0`、`broken=0`、`missing_frontmatter=0`）。
 
-## Latest Wiki Update (2026-04-09, NES + L-infinity Calibration)
+## 最新 Wiki 更新（2026-04-09，NES + L-infinity Calibration）
 
 - 类型：`wiki-update`（concept + source-note calibration）
 - 新增页面：[[concepts/Natural Evolutionary Strategies (NES)]]、[[concepts/L-infinity Norm Ball]]
 - 更新页面：[[concepts/Discrete Linear Noise]]、[[concepts/Decision-based Black-box Attack for Segmentation]]、[[concepts/Proxy Index mIoU Optimization]]、[[concepts/Query-Efficient Attack Evaluation]]、[[concepts/index]]、[[notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]、[[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]、[[papers_sources/Delving into Decision-based Black-box Attacks on Semantic Segmentation/Delving into Decision-based Black-box Attacks on Semantic Segmentation_zh]]、[[index]]、[[log]]
 - 说明：把这轮对话里解释过的 Random Attack、NES 和 `L_\infty` 范数球沉淀进语义分割攻击主线，并联网校准了“边界”与“顶点”这两个容易混淆的说法。
 
-## Latest Wiki Update (2026-04-09, Segmentation Attack Priors)
+## 最新 Wiki 更新（2026-04-09，Segmentation Attack Priors）
 
 - 类型：`wiki-update`（concept distillation）
 - 新增页面：[[concepts/Indirect Local Attack in Segmentation]]、[[concepts/SegPGD]]
 - 更新页面：[[concepts/Decision-based Black-box Attack for Segmentation]]、[[synthesis/Decision-based Segmentation Attack Landscape]]、[[notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]、[[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]、[[concepts/index]]、[[index]]、[[log]]
 - 说明：补齐语义分割攻击主线里的两类前置方法锚点：ILA 解释“局部扰动为何会借长程上下文影响远处区域”，SegPGD 概括“如何用动态像素加权提升白盒攻击效率”。
 
-## Latest Wiki Update (2026-04-09, ViT + Black-box Online Refresh)
+## 最新 Wiki 更新（2026-04-09，ViT + Black-box Online Refresh）
 
 - 类型：`wiki-update`（concept online refresh）
 - 新增页面：[[concepts/Vision Transformer (ViT)]]、[[concepts/SignSGD]]、[[concepts/SimBA (Simple Black-box Attack)]]、[[concepts/Square Attack]]
@@ -76,21 +82,21 @@ summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 
 - 原始资料：[[papers_sources/index|papers_sources]]
 - 模板：`Templates`
 
-## 最新 Wiki Update（2026-04-09，Segmentation Robustness Corpus Sync）
+## 最新 Wiki 更新（2026-04-09，Segmentation Robustness Corpus Sync）
 
 - 类型：`wiki-update`（corpus sync）
 - 新增页面：[[synthesis/Semantic Segmentation Robustness Corpus 2019-2026]]、[[journal/Semantic Segmentation Robustness Corpus Update 2026-04-09]]
 - 更新页面：[[synthesis/index]]、[[journal/index]]、[[index]]、[[log]]
 - 说明：将 `papers_sources/semantic_segmentation_robustness_20260409` 的 28 篇语义分割鲁棒性论文下载结果同步入库（22 个 TeX 源码包 + 6 个 PDF 回退）。
 
-## 最新 Wiki Update（2026-04-09，模型实体补齐）
+## 最新 Wiki 更新（2026-04-09，模型实体补齐）
 
 - 类型：`wiki-update`（entity 增补）
 - 新增页：4 个 entities（[[entities/FCN]]、[[entities/PSPNet]]、[[entities/DeepLabv3]]、[[entities/MaskFormer]]）
 - 更新页：[[entities/SegFormer]]、[[entities/index]]、[[concepts/Semantic Segmentation]]、[[concepts/Query-Efficient Attack Evaluation]]、[[notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]、[[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]、[[index]]、[[log]]
 - 说明：补齐分割评测五模型实体锚点（FCN/PSPNet/DeepLabv3/SegFormer/MaskFormer），并把 note/reference/concept 的模型链接统一回链到实体层。
 
-## 上一轮 Wiki Update（2026-04-09）
+## 上一轮 Wiki 更新（2026-04-09）
 
 - 类型：`wiki-update`（concept 增补）
 - 新增页：2 个 concepts（[[concepts/Deep Neural Network (DNN)]]、[[concepts/Semantic Segmentation]]）
@@ -104,7 +110,7 @@ summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 
 - 更新页：[[references/index]]、[[concepts/index]]、[[synthesis/index]]、[[index]]、[[log]]
 - 说明：本次对未纳管源码目录与 tar 包执行统一入库，并补充跨页链接
 
-## 最新 Wiki Update（2026-04-08）
+## 最新 Wiki 更新（2026-04-08）
 
 - 类型：`wiki-update`（知识沉淀）
 - 新增页：21 个 references、8 个 concepts、9 个 entities、3 个 synthesis
@@ -216,4 +222,4 @@ summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 
 - Follow-up: completed one-by-one online supplement pass for all extracted concepts/entities/synthesis pages.
 - Deepening pass: upgraded all 28 reference cards with local abstract evidence and added [[synthesis/Segmentation Robustness Batch Reading Matrix 2019-2026]].
 
-- [[_meta/taxonomy|Tag Taxonomy]]
+- [[_meta/taxonomy|标签词表]]

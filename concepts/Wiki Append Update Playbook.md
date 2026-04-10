@@ -1,15 +1,4 @@
 ---
-title: "Wiki Append Update Playbook"
-category: concept
-tags:
-  - concept
-sources:
-  - workspace/wiki-update-2026-04-10-global-lint-remediation
-created: 2026-04-10
-updated: 2026-04-10
-summary: "﻿---"
----
----
 title: Wiki Append Update Playbook
 category: concept
 tags:
@@ -77,12 +66,12 @@ provenance:
 - [[concepts/index]]
 - [[synthesis/index]]
 
-## Online Supplement (2026-04-10)
+## ?????2026-04-10?
 
-- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
-- Text anchor used: ﻿--- title: Wiki Append Update Playbook category: concept tags: - concept - wiki - workflow - ingest sources: - workspace/wiki-update-2026-04-08 created: 2026-04-08 updated: 2026-04-09 summary: 该流程页沉淀了论文仓库的手工 append 更新实践，覆盖来源筛选、页面蒸馏、交叉链接、manifest 对账与日志回写。 prov...
-- Primary online sources used in this pass:
-- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
-- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
-- Status: completed page-level online supplementation in this global pass.
+- ????????????????????????????????
+- ?????? ﻿--- title: Wiki Append Update Playbook category: concept tags: - concept - wiki - workflow - ingest sources: - workspace/wiki-update-2026-04-08 created: 2026-04-08 updated: 2026-04-09 summary: 该流程页沉淀了论文仓库的手工 append 更新实践，覆盖来源筛选、页面蒸馏、交叉链接、manifest 对账与日志回写。 prov...
+- ????????????
+- ??????????? URL???????????????^[ambiguous]
+- ????????????arXiv / DOI / ???????????????????
+- ?????????????????????
 

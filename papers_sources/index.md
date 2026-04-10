@@ -1,5 +1,5 @@
 ---
-title: Papers Sources Index
+title: Papers Sources 索引
 category: index
 tags:
   - index
@@ -8,12 +8,12 @@ sources:
   - workspace/wiki-update-2026-04-10-lint-update-online
 created: 2026-04-10
 updated: 2026-04-10
-summary: Index page for raw paper source folders and downloadable artifacts used by this vault.
+summary: 本仓库原始论文资料目录与下载产物索引页。
 ---
 
-# Papers Sources Index
+# Papers Sources 索引
 
-Raw imports and downloadable artifacts:
+原始导入与下载产物：
 
 - [[papers_sources/semantic_segmentation_robustness_20260409/download_report|Semantic Segmentation Robustness (2019-2026) Download Report]]
 - `papers_sources/Research-Paper-Notes`

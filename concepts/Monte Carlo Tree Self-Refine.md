@@ -1,15 +1,4 @@
 ---
-title: "Monte Carlo Tree Self-Refine"
-category: concept
-tags:
-  - concept
-sources:
-  - workspace/wiki-update-2026-04-10-global-lint-remediation
-created: 2026-04-10
-updated: 2026-04-10
-summary: "﻿---"
----
----
 title: Monte Carlo Tree Self-Refine
 category: concept
 tags:
@@ -44,12 +33,12 @@ provenance:
 - [[concepts/Tree of Thoughts Reasoning]]
 - [[synthesis/LLM Reasoning Search and Verification]]
 
-## Online Supplement (2026-04-10)
+## ?????2026-04-10?
 
-- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
-- Text anchor used: ﻿--- title: Monte Carlo Tree Self-Refine category: concept tags: - concept - llm - reasoning - mcts sources: - notes/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report.md created: 2026-04-0...
-- Primary online sources used in this pass:
-- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
-- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
-- Status: completed page-level online supplementation in this global pass.
+- ????????????????????????????????
+- ?????? ﻿--- title: Monte Carlo Tree Self-Refine category: concept tags: - concept - llm - reasoning - mcts sources: - notes/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report.md created: 2026-04-0...
+- ????????????
+- ??????????? URL???????????????^[ambiguous]
+- ????????????arXiv / DOI / ???????????????????
+- ?????????????????????
 

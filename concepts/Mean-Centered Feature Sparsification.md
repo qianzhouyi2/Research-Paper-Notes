@@ -1,15 +1,4 @@
 ---
-title: "Mean-Centered Feature Sparsification"
-category: concept
-tags:
-  - concept
-sources:
-  - workspace/wiki-update-2026-04-10-global-lint-remediation
-created: 2026-04-10
-updated: 2026-04-10
-summary: "﻿---"
----
----
 title: Mean-Centered Feature Sparsification
 category: concept
 tags:
@@ -60,12 +49,12 @@ provenance:
 - [[entities/Amir Houmansadr]]
 - [[notes/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature]]
 
-## Online Supplement (2026-04-10)
+## ?????2026-04-10?
 
-- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
-- Text anchor used: ﻿--- title: Mean-Centered Feature Sparsification category: concept tags: - concept - adversarial-robustness - sparsification - post-training sources: - papers_sources/MeanSparse 2406.05927/main.tex - papers_sources/MeanSparse 2406.05927/source.tar.gz created: ...
-- Primary online sources used in this pass:
-- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
-- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
-- Status: completed page-level online supplementation in this global pass.
+- ????????????????????????????????
+- ?????? ﻿--- title: Mean-Centered Feature Sparsification category: concept tags: - concept - adversarial-robustness - sparsification - post-training sources: - papers_sources/MeanSparse 2406.05927/main.tex - papers_sources/MeanSparse 2406.05927/source.tar.gz created: ...
+- ????????????
+- ??????????? URL???????????????^[ambiguous]
+- ????????????arXiv / DOI / ???????????????????
+- ?????????????????????
 

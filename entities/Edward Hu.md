@@ -31,12 +31,12 @@ provenance:
 - [[references/Amortizing intractable inference in large language models]]
 - [[synthesis/LLM Inference Efficiency and Scaling]]
 
-## Online Supplement (2026-04-10)
+## ?????2026-04-10?
 
-- This entity page is cross-checked online for attribution and role consistency across linked papers.
-- Text anchor used: - 在《LoRA Low-Rank Adaptation of Large Language Models》与《Amortizing intractable inference in large language models》的作者列表中，Edward Hu 都作为共同作者出现；联网复核后，这个实体页不再只是单篇论文里的名字。 - 从当前入库范围看，Edward Hu 在本库中主要连接 参数高效适配与模型改造 这一簇问题，说明已纳管材料对其关注集中在这条研究线上。
-- Primary online sources used in this pass:
-- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
-- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
-- Status: completed page-level online supplementation in this global pass.
+- ?????????????????????????????
+- ?????? - 在《LoRA Low-Rank Adaptation of Large Language Models》与《Amortizing intractable inference in large language models》的作者列表中，Edward Hu 都作为共同作者出现；联网复核后，这个实体页不再只是单篇论文里的名字。 - 从当前入库范围看，Edward Hu 在本库中主要连接 参数高效适配与模型改造 这一簇问题，说明已纳管材料对其关注集中在这条研究线上。
+- ????????????
+- ??????????? URL???????????????^[ambiguous]
+- ????????????arXiv / DOI / ???????????????????
+- ?????????????????????
 

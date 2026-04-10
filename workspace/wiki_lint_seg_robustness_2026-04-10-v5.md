@@ -1,17 +1,17 @@
-## Wiki Health Report (Segmentation Robustness Subset)
+## Wiki 健康报告（语义分割鲁棒性子集）
 
-Generated: 2026-04-10T15:15:00+08:00
-Scope pages: 136
+生成时间：2026-04-10T15:15:00+08:00
+扫描页面：136
 
-### Orphaned Pages (0)
+### 孤儿页面 (0)
 
-### Broken Wikilinks (0)
+### 坏链 (0)
 
-### Missing Frontmatter (0)
+### Frontmatter 缺失 (0)
 
-### Missing Summary (0)
+### Summary 缺失 (0)
 
-### Notes
+### 说明
 
-- This subset-level lint includes pages touched by segmentation robustness ingest/update passes plus shared index pages.
-- Global vault still contains historical lint debt outside this subset.
+- 本子集扫描覆盖语义分割鲁棒性 ingest/update 触达页与共享索引页。
+- 全库历史遗留问题需在全库 lint 任务中单独处理。

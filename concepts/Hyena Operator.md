@@ -1,15 +1,4 @@
 ---
-title: "Hyena Operator"
-category: concept
-tags:
-  - concept
-sources:
-  - workspace/wiki-update-2026-04-10-global-lint-remediation
-created: 2026-04-10
-updated: 2026-04-10
-summary: "﻿---"
----
----
 title: Hyena Operator
 category: concept
 tags:
@@ -59,12 +48,12 @@ Hyena 是一种次二次序列算子，核心由“隐式长卷积 + 数据控�
 - [[concepts/Implicit Long Convolution Parameterization]]
 - [[synthesis/Long-Context Architecture Without Full Attention]]
 
-## Online Supplement (2026-04-10)
+## ?????2026-04-10?
 
-- This concept page is cross-checked online for term boundaries, scope, and neighboring methods.
-- Text anchor used: ﻿--- title: Hyena Operator category: concept tags: - concept - long-context - convolution - sequence-modeling sources: - papers_sources/Hyena Hierarchy 2302.10866/main.tex - papers_sources/2302.10866.tar created: 2026-04-08 updated: 2026-04-09 summary: Hyena O...
-- Primary online sources used in this pass:
-- No explicit online source URL in this page; fallback evidence comes from linked corpus pages. ^[ambiguous]
-- Policy: prioritize primary sources (arXiv/DOI/official venue pages) and preserve ambiguity markers for unresolved conflicts.
-- Status: completed page-level online supplementation in this global pass.
+- ????????????????????????????????
+- ?????? ﻿--- title: Hyena Operator category: concept tags: - concept - long-context - convolution - sequence-modeling sources: - papers_sources/Hyena Hierarchy 2302.10866/main.tex - papers_sources/2302.10866.tar created: 2026-04-08 updated: 2026-04-09 summary: Hyena O...
+- ????????????
+- ??????????? URL???????????????^[ambiguous]
+- ????????????arXiv / DOI / ???????????????????
+- ?????????????????????
 
