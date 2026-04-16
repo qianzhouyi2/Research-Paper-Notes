@@ -11,6 +11,7 @@ sources:
   - workspace/wiki-update-2026-04-10-global-lint-remediation
   - workspace/wiki-update-2026-04-10-cn-placeholder-remediation
   - workspace/wiki-update-2026-04-16-towards-reliable-eval-sync
+  - workspace/wiki-update-2026-04-16-towards-reliable-eval-deepening
 created: 2026-04-08
 updated: 2026-04-16
 summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 结果。
@@ -31,6 +32,13 @@ summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 
 - [[journal/index|Journal（阅读日志）]]
 - [[log|系统日志]]
 - [[_meta/taxonomy|标签词表]]
+
+## 最新 Wiki 更新（2026-04-16，Reliable Eval Claim-Evidence Deepening）
+
+- 类型：`wiki-update`（reference / concept / synthesis deepening）。
+- 新增页面：无。
+- 更新页面：[[references/Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models]]、[[concepts/Standardized Evaluation Attack (SEA) Protocol|Segmentation Ensemble Attack (SEA) Protocol]]、[[concepts/Prior-informed Robust Adversarial Training (PIR-AT)]]、[[synthesis/Reliability and Benchmarking for Robust Segmentation]]、[[synthesis/Robust Training Strategies for Semantic Segmentation]]、[[index]]、[[log]]。
+- 说明：把单篇深读笔记中的 `claim -> evidence`、`red-epsilon APGD != SEA`、`PIR-AT 的关键是 robust initialization 而非新 loss`、以及最小复现路径同步到图谱层，不重复创建实体页。
 
 ## 最新 Wiki 更新（2026-04-16，Reliable Eval / PIR-AT Deepening）
 
@@ -87,7 +95,7 @@ summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 
 - Concepts：90 篇
 - Entities：133 篇
 - Synthesis：29 篇
-- 已纳管来源：49 个（见 [[log]] 与 `.manifest.json`）
+- 已纳管来源：50 个（见 [[log]] 与 `.manifest.json`）
 - 原始资料：[[papers_sources/index|papers_sources]]
 - 模板：`Templates`
 

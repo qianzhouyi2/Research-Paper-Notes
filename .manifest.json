@@ -1,7 +1,7 @@
 {
   "version": 1,
   "stats": {
-    "total_sources_ingested": 49,
+    "total_sources_ingested": 50,
     "total_pages": 349
   },
   "sources": {
@@ -2228,6 +2228,23 @@
         "synthesis/Reliability and Benchmarking for Robust Segmentation.md",
         "synthesis/Robust Training Strategies for Semantic Segmentation.md",
         "entities/index.md",
+        "index.md",
+        "log.md"
+      ]
+    },
+    "workspace/wiki-update-2026-04-16-towards-reliable-eval-deepening": {
+      "ingested_at": "2026-04-16T22:14:56+08:00",
+      "size_bytes": 0,
+      "modified_at": "2026-04-16T22:14:56+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [],
+      "pages_updated": [
+        "references/Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models.md",
+        "concepts/Standardized Evaluation Attack (SEA) Protocol.md",
+        "concepts/Prior-informed Robust Adversarial Training (PIR-AT).md",
+        "synthesis/Reliability and Benchmarking for Robust Segmentation.md",
+        "synthesis/Robust Training Strategies for Semantic Segmentation.md",
         "index.md",
         "log.md"
       ]

@@ -11,6 +11,7 @@ sources:
   - workspace/wiki-update-2026-04-10-cn-placeholder-remediation
   - workspace/wiki-update-2026-04-10-references-cn-localization
   - workspace/wiki-update-2026-04-16-towards-reliable-eval-sync
+  - workspace/wiki-update-2026-04-16-towards-reliable-eval-deepening
   - workspace/wiki_lint_global_2026-04-16.json
 created: 2026-04-08
 updated: 2026-04-16
@@ -80,3 +81,4 @@ summary: 记录 wiki 初始化、ingest 与维护操作的时间线。
 - [2026-04-16 19:08:14 +08:00] UPDATE source="workspace/wiki-update-2026-04-16-towards-reliable-eval-sync" pages_updated=9 pages_created=2 mode=append notes="deepened the 'Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models' note/reference pair, upgraded SEA and PIR-AT concept cards, added Francesco Croce and Naman D. Singh entities, and synced synthesis/home/entities indexes plus manifest metadata"
 - [2026-04-16 19:23:07 +08:00] LINT source="workspace/wiki_lint_global_2026-04-16.json" issues_found=33 orphans=0 broken_links=0 stale=21 contradictions=0 prov_issues=11 missing_summary=0 notes="hard structural checks remain clean; soft issues are 21 stale reference cards, 11 provenance-drift pages, and 1 config mismatch in .env (vault path still points to D:/paper_reading/paper_reading)"
 - [2026-04-16 19:37:31 +08:00] LINT source="workspace/wiki_lint_global_2026-04-16.json" issues_found=0 orphans=0 broken_links=0 stale=0 contradictions=0 prov_issues=0 missing_summary=0 notes="fixed .env vault/sources paths, synced updated dates on 21 stale reference cards, aligned provenance markers and frontmatter on 11 drift pages, and cleared the targeted wiki-lint findings"
+- [2026-04-16 22:14:56 +08:00] UPDATE source="workspace/wiki-update-2026-04-16-towards-reliable-eval-deepening" pages_updated=7 pages_created=0 mode=append notes="propagated claim-evidence framing from the deep reading note into the reference, SEA/PIR-AT concept cards, and two synthesis pages; clarified SEA vs red-epsilon APGD, robust-init-first interpretation, and minimum reproduction path"

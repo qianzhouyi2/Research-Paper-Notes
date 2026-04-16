@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Robust Training Strategies for Semantic Segmentation | Research Paper Notes</title>
-  <meta name="description" content="跨论文总结：鲁棒语义分割训练不只是加大 attack budget，更关键的是训练起点、评测协议与成本控制。">
+  <meta name="description" content="跨论文总结：鲁棒语义分割训练不只是加大 attack budget，更关键的是把 initialization 当成一等变量，并在强评测协议下比较真实收益。">
   <link rel="stylesheet" href="../styles.css">
   <script defer src="../site.js"></script>
 </head>
@@ -36,7 +36,7 @@
         <div>
           <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
           <h2>Robust Training Strategies for Semantic Segmentation</h2>
-          <p>跨论文总结：鲁棒语义分割训练不只是加大 attack budget，更关键的是训练起点、评测协议与成本控制。</p>
+          <p>跨论文总结：鲁棒语义分割训练不只是加大 attack budget，更关键的是把 initialization 当成一等变量，并在强评测协议下比较真实收益。</p>
         </div>
         <div class="topbar-actions">
           <div class="search-box">
@@ -55,6 +55,7 @@
 <ul>
 <li>语义分割中的 adversarial training 比分类更难，因为攻击目标更复杂、训练成本更高，而且弱评测容易给出虚假安全感。</li>
 <li>训练策略不能只比较“用了多少步 PGD”，还要比较 initialization、评测协议和训练轮数。</li>
+<li>初始化在 segmentation adversarial training 里是一个一等变量，而不只是训练前的小细节。</li>
 <li><a href="../references/Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models.html">Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models</a> 把 robust initialization 提升为一等变量，是这条线上非常关键的推进。</li>
 </ul>
 <h2 id="2026-04-16">本轮补充（2026-04-16）</h2>
@@ -62,6 +63,7 @@
 <li>PIR-AT 的核心启示是：在 segmentation 里，好的鲁棒起点往往比更长训练更重要。</li>
 <li>论文显示 <code>2-step PIR-AT, 50 epochs</code> 能超过 <code>2-step AT, 300 epochs</code>；在 Ade20K 上 <code>32 epochs PIR-AT</code> 也能超过 <code>128 epochs AT</code>。</li>
 <li>训练时作者仍使用标准 CE + PGD，而不是直接把更强攻击 loss 搬进训练，这说明“更强评测 loss”不一定等于“更好训练 loss”。</li>
+<li>PIR-AT 的收益还依赖可用且兼容的 robust pretrained backbone，因此它更像一条 initialization-first recipe，而不是可以无条件迁移到任何架构的通用定律。</li>
 </ul>
 <h2 id="_2">覆盖论文</h2>
 <ul>
@@ -76,6 +78,7 @@
 <ul>
 <li>将 initialization 作为显式对照变量单独做 ablation。</li>
 <li>把训练 cost 以 epoch 数或 wall-clock 成本纳入主结果，而不是只汇报 robustness。</li>
+<li>不要默认“更强攻击 loss”就应该直接成为训练 loss，先验证它是否真的改善训练动态。^[inferred]</li>
 <li>训练论文的最终结论必须在强评测协议下复核。^[inferred]</li>
 </ul>
 <h2 id="_4">关联概念与链接</h2>
@@ -100,7 +103,7 @@
       </div>
       <div class="meta-block">
         <p class="meta-label">Summary</p>
-        <p>跨论文总结：鲁棒语义分割训练不只是加大 attack budget，更关键的是训练起点、评测协议与成本控制。</p>
+        <p>跨论文总结：鲁棒语义分割训练不只是加大 attack budget，更关键的是把 initialization 当成一等变量，并在强评测协议下比较真实收益。</p>
       </div>
       <div class="meta-block">
         <p class="meta-label">Source</p>
