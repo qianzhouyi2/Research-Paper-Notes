@@ -534,7 +534,7 @@ provenance:
 ### 8.3 外部补充
 
 - 相关概念：[[concepts/Standardized Evaluation Attack (SEA) Protocol|Segmentation Ensemble Attack (SEA) Protocol]]、[[concepts/Prior-informed Robust Adversarial Training (PIR-AT)]]、[[concepts/SegPGD]]
-- 可对照的论文：[[references/Benchmarking the Robustness of Semantic Segmentation Models (ECCV 2020)]]、[[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]
+- 可对照的论文：[[references/Benchmarking the Robustness of Semantic Segmentation Models (CVPR 2020)]]、[[references/Delving into Decision-based Black-box Attacks on Semantic Segmentation]]
 - 还需要补的背景知识：
   - semantic segmentation robustness 里的黑盒攻击为什么难做
   - robust classification backbones 到 dense prediction 的迁移边界
@@ -557,3 +557,4 @@ provenance:
 - Concepts：[[concepts/Standardized Evaluation Attack (SEA) Protocol|Segmentation Ensemble Attack (SEA) Protocol]]、[[concepts/Prior-informed Robust Adversarial Training (PIR-AT)]]、[[concepts/Segmentation Robustness Benchmark Protocol]]、[[concepts/SegPGD]]、[[concepts/Divide-and-Conquer Adversarial Training for Segmentation]]
 - Entities：[[entities/Francesco Croce]]、[[entities/Naman D. Singh]]、[[entities/Matthias Hein]]、[[entities/ADE20K Dataset]]、[[entities/PSPNet]]、[[entities/RobustBench]]
 - Synthesis：[[synthesis/Reliability and Benchmarking for Robust Segmentation]]、[[synthesis/Robust Training Strategies for Semantic Segmentation]]、[[synthesis/Segmentation Adversarial Attack Methods 2019-2026]]
+

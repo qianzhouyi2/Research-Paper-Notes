@@ -73,9 +73,9 @@ summary: "﻿# Synergy-of-Thoughts: Eliciting Efficient Reasoning in Hybrid Lang
   3. 若最高分超过阈值，采用该直觉继续推理。
   4. 否则调用大模型反思重写该步结果，再进入下一步。
 
-![[assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_001.png]]
-![[assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_002.png]]
-![[assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_020.png]]
+![[notes/assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_001.png]]
+![[notes/assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_002.png]]
+![[notes/assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_020.png]]
 
 ### 4.2 核心设计
 > 每个设计都尽量回答：做了什么、为什么这么设计、解决了哪个难点
@@ -89,7 +89,7 @@ summary: "﻿# Synergy-of-Thoughts: Eliciting Efficient Reasoning in Hybrid Lang
   - SoT 的 System 1：\(H_t=\text{System1}(p_t;a_{t-1})\)。
 - 证据位置：Sec.2, Sec.3。
 
-![[assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_021.png]]
+![[notes/assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_021.png]]
 
 #### 设计 2
 - 做了什么：基于冲突的置信评估器决定是否调用 System 2。
@@ -110,7 +110,7 @@ summary: "﻿# Synergy-of-Thoughts: Eliciting Efficient Reasoning in Hybrid Lang
   - 高效干预条件：\(r<1-\frac{7C_{Ii}+6C_{Io}}{C_{Ri}+C_{Ro}}\)（干预率上界）。
 - 证据位置：Sec.3, Sec.4。
 
-![[assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_022.png]]
+![[notes/assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_022.png]]
 
 ### 4.3 训练 / 推理细节
 - 训练阶段做了什么：无需额外训练或微调，纯推理编排框架。
@@ -155,8 +155,8 @@ summary: "﻿# Synergy-of-Thoughts: Eliciting Efficient Reasoning in Hybrid Lang
 - 结果 2：在保持/提升准确率条件下，token 成本显著下降（约 38.3%~75.1%）。
 - 结果 3：开放任务上解法多样性显著提升，成本下降更明显（平均可达约 69.1%）。
 
-![[assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_023.png]]
-![[assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_024.png]]
+![[notes/assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_023.png]]
+![[notes/assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_024.png]]
 
 ### 7.2 从结果中能读出的结论
 - 结论 1：混合系统比“纯 System 1”或“纯 System 2”更稳健。
@@ -178,35 +178,35 @@ summary: "﻿# Synergy-of-Thoughts: Eliciting Efficient Reasoning in Hybrid Lang
   - 结果如何：混合组合和更高多样性通常带来更高准确率与多样性。
   - 说明了什么：SoT 的收益核心之一是“互补直觉”。
 
-![[assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_003.png]]
+![[notes/assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_003.png]]
 
 - 消融点 2：
   - 改了什么：置信阈值范围与是否渐进增长。
   - 结果如何：极端阈值会退化为纯系统；渐进阈值可减轻偏见传播并提升整体表现。
   - 说明了什么：干预调度策略决定 SoT 是否真正高效。
 
-![[assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_004.png]]
+![[notes/assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_004.png]]
 
 - 消融点 3：
   - 改了什么：不同系统组合下的实证干预率与扩展任务成本-性能分析。
   - 结果如何：更互补的组合干预率更低；在更多任务上依然保持性能-成本优势。
   - 说明了什么：SoT 的效率收益具备跨任务可迁移性。
 
-![[assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_005.png]]
-![[assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_006.png]]
-![[assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_007.png]]
-![[assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_008.png]]
-![[assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_009.png]]
-![[assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_010.png]]
-![[assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_011.png]]
-![[assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_012.png]]
-![[assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_013.png]]
-![[assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_014.png]]
-![[assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_015.png]]
-![[assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_016.png]]
-![[assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_017.png]]
-![[assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_018.png]]
-![[assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_019.png]]
+![[notes/assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_005.png]]
+![[notes/assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_006.png]]
+![[notes/assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_007.png]]
+![[notes/assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_008.png]]
+![[notes/assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_009.png]]
+![[notes/assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_010.png]]
+![[notes/assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_011.png]]
+![[notes/assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_012.png]]
+![[notes/assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_013.png]]
+![[notes/assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_014.png]]
+![[notes/assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_015.png]]
+![[notes/assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_016.png]]
+![[notes/assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_017.png]]
+![[notes/assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_018.png]]
+![[notes/assets/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models/image_019.png]]
 
 ---
 
@@ -300,3 +300,4 @@ summary: "﻿# Synergy-of-Thoughts: Eliciting Efficient Reasoning in Hybrid Lang
 - 概念锚点：[[concepts/Adaptive Compute Routing]]、[[concepts/Task Complexity-Aware Inference Budgeting]]、[[concepts/Tree of Thoughts Reasoning]]
 - 实体锚点：[[entities/Yu Shang]]、[[entities/Yu Li]]、[[entities/GPT-4]]
 - 综合页面：[[synthesis/Probabilistic Inference-Time Control for LLMs]]、[[synthesis/Structured Reasoning Methods for LLMs]]、[[synthesis/LLM Inference Efficiency and Scaling]]
+

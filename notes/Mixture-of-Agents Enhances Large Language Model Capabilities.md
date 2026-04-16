@@ -73,8 +73,8 @@ summary: "﻿# Mixture-of-Agents: Enhances Large Language Model Capabilities"
   3. 将该层输出作为下一层输入，重复迭代。
   4. 最后一层聚合器输出最终答案。
 
-![[assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_001.png]]
-![[assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_002.png]]
+![[notes/assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_001.png]]
+![[notes/assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_002.png]]
 
 ### 4.2 核心设计
 > 每个设计都尽量回答：做了什么、为什么这么设计、解决了哪个难点
@@ -93,7 +93,7 @@ summary: "﻿# Mixture-of-Agents: Enhances Large Language Model Capabilities"
 - 关键公式 / 目标函数：层级递推形式 \(x_{i+1}=y_i\)，其中 \(y_i\) 为该层聚合输出。
 - 证据位置：Method 2.2。
 
-![[assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_003.png]]
+![[notes/assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_003.png]]
 
 #### 设计 3
 - 做了什么：借鉴 MoE 思想，但把“专家/门控”从激活级迁移到“模型级 + 提示级”。
@@ -144,9 +144,9 @@ summary: "﻿# Mixture-of-Agents: Enhances Large Language Model Capabilities"
 - 结果 2：MT-Bench 在高基线区间仍有增益，说明 MoA 并非只在弱基线有效。
 - 结果 3：FLASK 在正确性、事实性、完整性、洞察力等维度均有提升，但简洁性略弱。
 
-![[assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_004.png]]
-![[assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_005.png]]
-![[assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_006.png]]
+![[notes/assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_004.png]]
+![[notes/assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_005.png]]
+![[notes/assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_006.png]]
 
 ### 7.2 从结果中能读出的结论
 - 结论 1：聚合器在多数样本中不是简单“选一个最好候选”，而是“重组多个候选优点”。
@@ -159,11 +159,11 @@ summary: "﻿# Mixture-of-Agents: Enhances Large Language Model Capabilities"
 - 最关键数字：MoA 对 GPT-4o 的 AlpacaEval 领先幅度；MoA-Lite 在接近成本下仍保持质量优势。
 - 为什么它最关键：直接回答“是否真提升”“为何提升”“是否划算”三类核心问题。
 
-![[assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_007.png]]
-![[assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_008.png]]
-![[assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_009.png]]
-![[assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_010.png]]
-![[assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_011.png]]
+![[notes/assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_007.png]]
+![[notes/assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_008.png]]
+![[notes/assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_009.png]]
+![[notes/assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_010.png]]
+![[notes/assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_011.png]]
 
 ---
 
@@ -184,11 +184,11 @@ summary: "﻿# Mixture-of-Agents: Enhances Large Language Model Capabilities"
   - 结果如何：偏好分与文本相似度相关性为正；案例中 MoA 能综合多候选优势；MATH 任务上也有增益。
   - 说明了什么：MoA 的机制在多任务上有一定普适性。
 
-![[assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_012.png]]
-![[assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_013.png]]
-![[assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_014.png]]
-![[assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_015.png]]
-![[assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_016.png]]
+![[notes/assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_012.png]]
+![[notes/assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_013.png]]
+![[notes/assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_014.png]]
+![[notes/assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_015.png]]
+![[notes/assets/Mixture-of-Agents Enhances Large Language Model Capabilities/image_016.png]]
 
 ---
 
@@ -282,3 +282,4 @@ summary: "﻿# Mixture-of-Agents: Enhances Large Language Model Capabilities"
 - 概念锚点：[[concepts/Multi-Agent LLM Orchestration]]、[[concepts/Mixture-of-Agents Aggregation]]、[[concepts/Adaptive Compute Routing]]
 - 实体锚点：[[entities/Junlin Wang]]、[[entities/Jue Wang]]、[[entities/GPT-4]]
 - 综合页面：[[synthesis/Inference-Time Orchestration and Routing for LLMs]]、[[synthesis/Multi-Agent LLM Collaboration Landscape]]、[[synthesis/LLM Inference Efficiency and Scaling]]
+

@@ -105,11 +105,11 @@ summary: "﻿# Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in 
 - 复杂度 / 额外开销：增加构图与图编码成本，训练略慢于普通 CoT。
 
 ### 4.4 方法流程图与构图证据
-![[assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_001.png]]
-![[assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_002.png]]
-![[assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_003.png]]
-![[assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_004.png]]
-![[assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_005.png]]
+![[notes/assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_001.png]]
+![[notes/assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_002.png]]
+![[notes/assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_003.png]]
+![[notes/assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_004.png]]
+![[notes/assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_005.png]]
 
 ---
 
@@ -135,9 +135,9 @@ summary: "﻿# Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in 
 - 实验是否公平（初步判断）：整体较充分，且含“参数扩大但非 GoT”的对照。
 
 ### 6.1 数据与训练附录图
-![[assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_014.png]]
-![[assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_015.png]]
-![[assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_016.png]]
+![[notes/assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_014.png]]
+![[notes/assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_015.png]]
+![[notes/assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_016.png]]
 
 ---
 
@@ -160,15 +160,15 @@ summary: "﻿# Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in 
 - 为什么它最关键：同时证明“有效果”和“不是参数幻觉”。
 
 ### 7.4 主结果与分析图证据
-![[assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_006.png]]
-![[assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_007.png]]
-![[assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_008.png]]
-![[assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_009.png]]
-![[assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_010.png]]
-![[assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_011.png]]
-![[assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_012.png]]
-![[assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_013.png]]
-![[assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_017.png]]
+![[notes/assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_006.png]]
+![[notes/assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_007.png]]
+![[notes/assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_008.png]]
+![[notes/assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_009.png]]
+![[notes/assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_010.png]]
+![[notes/assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_011.png]]
+![[notes/assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_012.png]]
+![[notes/assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_013.png]]
+![[notes/assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_017.png]]
 
 ---
 
@@ -218,12 +218,12 @@ summary: "﻿# Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in 
 - 对 OpenIE / 共指工具链依赖强，跨领域迁移时可能脆弱。
 
 ### 10.5 案例分析补充图
-![[assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_018.png]]
-![[assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_019.png]]
-![[assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_020.png]]
-![[assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_021.png]]
-![[assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_022.png]]
-![[assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_023.png]]
+![[notes/assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_018.png]]
+![[notes/assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_019.png]]
+![[notes/assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_020.png]]
+![[notes/assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_021.png]]
+![[notes/assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_022.png]]
+![[notes/assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_023.png]]
 
 ---
 
@@ -233,7 +233,7 @@ summary: "﻿# Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in 
 - 局限 2：构图质量受外部 NLP 组件上限限制。
 - 局限 3：理由生成阶段提升有限，收益更多体现在答案阶段。
 
-![[assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_024.png]]
+![[notes/assets/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models/image_024.png]]
 
 > 可从假设过强、实验覆盖不足、开销过大、泛化不明、复现风险高等角度写。
 
@@ -296,3 +296,4 @@ summary: "﻿# Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in 
 - 概念锚点：[[concepts/Graph of Thoughts Reasoning]]、[[concepts/Thought Structure Taxonomy]]、[[concepts/Tree of Thoughts Reasoning]]
 - 实体锚点：[[entities/Yao Yao]]、[[entities/Hai Zhao]]、[[entities/GPT-4]]
 - 综合页面：[[synthesis/Search-Based Deliberate Reasoning Landscape]]、[[synthesis/Structured Reasoning Methods for LLMs]]、[[synthesis/LLM Reasoning Search and Verification]]
+

@@ -73,8 +73,8 @@ summary: "﻿# Multimodal Chain-of-Thought Reasoning in Language Models"
   3. 第一阶段生成 rationale \(R\)。
   4. 第二阶段将 \(R\) 拼接回输入，推断最终答案 \(A\)。
 
-![[assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_001.png]]
-![[assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_006.png]]
+![[notes/assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_001.png]]
+![[notes/assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_006.png]]
 
 ### 4.2 核心设计
 > 每个设计都尽量回答：做了什么、为什么这么设计、解决了哪个难点
@@ -102,10 +102,10 @@ summary: "﻿# Multimodal Chain-of-Thought Reasoning in Language Models"
 - 关键公式 / 目标函数：对比 No-CoT(QCM→A)、Reasoning(QCM→RA)、Explanation(QCM→AR)。
 - 证据位置：Sec.3.1~3.3。
 
-![[assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_002.png]]
-![[assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_003.png]]
-![[assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_004.png]]
-![[assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_005.png]]
+![[notes/assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_002.png]]
+![[notes/assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_003.png]]
+![[notes/assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_004.png]]
+![[notes/assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_005.png]]
 
 ### 4.3 训练 / 推理细节
 - 训练阶段做了什么：
@@ -141,9 +141,9 @@ summary: "﻿# Multimodal Chain-of-Thought Reasoning in Language Models"
 - 是否开源代码 / 模型：有官方仓库。
 - 实验是否公平（初步判断）：覆盖模型类型广，含消融、误差分析与泛化评估。
 
-![[assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_007.png]]
-![[assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_008.png]]
-![[assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_009.png]]
+![[notes/assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_007.png]]
+![[notes/assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_008.png]]
+![[notes/assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_009.png]]
 
 ---
 
@@ -168,10 +168,10 @@ summary: "﻿# Multimodal Chain-of-Thought Reasoning in Language Models"
   - 幻觉相关错误率显著下降（笔记记录约 67% 降幅）。
 - 为什么它最关键：把“现象-原因-修复”闭环全部量化。
 
-![[assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_010.png]]
-![[assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_011.png]]
-![[assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_012.png]]
-![[assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_015.png]]
+![[notes/assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_010.png]]
+![[notes/assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_011.png]]
+![[notes/assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_012.png]]
+![[notes/assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_015.png]]
 
 ---
 
@@ -192,9 +192,9 @@ summary: "﻿# Multimodal Chain-of-Thought Reasoning in Language Models"
   - 结果如何：方法跨骨干有效；伪 rationale 方案可行；错误主要来自常识与逻辑问题。
   - 说明了什么：方法具备扩展性，但常识知识仍是瓶颈。
 
-![[assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_013.png]]
-![[assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_014.png]]
-![[assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_016.png]]
+![[notes/assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_013.png]]
+![[notes/assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_014.png]]
+![[notes/assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_016.png]]
 
 ---
 
@@ -232,15 +232,15 @@ summary: "﻿# Multimodal Chain-of-Thought Reasoning in Language Models"
 - 局限 2：常识性错误仍占主要比例，仅靠视觉融合无法完全解决。
 - 局限 3：部分结论主要在选择题型基准上验证，开放任务泛化仍需更多证据。
 
-![[assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_017.png]]
-![[assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_018.png]]
-![[assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_019.png]]
-![[assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_020.png]]
-![[assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_021.png]]
-![[assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_022.png]]
-![[assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_023.png]]
-![[assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_024.png]]
-![[assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_025.png]]
+![[notes/assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_017.png]]
+![[notes/assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_018.png]]
+![[notes/assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_019.png]]
+![[notes/assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_020.png]]
+![[notes/assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_021.png]]
+![[notes/assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_022.png]]
+![[notes/assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_023.png]]
+![[notes/assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_024.png]]
+![[notes/assets/Multimodal Chain-of-Thought Reasoning in Language Models/image_025.png]]
 
 ---
 
@@ -300,3 +300,4 @@ summary: "﻿# Multimodal Chain-of-Thought Reasoning in Language Models"
 - 概念锚点：[[concepts/Two-Stage Multimodal CoT Pipeline]]、[[concepts/Multimodal Chain-of-Thought Reasoning]]、[[concepts/Process-Supervised Step Verification]]
 - 实体锚点：[[entities/Zhuosheng Zhang]]、[[entities/GPT-4]]、[[entities/MiniGPT-4]]
 - 综合页面：[[synthesis/Process Supervision and CoT Internalization]]、[[synthesis/Structured Reasoning Methods for LLMs]]、[[synthesis/Multimodal Composition and Reasoning]]
+

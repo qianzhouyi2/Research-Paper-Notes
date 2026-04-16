@@ -73,7 +73,7 @@ summary: "﻿# Accessing GPT-4 level Mathematical Olympiad Solutions via Monte C
   3. 执行 Self-Evaluation，更新奖励与 Q 值。
   4. 反向传播并迭代，直到终止条件满足。
 
-![[assets/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report/image_001.png]]
+![[notes/assets/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report/image_001.png]]
 
 ### 4.2 核心设计
 > 每个设计都尽量回答：做了什么、为什么这么设计、解决了哪个难点
@@ -92,7 +92,7 @@ summary: "﻿# Accessing GPT-4 level Mathematical Olympiad Solutions via Monte C
 - 关键公式 / 目标函数：`Q(a)=1/2*(min(R_a)+mean(R_a))`。
 - 证据位置：Section 3.2；公式见笔记 `Q(a)` 条目。
 
-![[assets/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report/image_002.png]]
+![[notes/assets/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report/image_002.png]]
 
 #### 设计 3
 - 做了什么：改进 UCT、动态剪枝与终止函数。
@@ -101,8 +101,8 @@ summary: "﻿# Accessing GPT-4 level Mathematical Olympiad Solutions via Monte C
 - 关键公式 / 目标函数：`UCT_a = Q(a) + c*sqrt(ln(N(Father(a))+1)/(N(a)+epsilon))`；回传更新 `Q'(a)`。
 - 证据位置：Section 3.3~3.5；Figure/公式见 `image_003`、`image_004`。
 
-![[assets/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report/image_003.png]]
-![[assets/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report/image_004.png]]
+![[notes/assets/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report/image_003.png]]
+![[notes/assets/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report/image_004.png]]
 
 ### 4.3 训练 / 推理细节
 - 训练阶段做了什么：本文核心是测试时推理算法，不强调新增训练；以现有基座模型为主。
@@ -147,10 +147,10 @@ summary: "﻿# Accessing GPT-4 level Mathematical Olympiad Solutions via Monte C
 - 结果 2：MATH 总体约 58.24%（8-rollout）vs 24.36%（zero-shot CoT，笔记记录值）。
 - 结果 3：Olympiad 级基准上小模型表现显著提升。
 
-![[assets/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report/image_005.png]]
-![[assets/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report/image_006.png]]
-![[assets/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report/image_007.png]]
-![[assets/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report/image_008.png]]
+![[notes/assets/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report/image_005.png]]
+![[notes/assets/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report/image_006.png]]
+![[notes/assets/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report/image_007.png]]
+![[notes/assets/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report/image_008.png]]
 
 ### 7.2 从结果中能读出的结论
 - 结论 1：测试时搜索可显著提升小模型复杂推理能力。
@@ -286,3 +286,4 @@ summary: "﻿# Accessing GPT-4 level Mathematical Olympiad Solutions via Monte C
 - 概念锚点：[[concepts/Monte Carlo Tree Self-Refine]]、[[concepts/Monte Carlo Tree Search for LLM Reasoning]]、[[concepts/Tree of Thoughts Reasoning]]
 - 实体锚点：[[entities/Di Zhang]]、[[entities/GPT-4]]、[[entities/LLaMA-3 8B]]
 - 综合页面：[[synthesis/Search-Based Deliberate Reasoning Landscape]]、[[synthesis/LLM Reasoning Search and Verification]]、[[synthesis/Structured Reasoning Methods for LLMs]]
+

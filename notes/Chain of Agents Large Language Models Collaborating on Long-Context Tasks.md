@@ -60,7 +60,7 @@ summary: "﻿# Chain of Agents: Large Language Models Collaborating on Long-Cont
 - 难点 2：扩窗模型存在 lost-in-the-middle，信息利用效率低。
 - 难点 3：跨块多跳推理需要可持续的信息压缩与传递机制。
 
-![[assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_001.png]]
+![[notes/assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_001.png]]
 
 ---
 
@@ -105,11 +105,11 @@ summary: "﻿# Chain of Agents: Large Language Models Collaborating on Long-Cont
 - 复杂度 / 额外开销：增加多代理调用开销，但相对 full-context 在长输入下更高效。
 
 ### 4.4 方法流程与复杂度图证据
-![[assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_002.png]]
-![[assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_003.png]]
-![[assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_004.png]]
-![[assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_005.png]]
-![[assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_006.png]]
+![[notes/assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_002.png]]
+![[notes/assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_003.png]]
+![[notes/assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_004.png]]
+![[notes/assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_005.png]]
+![[notes/assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_006.png]]
 
 ---
 
@@ -132,7 +132,7 @@ summary: "﻿# Chain of Agents: Large Language Models Collaborating on Long-Cont
 - 是否开源代码 / 模型：待确认。
 - 实验是否公平（初步判断）：基线完整，且包含多代理替代设计，对比较充分。
 
-![[assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_012.png]]
+![[notes/assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_012.png]]
 
 ---
 
@@ -155,14 +155,14 @@ summary: "﻿# Chain of Agents: Large Language Models Collaborating on Long-Cont
 - 为什么它最关键：同时证明了“有效”“稳健”“可扩展”。
 
 ### 7.4 主结果与分析图证据
-![[assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_007.png]]
-![[assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_008.png]]
-![[assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_009.png]]
-![[assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_010.png]]
-![[assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_011.png]]
-![[assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_013.png]]
-![[assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_014.png]]
-![[assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_015.png]]
+![[notes/assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_007.png]]
+![[notes/assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_008.png]]
+![[notes/assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_009.png]]
+![[notes/assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_010.png]]
+![[notes/assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_011.png]]
+![[notes/assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_013.png]]
+![[notes/assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_014.png]]
+![[notes/assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_015.png]]
 
 ---
 
@@ -212,10 +212,10 @@ summary: "﻿# Chain of Agents: Large Language Models Collaborating on Long-Cont
 - 顺序多代理调用延迟较高，线上吞吐与成本仍需权衡。
 
 ### 10.5 误差与案例补充图
-![[assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_016.png]]
-![[assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_017.png]]
-![[assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_018.png]]
-![[assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_019.png]]
+![[notes/assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_016.png]]
+![[notes/assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_017.png]]
+![[notes/assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_018.png]]
+![[notes/assets/Chain of Agents Large Language Models Collaborating on Long-Context Tasks/image_019.png]]
 
 ---
 
@@ -278,3 +278,4 @@ summary: "﻿# Chain of Agents: Large Language Models Collaborating on Long-Cont
 - 概念锚点：[[concepts/Multi-Agent LLM Orchestration]]、[[concepts/Mixture-of-Agents Aggregation]]、[[concepts/Adaptive Compute Routing]]
 - 实体锚点：[[entities/Yusen Zhang]]、[[entities/GPT-4]]、[[entities/OpenAssistant]]
 - 综合页面：[[synthesis/Inference-Time Orchestration and Routing for LLMs]]、[[synthesis/Multi-Agent LLM Collaboration Landscape]]、[[synthesis/LLM Inference Efficiency and Scaling]]
+

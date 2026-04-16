@@ -48,7 +48,7 @@ summary: "﻿# Compositional Visual Generation with Composable Diffusion Models"
 - 为什么这个问题重要：真实场景的描述天然是组合式的，若模型只能记忆训练分布而不能组合概念，实用价值会受限。
 - 论文要优化或解决的目标：提出可组合的扩散建模框架，使多个子模型在推理时显式组合，生成满足复杂约束的图像。
 
-![[assets/Compositional Visual Generation with Composable Diffusion Models/image_001.png]]
+![[notes/assets/Compositional Visual Generation with Composable Diffusion Models/image_001.png]]
 
 ### 3.2 为什么重要
 
@@ -93,7 +93,7 @@ summary: "﻿# Compositional Visual Generation with Composable Diffusion Models"
 - 为什么这么设计：原始笔记强调 EBM 直接训练不稳定，而扩散模型可作为更稳定的隐式 EBM 实现路径。
 - 关键实现：在每一步去噪迭代中融合组合条件，逐步逼近满足多约束的目标分布。
 
-![[assets/Compositional Visual Generation with Composable Diffusion Models/image_002.png]]
+![[notes/assets/Compositional Visual Generation with Composable Diffusion Models/image_002.png]]
 
 ### 4.3 训练 / 推理细节
 
@@ -239,3 +239,4 @@ summary: "﻿# Compositional Visual Generation with Composable Diffusion Models"
 - 概念锚点：[[concepts/Composable Diffusion Generation]]、[[concepts/Logical Operator Composition in Diffusion Models]]、[[concepts/Multimodal Chain-of-Thought Reasoning]]、[[concepts/Multimodal Adversarial Image Prompting]]
 - 实体锚点：[[entities/Nan Liu]]、[[entities/Antonio Torralba]]、[[entities/LLaVA]]
 - 综合页面：[[synthesis/Robust Representation and Adversarial Dynamics]]、[[synthesis/Multimodal Composition and Reasoning]]、[[synthesis/LLM Inference Efficiency and Scaling]]
+

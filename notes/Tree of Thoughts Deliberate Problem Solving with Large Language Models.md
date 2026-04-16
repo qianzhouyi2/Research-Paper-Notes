@@ -70,7 +70,7 @@ summary: "﻿# Tree of Thoughts: Deliberate Problem Solving with Large Language 
 - CoT-SC：采样多条 CoT 再投票，可提升鲁棒性，但不做局部状态搜索。
 - ToT 关注点：在“中间状态层面”引入分支探索与启发式评估。
 
-![[assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_001.png]]
+![[notes/assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_001.png]]
 
 ---
 
@@ -126,7 +126,7 @@ summary: "﻿# Tree of Thoughts: Deliberate Problem Solving with Large Language 
 
 ### 4.4 方法图与流程证据
 
-![[assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_002.png]]
+![[notes/assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_002.png]]
 
 ---
 
@@ -157,9 +157,9 @@ summary: "﻿# Tree of Thoughts: Deliberate Problem Solving with Large Language 
 
 ### 6.1 实验图证据（任务设置）
 
-![[assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_003.png]]
-![[assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_006.png]]
-![[assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_008.png]]
+![[notes/assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_003.png]]
+![[notes/assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_006.png]]
+![[notes/assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_008.png]]
 
 ---
 
@@ -186,10 +186,10 @@ summary: "﻿# Tree of Thoughts: Deliberate Problem Solving with Large Language 
 
 ### 7.4 主结果图（完整）
 
-![[assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_004.png]]
-![[assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_005.png]]
-![[assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_007.png]]
-![[assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_009.png]]
+![[notes/assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_004.png]]
+![[notes/assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_005.png]]
+![[notes/assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_007.png]]
+![[notes/assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_009.png]]
 
 ---
 
@@ -241,9 +241,9 @@ summary: "﻿# Tree of Thoughts: Deliberate Problem Solving with Large Language 
 - 论文强调 ToT 可提高可解释性，因为中间 thought 可读。
 - 附录给出额外结果与成本分析：主实验成本约百美元量级（按论文记录）。
 
-![[assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_010.png]]
-![[assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_011.png]]
-![[assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_012.png]]
+![[notes/assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_010.png]]
+![[notes/assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_011.png]]
+![[notes/assets/Tree of Thoughts Deliberate Problem Solving with Large Language Models/image_012.png]]
 
 ---
 
@@ -307,3 +307,4 @@ summary: "﻿# Tree of Thoughts: Deliberate Problem Solving with Large Language 
 - 概念锚点：[[concepts/Tree of Thoughts Reasoning]]、[[concepts/Monte Carlo Tree Search for LLM Reasoning]]、[[concepts/Thought Structure Taxonomy]]
 - 实体锚点：[[entities/Shunyu Yao]]、[[entities/Dian Yu]]、[[entities/GPT-4]]、[[entities/Di Zhang]]
 - 综合页面：[[synthesis/Search-Based Deliberate Reasoning Landscape]]、[[synthesis/Structured Reasoning Methods for LLMs]]、[[synthesis/LLM Reasoning Search and Verification]]
+

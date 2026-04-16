@@ -107,12 +107,12 @@ summary: "﻿# Monte Carlo Tree Search: A Review of Recent Modifications and App
 ### 4.4 基础公式与流程图（原始内容迁移）
 
 - MDP 可建模为元组 `(S, A_S, P_a, R_a)`。
-![[assets/Monte Carlo Tree Search A Review of Recent Modifications and Applications/image_001.png]]
+![[notes/assets/Monte Carlo Tree Search A Review of Recent Modifications and Applications/image_001.png]]
 
 - MCTS 决策目标：
   - `a* = argmax_{a∈A(s)} Q(s,a)`
 - 其中 `Q(s,a)` 是在状态 `s` 选择动作 `a` 的经验回报估计。
-![[assets/Monte Carlo Tree Search A Review of Recent Modifications and Applications/image_002.png]]
+![[notes/assets/Monte Carlo Tree Search A Review of Recent Modifications and Applications/image_002.png]]
 
 - 每轮迭代四阶段：
   1. Selection
@@ -124,7 +124,7 @@ summary: "﻿# Monte Carlo Tree Search: A Review of Recent Modifications and App
   - `a* = argmax_{a∈A(s)} { Q(s,a) + C * sqrt( ln N(s) / N(s,a) ) }`
 - UCB1（方差增强）：
   - `a* = argmax_{a∈A(s)} { Q(s,a) + C * sqrt( ln N(s)/N(s,a) * min(1/4, σ_a + 2 ln N(s)/N(s,a)) ) }`
-![[assets/Monte Carlo Tree Search A Review of Recent Modifications and Applications/image_003.png]]
+![[notes/assets/Monte Carlo Tree Search A Review of Recent Modifications and Applications/image_003.png]]
 
 ---
 
@@ -281,3 +281,4 @@ summary: "﻿# Monte Carlo Tree Search: A Review of Recent Modifications and App
 - 概念锚点：[[concepts/Monte Carlo Tree Search for LLM Reasoning]]、[[concepts/Tree of Thoughts Reasoning]]、[[concepts/Monte Carlo Tree Self-Refine]]
 - 实体锚点：[[entities/Maciej Swiechowski]]、[[entities/Shunyu Yao]]、[[entities/Di Zhang]]
 - 综合页面：[[synthesis/Search-Based Deliberate Reasoning Landscape]]、[[synthesis/Structured Reasoning Methods for LLMs]]、[[synthesis/LLM Reasoning Search and Verification]]
+

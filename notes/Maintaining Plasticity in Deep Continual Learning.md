@@ -38,7 +38,7 @@ summary: "﻿# Maintaining Plasticity in Deep Continual Learning"
 - 关键词（3~8个）：loss of plasticity, continual learning, continual ImageNet, online permuted MNIST, effective rank, continual backpropagation, shrink-and-perturb, L2 regularization
 - 论文一句话主题：标准深度学习在持续学习中会逐步丧失学习新任务能力，而“持续注入随机性”的方法（尤其 CBP）可显著维持可塑性。
 
-![[assets/Maintaining Plasticity in Deep Continual Learning/image_001.png]]
+![[notes/assets/Maintaining Plasticity in Deep Continual Learning/image_001.png]]
 
 ---
 
@@ -156,8 +156,8 @@ u_{l, i, t} &= \eta* u_{l, i, t-1} + (1 - \eta)* y_{l, i, t}, \\
 - 关键公式 / 目标函数：算法流程以离散操作定义，核心超参数为 `ρ, m, η`。
 - 证据位置：Algorithm 1 图示与正文解释。
 
-![[assets/Maintaining Plasticity in Deep Continual Learning/image_013.png]]
-![[assets/Maintaining Plasticity in Deep Continual Learning/image_014.png]]
+![[notes/assets/Maintaining Plasticity in Deep Continual Learning/image_013.png]]
+![[notes/assets/Maintaining Plasticity in Deep Continual Learning/image_014.png]]
 
 ### 4.3 训练 / 推理细节
 - 训练阶段做了什么：
@@ -221,10 +221,10 @@ u_{l, i, t} &= \eta* u_{l, i, t-1} + (1 - \eta)* y_{l, i, t}, \\
 - 是否开源代码 / 模型：是（GitHub）
 - 实验是否公平（初步判断）：同一任务流、同网络骨架下横向对比较完整；不同方法对超参数敏感度不一致，解释时需保守。
 
-![[assets/Maintaining Plasticity in Deep Continual Learning/image_002.png]]
-![[assets/Maintaining Plasticity in Deep Continual Learning/image_004.png]]
-![[assets/Maintaining Plasticity in Deep Continual Learning/image_008.png]]
-![[assets/Maintaining Plasticity in Deep Continual Learning/image_019.png]]
+![[notes/assets/Maintaining Plasticity in Deep Continual Learning/image_002.png]]
+![[notes/assets/Maintaining Plasticity in Deep Continual Learning/image_004.png]]
+![[notes/assets/Maintaining Plasticity in Deep Continual Learning/image_008.png]]
+![[notes/assets/Maintaining Plasticity in Deep Continual Learning/image_019.png]]
 
 ---
 
@@ -241,11 +241,11 @@ u_{l, i, t} &= \eta* u_{l, i, t-1} + (1 - \eta)* y_{l, i, t}, \\
   - Dropout、Adam、归一化在该持续场景下常显著恶化可塑性；
   - CBP 效果最稳健。
 
-![[assets/Maintaining Plasticity in Deep Continual Learning/image_003.png]]
-![[assets/Maintaining Plasticity in Deep Continual Learning/image_005.png]]
-![[assets/Maintaining Plasticity in Deep Continual Learning/image_010.png]]
-![[assets/Maintaining Plasticity in Deep Continual Learning/image_015.png]]
-![[assets/Maintaining Plasticity in Deep Continual Learning/image_017.png]]
+![[notes/assets/Maintaining Plasticity in Deep Continual Learning/image_003.png]]
+![[notes/assets/Maintaining Plasticity in Deep Continual Learning/image_005.png]]
+![[notes/assets/Maintaining Plasticity in Deep Continual Learning/image_010.png]]
+![[notes/assets/Maintaining Plasticity in Deep Continual Learning/image_015.png]]
+![[notes/assets/Maintaining Plasticity in Deep Continual Learning/image_017.png]]
 
 ### 7.2 从结果中能读出的结论
 - 结论 1：可塑性丧失在多任务、长时程持续训练下是系统性现象，不是偶然超参数失败。
@@ -266,9 +266,9 @@ u_{l, i, t} &= \eta* u_{l, i, t-1} + (1 - \eta)* y_{l, i, t}, \\
 - 为什么它最关键：
   - 同时覆盖“是否退化、为何退化、如何缓解”三层证据。
 
-![[assets/Maintaining Plasticity in Deep Continual Learning/image_011.png]]
-![[assets/Maintaining Plasticity in Deep Continual Learning/image_012.png]]
-![[assets/Maintaining Plasticity in Deep Continual Learning/image_016.png]]
+![[notes/assets/Maintaining Plasticity in Deep Continual Learning/image_011.png]]
+![[notes/assets/Maintaining Plasticity in Deep Continual Learning/image_012.png]]
+![[notes/assets/Maintaining Plasticity in Deep Continual Learning/image_016.png]]
 
 ---
 
@@ -289,10 +289,10 @@ u_{l, i, t} &= \eta* u_{l, i, t-1} + (1 - \eta)* y_{l, i, t}, \\
   - 结果如何：多数组合后期误差上升；ELU较缓但不根治。
   - 说明了什么：仅换激活函数不能根治可塑性问题。
 
-![[assets/Maintaining Plasticity in Deep Continual Learning/image_006.png]]
-![[assets/Maintaining Plasticity in Deep Continual Learning/image_007.png]]
-![[assets/Maintaining Plasticity in Deep Continual Learning/image_009.png]]
-![[assets/Maintaining Plasticity in Deep Continual Learning/image_018.png]]
+![[notes/assets/Maintaining Plasticity in Deep Continual Learning/image_006.png]]
+![[notes/assets/Maintaining Plasticity in Deep Continual Learning/image_007.png]]
+![[notes/assets/Maintaining Plasticity in Deep Continual Learning/image_009.png]]
+![[notes/assets/Maintaining Plasticity in Deep Continual Learning/image_018.png]]
 
 ---
 
@@ -434,3 +434,4 @@ u_{l, i, t} &= \eta* u_{l, i, t-1} + (1 - \eta)* y_{l, i, t}, \\
 - 概念锚点：[[concepts/Loss of Plasticity in Continual Learning]]、[[concepts/Continual Backpropagation]]、[[concepts/Selective Neuron Reinitialization]]
 - 实体锚点：[[entities/Shibhansh Dohare]]、[[entities/Qingfeng Lan]]、[[entities/Richard S. Sutton]]
 - 综合页面：[[synthesis/Efficient Adaptation and Plasticity Retention]]、[[synthesis/Representation Capacity and Effective Rank]]、[[synthesis/Continual Learning Plasticity Maintenance Playbook]]
+

@@ -42,7 +42,7 @@ summary: "- 阅读日期：2026-04-08"
 - 我现在是否值得深入读：值得
 - 原因：它把“对齐是否有效”从经验问题转成“攻击-防御评估能力”问题，并给出可复用的实验协议。
 
-![[assets/Are aligned neural networks adversarially aligned/image_001.png]]
+![[notes/assets/Are aligned neural networks adversarially aligned/image_001.png]]
 
 ---
 
@@ -74,7 +74,7 @@ summary: "- 阅读日期：2026-04-08"
   - `对抗攻击`
 - 原始语义边界（按 Notion 原文保留）：本文更关注导致模型产生有害行为的对抗样本，而非仅“错误分类”；这与社会工程攻击不同，不刻意追求语义上有害但自然的回复。
 
-![[assets/Are aligned neural networks adversarially aligned/image_002.png]]
+![[notes/assets/Are aligned neural networks adversarially aligned/image_002.png]]
 
 ### 3.3 难点
 - 难点 1：文本 token 离散，难以直接做连续优化（如梯度下降）。
@@ -94,7 +94,7 @@ summary: "- 阅读日期：2026-04-08"
   3. 构造“保证存在攻击解”的测试集，验证攻击器是否真的能找到解。
   4. 对 MiniGPT-4 / LLaVA / LLaMA-Adapter 进行图像对抗优化并量化成功率与失真。
 
-![[assets/Are aligned neural networks adversarially aligned/image_003.png]]
+![[notes/assets/Are aligned neural networks adversarially aligned/image_003.png]]
 
 ### 4.2 核心设计
 > 每个设计都尽量回答：做了什么、为什么这么设计、解决了哪个难点
@@ -211,9 +211,9 @@ summary: "- 阅读日期：2026-04-08"
 - 为什么它最关键：它们分别回答了“文本端为什么不能盲目信任低攻击成功率”和“多模态端为什么风险已是现实问题”。
 - 原始量化观察（按 Notion 原文保留）：对抗输入相对容易找到，仅需要对初始图像进行最小的 `⁍` 失真；不同提示之间的失真变化也很小。
 
-![[assets/Are aligned neural networks adversarially aligned/image_004.png]]
-![[assets/Are aligned neural networks adversarially aligned/image_005.png]]
-![[assets/Are aligned neural networks adversarially aligned/image_006.png]]
+![[notes/assets/Are aligned neural networks adversarially aligned/image_004.png]]
+![[notes/assets/Are aligned neural networks adversarially aligned/image_005.png]]
+![[notes/assets/Are aligned neural networks adversarially aligned/image_006.png]]
 
 ---
 
@@ -343,3 +343,4 @@ summary: "- 阅读日期：2026-04-08"
 - 概念锚点：[[concepts/Adversarial Alignment Evaluation]]、[[concepts/Known-Solvable Attack Calibration]]、[[concepts/Multimodal Adversarial Image Prompting]]
 - 实体锚点：[[entities/Nicholas Carlini]]、[[entities/Vicuna]]、[[entities/LLaVA]]
 - 综合页面：[[synthesis/Robust Representation and Adversarial Dynamics]]、[[synthesis/Adversarial Robustness Evaluation Patterns]]、[[synthesis/Alignment Robustness Evaluation Ladder]]
+

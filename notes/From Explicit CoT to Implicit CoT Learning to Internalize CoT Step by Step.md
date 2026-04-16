@@ -60,7 +60,7 @@ summary: "﻿# From Explicit CoT to Implicit CoT: Learning to Internalize CoT St
 - 难点 2：优化器（如 AdamW）二阶统计会在突变时失效，需要状态重置策略。
 - 难点 3：若移除调度过于激进，模型无法跟上目标变化，容易崩溃到低精度。
 
-![[assets/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step/image_001.png]]
+![[notes/assets/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step/image_001.png]]
 
 ---
 
@@ -92,7 +92,7 @@ summary: "﻿# From Explicit CoT to Implicit CoT: Learning to Internalize CoT St
 - 为什么这么设计：避免 AdamW 对历史二阶统计的错误累积。
 - 关键实现：与 removal smoothing 配合可显著降低“训练崩溃”概率。
 
-![[assets/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step/image_002.png]]
+![[notes/assets/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step/image_002.png]]
 
 ### 4.3 训练 / 推理细节
 
@@ -125,7 +125,7 @@ summary: "﻿# From Explicit CoT to Implicit CoT: Learning to Internalize CoT St
   - 批大小与梯度累积按模型规模调整
   - 单卡 H100（80GB）训练，最长约 24h
 
-![[assets/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step/image_003.png]]
+![[notes/assets/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step/image_003.png]]
 
 ---
 
@@ -150,9 +150,9 @@ summary: "﻿# From Explicit CoT to Implicit CoT: Learning to Internalize CoT St
 - 最关键数字：9×9 乘法约 0.99；GSM8K 无中间步骤 >0.50。
 - 为什么它最关键：直接验证“内化能力”而非仅格式改变。
 
-![[assets/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step/image_004.png]]
-![[assets/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step/image_005.png]]
-![[assets/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step/image_006.png]]
+![[notes/assets/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step/image_004.png]]
+![[notes/assets/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step/image_005.png]]
+![[notes/assets/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step/image_006.png]]
 
 ---
 
@@ -173,8 +173,8 @@ summary: "﻿# From Explicit CoT to Implicit CoT: Learning to Internalize CoT St
   - 结果如何：训练更快但更易失败。
   - 说明了什么：移除速度存在稳定性上限。
 
-![[assets/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step/image_007.png]]
-![[assets/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step/image_008.png]]
+![[notes/assets/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step/image_007.png]]
+![[notes/assets/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step/image_008.png]]
 
 ---
 
@@ -265,3 +265,4 @@ summary: "﻿# From Explicit CoT to Implicit CoT: Learning to Internalize CoT St
 - 概念锚点：[[concepts/Implicit Chain-of-Thought Internalization]]、[[concepts/Removal Smoothing for CoT Internalization]]、[[concepts/Process-Supervised Step Verification]]
 - 实体锚点：[[entities/Yuntian Deng]]、[[entities/Yejin Choi]]、[[entities/Stuart Shieber]]
 - 综合页面：[[synthesis/Process Supervision and CoT Internalization]]、[[synthesis/Structured Reasoning Methods for LLMs]]、[[synthesis/LLM Reasoning Search and Verification]]
+

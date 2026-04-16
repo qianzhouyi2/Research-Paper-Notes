@@ -60,11 +60,11 @@ summary: "﻿# Hyena Hierarchy: Towards Larger Convolutional Language Models"
 - 难点 2：长卷积要兼顾长记忆、因果性、可训练稳定性。
 - 难点 3：理论复杂度优势必须能在实际 GPU/长序列基准中兑现。
 
-![[assets/Hyena Hierarchy/image_001.png]]
-![[assets/Hyena Hierarchy/image_002.png]]
-![[assets/Hyena Hierarchy/image_003.png]]
-![[assets/Hyena Hierarchy/image_004.png]]
-![[assets/Hyena Hierarchy/image_005.png]]
+![[notes/assets/Hyena Hierarchy/image_001.png]]
+![[notes/assets/Hyena Hierarchy/image_002.png]]
+![[notes/assets/Hyena Hierarchy/image_003.png]]
+![[notes/assets/Hyena Hierarchy/image_004.png]]
+![[notes/assets/Hyena Hierarchy/image_005.png]]
 
 ---
 
@@ -220,21 +220,21 @@ $$
 - 是否开源代码 / 模型：有公开实现与论文源码（见 15.2）。
 - 实验是否公平（初步判断）：报告了质量与效率双维度，且有多任务验证。
 
-![[assets/Hyena Hierarchy/image_006.png]]
-![[assets/Hyena Hierarchy/image_007.png]]
-![[assets/Hyena Hierarchy/image_008.png]]
-![[assets/Hyena Hierarchy/image_009.png]]
-![[assets/Hyena Hierarchy/image_010.png]]
-![[assets/Hyena Hierarchy/image_011.png]]
-![[assets/Hyena Hierarchy/image_012.png]]
-![[assets/Hyena Hierarchy/image_013.png]]
-![[assets/Hyena Hierarchy/image_014.png]]
-![[assets/Hyena Hierarchy/image_015.png]]
-![[assets/Hyena Hierarchy/image_016.png]]
-![[assets/Hyena Hierarchy/image_017.png]]
-![[assets/Hyena Hierarchy/image_018.png]]
-![[assets/Hyena Hierarchy/image_019.png]]
-![[assets/Hyena Hierarchy/image_020.png]]
+![[notes/assets/Hyena Hierarchy/image_006.png]]
+![[notes/assets/Hyena Hierarchy/image_007.png]]
+![[notes/assets/Hyena Hierarchy/image_008.png]]
+![[notes/assets/Hyena Hierarchy/image_009.png]]
+![[notes/assets/Hyena Hierarchy/image_010.png]]
+![[notes/assets/Hyena Hierarchy/image_011.png]]
+![[notes/assets/Hyena Hierarchy/image_012.png]]
+![[notes/assets/Hyena Hierarchy/image_013.png]]
+![[notes/assets/Hyena Hierarchy/image_014.png]]
+![[notes/assets/Hyena Hierarchy/image_015.png]]
+![[notes/assets/Hyena Hierarchy/image_016.png]]
+![[notes/assets/Hyena Hierarchy/image_017.png]]
+![[notes/assets/Hyena Hierarchy/image_018.png]]
+![[notes/assets/Hyena Hierarchy/image_019.png]]
+![[notes/assets/Hyena Hierarchy/image_020.png]]
 
 ---
 
@@ -256,17 +256,17 @@ $$
 - 最关键数字：2K 训练降本、8K/64K 速度提升。
 - 为什么它最关键：直接支撑“质量不掉 + 速度更快”的核心主张。
 
-![[assets/Hyena Hierarchy/image_021.png]]
-![[assets/Hyena Hierarchy/image_022.png]]
-![[assets/Hyena Hierarchy/image_023.png]]
-![[assets/Hyena Hierarchy/image_024.png]]
-![[assets/Hyena Hierarchy/image_025.png]]
-![[assets/Hyena Hierarchy/image_026.png]]
-![[assets/Hyena Hierarchy/image_027.png]]
-![[assets/Hyena Hierarchy/image_028.png]]
-![[assets/Hyena Hierarchy/image_029.png]]
-![[assets/Hyena Hierarchy/image_030.png]]
-![[assets/Hyena Hierarchy/image_031.png]]
+![[notes/assets/Hyena Hierarchy/image_021.png]]
+![[notes/assets/Hyena Hierarchy/image_022.png]]
+![[notes/assets/Hyena Hierarchy/image_023.png]]
+![[notes/assets/Hyena Hierarchy/image_024.png]]
+![[notes/assets/Hyena Hierarchy/image_025.png]]
+![[notes/assets/Hyena Hierarchy/image_026.png]]
+![[notes/assets/Hyena Hierarchy/image_027.png]]
+![[notes/assets/Hyena Hierarchy/image_028.png]]
+![[notes/assets/Hyena Hierarchy/image_029.png]]
+![[notes/assets/Hyena Hierarchy/image_030.png]]
+![[notes/assets/Hyena Hierarchy/image_031.png]]
 
 ---
 
@@ -380,3 +380,4 @@ $$
 - 概念锚点：[[concepts/Hyena Operator]]、[[concepts/Data-Controlled Gating in Sequence Models]]、[[concepts/Implicit Long Convolution Parameterization]]
 - 实体锚点：[[entities/Michael Poli]]、[[entities/Tri Dao]]、[[entities/Yoshua Bengio]]
 - 综合页面：[[synthesis/Temporal Structure Learning in Sequence Models]]、[[synthesis/Long-Context Architecture Without Full Attention]]、[[synthesis/LLM Inference Efficiency and Scaling]]
+

@@ -55,8 +55,8 @@ summary: "﻿# Amortizing intractable inference in large language models"
 - 现实应用价值：能统一处理 infilling、约束生成、工具使用、多步推理等场景。
 - 学术上的意义：把 CoT 等推理机制纳入概率推断框架，连接 LLM 与贝叶斯推理/GFlowNet 社区。
 
-![[assets/Amortizing intractable inference in large language models/image_002.png]]
-![[assets/Amortizing intractable inference in large language models/image_003.png]]
+![[notes/assets/Amortizing intractable inference in large language models/image_002.png]]
+![[notes/assets/Amortizing intractable inference in large language models/image_003.png]]
 
 ### 3.3 难点
 - 难点 1：目标后验往往多峰，直接采样或找模都困难。
@@ -108,16 +108,16 @@ summary: "﻿# Amortizing intractable inference in large language models"
 - 复杂度 / 额外开销：训练复杂度高于常规 SFT，但可换取推理阶段 amortization 收益。
 
 ### 4.4 方法图与公式证据
-![[assets/Amortizing intractable inference in large language models/image_001.png]]
-![[assets/Amortizing intractable inference in large language models/image_004.png]]
-![[assets/Amortizing intractable inference in large language models/image_005.png]]
-![[assets/Amortizing intractable inference in large language models/image_006.png]]
-![[assets/Amortizing intractable inference in large language models/image_007.png]]
-![[assets/Amortizing intractable inference in large language models/image_008.png]]
-![[assets/Amortizing intractable inference in large language models/image_009.png]]
-![[assets/Amortizing intractable inference in large language models/image_010.png]]
-![[assets/Amortizing intractable inference in large language models/image_011.png]]
-![[assets/Amortizing intractable inference in large language models/image_021.png]]
+![[notes/assets/Amortizing intractable inference in large language models/image_001.png]]
+![[notes/assets/Amortizing intractable inference in large language models/image_004.png]]
+![[notes/assets/Amortizing intractable inference in large language models/image_005.png]]
+![[notes/assets/Amortizing intractable inference in large language models/image_006.png]]
+![[notes/assets/Amortizing intractable inference in large language models/image_007.png]]
+![[notes/assets/Amortizing intractable inference in large language models/image_008.png]]
+![[notes/assets/Amortizing intractable inference in large language models/image_009.png]]
+![[notes/assets/Amortizing intractable inference in large language models/image_010.png]]
+![[notes/assets/Amortizing intractable inference in large language models/image_011.png]]
+![[notes/assets/Amortizing intractable inference in large language models/image_021.png]]
 
 ---
 
@@ -163,15 +163,15 @@ summary: "﻿# Amortizing intractable inference in large language models"
 - 为什么它最关键：覆盖“推理质量、多样性、泛化、鲁棒性”四个维度。
 
 ### 7.4 结果图表原始证据
-![[assets/Amortizing intractable inference in large language models/image_012.png]]
-![[assets/Amortizing intractable inference in large language models/image_013.png]]
-![[assets/Amortizing intractable inference in large language models/image_014.png]]
-![[assets/Amortizing intractable inference in large language models/image_015.png]]
-![[assets/Amortizing intractable inference in large language models/image_016.png]]
-![[assets/Amortizing intractable inference in large language models/image_017.png]]
-![[assets/Amortizing intractable inference in large language models/image_018.png]]
-![[assets/Amortizing intractable inference in large language models/image_019.png]]
-![[assets/Amortizing intractable inference in large language models/image_020.png]]
+![[notes/assets/Amortizing intractable inference in large language models/image_012.png]]
+![[notes/assets/Amortizing intractable inference in large language models/image_013.png]]
+![[notes/assets/Amortizing intractable inference in large language models/image_014.png]]
+![[notes/assets/Amortizing intractable inference in large language models/image_015.png]]
+![[notes/assets/Amortizing intractable inference in large language models/image_016.png]]
+![[notes/assets/Amortizing intractable inference in large language models/image_017.png]]
+![[notes/assets/Amortizing intractable inference in large language models/image_018.png]]
+![[notes/assets/Amortizing intractable inference in large language models/image_019.png]]
+![[notes/assets/Amortizing intractable inference in large language models/image_020.png]]
 
 ---
 
@@ -289,3 +289,4 @@ summary: "﻿# Amortizing intractable inference in large language models"
 - 概念锚点：[[concepts/Amortized Bayesian Inference for LLMs]]、[[concepts/GFlowNet Posterior Sampling for Text Generation]]、[[concepts/Adaptive Compute Routing]]、[[concepts/Task Complexity-Aware Inference Budgeting]]
 - 实体锚点：[[entities/Edward Hu]]、[[entities/Moksh Jain]]、[[entities/Yoshua Bengio]]
 - 综合页面：[[synthesis/Probabilistic Inference-Time Control for LLMs]]、[[synthesis/LLM Inference Efficiency and Scaling]]、[[synthesis/Parameter-Efficient LLM Adaptation and Inference]]
+

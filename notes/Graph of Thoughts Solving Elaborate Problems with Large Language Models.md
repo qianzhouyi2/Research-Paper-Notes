@@ -71,8 +71,8 @@ summary: "﻿# Graph of Thoughts: Solving Elaborate Problems with Large Language
 - ToT：树结构搜索，支持回溯，但难表达跨分支聚合。
 - GoT：允许任意图结构，边表示 thought 依赖，可实现跨链融合与反馈。
 
-![[assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_001.jpg]]
-![[assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_002.png]]
+![[notes/assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_001.jpg]]
+![[notes/assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_002.png]]
 
 ---
 
@@ -118,18 +118,18 @@ summary: "﻿# Graph of Thoughts: Solving Elaborate Problems with Large Language
 
 ### 4.4 系统架构与图变换证据
 
-![[assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_003.png]]
-![[assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_004.png]]
-![[assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_005.png]]
-![[assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_006.png]]
-![[assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_007.png]]
-![[assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_008.png]]
-![[assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_009.png]]
-![[assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_010.png]]
-![[assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_011.png]]
-![[assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_012.png]]
-![[assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_013.png]]
-![[assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_014.png]]
+![[notes/assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_003.png]]
+![[notes/assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_004.png]]
+![[notes/assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_005.png]]
+![[notes/assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_006.png]]
+![[notes/assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_007.png]]
+![[notes/assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_008.png]]
+![[notes/assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_009.png]]
+![[notes/assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_010.png]]
+![[notes/assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_011.png]]
+![[notes/assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_012.png]]
+![[notes/assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_013.png]]
+![[notes/assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_014.png]]
 
 ---
 
@@ -159,9 +159,9 @@ summary: "﻿# Graph of Thoughts: Solving Elaborate Problems with Large Language
 
 ### 6.1 任务示例与评分定义证据
 
-![[assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_015.png]]
-![[assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_016.png]]
-![[assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_017.png]]
+![[notes/assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_015.png]]
+![[notes/assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_016.png]]
+![[notes/assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_017.png]]
 
 ---
 
@@ -188,9 +188,9 @@ summary: "﻿# Graph of Thoughts: Solving Elaborate Problems with Large Language
 
 ### 7.4 结果图（完整）
 
-![[assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_018.png]]
-![[assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_019.png]]
-![[assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_020.png]]
+![[notes/assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_018.png]]
+![[notes/assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_019.png]]
+![[notes/assets/Graph of Thoughts Solving Elaborate Problems with Large Language Models/image_020.png]]
 
 ---
 
@@ -289,3 +289,4 @@ summary: "﻿# Graph of Thoughts: Solving Elaborate Problems with Large Language
 - 概念锚点：[[concepts/Graph of Thoughts Reasoning]]、[[concepts/Thought Structure Taxonomy]]、[[concepts/Tree of Thoughts Reasoning]]
 - 实体锚点：[[entities/Maciej Besta]]、[[entities/Nils Blach]]、[[entities/Yao Yao]]
 - 综合页面：[[synthesis/Search-Based Deliberate Reasoning Landscape]]、[[synthesis/Structured Reasoning Methods for LLMs]]、[[synthesis/LLM Reasoning Search and Verification]]
+

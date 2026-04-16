@@ -80,8 +80,8 @@ summary: "﻿# MeanSparse: Post-Training Robustness Enhancement Through Mean-Cen
   3. 对激活前特征逐元素执行均值中心化稀疏化。
   4. 搜索最优 $\alpha$（平衡 clean 与 robust），不更新原模型权重。
 
-![[assets/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature/image_002.png]]
-![[assets/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature/image_001.png]]
+![[notes/assets/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature/image_002.png]]
+![[notes/assets/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature/image_001.png]]
 
 ### 4.2 核心设计
 > 每个设计都尽量回答：做了什么、为什么这么设计、解决了哪个难点
@@ -216,8 +216,8 @@ $$
 - 最关键数字：CIFAR-10 AutoAttack 75.28%（论文）；本地 WRN-94-16 在 threshold=0.2 时 Robust Accuracy 78.28125。
 - 为什么它最关键：同时覆盖“公开榜单提升”与“本地可复现实验趋势”。
 
-![[assets/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature/image_003.png]]
-![[assets/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature/image_004.png]]
+![[notes/assets/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature/image_003.png]]
+![[notes/assets/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature/image_004.png]]
 
 ### 7.4 原始实验记录（完整归位）
 
@@ -417,3 +417,4 @@ $$
 - 概念锚点：[[concepts/Proximal L0 Feature Sparsification]]、[[concepts/Mean-Centered Feature Sparsification]]、[[concepts/Feature Effective Rank Diagnostics]]
 - 实体锚点：[[entities/Sajjad Amini]]、[[entities/Shiqing Ma]]、[[entities/Amir Houmansadr]]
 - 综合页面：[[synthesis/Representation Capacity and Effective Rank]]、[[synthesis/Robust Representation and Adversarial Dynamics]]、[[synthesis/Adversarial Robustness Evaluation Patterns]]
+

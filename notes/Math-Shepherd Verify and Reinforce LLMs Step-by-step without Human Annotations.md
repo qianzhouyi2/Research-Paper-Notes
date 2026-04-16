@@ -73,7 +73,7 @@ summary: "﻿# Math-Shepherd: Verify and Reinforce LLMs Step-by-step without Hum
   3. 以 HE/SE 规则生成步骤标签并训练 PRM。
   4. 用 PRM 做候选重排（verification）或提供 step-level 奖励（RL）。
 
-![[assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_001.png]]
+![[notes/assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_001.png]]
 
 ### 4.2 核心设计
 > 每个设计都尽量回答：做了什么、为什么这么设计、解决了哪个难点
@@ -104,7 +104,7 @@ summary: "﻿# Math-Shepherd: Verify and Reinforce LLMs Step-by-step without Hum
   - 重排聚合：\(a_{sc+rm}=\arg\max_a\sum_{i=1}^{N}\mathbf{I}(a_i=a)\cdot RM(p,S_i)\)。
 - 证据位置：Method 3.2, 3.4。
 
-![[assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_002.png]]
+![[notes/assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_002.png]]
 
 ### 4.3 训练 / 推理细节
 - 训练阶段做了什么：
@@ -155,16 +155,16 @@ summary: "﻿# Math-Shepherd: Verify and Reinforce LLMs Step-by-step without Hum
 - 结果 2：逐步 PPO 明显优于 RFT 与 PPO+ORM，显示步骤级奖励更有效。
 - 结果 3：RL 与验证可叠加，组合后进一步提升终准确率。
 
-![[assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_003.png]]
-![[assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_004.png]]
-![[assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_005.png]]
+![[notes/assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_003.png]]
+![[notes/assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_004.png]]
+![[notes/assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_005.png]]
 
 ### 7.2 从结果中能读出的结论
 - 结论 1：PRM 在更难的 MATH 上相对 ORM 的优势更明显，细粒度监督对高难推理更关键。
 - 结论 2：当奖励模型足够强时，盲目与 SC 叠加不一定继续增益（部分设置会下降）。
 - 结论 3：跨分布测试中 PRM 仍显著优于 ORM（匈牙利考试分数高约 9 分）。
 
-![[assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_011.png]]
+![[notes/assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_011.png]]
 
 ### 7.3 最关键的证据
 - 最关键表格：验证主结果表（PRM/ORM/SC across models）。
@@ -184,23 +184,23 @@ summary: "﻿# Math-Shepherd: Verify and Reinforce LLMs Step-by-step without Hum
   - 结果如何：PRM 相比 ORM/多数投票的优势随 \(N\) 增大更明显。
   - 说明了什么：PRM 对大候选池的排序能力更强。
 
-![[assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_006.png]]
+![[notes/assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_006.png]]
 
 - 消融点 2：
   - 改了什么：自动过程标注策略（HE vs SE）与其它标注器（NLI / 规则）。
   - 结果如何：N=4 时 HE 标注准确度约 86%；HE/SE 训练验证器性能接近；均优于 NLI/规则标注。
   - 说明了什么：自动标注质量已足够驱动有效 PRM 训练。
 
-![[assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_007.png]]
-![[assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_008.png]]
+![[notes/assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_007.png]]
+![[notes/assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_008.png]]
 
 - 消融点 3：
   - 改了什么：奖励模型底座规模与训练数据量。
   - 结果如何：大模型 PRM 更稳健；10k 数据规模下 PRM 约领先 ORM 4%，且上限更高。
   - 说明了什么：PRM 既受模型容量影响，也受数据规模影响，且扩展趋势优于 ORM。
 
-![[assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_009.png]]
-![[assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_010.png]]
+![[notes/assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_009.png]]
+![[notes/assets/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations/image_010.png]]
 
 ---
 
@@ -295,3 +295,4 @@ summary: "﻿# Math-Shepherd: Verify and Reinforce LLMs Step-by-step without Hum
 - 概念锚点：[[concepts/Process-Supervised Step Verification]]、[[concepts/Implicit Chain-of-Thought Internalization]]、[[concepts/Tree of Thoughts Reasoning]]
 - 实体锚点：[[entities/Peiyi Wang]]、[[entities/Lei Li]]、[[entities/GPT-4]]
 - 综合页面：[[synthesis/Process Supervision and CoT Internalization]]、[[synthesis/Structured Reasoning Methods for LLMs]]、[[synthesis/LLM Reasoning Search and Verification]]
+
