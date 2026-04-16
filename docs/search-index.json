@@ -1,0 +1,2515 @@
+[
+  {
+    "title": "**GPT-ST: Generative Pre-Training of Spatio-Temporal** **Graph Neural Networks**",
+    "url": "papers_sources/Research-Paper-Notes/GPT-ST预训练时空框架.html",
+    "path": "papers_sources/Research-Paper-Notes/GPT-ST预训练时空框架.md",
+    "section": "papers_sources",
+    "summary": "GPT ST: Generative Pre Training of Spatio Temporal Graph Neural Networks GPT ST：时空图神经网络的生成预训练 摘要 时空预测技术（spatio temporal prediction）快速发展 时空预测（Spatio Temporal Prediction）是指对空间和时间上的变…"
+  },
+  {
+    "title": "2026-04-06",
+    "url": "journal/2026-04-06.html",
+    "path": "journal/2026-04-06.md",
+    "section": "journal",
+    "summary": "用于承接指向 2026-04-06 的时间锚点页面。"
+  },
+  {
+    "title": "2026-04-08",
+    "url": "journal/2026-04-08.html",
+    "path": "journal/2026-04-08.md",
+    "section": "journal",
+    "summary": "用于承接指向 2026-04-08 的时间锚点页面。"
+  },
+  {
+    "title": "Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report",
+    "url": "notes/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report.html",
+    "path": "notes/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report.md",
+    "section": "notes",
+    "summary": "﻿# Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B: A Technical Report"
+  },
+  {
+    "title": "Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report",
+    "url": "references/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report.html",
+    "path": "references/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report.md",
+    "section": "references",
+    "summary": "MCTSr 通过把搜索、自我改进与自我评估闭环化，在不扩参数前提下显著提升小模型高难数学推理能力。"
+  },
+  {
+    "title": "Adaptive Compute Routing",
+    "url": "concepts/Adaptive Compute Routing.html",
+    "path": "concepts/Adaptive Compute Routing.md",
+    "section": "concepts",
+    "summary": "自适应算力路由根据任务复杂度或中间信号动态分配推理资源，以在质量和成本间取得更优折中。"
+  },
+  {
+    "title": "ADE20K Dataset",
+    "url": "entities/ADE20K Dataset.html",
+    "path": "entities/ADE20K Dataset.md",
+    "section": "entities",
+    "summary": "ADE20K 常用于语义分割鲁棒评测，在 decision-based 黑盒设置下可用于验证跨数据分布攻击效果。"
+  },
+  {
+    "title": "Adversarial Alignment Evaluation",
+    "url": "concepts/Adversarial Alignment Evaluation.html",
+    "path": "concepts/Adversarial Alignment Evaluation.md",
+    "section": "concepts",
+    "summary": "对抗性对齐评估强调先校准攻击器能力，再判断对齐防御强度，避免将“攻击失败”误判为“模型安全”。"
+  },
+  {
+    "title": "Adversarial Attacks against LiDAR Semantic Segmentation in Autonomous Driving",
+    "url": "references/Adversarial Attacks against LiDAR Semantic Segmentation in Autonomous Driving.html",
+    "path": "references/Adversarial Attacks against LiDAR Semantic Segmentation in Autonomous Driving.md",
+    "section": "references",
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
+  },
+  {
+    "title": "Adversarial Robustness Evaluation Patterns",
+    "url": "synthesis/Adversarial Robustness Evaluation Patterns.html",
+    "path": "synthesis/Adversarial Robustness Evaluation Patterns.md",
+    "section": "synthesis",
+    "summary": "综合三篇论文可得到鲁棒评估的三条主线：先校准攻击器能力、再做任务特定黑盒评测、最后用后处理策略做低成本鲁棒增益验证。"
+  },
+  {
+    "title": "Adversarial Vulnerability Profiling for Segmentation Models",
+    "url": "concepts/Adversarial Vulnerability Profiling for Segmentation Models.html",
+    "path": "concepts/Adversarial Vulnerability Profiling for Segmentation Models.md",
+    "section": "concepts",
+    "summary": "Adversarial Vulnerability Profiling for Segmentation Models：语义分割鲁棒性语料中的概念卡。"
+  },
+  {
+    "title": "Aghyad Deeb",
+    "url": "entities/Aghyad Deeb.html",
+    "path": "entities/Aghyad Deeb.md",
+    "section": "entities",
+    "summary": "Aghyad Deeb 在该 wiki 主要关联复杂度预测驱动的模型路由研究。"
+  },
+  {
+    "title": "Alessandro Biondi",
+    "url": "entities/Alessandro Biondi.html",
+    "path": "entities/Alessandro Biondi.md",
+    "section": "entities",
+    "summary": "Alessandro Biondi：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Alignment Robustness Evaluation Ladder",
+    "url": "synthesis/Alignment Robustness Evaluation Ladder.html",
+    "path": "synthesis/Alignment Robustness Evaluation Ladder.md",
+    "section": "synthesis",
+    "summary": "对齐鲁棒评估可按“攻击器校准->任务化攻击->防御增益验证”三级阶梯执行，减少安全结论的乐观偏差。"
+  },
+  {
+    "title": "Amir Houmansadr",
+    "url": "entities/Amir Houmansadr.html",
+    "path": "entities/Amir Houmansadr.md",
+    "section": "entities",
+    "summary": "Amir Houmansadr 参与 MeanSparse 研究，相关工作关注低成本提升深度模型对抗鲁棒性。"
+  },
+  {
+    "title": "Amortized Bayesian Inference for LLMs",
+    "url": "concepts/Amortized Bayesian Inference for LLMs.html",
+    "path": "concepts/Amortized Bayesian Inference for LLMs.md",
+    "section": "concepts",
+    "summary": "将难解后验推理转化为可复用的近似策略学习，降低 LLM 推理时的采样与约束搜索成本。"
+  },
+  {
+    "title": "Amortizing intractable inference in large language models",
+    "url": "notes/Amortizing intractable inference in large language models.html",
+    "path": "notes/Amortizing intractable inference in large language models.md",
+    "section": "notes",
+    "summary": "﻿# Amortizing intractable inference in large language models"
+  },
+  {
+    "title": "Amortizing intractable inference in large language models",
+    "url": "references/Amortizing intractable inference in large language models.html",
+    "path": "references/Amortizing intractable inference in large language models.md",
+    "section": "references",
+    "summary": "该工作把复杂推理统一为可摊销后验采样问题，并通过 GFlowNet 微调改善质量、多样性与效率平衡。"
+  },
+  {
+    "title": "Andreas Bar",
+    "url": "entities/Andreas Bar.html",
+    "path": "entities/Andreas Bar.md",
+    "section": "entities",
+    "summary": "Andreas Bar：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Antonio Torralba",
+    "url": "entities/Antonio Torralba.html",
+    "path": "entities/Antonio Torralba.md",
+    "section": "entities",
+    "summary": "Antonio Torralba 在该 wiki 主要关联可组合视觉生成与结构化泛化研究。"
+  },
+  {
+    "title": "Anurag Arnab",
+    "url": "entities/Anurag Arnab.html",
+    "path": "entities/Anurag Arnab.md",
+    "section": "entities",
+    "summary": "Anurag Arnab：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Are aligned neural networks adversarially aligned",
+    "url": "notes/Are aligned neural networks adversarially aligned.html",
+    "path": "notes/Are aligned neural networks adversarially aligned.md",
+    "section": "notes",
+    "summary": "- 阅读日期：2026-04-08"
+  },
+  {
+    "title": "Are aligned neural networks adversarially aligned?",
+    "url": "references/Are aligned neural networks adversarially aligned.html",
+    "path": "references/Are aligned neural networks adversarially aligned.md",
+    "section": "references",
+    "summary": "该论文提出“对抗性对齐”评估框架，指出文本攻击器能力不足会导致安全误判，并展示多模态模型可被对抗图像稳定诱导输出有害内容。"
+  },
+  {
+    "title": "Attack Generator Framework for Segmentation Threat Modeling",
+    "url": "concepts/Attack Generator Framework for Segmentation Threat Modeling.html",
+    "path": "concepts/Attack Generator Framework for Segmentation Threat Modeling.md",
+    "section": "concepts",
+    "summary": "Attack Generator Framework for Segmentation Threat Modeling：语义分割鲁棒性语料中的概念卡。"
+  },
+  {
+    "title": "Attacking LiDAR Semantic Segmentation in Autonomous Driving",
+    "url": "references/Attacking LiDAR Semantic Segmentation in Autonomous Driving.html",
+    "path": "references/Attacking LiDAR Semantic Segmentation in Autonomous Driving.md",
+    "section": "references",
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
+  },
+  {
+    "title": "Attention Refinement against Patch Attacks",
+    "url": "concepts/Attention Refinement against Patch Attacks.html",
+    "path": "concepts/Attention Refinement against Patch Attacks.md",
+    "section": "concepts",
+    "summary": "Attention Refinement against Patch Attacks：语义分割鲁棒性语料中的概念卡。"
+  },
+  {
+    "title": "Augmented Shortcut for Attention Blocks",
+    "url": "concepts/Augmented Shortcut for Attention Blocks.html",
+    "path": "concepts/Augmented Shortcut for Attention Blocks.md",
+    "section": "concepts",
+    "summary": "增强捷径在注意力块并行保留多样化特征路径，可缓解深层特征坍塌与秩收缩问题。"
+  },
+  {
+    "title": "Benchmarking the Robustness of Semantic Segmentation Models (CVPR 2020)",
+    "url": "references/Benchmarking the Robustness of Semantic Segmentation Models (CVPR 2020).html",
+    "path": "references/Benchmarking the Robustness of Semantic Segmentation Models (CVPR 2020).md",
+    "section": "references",
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
+  },
+  {
+    "title": "Benchmarking the Robustness of Semantic Segmentation Models (IJCV 2020)",
+    "url": "references/Benchmarking the Robustness of Semantic Segmentation Models (IJCV 2020).html",
+    "path": "references/Benchmarking the Robustness of Semantic Segmentation Models (IJCV 2020).md",
+    "section": "references",
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
+  },
+  {
+    "title": "Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models",
+    "url": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.html",
+    "path": "notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+    "section": "notes",
+    "summary": "﻿# Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models"
+  },
+  {
+    "title": "Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models",
+    "url": "references/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.html",
+    "path": "references/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md",
+    "section": "references",
+    "summary": "GoT 通过把思维链升级为思维图，在文本与多模态推理任务中带来稳定性能提升。"
+  },
+  {
+    "title": "Bo Xu",
+    "url": "entities/Bo Xu.html",
+    "path": "entities/Bo Xu.md",
+    "section": "entities",
+    "summary": "Bo Xu 在该 wiki 中主要关联 CIF 对齐机制与端到端语音识别研究。"
+  },
+  {
+    "title": "Burkhard Gussefeld",
+    "url": "entities/Burkhard Gussefeld.html",
+    "path": "entities/Burkhard Gussefeld.md",
+    "section": "entities",
+    "summary": "Burkhard Gussefeld：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Carsten Rother",
+    "url": "entities/Carsten Rother.html",
+    "path": "entities/Carsten Rother.md",
+    "section": "entities",
+    "summary": "Carsten Rother：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Cascaded Activation Nonlinearity Compensation",
+    "url": "concepts/Cascaded Activation Nonlinearity Compensation.html",
+    "path": "concepts/Cascaded Activation Nonlinearity Compensation.md",
+    "section": "concepts",
+    "summary": "级联激活补偿通过串联激活与可学习仿射变换增强 FFN 非线性表达，在有限开销下提升性能。"
+  },
+  {
+    "title": "Certified and Verified Robust Segmentation",
+    "url": "synthesis/Certified and Verified Robust Segmentation.html",
+    "path": "synthesis/Certified and Verified Robust Segmentation.md",
+    "section": "synthesis",
+    "summary": "Certified and Verified Robust Segmentation：语义分割鲁棒性语料中的主题综合页。"
+  },
+  {
+    "title": "Certified Defences Against Adversarial Patch Attacks on Semantic Segmentation",
+    "url": "references/Certified Defences Against Adversarial Patch Attacks on Semantic Segmentation.html",
+    "path": "references/Certified Defences Against Adversarial Patch Attacks on Semantic Segmentation.md",
+    "section": "references",
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
+  },
+  {
+    "title": "Chain of Agents Large Language Models Collaborating on Long-Context Tasks",
+    "url": "notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.html",
+    "path": "notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
+    "section": "notes",
+    "summary": "﻿# Chain of Agents: Large Language Models Collaborating on Long-Context Tasks"
+  },
+  {
+    "title": "Chain of Agents Large Language Models Collaborating on Long-Context Tasks",
+    "url": "references/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.html",
+    "path": "references/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md",
+    "section": "references",
+    "summary": "CoA 通过链式 worker 通信与 manager 汇总提升长上下文任务表现，并缓解检索失败与中间遗忘。"
+  },
+  {
+    "title": "Chao Huang",
+    "url": "entities/Chao Huang.html",
+    "path": "entities/Chao Huang.md",
+    "section": "entities",
+    "summary": "Chao Huang 在该 wiki 中主要关联 GPT-ST 的时空预训练与结构化表示学习工作。"
+  },
+  {
+    "title": "Chenglin Miao",
+    "url": "entities/Chenglin Miao.html",
+    "path": "entities/Chenglin Miao.md",
+    "section": "entities",
+    "summary": "Chenglin Miao：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Christoph Kamann",
+    "url": "entities/Christoph Kamann.html",
+    "path": "entities/Christoph Kamann.md",
+    "section": "entities",
+    "summary": "Christoph Kamann：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Chuhua Wang",
+    "url": "entities/Chuhua Wang.html",
+    "path": "entities/Chuhua Wang.md",
+    "section": "entities",
+    "summary": "Chuhua Wang：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Chunming Qiao",
+    "url": "entities/Chunming Qiao.html",
+    "path": "entities/Chunming Qiao.md",
+    "section": "entities",
+    "summary": "Chunming Qiao：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "CIF Continuous Integrate-and-Fire",
+    "url": "notes/CIF Continuous Integrate-and-Fire.html",
+    "path": "notes/CIF Continuous Integrate-and-Fire.md",
+    "section": "notes",
+    "summary": "- 阅读日期：2026-04-08"
+  },
+  {
+    "title": "CIF Continuous Integrate-and-Fire",
+    "url": "references/CIF Continuous Integrate-and-Fire.html",
+    "path": "references/CIF Continuous Integrate-and-Fire.md",
+    "section": "references",
+    "summary": "CIF 通过连续积分放电机制统一单调软对齐、边界定位与端到端训练，是语音序列建模的重要对齐方法。"
+  },
+  {
+    "title": "CIF:用于端到端语音识别的连续积分放电机制",
+    "url": "papers_sources/Research-Paper-Notes/CIF.html",
+    "path": "papers_sources/Research-Paper-Notes/CIF.md",
+    "section": "papers_sources",
+    "summary": "CIF:用于端到端语音识别的连续积分放电机制 摘要： 用于序列转化的软单调对齐机制，灵感来自脉冲神经网络（spiking neural networks ）的积分 放电模型。 采用于由连续函数组成的编码器 解码器架构 应用于ASR，计算简洁，支持在线识别和声学边界定位 提供了几种策略用于缓解CIF模型的独特问题 WER：2.86%（Librispeech）…"
+  },
+  {
+    "title": "Cityscapes Dataset",
+    "url": "entities/Cityscapes Dataset.html",
+    "path": "entities/Cityscapes Dataset.md",
+    "section": "entities",
+    "summary": "Cityscapes 是语义分割黑盒攻击评测的重要基准，DLA 在该数据集上表现出高查询效率攻击能力。"
+  },
+  {
+    "title": "Cluster-Aware Masked Pretraining",
+    "url": "concepts/Cluster-Aware Masked Pretraining.html",
+    "path": "concepts/Cluster-Aware Masked Pretraining.md",
+    "section": "concepts",
+    "summary": "聚类感知掩码把预训练目标与簇内簇间结构绑定，较纯随机掩码更能学习可迁移时空关系。"
+  },
+  {
+    "title": "ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity",
+    "url": "notes/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity.html",
+    "path": "notes/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity.md",
+    "section": "notes",
+    "summary": "﻿# ComplexityNet: Increasing LLM Inference Efficiency by Learning Task Complexity"
+  },
+  {
+    "title": "ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity",
+    "url": "references/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity.html",
+    "path": "references/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity.md",
+    "section": "references",
+    "summary": "ComplexityNet 通过复杂度预测与模型分配实现动态推理调度，在保持精度的同时显著降低推理成本。"
+  },
+  {
+    "title": "Composable Diffusion Generation",
+    "url": "concepts/Composable Diffusion Generation.html",
+    "path": "concepts/Composable Diffusion Generation.md",
+    "section": "concepts",
+    "summary": "可组合扩散生成通过在扩散过程中组合多个条件或子目标，提升复杂语义约束下的可控图像生成能力。"
+  },
+  {
+    "title": "Compositional Visual Generation with Composable Diffusion Models",
+    "url": "notes/Compositional Visual Generation with Composable Diffusion Models.html",
+    "path": "notes/Compositional Visual Generation with Composable Diffusion Models.md",
+    "section": "notes",
+    "summary": "﻿# Compositional Visual Generation with Composable Diffusion Models"
+  },
+  {
+    "title": "Compositional Visual Generation with Composable Diffusion Models",
+    "url": "references/Compositional Visual Generation with Composable Diffusion Models.html",
+    "path": "references/Compositional Visual Generation with Composable Diffusion Models.md",
+    "section": "references",
+    "summary": "该工作以可组合扩散模型提升复杂语义约束下的图像生成可控性，是结构化生成的重要路线。"
+  },
+  {
+    "title": "Concepts 索引",
+    "url": "concepts/index.html",
+    "path": "concepts/index.md",
+    "section": "concepts",
+    "summary": "可复用概念页面索引，覆盖方法、术语、机制与评测框架。"
+  },
+  {
+    "title": "Context-aware Indirect Local Attack",
+    "url": "concepts/Context-aware Indirect Local Attack.html",
+    "path": "concepts/Context-aware Indirect Local Attack.md",
+    "section": "concepts",
+    "summary": "Context-aware Indirect Local Attack：语义分割鲁棒性语料中的概念卡。"
+  },
+  {
+    "title": "Continual Backpropagation",
+    "url": "concepts/Continual Backpropagation.html",
+    "path": "concepts/Continual Backpropagation.md",
+    "section": "concepts",
+    "summary": "Continual Backpropagation 在常规反向传播基础上持续替换低效隐藏单元，以低额外开销维持模型长期可塑性。"
+  },
+  {
+    "title": "Continual Learning Plasticity Maintenance Playbook",
+    "url": "synthesis/Continual Learning Plasticity Maintenance Playbook.html",
+    "path": "synthesis/Continual Learning Plasticity Maintenance Playbook.md",
+    "section": "synthesis",
+    "summary": "持续学习应并行监测“可塑性指标+任务表现”，并用效用驱动重初始化等机制持续注入学习能力。"
+  },
+  {
+    "title": "Continuous Integrate-and-Fire Alignment",
+    "url": "concepts/Continuous Integrate-and-Fire Alignment.html",
+    "path": "concepts/Continuous Integrate-and-Fire Alignment.md",
+    "section": "concepts",
+    "summary": "Continuous Integrate-and-Fire 以连续积分放电机制实现单调软对齐与边界触发，是端到端语音序列对齐的重要方法。"
+  },
+  {
+    "title": "Data-Controlled Gating in Sequence Models",
+    "url": "concepts/Data-Controlled Gating in Sequence Models.html",
+    "path": "concepts/Data-Controlled Gating in Sequence Models.md",
+    "section": "concepts",
+    "summary": "数据控制门控通过输入依赖的逐步调制提升长卷积算子表达力，是 Hyena 的核心增益来源之一。"
+  },
+  {
+    "title": "David J. Crandall",
+    "url": "entities/David J. Crandall.html",
+    "path": "entities/David J. Crandall.md",
+    "section": "entities",
+    "summary": "David J. Crandall：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Decision-based Black-box Attack for Segmentation",
+    "url": "concepts/Decision-based Black-box Attack for Segmentation.html",
+    "path": "concepts/Decision-based Black-box Attack for Segmentation.md",
+    "section": "concepts",
+    "summary": "语义分割中的 decision-based 攻击仅依赖标签输出，核心挑战来自像素级多约束优化和有限查询预算。"
+  },
+  {
+    "title": "Decision-based Segmentation Attack Landscape",
+    "url": "synthesis/Decision-based Segmentation Attack Landscape.html",
+    "path": "synthesis/Decision-based Segmentation Attack Landscape.md",
+    "section": "synthesis",
+    "summary": "DLA 展示了语义分割 decision-based 攻击可在极低查询下强力破坏 mIoU，提示鲁棒性评估应转向查询效率视角。"
+  },
+  {
+    "title": "Deep Neural Network (DNN)",
+    "url": "concepts/Deep Neural Network (DNN).html",
+    "path": "concepts/Deep Neural Network (DNN).md",
+    "section": "concepts",
+    "summary": "DNN 通过多层可学习表示进行端到端建模，是现代语义分割与对抗鲁棒性研究的基础模型范式。"
+  },
+  {
+    "title": "DeepLabv3",
+    "url": "entities/DeepLabv3.html",
+    "path": "entities/DeepLabv3.md",
+    "section": "entities",
+    "summary": "DeepLabv3 以 atrous convolution 与 ASPP 建模多尺度上下文，在 DLA 评测中同样表现出显著脆弱性。"
+  },
+  {
+    "title": "Delving into Decision-based Black-box Attacks on Semantic Segmentation",
+    "url": "notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.html",
+    "path": "notes/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+    "section": "notes",
+    "summary": "DLA 论文阅读笔记，覆盖问题定义、方法细节、实验结果与可复用实现思路。"
+  },
+  {
+    "title": "Delving into Decision-based Black-box Attacks on Semantic Segmentation",
+    "url": "references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.html",
+    "path": "references/Delving into Decision-based Black-box Attacks on Semantic Segmentation.md",
+    "section": "references",
+    "summary": "首篇系统研究语义分割 decision-based 黑盒攻击的论文，提出 DLA 并在有限查询下显著降低多个模型 mIoU。"
+  },
+  {
+    "title": "Demystifying Chains, Trees, and Graphs of Thoughts",
+    "url": "notes/Demystifying Chains, Trees, and Graphs of Thoughts.html",
+    "path": "notes/Demystifying Chains, Trees, and Graphs of Thoughts.md",
+    "section": "notes",
+    "summary": "- 阅读日期：2026-04-08"
+  },
+  {
+    "title": "Demystifying Chains, Trees, and Graphs of Thoughts",
+    "url": "references/Demystifying Chains, Trees, and Graphs of Thoughts.html",
+    "path": "references/Demystifying Chains, Trees, and Graphs of Thoughts.md",
+    "section": "references",
+    "summary": "本文建立了链、树、图推理范式的统一术语与分类框架，为后续方法对比提供基准坐标。"
+  },
+  {
+    "title": "Depth-Assisted Robustness via Self-Supervised Multi-Tasking",
+    "url": "concepts/Depth-Assisted Robustness via Self-Supervised Multi-Tasking.html",
+    "path": "concepts/Depth-Assisted Robustness via Self-Supervised Multi-Tasking.md",
+    "section": "concepts",
+    "summary": "Depth-Assisted Robustness via Self-Supervised Multi-Tasking：语义分割鲁棒性语料中的概念卡。"
+  },
+  {
+    "title": "DetecBench Generalization Benchmarking",
+    "url": "concepts/DetecBench Generalization Benchmarking.html",
+    "path": "concepts/DetecBench Generalization Benchmarking.md",
+    "section": "concepts",
+    "summary": "DetecBench Generalization Benchmarking：语义分割鲁棒性语料中的概念卡。"
+  },
+  {
+    "title": "Di Zhang",
+    "url": "entities/Di Zhang.html",
+    "path": "entities/Di Zhang.md",
+    "section": "entities",
+    "summary": "Di Zhang 在该 wiki 主要关联基于 MCTS 的数学推理增强路线。"
+  },
+  {
+    "title": "Dian Yu",
+    "url": "entities/Dian Yu.html",
+    "path": "entities/Dian Yu.md",
+    "section": "entities",
+    "summary": "Dian Yu 在该 wiki 主要关联 Tree-of-Thoughts 结构化搜索推理路线。"
+  },
+  {
+    "title": "Diego Manzanas Lopez",
+    "url": "entities/Diego Manzanas Lopez.html",
+    "path": "entities/Diego Manzanas Lopez.md",
+    "section": "entities",
+    "summary": "Diego Manzanas Lopez：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Discrete Linear Noise",
+    "url": "concepts/Discrete Linear Noise.html",
+    "path": "concepts/Discrete Linear Noise.md",
+    "section": "concepts",
+    "summary": "通过离散化并结构化为线性噪声（横向/纵向），DLA 压缩搜索空间并提升有限查询下的攻击效率。"
+  },
+  {
+    "title": "Divide-and-Conquer Adversarial Training for Segmentation",
+    "url": "concepts/Divide-and-Conquer Adversarial Training for Segmentation.html",
+    "path": "concepts/Divide-and-Conquer Adversarial Training for Segmentation.md",
+    "section": "concepts",
+    "summary": "Divide-and-Conquer Adversarial Training for Segmentation：语义分割鲁棒性语料中的概念卡。"
+  },
+  {
+    "title": "Dynamic Divide-and-Conquer Adversarial Training for Robust Semantic Segmentation",
+    "url": "references/Dynamic Divide-and-Conquer Adversarial Training for Robust Semantic Segmentation.html",
+    "path": "references/Dynamic Divide-and-Conquer Adversarial Training for Robust Semantic Segmentation.md",
+    "section": "references",
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
+  },
+  {
+    "title": "Edward Hu",
+    "url": "entities/Edward Hu.html",
+    "path": "entities/Edward Hu.md",
+    "section": "entities",
+    "summary": "Edward Hu 在该 wiki 中主要关联参数高效微调与推理效率优化，两篇相关工作分别来自 LoRA 与摊销推理方向。"
+  },
+  {
+    "title": "Efficient Adaptation and Plasticity Retention",
+    "url": "synthesis/Efficient Adaptation and Plasticity Retention.html",
+    "path": "synthesis/Efficient Adaptation and Plasticity Retention.md",
+    "section": "synthesis",
+    "summary": "该主题整合低秩微调、持续可塑性维护与结构补偿三类路线，关注在受限计算与参数预算下如何保持模型继续学习和继续适配的能力。"
+  },
+  {
+    "title": "End-to-End Reliability Reporting for Segmentation Systems",
+    "url": "concepts/End-to-End Reliability Reporting for Segmentation Systems.html",
+    "path": "concepts/End-to-End Reliability Reporting for Segmentation Systems.md",
+    "section": "concepts",
+    "summary": "End-to-End Reliability Reporting for Segmentation Systems：语义分割鲁棒性语料中的概念卡。"
+  },
+  {
+    "title": "Ensemble Black-box Transfer Attack on Dense Prediction",
+    "url": "concepts/Ensemble Black-box Transfer Attack on Dense Prediction.html",
+    "path": "concepts/Ensemble Black-box Transfer Attack on Dense Prediction.md",
+    "section": "concepts",
+    "summary": "Ensemble Black-box Transfer Attack on Dense Prediction：语义分割鲁棒性语料中的概念卡。"
+  },
+  {
+    "title": "Ensemble-Based Blackbox Attacks on Dense Prediction",
+    "url": "references/Ensemble-Based Blackbox Attacks on Dense Prediction.html",
+    "path": "references/Ensemble-Based Blackbox Attacks on Dense Prediction.md",
+    "section": "references",
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
+  },
+  {
+    "title": "Entities 索引",
+    "url": "entities/index.html",
+    "path": "entities/index.md",
+    "section": "entities",
+    "summary": "作者、模型、机构、数据集与基准等实体页面入口索引。"
+  },
+  {
+    "title": "Erosion Attack for Adversarial Training to Enhance Semantic Segmentation Robustness (arXiv preprint)",
+    "url": "references/Erosion Attack for Adversarial Training to Enhance Semantic Segmentation Robustness (arXiv preprint).html",
+    "path": "references/Erosion Attack for Adversarial Training to Enhance Semantic Segmentation Robustness (arXiv preprint).md",
+    "section": "references",
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
+  },
+  {
+    "title": "Erosion Attack Training for Segmentation",
+    "url": "concepts/Erosion Attack Training for Segmentation.html",
+    "path": "concepts/Erosion Attack Training for Segmentation.md",
+    "section": "concepts",
+    "summary": "Erosion Attack Training for Segmentation：语义分割鲁棒性语料中的概念卡。"
+  },
+  {
+    "title": "Evaluating the Adversarial Robustness of Semantic Segmentation",
+    "url": "references/Evaluating the Adversarial Robustness of Semantic Segmentation.html",
+    "path": "references/Evaluating the Adversarial Robustness of Semantic Segmentation.md",
+    "section": "references",
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
+  },
+  {
+    "title": "Evaluating the Robustness of Semantic Segmentation in Real-World Adversarial Patch Attacks",
+    "url": "references/Evaluating the Robustness of Semantic Segmentation in Real-World Adversarial Patch Attacks.html",
+    "path": "references/Evaluating the Robustness of Semantic Segmentation in Real-World Adversarial Patch Attacks.md",
+    "section": "references",
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
+  },
+  {
+    "title": "Fabian Huger",
+    "url": "entities/Fabian Huger.html",
+    "path": "entities/Fabian Huger.md",
+    "section": "entities",
+    "summary": "Fabian Huger：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "FCN",
+    "url": "entities/FCN.html",
+    "path": "entities/FCN.md",
+    "section": "entities",
+    "summary": "FCN 是经典全卷积分割基线，在 DLA 评测中可在低查询预算下被显著降级。"
+  },
+  {
+    "title": "Feature Effective Rank Diagnostics",
+    "url": "concepts/Feature Effective Rank Diagnostics.html",
+    "path": "concepts/Feature Effective Rank Diagnostics.md",
+    "section": "concepts",
+    "summary": "有效秩诊断用表示谱熵近似衡量特征多样性退化，可用于监测持续学习中的可塑性丧失。"
+  },
+  {
+    "title": "Federico Nesti",
+    "url": "entities/Federico Nesti.html",
+    "path": "entities/Federico Nesti.md",
+    "section": "entities",
+    "summary": "Federico Nesti：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Felix Assion",
+    "url": "entities/Felix Assion.html",
+    "path": "entities/Felix Assion.md",
+    "section": "entities",
+    "summary": "Felix Assion：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Florens Grener",
+    "url": "entities/Florens Grener.html",
+    "path": "entities/Florens Grener.md",
+    "section": "entities",
+    "summary": "Florens Grener：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Florian Tramer",
+    "url": "entities/Florian Tramer.html",
+    "path": "entities/Florian Tramer.md",
+    "section": "entities",
+    "summary": "Florian Tramer 参与对齐模型对抗评估研究，相关工作强调攻击能力校准在安全结论中的必要性。"
+  },
+  {
+    "title": "Foad Hajiaghajani",
+    "url": "entities/Foad Hajiaghajani.html",
+    "path": "entities/Foad Hajiaghajani.md",
+    "section": "entities",
+    "summary": "Foad Hajiaghajani：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Francesco Croce",
+    "url": "entities/Francesco Croce.html",
+    "path": "entities/Francesco Croce.md",
+    "section": "entities",
+    "summary": "Francesco Croce：当前语义分割鲁棒性子语料中的作者实体卡，关联 SEA 与 PIR-AT 这篇核心论文。"
+  },
+  {
+    "title": "From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step",
+    "url": "notes/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step.html",
+    "path": "notes/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step.md",
+    "section": "notes",
+    "summary": "﻿# From Explicit CoT to Implicit CoT: Learning to Internalize CoT Step by Step"
+  },
+  {
+    "title": "From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step",
+    "url": "references/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step.html",
+    "path": "references/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step.md",
+    "section": "references",
+    "summary": "SI 通过课程式移除 CoT token 与稳定训练策略把显式推理逐步内化，在速度与准确率之间形成实用折中。"
+  },
+  {
+    "title": "GFlowNet Posterior Sampling for Text Generation",
+    "url": "concepts/GFlowNet Posterior Sampling for Text Generation.html",
+    "path": "concepts/GFlowNet Posterior Sampling for Text Generation.md",
+    "section": "concepts",
+    "summary": "利用 GFlowNet 学习可归一化的生成流，实现对受约束文本后验分布的近似采样。"
+  },
+  {
+    "title": "Giorgio Buttazzo",
+    "url": "entities/Giorgio Buttazzo.html",
+    "path": "entities/Giorgio Buttazzo.md",
+    "section": "entities",
+    "summary": "Giorgio Buttazzo：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Giulio Rossolini",
+    "url": "entities/Giulio Rossolini.html",
+    "path": "entities/Giulio Rossolini.md",
+    "section": "entities",
+    "summary": "Giulio Rossolini：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "GPT-4",
+    "url": "entities/GPT-4.html",
+    "path": "entities/GPT-4.md",
+    "section": "entities",
+    "summary": "GPT-4 在该 wiki 中主要作为高能力基线与多模态推理参考模型出现，常用于对比小模型增强方法。"
+  },
+  {
+    "title": "GPT-ST",
+    "url": "entities/GPT-ST.html",
+    "path": "entities/GPT-ST.md",
+    "section": "entities",
+    "summary": "GPT-ST 在该 wiki 中代表时空结构预训练路线，用于增强语言模型的时空关系建模能力。"
+  },
+  {
+    "title": "GPT-ST Spatio-Temporal Pretraining",
+    "url": "notes/GPT-ST Spatio-Temporal Pretraining.html",
+    "path": "notes/GPT-ST Spatio-Temporal Pretraining.md",
+    "section": "notes",
+    "summary": "- 阅读日期：2026-04-08"
+  },
+  {
+    "title": "GPT-ST Spatio-Temporal Pretraining",
+    "url": "references/GPT-ST Spatio-Temporal Pretraining.html",
+    "path": "references/GPT-ST Spatio-Temporal Pretraining.md",
+    "section": "references",
+    "summary": "GPT-ST 通过结构感知预训练学习可迁移时空关系，在多任务上带来稳定下游性能增益。"
+  },
+  {
+    "title": "Graph of Thoughts Reasoning",
+    "url": "concepts/Graph of Thoughts Reasoning.html",
+    "path": "concepts/Graph of Thoughts Reasoning.md",
+    "section": "concepts",
+    "summary": "Graph of Thoughts 把推理过程表示为可组合图结构，通过节点变换与聚合提升复杂任务的推理质量与可控性。"
+  },
+  {
+    "title": "Graph of Thoughts Solving Elaborate Problems with Large Language Models",
+    "url": "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.html",
+    "path": "notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+    "section": "notes",
+    "summary": "﻿# Graph of Thoughts: Solving Elaborate Problems with Large Language Models"
+  },
+  {
+    "title": "Graph of Thoughts Solving Elaborate Problems with Large Language Models",
+    "url": "references/Graph of Thoughts Solving Elaborate Problems with Large Language Models.html",
+    "path": "references/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md",
+    "section": "references",
+    "summary": "GoT 将 LLM 推理建模为图过程，通过 thought 变换与聚合在复杂任务上实现更优质量-成本平衡。"
+  },
+  {
+    "title": "Hai Zhao",
+    "url": "entities/Hai Zhao.html",
+    "path": "entities/Hai Zhao.md",
+    "section": "entities",
+    "summary": "Hai Zhao 在该 wiki 中与图结构推理和多模态链式推理相关，覆盖结构化推理方法与应用。"
+  },
+  {
+    "title": "Hanting Chen",
+    "url": "entities/Hanting Chen.html",
+    "path": "entities/Hanting Chen.md",
+    "section": "entities",
+    "summary": "Hanting Chen 参与 PanGu-π 架构研究，工作重点是通过结构补偿提升大模型表达效率。"
+  },
+  {
+    "title": "Hengshuang Zhao",
+    "url": "entities/Hengshuang Zhao.html",
+    "path": "entities/Hengshuang Zhao.md",
+    "section": "entities",
+    "summary": "Hengshuang Zhao：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Henry Bae",
+    "url": "entities/Henry Bae.html",
+    "path": "entities/Henry Bae.md",
+    "section": "entities",
+    "summary": "Henry Bae 在该 wiki 中与 ComplexityNet 路线相关，关注任务复杂度驱动的推理效率优化。"
+  },
+  {
+    "title": "Hierarchical Spatio-Temporal Hypergraph Encoding",
+    "url": "concepts/Hierarchical Spatio-Temporal Hypergraph Encoding.html",
+    "path": "concepts/Hierarchical Spatio-Temporal Hypergraph Encoding.md",
+    "section": "concepts",
+    "summary": "分层时空超图编码通过簇内关系建模与簇间关系迁移联合提升复杂时空结构表达能力。"
+  },
+  {
+    "title": "Hoang-Dung Tran",
+    "url": "entities/Hoang-Dung Tran.html",
+    "path": "entities/Hoang-Dung Tran.md",
+    "section": "entities",
+    "summary": "Hoang-Dung Tran：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Hyena Hierarchy Towards Larger Convolutional Language Models",
+    "url": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.html",
+    "path": "notes/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+    "section": "notes",
+    "summary": "﻿# Hyena Hierarchy: Towards Larger Convolutional Language Models"
+  },
+  {
+    "title": "Hyena Hierarchy Towards Larger Convolutional Language Models",
+    "url": "references/Hyena Hierarchy Towards Larger Convolutional Language Models.html",
+    "path": "references/Hyena Hierarchy Towards Larger Convolutional Language Models.md",
+    "section": "references",
+    "summary": "Hyena 通过“隐式长卷积+数据控制门控”提供次二次注意力替代，在长上下文下兼顾建模质量与显著速度优势。"
+  },
+  {
+    "title": "Hyena Operator",
+    "url": "concepts/Hyena Operator.html",
+    "path": "concepts/Hyena Operator.md",
+    "section": "concepts",
+    "summary": "Hyena Operator 以长卷积与数据控制门控交织递归，构建可替代注意力的次二次序列混合算子，面向超长上下文更具扩展性。"
+  },
+  {
+    "title": "Implicit Chain-of-Thought Internalization",
+    "url": "concepts/Implicit Chain-of-Thought Internalization.html",
+    "path": "concepts/Implicit Chain-of-Thought Internalization.md",
+    "section": "concepts",
+    "summary": "隐式 CoT 内化通过逐步移除显式推理 token，使模型在不依赖长推理文本的情况下保持推理能力。"
+  },
+  {
+    "title": "Implicit Long Convolution Parameterization",
+    "url": "concepts/Implicit Long Convolution Parameterization.html",
+    "path": "concepts/Implicit Long Convolution Parameterization.md",
+    "section": "concepts",
+    "summary": "隐式长卷积参数化通过神经函数生成超长滤波器，解耦滤波器长度与参数规模，支撑高效长上下文建模。"
+  },
+  {
+    "title": "Improved Noise and Attack Robustness of Semantic Segmentation Models with Self-Supervised Depth Estimation",
+    "url": "references/Improved Noise and Attack Robustness of Semantic Segmentation Models with Self-Supervised Depth Estimation.html",
+    "path": "references/Improved Noise and Attack Robustness of Semantic Segmentation Models with Self-Supervised Depth Estimation.md",
+    "section": "references",
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
+  },
+  {
+    "title": "Increasing the Robustness of Semantic Segmentation Models with Painting-by-Numbers",
+    "url": "references/Increasing the Robustness of Semantic Segmentation Models with Painting-by-Numbers.html",
+    "path": "references/Increasing the Robustness of Semantic Segmentation Models with Painting-by-Numbers.md",
+    "section": "references",
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
+  },
+  {
+    "title": "Indirect Local Attack in Segmentation",
+    "url": "concepts/Indirect Local Attack in Segmentation.html",
+    "path": "concepts/Indirect Local Attack in Segmentation.md",
+    "section": "concepts",
+    "summary": "间接局部攻击指只扰动一小块且不与目标区域重叠的区域，却能借助分割模型的长程上下文依赖误导远处像素预测。"
+  },
+  {
+    "title": "Indirect Local Attacks for Context-aware Semantic Segmentation Networks",
+    "url": "references/Indirect Local Attacks for Context-aware Semantic Segmentation Networks.html",
+    "path": "references/Indirect Local Attacks for Context-aware Semantic Segmentation Networks.md",
+    "section": "references",
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
+  },
+  {
+    "title": "Inference-Time Orchestration and Routing for LLMs",
+    "url": "synthesis/Inference-Time Orchestration and Routing for LLMs.html",
+    "path": "synthesis/Inference-Time Orchestration and Routing for LLMs.md",
+    "section": "synthesis",
+    "summary": "该主题整合实例级难度路由、多智能体协作与策略切换，关注推理时计算分配的系统化编排。"
+  },
+  {
+    "title": "Jan Hendrik Metzen",
+    "url": "entities/Jan Hendrik Metzen.html",
+    "path": "entities/Jan Hendrik Metzen.md",
+    "section": "entities",
+    "summary": "Jan Hendrik Metzen：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Jiaya Jia",
+    "url": "entities/Jiaya Jia.html",
+    "path": "entities/Jiaya Jia.md",
+    "section": "entities",
+    "summary": "Jiaya Jia：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Jindong Gu",
+    "url": "entities/Jindong Gu.html",
+    "path": "entities/Jindong Gu.md",
+    "section": "entities",
+    "summary": "Jindong Gu：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Journal 索引",
+    "url": "journal/index.html",
+    "path": "journal/index.md",
+    "section": "journal",
+    "summary": "阅读过程记录、覆盖审计与 wiki 维护日志的入口页。"
+  },
+  {
+    "title": "Juan C. Perez",
+    "url": "entities/Juan C. Perez.html",
+    "path": "entities/Juan C. Perez.md",
+    "section": "entities",
+    "summary": "Juan C. Perez：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Jue Wang",
+    "url": "entities/Jue Wang.html",
+    "path": "entities/Jue Wang.md",
+    "section": "entities",
+    "summary": "Jue Wang 在该 wiki 中主要关联 Mixture-of-Agents 的多模型协作与分层聚合框架。"
+  },
+  {
+    "title": "Junlin Wang",
+    "url": "entities/Junlin Wang.html",
+    "path": "entities/Junlin Wang.md",
+    "section": "entities",
+    "summary": "Junlin Wang 在该 wiki 中主要关联 Mixture-of-Agents 的多模型协作与聚合式推理编排。"
+  },
+  {
+    "title": "Kai Han",
+    "url": "entities/Kai Han.html",
+    "path": "entities/Kai Han.md",
+    "section": "entities",
+    "summary": "Kai Han 在该 wiki 主要关联非线性补偿与架构增强研究。"
+  },
+  {
+    "title": "Kaspar Sakmann",
+    "url": "entities/Kaspar Sakmann.html",
+    "path": "entities/Kaspar Sakmann.md",
+    "section": "entities",
+    "summary": "Kaspar Sakmann：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Known-Solvable Attack Calibration",
+    "url": "concepts/Known-Solvable Attack Calibration.html",
+    "path": "concepts/Known-Solvable Attack Calibration.md",
+    "section": "concepts",
+    "summary": "Known-solvable calibration 先验证攻击器能否解出已知可解样本，再判断模型是否真正鲁棒。"
+  },
+  {
+    "title": "Krishna Kanth Nakka",
+    "url": "entities/Krishna Kanth Nakka.html",
+    "path": "entities/Krishna Kanth Nakka.md",
+    "section": "entities",
+    "summary": "Krishna Kanth Nakka：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "L-infinity Norm Ball",
+    "url": "concepts/L-infinity Norm Ball.html",
+    "path": "concepts/L-infinity Norm Ball.md",
+    "section": "concepts",
+    "summary": "L-infinity 范数球约束每个坐标的最大改变量；在对抗攻击里，其顶点对应每一维都取到 ±epsilon 的符号向量。"
+  },
+  {
+    "title": "Language Models Represent Space and Time",
+    "url": "notes/Language Models Represent Space and Time.html",
+    "path": "notes/Language Models Represent Space and Time.md",
+    "section": "notes",
+    "summary": "﻿# Language Models Represent Space and Time"
+  },
+  {
+    "title": "Language Models Represent Space and Time",
+    "url": "references/Language Models Represent Space and Time.html",
+    "path": "references/Language Models Represent Space and Time.md",
+    "section": "references",
+    "summary": "该工作通过系统探针证据支持 LLM 内部存在跨实体统一且可线性解码的时空表示。"
+  },
+  {
+    "title": "Laura Daza",
+    "url": "entities/Laura Daza.html",
+    "path": "entities/Laura Daza.md",
+    "section": "entities",
+    "summary": "Laura Daza：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Lei Li",
+    "url": "entities/Lei Li.html",
+    "path": "entities/Lei Li.md",
+    "section": "entities",
+    "summary": "Lei Li 在该 wiki 主要关联过程监督与数学推理验证研究。"
+  },
+  {
+    "title": "LibriSpeech Dataset",
+    "url": "entities/LibriSpeech Dataset.html",
+    "path": "entities/LibriSpeech Dataset.md",
+    "section": "entities",
+    "summary": "LibriSpeech 是英语语音识别常用基准，在 CIF 相关实验中用于评估 WER 与流式对齐效果。"
+  },
+  {
+    "title": "LiDAR Point-Cloud Segmentation Attack Surface",
+    "url": "concepts/LiDAR Point-Cloud Segmentation Attack Surface.html",
+    "path": "concepts/LiDAR Point-Cloud Segmentation Attack Surface.md",
+    "section": "concepts",
+    "summary": "LiDAR Point-Cloud Segmentation Attack Surface：语义分割鲁棒性语料中的概念卡。"
+  },
+  {
+    "title": "LiDAR Semantic Segmentation Security Landscape",
+    "url": "synthesis/LiDAR Semantic Segmentation Security Landscape.html",
+    "path": "synthesis/LiDAR Semantic Segmentation Security Landscape.md",
+    "section": "synthesis",
+    "summary": "LiDAR Semantic Segmentation Security Landscape：语义分割鲁棒性语料中的主题综合页。"
+  },
+  {
+    "title": "Linear Probe World-Model Evaluation",
+    "url": "concepts/Linear Probe World-Model Evaluation.html",
+    "path": "concepts/Linear Probe World-Model Evaluation.md",
+    "section": "concepts",
+    "summary": "线性探针世界模型评估通过层级激活回归时空变量，检验模型是否形成可解码且可泛化的内部结构表示。"
+  },
+  {
+    "title": "Linhao Dong",
+    "url": "entities/Linhao Dong.html",
+    "path": "entities/Linhao Dong.md",
+    "section": "entities",
+    "summary": "Linhao Dong 在该 wiki 中主要关联 CIF 对齐机制与端到端语音识别研究。"
+  },
+  {
+    "title": "Llama-2",
+    "url": "entities/Llama-2.html",
+    "path": "entities/Llama-2.md",
+    "section": "entities",
+    "summary": "Llama-2 在该 wiki 主要关联时空表示探针与世界模型实证分析。"
+  },
+  {
+    "title": "LLaMA-3 8B",
+    "url": "entities/LLaMA-3 8B.html",
+    "path": "entities/LLaMA-3 8B.md",
+    "section": "entities",
+    "summary": "LLaMA-3 8B 在该 wiki 中主要作为“小参数模型通过搜索与自优化逼近大模型能力”的代表实验对象。"
+  },
+  {
+    "title": "LLaMA-Adapter",
+    "url": "entities/LLaMA-Adapter.html",
+    "path": "entities/LLaMA-Adapter.md",
+    "section": "entities",
+    "summary": "LLaMA-Adapter 在多模态对抗评估中用于验证视觉扰动诱导失配输出的可行性。"
+  },
+  {
+    "title": "LLaVA",
+    "url": "entities/LLaVA.html",
+    "path": "entities/LLaVA.md",
+    "section": "entities",
+    "summary": "LLaVA 在多模态对齐攻击实验中被用于验证视觉对抗扰动对有害文本输出的诱导风险。"
+  },
+  {
+    "title": "LLM Inference Efficiency and Scaling",
+    "url": "synthesis/LLM Inference Efficiency and Scaling.html",
+    "path": "synthesis/LLM Inference Efficiency and Scaling.md",
+    "section": "synthesis",
+    "summary": "LLM 效率优化正在从单一压缩走向“路由调度、摊销推理与参数高效适配”三线并进，目标是在质量与成本之间实现可控平衡。"
+  },
+  {
+    "title": "LLM Nonlinearity Compensation",
+    "url": "concepts/LLM Nonlinearity Compensation.html",
+    "path": "concepts/LLM Nonlinearity Compensation.md",
+    "section": "concepts",
+    "summary": "非线性补偿通过结构增量与激活设计增强 LLM 表达能力，在较低额外成本下提升推理与任务表现。"
+  },
+  {
+    "title": "LLM Reasoning Search and Verification",
+    "url": "synthesis/LLM Reasoning Search and Verification.html",
+    "path": "synthesis/LLM Reasoning Search and Verification.md",
+    "section": "synthesis",
+    "summary": "该主题聚焦“搜索式思维展开 + 过程级验证反馈”的组合范式，强调在可控推理预算下提升复杂任务稳定性。"
+  },
+  {
+    "title": "LLM体现出时空概念",
+    "url": "papers_sources/Research-Paper-Notes/LLM体现出时空概念.html",
+    "path": "papers_sources/Research-Paper-Notes/LLM体现出时空概念.md",
+    "section": "papers_sources",
+    "summary": "LLM体现出时空概念 摘要： LLM是学习了大量的表面数据还是生成了一个连贯的数据模型——世界模型。 研究团队通过Llama2族模型分析三个空间数据集（世界，美国，纽约地标），三个时间数据集（历史名人，影视作品，新闻），发现LLM学习的是多个尺度的时间和空间的线性表示。 这些表示对于提示的变化具有鲁棒性，并在不同实体类型中统一。 研究团队识别了编码空间和时…"
+  },
+  {
+    "title": "Logical Operator Composition in Diffusion Models",
+    "url": "concepts/Logical Operator Composition in Diffusion Models.html",
+    "path": "concepts/Logical Operator Composition in Diffusion Models.md",
+    "section": "concepts",
+    "summary": "使用 AND/NOT 等逻辑算子组合条件分布，实现可控的组合式视觉生成。"
+  },
+  {
+    "title": "Long-Context Architecture Without Full Attention",
+    "url": "synthesis/Long-Context Architecture Without Full Attention.html",
+    "path": "synthesis/Long-Context Architecture Without Full Attention.md",
+    "section": "synthesis",
+    "summary": "长上下文架构正从“全注意力”转向“次二次全局混合+非线性补偿”组合路线，以换取更高上下文效率比。"
+  },
+  {
+    "title": "LoRA Low-Rank Adaptation of Large Language Models",
+    "url": "notes/LoRA Low-Rank Adaptation of Large Language Models.html",
+    "path": "notes/LoRA Low-Rank Adaptation of Large Language Models.md",
+    "section": "notes",
+    "summary": "﻿# LoRA: Low-Rank Adaptation of Large Language Models"
+  },
+  {
+    "title": "LoRA Low-Rank Adaptation of Large Language Models",
+    "url": "references/LoRA Low-Rank Adaptation of Large Language Models.html",
+    "path": "references/LoRA Low-Rank Adaptation of Large Language Models.md",
+    "section": "references",
+    "summary": "LoRA 通过低秩增量微调在几乎不增加推理时延的前提下显著降低大模型适配成本。"
+  },
+  {
+    "title": "Loss of Plasticity in Continual Learning",
+    "url": "concepts/Loss of Plasticity in Continual Learning.html",
+    "path": "concepts/Loss of Plasticity in Continual Learning.md",
+    "section": "concepts",
+    "summary": "可塑性丧失指模型在持续学习中逐步失去学习新任务的能力，区别于灾难性遗忘，需单独监测与干预。"
+  },
+  {
+    "title": "Low-Rank Adaptation for LLMs",
+    "url": "concepts/Low-Rank Adaptation for LLMs.html",
+    "path": "concepts/Low-Rank Adaptation for LLMs.md",
+    "section": "concepts",
+    "summary": "低秩适配通过在冻结主干权重上注入小规模低秩增量，实现参数高效微调并降低部署成本。"
+  },
+  {
+    "title": "Lu Su",
+    "url": "entities/Lu Su.html",
+    "path": "entities/Lu Su.md",
+    "section": "entities",
+    "summary": "Lu Su：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Ludwig Schmidt",
+    "url": "entities/Ludwig Schmidt.html",
+    "path": "entities/Ludwig Schmidt.md",
+    "section": "entities",
+    "summary": "Ludwig Schmidt 参与对齐鲁棒评估研究，相关论文提出了区分攻击器能力与模型鲁棒性的评估框架。"
+  },
+  {
+    "title": "M. Salman Asif",
+    "url": "entities/M. Salman Asif.html",
+    "path": "entities/M. Salman Asif.md",
+    "section": "entities",
+    "summary": "M. Salman Asif：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Maciej Besta",
+    "url": "entities/Maciej Besta.html",
+    "path": "entities/Maciej Besta.md",
+    "section": "entities",
+    "summary": "Maciej Besta 在该 wiki 中与结构化推理方向相关，涉及 GoT 方法与推理范式梳理工作。"
+  },
+  {
+    "title": "Maciej Swiechowski",
+    "url": "entities/Maciej Swiechowski.html",
+    "path": "entities/Maciej Swiechowski.md",
+    "section": "entities",
+    "summary": "Maciej Świechowski 在该 wiki 中与 MCTS 改造综述及其应用分析相关。"
+  },
+  {
+    "title": "Maintaining Plasticity in Deep Continual Learning",
+    "url": "notes/Maintaining Plasticity in Deep Continual Learning.html",
+    "path": "notes/Maintaining Plasticity in Deep Continual Learning.md",
+    "section": "notes",
+    "summary": "﻿# Maintaining Plasticity in Deep Continual Learning"
+  },
+  {
+    "title": "Maintaining Plasticity in Deep Continual Learning",
+    "url": "references/Maintaining Plasticity in Deep Continual Learning.html",
+    "path": "references/Maintaining Plasticity in Deep Continual Learning.md",
+    "section": "references",
+    "summary": "论文系统刻画深度持续学习中的“可塑性丧失”，并提出 Continual Backpropagation 以选择性重置低效单元，显著缓解长期退化。"
+  },
+  {
+    "title": "Maksym Yatsura",
+    "url": "entities/Maksym Yatsura.html",
+    "path": "entities/Maksym Yatsura.md",
+    "section": "entities",
+    "summary": "Maksym Yatsura：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Marc Fischer",
+    "url": "entities/Marc Fischer.html",
+    "path": "entities/Marc Fischer.md",
+    "section": "entities",
+    "summary": "Marc Fischer：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Martin Vechev",
+    "url": "entities/Martin Vechev.html",
+    "path": "entities/Martin Vechev.md",
+    "section": "entities",
+    "summary": "Martin Vechev：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Marvin Klingner",
+    "url": "entities/Marvin Klingner.html",
+    "path": "entities/Marvin Klingner.md",
+    "section": "entities",
+    "summary": "Marvin Klingner：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "MaskFormer",
+    "url": "entities/MaskFormer.html",
+    "path": "entities/MaskFormer.md",
+    "section": "entities",
+    "summary": "MaskFormer 采用 mask classification 范式，在 DLA 对比中比 SegFormer 更容易被压低 mIoU。"
+  },
+  {
+    "title": "Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations",
+    "url": "notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.html",
+    "path": "notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md",
+    "section": "notes",
+    "summary": "﻿# Math-Shepherd: Verify and Reinforce LLMs Step-by-step without Human Annotations"
+  },
+  {
+    "title": "Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations",
+    "url": "references/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.html",
+    "path": "references/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md",
+    "section": "references",
+    "summary": "Math-Shepherd 证明自动过程监督可实用化，并在数学验证与逐步强化学习中带来稳定收益。"
+  },
+  {
+    "title": "Mathieu Salzmann",
+    "url": "entities/Mathieu Salzmann.html",
+    "path": "entities/Mathieu Salzmann.md",
+    "section": "entities",
+    "summary": "Mathieu Salzmann：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Matthias Hein",
+    "url": "entities/Matthias Hein.html",
+    "path": "entities/Matthias Hein.md",
+    "section": "entities",
+    "summary": "Matthias Hein：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Max Tegmark",
+    "url": "entities/Max Tegmark.html",
+    "path": "entities/Max Tegmark.md",
+    "section": "entities",
+    "summary": "Max Tegmark 参与时空表征探针研究，相关工作为 LLM 世界模型假设提供了可量化证据路径。"
+  },
+  {
+    "title": "Maximilian Baader",
+    "url": "entities/Maximilian Baader.html",
+    "path": "entities/Maximilian Baader.md",
+    "section": "entities",
+    "summary": "Maximilian Baader：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Mean-Centered Feature Sparsification",
+    "url": "concepts/Mean-Centered Feature Sparsification.html",
+    "path": "concepts/Mean-Centered Feature Sparsification.md",
+    "section": "concepts",
+    "summary": "均值中心化稀疏化通过在通道均值邻域内压平低信息波动，减少对抗扰动可利用空间，是一种可插拔后处理鲁棒增强策略。"
+  },
+  {
+    "title": "MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature",
+    "url": "notes/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature.html",
+    "path": "notes/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature.md",
+    "section": "notes",
+    "summary": "﻿# MeanSparse: Post-Training Robustness Enhancement Through Mean-Centered Feature Sparsification"
+  },
+  {
+    "title": "MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature",
+    "url": "references/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature.html",
+    "path": "references/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature.md",
+    "section": "references",
+    "summary": "该页作为命名对齐入口，正文内容与主页面保持一致并指向完整摘要卡。"
+  },
+  {
+    "title": "MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature Sparsification",
+    "url": "references/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature Sparsification.html",
+    "path": "references/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature Sparsification.md",
+    "section": "references",
+    "summary": "MeanSparse 在不重训模型的前提下，通过均值中心化稀疏化抑制低信息特征波动，并在多个基准上提升 AutoAttack 鲁棒准确率。"
+  },
+  {
+    "title": "Mengdi Huai",
+    "url": "entities/Mengdi Huai.html",
+    "path": "entities/Mengdi Huai.md",
+    "section": "entities",
+    "summary": "Mengdi Huai：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Michael Poli",
+    "url": "entities/Michael Poli.html",
+    "path": "entities/Michael Poli.md",
+    "section": "entities",
+    "summary": "Michael Poli 是 Hyena 工作主要作者之一，相关研究聚焦长上下文高效序列建模算子。"
+  },
+  {
+    "title": "MiniGPT-4",
+    "url": "entities/MiniGPT-4.html",
+    "path": "entities/MiniGPT-4.md",
+    "section": "entities",
+    "summary": "MiniGPT-4 在对齐评估中被用于多模态对抗攻击测试，显示连续视觉输入可诱导有害输出。"
+  },
+  {
+    "title": "Mixture-of-Agents Aggregation",
+    "url": "concepts/Mixture-of-Agents Aggregation.html",
+    "path": "concepts/Mixture-of-Agents Aggregation.md",
+    "section": "concepts",
+    "summary": "通过分层代理协作与聚合策略整合多模型候选解，提升长上下文与复杂任务的整体输出质量。"
+  },
+  {
+    "title": "Mixture-of-Agents Enhances Large Language Model Capabilities",
+    "url": "notes/Mixture-of-Agents Enhances Large Language Model Capabilities.html",
+    "path": "notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
+    "section": "notes",
+    "summary": "﻿# Mixture-of-Agents: Enhances Large Language Model Capabilities"
+  },
+  {
+    "title": "Mixture-of-Agents Enhances Large Language Model Capabilities",
+    "url": "references/Mixture-of-Agents Enhances Large Language Model Capabilities.html",
+    "path": "references/Mixture-of-Agents Enhances Large Language Model Capabilities.md",
+    "section": "references",
+    "summary": "MoA 表明多模型协作与分层聚合在不重训条件下可提升质量，但成本与时延仍是关键约束。"
+  },
+  {
+    "title": "Mohammadreza Teymoorianfard",
+    "url": "entities/Mohammadreza Teymoorianfard.html",
+    "path": "entities/Mohammadreza Teymoorianfard.md",
+    "section": "entities",
+    "summary": "Mohammadreza Teymoorianfard 参与 MeanSparse 研究，相关工作强调后处理式鲁棒增强的低成本部署价值。"
+  },
+  {
+    "title": "Moksh Jain",
+    "url": "entities/Moksh Jain.html",
+    "path": "entities/Moksh Jain.md",
+    "section": "entities",
+    "summary": "Moksh Jain 在该 wiki 主要关联摊销推理与后验采样路线。"
+  },
+  {
+    "title": "Monte Carlo Tree Search A Review of Recent Modifications and Applications",
+    "url": "notes/Monte Carlo Tree Search A Review of Recent Modifications and Applications.html",
+    "path": "notes/Monte Carlo Tree Search A Review of Recent Modifications and Applications.md",
+    "section": "notes",
+    "summary": "﻿# Monte Carlo Tree Search: A Review of Recent Modifications and Applications"
+  },
+  {
+    "title": "Monte Carlo Tree Search A Review of Recent Modifications and Applications",
+    "url": "references/Monte Carlo Tree Search A Review of Recent Modifications and Applications.html",
+    "path": "references/Monte Carlo Tree Search A Review of Recent Modifications and Applications.md",
+    "section": "references",
+    "summary": "该综述系统梳理了 MCTS 在复杂场景中的关键改造策略及应用约束，是搜索方法工程化选型的重要参考。"
+  },
+  {
+    "title": "Monte Carlo Tree Search for LLM Reasoning",
+    "url": "concepts/Monte Carlo Tree Search for LLM Reasoning.html",
+    "path": "concepts/Monte Carlo Tree Search for LLM Reasoning.md",
+    "section": "concepts",
+    "summary": "MCTS 在 LLM 推理中提供了可扩展搜索框架，可与自评估和自修正机制结合提升复杂任务求解率。"
+  },
+  {
+    "title": "Monte Carlo Tree Self-Refine",
+    "url": "concepts/Monte Carlo Tree Self-Refine.html",
+    "path": "concepts/Monte Carlo Tree Self-Refine.md",
+    "section": "concepts",
+    "summary": "将 MCTS 与自评估-自修正循环结合，让 LLM 在高难推理中以搜索替代单次采样。"
+  },
+  {
+    "title": "Multi-Agent LLM Collaboration Landscape",
+    "url": "synthesis/Multi-Agent LLM Collaboration Landscape.html",
+    "path": "synthesis/Multi-Agent LLM Collaboration Landscape.md",
+    "section": "synthesis",
+    "summary": "多智能体 LLM 协作通过角色分工与聚合机制提升任务质量，主要权衡点在于推理成本、延迟与编排复杂度。"
+  },
+  {
+    "title": "Multi-Agent LLM Orchestration",
+    "url": "concepts/Multi-Agent LLM Orchestration.html",
+    "path": "concepts/Multi-Agent LLM Orchestration.md",
+    "section": "concepts",
+    "summary": "多智能体编排通过角色分工、消息传递与聚合策略提升复杂任务表现，但同时引入额外成本与系统复杂度。"
+  },
+  {
+    "title": "Multimodal Adversarial Image Prompting",
+    "url": "concepts/Multimodal Adversarial Image Prompting.html",
+    "path": "concepts/Multimodal Adversarial Image Prompting.md",
+    "section": "concepts",
+    "summary": "多模态对抗图像提示通过连续像素优化诱导对齐模型输出有害文本，是离散文本攻击之外的重要威胁面。"
+  },
+  {
+    "title": "Multimodal Chain-of-Thought Reasoning",
+    "url": "concepts/Multimodal Chain-of-Thought Reasoning.html",
+    "path": "concepts/Multimodal Chain-of-Thought Reasoning.md",
+    "section": "concepts",
+    "summary": "多模态 CoT 通过引入视觉证据链改善推理可解释性与答案稳定性，是跨模态复杂推理的重要技术路线。"
+  },
+  {
+    "title": "Multimodal Chain-of-Thought Reasoning in Language Models",
+    "url": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.html",
+    "path": "notes/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+    "section": "notes",
+    "summary": "﻿# Multimodal Chain-of-Thought Reasoning in Language Models"
+  },
+  {
+    "title": "Multimodal Chain-of-Thought Reasoning in Language Models",
+    "url": "references/Multimodal Chain-of-Thought Reasoning in Language Models.html",
+    "path": "references/Multimodal Chain-of-Thought Reasoning in Language Models.md",
+    "section": "references",
+    "summary": "Multimodal-CoT 通过引入视觉证据链提升推理过程质量并减少答案幻觉，强化了多模态任务的可解释推理能力。"
+  },
+  {
+    "title": "Multimodal Composition and Reasoning",
+    "url": "synthesis/Multimodal Composition and Reasoning.html",
+    "path": "synthesis/Multimodal Composition and Reasoning.md",
+    "section": "synthesis",
+    "summary": "汇总多模态生成与多模态推理中的可组合性设计，强调“组合表达能力”与“推理可验证性”的平衡。"
+  },
+  {
+    "title": "N. Grace Hua",
+    "url": "entities/N. Grace Hua.html",
+    "path": "entities/N. Grace Hua.md",
+    "section": "entities",
+    "summary": "N. Grace Hua：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Naman D. Singh",
+    "url": "entities/Naman D. Singh.html",
+    "path": "entities/Naman D. Singh.md",
+    "section": "entities",
+    "summary": "Naman D. Singh：当前语义分割鲁棒性子语料中的作者实体卡，关联 SEA 与 PIR-AT 这篇核心论文。"
+  },
+  {
+    "title": "Nan Liu",
+    "url": "entities/Nan Liu.html",
+    "path": "entities/Nan Liu.md",
+    "section": "entities",
+    "summary": "Nan Liu 在该 wiki 中与可组合扩散生成相关，重点覆盖复杂语义约束下的图像生成。"
+  },
+  {
+    "title": "Nathaniel Hamilton",
+    "url": "entities/Nathaniel Hamilton.html",
+    "path": "entities/Nathaniel Hamilton.md",
+    "section": "entities",
+    "summary": "Nathaniel Hamilton：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Natural Evolutionary Strategies (NES)",
+    "url": "concepts/Natural Evolutionary Strategies (NES).html",
+    "path": "concepts/Natural Evolutionary Strategies (NES).md",
+    "section": "concepts",
+    "summary": "NES 通过优化搜索分布并用采样估计自然梯度，在黑盒攻击中常被用作高维无梯度梯度估计器。"
+  },
+  {
+    "title": "Neelanjana Pal",
+    "url": "entities/Neelanjana Pal.html",
+    "path": "entities/Neelanjana Pal.md",
+    "section": "entities",
+    "summary": "Neelanjana Pal：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Nicholas Carlini",
+    "url": "entities/Nicholas Carlini.html",
+    "path": "entities/Nicholas Carlini.md",
+    "section": "entities",
+    "summary": "Nicholas Carlini 是对抗鲁棒与模型安全方向研究者，在对齐模型对抗评估中提出了关键实验协议。"
+  },
+  {
+    "title": "Nico Schmidt",
+    "url": "entities/Nico Schmidt.html",
+    "path": "entities/Nico Schmidt.md",
+    "section": "entities",
+    "summary": "Nico Schmidt：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Nils Blach",
+    "url": "entities/Nils Blach.html",
+    "path": "entities/Nils Blach.md",
+    "section": "entities",
+    "summary": "Nils Blach 在该 wiki 主要关联 Graph-of-Thoughts 路线。"
+  },
+  {
+    "title": "Notes 索引",
+    "url": "notes/index.html",
+    "path": "notes/index.md",
+    "section": "notes",
+    "summary": "汇总当前论文阅读笔记与导入索引页面，append ingest 已覆盖 notes 全目录。"
+  },
+  {
+    "title": "On the Robustness of Redundant Teacher-Student Frameworks for Semantic Segmentation",
+    "url": "references/On the Robustness of Redundant Teacher-Student Frameworks for Semantic Segmentation.html",
+    "path": "references/On the Robustness of Redundant Teacher-Student Frameworks for Semantic Segmentation.md",
+    "section": "references",
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
+  },
+  {
+    "title": "On the Robustness of Semantic Segmentation Models to Adversarial Attacks",
+    "url": "references/On the Robustness of Semantic Segmentation Models to Adversarial Attacks.html",
+    "path": "references/On the Robustness of Semantic Segmentation Models to Adversarial Attacks.md",
+    "section": "references",
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
+  },
+  {
+    "title": "Ondrej Miksik",
+    "url": "entities/Ondrej Miksik.html",
+    "path": "entities/Ondrej Miksik.md",
+    "section": "entities",
+    "summary": "Ondrej Miksik：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Onur Mutlu",
+    "url": "entities/Onur Mutlu.html",
+    "path": "entities/Onur Mutlu.md",
+    "section": "entities",
+    "summary": "Onur Mutlu 在该 wiki 主要关联结构化思维范式的系统化分析工作。"
+  },
+  {
+    "title": "OpenAssistant",
+    "url": "entities/OpenAssistant.html",
+    "path": "entities/OpenAssistant.md",
+    "section": "entities",
+    "summary": "OpenAssistant 数据在该 wiki 中用于对齐模型攻击评估的良性对话上下文构造。"
+  },
+  {
+    "title": "Pablo Arbelaez",
+    "url": "entities/Pablo Arbelaez.html",
+    "path": "entities/Pablo Arbelaez.md",
+    "section": "entities",
+    "summary": "Pablo Arbelaez：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Painting-by-Numbers Robust Segmentation Training",
+    "url": "concepts/Painting-by-Numbers Robust Segmentation Training.html",
+    "path": "concepts/Painting-by-Numbers Robust Segmentation Training.md",
+    "section": "concepts",
+    "summary": "Painting-by-Numbers Robust Segmentation Training：语义分割鲁棒性语料中的概念卡。"
+  },
+  {
+    "title": "PanGu-pi Nonlinearity Compensation",
+    "url": "notes/PanGu-pi Nonlinearity Compensation.html",
+    "path": "notes/PanGu-pi Nonlinearity Compensation.md",
+    "section": "notes",
+    "summary": "﻿# PanGu-π: Enhancing Language Model Architectures via Nonlinearity Compensation"
+  },
+  {
+    "title": "PanGu-pi Nonlinearity Compensation",
+    "url": "references/PanGu-pi Nonlinearity Compensation.html",
+    "path": "references/PanGu-pi Nonlinearity Compensation.md",
+    "section": "references",
+    "summary": "PanGu-pi 通过增强捷径与级联激活在较低增量成本下改善大模型非线性表达与推理效率。"
+  },
+  {
+    "title": "PanGu-π: Enhancing Language Model Architectures via Nonlinearity Compensation",
+    "url": "papers_sources/Research-Paper-Notes/PanGu-π.html",
+    "path": "papers_sources/Research-Paper-Notes/PanGu-π.md",
+    "section": "papers_sources",
+    "summary": "PanGu π: Enhancing Language Model Architectures via Nonlinearity Compensation PanGu π：通过非线性补偿增强语言模型结构 摘要 大型语言模型的最近趋势是增加模型规模（即参数数量）和数据集以实现更好的生成能力，这一点已经在许多工作中得到证明，例如著名的GPT和Llama。然而，…"
+  },
+  {
+    "title": "Papers Sources Deep Gap Audit 2026-04-08",
+    "url": "journal/Papers Sources Deep Gap Audit 2026-04-08.html",
+    "path": "journal/Papers Sources Deep Gap Audit 2026-04-08.md",
+    "section": "journal",
+    "summary": "对 papers_sources 的 9 篇论文做逐篇覆盖度盘点，定位 concepts、entities、synthesis 的细化缺口并给出补全目标。"
+  },
+  {
+    "title": "papers_sources Index",
+    "url": "papers_sources/index.html",
+    "path": "papers_sources",
+    "section": "papers_sources",
+    "summary": "Directory index for papers_sources."
+  },
+  {
+    "title": "Parameter-Efficient Fine-Tuning for LLMs",
+    "url": "concepts/Parameter-Efficient Fine-Tuning for LLMs.html",
+    "path": "concepts/Parameter-Efficient Fine-Tuning for LLMs.md",
+    "section": "concepts",
+    "summary": "通过限制可训练参数子空间或结构增量，实现低成本微调并保留大模型基础能力。"
+  },
+  {
+    "title": "Parameter-Efficient LLM Adaptation and Inference",
+    "url": "synthesis/Parameter-Efficient LLM Adaptation and Inference.html",
+    "path": "synthesis/Parameter-Efficient LLM Adaptation and Inference.md",
+    "section": "synthesis",
+    "summary": "该主题整合参数高效适配与推理时动态计算分配两条路线，目标是在性能与成本之间建立可控折中。"
+  },
+  {
+    "title": "Patch Attack and Defense in Segmentation",
+    "url": "synthesis/Patch Attack and Defense in Segmentation.html",
+    "path": "synthesis/Patch Attack and Defense in Segmentation.md",
+    "section": "synthesis",
+    "summary": "Patch Attack and Defense in Segmentation：语义分割鲁棒性语料中的主题综合页。"
+  },
+  {
+    "title": "Patch-certified Defense with Demasked Smoothing",
+    "url": "concepts/Patch-certified Defense with Demasked Smoothing.html",
+    "path": "concepts/Patch-certified Defense with Demasked Smoothing.md",
+    "section": "concepts",
+    "summary": "Patch-certified Defense with Demasked Smoothing：语义分割鲁棒性语料中的概念卡。"
+  },
+  {
+    "title": "Patch-robust Attention Regularization",
+    "url": "concepts/Patch-robust Attention Regularization.html",
+    "path": "concepts/Patch-robust Attention Regularization.md",
+    "section": "concepts",
+    "summary": "Patch-robust Attention Regularization：语义分割鲁棒性语料中的概念卡。"
+  },
+  {
+    "title": "Patrick Musau",
+    "url": "entities/Patrick Musau.html",
+    "path": "entities/Patrick Musau.md",
+    "section": "entities",
+    "summary": "Patrick Musau：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Peiyi Wang",
+    "url": "entities/Peiyi Wang.html",
+    "path": "entities/Peiyi Wang.md",
+    "section": "entities",
+    "summary": "Peiyi Wang 在该 wiki 中与自动过程监督和数学推理强化学习研究相关。"
+  },
+  {
+    "title": "PEMS08 Dataset",
+    "url": "entities/PEMS08 Dataset.html",
+    "path": "entities/PEMS08 Dataset.md",
+    "section": "entities",
+    "summary": "PEMS08 是交通流时空预测常用基准数据集，用于评估 GPT-ST 预训练迁移效果。"
+  },
+  {
+    "title": "Perturbation Interaction",
+    "url": "concepts/Perturbation Interaction.html",
+    "path": "concepts/Perturbation Interaction.md",
+    "section": "concepts",
+    "summary": "扰动交互指迭代更新之间相互抵消，导致分割攻击出现“本轮成功、下轮回退”的优化不稳定现象。"
+  },
+  {
+    "title": "Peter Schlicht",
+    "url": "entities/Peter Schlicht.html",
+    "path": "entities/Peter Schlicht.md",
+    "section": "entities",
+    "summary": "Peter Schlicht：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Philip H. S. Torr",
+    "url": "entities/Philip H. S. Torr.html",
+    "path": "entities/Philip H. S. Torr.md",
+    "section": "entities",
+    "summary": "Philip H. S. Torr：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Philip Torr",
+    "url": "entities/Philip Torr.html",
+    "path": "entities/Philip Torr.md",
+    "section": "entities",
+    "summary": "Philip Torr：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Physical Adversarial Patch Evaluation for Segmentation",
+    "url": "concepts/Physical Adversarial Patch Evaluation for Segmentation.html",
+    "path": "concepts/Physical Adversarial Patch Evaluation for Segmentation.md",
+    "section": "concepts",
+    "summary": "Physical Adversarial Patch Evaluation for Segmentation：语义分割鲁棒性语料中的概念卡。"
+  },
+  {
+    "title": "Prior-informed Robust Adversarial Training (PIR-AT)",
+    "url": "concepts/Prior-informed Robust Adversarial Training (PIR-AT).html",
+    "path": "concepts/Prior-informed Robust Adversarial Training (PIR-AT).md",
+    "section": "concepts",
+    "summary": "PIR-AT：把 robust ImageNet initialization 引入 segmentation adversarial training 的 recipe；核心收益来自更好的鲁棒起点，而不是新的训练损失。"
+  },
+  {
+    "title": "Probabilistic Inference-Time Control for LLMs",
+    "url": "synthesis/Probabilistic Inference-Time Control for LLMs.html",
+    "path": "synthesis/Probabilistic Inference-Time Control for LLMs.md",
+    "section": "synthesis",
+    "summary": "该主题整合“后验采样、复杂度路由、双过程策略”三类方法，强调在推理阶段动态控制计算与不确定性。"
+  },
+  {
+    "title": "Process Supervision and CoT Internalization",
+    "url": "synthesis/Process Supervision and CoT Internalization.html",
+    "path": "synthesis/Process Supervision and CoT Internalization.md",
+    "section": "synthesis",
+    "summary": "该主题关注“显式过程监督如何迁移为隐式推理能力”，强调稳定训练策略与过程反馈信号的协同作用。"
+  },
+  {
+    "title": "Process-Supervised Step Verification",
+    "url": "concepts/Process-Supervised Step Verification.html",
+    "path": "concepts/Process-Supervised Step Verification.md",
+    "section": "concepts",
+    "summary": "对推理过程的中间步骤进行细粒度监督与反馈，提升复杂题目的可控性和正确率。"
+  },
+  {
+    "title": "Projects 索引",
+    "url": "projects/index.html",
+    "path": "projects/index.md",
+    "section": "projects",
+    "summary": "面向可执行目标的专题项目入口页。"
+  },
+  {
+    "title": "Prompt-Robust Representation Probing",
+    "url": "concepts/Prompt-Robust Representation Probing.html",
+    "path": "concepts/Prompt-Robust Representation Probing.md",
+    "section": "concepts",
+    "summary": "通过多提示模板一致性检验，验证探针解码结果不依赖单一 prompt 偶然性。"
+  },
+  {
+    "title": "Proximal L0 Feature Sparsification",
+    "url": "concepts/Proximal L0 Feature Sparsification.html",
+    "path": "concepts/Proximal L0 Feature Sparsification.md",
+    "section": "concepts",
+    "summary": "以近端算子视角实现 L0 特征稀疏化，为后处理鲁棒增强提供可解释优化基础。"
+  },
+  {
+    "title": "Proximal Splitting Adversarial Attack for Semantic Segmentation",
+    "url": "references/Proximal Splitting Adversarial Attack for Semantic Segmentation.html",
+    "path": "references/Proximal Splitting Adversarial Attack for Semantic Segmentation.md",
+    "section": "references",
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
+  },
+  {
+    "title": "Proximal Splitting Optimization for Segmentation Attacks",
+    "url": "concepts/Proximal Splitting Optimization for Segmentation Attacks.html",
+    "path": "concepts/Proximal Splitting Optimization for Segmentation Attacks.md",
+    "section": "concepts",
+    "summary": "Proximal Splitting Optimization for Segmentation Attacks：语义分割鲁棒性语料中的概念卡。"
+  },
+  {
+    "title": "Proxy Index mIoU Optimization",
+    "url": "concepts/Proxy Index mIoU Optimization.html",
+    "path": "concepts/Proxy Index mIoU Optimization.md",
+    "section": "concepts",
+    "summary": "在 decision-based 分割攻击中，以 mIoU 作为代理指标可提供稳定反馈，优于仅用像素准确率的局部目标。"
+  },
+  {
+    "title": "PSPNet",
+    "url": "entities/PSPNet.html",
+    "path": "entities/PSPNet.md",
+    "section": "entities",
+    "summary": "PSPNet 是多尺度上下文聚合分割模型，在 DLA 中出现了最显著的 mIoU 下降案例之一。"
+  },
+  {
+    "title": "Qingfeng Lan",
+    "url": "entities/Qingfeng Lan.html",
+    "path": "entities/Qingfeng Lan.md",
+    "section": "entities",
+    "summary": "Qingfeng Lan 在该 wiki 主要关联持续学习中的可塑性保持研究。"
+  },
+  {
+    "title": "Quantity-Aware Emission Control in CIF",
+    "url": "concepts/Quantity-Aware Emission Control in CIF.html",
+    "path": "concepts/Quantity-Aware Emission Control in CIF.md",
+    "section": "concepts",
+    "summary": "CIF 的数量感知发射控制通过缩放、数量损失与尾部处理三策略约束发射数量，稳定单调对齐训练与推理。"
+  },
+  {
+    "title": "Query-Efficient Attack Evaluation",
+    "url": "concepts/Query-Efficient Attack Evaluation.html",
+    "path": "concepts/Query-Efficient Attack Evaluation.md",
+    "section": "concepts",
+    "summary": "用固定查询预算比较攻击后 mIoU，可评估分割模型在现实黑盒条件下的鲁棒性与被攻破速度，并区分反馈接口与搜索空间设计的影响。"
+  },
+  {
+    "title": "Randomized Smoothing Certification for Segmentation",
+    "url": "concepts/Randomized Smoothing Certification for Segmentation.html",
+    "path": "concepts/Randomized Smoothing Certification for Segmentation.md",
+    "section": "concepts",
+    "summary": "Randomized Smoothing Certification for Segmentation：语义分割鲁棒性语料中的概念卡。"
+  },
+  {
+    "title": "Redundant Teacher-Student Robustness in Segmentation",
+    "url": "concepts/Redundant Teacher-Student Robustness in Segmentation.html",
+    "path": "concepts/Redundant Teacher-Student Robustness in Segmentation.md",
+    "section": "concepts",
+    "summary": "Redundant Teacher-Student Robustness in Segmentation：语义分割鲁棒性语料中的概念卡。"
+  },
+  {
+    "title": "References 索引",
+    "url": "references/index.html",
+    "path": "references/index.md",
+    "section": "references",
+    "summary": "单篇论文摘要与可复用阅读结论页面入口索引。"
+  },
+  {
+    "title": "Region-and-Prototype Prioritized PGD (RP-PGD)",
+    "url": "concepts/Region-and-Prototype Prioritized PGD (RP-PGD).html",
+    "path": "concepts/Region-and-Prototype Prioritized PGD (RP-PGD).md",
+    "section": "concepts",
+    "summary": "Region-and-Prototype Prioritized PGD (RP-PGD)：语义分割鲁棒性语料中的概念卡。"
+  },
+  {
+    "title": "Relaxed Reachability Verification for Segmentation",
+    "url": "concepts/Relaxed Reachability Verification for Segmentation.html",
+    "path": "concepts/Relaxed Reachability Verification for Segmentation.md",
+    "section": "concepts",
+    "summary": "Relaxed Reachability Verification for Segmentation：语义分割鲁棒性语料中的概念卡。"
+  },
+  {
+    "title": "Reliability and Benchmarking for Robust Segmentation",
+    "url": "synthesis/Reliability and Benchmarking for Robust Segmentation.html",
+    "path": "synthesis/Reliability and Benchmarking for Robust Segmentation.md",
+    "section": "synthesis",
+    "summary": "跨论文总结：鲁棒语义分割的可靠评测不仅要看攻击强度和指标口径，还要先确认评测协议足够强；否则训练结论本身就不可信。"
+  },
+  {
+    "title": "Reliability in Semantic Segmentation: Are We on the Right Track?",
+    "url": "references/Reliability in Semantic Segmentation - Are We on the Right Track.html",
+    "path": "references/Reliability in Semantic Segmentation - Are We on the Right Track.md",
+    "section": "references",
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
+  },
+  {
+    "title": "Removal Smoothing for CoT Internalization",
+    "url": "concepts/Removal Smoothing for CoT Internalization.html",
+    "path": "concepts/Removal Smoothing for CoT Internalization.md",
+    "section": "concepts",
+    "summary": "在逐步移除 CoT token 的训练中引入随机平滑偏移，缓解目标分布突变导致的优化不稳定。"
+  },
+  {
+    "title": "Representation Capacity and Effective Rank",
+    "url": "synthesis/Representation Capacity and Effective Rank.html",
+    "path": "synthesis/Representation Capacity and Effective Rank.md",
+    "section": "synthesis",
+    "summary": "该主题从有效秩、特征多样性、线性可解码结构等视角审视模型表示容量，强调表示退化往往先于性能退化显现。"
+  },
+  {
+    "title": "Research-Paper-Notes",
+    "url": "papers_sources/Research-Paper-Notes/README.html",
+    "path": "papers_sources/Research-Paper-Notes/README.md",
+    "section": "papers_sources",
+    "summary": "Research Paper Notes A collection of notes and annotations for various research papers. 1.GPT ST Generative Pre Training of Spatio Temporal Graph Neural Networks 2.Language Models…"
+  },
+  {
+    "title": "Research-Paper-Notes Index",
+    "url": "papers_sources/Research-Paper-Notes/index.html",
+    "path": "papers_sources/Research-Paper-Notes",
+    "section": "papers_sources",
+    "summary": "Directory index for papers_sources/Research-Paper-Notes."
+  },
+  {
+    "title": "Research-Paper-Notes 导入索引",
+    "url": "notes/Research-Paper-Notes 导入索引.html",
+    "path": "notes/Research-Paper-Notes 导入索引.md",
+    "section": "notes",
+    "summary": "来自 Research-Paper-Notes 目录的导入索引页，汇总已生成的论文阅读笔记入口。"
+  },
+  {
+    "title": "Richard S. Sutton",
+    "url": "entities/Richard S. Sutton.html",
+    "path": "entities/Richard S. Sutton.md",
+    "section": "entities",
+    "summary": "Richard S. Sutton 参与持续学习可塑性研究，相关工作强调持续注入可学习能力的重要性。"
+  },
+  {
+    "title": "Robin Hutmacher",
+    "url": "entities/Robin Hutmacher.html",
+    "path": "entities/Robin Hutmacher.md",
+    "section": "entities",
+    "summary": "Robin Hutmacher：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Robust Medical Image Segmentation under Adversarial Shift",
+    "url": "concepts/Robust Medical Image Segmentation under Adversarial Shift.html",
+    "path": "concepts/Robust Medical Image Segmentation under Adversarial Shift.md",
+    "section": "concepts",
+    "summary": "Robust Medical Image Segmentation under Adversarial Shift：语义分割鲁棒性语料中的概念卡。"
+  },
+  {
+    "title": "Robust Representation and Adversarial Dynamics",
+    "url": "synthesis/Robust Representation and Adversarial Dynamics.html",
+    "path": "synthesis/Robust Representation and Adversarial Dynamics.md",
+    "section": "synthesis",
+    "summary": "该主题从攻击、评测与后处理防御三侧讨论“表示是否稳健”，强调任务语义与特征几何共同决定鲁棒性。"
+  },
+  {
+    "title": "Robust Training Strategies for Semantic Segmentation",
+    "url": "synthesis/Robust Training Strategies for Semantic Segmentation.html",
+    "path": "synthesis/Robust Training Strategies for Semantic Segmentation.md",
+    "section": "synthesis",
+    "summary": "跨论文总结：鲁棒语义分割训练不只是加大 attack budget，更关键的是把 initialization 当成一等变量，并在强评测协议下比较真实收益。"
+  },
+  {
+    "title": "RobustBench",
+    "url": "entities/RobustBench.html",
+    "path": "entities/RobustBench.md",
+    "section": "entities",
+    "summary": "RobustBench 是该 wiki 对抗鲁棒性主题的核心评测基准来源，用于模型横向比较与 SOTA 跟踪。"
+  },
+  {
+    "title": "Robustness Verification of Semantic Segmentation Neural Networks using Relaxed Reachability",
+    "url": "references/Robustness Verification of Semantic Segmentation Neural Networks using Relaxed Reachability.html",
+    "path": "references/Robustness Verification of Semantic Segmentation Neural Networks using Relaxed Reachability.md",
+    "section": "references",
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
+  },
+  {
+    "title": "Robustness-Generalization Decoupling in Dense Prediction",
+    "url": "concepts/Robustness-Generalization Decoupling in Dense Prediction.html",
+    "path": "concepts/Robustness-Generalization Decoupling in Dense Prediction.md",
+    "section": "concepts",
+    "summary": "Robustness-Generalization Decoupling in Dense Prediction：语义分割鲁棒性语料中的概念卡。"
+  },
+  {
+    "title": "RP-PGD: Enhancing Semantic Segmentation Robustness via Region-based Prioritized PGD",
+    "url": "references/RP-PGD - Enhancing Semantic Segmentation Robustness via Region-based Prioritized PGD.html",
+    "path": "references/RP-PGD - Enhancing Semantic Segmentation Robustness via Region-based Prioritized PGD.md",
+    "section": "references",
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
+  },
+  {
+    "title": "Saasha Nair",
+    "url": "entities/Saasha Nair.html",
+    "path": "entities/Saasha Nair.md",
+    "section": "entities",
+    "summary": "Saasha Nair：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Sajjad Amini",
+    "url": "entities/Sajjad Amini.html",
+    "path": "entities/Sajjad Amini.md",
+    "section": "entities",
+    "summary": "Sajjad Amini 在该 wiki 中与 MeanSparse 后处理鲁棒增强方法相关。"
+  },
+  {
+    "title": "Scalable Certified Segmentation via Randomized Smoothing",
+    "url": "references/Scalable Certified Segmentation via Randomized Smoothing.html",
+    "path": "references/Scalable Certified Segmentation via Randomized Smoothing.md",
+    "section": "references",
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
+  },
+  {
+    "title": "Search-Based Deliberate Reasoning Landscape",
+    "url": "synthesis/Search-Based Deliberate Reasoning Landscape.html",
+    "path": "synthesis/Search-Based Deliberate Reasoning Landscape.md",
+    "section": "synthesis",
+    "summary": "该主题聚焦“显式搜索结构 + 过程评估反馈”的深度推理路径，比较树/图/MCTS 三类展开机制的计算与效果权衡。"
+  },
+  {
+    "title": "SegFormer",
+    "url": "entities/SegFormer.html",
+    "path": "entities/SegFormer.md",
+    "section": "entities",
+    "summary": "在 DLA 对比中，SegFormer 是相对更难攻击的分割模型之一，体现了较强的黑盒鲁棒性表现。"
+  },
+  {
+    "title": "Segmentation Adversarial Attack Methods 2019-2026",
+    "url": "synthesis/Segmentation Adversarial Attack Methods 2019-2026.html",
+    "path": "synthesis/Segmentation Adversarial Attack Methods 2019-2026.md",
+    "section": "synthesis",
+    "summary": "Segmentation Adversarial Attack Methods 2019-2026：语义分割鲁棒性语料中的主题综合页。"
+  },
+  {
+    "title": "Segmentation Ensemble Attack (SEA) Protocol",
+    "url": "concepts/Standardized Evaluation Attack (SEA) Protocol.html",
+    "path": "concepts/Standardized Evaluation Attack (SEA) Protocol.md",
+    "section": "concepts",
+    "summary": "SEA：面向语义分割鲁棒评测的白盒集成协议；它用三种互补损失配合 red-epsilon APGD 逼近更可靠的最坏情况，其中 red-epsilon 是优化技巧，不等于 SEA 本身。"
+  },
+  {
+    "title": "Segmentation Reliability Audit Protocol",
+    "url": "concepts/Segmentation Reliability Audit Protocol.html",
+    "path": "concepts/Segmentation Reliability Audit Protocol.md",
+    "section": "concepts",
+    "summary": "Segmentation Reliability Audit Protocol：语义分割鲁棒性语料中的概念卡。"
+  },
+  {
+    "title": "Segmentation Robustness Batch Ingest Plan 2026-04-10",
+    "url": "journal/Segmentation Robustness Batch Ingest Plan 2026-04-10.html",
+    "path": "journal/Segmentation Robustness Batch Ingest Plan 2026-04-10.md",
+    "section": "journal",
+    "summary": "28 篇语义分割鲁棒性论文分批 ingest 的计划与执行记录。"
+  },
+  {
+    "title": "Segmentation Robustness Batch Reading Matrix 2019-2026",
+    "url": "synthesis/Segmentation Robustness Batch Reading Matrix 2019-2026.html",
+    "path": "synthesis/Segmentation Robustness Batch Reading Matrix 2019-2026.md",
+    "section": "synthesis",
+    "summary": "Segmentation Robustness Batch Reading Matrix 2019-2026：语义分割鲁棒性语料中的主题综合页。"
+  },
+  {
+    "title": "Segmentation Robustness Benchmark Protocol",
+    "url": "concepts/Segmentation Robustness Benchmark Protocol.html",
+    "path": "concepts/Segmentation Robustness Benchmark Protocol.md",
+    "section": "concepts",
+    "summary": "Segmentation Robustness Benchmark Protocol：语义分割鲁棒性语料中的概念卡。"
+  },
+  {
+    "title": "SegPGD",
+    "url": "concepts/SegPGD.html",
+    "path": "concepts/SegPGD.md",
+    "section": "concepts",
+    "summary": "SegPGD 是面向语义分割的高效 PGD 变体，通过动态重加权正确与错误像素损失，在相同步数下生成更强攻击并支撑更强对抗训练。"
+  },
+  {
+    "title": "SegPGD-AT for Robust Segmentation",
+    "url": "concepts/SegPGD-AT for Robust Segmentation.html",
+    "path": "concepts/SegPGD-AT for Robust Segmentation.md",
+    "section": "concepts",
+    "summary": "SegPGD-AT for Robust Segmentation：语义分割鲁棒性语料中的概念卡。"
+  },
+  {
+    "title": "SegPGD: An Effective and Efficient Adversarial Attack for Segmentation",
+    "url": "references/SegPGD - An Effective and Efficient Adversarial Attack for Segmentation.html",
+    "path": "references/SegPGD - An Effective and Efficient Adversarial Attack for Segmentation.md",
+    "section": "references",
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
+  },
+  {
+    "title": "Selective Neuron Reinitialization",
+    "url": "concepts/Selective Neuron Reinitialization.html",
+    "path": "concepts/Selective Neuron Reinitialization.md",
+    "section": "concepts",
+    "summary": "选择性神经元重初始化通过替换低效隐藏单元并保护新单元成熟期，持续注入学习能力以减缓可塑性衰退。"
+  },
+  {
+    "title": "Semantic Segmentation",
+    "url": "concepts/Semantic Segmentation.html",
+    "path": "concepts/Semantic Segmentation.md",
+    "section": "concepts",
+    "summary": "语义分割将每个像素映射到语义类别，是场景理解中的密集预测基础任务，主评估指标通常是 mIoU。"
+  },
+  {
+    "title": "Semantic Segmentation Robustness Corpus 2019-2026",
+    "url": "synthesis/Semantic Segmentation Robustness Corpus 2019-2026.html",
+    "path": "synthesis/Semantic Segmentation Robustness Corpus 2019-2026.md",
+    "section": "synthesis",
+    "summary": "汇总 2019-2026 年语义分割鲁棒性 28 篇论文资源，形成攻击、训练、认证与评测四条主线。"
+  },
+  {
+    "title": "Semantic Segmentation Robustness Corpus Update 2026-04-09",
+    "url": "journal/Semantic Segmentation Robustness Corpus Update 2026-04-09.html",
+    "path": "journal/Semantic Segmentation Robustness Corpus Update 2026-04-09.md",
+    "section": "journal",
+    "summary": "记录语义分割鲁棒性论文包（28 篇）下载完成后的 wiki 同步动作与后续阅读优先级。"
+  },
+  {
+    "title": "Semantically Stealthy Segmentation Attack",
+    "url": "concepts/Semantically Stealthy Segmentation Attack.html",
+    "path": "concepts/Semantically Stealthy Segmentation Attack.md",
+    "section": "concepts",
+    "summary": "Semantically Stealthy Segmentation Attack：语义分割鲁棒性语料中的概念卡。"
+  },
+  {
+    "title": "SemSegBench and DetecBench: Benchmarking Reliability and Generalization Beyond Classification",
+    "url": "references/SemSegBench and DetecBench - Benchmarking Reliability and Generalization Beyond Classification.html",
+    "path": "references/SemSegBench and DetecBench - Benchmarking Reliability and Generalization Beyond Classification.md",
+    "section": "references",
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
+  },
+  {
+    "title": "SemSegBench Robustness Benchmarking",
+    "url": "concepts/SemSegBench Robustness Benchmarking.html",
+    "path": "concepts/SemSegBench Robustness Benchmarking.md",
+    "section": "concepts",
+    "summary": "SemSegBench Robustness Benchmarking：语义分割鲁棒性语料中的概念卡。"
+  },
+  {
+    "title": "Shibhansh Dohare",
+    "url": "entities/Shibhansh Dohare.html",
+    "path": "entities/Shibhansh Dohare.md",
+    "section": "entities",
+    "summary": "Shibhansh Dohare 在该 wiki 中与持续学习可塑性丧失及 Continual Backpropagation 研究相关。"
+  },
+  {
+    "title": "Shiqing Ma",
+    "url": "entities/Shiqing Ma.html",
+    "path": "entities/Shiqing Ma.md",
+    "section": "entities",
+    "summary": "Shiqing Ma 参与 MeanSparse 工作，相关研究聚焦模型安全与对抗鲁棒优化。"
+  },
+  {
+    "title": "Shunyu Yao",
+    "url": "entities/Shunyu Yao.html",
+    "path": "entities/Shunyu Yao.md",
+    "section": "entities",
+    "summary": "Shunyu Yao 在该 wiki 中与 Tree-of-Thoughts 推理搜索路线相关。"
+  },
+  {
+    "title": "SignSGD",
+    "url": "concepts/SignSGD.html",
+    "path": "concepts/SignSGD.md",
+    "section": "concepts",
+    "summary": "SignSGD 仅使用梯度符号更新参数，可显著压缩通信开销，并通过 majority vote 形成分布式鲁棒聚合。"
+  },
+  {
+    "title": "SimBA (Simple Black-box Attack)",
+    "url": "concepts/SimBA (Simple Black-box Attack).html",
+    "path": "concepts/SimBA (Simple Black-box Attack).md",
+    "section": "concepts",
+    "summary": "SimBA 通过逐方向随机试探并保留有利更新，在无需梯度的黑盒设置下实现高查询效率攻击。"
+  },
+  {
+    "title": "Soft Monotonic Alignment for Sequence Transduction",
+    "url": "concepts/Soft Monotonic Alignment for Sequence Transduction.html",
+    "path": "concepts/Soft Monotonic Alignment for Sequence Transduction.md",
+    "section": "concepts",
+    "summary": "在保留单调对齐假设的前提下引入可微分软边界，提升序列转导中的对齐稳定性与可训练性。"
+  },
+  {
+    "title": "Spatio-Temporal Pretraining for Language Models",
+    "url": "concepts/Spatio-Temporal Pretraining for Language Models.html",
+    "path": "concepts/Spatio-Temporal Pretraining for Language Models.md",
+    "section": "concepts",
+    "summary": "时空预训练通过结构化目标让语言模型更稳定地学习空间与时间关系，并提升相关下游任务迁移能力。"
+  },
+  {
+    "title": "Spatio-Temporal Representation in Language Models",
+    "url": "synthesis/Spatio-Temporal Representation in Language Models.html",
+    "path": "synthesis/Spatio-Temporal Representation in Language Models.md",
+    "section": "synthesis",
+    "summary": "时空主题下形成“预训练增强 + 表征探针验证”两条互补证据链，分别回答如何学到时空结构与是否真的学到时空结构。"
+  },
+  {
+    "title": "Square Attack",
+    "url": "concepts/Square Attack.html",
+    "path": "concepts/Square Attack.md",
+    "section": "concepts",
+    "summary": "Square Attack 通过局部方块随机搜索更新，在 L2/Linf 约束下实现高效的分数型黑盒攻击。"
+  },
+  {
+    "title": "Stanley Bak",
+    "url": "entities/Stanley Bak.html",
+    "path": "entities/Stanley Bak.md",
+    "section": "entities",
+    "summary": "Stanley Bak：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Structured Reasoning Methods for LLMs",
+    "url": "synthesis/Structured Reasoning Methods for LLMs.html",
+    "path": "synthesis/Structured Reasoning Methods for LLMs.md",
+    "section": "synthesis",
+    "summary": "结构化推理方法正从线性 CoT 走向搜索、图结构与过程监督，核心趋势是以可控计算开销换取更稳定的复杂推理质量。"
+  },
+  {
+    "title": "Structured Spatio-Temporal Representation Learning",
+    "url": "synthesis/Structured Spatio-Temporal Representation Learning.html",
+    "path": "synthesis/Structured Spatio-Temporal Representation Learning.md",
+    "section": "synthesis",
+    "summary": "时空表示学习可分为“结构化学习机制”和“可解码性验证机制”两条线，前者提升迁移，后者验证内部表征真实性。"
+  },
+  {
+    "title": "Stuart Shieber",
+    "url": "entities/Stuart Shieber.html",
+    "path": "entities/Stuart Shieber.md",
+    "section": "entities",
+    "summary": "Stuart Shieber 在该 wiki 中主要关联隐式 CoT 内化与推理训练方法研究。"
+  },
+  {
+    "title": "Success-Rate Based Complexity Labeling",
+    "url": "concepts/Success-Rate Based Complexity Labeling.html",
+    "path": "concepts/Success-Rate Based Complexity Labeling.md",
+    "section": "concepts",
+    "summary": "通过多模型多次采样成功率定义任务复杂度标签，降低单次评测噪声对路由学习的影响。"
+  },
+  {
+    "title": "Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models",
+    "url": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.html",
+    "path": "notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+    "section": "notes",
+    "summary": "﻿# Synergy-of-Thoughts: Eliciting Efficient Reasoning in Hybrid Language Models"
+  },
+  {
+    "title": "Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models",
+    "url": "references/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.html",
+    "path": "references/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md",
+    "section": "references",
+    "summary": "SoT 通过默认直觉与按需反思协同，把推理由常开高成本模式转为可调度模式并改善性能-成本平衡。"
+  },
+  {
+    "title": "Synthesis 索引",
+    "url": "synthesis/index.html",
+    "path": "synthesis/index.md",
+    "section": "synthesis",
+    "summary": "跨论文对比、综合与主题结论页面索引。"
+  },
+  {
+    "title": "Task Complexity-Aware Inference Budgeting",
+    "url": "concepts/Task Complexity-Aware Inference Budgeting.html",
+    "path": "concepts/Task Complexity-Aware Inference Budgeting.md",
+    "section": "concepts",
+    "summary": "根据样本难度动态分配推理计算预算，以降低平均计算成本并保持关键样本性能。"
+  },
+  {
+    "title": "Taylor T. Johnson",
+    "url": "entities/Taylor T. Johnson.html",
+    "path": "entities/Taylor T. Johnson.md",
+    "section": "entities",
+    "summary": "Taylor T. Johnson：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Templates Index",
+    "url": "Templates/index.html",
+    "path": "Templates",
+    "section": "Templates",
+    "summary": "Directory index for Templates."
+  },
+  {
+    "title": "Temporal Structure Learning in Sequence Models",
+    "url": "synthesis/Temporal Structure Learning in Sequence Models.html",
+    "path": "synthesis/Temporal Structure Learning in Sequence Models.md",
+    "section": "synthesis",
+    "summary": "该主题整合“软对齐、结构感知预训练、时空探针”三条路线，关注时间结构在不同模型范式中的可学习与可解释性。"
+  },
+  {
+    "title": "The Attack Generator: A Systematic Approach Towards Constructing Adversarial Attacks",
+    "url": "references/The Attack Generator - A Systematic Approach Towards Constructing Adversarial Attacks.html",
+    "path": "references/The Attack Generator - A Systematic Approach Towards Constructing Adversarial Attacks.md",
+    "section": "references",
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
+  },
+  {
+    "title": "Thought Structure Taxonomy",
+    "url": "concepts/Thought Structure Taxonomy.html",
+    "path": "concepts/Thought Structure Taxonomy.md",
+    "section": "concepts",
+    "summary": "对 Chain/Tree/Graph 三类思维结构进行统一定义与比较，降低不同推理方法的术语歧义。"
+  },
+  {
+    "title": "Tim Fingscheidt",
+    "url": "entities/Tim Fingscheidt.html",
+    "path": "entities/Tim Fingscheidt.md",
+    "section": "entities",
+    "summary": "Tim Fingscheidt：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models",
+    "url": "notes/Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models.html",
+    "path": "notes/Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models.md",
+    "section": "notes",
+    "summary": "基于 AI 深读 workflow 重构的单篇阅读笔记，系统梳理 SEA 攻击协议、PIR-AT 训练策略、Claim-Evidence 对照与最小复现路径。"
+  },
+  {
+    "title": "Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models",
+    "url": "references/Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models.html",
+    "path": "references/Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models.md",
+    "section": "references",
+    "summary": "单篇摘要卡：这篇论文是一篇“先校准评测，再讨论训练”的双主线工作；SEA 负责把鲁棒评测拉回可信区间，PIR-AT 则用 robust initialization 降低训练成本。"
+  },
+  {
+    "title": "Towards Robust General Medical Image Segmentation",
+    "url": "references/Towards Robust General Medical Image Segmentation.html",
+    "path": "references/Towards Robust General Medical Image Segmentation.md",
+    "section": "references",
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
+  },
+  {
+    "title": "Towards Robust Semantic Segmentation against Patch-based Attack via Attention Refinement",
+    "url": "references/Towards Robust Semantic Segmentation against Patch-based Attack via Attention Refinement.html",
+    "path": "references/Towards Robust Semantic Segmentation against Patch-based Attack via Attention Refinement.md",
+    "section": "references",
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
+  },
+  {
+    "title": "Towards Semantically Stealthy Adversarial Attacks Against Segmentation Models",
+    "url": "references/Towards Semantically Stealthy Adversarial Attacks Against Segmentation Models.html",
+    "path": "references/Towards Semantically Stealthy Adversarial Attacks Against Segmentation Models.md",
+    "section": "references",
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
+  },
+  {
+    "title": "Tree of Thoughts Deliberate Problem Solving with Large Language Models",
+    "url": "notes/Tree of Thoughts Deliberate Problem Solving with Large Language Models.html",
+    "path": "notes/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md",
+    "section": "notes",
+    "summary": "﻿# Tree of Thoughts: Deliberate Problem Solving with Large Language Models"
+  },
+  {
+    "title": "Tree of Thoughts Deliberate Problem Solving with Large Language Models",
+    "url": "references/Tree of Thoughts Deliberate Problem Solving with Large Language Models.html",
+    "path": "references/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md",
+    "section": "references",
+    "summary": "ToT 通过思维分支、状态评估和回溯搜索显著提升复杂推理任务求解能力，是从 CoT 迈向搜索式推理的关键工作。"
+  },
+  {
+    "title": "Tree of Thoughts Reasoning",
+    "url": "concepts/Tree of Thoughts Reasoning.html",
+    "path": "concepts/Tree of Thoughts Reasoning.md",
+    "section": "concepts",
+    "summary": "Tree of Thoughts 通过思维分支、状态评估与搜索回溯提升复杂推理任务的解空间探索能力。"
+  },
+  {
+    "title": "Tri Dao",
+    "url": "entities/Tri Dao.html",
+    "path": "entities/Tri Dao.md",
+    "section": "entities",
+    "summary": "Tri Dao 参与 Hyena 等长上下文建模研究，工作关注高效序列运算与工程可扩展实现。"
+  },
+  {
+    "title": "Two-Stage Multimodal CoT Pipeline",
+    "url": "concepts/Two-Stage Multimodal CoT Pipeline.html",
+    "path": "concepts/Two-Stage Multimodal CoT Pipeline.md",
+    "section": "concepts",
+    "summary": "将多模态推理拆分为“生成中间推理线索 + 条件化答案生成”两阶段，以缓解幻觉并提升可解释性。"
+  },
+  {
+    "title": "Umair Rasheed",
+    "url": "entities/Umair Rasheed.html",
+    "path": "entities/Umair Rasheed.md",
+    "section": "entities",
+    "summary": "Umair Rasheed：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Uncertainty-based Adversarial Detection in Segmentation",
+    "url": "concepts/Uncertainty-based Adversarial Detection in Segmentation.html",
+    "path": "concepts/Uncertainty-based Adversarial Detection in Segmentation.md",
+    "section": "concepts",
+    "summary": "Uncertainty-based Adversarial Detection in Segmentation：语义分割鲁棒性语料中的概念卡。"
+  },
+  {
+    "title": "Uncertainty-Based Detection of Adversarial Attacks in Semantic Segmentation",
+    "url": "references/Uncertainty-Based Detection of Adversarial Attacks in Semantic Segmentation.html",
+    "path": "references/Uncertainty-Based Detection of Adversarial Attacks in Semantic Segmentation.md",
+    "section": "references",
+    "summary": "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
+  },
+  {
+    "title": "Vicuna",
+    "url": "entities/Vicuna.html",
+    "path": "entities/Vicuna.md",
+    "section": "entities",
+    "summary": "Vicuna 在该 wiki 中主要出现在对齐鲁棒评估语境，用于文本攻击有效性与防御强度分析。"
+  },
+  {
+    "title": "Vision Transformer (ViT)",
+    "url": "concepts/Vision Transformer (ViT).html",
+    "path": "concepts/Vision Transformer (ViT).md",
+    "section": "concepts",
+    "summary": "ViT 将图像切分为 patch token 并使用 Transformer 编码器进行全局建模，已从分类 backbone 演进为视觉基础模型核心路线。"
+  },
+  {
+    "title": "Volker Tresp",
+    "url": "entities/Volker Tresp.html",
+    "path": "entities/Volker Tresp.md",
+    "section": "entities",
+    "summary": "Volker Tresp：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Wenqiang Zhang",
+    "url": "entities/Wenqiang Zhang.html",
+    "path": "entities/Wenqiang Zhang.md",
+    "section": "entities",
+    "summary": "Wenqiang Zhang 是 DLA 论文作者之一，参与语义分割黑盒攻击与鲁棒性相关研究。"
+  },
+  {
+    "title": "Wes Gurnee",
+    "url": "entities/Wes Gurnee.html",
+    "path": "entities/Wes Gurnee.md",
+    "section": "entities",
+    "summary": "Wes Gurnee 在该 wiki 中与语言模型时空表征探针研究相关。"
+  },
+  {
+    "title": "Wiebke Gunther",
+    "url": "entities/Wiebke Gunther.html",
+    "path": "entities/Wiebke Gunther.md",
+    "section": "entities",
+    "summary": "Wiebke Gunther：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Wiki Append Update Playbook",
+    "url": "concepts/Wiki Append Update Playbook.html",
+    "path": "concepts/Wiki Append Update Playbook.md",
+    "section": "concepts",
+    "summary": "该流程页沉淀了论文仓库的手工 append 更新实践，覆盖来源筛选、页面蒸馏、交叉链接、manifest 对账与日志回写。"
+  },
+  {
+    "title": "Wiki Coverage Audit 2026-04-08",
+    "url": "journal/Wiki Coverage Audit 2026-04-08.html",
+    "path": "journal/Wiki Coverage Audit 2026-04-08.md",
+    "section": "journal",
+    "summary": "本页记录 2026-04-08 的全量缺口盘点结果，覆盖 notes 到 references 的映射完整性及 concepts/entities/synthesis 链接覆盖度。"
+  },
+  {
+    "title": "Wiki 日志",
+    "url": "log.html",
+    "path": "log.md",
+    "section": "root",
+    "summary": "记录 wiki 初始化、ingest 与维护操作的时间线。"
+  },
+  {
+    "title": "Wiki 首页",
+    "url": "index.html",
+    "path": "index.md",
+    "section": "root",
+    "summary": "论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 结果。"
+  },
+  {
+    "title": "Xiaodong Yang",
+    "url": "entities/Xiaodong Yang.html",
+    "path": "entities/Xiaodong Yang.md",
+    "section": "entities",
+    "summary": "Xiaodong Yang：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Xiaogang Xu",
+    "url": "entities/Xiaogang Xu.html",
+    "path": "entities/Xiaogang Xu.md",
+    "section": "entities",
+    "summary": "Xiaogang Xu：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Yao Yao",
+    "url": "entities/Yao Yao.html",
+    "path": "entities/Yao Yao.md",
+    "section": "entities",
+    "summary": "Yao Yao 在该 wiki 主要关联图结构推理与结构化思维搜索方法。"
+  },
+  {
+    "title": "Yaoteng Tan",
+    "url": "entities/Yaoteng Tan.html",
+    "path": "entities/Yaoteng Tan.md",
+    "section": "entities",
+    "summary": "Yaoteng Tan：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Yejin Choi",
+    "url": "entities/Yejin Choi.html",
+    "path": "entities/Yejin Choi.md",
+    "section": "entities",
+    "summary": "Yejin Choi 在该 wiki 主要关联 CoT 内化与推理训练方法研究。"
+  },
+  {
+    "title": "Yelong Shen",
+    "url": "entities/Yelong Shen.html",
+    "path": "entities/Yelong Shen.md",
+    "section": "entities",
+    "summary": "Yelong Shen 在该 wiki 主要关联 LoRA 与参数高效适配路径。"
+  },
+  {
+    "title": "Yi Zhu",
+    "url": "entities/Yi Zhu.html",
+    "path": "entities/Yi Zhu.md",
+    "section": "entities",
+    "summary": "Yi Zhu：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Yoshua Bengio",
+    "url": "entities/Yoshua Bengio.html",
+    "path": "entities/Yoshua Bengio.md",
+    "section": "entities",
+    "summary": "Yoshua Bengio 在该 wiki 中关联长序列建模与推理效率方向，覆盖 Hyena 与摊销推理相关工作。"
+  },
+  {
+    "title": "Yu Li",
+    "url": "entities/Yu Li.html",
+    "path": "entities/Yu Li.md",
+    "section": "entities",
+    "summary": "Yu Li 在该 wiki 中主要关联 Synergy-of-Thoughts 的混合推理与成本控制研究。"
+  },
+  {
+    "title": "Yu Shang",
+    "url": "entities/Yu Shang.html",
+    "path": "entities/Yu Shang.md",
+    "section": "entities",
+    "summary": "Yu Shang 在该 wiki 中主要关联 Synergy-of-Thoughts 的混合推理与预算感知编排研究。"
+  },
+  {
+    "title": "Yunhe Wang",
+    "url": "entities/Yunhe Wang.html",
+    "path": "entities/Yunhe Wang.md",
+    "section": "entities",
+    "summary": "Yunhe Wang 在该 wiki 中与 PanGu-pi 非线性补偿路线相关。"
+  },
+  {
+    "title": "Yuntian Deng",
+    "url": "entities/Yuntian Deng.html",
+    "path": "entities/Yuntian Deng.md",
+    "section": "entities",
+    "summary": "Yuntian Deng 在该 wiki 中主要关联显式 CoT 向隐式 CoT 的课程式内化研究。"
+  },
+  {
+    "title": "Yusen Zhang",
+    "url": "entities/Yusen Zhang.html",
+    "path": "entities/Yusen Zhang.md",
+    "section": "entities",
+    "summary": "Yusen Zhang 在该 wiki 中关联长上下文多智能体协作研究，代表页面是 Chain of Agents。"
+  },
+  {
+    "title": "Zhaoyu Chen",
+    "url": "entities/Zhaoyu Chen.html",
+    "path": "entities/Zhaoyu Chen.md",
+    "section": "entities",
+    "summary": "Zhaoyu Chen 是 DLA 论文作者之一，相关工作聚焦语义分割与对抗鲁棒性评估。"
+  },
+  {
+    "title": "Zhengyang Shan",
+    "url": "entities/Zhengyang Shan.html",
+    "path": "entities/Zhengyang Shan.md",
+    "section": "entities",
+    "summary": "Zhengyang Shan 是 DLA 论文作者之一，研究聚焦语义分割黑盒攻击与查询效率评估。"
+  },
+  {
+    "title": "Zhenhua Chen",
+    "url": "entities/Zhenhua Chen.html",
+    "path": "entities/Zhenhua Chen.md",
+    "section": "entities",
+    "summary": "Zhenhua Chen：语义分割鲁棒性语料中的实体卡。"
+  },
+  {
+    "title": "Zhonghang Li",
+    "url": "entities/Zhonghang Li.html",
+    "path": "entities/Zhonghang Li.md",
+    "section": "entities",
+    "summary": "Zhonghang Li 在该 wiki 中主要关联 GPT-ST 的时空图预训练与迁移增强研究。"
+  },
+  {
+    "title": "Zhuosheng Zhang",
+    "url": "entities/Zhuosheng Zhang.html",
+    "path": "entities/Zhuosheng Zhang.md",
+    "section": "entities",
+    "summary": "Zhuosheng Zhang 在该 wiki 主要关联多模态 CoT 推理路径。"
+  },
+  {
+    "title": "{{title}}",
+    "url": "Templates/AI论文阅读模板.html",
+    "path": "Templates/AI论文阅读模板.md",
+    "section": "Templates",
+    "summary": "{{title}} [!note] AI 深读工作流模板 这是给 AI 用的，不只是“记笔记”，而是把一篇 AI 论文拆成可审计、可复述、可复现的阅读流程 默认按 4 轮读：快读建模 方法深拆 实验审计 复现与迁移 每个关键判断尽量带证据位置：Sec / Fig / Tab / Eq / Appendix 明确区分三类内容：[Paper] 论文明确写了什么…"
+  },
+  {
+    "title": "{{title}}",
+    "url": "Templates/论文阅读模板.html",
+    "path": "Templates/论文阅读模板.md",
+    "section": "Templates",
+    "summary": "{{title}} [!note] 这个模板按你以前的读论文习惯来 不是审稿表，也不是强行拆成很多“贡献/局限/公平性”栏 主要按论文原本结构读：摘要、介绍、相关工作、方法、实验、结论 读到哪里写到哪里，不需要一开始就把所有栏位填满 不懂的术语、补充资料、自己的理解，可以直接插在对应位置 阅读日期：{{date:YYYY MM DD}} 阅读状态：待读 /…"
+  },
+  {
+    "title": "鬣(Liè)狗层次结构：迈向更大的卷积语言模型",
+    "url": "papers_sources/Research-Paper-Notes/Hyena.html",
+    "path": "papers_sources/Research-Paper-Notes/Hyena.md",
+    "section": "papers_sources",
+    "summary": "鬣(Liè)狗层次结构：迈向更大的卷积语言模型 摘要： Transformer的注意力模块对于序列长度有二次成本，限制了上下文的访问量。现有的基于低秩和稀疏近似的次二次方法需要与密集注意力层相结合才能匹配 Transformer，这表现了能力上的差距。 本文提出了Hyena，一个次二次的注意力替代模块，通过交错地使用隐式参数化的 长卷积 和 数据控制门控 …"
+  }
+]

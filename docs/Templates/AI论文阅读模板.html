@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}} | Research Paper Notes</title>
+  <meta name="description" content="{{title}} [!note] AI 深读工作流模板 这是给 AI 用的，不只是“记笔记”，而是把一篇 AI 论文拆成可审计、可复述、可复现的阅读流程 默认按 4 轮读：快读建模 方法深拆 实验审计 复现与迁移 每个关键判断尽量带证据位置：Sec / Fig / Tab / Eq / Appendix 明确区分三类内容：[Paper] 论文明确写了什么…">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../site.js"></script>
+</head>
+<body data-root-prefix="../" data-page-path="Templates/AI论文阅读模板.html">
+  <div class="site-shell">
+    <aside class="sidebar panel">
+      <a class="brand" href="../index.html">
+        <span class="brand-kicker">Research Wiki</span>
+        <h1>Research Paper Notes</h1>
+        <p>A browsable paper-reading vault published as a GitHub Pages site.</p>
+      </a>
+      <nav><h1 id="navigation">Navigation</h1>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../notes/index.html">Notes</a></li>
+<li><a href="../references/index.html">References</a></li>
+<li><a href="../concepts/index.html">Concepts</a></li>
+<li><a href="../entities/index.html">Entities</a></li>
+<li><a href="../synthesis/index.html">Synthesis</a></li>
+<li><a href="../journal/index.html">Journal</a></li>
+<li><a href="../projects/index.html">Projects</a></li>
+<li><a href="../log.html">Log</a></li>
+</ul></nav>
+      <p class="footer-note">Static export from the local Obsidian-style wiki. Markdown was pre-rendered for GitHub Pages.</p>
+    </aside>
+
+    <main class="main">
+      <header class="topbar panel">
+        <div>
+          <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
+          <h2>{{title}}</h2>
+          <p>{{title}} [!note] AI 深读工作流模板 这是给 AI 用的，不只是“记笔记”，而是把一篇 AI 论文拆成可审计、可复述、可复现的阅读流程 默认按 4 轮读：快读建模 方法深拆 实验审计 复现与迁移 每个关键判断尽量带证据位置：Sec / Fig / Tab / Eq / Appendix 明确区分三类内容：[Paper] 论文明确写了什么…</p>
+        </div>
+        <div class="topbar-actions">
+          <div class="search-box">
+            <input data-search-input type="search" placeholder="Search pages, concepts, entities...">
+            <div data-search-results class="search-results"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="breadcrumbs"><a href="../index.html">Home</a><span> / </span><a href="index.html">Templates</a><span> / </span><span>AI论文阅读模板</span></div>
+
+      <article class="article-wrap panel">
+        <div class="article-path">Templates/AI论文阅读模板.md</div>
+        <div class="markdown-body"><h1 id="title">{{title}}</h1>
+<blockquote>
+<p>[!note] AI 深读工作流模板
+- 这是给 AI 用的，不只是“记笔记”，而是把一篇 AI 论文拆成可审计、可复述、可复现的阅读流程
+- 默认按 4 轮读：<code>快读建模 -&gt; 方法深拆 -&gt; 实验审计 -&gt; 复现与迁移</code>
+- 每个关键判断尽量带证据位置：<code>Sec / Fig / Tab / Eq / Appendix</code>
+- 明确区分三类内容：<code>[Paper]</code> 论文明确写了什么，<code>[Inference]</code> 我根据证据推断了什么，<code>[Verify]</code> 还要确认什么
+- 不是所有栏位都必须填满，但 <code>1 / 2 / 4 / 5 / 7</code> 通常至少要有内容</p>
+</blockquote>
+<ul>
+<li>阅读日期：{{date:YYYY-MM-DD}}</li>
+<li>阅读状态：待读 / 快读完成 / 深读完成 / 已整理</li>
+<li>阅读目的：复现 / 相关工作 / 找灵感 / 对比 baseline / 了解问题</li>
+<li>相关方向：</li>
+<li>当前阅读轮次：第 1 轮 / 第 2 轮 / 第 3 轮 / 第 4 轮</li>
+</ul>
+<hr />
+<h2 id="0-ai">0. AI 阅读工作流</h2>
+<h3 id="01">0.1 四轮流程</h3>
+<ul>
+<li>第 1 轮 <code>快读建模</code>：</li>
+<li>只读标题、摘要、引言、结论、主结果图表</li>
+<li>输出：这篇论文在解决什么、方法大概是什么、值不值得深读</li>
+<li>第 2 轮 <code>方法深拆</code>：</li>
+<li>读方法和预备知识</li>
+<li>输出：方法流程、模块分工、训练推理细节、关键公式</li>
+<li>第 3 轮 <code>实验审计</code>：</li>
+<li>读实验、消融、附录</li>
+<li>输出：作者核心 claim 是否真被证据支撑、实验是否公平、结果是否有水分</li>
+<li>第 4 轮 <code>复现与迁移</code>：</li>
+<li>站在做项目和写代码的角度反推</li>
+<li>输出：复现风险、最小实现路径、对我当前课题的可迁移点</li>
+</ul>
+<h3 id="02-ai">0.2 AI 填写规则</h3>
+<ul>
+<li>每个重要结论后尽量补证据位置：</li>
+<li>例如：<code>[Paper][Sec 4.2, Fig 3]</code></li>
+<li>作者没明说但你推出来的，一定写成：</li>
+<li><code>[Inference]</code></li>
+<li>还不确定、需要看附录/代码/别的论文确认的，一定写成：</li>
+<li><code>[Verify]</code></li>
+<li>不要只复述，要补三件事：</li>
+<li>这一步在干什么</li>
+<li>为什么作者非这么做不可</li>
+<li>如果删掉它，系统会坏在哪里</li>
+</ul>
+<h3 id="03">0.3 当前进度</h3>
+<ul>
+<li>[ ] 第 1 轮：快读建模</li>
+<li>[ ] 第 2 轮：方法深拆</li>
+<li>[ ] 第 3 轮：实验审计</li>
+<li>[ ] 第 4 轮：复现与迁移</li>
+</ul>
+<hr />
+<h2 id="1-1">1. 第 1 轮输出：快读建模</h2>
+<h3 id="11">1.1 论文信息</h3>
+<ul>
+<li>原标题：</li>
+<li>中文标题 / 我的译名：</li>
+<li>链接：</li>
+<li>Source：</li>
+<li>作者：</li>
+<li>单位：</li>
+<li>会议 / 期刊 / 年份：</li>
+<li>代码 / 项目页：</li>
+</ul>
+<h3 id="12">1.2 三句话看完</h3>
+<ul>
+<li>这篇论文主要解决什么问题：</li>
+<li>核心方法是什么：</li>
+<li>最值得记住的结果是什么：</li>
+</ul>
+<h3 id="13">1.3 快速判断</h3>
+<ul>
+<li>值不值得深读：值得 / 一般 / 可跳过</li>
+<li>为什么：</li>
+<li>和我当前课题 / 项目的关系：</li>
+</ul>
+<h3 id="14-claim">1.4 作者最强的 claim</h3>
+<ul>
+<li>Claim 1：</li>
+<li>Claim 2：</li>
+<li>Claim 3：</li>
+</ul>
+<h3 id="15">1.5 我此时的初步怀疑</h3>
+<ul>
+<li>怀疑点 1：</li>
+<li>怀疑点 2：</li>
+<li>怀疑点 3：</li>
+</ul>
+<hr />
+<h2 id="2">2. 问题建模</h2>
+<h3 id="21">2.1 背景与动机</h3>
+<ul>
+<li>背景：</li>
+<li>现有方法哪里不够：</li>
+<li>作者为什么要做这件事：</li>
+</ul>
+<h3 id="22">2.2 任务设定</h3>
+<ul>
+<li>输入：</li>
+<li>输出：</li>
+<li>任务目标：</li>
+<li>评价对象：</li>
+<li>默认假设 / 约束：</li>
+</ul>
+<h3 id="23">2.3 论文贡献</h3>
+<ul>
+<li>贡献 1：</li>
+<li>贡献 2：</li>
+<li>贡献 3：</li>
+</ul>
+<h3 id="24">2.4 难点</h3>
+<ul>
+<li>难点 1：</li>
+<li>难点 2：</li>
+<li>难点 3：</li>
+</ul>
+<h3 id="25">2.5 问题抽象</h3>
+<ul>
+<li>这篇论文本质上属于哪一类问题：</li>
+<li>它在旧框架里最接近什么：</li>
+<li>它到底是在改：</li>
+<li>任务定义 / 数据 / 模型结构 / 损失函数 / 训练策略 / 推理策略 / 评测协议 / 系统工程</li>
+</ul>
+<hr />
+<h2 id="3">3. 论文骨架图</h2>
+<blockquote>
+<p>这一节不是正文摘要，而是给 AI 建立“整篇 paper 的逻辑地图”。</p>
+</blockquote>
+<h3 id="31">3.1 章节主线</h3>
+<ul>
+<li>第 1 节在做什么：</li>
+<li>第 2 节在做什么：</li>
+<li>第 3 节在做什么：</li>
+<li>第 4 节在做什么：</li>
+<li>第 5 节在做什么：</li>
+</ul>
+<h3 id="32">3.2 主线关系</h3>
+<ul>
+<li>前置问题：</li>
+<li>核心方法：</li>
+<li>关键证据：</li>
+<li>最终结论：</li>
+</ul>
+<h3 id="33">3.3 如果把论文压缩成一张图</h3>
+<ul>
+<li>系统流程：
+  1.
+  2.
+  3.
+  4.
+  5.</li>
+</ul>
+<hr />
+<h2 id="4-2">4. 第 2 轮输出：方法深拆</h2>
+<h3 id="41">4.1 方法总览</h3>
+<ul>
+<li>方法名：</li>
+<li>一句话概括：</li>
+<li>总体流程：
+  1.
+  2.
+  3.
+  4.</li>
+</ul>
+<h3 id="42">4.2 核心模块卡片</h3>
+<blockquote>
+<p>每个模块都尽量回答：输入是什么、输出是什么、做了什么、为什么这样设计、删掉会怎样</p>
+</blockquote>
+<h4 id="1">模块 1</h4>
+<ul>
+<li>输入：</li>
+<li>输出：</li>
+<li>做了什么：</li>
+<li>为什么这样设计：</li>
+<li>解决了什么：</li>
+<li>如果删掉会怎样：</li>
+<li>关键图 / 公式 / 表格：</li>
+<li>证据位置：</li>
+<li>我的理解：</li>
+</ul>
+<h4 id="2_1">模块 2</h4>
+<ul>
+<li>输入：</li>
+<li>输出：</li>
+<li>做了什么：</li>
+<li>为什么这样设计：</li>
+<li>解决了什么：</li>
+<li>如果删掉会怎样：</li>
+<li>关键图 / 公式 / 表格：</li>
+<li>证据位置：</li>
+<li>我的理解：</li>
+</ul>
+<h4 id="3_1">模块 3</h4>
+<ul>
+<li>输入：</li>
+<li>输出：</li>
+<li>做了什么：</li>
+<li>为什么这样设计：</li>
+<li>解决了什么：</li>
+<li>如果删掉会怎样：</li>
+<li>关键图 / 公式 / 表格：</li>
+<li>证据位置：</li>
+<li>我的理解：</li>
+</ul>
+<h3 id="43">4.3 关键公式</h3>
+<ul>
+<li>公式 1：</li>
+<li>含义：</li>
+<li>每一项是什么意思：</li>
+<li>它在优化什么：</li>
+<li>公式 2：</li>
+<li>含义：</li>
+<li>每一项是什么意思：</li>
+<li>它在优化什么：</li>
+<li>公式 3：</li>
+<li>含义：</li>
+<li>每一项是什么意思：</li>
+<li>它在优化什么：</li>
+</ul>
+<h3 id="44">4.4 训练 / 推理 / 复杂度</h3>
+<ul>
+<li>训练目标 / 损失函数：</li>
+<li>训练流程：</li>
+<li>推理流程：</li>
+<li>关键超参数：</li>
+<li>时间复杂度：</li>
+<li>显存 / 参数 / 额外开销：</li>
+<li>[Inference] 最贵的部分在哪里：</li>
+</ul>
+<h3 id="45-vs">4.5 真正的创新点 vs 包装层</h3>
+<ul>
+<li>真创新 1：</li>
+<li>真创新 2：</li>
+<li>更像工程拼装的部分：</li>
+<li>如果我要复现，哪些部分可以先不做：</li>
+</ul>
+<hr />
+<h2 id="5-3">5. 第 3 轮输出：实验审计</h2>
+<h3 id="51">5.1 实验设置</h3>
+<ul>
+<li>数据集：</li>
+<li>baseline：</li>
+<li>评价指标：</li>
+<li>实现设置：</li>
+<li>是否开源代码 / 权重：</li>
+</ul>
+<h3 id="52">5.2 作者最核心的实验结论</h3>
+<ul>
+<li>结论 1：</li>
+<li>结论 2：</li>
+<li>结论 3：</li>
+</ul>
+<h3 id="53-claim-evidence">5.3 Claim -&gt; Evidence 对照</h3>
+<h4 id="claim-1">Claim 1</h4>
+<ul>
+<li>作者声称：</li>
+<li>对应证据：</li>
+<li>证据是否足够：</li>
+<li>我的判断：成立 / 基本成立 / 存疑</li>
+</ul>
+<h4 id="claim-2">Claim 2</h4>
+<ul>
+<li>作者声称：</li>
+<li>对应证据：</li>
+<li>证据是否足够：</li>
+<li>我的判断：成立 / 基本成立 / 存疑</li>
+</ul>
+<h4 id="claim-3">Claim 3</h4>
+<ul>
+<li>作者声称：</li>
+<li>对应证据：</li>
+<li>证据是否足够：</li>
+<li>我的判断：成立 / 基本成立 / 存疑</li>
+</ul>
+<h3 id="54">5.4 消融 / 分析实验</h3>
+<ul>
+<li>消融点 1：</li>
+<li>改了什么：</li>
+<li>结果如何：</li>
+<li>
+<p>说明了什么：</p>
+</li>
+<li>
+<p>消融点 2：</p>
+</li>
+<li>改了什么：</li>
+<li>结果如何：</li>
+<li>
+<p>说明了什么：</p>
+</li>
+<li>
+<p>消融点 3：</p>
+</li>
+<li>改了什么：</li>
+<li>结果如何：</li>
+<li>说明了什么：</li>
+</ul>
+<h3 id="55">5.5 实验公平性与可能水分</h3>
+<ul>
+<li>对比是否公平：</li>
+<li>baseline 是否选得合理：</li>
+<li>是否缺关键对照组：</li>
+<li>是否有“挑指标 / 挑数据 / 挑设定”嫌疑：</li>
+<li>最可能被高估的地方：</li>
+</ul>
+<h3 id="56">5.6 最关键的证据</h3>
+<ul>
+<li>最关键表格：</li>
+<li>最关键图：</li>
+<li>最关键数字：</li>
+<li>它为什么足以支撑作者结论：</li>
+</ul>
+<hr />
+<h2 id="6-4">6. 第 4 轮输出：复现与反推</h2>
+<h3 id="61">6.1 最小复现路径</h3>
+<ul>
+<li>如果只复现主结果，最低配置是什么：</li>
+<li>哪些模块必须实现：</li>
+<li>哪些模块可以先用近似替代：</li>
+<li>推荐先复现哪个实验：</li>
+</ul>
+<h3 id="62">6.2 复现风险</h3>
+<ul>
+<li>数据风险：</li>
+<li>代码风险：</li>
+<li>训练不稳定风险：</li>
+<li>隐藏实现细节：</li>
+<li>最危险的超参数：</li>
+</ul>
+<h3 id="63">6.3 反推作者没有明说但大概率成立的点</h3>
+<ul>
+<li>[Inference] 可能的默认实现：</li>
+<li>[Inference] 可能的工程技巧：</li>
+<li>[Inference] 为什么某个模块会有效：</li>
+<li>[Verify] 需要代码或附录确认的地方：</li>
+</ul>
+<h3 id="64">6.4 如果我要做一个简化版</h3>
+<ul>
+<li>我会保留：</li>
+<li>我会删掉：</li>
+<li>我会先验证：</li>
+<li>我预测最影响结果的是：</li>
+</ul>
+<hr />
+<h2 id="7">7. 我的理解</h2>
+<h3 id="71">7.1 直觉解释</h3>
+<ul>
+<li>用自己的话解释这篇方法：</li>
+<li>它本质上像在做什么：</li>
+</ul>
+<h3 id="72">7.2 和已有工作的关系</h3>
+<ul>
+<li>最接近哪些方法：</li>
+<li>真正的新意：</li>
+<li>哪些地方更像工程技巧而不是方法创新：</li>
+</ul>
+<h3 id="73">7.3 我认为最强的一点</h3>
+<ul>
+<li></li>
+</ul>
+<h3 id="74">7.4 我认为最可疑的一点</h3>
+<ul>
+<li></li>
+</ul>
+<h3 id="75">7.5 对我的启发</h3>
+<ul>
+<li>能直接借鉴的部分：</li>
+<li>不能直接照搬的部分：</li>
+<li>对我当前课题的启发：</li>
+<li>可以做的 baseline / ablation / 改进方向：</li>
+</ul>
+<h3 id="76">7.6 一句话总结</h3>
+<ul>
+<li></li>
+</ul>
+<hr />
+<h2 id="8">8. 术语 / 图表 / 公式索引</h2>
+<h3 id="81">8.1 术语澄清</h3>
+<ul>
+<li>术语 1：</li>
+<li>术语 2：</li>
+<li>术语 3：</li>
+</ul>
+<h3 id="82">8.2 图表 / 公式索引</h3>
+<ul>
+<li>最值得回看的图：</li>
+<li>最值得回看的表：</li>
+<li>最值得回看的公式：</li>
+<li>想贴进来的截图 / 摘录：</li>
+</ul>
+<h3 id="83">8.3 外部补充</h3>
+<ul>
+<li>相关概念：</li>
+<li>可对照的论文：</li>
+<li>还需要补的背景知识：</li>
+</ul>
+<hr />
+<h2 id="9">9. 待复现 / 待验证</h2>
+<ul>
+<li>[ ] 还没搞懂的问题：</li>
+<li>[ ] 想补看的相关论文：</li>
+<li>[ ] 想验证的实验 / 实现点：</li>
+<li>[ ] 需要特别注意的数据 / 代码细节：</li>
+<li>[ ] 下次回看时最重要的提醒：</li>
+</ul>
+<hr />
+<h2 id="10-wiki">10. Wiki 关联（可选）</h2>
+<ul>
+<li>Reference：</li>
+<li>Concepts：</li>
+<li>Entities：</li>
+<li>Synthesis：</li>
+</ul></div>
+      </article>
+    </main>
+
+    <aside class="rail panel">
+      <h3>Page Meta</h3>
+      <div class="meta-block">
+        <p class="meta-label">Section</p>
+        <p>Templates</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Tags</p>
+        <div class="chip-list"><span class="chip">note</span></div>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Summary</p>
+        <p>{{title}} [!note] AI 深读工作流模板 这是给 AI 用的，不只是“记笔记”，而是把一篇 AI 论文拆成可审计、可复述、可复现的阅读流程 默认按 4 轮读：快读建模 方法深拆 实验审计 复现与迁移 每个关键判断尽量带证据位置：Sec / Fig / Tab / Eq / Appendix 明确区分三类内容：[Paper] 论文明确写了什么…</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Source</p>
+        <ul>
+          <li><a href="https://github.com/qianzhouyi2/Research-Paper-Notes/blob/main/Templates/AI论文阅读模板.md">Open Markdown On GitHub</a></li>
+          <li><a href="../search-index.json">Open Search Index</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

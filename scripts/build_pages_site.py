@@ -24,6 +24,10 @@ DOCS = ROOT / "docs"
 REPO_BLOB_BASE = "https://github.com/qianzhouyi2/Research-Paper-Notes/blob/main/"
 
 FRONTMATTER_RE = re.compile(r"^---\n(.*?)\n---\n?", re.DOTALL)
+FRONTMATTER_PLACEHOLDER_RE = re.compile(
+    r"^(?P<prefix>\s*(?:-\s+|[^:\n][^:\n]*:\s*))(?P<value>\{\{[^{}\n]+\}\})(?P<suffix>\s*(?:#.*)?)$",
+    re.MULTILINE,
+)
 FIRST_HEADING_RE = re.compile(r"^#\s+(.+?)\s*$", re.MULTILINE)
 LINK_ATTR_RE = re.compile(r'(?P<attr>href|src)="(?P<url>[^"]+)"')
 
@@ -601,12 +605,38 @@ def normalize_path(value: str) -> str:
     return "" if normalized == "." else normalized.lstrip("/")
 
 
-def parse_frontmatter(text: str) -> Tuple[Dict, str]:
+def quote_frontmatter_placeholders(frontmatter: str) -> str:
+    def repl(match: re.Match[str]) -> str:
+        value = match.group("value").replace("\\", "\\\\").replace('"', '\\"')
+        return f'{match.group("prefix")}"{value}"{match.group("suffix")}'
+
+    return FRONTMATTER_PLACEHOLDER_RE.sub(repl, frontmatter)
+
+
+def describe_yaml_error(exc: yaml.YAMLError) -> str:
+    problem = getattr(exc, "problem", None) or str(exc)
+    mark = getattr(exc, "problem_mark", None)
+    if mark is not None:
+        return f"{problem} (line {mark.line + 1}, column {mark.column + 1})"
+    return problem
+
+
+def parse_frontmatter(text: str, source: Path | None = None) -> Tuple[Dict, str]:
     match = FRONTMATTER_RE.match(text)
     if not match:
         return {}, text
-    meta = yaml.safe_load(match.group(1)) or {}
+    raw_frontmatter = match.group(1)
     body = text[match.end():]
+    frontmatter = quote_frontmatter_placeholders(raw_frontmatter)
+    try:
+        meta = yaml.safe_load(frontmatter) or {}
+    except yaml.YAMLError as exc:
+        source_label = f" in {source}" if source else ""
+        print(
+            f"Warning: failed to parse frontmatter{source_label}: {describe_yaml_error(exc)}",
+            file=sys.stderr,
+        )
+        return {}, body
     return meta if isinstance(meta, dict) else {}, body
 
 
@@ -868,7 +898,7 @@ def build_pages() -> List[Dict[str, str]]:
         if md_rel in {"_Sidebar.md", "Home.md"}:
             continue
 
-        meta, body = parse_frontmatter(md_path.read_text(encoding="utf-8"))
+        meta, body = parse_frontmatter(md_path.read_text(encoding="utf-8"), md_path)
         page_rel = page_output_rel(md_rel)
         title = site_title(md_rel, meta, body)
         summary = str(meta.get("summary") or plain_text_excerpt(body))
