@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/Chain of Agents Large Language Models Collaborating on Long-Context Tasks.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: CoA 通过链式 worker 通信与 manager 汇总提升长上下文任务表现，并缓解检索失败与中间遗忘。
 provenance:
   extracted: 0.88

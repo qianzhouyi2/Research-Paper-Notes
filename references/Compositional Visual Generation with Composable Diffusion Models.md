@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/Compositional Visual Generation with Composable Diffusion Models.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: 该工作以可组合扩散模型提升复杂语义约束下的图像生成可控性，是结构化生成的重要路线。
 provenance:
   extracted: 0.85

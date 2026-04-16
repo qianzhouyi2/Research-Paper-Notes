@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/Beyond Chain-of-Thought, Effective Graph-of-Thought Reasoning in Language Models.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: GoT 通过把思维链升级为思维图，在文本与多模态推理任务中带来稳定性能提升。
 provenance:
   extracted: 0.9

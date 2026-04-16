@@ -13,26 +13,26 @@ created: 2026-04-09
 updated: 2026-04-10
 summary: 汇总 2019-2026 年语义分割鲁棒性 28 篇论文资源，形成攻击、训练、认证与评测四条主线。
 provenance:
-  extracted: 0.86
-  inferred: 0.11
-  ambiguous: 0.03
+  extracted: 0.67
+  inferred: 0.25
+  ambiguous: 0.08
 ---
 
 # Semantic Segmentation Robustness Corpus 2019-2026
 
 ## 概览
 
-- 语料规模：28 篇（2019-2026）。
-- 下载结果：28/28 成功。
-- 资源类型：22 篇 arXiv TeX 源码（`.tar`），6 篇 PDF 回退。
-- 本地入口：[[papers_sources/semantic_segmentation_robustness_20260409/download_report]]
+- 语料规模：28 篇（2019-2026）。^[extracted]
+- 下载结果：28/28 成功。^[extracted]
+- 资源类型：22 篇 arXiv TeX 源码（`.tar`），6 篇 PDF 回退。^[extracted]
+- 本地入口：[[papers_sources/semantic_segmentation_robustness_20260409/download_report]]。^[extracted]
 
 ## 主题分层
 
-- 攻击方法：query-limited black-box、patch attack、context-aware local attack、LiDAR segmentation attack。
-- 防御与训练：SegPGD-AT、divide-and-conquer adversarial training、attention refinement、painting-by-numbers、erosion attack training。
-- 可认证与验证：reachability verification、randomized smoothing、patch-certified defense。
-- 评测与基准：robustness benchmarking、reliability evaluation、SemSegBench/DetecBench。
+- 攻击方法：query-limited black-box、patch attack、context-aware local attack、LiDAR segmentation attack。^[extracted]
+- 防御与训练：SegPGD-AT、divide-and-conquer adversarial training、attention refinement、painting-by-numbers、erosion attack training。^[extracted]
+- 可认证与验证：reachability verification、randomized smoothing、patch-certified defense。^[extracted]
+- 评测与基准：robustness benchmarking、reliability evaluation、SemSegBench/DetecBench。^[extracted]
 
 ## 可复用结论
 

@@ -10,8 +10,10 @@ sources:
   - workspace/wiki-update-2026-04-10-cn-localization
   - workspace/wiki-update-2026-04-10-cn-placeholder-remediation
   - workspace/wiki-update-2026-04-10-references-cn-localization
+  - workspace/wiki-update-2026-04-16-towards-reliable-eval-sync
+  - workspace/wiki_lint_global_2026-04-16.json
 created: 2026-04-08
-updated: 2026-04-10
+updated: 2026-04-16
 summary: 记录 wiki 初始化、ingest 与维护操作的时间线。
 ---
 # Wiki 日志
@@ -75,3 +77,6 @@ summary: 记录 wiki 初始化、ingest 与维护操作的时间线。
 - [2026-04-10 13:12:00 +08:00] UPDATE source="workspace/wiki-update-2026-04-10-cn-placeholder-remediation" pages_updated=154 pages_created=0 mode=append notes="批量清理 concepts/entities/synthesis 内部页中的问号占位段，统一为中文正文并移除乱码尾块"
 - [2026-04-10 13:13:00 +08:00] LINT source="workspace/wiki_lint_global_2026-04-10_cnfix_final" issues_found=0 orphans=0 broken_links=0 missing_frontmatter=0 missing_summary=0 notes="全库关键知识层（concepts/entities/references/synthesis/journal/projects/notes/index/log）硬性检查全部通过"
 - [2026-04-10 13:40:00 +08:00] UPDATE source="workspace/wiki-update-2026-04-10-references-cn-localization" pages_updated=29 pages_created=0 mode=append notes="references 层完成中文化修复：28 张 segmentation 论文卡改为中文结构模板，并重建 references 索引为连续列表"
+- [2026-04-16 19:08:14 +08:00] UPDATE source="workspace/wiki-update-2026-04-16-towards-reliable-eval-sync" pages_updated=9 pages_created=2 mode=append notes="deepened the 'Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models' note/reference pair, upgraded SEA and PIR-AT concept cards, added Francesco Croce and Naman D. Singh entities, and synced synthesis/home/entities indexes plus manifest metadata"
+- [2026-04-16 19:23:07 +08:00] LINT source="workspace/wiki_lint_global_2026-04-16.json" issues_found=33 orphans=0 broken_links=0 stale=21 contradictions=0 prov_issues=11 missing_summary=0 notes="hard structural checks remain clean; soft issues are 21 stale reference cards, 11 provenance-drift pages, and 1 config mismatch in .env (vault path still points to D:/paper_reading/paper_reading)"
+- [2026-04-16 19:37:31 +08:00] LINT source="workspace/wiki_lint_global_2026-04-16.json" issues_found=0 orphans=0 broken_links=0 stale=0 contradictions=0 prov_issues=0 missing_summary=0 notes="fixed .env vault/sources paths, synced updated dates on 21 stale reference cards, aligned provenance markers and frontmatter on 11 drift pages, and cleared the targeted wiki-lint findings"

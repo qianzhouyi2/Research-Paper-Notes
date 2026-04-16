@@ -52,20 +52,20 @@
         <div class="article-path">concepts/SignSGD.md</div>
         <div class="markdown-body"><h1 id="signsgd">SignSGD</h1>
 <h2 id="_1">定义</h2>
-<p>SignSGD 是只使用梯度符号（而非幅值）更新参数的优化方法：</p>
+<p>SignSGD 是只使用梯度符号（而非幅值）更新参数的优化方法：^[extracted]</p>
 <p>[
 w_{t+1}=w_t-\eta \cdot sign(g_t), \quad g_t=\nabla_w L(w_t)
 ]</p>
 <h2 id="_2">直观理解</h2>
 <ul>
-<li>只保留“方向信息”（+/-），忽略精确梯度大小。</li>
+<li>只保留“方向信息”（+/-），忽略精确梯度大小。^[extracted]</li>
 <li>在分布式场景中可把通信从 32-bit/16-bit 梯度压缩到 1-bit 符号。^[inferred]</li>
 <li>常见实现会配合 momentum 以提升稳定性。^[inferred]</li>
 </ul>
 <h2 id="_3">联网补充</h2>
 <ul>
-<li>2018-10（arXiv:1810.05291）：SignSGD with Majority Vote 给出非凸情形收敛分析，并强调极低通信成本。</li>
-<li>同一工作指出 majority vote 聚合对部分 Byzantine worker 具有鲁棒性，这也是其在分布式训练中的关键价值。</li>
+<li>2018-10（arXiv:1810.05291）：SignSGD with Majority Vote 给出非凸情形收敛分析，并强调极低通信成本。^[extracted]</li>
+<li>同一工作指出 majority vote 聚合对部分 Byzantine worker 具有鲁棒性，这也是其在分布式训练中的关键价值。^[extracted]</li>
 </ul>
 <h2 id="_4">在黑盒攻击语境中的角色</h2>
 <ul>

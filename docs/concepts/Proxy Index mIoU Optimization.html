@@ -52,7 +52,7 @@
         <div class="article-path">concepts/Proxy Index mIoU Optimization.md</div>
         <div class="markdown-body"><h1 id="proxy-index-miou-optimization">Proxy Index mIoU Optimization</h1>
 <h2 id="_1">概念</h2>
-<p>在无法访问梯度和置信度时，用可观测指标驱动搜索。DLA 选择 mIoU 作为代理指标，每次只接受能进一步降低 mIoU 的扰动更新。</p>
+<p>在无法访问梯度和置信度时，用可观测指标驱动搜索。DLA 选择 mIoU 作为代理指标，每次只接受能进一步降低 mIoU 的扰动更新。^[extracted]</p>
 <h2 id="random-attack">Random Attack 作为最小基线</h2>
 <ul>
 <li>从干净图像出发，每轮随机采样一个小扰动，并把结果投影回 <code>\epsilon</code> 邻域。</li>
@@ -61,8 +61,8 @@
 </ul>
 <h2 id="miou">为什么是 mIoU</h2>
 <ul>
-<li>比 PAcc 更能反映分割的整体结构质量。</li>
-<li>与数据集评估口径一致，便于跨样本比较。</li>
+<li>比 PAcc 更能反映分割的整体结构质量。^[extracted]</li>
+<li>与数据集评估口径一致，便于跨样本比较。^[extracted]</li>
 </ul>
 <h2 id="_2">影响</h2>
 <ul>
@@ -76,7 +76,7 @@
 </ul>
 <h2 id="_4">联网补充</h2>
 <ul>
-<li>在 DLA 的 case study 里，mIoU 被选为 proxy index，不是因为它最容易算，而是因为它比 PAcc 更贴近分割整体结构质量和 benchmark 评估口径。</li>
+<li>在 DLA 的 case study 里，mIoU 被选为 proxy index，不是因为它最容易算，而是因为它比 PAcc 更贴近分割整体结构质量和 benchmark 评估口径。^[extracted]</li>
 <li>因此代理指标的价值在于提供更有信息量的 accept/reject 信号；若 proxy 和真实目标脱节，再高频查询也只是低效搜索。</li>
 </ul>
 <h2 id="_5">关联</h2>

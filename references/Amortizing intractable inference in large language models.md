@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/Amortizing intractable inference in large language models.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: 该工作把复杂推理统一为可摊销后验采样问题，并通过 GFlowNet 微调改善质量、多样性与效率平衡。
 provenance:
   extracted: 0.87

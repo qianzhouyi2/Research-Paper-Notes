@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/Demystifying Chains, Trees, and Graphs of Thoughts.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: 本文建立了链、树、图推理范式的统一术语与分类框架，为后续方法对比提供基准坐标。
 provenance:
   extracted: 0.9

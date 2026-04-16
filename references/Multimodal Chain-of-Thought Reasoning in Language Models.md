@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/Multimodal Chain-of-Thought Reasoning in Language Models.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: Multimodal-CoT 通过引入视觉证据链提升推理过程质量并减少答案幻觉，强化了多模态任务的可解释推理能力。
 provenance:
   extracted: 0.86

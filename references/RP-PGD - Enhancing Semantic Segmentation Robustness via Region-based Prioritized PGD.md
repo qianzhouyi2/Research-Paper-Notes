@@ -15,9 +15,9 @@ created: 2026-04-10
 updated: 2026-04-10
 summary: "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
 provenance:
-  extracted: 0.8
-  inferred: 0.15
-  ambiguous: 0.05
+  extracted: 0.73
+  inferred: 0.00
+  ambiguous: 0.27
 ---
 # RP-PGD: Enhancing Semantic Segmentation Robustness via Region-based Prioritized PGD
 
@@ -28,15 +28,15 @@ provenance:
 
 ## 元数据
 
-- 年份：2025
-- 发表 venue：AAAI
-- 核验来源：crossref
-- 核验标题：RP-PGD: Enhancing Semantic Segmentation Robustness via Region-based Prioritized PGD
+- 年份：2025。^[extracted]
+- 发表 venue：AAAI。^[extracted]
+- 核验来源：crossref。^[extracted]
+- 核验标题：RP-PGD: Enhancing Semantic Segmentation Robustness via Region-based Prioritized PGD。^[extracted]
 
 ## 问题与方法（基于抽取证据）
 
-- 证据摘要：Adversarial attack and defense have been extensively ex- plored in classiﬁcation tasks, but their study in semantic seg- mentation remains limited. Moreover, current attacks fail to act as strong underlying attacks for adversarial training (AT), making it difﬁcult to achieve segmentation robustness against strong attacks.
-- 方法线索：In this paper, we presentRP-PGD, a novel Region-and-Prototype based Projected Gradient Descent at- tack tailored to fool segmentation models. In particular, we propose a region-based attack, which leverages a spatial- temporal way to separate the pixels into three disjoint re- gions, and highlights the attack on the crucial True Region and Boundary Region.
+- 证据摘要：Adversarial attack and defense have been extensively ex- plored in classiﬁcation tasks, but their study in semantic seg- mentation remains limited. Moreover, current attacks fail to act as strong underlying attacks for adversarial training (AT), making it difﬁcult to achieve segmentation robustness against strong attacks.^[extracted]
+- 方法线索：In this paper, we presentRP-PGD, a novel Region-and-Prototype based Projected Gradient Descent at- tack tailored to fool segmentation models. In particular, we propose a region-based attack, which leverages a spatial- temporal way to separate the pixels into three disjoint re- gions, and highlights the attack on the crucial True Region and Boundary Region.^[extracted]
 
 ## 本地论文结构证据
 
@@ -44,12 +44,12 @@ provenance:
 
 ## 抽取主题
 
-- Adversarial training strategy
+- Adversarial training strategy。^[extracted]
 
 ## 实验语境
 
 - 抽取文本中的数据集提及：当前摘要片段未显式给出。^[ambiguous]
-- 本地材料类型：pdf
+- 本地材料类型：pdf。^[extracted]
 
 ## 关联作者实体
 

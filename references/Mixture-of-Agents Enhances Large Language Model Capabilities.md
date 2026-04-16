@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/Mixture-of-Agents Enhances Large Language Model Capabilities.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: MoA 表明多模型协作与分层聚合在不重训条件下可提升质量，但成本与时延仍是关键约束。
 provenance:
   extracted: 0.88

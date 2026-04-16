@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: MCTSr 通过把搜索、自我改进与自我评估闭环化，在不扩参数前提下显著提升小模型高难数学推理能力。
 provenance:
   extracted: 0.88
@@ -32,4 +32,3 @@ provenance:
 - [[entities/LLaMA-3 8B]]
 - [[entities/Di Zhang]]
 - [[synthesis/Structured Reasoning Methods for LLMs]]
-

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Standardized Evaluation Attack (SEA) Protocol | Research Paper Notes</title>
-  <meta name="description" content="Standardized Evaluation Attack (SEA) Protocol：语义分割鲁棒性语料中的概念卡。">
+  <title>Segmentation Ensemble Attack (SEA) Protocol | Research Paper Notes</title>
+  <meta name="description" content="SEA：面向语义分割鲁棒评测的三损失攻击集成协议，用于同时更可靠地压低像素准确率与 mIoU。">
   <link rel="stylesheet" href="../styles.css">
   <script defer src="../site.js"></script>
 </head>
@@ -35,8 +35,8 @@
       <header class="topbar panel">
         <div>
           <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
-          <h2>Standardized Evaluation Attack (SEA) Protocol</h2>
-          <p>Standardized Evaluation Attack (SEA) Protocol：语义分割鲁棒性语料中的概念卡。</p>
+          <h2>Segmentation Ensemble Attack (SEA) Protocol</h2>
+          <p>SEA：面向语义分割鲁棒评测的三损失攻击集成协议，用于同时更可靠地压低像素准确率与 mIoU。</p>
         </div>
         <div class="topbar-actions">
           <div class="search-box">
@@ -50,32 +50,52 @@
 
       <article class="article-wrap panel">
         <div class="article-path">concepts/Standardized Evaluation Attack (SEA) Protocol.md</div>
-        <div class="markdown-body"><h1 id="standardized-evaluation-attack-sea-protocol">Standardized Evaluation Attack (SEA) Protocol</h1>
+        <div class="markdown-body"><h1 id="segmentation-ensemble-attack-sea-protocol">Segmentation Ensemble Attack (SEA) Protocol</h1>
 <h2 id="_1">定义</h2>
-<p>该概念用于语义分割鲁棒性研究中的方法描述、评测对齐与跨论文连接。</p>
-<h2 id="_2">在本语料中的位置</h2>
+<p>SEA 是语义分割鲁棒性评测协议，不是单一攻击。它把三种互补的 segmentation-specific attacks 集成为一个 worst-case evaluator：</p>
 <ul>
-<li>相关论文?</li>
-<li><a href="../references/Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models.html">Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models</a></li>
-<li>用途：作为可复用概念节点，用于连接攻击、训练、认证与评测主题。</li>
+<li><code>L_MCE</code>：面向 average pixel accuracy</li>
+<li><code>L_MCE-Bal</code>：面向 mIoU</li>
+<li><code>L_JS</code>：通过 JS divergence 自动降权已错像素</li>
 </ul>
-<h2 id="_3">实践建议</h2>
+<p>每个 loss 各运行一次 <code>300</code> iterations 的 red-epsilon APGD，再对三者取最坏结果。</p>
+<h2 id="_2">为什么需要它</h2>
 <ul>
-<li>在实验报告中单独说明该概念对应的设置与预算，避免与通用配置混写。^[inferred]</li>
-<li>结合任务指标（如 mIoU / ASR / 预算）一起报告，便于跨论文比较。^[inferred]</li>
+<li>segmentation 攻击必须同时翻转大量像素，普通 CE / 单一 PGD 很容易被已经错分的像素拖偏。</li>
+<li>mIoU 和 accuracy 不是同一个攻击目标，单一 loss 容易只压一个指标。</li>
+<li>论文证明 SegPGD 和 CosPGD 会高估若干模型的鲁棒性，而 SEA 能更稳定地给出更坏的结果。</li>
 </ul>
-<h2 id="_4">关联链接</h2>
+<h2 id="_3">协议组成</h2>
 <ul>
-<li><a href="Semantic Segmentation.html">Semantic Segmentation</a></li>
-<li><a href="../synthesis/Semantic Segmentation Robustness Corpus 2019-2026.html">Semantic Segmentation Robustness Corpus 2019-2026</a></li>
+<li>优化器：APGD</li>
+<li>优化技巧：progressive radius reduction，按 <code>2e -&gt; 1.5e -&gt; e</code> 的 red-epsilon 方式推进</li>
+<li>组合方式：</li>
+<li>accuracy：可逐图取最坏攻击</li>
+<li>mIoU：因其是全局指标，论文采用 greedy 近似搜索 per-image 组合</li>
+</ul>
+<h2 id="_4">使用边界</h2>
+<ul>
+<li>它是强白盒协议，适合评测常规 adversarially trained segmentation models。</li>
+<li>它不是完整的白盒 + 黑盒组合基准，因此对于依赖梯度掩蔽的防御，仍可能高估鲁棒性。</li>
+<li>论文实证表明，对抗训练得到的模型通常不会因为这一点而被严重误判，但这一风险在方法论上仍然存在。</li>
+</ul>
+<h2 id="_5">在本语料中的位置</h2>
+<ul>
+<li>代表论文：<a href="../references/Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models.html">Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models</a></li>
+<li>直接对比：<a href="SegPGD.html">SegPGD</a></li>
+<li>上位主题：<a href="Segmentation Robustness Benchmark Protocol.html">Segmentation Robustness Benchmark Protocol</a></li>
+</ul>
+<h2 id="_6">实践建议</h2>
+<ul>
+<li>报告 segmentation robustness 时，不要只报某一个攻击下的 accuracy，至少要同时给出 accuracy / mIoU 和攻击预算。</li>
+<li>如果只能跑一个强基线，优先保留 SEA，而不是单独保留某个 loss。</li>
+<li>如果评测对象可能有梯度问题，SEA 应与黑盒攻击或迁移攻击配合使用。</li>
+</ul>
+<h2 id="_7">关联链接</h2>
+<ul>
+<li><a href="Prior-informed Robust Adversarial Training (PIR-AT).html">Prior-informed Robust Adversarial Training (PIR-AT)</a></li>
 <li><a href="../synthesis/Reliability and Benchmarking for Robust Segmentation.html">Reliability and Benchmarking for Robust Segmentation</a></li>
-</ul>
-<h2 id="2026-04-10">联网补充（2026-04-10）</h2>
-<ul>
-<li>本概念页已完成联网复核，重点检查术语边界、适用范围与相关方法关系。</li>
-<li>本轮使用的主要在线来源：</li>
-<li>https://arxiv.org/abs/2306.12941</li>
-<li>状态：已完成页面级联网补充。</li>
+<li><a href="../synthesis/Segmentation Adversarial Attack Methods 2019-2026.html">Segmentation Adversarial Attack Methods 2019-2026</a></li>
 </ul></div>
       </article>
     </main>
@@ -88,11 +108,11 @@
       </div>
       <div class="meta-block">
         <p class="meta-label">Tags</p>
-        <div class="chip-list"><span class="chip">concept</span><span class="chip">semantic-segmentation</span><span class="chip">adversarial-robustness</span><span class="chip">dense-prediction</span></div>
+        <div class="chip-list"><span class="chip">concept</span><span class="chip">semantic-segmentation</span><span class="chip">adversarial-robustness</span><span class="chip">evaluation</span><span class="chip">methodology</span></div>
       </div>
       <div class="meta-block">
         <p class="meta-label">Summary</p>
-        <p>Standardized Evaluation Attack (SEA) Protocol：语义分割鲁棒性语料中的概念卡。</p>
+        <p>SEA：面向语义分割鲁棒评测的三损失攻击集成协议，用于同时更可靠地压低像素准确率与 mIoU。</p>
       </div>
       <div class="meta-block">
         <p class="meta-label">Source</p>

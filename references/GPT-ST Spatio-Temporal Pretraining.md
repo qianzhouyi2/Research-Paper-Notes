@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/GPT-ST Spatio-Temporal Pretraining.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: GPT-ST 通过结构感知预训练学习可迁移时空关系，在多任务上带来稳定下游性能增益。
 provenance:
   extracted: 0.87

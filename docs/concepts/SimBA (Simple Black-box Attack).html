@@ -52,13 +52,13 @@
         <div class="article-path">concepts/SimBA (Simple Black-box Attack).md</div>
         <div class="markdown-body"><h1 id="simba-simple-black-box-attack">SimBA (Simple Black-box Attack)</h1>
 <h2 id="_1">定义</h2>
-<p>SimBA 是 score-based 黑盒对抗攻击方法。它不估计完整梯度，而是沿随机基方向做“正负两次试探”，保留让攻击目标更优的更新。</p>
+<p>SimBA 是 score-based 黑盒对抗攻击方法。它不估计完整梯度，而是沿随机基方向做“正负两次试探”，保留让攻击目标更优的更新。^[extracted]</p>
 <h2 id="_2">基本流程</h2>
 <ol>
-<li>选取方向 (q)（像素基或 DCT 基）。</li>
-<li>查询 (x+\epsilon q) 与 (x-\epsilon q)。</li>
-<li>保留更有利的一侧（例如非定向攻击里降低真类分数）。</li>
-<li>迭代直到成功或预算耗尽。</li>
+<li>选取方向 (q)（像素基或 DCT 基）。^[extracted]</li>
+<li>查询 (x+\epsilon q) 与 (x-\epsilon q)。^[extracted]</li>
+<li>保留更有利的一侧（例如非定向攻击里降低真类分数）。^[extracted]</li>
+<li>迭代直到成功或预算耗尽。^[extracted]</li>
 </ol>
 <h2 id="_3">方法特点</h2>
 <ul>
@@ -68,7 +68,7 @@
 </ul>
 <h2 id="_4">联网补充</h2>
 <ul>
-<li>2019-05（arXiv:1905.07121）：论文直接将方法命名为 “Simple Black-box Adversarial Attacks”，核心贡献就是“简化攻击步骤 + 提升查询效率”。</li>
+<li>2019-05（arXiv:1905.07121）：论文直接将方法命名为 “Simple Black-box Adversarial Attacks”，核心贡献就是“简化攻击步骤 + 提升查询效率”。^[extracted]</li>
 <li>该方法属于 score-based 路线，适配能返回置信度/分数的 API；若仅有 top-1 标签则通常需转为 decision-based 方法。^[inferred]</li>
 </ul>
 <h2 id="_5">关联</h2>

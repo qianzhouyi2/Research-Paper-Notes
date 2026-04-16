@@ -52,12 +52,12 @@
         <div class="article-path">concepts/Natural Evolutionary Strategies (NES).md</div>
         <div class="markdown-body"><h1 id="natural-evolutionary-strategies-nes">Natural Evolutionary Strategies (NES)</h1>
 <h2 id="_1">定义</h2>
-<p>NES 不是直接优化单个点，而是优化一个搜索分布 <code>p_\theta(z)</code>，目标通常写成 <code>J(\theta) = E_{z ~ p_\theta}[f(z)]</code>。更新时使用 natural gradient，而不是普通参数梯度。</p>
+<p>NES 不是直接优化单个点，而是优化一个搜索分布 <code>p_\theta(z)</code>，目标通常写成 <code>J(\theta) = E_{z ~ p_\theta}[f(z)]</code>。更新时使用 natural gradient，而不是普通参数梯度。^[extracted]</p>
 <h2 id="_2">在黑盒攻击里的常见用法</h2>
 <ul>
-<li>在输入 <code>x</code> 附近采样高斯方向 <code>u_i</code>。</li>
-<li>比较 <code>f(x + \sigma u_i)</code> 与 <code>f(x - \sigma u_i)</code> 的变化。</li>
-<li>用这些采样结果加权平均，估计一个梯度方向。</li>
+<li>在输入 <code>x</code> 附近采样高斯方向 <code>u_i</code>。^[extracted]</li>
+<li>比较 <code>f(x + \sigma u_i)</code> 与 <code>f(x - \sigma u_i)</code> 的变化。^[extracted]</li>
+<li>用这些采样结果加权平均，估计一个梯度方向。^[extracted]</li>
 <li>再把这个估计方向用于后续攻击更新。^[inferred]</li>
 </ul>
 <h2 id="_3">直观理解</h2>
@@ -74,8 +74,8 @@
 </ul>
 <h2 id="_5">联网补充</h2>
 <ul>
-<li>JMLR 2014 的原始 NES 工作把它表述为“在搜索分布上最大化期望 fitness，并用 natural gradient 更新分布参数”。</li>
-<li>ICML 2018 的黑盒攻击论文把 NES 明确用作 query-limited attack 的梯度估计器，并采用 antithetic sampling 降低估计方差。</li>
+<li>JMLR 2014 的原始 NES 工作把它表述为“在搜索分布上最大化期望 fitness，并用 natural gradient 更新分布参数”。^[extracted]</li>
+<li>ICML 2018 的黑盒攻击论文把 NES 明确用作 query-limited attack 的梯度估计器，并采用 antithetic sampling 降低估计方差。^[extracted]</li>
 <li>在 DLA 这篇分割攻击论文里，NES 的角色主要是 score-based baseline；DLA 的改进点不在更精细的梯度估计，而在于把搜索空间离散化并结构化。^[inferred]</li>
 </ul>
 <h2 id="_6">关联</h2>

@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/MeanSparse Post-Training Robustness Enhancement Through Mean-Centered Feature.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: 该页作为命名对齐入口，正文内容与主页面保持一致并指向完整摘要卡。
 provenance:
   extracted: 0.7

@@ -52,18 +52,18 @@
         <div class="article-path">concepts/Decision-based Black-box Attack for Segmentation.md</div>
         <div class="markdown-body"><h1 id="decision-based-black-box-attack-for-segmentation">Decision-based Black-box Attack for Segmentation</h1>
 <h2 id="_1">定义</h2>
-<p>攻击者只能访问分割模型输出标签（无概率、无梯度），目标是在查询预算内最大化像素误分并降低整体指标（常用 mIoU）。</p>
+<p>攻击者只能访问分割模型输出标签（无概率、无梯度），目标是在查询预算内最大化像素误分并降低整体指标（常用 mIoU）。^[extracted]</p>
 <h2 id="_2">与图像分类差异</h2>
 <ul>
-<li>图像分类通常是单标签决策。</li>
-<li>语义分割是像素级决策，等价于大规模多约束问题。</li>
-<li>“先跨边界再缩扰动”在分割任务中不稳定，可能反向提升 mIoU。</li>
+<li>图像分类通常是单标签决策。^[extracted]</li>
+<li>语义分割是像素级决策，等价于大规模多约束问题。^[extracted]</li>
+<li>“先跨边界再缩扰动”在分割任务中不稳定，可能反向提升 mIoU。^[extracted]</li>
 </ul>
 <h2 id="_3">典型困难</h2>
 <ul>
-<li>优化目标不一致。</li>
-<li>扰动交互导致局部反复。</li>
-<li>参数空间巨大且查询昂贵。</li>
+<li>优化目标不一致。^[extracted]</li>
+<li>扰动交互导致局部反复。^[extracted]</li>
+<li>参数空间巨大且查询昂贵。^[extracted]</li>
 </ul>
 <h2 id="_4">设计启发</h2>
 <ul>

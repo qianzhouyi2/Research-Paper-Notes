@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/Language Models Represent Space and Time.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: 该工作通过系统探针证据支持 LLM 内部存在跨实体统一且可线性解码的时空表示。
 provenance:
   extracted: 0.87

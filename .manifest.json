@@ -1,8 +1,8 @@
 {
   "version": 1,
   "stats": {
-    "total_sources_ingested": 48,
-    "total_pages": 347
+    "total_sources_ingested": 49,
+    "total_pages": 349
   },
   "sources": {
     "papers_sources/Research-Paper-Notes": {
@@ -2208,6 +2208,28 @@
         "references/Towards Semantically Stealthy Adversarial Attacks Against Segmentation Models.md",
         "references/Uncertainty-Based Detection of Adversarial Attacks in Semantic Segmentation.md",
         "references/index.md"
+      ]
+    },
+    "workspace/wiki-update-2026-04-16-towards-reliable-eval-sync": {
+      "ingested_at": "2026-04-16T19:08:14+08:00",
+      "size_bytes": 0,
+      "modified_at": "2026-04-16T19:08:14+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "entities/Francesco Croce.md",
+        "entities/Naman D. Singh.md"
+      ],
+      "pages_updated": [
+        "notes/Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models.md",
+        "references/Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models.md",
+        "concepts/Prior-informed Robust Adversarial Training (PIR-AT).md",
+        "concepts/Standardized Evaluation Attack (SEA) Protocol.md",
+        "synthesis/Reliability and Benchmarking for Robust Segmentation.md",
+        "synthesis/Robust Training Strategies for Semantic Segmentation.md",
+        "entities/index.md",
+        "index.md",
+        "log.md"
       ]
     }
   }

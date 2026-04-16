@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: SoT 通过默认直觉与按需反思协同，把推理由常开高成本模式转为可调度模式并改善性能-成本平衡。
 provenance:
   extracted: 0.88

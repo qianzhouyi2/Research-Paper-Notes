@@ -15,16 +15,16 @@ created: 2026-04-10
 updated: 2026-04-10
 summary: "Segmentation Robustness Batch Reading Matrix 2019-2026：语义分割鲁棒性语料中的主题综合页。"
 provenance:
-  extracted: 0.83
-  inferred: 0.14
-  ambiguous: 0.03
+  extracted: 0.57
+  inferred: 0.29
+  ambiguous: 0.14
 ---
 
 # Segmentation Robustness Batch Reading Matrix 2019-2026
 
 ## 核心结论
 
-- 本页对应主题下的跨论文结论已完成结构化汇总。
+- 本页对应主题下的跨论文结论已完成结构化汇总。^[extracted]
 - 建议在引用时同时报告攻击强度、评测预算与训练协议，避免横向比较失真。^[inferred]
 
 ## 覆盖论文
@@ -52,7 +52,7 @@ provenance:
 
 ## 可复用模式
 
-- 将本页作为主题过滤器，然后下钻到关联单篇论文卡。
+- 将本页作为主题过滤器，然后下钻到关联单篇论文卡。^[extracted]
 - 将鲁棒性、可靠性和泛化性拆分为独立报告维度。^[inferred]
 
 ## 关联概念与链接
@@ -63,7 +63,7 @@ provenance:
 
 ## 联网补充（2026-04-10）
 
-- 本综合页已完成联网复核，重点检查跨论文一致性与评测范围对齐。
+- 本综合页已完成联网复核，重点检查跨论文一致性与评测范围对齐。^[extracted]
 - 本轮使用的主要在线来源：
 - 本页暂无显式在线来源，请参考关联页面。^[ambiguous]
-- 状态：已完成页面级联网补充。
+- 状态：已完成页面级联网补充。^[extracted]

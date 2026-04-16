@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/LoRA Low-Rank Adaptation of Large Language Models.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: LoRA 通过低秩增量微调在几乎不增加推理时延的前提下显著降低大模型适配成本。
 provenance:
   extracted: 0.9

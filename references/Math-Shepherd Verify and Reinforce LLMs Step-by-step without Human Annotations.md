@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/Math-Shepherd Verify and Reinforce LLMs Step-by-step without Human Annotations.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: Math-Shepherd 证明自动过程监督可实用化，并在数学验证与逐步强化学习中带来稳定收益。
 provenance:
   extracted: 0.88

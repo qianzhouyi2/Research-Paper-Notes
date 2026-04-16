@@ -5,46 +5,63 @@ tags:
   - concept
   - semantic-segmentation
   - adversarial-robustness
-  - dense-prediction
+  - efficiency
 sources:
-  - workspace/wiki-update-2026-04-10-cn-localization
-  - papers_sources/semantic_segmentation_robustness_20260409/download_report.json
+  - papers_sources/semantic_segmentation_robustness_20260409/25_Towards_Reliable_Evaluation_and_Fast_Training_of_Robust_Semantic_Segme/paper_resources/arxiv_2306.12941_translated.md
+  - references/Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models.md
   - https://arxiv.org/abs/2306.12941
 created: 2026-04-10
-updated: 2026-04-10
-summary: "Prior-informed Robust Adversarial Training (PIR-AT)：语义分割鲁棒性语料中的概念卡。"
+updated: 2026-04-16
+summary: "PIR-AT：先用鲁棒 ImageNet 分类器初始化 segmentation backbone，再做对抗训练，以更低成本获得更强鲁棒分割模型。"
 provenance:
-  extracted: 0.69
-  inferred: 0.26
-  ambiguous: 0.05
+  extracted: 0.79
+  inferred: 0.18
+  ambiguous: 0.03
 ---
 
 # Prior-informed Robust Adversarial Training (PIR-AT)
 
 ## 定义
 
-该概念用于语义分割鲁棒性研究中的方法描述、评测对齐与跨论文连接。
+PIR-AT 是一种用于语义分割鲁棒训练的初始化策略：不再从 clean ImageNet 预训练模型或随机参数出发，而是先用 `L_infty` 鲁棒的 ImageNet 分类器初始化 segmentation backbone，再在分割任务上做 adversarial training。
+
+## 核心做法
+
+- backbone：用已经对抗训练过的 ImageNet 分类器初始化。
+- decoder：仍随机初始化。
+- 训练目标：仍然是标准的 segmentation adversarial training，论文里用的是 `epsilon = 4/255` 的 PGD + CE。
+- 关键变化：不是改训练 loss，而是改“从哪里开始训练”。
+
+## 为什么有效
+
+- segmentation adversarial training 很贵，而且从 clean init 出发常常需要很多 epoch 才能进入有效鲁棒区间。
+- robust backbone 已经带有更稳的局部纹理和判别表征，相当于把鲁棒特征预先迁移到 segmentation 任务。
+- 在论文中，这个改动直接改变了训练成本曲线：
+  - Pascal-Voc 上，`2-step PIR-AT, 50 epochs` 超过 `2-step AT, 300 epochs`
+  - Ade20K 上，`32 epochs PIR-AT` 超过 `128 epochs AT`
+
+## 适用边界
+
+- 适合：目标任务是 dense prediction，但 backbone 家族和分类预训练家族能够自然对接。
+- 不适合直接照搬的情况：
+  - 没有可用的 robust pretrained backbone
+  - backbone / decoder 结构与预训练模型差异太大
+  - 任务分布与 ImageNet 差得太远，迁移价值不足
 
 ## 在本语料中的位置
 
-- 相关论文?
-- [[references/Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models|Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models]]
-- 用途：作为可复用概念节点，用于连接攻击、训练、认证与评测主题。
+- 代表论文：[[references/Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models]]
+- 关联主题：[[synthesis/Robust Training Strategies for Semantic Segmentation]]
+- 关联评测协议：[[concepts/Standardized Evaluation Attack (SEA) Protocol|Segmentation Ensemble Attack (SEA) Protocol]]
 
 ## 实践建议
 
-- 在实验报告中单独说明该概念对应的设置与预算，避免与通用配置混写。^[inferred]
-- 结合任务指标（如 mIoU / ASR / 预算）一起报告，便于跨论文比较。^[inferred]
+- 报告 PIR-AT 时，应把“robust initialization”单独列为实验变量，避免和攻击步数、训练 epoch 混在一起。
+- 如果复现实验，优先核对 backbone 的来源、鲁棒半径和输入分辨率，而不是先改 decoder 细节。
+- 如果想做更强基线，可以先比较 `AT vs PIR-AT`，再比较 `2-step vs 5-step`，这样最容易看清它的真实增益来源。
 
 ## 关联链接
 
-- [[concepts/Semantic Segmentation]]
-- [[synthesis/Semantic Segmentation Robustness Corpus 2019-2026]]
+- [[concepts/Segmentation Robustness Benchmark Protocol]]
+- [[entities/RobustBench]]
 - [[synthesis/Reliability and Benchmarking for Robust Segmentation]]
-
-## 联网补充（2026-04-10）
-
-- 本概念页已完成联网复核，重点检查术语边界、适用范围与相关方法关系。
-- 本轮使用的主要在线来源：
-- https://arxiv.org/abs/2306.12941
-- 状态：已完成页面级联网补充。

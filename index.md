@@ -10,8 +10,9 @@ sources:
   - workspace/wiki-update-2026-04-10-lint-update-online
   - workspace/wiki-update-2026-04-10-global-lint-remediation
   - workspace/wiki-update-2026-04-10-cn-placeholder-remediation
+  - workspace/wiki-update-2026-04-16-towards-reliable-eval-sync
 created: 2026-04-08
-updated: 2026-04-10
+updated: 2026-04-16
 summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 结果。
 ---
 
@@ -30,6 +31,13 @@ summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 
 - [[journal/index|Journal（阅读日志）]]
 - [[log|系统日志]]
 - [[_meta/taxonomy|标签词表]]
+
+## 最新 Wiki 更新（2026-04-16，Reliable Eval / PIR-AT Deepening）
+
+- 类型：`wiki-update`（single-paper deepening）。
+- 新增页面：[[entities/Francesco Croce]]、[[entities/Naman D. Singh]]。
+- 更新页面：[[notes/Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models]]、[[references/Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models]]、[[concepts/Standardized Evaluation Attack (SEA) Protocol|Segmentation Ensemble Attack (SEA) Protocol]]、[[concepts/Prior-informed Robust Adversarial Training (PIR-AT)]]、[[synthesis/Reliability and Benchmarking for Robust Segmentation]]、[[synthesis/Robust Training Strategies for Semantic Segmentation]]、[[entities/index]]、[[index]]、[[log]]。
+- 说明：把当前打开的鲁棒语义分割论文从模板 note 补成完整阅读卡，并把 SEA / PIR-AT / 作者实体正式接入现有知识图谱。
 
 ## 最新 Wiki 更新（2026-04-10，内部页中文化）
 
@@ -74,12 +82,12 @@ summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 
 
 ## 当前资产
 
-- 已导入论文笔记：26 篇（见 [[notes/index]]）
-- References：26 篇（含 1 个 MeanSparse 命名桥接页）
-- Concepts：60 篇（方法级与协议级概念）
-- Entities：71 篇（作者/模型/数据集）
-- Synthesis：22 篇（跨论文主题综合）
-- 已纳管来源：36 个（见 [[log]] 与 `.manifest.json`）
+- 已导入论文笔记：27 篇（见 [[notes/index]]）
+- References：54 篇
+- Concepts：90 篇
+- Entities：133 篇
+- Synthesis：29 篇
+- 已纳管来源：49 个（见 [[log]] 与 `.manifest.json`）
 - 原始资料：[[papers_sources/index|papers_sources]]
 - 模板：`Templates`
 

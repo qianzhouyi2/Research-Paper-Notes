@@ -13,25 +13,25 @@ created: 2026-04-08
 updated: 2026-04-08
 summary: 该论文提出“对抗性对齐”评估框架，指出文本攻击器能力不足会导致安全误判，并展示多模态模型可被对抗图像稳定诱导输出有害内容。
 provenance:
-  extracted: 0.87
+  extracted: 0.67
   inferred: 0.11
-  ambiguous: 0.02
+  ambiguous: 0.22
 ---
 
 # Are aligned neural networks adversarially aligned?
 
 ## 基本信息
 
-- 年份：2023（NeurIPS）
-- 任务：评估“对齐模型在最坏输入下是否仍对齐”
+- 年份：2023（NeurIPS）。^[extracted]
+- 任务：评估“对齐模型在最坏输入下是否仍对齐”。^[extracted]
 - 论文笔记：[[notes/Are aligned neural networks adversarially aligned]]
-- 联网核验：arXiv 2306.15447 与 NeurIPS 2023 官方页面对应同题版本；arXiv v2 作者列表包含 Nicholas Carlini、Florian Tramer、Ludwig Schmidt 等 11 位作者。
+- 联网核验：arXiv 2306.15447 与 NeurIPS 2023 官方页面对应同题版本；arXiv v2 作者列表包含 Nicholas Carlini、Florian Tramer、Ludwig Schmidt 等 11 位作者。^[extracted]
 
 ## 核心主张
 
-- 现有 NLP 优化攻击经常失败，但这不能直接证明文本模型已具备对抗鲁棒性。
-- 在“保证存在解”的构造测试中，攻击器仍会失败，说明评估能力本身是瓶颈。
-- 多模态模型可通过图像连续扰动被稳定诱导到不对齐输出。
+- 现有 NLP 优化攻击经常失败，但这不能直接证明文本模型已具备对抗鲁棒性。^[extracted]
+- 在“保证存在解”的构造测试中，攻击器仍会失败，说明评估能力本身是瓶颈。^[extracted]
+- 多模态模型可通过图像连续扰动被稳定诱导到不对齐输出。^[extracted]
 
 ## 可复用方法
 

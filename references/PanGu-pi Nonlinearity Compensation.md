@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/PanGu-pi Nonlinearity Compensation.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: PanGu-pi 通过增强捷径与级联激活在较低增量成本下改善大模型非线性表达与推理效率。
 provenance:
   extracted: 0.85

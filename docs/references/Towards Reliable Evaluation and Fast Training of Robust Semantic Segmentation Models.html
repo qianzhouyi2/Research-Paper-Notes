@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models | Research Paper Notes</title>
-  <meta name="description" content="分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。">
+  <meta name="description" content="单篇摘要卡：这篇论文用 SEA 重新校准语义分割鲁棒评测，并用 PIR-AT 把鲁棒训练成本显著压低。">
   <link rel="stylesheet" href="../styles.css">
   <script defer src="../site.js"></script>
 </head>
@@ -36,7 +36,7 @@
         <div>
           <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
           <h2>Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models</h2>
-          <p>分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。</p>
+          <p>单篇摘要卡：这篇论文用 SEA 重新校准语义分割鲁棒评测，并用 PIR-AT 把鲁棒训练成本显著压低。</p>
         </div>
         <div class="topbar-actions">
           <div class="search-box">
@@ -54,56 +54,73 @@
 <h2 id="_1">阅读状态</h2>
 <ul>
 <li>批次：4 / 4</li>
-<li>逐篇审阅状态：已完成（元数据 + 摘要级本地阅读 + 跨源核验）</li>
+<li>逐篇审阅状态：已完成（元数据 + 本地全文抽取 + note / concept / entity 同步）</li>
 </ul>
 <h2 id="_2">元数据</h2>
 <ul>
-<li>年份：2023</li>
-<li>发表 venue：ECCV</li>
-<li>核验来源：arxiv</li>
-<li>核验标题：Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models</li>
+<li>正式 venue：ECCV 2024</li>
+<li>预印本锚点：<code>arXiv:2306.12941</code>（2023 年 6 月）</li>
+<li>核验来源：本地 <code>metadata.json</code> + arXiv</li>
+<li>作者：<a href="../entities/Francesco Croce.html">Francesco Croce</a>、<a href="../entities/Naman D. Singh.html">Naman D</a>、<a href="../entities/Matthias Hein.html">Matthias Hein</a></li>
 </ul>
 <h2 id="_3">问题与方法（基于抽取证据）</h2>
 <ul>
-<li>证据摘要：Adversarial robustness has been studied extensively in image classification, especially for the _ -threat model, but significantly less so for related tasks such as object detection and semantic segmentation, where attacks turn out to be a much harder optimization problem than for image classification. We propose several problem-specific novel attacks minimizing different metrics in accuracy and mIoU.</li>
-<li>方法线索：The ensemble of our attacks, , shows that existing attacks severely overestimate the robustness of semantic segmentation models. Surprisingly, existing attempts of adversarial training for semantic segmentation models turn out to be weak or even completely non-robust.</li>
+<li>核心问题：已有语义分割鲁棒评测不够强，导致很多“鲁棒模型”结论并不可靠；同时 segmentation adversarial training 的成本高到难以扩展。</li>
+<li>方法摘要：</li>
+<li>攻击侧提出三类 segmentation-specific losses：<code>L_JS</code>、<code>L_MCE</code>、<code>L_MCE-Bal</code></li>
+<li>优化侧使用 red-epsilon APGD</li>
+<li>评测侧把三次攻击集成为 <a href="../concepts/Standardized Evaluation Attack (SEA) Protocol.html">Segmentation Ensemble Attack (SEA)</a></li>
+<li>训练侧提出 <a href="../concepts/Prior-informed Robust Adversarial Training (PIR-AT).html">PIR-AT</a>，用鲁棒 ImageNet backbone 初始化 segmentation backbone</li>
+<li>方法边界：SEA 是强白盒协议，但论文明确承认它还缺少黑盒补充，因此对梯度掩蔽防御仍可能保守不够。</li>
 </ul>
-<h2 id="_4">本地论文结构证据</h2>
+<h2 id="_4">关键证据</h2>
 <ul>
-<li>抽取来源：tex-sections</li>
-<li>本地源码中观测到的章节/小节标题：</li>
+<li>评测结论：</li>
+<li>SEA 显示 SegPGD / CosPGD 会显著高估鲁棒性，尤其是在 mIoU 上。</li>
+<li>DDC-AT 在更强评测下接近完全不鲁棒。</li>
+<li>训练结论：</li>
+<li>Pascal-Voc 上，<code>UPerNet + ConvNeXt-T, 5-step PIR-AT, 50 epochs</code> 在 <code>8/255</code> 下达到 <code>71.7%</code> robust accuracy，而 DDC-AT 为 <code>0.0%</code>。</li>
+<li>Ade20K 上，<code>UPerNet + ConvNeXt-T, 5-step PIR-AT, 128 epochs</code> 在 <code>4/255</code> 下达到 <code>55.5%</code> robust accuracy。</li>
+<li>Pascal-Voc 上 <code>2-step PIR-AT, 50 epochs</code> 已优于 <code>2-step AT, 300 epochs</code>；Ade20K 上 <code>32 epochs PIR-AT</code> 超过 <code>128 epochs AT</code>。</li>
+</ul>
+<h2 id="_5">本地论文结构证据</h2>
+<ul>
+<li>抽取来源：tex-sections + translated markdown</li>
+<li>本地源码中观测到的核心结构：</li>
 <li>Introduction</li>
 <li>Related Work</li>
 <li>Adversarial Attacks for Semantic Segmentation</li>
-<li>Setup</li>
-<li>How to efficiently attack</li>
-<li>Why do attacks on semantic segmentation require new loss functions compared to image segmentation?</li>
 <li>Novel attacks on semantic segmentation</li>
 <li>Optimization techniques for adversarial attacks on semantic segmentation</li>
-</ul>
-<h2 id="_5">抽取主题</h2>
-<ul>
-<li>Adversarial training strategy</li>
+<li>Segmentation Ensemble Attack (SEA)</li>
+<li>Adversarially Robust Segmentation Models</li>
+<li>PIR-AT: robust models via robust initialization</li>
+<li>Ablation study of AT vs PIR-AT</li>
 </ul>
 <h2 id="_6">实验语境</h2>
 <ul>
-<li>抽取文本中的数据集提及：当前摘要片段未显式给出。^[ambiguous]</li>
-<li>本地材料类型：tex_source</li>
+<li>数据集：Pascal-Voc、<a href="../entities/ADE20K Dataset.html">ADE20K Dataset</a></li>
+<li>模型：<a href="../entities/PSPNet.html">PSPNet</a>、UPerNet + ConvNeXt-T / S、Segmenter + ViT-S</li>
+<li>指标：average pixel accuracy、mIoU</li>
+<li>训练与评测关键点：</li>
+<li>训练统一使用 <code>epsilon = 4/255</code> 的 PGD adversarial training</li>
+<li>评测统一使用 <code>300</code> iterations 的 SEA</li>
+<li>background class 被纳入训练和评测</li>
 </ul>
-<h2 id="_7">关联作者实体</h2>
+<h2 id="_7">关联概念与综合</h2>
 <ul>
-<li><a href="../entities/Matthias Hein.html">Matthias Hein</a></li>
-</ul>
-<h2 id="_8">关联概念与综合</h2>
-<ul>
-<li><a href="../synthesis/Semantic Segmentation Robustness Corpus 2019-2026.html">Semantic Segmentation Robustness Corpus 2019-2026</a></li>
-<li><a href="../synthesis/Segmentation Adversarial Attack Methods 2019-2026.html">Segmentation Adversarial Attack Methods 2019-2026</a></li>
+<li><a href="../concepts/Standardized Evaluation Attack (SEA) Protocol.html">Segmentation Ensemble Attack (SEA) Protocol</a></li>
+<li><a href="../concepts/Prior-informed Robust Adversarial Training (PIR-AT).html">Prior-informed Robust Adversarial Training (PIR-AT)</a></li>
 <li><a href="../concepts/Segmentation Robustness Benchmark Protocol.html">Segmentation Robustness Benchmark Protocol</a></li>
+<li><a href="../synthesis/Reliability and Benchmarking for Robust Segmentation.html">Reliability and Benchmarking for Robust Segmentation</a></li>
+<li><a href="../synthesis/Robust Training Strategies for Semantic Segmentation.html">Robust Training Strategies for Semantic Segmentation</a></li>
+<li><a href="../synthesis/Segmentation Adversarial Attack Methods 2019-2026.html">Segmentation Adversarial Attack Methods 2019-2026</a></li>
 </ul>
-<h2 id="_9">联网核验备注</h2>
+<h2 id="_8">联网核验备注</h2>
 <ul>
 <li>主核验链接：https://arxiv.org/abs/2306.12941</li>
-<li>本地材料存放于 <code>papers_sources/semantic_segmentation_robustness_20260409</code>。</li>
+<li>本地材料存放于 <code>papers_sources/semantic_segmentation_robustness_20260409</code></li>
+<li>时间说明：本页将 <code>arXiv:2306.12941</code> 视为预印本锚点，将 <code>ECCV 2024</code> 视为正式发表信息，避免年份字段混淆。</li>
 </ul></div>
       </article>
     </main>
@@ -116,11 +133,11 @@
       </div>
       <div class="meta-block">
         <p class="meta-label">Tags</p>
-        <div class="chip-list"><span class="chip">paper</span><span class="chip">semantic-segmentation</span><span class="chip">adversarial-robustness</span><span class="chip">robust-evaluation</span></div>
+        <div class="chip-list"><span class="chip">paper</span><span class="chip">semantic-segmentation</span><span class="chip">adversarial-robustness</span><span class="chip">evaluation</span><span class="chip">efficiency</span></div>
       </div>
       <div class="meta-block">
         <p class="meta-label">Summary</p>
-        <p>分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。</p>
+        <p>单篇摘要卡：这篇论文用 SEA 重新校准语义分割鲁棒评测，并用 PIR-AT 把鲁棒训练成本显著压低。</p>
       </div>
       <div class="meta-block">
         <p class="meta-label">Source</p>

@@ -15,9 +15,9 @@ created: 2026-04-10
 updated: 2026-04-10
 summary: "分批逐篇阅读卡：包含已核验元数据、本地摘要证据与可复用鲁棒性要点。"
 provenance:
-  extracted: 0.8
-  inferred: 0.15
-  ambiguous: 0.05
+  extracted: 0.70
+  inferred: 0.00
+  ambiguous: 0.30
 ---
 # On the Robustness of Redundant Teacher-Student Frameworks for Semantic Segmentation
 
@@ -28,15 +28,15 @@ provenance:
 
 ## 元数据
 
-- 年份：2019
-- 发表 venue：CVPRW
-- 核验来源：crossref
-- 核验标题：On the Robustness of Redundant Teacher-Student Frameworks for Semantic Segmentation
+- 年份：2019。^[extracted]
+- 发表 venue：CVPRW。^[extracted]
+- 核验来源：crossref。^[extracted]
+- 核验标题：On the Robustness of Redundant Teacher-Student Frameworks for Semantic Segmentation。^[extracted]
 
 ## 问题与方法（基于抽取证据）
 
-- 证据摘要：The trend towards autonomous systems in today’s tech- nology comes with the need for environment perception. Deep neural networks (DNNs) constantly showed state-of- the-art performance over the last few years in visual ma- chine perception, e.g., semantic segmentation.
-- 方法线索：While DNNs work ﬁne on uncorrupted data, recently introduced adver- sarial examples (AEs) led to misclassiﬁcation with high conﬁdence. This lack of robustness against such adversar- ial attacks questions the use of DNNs in safety-critical au- tonomous systems, e.g., autonomous driving vehicles.
+- 证据摘要：The trend towards autonomous systems in today’s tech- nology comes with the need for environment perception. Deep neural networks (DNNs) constantly showed state-of- the-art performance over the last few years in visual ma- chine perception, e.g., semantic segmentation.^[extracted]
+- 方法线索：While DNNs work ﬁne on uncorrupted data, recently introduced adver- sarial examples (AEs) led to misclassiﬁcation with high conﬁdence. This lack of robustness against such adversar- ial attacks questions the use of DNNs in safety-critical au- tonomous systems, e.g., autonomous driving vehicles.^[extracted]
 
 ## 本地论文结构证据
 
@@ -49,7 +49,7 @@ provenance:
 ## 实验语境
 
 - 抽取文本中的数据集提及：当前摘要片段未显式给出。^[ambiguous]
-- 本地材料类型：pdf
+- 本地材料类型：pdf。^[extracted]
 
 ## 关联作者实体
 

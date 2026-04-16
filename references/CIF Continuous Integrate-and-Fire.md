@@ -8,7 +8,7 @@ tags:
 sources:
   - notes/CIF Continuous Integrate-and-Fire.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: CIF 通过连续积分放电机制统一单调软对齐、边界定位与端到端训练，是语音序列建模的重要对齐方法。
 provenance:
   extracted: 0.86

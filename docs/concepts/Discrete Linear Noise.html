@@ -52,27 +52,27 @@
         <div class="article-path">concepts/Discrete Linear Noise.md</div>
         <div class="markdown-body"><h1 id="discrete-linear-noise">Discrete Linear Noise</h1>
 <h2 id="_1">定义</h2>
-<p>将连续扰动空间压缩到离散符号空间，并采用线状结构（horizontal / vertical）生成候选扰动。</p>
+<p>将连续扰动空间压缩到离散符号空间，并采用线状结构（horizontal / vertical）生成候选扰动。^[extracted]</p>
 <ul>
-<li>离散部分对应 <code>\delta_i \in \{-\epsilon, +\epsilon\}</code>，也就是从 <a href="L-infinity Norm Ball.html"><code>L_\infty</code> 范数球</a> 的顶点集合里搜索。</li>
+<li>离散部分对应 <code>\delta_i \in \{-\epsilon, +\epsilon\}</code>，也就是从 <a href="L-infinity Norm Ball.html"><code>L_\infty</code> 范数球</a> 的顶点集合里搜索。^[extracted]</li>
 <li>线性部分则进一步把自由度压到“按行”或“按列”的符号模式，而不是让每个像素独立变化。^[inferred]</li>
 </ul>
 <h2 id="_2">作用</h2>
 <ul>
-<li>降低参数空间复杂度。</li>
+<li>降低参数空间复杂度。^[extracted]</li>
 <li>比全图随机噪声更容易形成可复用更新方向。^[inferred]</li>
 <li>相比块状 patch，视觉结构更细且更稳定。^[inferred]</li>
 </ul>
 <h2 id="dla">在 DLA 中的位置</h2>
 <ul>
-<li>先在探索阶段提供强初始化。</li>
-<li>再在校准阶段配合符号翻转做分层细化。</li>
+<li>先在探索阶段提供强初始化。^[extracted]</li>
+<li>再在校准阶段配合符号翻转做分层细化。^[extracted]</li>
 </ul>
 <h2 id="_3">注意</h2>
 <p>“更不易感知”主要基于论文可视化比较，跨数据集和跨观察者的主观一致性仍待系统验证。^[ambiguous]</p>
 <h2 id="_4">联网补充</h2>
 <ul>
-<li>Moon et al. (ICML 2019) 对 “<code>L_\infty</code> 顶点化搜索” 给出了更直接的依据：在线性 surrogate 下，最优解出现在顶点，PGD 样本也常位于这些顶点。</li>
+<li>Moon et al. (ICML 2019) 对 “<code>L_\infty</code> 顶点化搜索” 给出了更直接的依据：在线性 surrogate 下，最优解出现在顶点，PGD 样本也常位于这些顶点。^[extracted]</li>
 <li>Chen et al. (AAAI 2020, Frank-Wolfe) 更偏向支持“对抗样本常位于约束边界”这一较弱结论；因此 DLA 这里更准确的动机是 boundary / vertex-biased search，而不是普适定理。</li>
 <li>线状扰动的重要性不只在查询效率，还在于它比块状 patch 更不易察觉，同时仍能借助分割模型的上下文传播扩散攻击效果。</li>
 </ul>

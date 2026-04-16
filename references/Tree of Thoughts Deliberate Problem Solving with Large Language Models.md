@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/Tree of Thoughts Deliberate Problem Solving with Large Language Models.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: ToT 通过思维分支、状态评估和回溯搜索显著提升复杂推理任务求解能力，是从 CoT 迈向搜索式推理的关键工作。
 provenance:
   extracted: 0.9

@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/ComplexityNet Increasing LLM Inference Efficiency by Learning Task Complexity.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: ComplexityNet 通过复杂度预测与模型分配实现动态推理调度，在保持精度的同时显著降低推理成本。
 provenance:
   extracted: 0.88

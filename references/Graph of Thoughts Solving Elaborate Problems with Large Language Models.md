@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/Graph of Thoughts Solving Elaborate Problems with Large Language Models.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: GoT 将 LLM 推理建模为图过程，通过 thought 变换与聚合在复杂任务上实现更优质量-成本平衡。
 provenance:
   extracted: 0.89

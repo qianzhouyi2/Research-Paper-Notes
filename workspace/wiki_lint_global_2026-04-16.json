@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-04-16T19:37:18.205200+08:00",
+  "scope": "concepts+entities+references+synthesis+journal+projects+notes+index+log",
+  "scope_pages": 348,
+  "counts": {
+    "orphans": 0,
+    "broken_wikilinks_total": 0,
+    "broken_md_links": 0,
+    "broken_resource_links": 0,
+    "missing_frontmatter": 0,
+    "missing_summary": 0,
+    "summary_too_long": 0,
+    "stale_by_date": 0,
+    "contradictions": 0,
+    "provenance_issues": 0,
+    "index_issues": 0,
+    "placeholder_like_issues": 0,
+    "config_issues": 0
+  },
+  "top_broken_targets": [],
+  "orphans": [],
+  "broken": [],
+  "missing_frontmatter": [],
+  "missing_summary": [],
+  "summary_too_long": [],
+  "stale": [],
+  "contradictions": [],
+  "provenance_issues": [],
+  "index_issues": [],
+  "placeholder_like_issues": [],
+  "config_issues": []
+}

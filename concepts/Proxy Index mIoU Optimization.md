@@ -13,16 +13,16 @@ created: 2026-04-08
 updated: 2026-04-10
 summary: 在 decision-based 分割攻击中，以 mIoU 作为代理指标可提供稳定反馈，优于仅用像素准确率的局部目标。
 provenance:
-  extracted: 0.86
-  inferred: 0.12
-  ambiguous: 0.02
+  extracted: 0.62
+  inferred: 0.38
+  ambiguous: 0.00
 ---
 
 # Proxy Index mIoU Optimization
 
 ## 概念
 
-在无法访问梯度和置信度时，用可观测指标驱动搜索。DLA 选择 mIoU 作为代理指标，每次只接受能进一步降低 mIoU 的扰动更新。
+在无法访问梯度和置信度时，用可观测指标驱动搜索。DLA 选择 mIoU 作为代理指标，每次只接受能进一步降低 mIoU 的扰动更新。^[extracted]
 
 ## Random Attack 作为最小基线
 
@@ -32,8 +32,8 @@ provenance:
 
 ## 为什么是 mIoU
 
-- 比 PAcc 更能反映分割的整体结构质量。
-- 与数据集评估口径一致，便于跨样本比较。
+- 比 PAcc 更能反映分割的整体结构质量。^[extracted]
+- 与数据集评估口径一致，便于跨样本比较。^[extracted]
 
 ## 影响
 
@@ -47,7 +47,7 @@ provenance:
 
 ## 联网补充
 
-- 在 DLA 的 case study 里，mIoU 被选为 proxy index，不是因为它最容易算，而是因为它比 PAcc 更贴近分割整体结构质量和 benchmark 评估口径。
+- 在 DLA 的 case study 里，mIoU 被选为 proxy index，不是因为它最容易算，而是因为它比 PAcc 更贴近分割整体结构质量和 benchmark 评估口径。^[extracted]
 - 因此代理指标的价值在于提供更有信息量的 accept/reject 信号；若 proxy 和真实目标脱节，再高频查询也只是低效搜索。
 
 ## 关联

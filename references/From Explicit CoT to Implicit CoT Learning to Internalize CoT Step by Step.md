@@ -9,7 +9,7 @@ tags:
 sources:
   - notes/From Explicit CoT to Implicit CoT Learning to Internalize CoT Step by Step.md
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-10
 summary: SI 通过课程式移除 CoT token 与稳定训练策略把显式推理逐步内化，在速度与准确率之间形成实用折中。
 provenance:
   extracted: 0.88
