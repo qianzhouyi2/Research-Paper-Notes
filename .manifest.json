@@ -1,8 +1,8 @@
 {
   "version": 1,
   "stats": {
-    "total_sources_ingested": 50,
-    "total_pages": 349
+    "total_sources_ingested": 51,
+    "total_pages": 361
   },
   "sources": {
     "papers_sources/Research-Paper-Notes": {
@@ -2245,6 +2245,24 @@
         "concepts/Prior-informed Robust Adversarial Training (PIR-AT).md",
         "synthesis/Reliability and Benchmarking for Robust Segmentation.md",
         "synthesis/Robust Training Strategies for Semantic Segmentation.md",
+        "index.md",
+        "log.md"
+      ]
+    },
+    "workspace/wiki-update-2026-04-20-grad-cam-segmentation": {
+      "ingested_at": "2026-04-20T16:35:34+08:00",
+      "size_bytes": 0,
+      "modified_at": "2026-04-20T16:35:34+08:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "concepts/Grad-CAM for Semantic Segmentation.md"
+      ],
+      "pages_updated": [
+        "notes/语义分割模型的Grad-CAM.md",
+        "concepts/Semantic Segmentation.md",
+        "notes/index.md",
+        "concepts/index.md",
         "index.md",
         "log.md"
       ]

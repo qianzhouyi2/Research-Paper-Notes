@@ -12,13 +12,17 @@ sources:
   - workspace/wiki-update-2026-04-10-references-cn-localization
   - workspace/wiki-update-2026-04-16-towards-reliable-eval-sync
   - workspace/wiki-update-2026-04-16-towards-reliable-eval-deepening
+  - workspace/wiki-update-2026-04-20-grad-cam-segmentation
   - workspace/wiki_lint_brokenfix_2026-04-16.json
   - workspace/wiki_lint_global_2026-04-16.json
 created: 2026-04-08
-updated: 2026-04-16
+updated: 2026-04-20
 summary: 记录 wiki 初始化、ingest 与维护操作的时间线。
 ---
+
 # Wiki 日志
+
+- [2026-04-20 16:35:34 +08:00] UPDATE source="workspace/wiki-update-2026-04-20-grad-cam-segmentation" pages_updated=6 pages_created=1 mode=append notes="normalized the segmentation Grad-CAM note with frontmatter, added a reusable concept card, linked it into Semantic Segmentation, and synced note/concept/home indexes plus manifest metadata"
 
 - [2026-04-08 11:13:50 +08:00] INIT vault_path="D:/paper_reading/paper_reading" sources="D:/paper_reading/paper_reading/papers_sources" preserved_existing_folders="notes,papers_sources,Templates"
 - [2026-04-08 11:36:20 +08:00] INGEST source="papers_sources/Research-Paper-Notes" pages_updated=2 pages_created=6 mode=append

@@ -735,6 +735,13 @@
     "summary": "GPT-ST 通过结构感知预训练学习可迁移时空关系，在多任务上带来稳定下游性能增益。"
   },
   {
+    "title": "Grad-CAM for Semantic Segmentation",
+    "url": "concepts/Grad-CAM for Semantic Segmentation.html",
+    "path": "concepts/Grad-CAM for Semantic Segmentation.md",
+    "section": "concepts",
+    "summary": "将 Grad-CAM 从图像分类迁移到语义分割时，关键是把像素级 logits 构造成可求梯度的标量目标，再回投到中间层形成空间热图。"
+  },
+  {
     "title": "Graph of Thoughts Reasoning",
     "url": "concepts/Graph of Thoughts Reasoning.html",
     "path": "concepts/Graph of Thoughts Reasoning.md",
@@ -2504,6 +2511,13 @@
     "path": "Templates/论文阅读模板.md",
     "section": "Templates",
     "summary": "{{title}} [!note] 这个模板按你以前的读论文习惯来 不是审稿表，也不是强行拆成很多“贡献/局限/公平性”栏 主要按论文原本结构读：摘要、介绍、相关工作、方法、实验、结论 读到哪里写到哪里，不需要一开始就把所有栏位填满 不懂的术语、补充资料、自己的理解，可以直接插在对应位置 阅读日期：{{date:YYYY MM DD}} 阅读状态：待读 /…"
+  },
+  {
+    "title": "语义分割模型的 Grad-CAM",
+    "url": "notes/语义分割模型的Grad-CAM.html",
+    "path": "notes/语义分割模型的Grad-CAM.md",
+    "section": "notes",
+    "summary": "解释语义分割任务中如何为 Grad-CAM 构造像素级目标分数、回传到中间特征层，并用 clean/adv/diff 做逐层可视化对照。"
   },
   {
     "title": "鬣(Liè)狗层次结构：迈向更大的卷积语言模型",

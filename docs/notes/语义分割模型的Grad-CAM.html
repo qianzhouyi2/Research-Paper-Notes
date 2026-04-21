@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>语义分割模型的 Grad-CAM | Research Paper Notes</title>
+  <meta name="description" content="解释语义分割任务中如何为 Grad-CAM 构造像素级目标分数、回传到中间特征层，并用 clean/adv/diff 做逐层可视化对照。">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../site.js"></script>
+</head>
+<body data-root-prefix="../" data-page-path="notes/语义分割模型的Grad-CAM.html">
+  <div class="site-shell">
+    <aside class="sidebar panel">
+      <a class="brand" href="../index.html">
+        <span class="brand-kicker">Research Wiki</span>
+        <h1>Research Paper Notes</h1>
+        <p>A browsable paper-reading vault published as a GitHub Pages site.</p>
+      </a>
+      <nav><h1 id="navigation">Navigation</h1>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="index.html">Notes</a></li>
+<li><a href="../references/index.html">References</a></li>
+<li><a href="../concepts/index.html">Concepts</a></li>
+<li><a href="../entities/index.html">Entities</a></li>
+<li><a href="../synthesis/index.html">Synthesis</a></li>
+<li><a href="../journal/index.html">Journal</a></li>
+<li><a href="../projects/index.html">Projects</a></li>
+<li><a href="../log.html">Log</a></li>
+</ul></nav>
+      <p class="footer-note">Static export from the local Obsidian-style wiki. Markdown was pre-rendered for GitHub Pages.</p>
+    </aside>
+
+    <main class="main">
+      <header class="topbar panel">
+        <div>
+          <button class="mobile-toggle" data-menu-toggle type="button">Menu</button>
+          <h2>语义分割模型的 Grad-CAM</h2>
+          <p>解释语义分割任务中如何为 Grad-CAM 构造像素级目标分数、回传到中间特征层，并用 clean/adv/diff 做逐层可视化对照。</p>
+        </div>
+        <div class="topbar-actions">
+          <div class="search-box">
+            <input data-search-input type="search" placeholder="Search pages, concepts, entities...">
+            <div data-search-results class="search-results"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="breadcrumbs"><a href="../index.html">Home</a><span> / </span><a href="index.html">Notes</a><span> / </span><span>语义分割模型的Grad CAM</span></div>
+
+      <article class="article-wrap panel">
+        <div class="article-path">notes/语义分割模型的Grad-CAM.md</div>
+        <div class="markdown-body"><h1 id="grad-cam">语义分割模型的 Grad-CAM</h1>
+<ul>
+<li>阅读类型：方法理解 / 实现说明</li>
+<li>相关概念：<a href="../concepts/Semantic Segmentation.html">Semantic Segmentation</a>、<a href="../concepts/Grad-CAM for Semantic Segmentation.html">Grad-CAM for Semantic Segmentation</a></li>
+<li>最近补充：样例 <code>2007_000346</code> 的逐层 <code>clean / adv / diff</code> 可视化预览</li>
+</ul>
+<hr />
+<p>原始 CAM 的经典前提是：</p>
+<ul>
+<li>模型最后有全局平均池化</li>
+<li>分类分数可以直接看作某些通道加权和
+语义分割的输出是一个密集预测图：
+$$</li>
+</ul>
+<p>\text{logits} \in \mathbb{R}^{B \times C_{\mathrm{cls}} \times H \times W}</p>
+<p>$$
+这里各个维度第一次出现时分别表示：
+- $B$：batch size，也就是一次前向里有多少张图
+- $C_{\mathrm{cls}}$：语义分割类别数，也就是每个像素会输出多少个类别分数
+- $H, W$：输出 logits map 的空间尺寸，也就是高和宽
+也就是说，对每一张图、每一个像素位置，模型都会给出一组长度为 $C_{\mathrm{cls}}$ 的类别分数。
+这时候更合理的做法不是问：</p>
+<blockquote>
+<p>这张图属于 cat 类吗？</p>
+</blockquote>
+<p>而是问：</p>
+<blockquote>
+<p>模型在图中哪些位置把 cat 这个类判出来了，这些位置的 cat-logit 对当前层特征依赖在哪里？</p>
+</blockquote>
+<p>这就是 Grad-CAM 更适合这个场景的原因。</p>
+<hr />
+<h2 id="grad-cam_1">标准 Grad-CAM 的数学骨架</h2>
+<p>假设选定某个中间层特征图：</p>
+<p>$$
+A \in \mathbb{R}^{K \times H_f \times W_f}
+$$</p>
+<p>这里的符号含义是：</p>
+<ul>
+<li>$K$：该层特征图的通道数，也就是这一层有多少张 2D feature map</li>
+<li>$H_f, W_f$：该层特征图自己的空间尺寸</li>
+<li>$k$：通道索引</li>
+<li>$(u,v)$：该层特征图上的空间位置</li>
+<li>$c$：目标类别索引</li>
+<li>$s_c$：围绕目标类别 $c$ 构造出来的标量目标分数</li>
+</ul>
+<p>第 $k$ 个通道在位置 $(u,v)$ 的响应值记为 $A_k(u,v)$，它表示：</p>
+<blockquote>
+<p>在这张图的这个空间位置上，第 $k$ 个特征通道激活得有多强。</p>
+</blockquote>
+<p>接下来，Grad-CAM 想回答的问题是：</p>
+<blockquote>
+<p>如果我们关心类别 $c$ 的目标分数 $s_c$，那么这 $K$ 个通道里，哪些通道更重要？</p>
+</blockquote>
+<p>它的做法是先看梯度：</p>
+<p>$$
+\frac{\partial s_c}{\partial A_k(u,v)}
+$$</p>
+<p>这个量表示：</p>
+<blockquote>
+<p>如果把第 $k$ 个通道在位置 $(u,v)$ 的激活值稍微改大一点，目标分数 $s_c$ 会怎么变。</p>
+</blockquote>
+<p>如果这个梯度在很多位置上都比较大，说明这个通道整体上对类别 $c$ 更重要。<br />
+所以 Grad-CAM 不直接盯着单个像素位置的梯度，而是先把同一个通道上的梯度在空间上做平均，得到一个“通道级”的重要性权重：</p>
+<p>$$
+\alpha_k^c
+=
+\frac{1}{H_fW_f}\sum_{u,v}\frac{\partial s_c}{\partial A_k(u,v)}
+$$</p>
+<p>这里：</p>
+<ul>
+<li>$\alpha_k^c$ 是第 $k$ 个通道对类别 $c$ 的重要性权重</li>
+<li>分母 $H_fW_f$ 是该通道空间位置总数</li>
+<li>这一步本质上是在做“梯度的全局平均池化”</li>
+</ul>
+<p>直觉上，如果某个通道在整张 feature map 上都对目标分数有稳定的正贡献，那么它的 $\alpha_k^c$ 就会更大。</p>
+<p>得到每个通道的权重之后，再回到原始特征图本身，把这些通道按权重加起来：</p>
+<p>$$
+\mathrm{CAM}^c(u,v)
+=
+\mathrm{ReLU}\left(\sum_k \alpha_k^c A_k(u,v)\right)
+$$</p>
+<p>这一步的意思是：</p>
+<ul>
+<li>如果某个通道很重要，就让它在最终热图里占更大权重</li>
+<li>如果某个通道不重要，它的贡献就会被压小</li>
+<li>对所有通道加权求和之后，就得到一个二维热图</li>
+</ul>
+<p>最后的 <code>ReLU</code> 是为了保留正贡献，抑制负贡献。<br />
+也就是说，最终 CAM 更关注“哪些位置在支持这个类别”，而不是“哪些位置在反对这个类别”。</p>
+<p>到这里得到的热图分辨率还是该层自己的 $H_f \times W_f$，通常比输入图更小。<br />
+所以最后还要把它插值回输入图大小，才能和原图叠加显示。</p>
+<pre><code class="language-text">feature_map = chosen intermediate feature
+score = target scalar score for class c
+gradients = grad(score, feature_map)
+weights = spatial_mean(gradients)
+cam = relu(sum(weights * feature_map over channel))
+cam = resize_to_input_resolution(cam)
+cam = normalize_to_0_1(cam)
+</code></pre>
+<h2 id="cam">CAM 具体流程</h2>
+<h3 id="_1">输入整理</h3>
+<p>函数输入是一张单图：</p>
+<p>$$
+\mathrm{image} \in \mathbb{R}^{C_{\mathrm{in}} \times H \times W}
+\
+$$</p>
+<p>这里：</p>
+<ul>
+<li>$C_{\mathrm{in}}$ 是输入图像通道数，通常 RGB 图像是 3</li>
+<li>$H, W$ 是输入图像本身的高和宽</li>
+</ul>
+<pre><code class="language-python">inputs = image.unsqueeze(0).to(model.device)
+</code></pre>
+<h3 id="logits-features">前向得到 logits 和 features</h3>
+<p>调用接口：</p>
+<pre><code class="language-python">logits, features = model.forward_with_features(inputs)
+</code></pre>
+<p>这里拿到的是：</p>
+<ul>
+<li><code>logits</code>：形状为 $[1, C_{\mathrm{cls}}, H, W]$</li>
+<li><code>features[feature_key]</code>：当前目标层的特征图，通常形状为 $[1, K, H_f, W_f]$</li>
+</ul>
+<p>也就是说：</p>
+<ul>
+<li>第 1 维是 batch，这里取 1 张图</li>
+<li>第 2 维的 $C_{\mathrm{cls}}$ 是类别数</li>
+<li>特征图里的 $K$ 是目标层通道数</li>
+<li>$H, W$ 是 logits map 的空间分辨率</li>
+<li>$H_f, W_f$ 是目标层自己的空间分辨率，通常和输入图大小不同</li>
+</ul>
+<h3 id="_2">构造目标分数</h3>
+<p>代码先取出目标类别的 logit map：</p>
+<pre><code class="language-python">class_logits = logits[:, int(class_id)]
+</code></pre>
+<p>再根据当前预测得到该类别的支持区域：</p>
+<pre><code class="language-python">prediction = logits.argmax(dim=1)
+target_mask = prediction == int(class_id)
+</code></pre>
+<p>如果该类像素存在，就在这个区域上求平均；否则 fallback 为整图平均。</p>
+<pre><code class="language-python">logits, features = model.forward_with_features(inputs)
+feature_map = features[feature_key]
+</code></pre>
+<p>这里：</p>
+<ul>
+<li><code>feature_key</code> 是当前选中的目标层名字，比如 <code>backbone:stage0:block00</code></li>
+<li><code>features</code> 是一个字典，里面保存了这次 forward 过程中暴露出来的中间特征</li>
+<li><code>feature_map</code> 从这次 forward 返回的中间张量里按 key 取出</li>
+</ul>
+<p>基于这一次 forward 得到的 <code>logits</code> 去构造目标分数：</p>
+<pre><code class="language-python">class_logits = logits[:, int(class_id)]
+prediction = logits.argmax(dim=1)
+target_mask = prediction == int(class_id)
+target_pixels = int(target_mask.sum().detach().cpu().item())
+if target_pixels &gt; 0:
+    target_score = class_logits.masked_select(target_mask).mean()
+else:
+    target_score = class_logits.mean()
+</code></pre>
+<p>所以这里的关系其实很明确：</p>
+<ul>
+<li><code>feature_map</code> 来自“指定层在这次 forward 里的输出”</li>
+<li><code>target_score</code> 来自“同一次 forward 最终产生的分割 logits”</li>
+</ul>
+<h3 id="_3">对指定层特征求梯度</h3>
+<pre><code class="language-python">gradients = torch.autograd.grad(target_score, feature_map)[0]
+</code></pre>
+<p>这里没有调用 <code>.backward()</code>，而是直接用 <code>torch.autograd.grad()</code> 返回目标层的梯度张量。<br />
+这更适合做一次性的解释性分析，因为它更明确，也不会把不需要的梯度残留到参数上。</p>
+<h3 id="grad-cam_2">按 Grad-CAM 公式生成热图</h3>
+<pre><code class="language-python">weights = gradients.mean(dim=(2, 3), keepdim=True)
+cam = torch.relu((weights * feature_map).sum(dim=1, keepdim=True))
+cam = F.interpolate(cam, size=inputs.shape[-2:], mode=&quot;bilinear&quot;, align_corners=False)
+cam_heatmap = normalize_heatmap(cam[0, 0].detach().cpu().numpy())
+</code></pre>
+<ul>
+<li><code>feature_map</code> 是目标层特征图，形状为 $[1, K, H_f, W_f]$</li>
+<li><code>gradients</code> 是目标分数对该特征图的梯度，形状也为 $[1, K, H_f, W_f]$
+其中：</li>
+<li>$K$ 是目标层通道数</li>
+<li>$H_f, W_f$ 是目标层特征图的空间分辨率</li>
+</ul>
+<h4 id="1">1. 对梯度做空间平均，得到每个通道的权重</h4>
+<pre><code class="language-python">weights = gradients.mean(dim=(2, 3), keepdim=True)
+</code></pre>
+<p>这一步是在空间维度 $H_f, W_f$ 上对梯度求平均，把每个通道压缩成一个标量权重。输出形状变成：</p>
+<ul>
+<li><code>weights</code>：$[1, K, 1, 1]$</li>
+</ul>
+<p>它表示：对于当前目标分数来说，每个通道整体上有多重要。</p>
+<p>直观上，可以把这一步理解为：先统计一下“每个通道整体上帮了多大忙”。</p>
+<h4 id="2">2. 用通道权重对特征图加权求和</h4>
+<pre><code class="language-python">cam = torch.relu((weights * feature_map).sum(dim=1, keepdim=True))
+</code></pre>
+<p>这一步包含三层操作：</p>
+<ul>
+<li><code>weights * feature_map</code>：给每个通道乘上自己的权重，重要通道贡献更大</li>
+<li><code>.sum(dim=1, keepdim=True)</code>：沿通道维求和，得到一张单通道响应图</li>
+<li><code>torch.relu(...)</code>：只保留正贡献，把负值截断为 0</li>
+</ul>
+<p>在经过通道求和之后，<code>cam</code> 的形状为：</p>
+<ul>
+<li><code>cam</code>：$[1, 1, H_f, W_f]$</li>
+</ul>
+<p>也就是说，Grad-CAM 会把所有通道按重要性加权，再组合成一张二维热图。<br />
+这里使用 ReLU，是因为原始 Grad-CAM 只保留对目标分数有正向支持的区域，这样更符合“模型主要看了哪里来支持当前预测”的解释。</p>
+<h4 id="3">3. 把热图插值回输入图大小</h4>
+<pre><code class="language-python">cam = F.interpolate(cam, size=inputs.shape[-2:], mode=&quot;bilinear&quot;, align_corners=False)
+</code></pre>
+<p>前面得到的 <code>cam</code> 仍然处在目标层自己的分辨率上，也就是 $H_f \times W_f$。<br />
+但中间层特征图通常比输入图更小，所以这张热图还不能直接和原图对齐。</p>
+<p>这一步就是把它上采样到输入图大小：</p>
+<ul>
+<li>从 $[1, 1, H_f, W_f]$</li>
+<li>变成 $[1, 1, H, W]$</li>
+</ul>
+<p>这样后面才能把热图叠加到原图上进行可视化。这里使用双线性插值，是因为它对连续热图来说更平滑。</p>
+<h4 id="4-numpy-0-1">4. 转成 NumPy，并归一化到 <code>[0, 1]</code></h4>
+<pre><code class="language-python">cam_heatmap = normalize_heatmap(cam[0, 0].detach().cpu().numpy())
+</code></pre>
+<p>这一步主要是为了后处理和可视化：</p>
+<ul>
+<li><code>cam[0, 0]</code>：去掉 batch 维和 channel 维，得到二维热图</li>
+<li><code>.detach()</code>：从计算图中分离，不再继续跟踪梯度</li>
+<li><code>.cpu()</code>：如果张量在 GPU 上，先移回 CPU</li>
+<li><code>.numpy()</code>：转换成 NumPy 数组，方便后续画图</li>
+<li><code>normalize_heatmap(...)</code>：把热图数值缩放到 <code>[0, 1]</code></li>
+</ul>
+<p>归一化之后，<code>cam_heatmap</code> 就是一张可以直接映射颜色、再叠加到原图上的 CAM 热图。</p>
+<h2 id="_4">逐层可视化示例</h2>
+<p>下面是样例在不同中间层上的 Grad-CAM 预览。按网络深度从浅到深排列，每组分别给出 <code>clean</code>、<code>adv</code> 和 <code>diff</code>，方便直接对照不同层上的响应变化。</p>
+<h3 id="backbonestage0block00"><code>backbone:stage0:block00</code></h3>
+<table>
+<thead>
+<tr>
+<th>clean</th>
+<th>adv</th>
+<th>diff</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="00_backbone_stage0_block00_clean" src="assets/2007_000346_cam_preview_20260418_151116/00_backbone_stage0_block00_clean.png" /></td>
+<td><img alt="00_backbone_stage0_block00_adv" src="assets/2007_000346_cam_preview_20260418_151116/00_backbone_stage0_block00_adv.png" /></td>
+<td><img alt="00_backbone_stage0_block00_diff" src="assets/2007_000346_cam_preview_20260418_151116/00_backbone_stage0_block00_diff.png" /></td>
+</tr>
+</tbody>
+</table>
+<h3 id="backbonestage2block02"><code>backbone:stage2:block02</code></h3>
+<table>
+<thead>
+<tr>
+<th>clean</th>
+<th>adv</th>
+<th>diff</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="01_backbone_stage2_block02_clean" src="assets/2007_000346_cam_preview_20260418_151116/01_backbone_stage2_block02_clean.png" /></td>
+<td><img alt="01_backbone_stage2_block02_adv" src="assets/2007_000346_cam_preview_20260418_151116/01_backbone_stage2_block02_adv.png" /></td>
+<td><img alt="01_backbone_stage2_block02_diff" src="assets/2007_000346_cam_preview_20260418_151116/01_backbone_stage2_block02_diff.png" /></td>
+</tr>
+</tbody>
+</table>
+<h3 id="backbonestage3block02"><code>backbone:stage3:block02</code></h3>
+<table>
+<thead>
+<tr>
+<th>clean</th>
+<th>adv</th>
+<th>diff</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="02_backbone_stage3_block02_clean" src="assets/2007_000346_cam_preview_20260418_151116/02_backbone_stage3_block02_clean.png" /></td>
+<td><img alt="02_backbone_stage3_block02_adv" src="assets/2007_000346_cam_preview_20260418_151116/02_backbone_stage3_block02_adv.png" /></td>
+<td><img alt="02_backbone_stage3_block02_diff" src="assets/2007_000346_cam_preview_20260418_151116/02_backbone_stage3_block02_diff.png" /></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_5">关联</h2>
+<ul>
+<li><a href="../concepts/Grad-CAM for Semantic Segmentation.html">Grad-CAM for Semantic Segmentation</a></li>
+<li><a href="../concepts/Semantic Segmentation.html">Semantic Segmentation</a></li>
+<li><a href="../concepts/Adversarial Vulnerability Profiling for Segmentation Models.html">Adversarial Vulnerability Profiling for Segmentation Models</a></li>
+</ul></div>
+      </article>
+    </main>
+
+    <aside class="rail panel">
+      <h3>Page Meta</h3>
+      <div class="meta-block">
+        <p class="meta-label">Section</p>
+        <p>notes</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Tags</p>
+        <div class="chip-list"><span class="chip">note</span><span class="chip">semantic-segmentation</span><span class="chip">interpretability</span><span class="chip">diagnostics</span></div>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Summary</p>
+        <p>解释语义分割任务中如何为 Grad-CAM 构造像素级目标分数、回传到中间特征层，并用 clean/adv/diff 做逐层可视化对照。</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Source</p>
+        <ul>
+          <li><a href="https://github.com/qianzhouyi2/Research-Paper-Notes/blob/main/notes/语义分割模型的Grad-CAM.md">Open Markdown On GitHub</a></li>
+          <li><a href="../search-index.json">Open Search Index</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

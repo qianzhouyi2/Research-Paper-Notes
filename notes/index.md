@@ -4,18 +4,19 @@ category: index
 tags:
   - index
   - note
-updated: 2026-04-14
+updated: 2026-04-20
 summary: 汇总当前论文阅读笔记与导入索引页面，append ingest 已覆盖 notes 全目录。
 sources:
   - workspace/wiki-update-2026-04-10-global-lint-remediation
+  - workspace/wiki-update-2026-04-20-grad-cam-segmentation
 created: 2026-04-08
 ---
 
 # Notes 索引
 
-单篇论文阅读笔记入口。
+单篇论文阅读笔记与方法说明笔记入口。
 
-## 已有笔记（27）
+## 已有笔记（28）
 
 - [[notes/Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report|Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-refine with LLaMa-3 8B A Technical Report]]
 - [[notes/Amortizing intractable inference in large language models|Amortizing intractable inference in large language models]]
@@ -44,6 +45,7 @@ created: 2026-04-08
 - [[notes/Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models|Synergy-of-Thoughts Eliciting Efficient Reasoning in Hybrid Language Models]]
 - [[notes/Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models|Towards Reliable Evaluation and Fast Training of Robust Semantic Segmentation Models]]
 - [[notes/Tree of Thoughts Deliberate Problem Solving with Large Language Models|Tree of Thoughts Deliberate Problem Solving with Large Language Models]]
+- [[notes/语义分割模型的Grad-CAM|语义分割模型的 Grad-CAM]]
 
 ## 本次 Append（2026-04-08）
 

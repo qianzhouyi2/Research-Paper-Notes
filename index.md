@@ -12,8 +12,9 @@ sources:
   - workspace/wiki-update-2026-04-10-cn-placeholder-remediation
   - workspace/wiki-update-2026-04-16-towards-reliable-eval-sync
   - workspace/wiki-update-2026-04-16-towards-reliable-eval-deepening
+  - workspace/wiki-update-2026-04-20-grad-cam-segmentation
 created: 2026-04-08
-updated: 2026-04-16
+updated: 2026-04-20
 summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 结果。
 ---
 
@@ -32,6 +33,13 @@ summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 
 - [[journal/index|Journal（阅读日志）]]
 - [[log|系统日志]]
 - [[_meta/taxonomy|标签词表]]
+
+## 最新 Wiki 更新（2026-04-20，Grad-CAM Segmentation Sync）
+
+- 类型：`wiki-update`（note normalization + concept distillation）。
+- 新增页面：[[concepts/Grad-CAM for Semantic Segmentation]]。
+- 更新页面：[[notes/语义分割模型的Grad-CAM|语义分割模型的 Grad-CAM]]、[[concepts/Semantic Segmentation]]、[[notes/index]]、[[concepts/index]]、[[index]]、[[log]]。
+- 说明：把当前语义分割 Grad-CAM 说明笔记补齐 frontmatter 和索引收录，并抽出“语义分割版 Grad-CAM”的可复用概念卡，补上与脆弱性诊断主线的连接。
 
 ## 最新 Wiki 更新（2026-04-16，Reliable Eval Claim-Evidence Deepening）
 
@@ -90,12 +98,12 @@ summary: 论文阅读 wiki 总入口，汇总导航、工作流与最近 ingest 
 
 ## 当前资产
 
-- 已导入论文笔记：27 篇（见 [[notes/index]]）
+- 已纳管笔记：28 篇（见 [[notes/index]]）
 - References：54 篇
-- Concepts：90 篇
+- Concepts：91 篇
 - Entities：133 篇
 - Synthesis：29 篇
-- 已纳管来源：50 个（见 [[log]] 与 `.manifest.json`）
+- 已纳管来源：51 个（见 [[log]] 与 `.manifest.json`）
 - 原始资料：[[papers_sources/index|papers_sources]]
 - 模板：`Templates`
 

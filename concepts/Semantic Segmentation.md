@@ -14,8 +14,9 @@ sources:
   - https://openaccess.thecvf.com/content_cvpr_2017/html/Zhou_Scene_Parsing_Through_CVPR_2017_paper.html
   - https://www.cityscapes-dataset.com/
   - https://openaccess.thecvf.com/content_CVPR_2019/html/Kirillov_Panoptic_Segmentation_CVPR_2019_paper.html
+  - notes/语义分割模型的Grad-CAM.md
 created: 2026-04-09
-updated: 2026-04-10
+updated: 2026-04-20
 summary: 语义分割将每个像素映射到语义类别，是场景理解中的密集预测基础任务，主评估指标通常是 mIoU。
 provenance:
   extracted: 0.72
@@ -57,6 +58,7 @@ provenance:
 
 - 这是 [[concepts/Decision-based Black-box Attack for Segmentation]] 的上位任务概念。
 - 在本库攻击评估里，语义分割通常通过 mIoU 与 query efficiency 共同刻画鲁棒性。
+- 在解释性分析里，[[concepts/Grad-CAM for Semantic Segmentation]] 提供了一种把像素级 logit map 压成标量目标、再回投到中间层的可视化路径，可用于比较 `clean / adv / diff` 的层级响应。^[inferred]
 
 ## 联网补充
 
@@ -69,8 +71,10 @@ provenance:
 ## 关联
 
 - [[concepts/Decision-based Black-box Attack for Segmentation]]
+- [[concepts/Grad-CAM for Semantic Segmentation]]
 - [[concepts/Proxy Index mIoU Optimization]]
 - [[concepts/Query-Efficient Attack Evaluation]]
+- [[notes/语义分割模型的Grad-CAM|语义分割模型的 Grad-CAM]]
 - [[entities/Cityscapes Dataset]]
 - [[entities/ADE20K Dataset]]
 - [[entities/FCN]]
